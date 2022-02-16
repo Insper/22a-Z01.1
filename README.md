@@ -1,4 +1,4 @@
-[![](icon-elementos.png)](https://insper.github.io/Z01.1/)
+![image](https://user-images.githubusercontent.com/25179120/154327893-f7b2d7b6-055b-443f-b012-855db340c42c.png)
 
 > Desenvolvendo um computador do ZERO!
 
