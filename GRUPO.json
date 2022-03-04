@@ -1,3 +1,10 @@
 {
   "Nome-Grupo": "Dio"
 }
+{
+	"aluno1":{
+		"nome":"Rafael Lima",
+		"email-insper":"rafaelmal@al.insper.edu.br",
+		"user-github": "RafaelMALima"
+	}
+
