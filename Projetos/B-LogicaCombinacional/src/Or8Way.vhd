@@ -15,11 +15,7 @@ entity Or8Way is
 end entity;
 
 architecture arch of Or8Way is
-	when a = '1' or b = '1' or c = '1' or d = '1' or e = '1' or f = '1' or g = '1' or h = '1'
-		then q <= '1';
-	when others
-		then q <= '0';
+	
 begin
-
-
+	q <= (a or b or c or d or e or f or g or h);
 end architecture;
