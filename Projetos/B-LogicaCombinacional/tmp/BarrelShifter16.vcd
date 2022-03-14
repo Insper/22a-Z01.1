@@ -1,0 +1,37 @@
+$date
+  Mon Mar 14 10:30:50 2022
+$end
+$version
+  GHDL v0
+$end
+$timescale
+  1 fs
+$end
+$scope module standard $end
+$upscope $end
+$scope module std_logic_1164 $end
+$upscope $end
+$scope module numeric_std $end
+$upscope $end
+$scope module tb_barrelshifter16 $end
+$var reg 16 ! in_a[15:0] $end
+$var reg 1 " in_dir $end
+$var reg 3 # in_size[2:0] $end
+$var reg 16 $ out_q[15:0] $end
+$scope module ubarrelshifter16 $end
+$var reg 16 % a[15:0] $end
+$var reg 1 & dir $end
+$var reg 3 ' size[2:0] $end
+$var reg 16 ( q[15:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+b0000000000000100 !
+1"
+b001 #
+b0000000000000010 $
+b0000000000000100 %
+1&
+b001 '
+b0000000000000010 (

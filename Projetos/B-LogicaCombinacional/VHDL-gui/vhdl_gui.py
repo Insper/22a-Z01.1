@@ -42,8 +42,8 @@ def run(nome,path_in,path_out,path_proj):
 
     screen = pygame.display.set_mode((width, height))
     pygame.display.set_caption(nome)
-    icon = pygame.image.load(str(Path.home()) + '/Z01-Tools/VHDL-gui/icon-elementos.png')
-    pygame.display.set_icon(icon)
+    #icon = pygame.image.load(str(Path.home()) + '/Z01-Tools/VHDL-gui/icon-elementos.png')
+    #pygame.display.set_icon(icon)
     screen.fill(background_colour)
 
 
