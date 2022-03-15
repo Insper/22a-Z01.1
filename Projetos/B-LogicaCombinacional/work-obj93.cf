@@ -1,0 +1,73 @@
+v 4
+file / "/home/borg/Desktop/insper/Z01.1/p1/Z01.1-Fenix/Projetos/B-LogicaCombinacional/tmp/tb_BarrelShifter16.vhd" "6dcee4434b70c109a3acc7139386e1b06c6e1e1b" "20220314133050.503":
+  entity tb_barrelshifter16 at 3( 71) + 0 on 205;
+  architecture tb of tb_barrelshifter16 at 10( 183) + 0 on 206;
+file / "/home/borg/Desktop/insper/Z01.1/p1/Z01.1-Fenix/Projetos/B-LogicaCombinacional/src/sevenSeg.vhd" "a18877d310fa0ae4fb52909d430a83bbc7ba4d0e" "20220314132846.293":
+  entity sevenseg at 1( 0) + 0 on 99;
+  architecture arch of sevenseg at 10( 171) + 0 on 100;
+file / "/home/borg/Desktop/insper/Z01.1/p1/Z01.1-Fenix/Projetos/B-LogicaCombinacional/src/Or16.vhd" "03f6174e2aff0308b3179c12da34ada4a618a1ad" "20220314132846.247":
+  entity or16 at 1( 0) + 0 on 95;
+  architecture arch of or16 at 11( 211) + 0 on 96;
+file / "/home/borg/Desktop/insper/Z01.1/p1/Z01.1-Fenix/Projetos/B-LogicaCombinacional/src/detectorDeMoedas.vhd" "4816234f8585f0cf957f21332e74d3d05d126589" "20220314132846.201":
+  entity detectordemoedas at 1( 0) + 0 on 91;
+  architecture arch of detectordemoedas at 10( 170) + 0 on 92;
+file / "/home/borg/Desktop/insper/Z01.1/p1/Z01.1-Fenix/Projetos/B-LogicaCombinacional/src/Mux4Way16.vhd" "665ffbd763998424f9d5aefc95281ad9da01dc09" "20220314132846.175":
+  entity mux4way16 at 1( 0) + 0 on 87;
+  architecture arch of mux4way16 at 14( 344) + 0 on 88;
+file / "/home/borg/Desktop/insper/Z01.1/p1/Z01.1-Fenix/Projetos/B-LogicaCombinacional/src/DMux8Way.vhd" "8397f753f98e552b67aeb356ad3f7720a97e2a53" "20220314132846.124":
+  entity dmux8way at 1( 0) + 0 on 83;
+  architecture arch of dmux8way at 18( 335) + 0 on 84;
+file / "/home/borg/Desktop/insper/Z01.1/p1/Z01.1-Fenix/Projetos/B-LogicaCombinacional/src/Mux8Way.vhd" "818a182c6610288d815c531d43c3ea2f3bd04abc" "20220314132846.098":
+  entity mux8way at 1( 0) + 0 on 79;
+  architecture arch of mux8way at 18( 334) + 0 on 80;
+file / "/home/borg/Desktop/insper/Z01.1/p1/Z01.1-Fenix/Projetos/B-LogicaCombinacional/src/Mux8Way16.vhd" "e8df377ef6cef54d8c43fe7875b40691c8675baf" "20220314132846.071":
+  entity mux8way16 at 1( 0) + 0 on 75;
+  architecture arch of mux8way16 at 18( 516) + 0 on 76;
+file / "/home/borg/Desktop/insper/Z01.1/p1/Z01.1-Fenix/Projetos/B-LogicaCombinacional/src/Or8Way.vhd" "c083bfba09c8454f4d500150f73dfe221e9a90b6" "20220314132846.047":
+  entity or8way at 1( 0) + 0 on 71;
+  architecture arch of or8way at 17( 290) + 0 on 72;
+file / "/home/borg/Desktop/insper/Z01.1/p1/Z01.1-Fenix/Projetos/B-LogicaCombinacional/src/DMux4Way.vhd" "08c948481fc8c7f0f83b5f33aab55d30f17bcbd6" "20220314132846.021":
+  entity dmux4way at 1( 0) + 0 on 67;
+  architecture rtl of dmux4way at 14( 243) + 0 on 68;
+file / "/home/borg/Desktop/insper/Z01.1/p1/Z01.1-Fenix/Projetos/B-LogicaCombinacional/src/Nand2.vhd" "a5a20be0924f4b7bc1c3060df9f791c4eb0cbfef" "20220314132845.997":
+  entity nand2 at 1( 0) + 0 on 63;
+  architecture rtl of nand2 at 12( 179) + 0 on 64;
+file / "/home/borg/Desktop/insper/Z01.1/p1/Z01.1-Fenix/Projetos/B-LogicaCombinacional/src/Not16.vhd" "48332bd9168911f432d3d23e6f2c808839903ba0" "20220314132845.973":
+  entity not16 at 1( 0) + 0 on 59;
+  architecture arch of not16 at 10( 169) + 0 on 60;
+file / "/home/borg/Desktop/insper/Z01.1/p1/Z01.1-Fenix/Projetos/B-LogicaCombinacional/src/DMux2Way.vhd" "e816aa76d88e17fda6097e393df2357b0f96c07b" "20220314132845.961":
+  entity dmux2way at 1( 0) + 0 on 57;
+  architecture rtl of dmux2way at 12( 178) + 0 on 58;
+file / "/home/borg/Desktop/insper/Z01.1/p1/Z01.1-Fenix/Projetos/B-LogicaCombinacional/src/Mux16.vhd" "89f811348b88675677e9901dee16ac0799579978" "20220314132845.985":
+  entity mux16 at 1( 0) + 0 on 61;
+  architecture arch of mux16 at 12( 235) + 0 on 62;
+file / "/home/borg/Desktop/insper/Z01.1/p1/Z01.1-Fenix/Projetos/B-LogicaCombinacional/src/impressora.vhd" "cfd1d559c6d17404f379d85b9c76ca8e0626d64a" "20220314132846.009":
+  entity impressora at 1( 0) + 0 on 65;
+  architecture arch of impressora at 10( 148) + 0 on 66;
+file / "/home/borg/Desktop/insper/Z01.1/p1/Z01.1-Fenix/Projetos/B-LogicaCombinacional/src/circuito.vhd" "24996ad20564a73bea2dc1dd9df5cfccb00dd5ac" "20220314132846.034":
+  entity circuito at 1( 0) + 0 on 69;
+  architecture arch of circuito at 10( 139) + 0 on 70;
+file / "/home/borg/Desktop/insper/Z01.1/p1/Z01.1-Fenix/Projetos/B-LogicaCombinacional/src/Nor8Way.vhd" "b7d65f99833b505d2ab3d429e145aaaf2e89e99f" "20220314132846.059":
+  entity nor8way at 1( 0) + 0 on 73;
+  architecture arch of nor8way at 17( 292) + 0 on 74;
+file / "/home/borg/Desktop/insper/Z01.1/p1/Z01.1-Fenix/Projetos/B-LogicaCombinacional/src/And16.vhd" "b2a33aa92e60b7a1685b8db2490fb218b40bb1c5" "20220314132846.084":
+  entity and16 at 1( 0) + 0 on 77;
+  architecture arch of and16 at 11( 212) + 0 on 78;
+file / "/home/borg/Desktop/insper/Z01.1/p1/Z01.1-Fenix/Projetos/B-LogicaCombinacional/src/Mux2Way.vhd" "877e31eec22519b636a05b7dd98557e392c4b796" "20220314132846.111":
+  entity mux2way at 1( 0) + 0 on 81;
+  architecture arch of mux2way at 12( 177) + 0 on 82;
+file / "/home/borg/Desktop/insper/Z01.1/p1/Z01.1-Fenix/Projetos/B-LogicaCombinacional/src/BarrelShifter16.vhd" "dd8b98cd13f6ab4e2596bca9bead64a58571fef4" "20220314133050.469":
+  entity barrelshifter16 at 1( 0) + 0 on 203;
+  architecture rtl of barrelshifter16 at 13( 381) + 0 on 204;
+file / "/home/borg/Desktop/insper/Z01.1/p1/Z01.1-Fenix/Projetos/B-LogicaCombinacional/src/Mux4Way.vhd" "fada7b66c0c5608c1a23d1380f5d450aa9ad0190" "20220314132846.188":
+  entity mux4way at 1( 0) + 0 on 89;
+  architecture arch of mux4way at 14( 242) + 0 on 90;
+file / "/home/borg/Desktop/insper/Z01.1/p1/Z01.1-Fenix/Projetos/B-LogicaCombinacional/src/TopLevel.vhd" "ba952a31dd144215262ce1bd6392b2a8b2be387b" "20220314132846.214":
+  entity toplevel at 12( 340) + 0 on 93;
+  architecture rtl of toplevel at 31( 762) + 0 on 94;
+file / "/home/borg/Desktop/insper/Z01.1/p1/Z01.1-Fenix/Projetos/B-LogicaCombinacional/src/ConceitoA.vhd" "f607f5cbb16399558571cb52cb7fd31e873f8d7f" "20220314132846.261":
+  entity conceitoa at 4( 87) + 0 on 97;
+  architecture rtl of conceitoa at 26( 696) + 0 on 98;
+file / "/home/borg/Desktop/insper/Z01.1/p1/Z01.1-Fenix/Projetos/B-LogicaCombinacional/src/binarioToBcd.vhd" "542f45cecb158fa1fc2b506aead41d22839a6ae8" "20220314132846.307":
+  entity binariotobcd at 4( 80) + 0 on 101;
+  architecture behaviour of binariotobcd at 17( 408) + 0 on 102;
