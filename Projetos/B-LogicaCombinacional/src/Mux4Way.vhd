@@ -13,6 +13,10 @@ end entity;
 
 architecture arch of Mux4Way is
 begin
-
+	WITH sel select 
+		q <= a when"00", 
+			b when "01", 
+			c  when "10", 
+			d when others;
 
 end architecture;
