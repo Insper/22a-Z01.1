@@ -8,7 +8,7 @@ entity circuito is
 end entity;
 
 architecture arch of circuito is
-
 begin
+    x <= A and B and (not C);
 
 end architecture;
