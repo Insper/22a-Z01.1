@@ -42,8 +42,4 @@ architecture rtl of ConceitoA is
 		u3: sevenSeg port map (
 			bcd => "00" & SW(9 downto 8),
 			leds => HEX2);
-		
-		HEX3 <= "1111111";
-		HEX4 <= "1111111";
-		HEX5 <= "1111111";
 end rtl;
