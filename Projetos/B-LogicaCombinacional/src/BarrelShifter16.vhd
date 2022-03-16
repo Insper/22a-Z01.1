@@ -12,6 +12,7 @@ end entity;
 
 architecture rtl of BarrelShifter16 is
 begin
+	
 	q <= std_logic_vector(shift_left(unsigned(a), to_integer(unsigned(size)))) when (dir = '0') else
 	std_logic_vector(shift_right(unsigned(a),to_integer(unsigned(size))));
 
