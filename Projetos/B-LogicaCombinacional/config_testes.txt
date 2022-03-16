@@ -1,0 +1,33 @@
+######################################
+# Rafael.Corsi @ Insper.edu.br       #
+#  Elementos de Sistemas             # 
+#                                    # 
+# Arquivos de teste do projeto B     #
+#  - Para incluir o teste basta      #
+#  descomentar a linha               #
+#                                    #
+######################################
+
+Nand2.vhd
+Or16.vhd
+Nor8Way.vhd
+And16.vhd
+Not16.vhd
+Or8Way.vhd
+DMux2Way.vhd
+DMux4Way.vhd
+DMux8Way.vhd
+Mux2Way.vhd
+Mux4Way.vhd
+Mux16.vhd
+Mux4Way16.vhd
+Mux8Way.vhd
+Mux8Way16.vhd
+BarrelShifter16.vhd
+
+
+##### conceito B
+circuito.vhd
+detectorDeMoedas.vhd
+impressora.vhd
+sevenSeg.vhd

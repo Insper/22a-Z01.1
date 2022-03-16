@@ -27,4 +27,5 @@ begin
 	q7 <= a when sel="111" else '0';
 
 
+
 end architecture;

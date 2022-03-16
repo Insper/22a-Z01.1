@@ -17,6 +17,7 @@ end entity;
 
 architecture arch of Mux8Way is
 begin
+
 	q<= a when sel ="000" else
 	b when sel ="001" else 
 	c when sel ="010" else 
@@ -25,5 +26,6 @@ begin
 	f when sel ="101" else 
 	g when sel ="110" else 
 	h when sel ="111" else '0';
+
 
 end architecture;
