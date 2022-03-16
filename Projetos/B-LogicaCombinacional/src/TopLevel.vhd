@@ -36,19 +36,26 @@ end entity;
 -- Implementacao do bloco --
 ----------------------------
 architecture rtl of TopLevel is
+	component sevenSeg is
+		port (
+				bcd : in  STD_LOGIC_VECTOR(3 downto 0);
+				leds: out STD_LOGIC_VECTOR(6 downto 0));
+	end component;
 
---------------
--- signals
---------------
-
----------------
--- implementacao
----------------
-begin
-	HEX5 <= "1111001";
-	HEX4 <= "1111001";
-	HEX3 <= "1000000";
-	HEX2 <= "0110000";
-	HEX1 <= "0100100";
-	HEX0 <= "0100100";
+	begin
+		u1: sevenSeg port map (
+			bcd => SW(3 downto 0),
+			leds => HEX0);
+		
+		u2: sevenSeg port map (
+			bcd => SW(7 downto 4),
+			leds => HEX1);
+		
+		u3: sevenSeg port map (
+			bcd => "00" & SW(9 downto 8),
+			leds => HEX2);
+		
+		HEX3 <= "1111111";
+		HEX4 <= "1111111";
+		HEX5 <= "1111111";
 end rtl;
