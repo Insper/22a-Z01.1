@@ -1,5 +1,6 @@
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
+use IEEE.NUMERIC_STD.ALL;
 
 entity BarrelShifter16 is
 	port ( 
@@ -11,7 +12,6 @@ end entity;
 
 architecture rtl of BarrelShifter16 is
 begin
-
-
+	q <= STD_LOGIC_VECTOR(shift_left(unsigned(a), to_integer(unsigned(size)))) when dir = '0' else 
+	STD_LOGIC_VECTOR(shift_right(unsigned(a), to_integer(unsigned(size)))); 
 end architecture;
-
