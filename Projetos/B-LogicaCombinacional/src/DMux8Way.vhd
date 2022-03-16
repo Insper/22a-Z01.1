@@ -17,17 +17,14 @@ end entity;
 
 architecture arch of DMux8Way is
 begin
-process (sel, a)
-begin
-case sel is
-	when "000" => y <= "00000001";
-	when "001" => y <= "00000010";
-	when "010" => y <= "00000100";
-	when "011" => y <= "00001000";
-	when "100" => y <= "00010000";
-	when "101" => y <= "00100000";
-	when "110" => y <= "01000000";
-	when "111" => y <= "10000000";
-	when "others" => y <= xxxxxxxx;
+	q0 <= a when sel="000" else '0';
+	q1 <= a when sel="001" else '0';
+	q2 <= a when sel="010" else '0';
+	q3 <= a when sel="011" else '0';
+	q4 <= a when sel="100" else '0';
+	q5 <= a when sel="101" else '0';
+	q6 <= a when sel="110" else '0';
+	q7 <= a when sel="111" else '0';
 
-end case;
+
+end architecture;
