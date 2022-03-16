@@ -1,18 +1,16 @@
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 
-entity And16 is
+entity Not16 is
 	port ( 
 			a:   in  STD_LOGIC_VECTOR(15 downto 0);
-			b:   in  STD_LOGIC_VECTOR(15 downto 0);
 			q:   out STD_LOGIC_VECTOR(15 downto 0));
 end entity;
 
---check
-architecture arch of And16 is
+architecture arch of Not16 is
 begin
 
-q <= a and b;
+q <= not a;
 
 
 end architecture;

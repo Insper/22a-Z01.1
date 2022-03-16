@@ -1,23 +1,25 @@
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 
-entity Or8Way is
-	port (
+entity Mux4Way is
+	port ( 
 			a:   in  STD_LOGIC;
 			b:   in  STD_LOGIC;
 			c:   in  STD_LOGIC;
 			d:   in  STD_LOGIC;
-			e:   in  STD_LOGIC;
-			f:   in  STD_LOGIC;
-			g:   in  STD_LOGIC;
-			h:   in  STD_LOGIC;
+			sel: in  STD_LOGIC_VECTOR(1 downto 0);
 			q:   out STD_LOGIC);
 end entity;
---check
-architecture arch of Or8Way is
+
+architecture arch of Mux4Way is
 begin
 
-q <= a or b or c or d or e or f or g or h;
+
+with sel select
+q <= a when "00",
+    b when "01",
+    c when "10",
+    d when others;
 
 
 end architecture;

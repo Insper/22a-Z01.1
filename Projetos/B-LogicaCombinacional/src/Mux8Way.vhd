@@ -1,8 +1,8 @@
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 
-entity Or8Way is
-	port (
+entity Mux8Way is
+	port ( 
 			a:   in  STD_LOGIC;
 			b:   in  STD_LOGIC;
 			c:   in  STD_LOGIC;
@@ -11,13 +11,12 @@ entity Or8Way is
 			f:   in  STD_LOGIC;
 			g:   in  STD_LOGIC;
 			h:   in  STD_LOGIC;
+			sel: in  STD_LOGIC_VECTOR(2 downto 0);
 			q:   out STD_LOGIC);
 end entity;
---check
-architecture arch of Or8Way is
-begin
 
-q <= a or b or c or d or e or f or g or h;
+architecture arch of Mux8Way is
+begin
 
 
 end architecture;
