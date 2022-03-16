@@ -10,5 +10,5 @@ end entity;
 architecture arch of circuito is
 
 begin
-
+x <= ((B)and(A)and(not(((B and C)or(not A)))));
 end architecture;
