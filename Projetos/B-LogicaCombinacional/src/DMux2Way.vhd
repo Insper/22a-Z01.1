@@ -13,4 +13,5 @@ architecture rtl of DMux2Way is
 begin
 	q0 <= a and (not sel); 
 	q1 <= a and sel;
+	
 end architecture;
