@@ -14,7 +14,7 @@ end entity;
 architecture arch of Mux4Way16 is
 begin
 
-q <= a when sel = "00" else
+q <= a when sel = "00" else --check
 	b when sel = "01" else
 	c when sel = "10" else
 	d when sel = "11" else "0000000000000000";

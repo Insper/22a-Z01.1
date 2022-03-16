@@ -9,7 +9,7 @@ entity Nand2 is
    );
 end entity;
 
-architecture rtl of Nand2 is
+architecture rtl of Nand2 is --check
 begin
 
 end rtl;
