@@ -11,5 +11,12 @@ architecture arch of impressora is
 
 begin
 
+x <= '1' when (not SW1 = '1' AND not SW2 = '1') else 
+     '1' when (not SW2 = '1' AND not SW3 = '1') else 
+     '1' when (not SW1 = '1' AND not SW3 = '1') else 
+     '1' when (not SW2 = '1' AND not SW4 = '1') else 
+     '1' when (not SW3 = '1' AND not SW4 = '1') else 
+     '0';                                    -- enable desativado
+
 
 end architecture;
