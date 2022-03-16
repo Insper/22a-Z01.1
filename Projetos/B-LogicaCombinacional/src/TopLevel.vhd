@@ -20,16 +20,21 @@ use work.all;
 entity TopLevel is
 	port(
 		CLOCK_50 : in  std_logic;
-		SW       : in  std_logic_vector(9 downto 0);
-		LEDR     : out std_logic_vector(9 downto 0)
-	);
+		SW       : in  std_logic_vector(3 downto 0);
+		HEX0     : out std_logic_vector(6 downto 0)
+);
 end entity;
 
 ----------------------------
 -- Implementacao do bloco --
 ----------------------------
 architecture rtl of TopLevel is
-
+	
+	component sevenSeg is
+		port (
+			bcd : in  STD_LOGIC_VECTOR(3 downto 0);
+			leds : out STD_LOGIC_VECTOR(6 downto 0));
+	end component;
 --------------
 -- signals
 --------------
@@ -38,6 +43,10 @@ architecture rtl of TopLevel is
 -- implementacao
 ---------------
 begin
-          
+	u1 : sevenSeg port map(
+		bcd => SW,
+		leds => HEX0
+);
 
 end rtl;
+
