@@ -1,43 +1,16 @@
---
--- Elementos de Sistemas - Aula 5 - Logica Combinacional
--- Rafael . Corsi @ insper . edu . br
---
--- Arquivo exemplo para acionar os LEDs e ler os bottoes
--- da placa DE0-CV utilizada no curso de elementos de
--- sistemas do 3s da eng. da computacao
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
 
-----------------------------
--- Bibliotecas ieee       --
-----------------------------
-library ieee;
-use ieee.std_logic_1164.all;
-use ieee.numeric_std.all;
-use work.all;
-
-----------------------------
--- Entrada e saidas do bloco
-----------------------------
 entity TopLevel is
-	port(
-		CLOCK_50 : in  std_logic;
-		SW       : in  std_logic_vector(9 downto 0);
-		LEDR     : out std_logic_vector(9 downto 0)
-	);
+	port ( 
+			a:    in  STD_LOGIC_VECTOR(15 downto 0);   -- input vector
+			dir:  in  std_logic;                       -- 0=>left 1=>right
+			size: in  std_logic_vector(3 downto 0);    -- shift amount
+			q:    out STD_LOGIC_VECTOR(15 downto 0));  -- output vector (shifted)
 end entity;
 
-----------------------------
--- Implementacao do bloco --
-----------------------------
 architecture rtl of TopLevel is
-
---------------
--- signals
---------------
-
----------------
--- implementacao
----------------
 begin
-	LEDR(0) <= SW(0);
 
-end rtl;
+end architecture;
+
