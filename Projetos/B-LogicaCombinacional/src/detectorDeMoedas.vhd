@@ -10,5 +10,9 @@ end entity;
 architecture arch of detectorDeMoedas is
 
 begin
+    cents <= "11001" when Q else
+        "01010" when D else
+            "00101" when N else
+                "00000";
 
 end architecture;
