@@ -15,11 +15,13 @@ architecture rtl of DMux4Way is
 	begin
 		process(a,sel)
 		begin
+
 		case sel is
 		  when "00" => q0 <= a; q1 <= '0'; q2 <= '0'; q3 <='0';
 		  when "01" => q1 <= a; q0 <= '0'; q2 <= '0'; q3 <='0';
 		  when "10" => q2 <= a; q0 <= '0'; q1 <= '0'; q3 <='0';
 		  when others => q3 <= a;  q0 <= '0'; q1 <= '0'; q2 <='0';
+
 		end case;
 		end process;
 end architecture;
