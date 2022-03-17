@@ -15,3 +15,6 @@ $ ./updateZ01tools.sh
 $ # instale as dependencias python
 $ pip install -r requirements.txt --user
 ```
+## Projeto B - Vídeos
+* Conceito B - https://youtu.be/Rf7hg6IlHic
+* Conceito A - https://youtu.be/i5uS0Y4OXUg
