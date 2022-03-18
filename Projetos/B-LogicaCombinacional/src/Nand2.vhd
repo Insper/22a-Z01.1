@@ -9,7 +9,9 @@ entity Nand2 is
    );
 end entity;
 
+
 architecture rtl of Nand2 is
 begin
    q <=  not (a and b);
+
 end rtl;
