@@ -21,7 +21,7 @@ architecture rtl of FullAdder is
 
 begin
   -- Implementação vem aqui!
-  soma <= ((a and not(c) and not(b)) or (not(a) and c and not(b)) or (not(a) and not(C) and b) or (a and b and c) );
+  soma <= ((a and not(c) and not(b)) or (not(a) and c and not(b)) or (not(a) and not(C) and b) or (a and b and c) ); -- A + B + C; "check board configuration", vide video na página de aritmetica binaria
 
   vaium <= ((a and b) or (a and c) or (c and b));
 
