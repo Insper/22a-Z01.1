@@ -20,7 +20,8 @@ architecture rtl of zerador16 is
 
 begin
   -- Implementação vem aqui!
-y <= a when (z = '0'),
-     "0000000000000000" when (z = '1');
+
+ with z select
+    y<= a when '0', "0000000000000000" when others;
 
 end architecture;
