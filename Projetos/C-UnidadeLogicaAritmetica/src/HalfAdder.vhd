@@ -21,7 +21,7 @@ architecture rtl of HalfAdder is
 
 begin
   -- Implementação vem aqui!
-  soma <= ((a and not(b)) or (not(a) and b));
+  soma <= ((a and not(b)) or (not(a) and b)); -- XOR
   vaium <= (a and b);
 
 end architecture;
