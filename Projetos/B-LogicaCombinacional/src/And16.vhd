@@ -8,8 +8,11 @@ entity And16 is
 			q:   out STD_LOGIC_VECTOR(15 downto 0));
 end entity;
 
+--check
 architecture arch of And16 is
 begin
+
+q <= a and b;
 
 
 end architecture;

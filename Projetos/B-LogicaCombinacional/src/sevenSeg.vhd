@@ -19,7 +19,7 @@ begin
 	"1111000" when bcd = "0111" else
 	"0000000" when bcd = "1000" else
 	"0011000" when bcd = "1001" else 
-	"0000100" when bcd = "1010" else
+	"0001000" when bcd = "1010" else
 	"0000011" when bcd = "1011" else
 	"1000110" when bcd = "1100" else
 	"0100001" when bcd = "1101" else
