@@ -21,5 +21,8 @@ architecture rtl of FullAdder is
 
 begin
   -- Implementação vem aqui!
+  soma <= ((a and not(c) and not(b)) or (not(a) and c and not(b)) or (not(a) and not(C) and b) or (a and b and c) );
+
+  vaium <= ((a and b) or (a and c) or (c and b));
 
 end architecture;
