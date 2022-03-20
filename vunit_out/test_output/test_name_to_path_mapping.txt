@@ -1,0 +1,8 @@
+lib.tb_add16.all_a8ad0313227e6e4cf7e1113b280dcedad766e677 lib.tb_add16.all
+lib.tb_alu.all_776e1fb2296393bd00b7230172cd9214b3490146 lib.tb_alu.all
+lib.tb_comparador16.all_53751435b7028e85b030e707046b124bb6cda23d lib.tb_comparador16.all
+lib.tb_fulladder.all_06db0ee602f16124af31f0ebe6776ffb6cee0ad1 lib.tb_fulladder.all
+lib.tb_halfadder.all_2a9f30afe01faed90d95ca9cf2cee2354e984c4c lib.tb_halfadder.all
+lib.tb_inc16.all_2eeb55b34fbd7b5d1c8fa04094fa8e04485ace6a lib.tb_inc16.all
+lib.tb_inversor16.all_cf124a04e75272dadd8625f1aac52b48d9b344c6 lib.tb_inversor16.all
+lib.tb_zerador16.all_45f7988ffd33f2e3938d5b4b7eee25de1517305e lib.tb_zerador16.all
