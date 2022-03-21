@@ -17,8 +17,13 @@ architecture rtl of inversor16 is
   -- Aqui declaramos sinais (fios auxiliares)
   -- e componentes (outros módulos) que serao
   -- utilizados nesse modulo.
-
+  
+	signal aux: STD_LOGIC_VECTOR(15 downto 0);
+	
 begin
   -- Implementação vem aqui!
+  
+	aux <= not a;
+	y <= aux when z = '1' else a;
 
 end architecture;
