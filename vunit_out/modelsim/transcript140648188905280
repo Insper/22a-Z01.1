@@ -1,0 +1,9 @@
+# do /home/borg/.local/lib/python3.8/site-packages/vunit/sim_if/tcl_read_eval_loop.tcl
+# vsim -modelsimini /home/borg/Desktop/-Z01.1-EdnaldoPereira/vunit_out/modelsim/modelsim.ini -wlf /home/borg/Desktop/-Z01.1-EdnaldoPereira/vunit_out/test_output/lib.tb_inc16.all_2eeb55b34fbd7b5d1c8fa04094fa8e04485ace6a/modelsim/vsim.wlf -quiet -t ps -onfinish stop lib.tb_inc16(tb) -L vunit_lib -L lib -g/tb_inc16/runner_cfg="active python runner : true,enabled_test_cases : ,output path : /home/borg/Desktop/-Z01.1-EdnaldoPereira/vunit_out/test_output/lib.tb_inc16.all_2eeb55b34fbd7b5d1c8fa04094fa8e04485ace6a/,tb path : /home/borg/Desktop/-Z01.1-EdnaldoPereira/Projetos/C-UnidadeLogicaAritmetica/testes/,use_color : true" 
+# Start time: 22:24:48 on Mar 20,2022
+# ** Fatal: (vsim-3817) Port "a" of entity "fulladder" is not in the component being instantiated.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_inc16/mapping/A1/f1 File: /home/borg/Desktop/-Z01.1-EdnaldoPereira/Projetos/C-UnidadeLogicaAritmetica/src/FullAdder.vhd Line: 12
+# FATAL ERROR while loading design
+# Error loading design
+# End time: 22:24:48 on Mar 20,2022, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0

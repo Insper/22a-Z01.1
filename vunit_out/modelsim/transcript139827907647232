@@ -1,0 +1,65 @@
+# do /home/borg/.local/lib/python3.8/site-packages/vunit/sim_if/tcl_read_eval_loop.tcl
+# vsim -modelsimini /home/borg/Desktop/-Z01.1-EdnaldoPereira/vunit_out/modelsim/modelsim.ini -wlf /home/borg/Desktop/-Z01.1-EdnaldoPereira/vunit_out/test_output/lib.tb_add16.all_a8ad0313227e6e4cf7e1113b280dcedad766e677/modelsim/vsim.wlf -quiet -t ps -onfinish stop lib.tb_add16(tb) -L vunit_lib -L lib -g/tb_add16/runner_cfg="active python runner : true,enabled_test_cases : ,output path : /home/borg/Desktop/-Z01.1-EdnaldoPereira/vunit_out/test_output/lib.tb_add16.all_a8ad0313227e6e4cf7e1113b280dcedad766e677/,tb path : /home/borg/Desktop/-Z01.1-EdnaldoPereira/Projetos/C-UnidadeLogicaAritmetica/testes/,use_color : true" 
+# Start time: 22:13:18 on Mar 20,2022
+# ** Warning: Design size of 21829 statements exceeds ModelSim-Intel FPGA Starter Edition recommended capacity.
+# Expect performance to be adversely affected.
+# ** Error: Falha em teste: 1
+#    Time: 200 ps  Iteration: 0  Process: /tb_add16/main File: /home/borg/Desktop/-Z01.1-EdnaldoPereira/Projetos/C-UnidadeLogicaAritmetica/testes/tb_Add16.vhd
+# Break in Process main at /home/borg/Desktop/-Z01.1-EdnaldoPereira/Projetos/C-UnidadeLogicaAritmetica/testes/tb_Add16.vhd line 39
+# Stopped at /home/borg/Desktop/-Z01.1-EdnaldoPereira/Projetos/C-UnidadeLogicaAritmetica/testes/tb_Add16.vhd line 39
+# 
+# Test Run Failed!
+# 
+# Stack trace result from 'tb' command
+#  /home/borg/Desktop/-Z01.1-EdnaldoPereira/Projetos/C-UnidadeLogicaAritmetica/testes/tb_Add16.vhd 39 return [address 0xf6d47637] Process main
+# 
+# 
+# Surrounding code from 'see' command
+#   34 :     test_runner_setup(runner, runner_cfg);
+#   35 : 
+#   36 :       -- Teste: 1
+#   37 :       inA <= "0000000000000000"; inB<= "0000000000000001";
+#   38 :       wait for 200 ps;
+# ->39 :       assert(outQ = "0000000000000001")  report "Falha em teste: 1" severity error;
+#   40 : 
+#   41 :       -- Teste: 2
+#   42 :       inA <= "0000000000000000"; inB<= "1111111111111111";
+#   43 :       wait for 200 ps;
+# 
+# End time: 22:13:18 on Mar 20,2022, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 1
+# vsim -modelsimini /home/borg/Desktop/-Z01.1-EdnaldoPereira/vunit_out/modelsim/modelsim.ini -wlf /home/borg/Desktop/-Z01.1-EdnaldoPereira/vunit_out/test_output/lib.tb_alu.all_776e1fb2296393bd00b7230172cd9214b3490146/modelsim/vsim.wlf -quiet -t ps -onfinish stop lib.tb_alu(tb) -L vunit_lib -L lib -g/tb_alu/runner_cfg="active python runner : true,enabled_test_cases : ,output path : /home/borg/Desktop/-Z01.1-EdnaldoPereira/vunit_out/test_output/lib.tb_alu.all_776e1fb2296393bd00b7230172cd9214b3490146/,tb path : /home/borg/Desktop/-Z01.1-EdnaldoPereira/Projetos/C-UnidadeLogicaAritmetica/testes/,use_color : true" 
+# Start time: 22:13:18 on Mar 20,2022
+# ** Warning: Design size of 21727 statements exceeds ModelSim-Intel FPGA Starter Edition recommended capacity.
+# Expect performance to be adversely affected.
+# ** Warning: (vsim-8683) Uninitialized out port /tb_alu/mapping/zr has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /tb_alu/mapping/ng has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /tb_alu/mapping/saida(15 downto 0) has no driver.
+# This port will contribute value (UUUUUUUUUUUUUUUU) to the signal network.
+# ** Error: Falha em teste: 1
+#    Time: 100 ps  Iteration: 0  Process: /tb_alu/main File: /home/borg/Desktop/-Z01.1-EdnaldoPereira/Projetos/C-UnidadeLogicaAritmetica/testes/tb_ALU.vhd
+# Break in Process main at /home/borg/Desktop/-Z01.1-EdnaldoPereira/Projetos/C-UnidadeLogicaAritmetica/testes/tb_ALU.vhd line 60
+# Stopped at /home/borg/Desktop/-Z01.1-EdnaldoPereira/Projetos/C-UnidadeLogicaAritmetica/testes/tb_ALU.vhd line 60
+# 
+# Test Run Failed!
+# 
+# Stack trace result from 'tb' command
+#  /home/borg/Desktop/-Z01.1-EdnaldoPereira/Projetos/C-UnidadeLogicaAritmetica/testes/tb_ALU.vhd 60 return [address 0xf6d4770b] Process main
+# 
+# 
+# Surrounding code from 'see' command
+#   55 : 
+#   56 :       -- Teste: 1
+#   57 :       inX <= "0000000000000000"; inY <= "1111111111111111";
+#   58 :       inZX <= '1'; inNX <= '0'; inZY <= '1'; inNY <= '0'; inF <= '1'; inNO <= '0';
+#   59 :       wait for 100 ps;
+# ->60 :       assert(outZR = '1' and outNG = '0' and outSaida= "0000000000000000")  report "Falha em teste: 1" severity error;
+#   61 : 
+#   62 :       -- Teste: 2
+#   63 :       inX <= "0000000000000000"; inY <= "1111111111111111";
+#   64 :       inZX <= '1'; inNX <= '1'; inZY <= '1'; inNY <= '1'; inF <= '1'; inNO <= '1';
+# 
+# End time: 22:13:18 on Mar 20,2022, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 4
