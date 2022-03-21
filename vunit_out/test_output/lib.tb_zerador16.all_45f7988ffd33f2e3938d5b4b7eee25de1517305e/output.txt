@@ -1,7 +1,7 @@
-# End time: 18:03:57 on Mar 20,2022, Elapsed time: 0:00:01
-# Errors: 1, Warnings: 1
+# End time: 23:06:51 on Mar 20,2022, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 1
 # vsim -modelsimini /home/borg/Desktop/-Z01.1-EdnaldoPereira/vunit_out/modelsim/modelsim.ini -wlf /home/borg/Desktop/-Z01.1-EdnaldoPereira/vunit_out/test_output/lib.tb_zerador16.all_45f7988ffd33f2e3938d5b4b7eee25de1517305e/modelsim/vsim.wlf -quiet -t ps -onfinish stop lib.tb_zerador16(tb) -L vunit_lib -L lib -g/tb_zerador16/runner_cfg="active python runner : true,enabled_test_cases : ,output path : /home/borg/Desktop/-Z01.1-EdnaldoPereira/vunit_out/test_output/lib.tb_zerador16.all_45f7988ffd33f2e3938d5b4b7eee25de1517305e/,tb path : /home/borg/Desktop/-Z01.1-EdnaldoPereira/Projetos/C-UnidadeLogicaAritmetica/testes/,use_color : true" 
-# Start time: 18:03:57 on Mar 20,2022
+# Start time: 23:06:51 on Mar 20,2022
 # ** Warning: Design size of 21382 statements exceeds ModelSim-Intel FPGA Starter Edition recommended capacity.
 # Expect performance to be adversely affected.
 # ** Warning: (vsim-8683) Uninitialized out port /tb_zerador16/ze16/y(15 downto 0) has no driver.
@@ -14,7 +14,7 @@
 # Test Run Failed!
 # 
 # Stack trace result from 'tb' command
-#  /home/borg/Desktop/-Z01.1-EdnaldoPereira/Projetos/C-UnidadeLogicaAritmetica/testes/tb_zerador16.vhd 45 return [address 0xf6d497c9] Process main
+#  /home/borg/Desktop/-Z01.1-EdnaldoPereira/Projetos/C-UnidadeLogicaAritmetica/testes/tb_zerador16.vhd 45 return [address 0xf6d477c9] Process main
 # 
 # 
 # Surrounding code from 'see' command

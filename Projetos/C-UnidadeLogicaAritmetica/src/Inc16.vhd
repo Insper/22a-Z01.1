@@ -29,7 +29,7 @@ architecture rtl of Inc16 is
   end component;
   signal b : STD_LOGIC_VECTOR(15 downto 0);
 begin
-  b(0) <= '1';
+  b <= "0000000000000001";
   A1: Add16 port map(
     a => a,
     b => b,

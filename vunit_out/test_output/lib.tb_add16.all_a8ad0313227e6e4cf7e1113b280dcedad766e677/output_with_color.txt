@@ -1,27 +1,6 @@
 # vsim -modelsimini /home/borg/Desktop/-Z01.1-EdnaldoPereira/vunit_out/modelsim/modelsim.ini -wlf /home/borg/Desktop/-Z01.1-EdnaldoPereira/vunit_out/test_output/lib.tb_add16.all_a8ad0313227e6e4cf7e1113b280dcedad766e677/modelsim/vsim.wlf -quiet -t ps -onfinish stop lib.tb_add16(tb) -L vunit_lib -L lib -g/tb_add16/runner_cfg="active python runner : true,enabled_test_cases : ,output path : /home/borg/Desktop/-Z01.1-EdnaldoPereira/vunit_out/test_output/lib.tb_add16.all_a8ad0313227e6e4cf7e1113b280dcedad766e677/,tb path : /home/borg/Desktop/-Z01.1-EdnaldoPereira/Projetos/C-UnidadeLogicaAritmetica/testes/,use_color : true" 
-# Start time: 18:03:56 on Mar 20,2022
-# ** Warning: Design size of 21836 statements exceeds ModelSim-Intel FPGA Starter Edition recommended capacity.
+# Start time: 23:06:50 on Mar 20,2022
+# ** Warning: Design size of 21830 statements exceeds ModelSim-Intel FPGA Starter Edition recommended capacity.
 # Expect performance to be adversely affected.
-# ** Error: Falha em teste: 1
-#    Time: 200 ps  Iteration: 0  Process: /tb_add16/main File: /home/borg/Desktop/-Z01.1-EdnaldoPereira/Projetos/C-UnidadeLogicaAritmetica/testes/tb_Add16.vhd
-# Break in Process main at /home/borg/Desktop/-Z01.1-EdnaldoPereira/Projetos/C-UnidadeLogicaAritmetica/testes/tb_Add16.vhd line 39
-# Stopped at /home/borg/Desktop/-Z01.1-EdnaldoPereira/Projetos/C-UnidadeLogicaAritmetica/testes/tb_Add16.vhd line 39
-# 
-# Test Run Failed!
-# 
-# Stack trace result from 'tb' command
-#  /home/borg/Desktop/-Z01.1-EdnaldoPereira/Projetos/C-UnidadeLogicaAritmetica/testes/tb_Add16.vhd 39 return [address 0xf6d49637] Process main
-# 
-# 
-# Surrounding code from 'see' command
-#   34 :     test_runner_setup(runner, runner_cfg);
-#   35 : 
-#   36 :       -- Teste: 1
-#   37 :       inA <= "0000000000000000"; inB<= "0000000000000001";
-#   38 :       wait for 200 ps;
-# ->39 :       assert(outQ = "0000000000000001")  report "Falha em teste: 1" severity error;
-#   40 : 
-#   41 :       -- Teste: 2
-#   42 :       inA <= "0000000000000000"; inB<= "1111111111111111";
-#   43 :       wait for 200 ps;
-# 
+# Break in Subprogram stop at /home/borg/.local/lib/python3.8/site-packages/vunit/vhdl/core/src/stop_body_2008p.vhd line 13
+# Stopped at /home/borg/.local/lib/python3.8/site-packages/vunit/vhdl/core/src/stop_body_2008p.vhd line 13
