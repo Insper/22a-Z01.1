@@ -48,15 +48,15 @@ architecture  rtl OF alu is
 
 	component zerador16 IS
 		port(z   : in STD_LOGIC;
-			 a   : in STD_LOGIC_VECTOR(15 downto 0);
-			 y   : out STD_LOGIC_VECTOR(15 downto 0)
+			   a   : in STD_LOGIC_VECTOR(15 downto 0);
+			   y   : out STD_LOGIC_VECTOR(15 downto 0)
 			);
 	end component;
 
 	component inversor16 is
 		port(z   : in STD_LOGIC;
-			 a   : in STD_LOGIC_VECTOR(15 downto 0);
-			 y   : out STD_LOGIC_VECTOR(15 downto 0)
+			   a   : in STD_LOGIC_VECTOR(15 downto 0);
+			   y   : out STD_LOGIC_VECTOR(15 downto 0)
 		);
 	end component;
 
@@ -93,9 +93,72 @@ architecture  rtl OF alu is
 		);
 	end component;
 
-   SIGNAL zxout,zyout,nxout,nyout,andout,adderout,muxout,precomp: std_logic_vector(15 downto 0);
+   SIGNAL
+	 		zxout,
+			zyout,
+			nxout,
+			nyout,
+			andout,
+			adderout,
+			muxout,
+			precomp: std_logic_vector(15 downto 0);
 
 begin
   -- Implementação vem aqui!
+
+	zeradorx: zerador16 port map(
+		z => zx,
+		a => x,
+		y => zxout
+	);
+
+	zeradory: zerador16 port map(
+		z => zy,
+		a => y,
+		y => zyout
+	);
+
+	inversorx: inversor16 port map(
+		z => nx,
+		a => zxout,
+		y => nxout
+	);
+
+	inversory: inversor16 port map(
+		z => ny,
+		a => zyout,
+		y => nyout
+	);
+
+	adderxy: Add16 port map(
+		a => nxout,
+		b => nyout,
+		q => adderout
+	);
+
+	andxy: And16 port map(
+		a => nxout,
+		b => nyout,
+		q => andout
+	);
+
+	mux: Mux16 port map(
+		a => andout,
+		b => adderout,
+		sel => f,
+		q => muxout
+	);
+
+	inversormux: inversor16 port map(
+		z => no,
+		a => muxout,
+		y => saida
+	);
+
+	comparador: comparador16 port map(
+		a => saida,
+		zr => zr,
+		ng => ng
+	);
 
 end architecture;
