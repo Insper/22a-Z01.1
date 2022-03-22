@@ -130,13 +130,13 @@ begin
 		y => nyout
 	);
 
-	adder: Add16 port map(
+	adderxy: Add16 port map(
 		a => nxout,
 		b => nyout,
 		q => adderout
 	);
 
-	and16: And16 port map(
+	andxy: And16 port map(
 		a => nxout,
 		b => nyout,
 		q => andout
