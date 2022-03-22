@@ -107,25 +107,25 @@ begin
   -- Implementação vem aqui!
 
 	zeradorx: zerador16 port map(
-		z -> zx,
+		z => zx,
 		a => x,
 		y => zxout
 	);
 
 	zeradory: zerador16 port map(
-		z -> zy,
+		z => zy,
 		a => y,
 		y => zyout
 	);
 
 	inversorx: inversor16 port map(
-		z -> nx,
+		z => nx,
 		a => zxout,
 		y => nxout
 	);
 
 	inversory: inversor16 port map(
-		z -> ny,
+		z => ny,
 		a => zyout,
 		y => nyout
 	);
@@ -136,7 +136,7 @@ begin
 		q => adderout
 	);
 
-	and: And16 port map(
+	and16: And16 port map(
 		a => nxout,
 		b => nyout,
 		q => andout
@@ -150,7 +150,7 @@ begin
 	);
 
 	inversormux: inversor16 port map(
-		z -> no,
+		z => no,
 		a => muxout,
 		y => saida
 	);
@@ -160,5 +160,5 @@ begin
 		zr => zr,
 		ng => ng
 	);
-	
+
 end architecture;
