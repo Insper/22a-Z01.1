@@ -54,7 +54,7 @@ Ealu
 Z14 w1648058489
 R2
 R3
-!i122 72
+!i122 73
 R0
 Z15 8/home/borg/Desktop/-Z01.1-EdnaldoPereira/Projetos/C-UnidadeLogicaAritmetica/src/ALU.vhd
 Z16 F/home/borg/Desktop/-Z01.1-EdnaldoPereira/Projetos/C-UnidadeLogicaAritmetica/src/ALU.vhd
@@ -64,9 +64,9 @@ VelPHld:dETW4X>5>L4eYz0
 !s100 ?lCgWR`hmOQWeKm`TFQ@C3
 R7
 33
-!s110 1648058503
+!s110 1648059173
 !i10b 1
-!s108 1648058503.000000
+!s108 1648059173.000000
 Z17 !s90 -quiet|-modelsimini|/home/borg/Desktop/-Z01.1-EdnaldoPereira/vunit_out/modelsim/modelsim.ini|-2008|-work|lib|/home/borg/Desktop/-Z01.1-EdnaldoPereira/Projetos/C-UnidadeLogicaAritmetica/src/ALU.vhd|
 Z18 !s107 /home/borg/Desktop/-Z01.1-EdnaldoPereira/Projetos/C-UnidadeLogicaAritmetica/src/ALU.vhd|
 !i113 1
