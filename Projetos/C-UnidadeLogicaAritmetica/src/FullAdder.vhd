@@ -20,6 +20,6 @@ architecture rtl of FullAdder is
   -- utilizados nesse modulo.
 
 begin
-  -- Implementação vem aqui!
+    
 
 end architecture;
