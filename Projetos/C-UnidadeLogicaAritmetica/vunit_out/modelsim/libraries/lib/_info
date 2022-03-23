@@ -1,0 +1,363 @@
+m255
+K4
+z2
+!s11e vcom 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 d/home/borg/Desktop/insper/elementos/Z01.1-Fenix/Projetos/C-UnidadeLogicaAritmetica
+Eadd16
+Z1 w1648061630
+Z2 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z3 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+!i122 7
+R0
+Z4 8/home/borg/Desktop/insper/elementos/Z01.1-Fenix/Projetos/C-UnidadeLogicaAritmetica/src/Add16.vhd
+Z5 F/home/borg/Desktop/insper/elementos/Z01.1-Fenix/Projetos/C-UnidadeLogicaAritmetica/src/Add16.vhd
+l0
+Z6 L11 1
+V^@FJVKXm8?U0L69OkeYXZ1
+!s100 SiSIIDRe2L<Y`4Mn=<Q<i1
+Z7 OV;C;2020.1;71
+33
+Z8 !s110 1648061679
+!i10b 1
+Z9 !s108 1648061679.000000
+Z10 !s90 -quiet|-modelsimini|/home/borg/Desktop/insper/elementos/Z01.1-Fenix/Projetos/C-UnidadeLogicaAritmetica/vunit_out/modelsim/modelsim.ini|-2008|-work|lib|/home/borg/Desktop/insper/elementos/Z01.1-Fenix/Projetos/C-UnidadeLogicaAritmetica/src/Add16.vhd|
+Z11 !s107 /home/borg/Desktop/insper/elementos/Z01.1-Fenix/Projetos/C-UnidadeLogicaAritmetica/src/Add16.vhd|
+!i113 1
+Z12 o-quiet -2008 -work lib
+Z13 tExplicit 1 CvgOpt 0
+Artl
+R2
+R3
+DEx4 work 5 add16 0 22 ^@FJVKXm8?U0L69OkeYXZ1
+!i122 7
+l33
+L19 130
+V64ZWozgQZ:CgO_=TX<]4k2
+!s100 WKVnj4J=U9X01g[^Z[JgQ2
+R7
+33
+R8
+!i10b 1
+R9
+R10
+R11
+!i113 1
+R12
+R13
+Ealu
+w1648074533
+R2
+R3
+!i122 9
+R0
+8/home/borg/Desktop/insper/elementos/Z01.1-Fenix/Projetos/C-UnidadeLogicaAritmetica/src/ALU.vhd
+F/home/borg/Desktop/insper/elementos/Z01.1-Fenix/Projetos/C-UnidadeLogicaAritmetica/src/ALU.vhd
+l0
+L29 1
+VMT^L8DV<ch`z60KDB@OUg0
+!s100 ;H:E>8hji@:aE]F93AJU@0
+R7
+33
+!s110 1648074600
+!i10b 1
+!s108 1648074599.000000
+!s90 -quiet|-modelsimini|/home/borg/Desktop/insper/elementos/Z01.1-Fenix/Projetos/C-UnidadeLogicaAritmetica/vunit_out/modelsim/modelsim.ini|-2008|-work|lib|/home/borg/Desktop/insper/elementos/Z01.1-Fenix/Projetos/C-UnidadeLogicaAritmetica/src/ALU.vhd|
+!s107 /home/borg/Desktop/insper/elementos/Z01.1-Fenix/Projetos/C-UnidadeLogicaAritmetica/src/ALU.vhd|
+!i113 1
+R12
+R13
+Ecomparador16
+R1
+R2
+R3
+!i122 2
+R0
+Z14 8/home/borg/Desktop/insper/elementos/Z01.1-Fenix/Projetos/C-UnidadeLogicaAritmetica/src/comparador16.vhd
+Z15 F/home/borg/Desktop/insper/elementos/Z01.1-Fenix/Projetos/C-UnidadeLogicaAritmetica/src/comparador16.vhd
+l0
+L8 1
+VbbjmeK1BQ4Kb7jBbI77Rg2
+!s100 6Q613_:GLMIK913:C5DoD3
+R7
+33
+R8
+!i10b 1
+R9
+Z16 !s90 -quiet|-modelsimini|/home/borg/Desktop/insper/elementos/Z01.1-Fenix/Projetos/C-UnidadeLogicaAritmetica/vunit_out/modelsim/modelsim.ini|-2008|-work|lib|/home/borg/Desktop/insper/elementos/Z01.1-Fenix/Projetos/C-UnidadeLogicaAritmetica/src/comparador16.vhd|
+Z17 !s107 /home/borg/Desktop/insper/elementos/Z01.1-Fenix/Projetos/C-UnidadeLogicaAritmetica/src/comparador16.vhd|
+!i113 1
+R12
+R13
+Artl
+R2
+R3
+DEx4 work 12 comparador16 0 22 bbjmeK1BQ4Kb7jBbI77Rg2
+!i122 2
+l21
+L16 12
+V;KP1Zhe<JZR4`Bz_Mg2_`1
+!s100 an_6D=b0E=DTn6g>mD_j81
+R7
+33
+R8
+!i10b 1
+R9
+R16
+R17
+!i113 1
+R12
+R13
+Efulladder
+R1
+R2
+R3
+!i122 6
+R0
+Z18 8/home/borg/Desktop/insper/elementos/Z01.1-Fenix/Projetos/C-UnidadeLogicaAritmetica/src/FullAdder.vhd
+Z19 F/home/borg/Desktop/insper/elementos/Z01.1-Fenix/Projetos/C-UnidadeLogicaAritmetica/src/FullAdder.vhd
+l0
+Z20 L10 1
+V;RB>US:oiVgf@@2;ERnEW2
+!s100 ^oFEXWUb;T^9LUJXBGnJH2
+R7
+33
+R8
+!i10b 1
+R9
+Z21 !s90 -quiet|-modelsimini|/home/borg/Desktop/insper/elementos/Z01.1-Fenix/Projetos/C-UnidadeLogicaAritmetica/vunit_out/modelsim/modelsim.ini|-2008|-work|lib|/home/borg/Desktop/insper/elementos/Z01.1-Fenix/Projetos/C-UnidadeLogicaAritmetica/src/FullAdder.vhd|
+Z22 !s107 /home/borg/Desktop/insper/elementos/Z01.1-Fenix/Projetos/C-UnidadeLogicaAritmetica/src/FullAdder.vhd|
+!i113 1
+R12
+R13
+Artl
+R2
+R3
+DEx4 work 9 fulladder 0 22 ;RB>US:oiVgf@@2;ERnEW2
+!i122 6
+l22
+Z23 L17 10
+V9SS<gIf888cmIlc]T<;J<2
+!s100 ?HfJV9iMY?PcC38E]d<fm3
+R7
+33
+R8
+!i10b 1
+R9
+R21
+R22
+!i113 1
+R12
+R13
+Ehalfadder
+R1
+R2
+R3
+!i122 5
+R0
+Z24 8/home/borg/Desktop/insper/elementos/Z01.1-Fenix/Projetos/C-UnidadeLogicaAritmetica/src/HalfAdder.vhd
+Z25 F/home/borg/Desktop/insper/elementos/Z01.1-Fenix/Projetos/C-UnidadeLogicaAritmetica/src/HalfAdder.vhd
+l0
+R20
+VL0]G_0fS9^WC^L]C@X[Y^0
+!s100 h@?RhTGZ[QMJjM?>AnoBQ0
+R7
+33
+R8
+!i10b 1
+R9
+Z26 !s90 -quiet|-modelsimini|/home/borg/Desktop/insper/elementos/Z01.1-Fenix/Projetos/C-UnidadeLogicaAritmetica/vunit_out/modelsim/modelsim.ini|-2008|-work|lib|/home/borg/Desktop/insper/elementos/Z01.1-Fenix/Projetos/C-UnidadeLogicaAritmetica/src/HalfAdder.vhd|
+Z27 !s107 /home/borg/Desktop/insper/elementos/Z01.1-Fenix/Projetos/C-UnidadeLogicaAritmetica/src/HalfAdder.vhd|
+!i113 1
+R12
+R13
+Artl
+R2
+R3
+DEx4 work 9 halfadder 0 22 L0]G_0fS9^WC^L]C@X[Y^0
+!i122 5
+l22
+R23
+V=GnC9iCaJmd@dJ:zac02k1
+!s100 U;c81m[<_6kOG=QV>:hQ]3
+R7
+33
+R8
+!i10b 1
+R9
+R26
+R27
+!i113 1
+R12
+R13
+Einc16
+R1
+R2
+R3
+!i122 4
+R0
+Z28 8/home/borg/Desktop/insper/elementos/Z01.1-Fenix/Projetos/C-UnidadeLogicaAritmetica/src/Inc16.vhd
+Z29 F/home/borg/Desktop/insper/elementos/Z01.1-Fenix/Projetos/C-UnidadeLogicaAritmetica/src/Inc16.vhd
+l0
+R6
+VD3AKQz`PUcPHATeX2;0fE0
+!s100 3=3_WW7^?RHKT`;@mdEhE0
+R7
+33
+R8
+!i10b 1
+R9
+Z30 !s90 -quiet|-modelsimini|/home/borg/Desktop/insper/elementos/Z01.1-Fenix/Projetos/C-UnidadeLogicaAritmetica/vunit_out/modelsim/modelsim.ini|-2008|-work|lib|/home/borg/Desktop/insper/elementos/Z01.1-Fenix/Projetos/C-UnidadeLogicaAritmetica/src/Inc16.vhd|
+Z31 !s107 /home/borg/Desktop/insper/elementos/Z01.1-Fenix/Projetos/C-UnidadeLogicaAritmetica/src/Inc16.vhd|
+!i113 1
+R12
+R13
+Artl
+R2
+R3
+DEx4 work 5 inc16 0 22 D3AKQz`PUcPHATeX2;0fE0
+!i122 4
+l31
+L18 20
+Vnd?SNIWlW9[JN0iAPb8CA0
+!s100 Y3T;Ol>W2Q6h]XNR;K4m81
+R7
+33
+R8
+!i10b 1
+R9
+R30
+R31
+!i113 1
+R12
+R13
+Einversor16
+R1
+R2
+R3
+!i122 1
+R0
+Z32 8/home/borg/Desktop/insper/elementos/Z01.1-Fenix/Projetos/C-UnidadeLogicaAritmetica/src/inversor16.vhd
+Z33 F/home/borg/Desktop/insper/elementos/Z01.1-Fenix/Projetos/C-UnidadeLogicaAritmetica/src/inversor16.vhd
+l0
+L8 1
+VVkHiPDk`Ml2f_7V714<nn2
+!s100 :1_@R;4H?WBDlVmIlH2LX3
+R7
+33
+R8
+!i10b 1
+R9
+Z34 !s90 -quiet|-modelsimini|/home/borg/Desktop/insper/elementos/Z01.1-Fenix/Projetos/C-UnidadeLogicaAritmetica/vunit_out/modelsim/modelsim.ini|-2008|-work|lib|/home/borg/Desktop/insper/elementos/Z01.1-Fenix/Projetos/C-UnidadeLogicaAritmetica/src/inversor16.vhd|
+Z35 !s107 /home/borg/Desktop/insper/elementos/Z01.1-Fenix/Projetos/C-UnidadeLogicaAritmetica/src/inversor16.vhd|
+!i113 1
+R12
+R13
+Artl
+R2
+R3
+DEx4 work 10 inversor16 0 22 VkHiPDk`Ml2f_7V714<nn2
+!i122 1
+l21
+Z36 L16 9
+VaC5mj>2aO9:PYgEK_j<KE0
+!s100 ani7;9Me=0_nPXHzURzVY3
+R7
+33
+R8
+!i10b 1
+R9
+R34
+R35
+!i113 1
+R12
+R13
+Etoplevel
+R1
+Z37 DPx4 ieee 11 numeric_std 0 22 aU^R8eGcicLcUFIaBQSL>3
+R2
+R3
+!i122 3
+R0
+Z38 8/home/borg/Desktop/insper/elementos/Z01.1-Fenix/Projetos/C-UnidadeLogicaAritmetica/src/TopLevel.vhd
+Z39 F/home/borg/Desktop/insper/elementos/Z01.1-Fenix/Projetos/C-UnidadeLogicaAritmetica/src/TopLevel.vhd
+l0
+L19 1
+VRBYSGW`:[jM?4b?X=RdK92
+!s100 G7Hi;Tlj[8]ECNFZT_iDZ0
+R7
+33
+R8
+!i10b 1
+R9
+Z40 !s90 -quiet|-modelsimini|/home/borg/Desktop/insper/elementos/Z01.1-Fenix/Projetos/C-UnidadeLogicaAritmetica/vunit_out/modelsim/modelsim.ini|-2008|-work|lib|/home/borg/Desktop/insper/elementos/Z01.1-Fenix/Projetos/C-UnidadeLogicaAritmetica/src/TopLevel.vhd|
+Z41 !s107 /home/borg/Desktop/insper/elementos/Z01.1-Fenix/Projetos/C-UnidadeLogicaAritmetica/src/TopLevel.vhd|
+!i113 1
+R12
+R13
+Artl
+R37
+R2
+R3
+DEx4 work 8 toplevel 0 22 RBYSGW`:[jM?4b?X=RdK92
+!i122 3
+l58
+L29 34
+ViLP]G3Ez]2G=fJKgH7f0?0
+!s100 T7[9Z>iDZ7dI0Zi[CeGcY1
+R7
+33
+R8
+!i10b 1
+R9
+R40
+R41
+!i113 1
+R12
+R13
+Ezerador16
+R1
+R2
+R3
+!i122 0
+R0
+Z42 8/home/borg/Desktop/insper/elementos/Z01.1-Fenix/Projetos/C-UnidadeLogicaAritmetica/src/zerador16.vhd
+Z43 F/home/borg/Desktop/insper/elementos/Z01.1-Fenix/Projetos/C-UnidadeLogicaAritmetica/src/zerador16.vhd
+l0
+L8 1
+VnHjHn^^b>WhfhGLTYS^N30
+!s100 GFgmn:R<h:[ci`T3hP7g?0
+R7
+33
+R8
+!i10b 1
+Z44 !s108 1648061678.000000
+Z45 !s90 -quiet|-modelsimini|/home/borg/Desktop/insper/elementos/Z01.1-Fenix/Projetos/C-UnidadeLogicaAritmetica/vunit_out/modelsim/modelsim.ini|-2008|-work|lib|/home/borg/Desktop/insper/elementos/Z01.1-Fenix/Projetos/C-UnidadeLogicaAritmetica/src/zerador16.vhd|
+Z46 !s107 /home/borg/Desktop/insper/elementos/Z01.1-Fenix/Projetos/C-UnidadeLogicaAritmetica/src/zerador16.vhd|
+!i113 1
+R12
+R13
+Artl
+R2
+R3
+DEx4 work 9 zerador16 0 22 nHjHn^^b>WhfhGLTYS^N30
+!i122 0
+l21
+R36
+Vj7fU?FhKCBjgMG=@lhNI[1
+!s100 49o6HeKVzzJ<aiE@k^Cn_3
+R7
+33
+R8
+!i10b 1
+R44
+R45
+R46
+!i113 1
+R12
+R13
