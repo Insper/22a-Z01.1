@@ -107,7 +107,7 @@ begin
         z => zy,
         a => y,
         y => zyout
-    )
+    );
     invx : inversor16 port map(
         z => nx,
         a => zxout,
@@ -147,5 +147,5 @@ begin
 		zr => zr,
 		ng => ng
 	);
-	saida <= preocomp;
+	saida <= precomp;
 end architecture;
