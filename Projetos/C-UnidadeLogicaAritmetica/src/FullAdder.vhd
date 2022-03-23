@@ -20,6 +20,15 @@ architecture rtl of FullAdder is
   -- utilizados nesse modulo.
 
 begin
-  -- Implementação vem aqui!
+    soma <= '1' when (a and not(b) and not(c)) else
+      '1' when (not(a) and b and not(c)) else
+      '1' when (not(a) and not(b) and c) else
+      '1' when (a and b and c) else
+      '0';
+    vaium <= '1' when (a and b and not(c)) else
+      '1' when (not(a) and b and c) else
+      '1' when (a and not(b) and c) else
+      '1' when (a and b and c) else
+      '0';
 
 end architecture;

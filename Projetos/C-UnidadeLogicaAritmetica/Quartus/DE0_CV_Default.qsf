@@ -41,7 +41,7 @@
 # Project-Wide Assignments
 # ========================
 set_global_assignment -name ORIGINAL_QUARTUS_VERSION 13
-set_global_assignment -name LAST_QUARTUS_VERSION "18.1.0 Standard Edition"
+set_global_assignment -name LAST_QUARTUS_VERSION "20.1.0 Lite Edition"
 set_global_assignment -name PROJECT_CREATION_TIME_DATE "MON MAY  5 11:54:18 2014"
 set_global_assignment -name FLOW_ENABLE_RTL_VIEWER ON
 set_global_assignment -name SMART_RECOMPILE ON
@@ -564,4 +564,5 @@ set_global_assignment -name VHDL_FILE "../../C-LogicaCombinacional/src/DMux2Way.
 set_global_assignment -name VHDL_FILE "../../C-LogicaCombinacional/src/BarrelShifter16.vhd"
 set_global_assignment -name VHDL_FILE "../../C-LogicaCombinacional/src/BarrelShifter8.vhd"
 set_global_assignment -name VHDL_FILE "../../C-LogicaCombinacional/src/And16.vhd"
+
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
