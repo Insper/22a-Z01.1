@@ -145,7 +145,4 @@ architecture rtl of Add16 is
       c => carry(15),
       soma => q(15)
     );
-  
-
-
 end architecture;
