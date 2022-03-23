@@ -1,3 +1,10 @@
+# do /home/borg/.local/lib/python3.8/site-packages/vunit/sim_if/tcl_read_eval_loop.tcl
+# vsim -modelsimini /home/borg/Desktop/-Z01.1-EdnaldoPereira/vunit_out/modelsim/modelsim.ini -wlf /home/borg/Desktop/-Z01.1-EdnaldoPereira/vunit_out/test_output/lib.tb_fulladder.all_06db0ee602f16124af31f0ebe6776ffb6cee0ad1/modelsim/vsim.wlf -quiet -t ps -onfinish stop lib.tb_fulladder(tb) -L vunit_lib -L lib -g/tb_fulladder/runner_cfg="active python runner : true,enabled_test_cases : ,output path : /home/borg/Desktop/-Z01.1-EdnaldoPereira/vunit_out/test_output/lib.tb_fulladder.all_06db0ee602f16124af31f0ebe6776ffb6cee0ad1/,tb path : /home/borg/Desktop/-Z01.1-EdnaldoPereira/Projetos/C-UnidadeLogicaAritmetica/testes/,use_color : true" 
+# Start time: 14:01:50 on Mar 23,2022
+# ** Warning: Design size of 21442 statements exceeds ModelSim-Intel FPGA Starter Edition recommended capacity.
+# Expect performance to be adversely affected.
+# Break in Subprogram stop at /home/borg/.local/lib/python3.8/site-packages/vunit/vhdl/core/src/stop_body_2008p.vhd line 13
+# Stopped at /home/borg/.local/lib/python3.8/site-packages/vunit/vhdl/core/src/stop_body_2008p.vhd line 13
 # End time: 14:01:51 on Mar 23,2022, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 1
 # vsim -modelsimini /home/borg/Desktop/-Z01.1-EdnaldoPereira/vunit_out/modelsim/modelsim.ini -wlf /home/borg/Desktop/-Z01.1-EdnaldoPereira/vunit_out/test_output/lib.tb_alu.all_776e1fb2296393bd00b7230172cd9214b3490146/modelsim/vsim.wlf -quiet -t ps -onfinish stop lib.tb_alu(tb) -L vunit_lib -L lib -g/tb_alu/runner_cfg="active python runner : true,enabled_test_cases : ,output path : /home/borg/Desktop/-Z01.1-EdnaldoPereira/vunit_out/test_output/lib.tb_alu.all_776e1fb2296393bd00b7230172cd9214b3490146/,tb path : /home/borg/Desktop/-Z01.1-EdnaldoPereira/Projetos/C-UnidadeLogicaAritmetica/testes/,use_color : true" 
@@ -33,3 +40,5 @@
 #   63 :       inX <= "0000000000000000"; inY <= "1111111111111111";
 #   64 :       inZX <= '1'; inNX <= '1'; inZY <= '1'; inNY <= '1'; inF <= '1'; inNO <= '1';
 # 
+# End time: 14:01:51 on Mar 23,2022, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 4

@@ -1,3 +1,10 @@
+# do /home/borg/.local/lib/python3.8/site-packages/vunit/sim_if/tcl_read_eval_loop.tcl
+# vsim -modelsimini /home/borg/Desktop/-Z01.1-EdnaldoPereira/vunit_out/modelsim/modelsim.ini -wlf /home/borg/Desktop/-Z01.1-EdnaldoPereira/vunit_out/test_output/lib.tb_add16.all_a8ad0313227e6e4cf7e1113b280dcedad766e677/modelsim/vsim.wlf -quiet -t ps -onfinish stop lib.tb_add16(tb) -L vunit_lib -L lib -g/tb_add16/runner_cfg="active python runner : true,enabled_test_cases : ,output path : /home/borg/Desktop/-Z01.1-EdnaldoPereira/vunit_out/test_output/lib.tb_add16.all_a8ad0313227e6e4cf7e1113b280dcedad766e677/,tb path : /home/borg/Desktop/-Z01.1-EdnaldoPereira/Projetos/C-UnidadeLogicaAritmetica/testes/,use_color : true" 
+# Start time: 14:01:50 on Mar 23,2022
+# ** Warning: Design size of 21830 statements exceeds ModelSim-Intel FPGA Starter Edition recommended capacity.
+# Expect performance to be adversely affected.
+# Break in Subprogram stop at /home/borg/.local/lib/python3.8/site-packages/vunit/vhdl/core/src/stop_body_2008p.vhd line 13
+# Stopped at /home/borg/.local/lib/python3.8/site-packages/vunit/vhdl/core/src/stop_body_2008p.vhd line 13
 # End time: 14:01:51 on Mar 23,2022, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 1
 # vsim -modelsimini /home/borg/Desktop/-Z01.1-EdnaldoPereira/vunit_out/modelsim/modelsim.ini -wlf /home/borg/Desktop/-Z01.1-EdnaldoPereira/vunit_out/test_output/lib.tb_comparador16.all_53751435b7028e85b030e707046b124bb6cda23d/modelsim/vsim.wlf -quiet -t ps -onfinish stop lib.tb_comparador16(tb) -L vunit_lib -L lib -g/tb_comparador16/runner_cfg="active python runner : true,enabled_test_cases : ,output path : /home/borg/Desktop/-Z01.1-EdnaldoPereira/vunit_out/test_output/lib.tb_comparador16.all_53751435b7028e85b030e707046b124bb6cda23d/,tb path : /home/borg/Desktop/-Z01.1-EdnaldoPereira/Projetos/C-UnidadeLogicaAritmetica/testes/,use_color : true" 
@@ -8,7 +15,7 @@
 # This port will contribute value (U) to the signal network.
 # ** Warning: (vsim-8683) Uninitialized out port /tb_comparador16/cmp16/ng has no driver.
 # This port will contribute value (U) to the signal network.
-# ** Error: zr nÃ£o Ã© 0 quando a=0000
+# ** Error: zr não é 0 quando a=0000
 #    Time: 40 ns  Iteration: 1  Process: /tb_comparador16/main File: /home/borg/Desktop/-Z01.1-EdnaldoPereira/Projetos/C-UnidadeLogicaAritmetica/testes/tb_comparador16.vhd
 # Break in Process main at /home/borg/Desktop/-Z01.1-EdnaldoPereira/Projetos/C-UnidadeLogicaAritmetica/testes/tb_comparador16.vhd line 45
 # Stopped at /home/borg/Desktop/-Z01.1-EdnaldoPereira/Projetos/C-UnidadeLogicaAritmetica/testes/tb_comparador16.vhd line 45
@@ -25,9 +32,11 @@
 #   42 :     wait until clk'event and clk='1';
 #   43 :     a <= x"0000";
 #   44 :     wait until clk'event and clk='1';
-# ->45 :     assert(zr = '1') report "zr nÃ£o Ã© 0 quando a=0000";
-#   46 :     assert(ng = '0') report "ng nÃ£o Ã© 0 quando a=0000";
+# ->45 :     assert(zr = '1') report "zr não é 0 quando a=0000";
+#   46 :     assert(ng = '0') report "ng não é 0 quando a=0000";
 #   47 :     wait until clk'event and clk='1';
 #   48 :     a <= x"8000";
 #   49 :     wait until clk'event and clk='1';
 # 
+# End time: 14:01:51 on Mar 23,2022, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 3
