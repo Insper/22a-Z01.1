@@ -23,6 +23,8 @@
 -- se (out == 0) então zr = 1
 -- se (out <0) então ng = 1
 
+-- Ula conceito B
+
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 
@@ -33,7 +35,7 @@ entity ALU is
 			nx:    in STD_LOGIC;                     -- inverte a entrada x
 			zy:    in STD_LOGIC;                     -- zera a entrada y
 			ny:    in STD_LOGIC;                     -- inverte a entrada y
-			f:     in STD_LOGIC;                     -- se 0 calcula x & y, senão x + y
+			f:     in STD_LOGIC_VECTOR(2 downto 0);  -- se 0 calcula x & y, se 1 calcula x + y se 2 calcula x xor y
 			no:    in STD_LOGIC;                     -- inverte o valor da saída
 			zr:    out STD_LOGIC;                    -- setado se saída igual a zero
 			ng:    out STD_LOGIC;                    -- setado se saída é negativa
@@ -84,16 +86,37 @@ architecture  rtl OF alu is
     );
 	end component;
 
+	--  mudei o seletor para vetor de 3 elementos
+
 	component Mux16 is
 		port (
 			a:   in  STD_LOGIC_VECTOR(15 downto 0);
 			b:   in  STD_LOGIC_VECTOR(15 downto 0);
-			sel: in  STD_LOGIC;
+			sel: in  STD_LOGIC_VECTOR(2 downto 0);
 			q:   out STD_LOGIC_VECTOR(15 downto 0)
 		);
 	end component;
 
-   SIGNAL zxout,zyout,nxout,nyout,andout,adderout,muxout,precomp: std_logic_vector(15 downto 0);
+	component Xor16 is
+		port (
+			a:   in  STD_LOGIC_VECTOR(15 downto 0);
+			b:   in  STD_LOGIC_VECTOR(15 downto 0);
+			q:   out STD_LOGIC_VECTOR(15 downto 0)
+		);
+	end component;
+
+	-- componet xor para ula do conceito B (mux que selecionara entre add and ou xor)
+	component muxXor is
+		port(
+			a   :  in STD_LOGIC_VECTOR(15 downto 0);
+			b   :  in STD_LOGIC_VECTOR(15 downto 0);
+			c   :  in  STD_LOGIC_VECTOR(15 downto 0);
+			sel :  in  STD_LOGIC_VECTOR(1 downto 0);
+			q   : out STD_LOGIC_VECTOR(15 downto 0)
+		);
+	end component;
+
+   SIGNAL zxout,zyout,nxout,nyout,andout,adderout,muxout,xorout,precomp: std_logic_vector(15 downto 0);
 
 begin
   -- Implementação vem aqui!
@@ -142,10 +165,18 @@ begin
 		
 	)
 
-	mux16 : Mux16
+	xor16: Xor16
+	port map(
+		a => nxout,
+		b => nyout,
+		q => xorout
+	)
+
+	mux16 : muxXor
 	port map(
 		a => adderout,
 		b => andout,
+		c => xorout,
 		sel => f,
 		q => muxout
 	)
