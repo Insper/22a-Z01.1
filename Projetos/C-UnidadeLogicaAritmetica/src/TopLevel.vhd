@@ -18,45 +18,80 @@ use ieee.numeric_std.all;
 ----------------------------
 entity TopLevel is
 	port(
-		SW      : in  std_logic_vector(9 downto 0);
-		LEDR    : out std_logic_vector(9 downto 0)
-	);
+		CLOCK_50 : in  std_logic;
+		SW       : in  std_logic_vector(9 downto 0);
+		HEX0     : out std_logic_vector(6 downto 0);
+		HEX1     : out std_logic_vector(6 downto 0);
+		HEX2     : out std_logic_vector(6 downto 0);
+		HEX3     : out std_logic_vector(6 downto 0)
+);
 end entity;
 
 ----------------------------
 -- Implementacao do bloco --
-----------------------------
+---------------------------
+
 architecture rtl of TopLevel is
-
---------------
--- signals
---------------
-
-  signal x : std_logic_vector(15 downto 0) := x"0073"; -- 115
-  signal y : std_logic_vector(15 downto 0) := x"005F"; -- 95
 
 --------------
 -- component
 --------------
-  component HalfAdder is
-    port(
-      a,b:         in STD_LOGIC;   -- entradas
-      soma,vaium: out STD_LOGIC   -- sum e carry
-      );
-  end component;
 
-  component FullAdder is
-      port(
-          a,b,c:      in STD_LOGIC;   -- entradas
-          soma,vaium: out STD_LOGIC   -- sum e carry
-          );
-    end component;
+--- IMPORTAR A ULA
+
+	component ALU is
+		port(
+			x,y:   in STD_LOGIC_VECTOR(15 downto 0); -- entradas de dados da ALU
+			zx:    in STD_LOGIC;                     -- zera a entrada x
+			nx:    in STD_LOGIC;                     -- inverte a entrada x
+			zy:    in STD_LOGIC;                     -- zera a entrada y
+			ny:    in STD_LOGIC;                     -- inverte a entrada y
+			f:     in STD_LOGIC;                     -- se 0 calcula x & y, senão x + y
+			no:    in STD_LOGIC;                     -- inverte o valor da saída
+			zr:    out STD_LOGIC;                    -- setado se saída igual a zero
+			ng:    out STD_LOGIC;                    -- setado se saída é negativa
+			saida: out STD_LOGIC_VECTOR(15 downto 0) -- saída de dados da ALU
+		);
+	end component;
+
+	component sevenSeg is
+		port (
+			bcd : in  STD_LOGIC_VECTOR(3 downto 0);
+			leds : out STD_LOGIC_VECTOR(6 downto 0));
+	end component;
+
+	component Xor is
+		port(
+			a => 
+		);
+
+--------------
+-- signals
+--------------
 
 ---------------
 -- implementacao
 ---------------
 begin
 
-  u1 : HalfAdder port map(a => SW(0), b=> SW(1), soma => LEDR(0), vaium => LEDR(1));
+	u1 : sevenSeg port map(
+	bcd => SW(3 downto 0),
+	leds => HEX0 -- LIGAR A SAIDA DA ULA
+	);
+	
+	u2 : sevenSeg port map(
+	bcd => SW(7 downto 4),
+	leds => HEX1
+	);
+
+	u3 : sevenSeg port map(
+	bcd => SW(7 downto 4),
+	leds => HEX2
+	);
+
+	u4 : sevenSeg port map(
+	bcd => SW(7 downto 4),
+	leds => HEX3
+	);
 
 end rtl;
