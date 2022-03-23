@@ -1,2 +1,2 @@
-skip (P=0 S=2 F=3 T=8) lib.tb_add16.all (83.5 seconds)
+skip (P=0 S=1 F=0 T=1) lib.tb_add16.all (140.2 seconds)
 
