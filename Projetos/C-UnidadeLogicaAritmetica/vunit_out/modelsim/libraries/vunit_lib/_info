@@ -1,0 +1,2399 @@
+m255
+K4
+z2
+!s11e vcom 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 d/home/borg/Documents/Elesis/Z01.1--Dio/Projetos/C-UnidadeLogicaAritmetica
+Pansi_pkg
+Z1 DPx9 vunit_lib 17 codec_builder_pkg 0 22 lMzaQB]AGo[9c?7g60J_93
+Z2 DPx4 ieee 11 numeric_std 0 22 aU^R8eGcicLcUFIaBQSL>3
+Z3 DPx4 ieee 11 numeric_bit 0 22 G2;d`f^X6V]cQEn8_38:i1
+Z4 DPx4 ieee 9 math_real 0 22 gNk<PdFJ<XNPcfef`f?Z81
+Z5 DPx4 ieee 12 math_complex 0 22 lndMRF4<kJnT_9]@:30S@3
+Z6 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+Z7 DPx9 vunit_lib 9 codec_pkg 0 22 VE]>YKnj@eiUJ<U1YSEXb3
+Z8 DPx9 vunit_lib 19 external_string_pkg 0 22 iE_JL@S7G[ScLPziLPH3]3
+Z9 DPx9 vunit_lib 9 types_pkg 0 22 8X1EBI95Q8hI=Vi3D9DP;0
+Z10 DPx9 vunit_lib 14 string_ptr_pkg 0 22 n[AzFb_A:6S@HQFZYcL]h0
+Z11 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+!i122 10
+Z12 w1610028509
+R0
+Z13 8/home/borg/.local/lib/python3.8/site-packages/vunit/vhdl/logging/src/ansi_pkg.vhd
+Z14 F/home/borg/.local/lib/python3.8/site-packages/vunit/vhdl/logging/src/ansi_pkg.vhd
+l0
+Z15 L12 1
+Vh9cG]NHf=IYSX>SV5U_OM1
+!s100 iP7f[j^VVL9nZJY50A89:3
+Z16 OV;C;2020.1;71
+33
+b1
+Z17 !s110 1648055608
+!i10b 1
+Z18 !s108 1648055608.000000
+Z19 !s90 -quiet|-modelsimini|/home/borg/Documents/Elesis/Z01.1--Dio/Projetos/C-UnidadeLogicaAritmetica/vunit_out/modelsim/modelsim.ini|-2008|-work|vunit_lib|/home/borg/.local/lib/python3.8/site-packages/vunit/vhdl/logging/src/ansi_pkg.vhd|
+Z20 !s107 /home/borg/.local/lib/python3.8/site-packages/vunit/vhdl/logging/src/ansi_pkg.vhd|
+!i113 1
+Z21 o-quiet -2008 -work vunit_lib
+Z22 tExplicit 1 CvgOpt 0
+Bbody
+Z23 DPx4 work 8 ansi_pkg 0 22 h9cG]NHf=IYSX>SV5U_OM1
+R1
+R2
+R3
+R4
+R5
+R6
+R7
+R8
+R9
+R10
+R11
+!i122 10
+l0
+L75 1
+VcXhI;]:3fLZf:RmjeTffQ0
+!s100 WVnHg?XDJ^1_l`^jn=2af1
+R16
+33
+R17
+!i10b 1
+R18
+R19
+R20
+!i113 1
+R21
+R22
+Pbyte_vector_ptr_pkg
+Z24 DPx4 work 17 codec_builder_pkg 0 22 lMzaQB]AGo[9c?7g60J_93
+R2
+R3
+R4
+R5
+R11
+R6
+Z25 DPx4 work 9 codec_pkg 0 22 VE]>YKnj@eiUJ<U1YSEXb3
+Z26 DPx4 work 19 external_string_pkg 0 22 iE_JL@S7G[ScLPziLPH3]3
+Z27 DPx4 work 14 string_ptr_pkg 0 22 n[AzFb_A:6S@HQFZYcL]h0
+Z28 DPx4 work 9 types_pkg 0 22 8X1EBI95Q8hI=Vi3D9DP;0
+!i122 12
+R12
+R0
+Z29 8/home/borg/.local/lib/python3.8/site-packages/vunit/vhdl/data_types/src/byte_vector_ptr_pkg.vhd
+Z30 F/home/borg/.local/lib/python3.8/site-packages/vunit/vhdl/data_types/src/byte_vector_ptr_pkg.vhd
+l0
+Z31 L16 1
+VnMb7G]QlQkbCia?ecQlOB1
+!s100 ISVjJJ9g4`o1aDC?CR`AE3
+R16
+33
+b1
+R17
+!i10b 1
+R18
+Z32 !s90 -quiet|-modelsimini|/home/borg/Documents/Elesis/Z01.1--Dio/Projetos/C-UnidadeLogicaAritmetica/vunit_out/modelsim/modelsim.ini|-2008|-work|vunit_lib|/home/borg/.local/lib/python3.8/site-packages/vunit/vhdl/data_types/src/byte_vector_ptr_pkg.vhd|
+Z33 !s107 /home/borg/.local/lib/python3.8/site-packages/vunit/vhdl/data_types/src/byte_vector_ptr_pkg.vhd|
+!i113 1
+R21
+R22
+Bbody
+DPx4 work 19 byte_vector_ptr_pkg 0 22 nMb7G]QlQkbCia?ecQlOB1
+R24
+R2
+R3
+R4
+R5
+R11
+R6
+R25
+R26
+R27
+R28
+!i122 12
+l0
+L61 1
+Vb1YNkdbcVUJak3DOFDPX@3
+!s100 M;=_^dc8nYGPLX:aViIl;0
+R16
+33
+R17
+!i10b 1
+R18
+R32
+R33
+!i113 1
+R21
+R22
+Pcheck_deprecated_pkg
+Z34 DPx4 work 9 check_pkg 0 22 k_?TDGU?=n?1Z0oahO>zF0
+Z35 DPx4 work 11 checker_pkg 0 22 E?dhhcE;9VWnHLW[lW4`Y1
+Z36 DPx4 work 8 stop_pkg 0 22 UjKiHFdPQ97>_>m`nM3cg3
+Z37 DPx4 work 8 core_pkg 0 22 0M7EG>QDghVT?B78KOYPn0
+Z38 DPx4 work 18 log_deprecated_pkg 0 22 Q7[lfBh_WC:ca^W64YP1U2
+Z39 DPx4 work 27 external_integer_vector_pkg 0 22 hl?S7F7[zeX8D09=mXj_W2
+Z40 DPx4 work 22 integer_vector_ptr_pkg 0 22 dQHde;mb=n>VUWALE0?M33
+Z41 DPx4 work 15 log_handler_pkg 0 22 4LC?iW3FIdm8J@]^l:Fa_0
+Z42 DPx4 work 10 logger_pkg 0 22 Jj3MC9=bR4jQbFA1jSDXY2
+R23
+R24
+R2
+R3
+R4
+R5
+R11
+R6
+R25
+R26
+R28
+R27
+Z43 DPx4 work 14 log_levels_pkg 0 22 jGUFnEUH1mU?HKm3YRPGj3
+!i122 37
+R12
+R0
+Z44 8/home/borg/.local/lib/python3.8/site-packages/vunit/vhdl/check/src/check_deprecated_pkg.vhd
+Z45 F/home/borg/.local/lib/python3.8/site-packages/vunit/vhdl/check/src/check_deprecated_pkg.vhd
+l0
+Z46 L18 1
+VY>TVz>[kI8XoP@P02gCOJ2
+!s100 1AoDPh`ag@=;1e7X@0KnI0
+R16
+33
+b1
+Z47 !s110 1648055611
+!i10b 1
+Z48 !s108 1648055611.000000
+Z49 !s90 -quiet|-modelsimini|/home/borg/Documents/Elesis/Z01.1--Dio/Projetos/C-UnidadeLogicaAritmetica/vunit_out/modelsim/modelsim.ini|-2008|-work|vunit_lib|/home/borg/.local/lib/python3.8/site-packages/vunit/vhdl/check/src/check_deprecated_pkg.vhd|
+Z50 !s107 /home/borg/.local/lib/python3.8/site-packages/vunit/vhdl/check/src/check_deprecated_pkg.vhd|
+!i113 1
+R21
+R22
+Bbody
+DPx4 work 20 check_deprecated_pkg 0 22 Y>TVz>[kI8XoP@P02gCOJ2
+R34
+R35
+R36
+R37
+R38
+R39
+R40
+R41
+R42
+R23
+R24
+R2
+R3
+R4
+R5
+R11
+R6
+R25
+R26
+R28
+R27
+R43
+!i122 37
+l0
+L84 1
+VlPYP9eUg:5>Scb2k8?bi51
+!s100 <UFnDN]I40_Le4c4Z5L>l2
+R16
+33
+R47
+!i10b 1
+R48
+R49
+R50
+!i113 1
+R21
+R22
+Pcheck_pkg
+R39
+R40
+R41
+R42
+R23
+R24
+R3
+R4
+R5
+R25
+R26
+R28
+R27
+R43
+R35
+R2
+R11
+R6
+!i122 36
+R12
+R0
+8/home/borg/.local/lib/python3.8/site-packages/vunit/vhdl/check/src/check_api.vhd
+F/home/borg/.local/lib/python3.8/site-packages/vunit/vhdl/check/src/check_api.vhd
+l0
+R46
+Vk_?TDGU?=n?1Z0oahO>zF0
+!s100 KCUP:mMVZh4L@87m:6D0c1
+R16
+33
+b1
+R47
+!i10b 1
+R48
+!s90 -quiet|-modelsimini|/home/borg/Documents/Elesis/Z01.1--Dio/Projetos/C-UnidadeLogicaAritmetica/vunit_out/modelsim/modelsim.ini|-2008|-work|vunit_lib|/home/borg/.local/lib/python3.8/site-packages/vunit/vhdl/check/src/check_api.vhd|
+!s107 /home/borg/.local/lib/python3.8/site-packages/vunit/vhdl/check/src/check_api.vhd|
+!i113 1
+R21
+R22
+Bbody
+R34
+Z51 DPx4 work 10 string_ops 0 22 >6lVd?dSYVCeeU;1?_=bg2
+R39
+R40
+R41
+R42
+R23
+R24
+R3
+R4
+R5
+R25
+R26
+R28
+R27
+R43
+R35
+R2
+R11
+R6
+!i122 39
+8/home/borg/.local/lib/python3.8/site-packages/vunit/vhdl/check/src/check.vhd
+F/home/borg/.local/lib/python3.8/site-packages/vunit/vhdl/check/src/check.vhd
+l0
+R31
+V9UiUee74WgKB1TY^:B?4N1
+!s100 IFOLZS3@H<:[h5Yfm6a]V2
+R16
+33
+R47
+!i10b 1
+R48
+!s90 -quiet|-modelsimini|/home/borg/Documents/Elesis/Z01.1--Dio/Projetos/C-UnidadeLogicaAritmetica/vunit_out/modelsim/modelsim.ini|-2008|-work|vunit_lib|/home/borg/.local/lib/python3.8/site-packages/vunit/vhdl/check/src/check.vhd|
+!s107 /home/borg/.local/lib/python3.8/site-packages/vunit/vhdl/check/src/check.vhd|
+!i113 1
+R21
+R22
+Pchecker_pkg
+R39
+R40
+R41
+R42
+R23
+R24
+R2
+R3
+R4
+R5
+R11
+R6
+R25
+R26
+R28
+R27
+R43
+!i122 33
+R12
+R0
+8/home/borg/.local/lib/python3.8/site-packages/vunit/vhdl/check/src/checker_pkg.vhd
+F/home/borg/.local/lib/python3.8/site-packages/vunit/vhdl/check/src/checker_pkg.vhd
+l0
+Z52 L13 1
+VE?dhhcE;9VWnHLW[lW4`Y1
+!s100 [I4:O4<eFTOS;SUcLfe:10
+R16
+33
+b1
+Z53 !s110 1648055610
+!i10b 1
+Z54 !s108 1648055610.000000
+!s90 -quiet|-modelsimini|/home/borg/Documents/Elesis/Z01.1--Dio/Projetos/C-UnidadeLogicaAritmetica/vunit_out/modelsim/modelsim.ini|-2008|-work|vunit_lib|/home/borg/.local/lib/python3.8/site-packages/vunit/vhdl/check/src/checker_pkg.vhd|
+!s107 /home/borg/.local/lib/python3.8/site-packages/vunit/vhdl/check/src/checker_pkg.vhd|
+!i113 1
+R21
+R22
+Bbody
+R35
+R39
+R40
+R41
+R42
+R23
+R24
+R2
+R3
+R4
+R5
+R11
+R6
+R25
+R26
+R28
+R27
+R43
+!i122 36
+8/home/borg/.local/lib/python3.8/site-packages/vunit/vhdl/check/src/checker_pkg-body.vhd
+F/home/borg/.local/lib/python3.8/site-packages/vunit/vhdl/check/src/checker_pkg-body.vhd
+l0
+Z55 L10 1
+VR6>IRTjahc7V=hWEiR^`60
+!s100 1hXodV^D_Xh5?ThRc9MVl1
+R16
+33
+R47
+!i10b 1
+R48
+!s90 -quiet|-modelsimini|/home/borg/Documents/Elesis/Z01.1--Dio/Projetos/C-UnidadeLogicaAritmetica/vunit_out/modelsim/modelsim.ini|-2008|-work|vunit_lib|/home/borg/.local/lib/python3.8/site-packages/vunit/vhdl/check/src/checker_pkg-body.vhd|
+!s107 /home/borg/.local/lib/python3.8/site-packages/vunit/vhdl/check/src/checker_pkg-body.vhd|
+!i113 1
+R21
+R22
+Pcodec_2008p_pkg
+Z56 DBx4 ieee 17 float_generic_pkg 4 body 22 H?RSbZ=lR0[b?m<zWkZGN1
+Z57 DPx4 ieee 9 float_pkg 0 22 DJZPnOhNOL=fWo3;8j`XI0
+Z58 DPx4 ieee 17 fixed_float_types 0 22 j<WD5SZ6`I4KC;8P]h@_10
+Z59 DBx4 ieee 17 fixed_generic_pkg 4 body 22 YX7o<=i^@69Sm1gW_d;XB1
+Z60 DPx4 ieee 9 fixed_pkg 0 22 c`b>2Shb`ic5KAcV=K;Co1
+R2
+R3
+R4
+R5
+R11
+R6
+!i122 7
+R12
+R0
+Z61 8/home/borg/.local/lib/python3.8/site-packages/vunit/vhdl/data_types/src/codec-2008p.vhd
+Z62 F/home/borg/.local/lib/python3.8/site-packages/vunit/vhdl/data_types/src/codec-2008p.vhd
+l0
+Z63 L19 1
+VYdl`fR51<M4jb`o4KiJO13
+!s100 DN@^zRab:GQ:]bi[E@m0T2
+R16
+33
+b1
+R17
+!i10b 1
+R18
+Z64 !s90 -quiet|-modelsimini|/home/borg/Documents/Elesis/Z01.1--Dio/Projetos/C-UnidadeLogicaAritmetica/vunit_out/modelsim/modelsim.ini|-2008|-work|vunit_lib|/home/borg/.local/lib/python3.8/site-packages/vunit/vhdl/data_types/src/codec-2008p.vhd|
+Z65 !s107 /home/borg/.local/lib/python3.8/site-packages/vunit/vhdl/data_types/src/codec-2008p.vhd|
+!i113 1
+R21
+R22
+Bbody
+Z66 DPx4 work 15 codec_2008p_pkg 0 22 Ydl`fR51<M4jb`o4KiJO13
+Z67 DPx4 work 23 codec_builder_2008p_pkg 0 22 mh;L9^nKGkl]1GJbCTOmi2
+R24
+R25
+R56
+R57
+R58
+R59
+R60
+R2
+R3
+R4
+R5
+R11
+R6
+!i122 7
+l0
+L90 1
+V^_=1APYm_A06eLZBV^HXA2
+!s100 jNBE9^?M;2A[LInXMCb]X0
+R16
+33
+R17
+!i10b 1
+R18
+R64
+R65
+!i113 1
+R21
+R22
+Pcodec_builder_2008p_pkg
+R24
+R56
+R57
+R58
+R59
+R60
+R2
+R3
+R4
+R5
+R11
+R6
+!i122 5
+R12
+R0
+Z68 8/home/borg/.local/lib/python3.8/site-packages/vunit/vhdl/data_types/src/codec_builder-2008p.vhd
+Z69 F/home/borg/.local/lib/python3.8/site-packages/vunit/vhdl/data_types/src/codec_builder-2008p.vhd
+l0
+L21 1
+Vmh;L9^nKGkl]1GJbCTOmi2
+!s100 XdZDZa`N]KUnf67SNLTT<0
+R16
+33
+b1
+Z70 !s110 1648055607
+!i10b 1
+Z71 !s108 1648055607.000000
+Z72 !s90 -quiet|-modelsimini|/home/borg/Documents/Elesis/Z01.1--Dio/Projetos/C-UnidadeLogicaAritmetica/vunit_out/modelsim/modelsim.ini|-2008|-work|vunit_lib|/home/borg/.local/lib/python3.8/site-packages/vunit/vhdl/data_types/src/codec_builder-2008p.vhd|
+Z73 !s107 /home/borg/.local/lib/python3.8/site-packages/vunit/vhdl/data_types/src/codec_builder-2008p.vhd|
+!i113 1
+R21
+R22
+Bbody
+R67
+R24
+R56
+R57
+R58
+R59
+R60
+R2
+R3
+R4
+R5
+R11
+R6
+!i122 5
+l0
+L52 1
+VZdJbKizEo5_iaV8IN1To`0
+!s100 QY3nmWkQaFk5c@@02n4aG3
+R16
+33
+R70
+!i10b 1
+R71
+R72
+R73
+!i113 1
+R21
+R22
+Pcodec_builder_pkg
+R2
+R3
+R4
+R5
+R11
+R6
+!i122 4
+R12
+R0
+Z74 8/home/borg/.local/lib/python3.8/site-packages/vunit/vhdl/data_types/src/codec_builder.vhd
+Z75 F/home/borg/.local/lib/python3.8/site-packages/vunit/vhdl/data_types/src/codec_builder.vhd
+l0
+Z76 L17 1
+VlMzaQB]AGo[9c?7g60J_93
+!s100 UfBi>F[gOYbVneZ^Q_5[>2
+R16
+33
+b1
+R70
+!i10b 1
+R71
+Z77 !s90 -quiet|-modelsimini|/home/borg/Documents/Elesis/Z01.1--Dio/Projetos/C-UnidadeLogicaAritmetica/vunit_out/modelsim/modelsim.ini|-2008|-work|vunit_lib|/home/borg/.local/lib/python3.8/site-packages/vunit/vhdl/data_types/src/codec_builder.vhd|
+Z78 !s107 /home/borg/.local/lib/python3.8/site-packages/vunit/vhdl/data_types/src/codec_builder.vhd|
+!i113 1
+R21
+R22
+Bbody
+R24
+R2
+R3
+R4
+R5
+R11
+R6
+!i122 4
+l0
+L130 1
+VP:Ao@:`Ki1@5ji^K>5lQF3
+!s100 CLK^@[KFJ=GEzMD;9k3V31
+R16
+33
+R70
+!i10b 1
+R71
+R77
+R78
+!i113 1
+R21
+R22
+Pcodec_pkg
+R24
+R2
+R3
+R4
+R5
+R11
+R6
+!i122 6
+R12
+R0
+Z79 8/home/borg/.local/lib/python3.8/site-packages/vunit/vhdl/data_types/src/codec.vhd
+Z80 F/home/borg/.local/lib/python3.8/site-packages/vunit/vhdl/data_types/src/codec.vhd
+l0
+L20 1
+VVE]>YKnj@eiUJ<U1YSEXb3
+!s100 V4MgLoZe`>NF;OgG9chIC2
+R16
+33
+b1
+R17
+!i10b 1
+R71
+Z81 !s90 -quiet|-modelsimini|/home/borg/Documents/Elesis/Z01.1--Dio/Projetos/C-UnidadeLogicaAritmetica/vunit_out/modelsim/modelsim.ini|-2008|-work|vunit_lib|/home/borg/.local/lib/python3.8/site-packages/vunit/vhdl/data_types/src/codec.vhd|
+Z82 !s107 /home/borg/.local/lib/python3.8/site-packages/vunit/vhdl/data_types/src/codec.vhd|
+!i113 1
+R21
+R22
+Bbody
+R25
+R24
+R2
+R3
+R4
+R5
+R11
+R6
+!i122 6
+l0
+L200 1
+V>67F;OQHO@R]RP2Tkl[TA2
+!s100 Y3LDhUAddGQ_a`4WI^FH@0
+R16
+33
+R17
+!i10b 1
+R71
+R81
+R82
+!i113 1
+R21
+R22
+Pcore_pkg
+R26
+R27
+R24
+R2
+R3
+R4
+R5
+R6
+R25
+R39
+R28
+R40
+R36
+R11
+!i122 31
+R12
+R0
+Z83 8/home/borg/.local/lib/python3.8/site-packages/vunit/vhdl/core/src/core_pkg.vhd
+Z84 F/home/borg/.local/lib/python3.8/site-packages/vunit/vhdl/core/src/core_pkg.vhd
+l0
+R15
+V0M7EG>QDghVT?B78KOYPn0
+!s100 5B>J6YTSzQ3DGCK5Y2@Mh3
+R16
+33
+b1
+R53
+!i10b 1
+R54
+Z85 !s90 -quiet|-modelsimini|/home/borg/Documents/Elesis/Z01.1--Dio/Projetos/C-UnidadeLogicaAritmetica/vunit_out/modelsim/modelsim.ini|-2008|-work|vunit_lib|/home/borg/.local/lib/python3.8/site-packages/vunit/vhdl/core/src/core_pkg.vhd|
+Z86 !s107 /home/borg/.local/lib/python3.8/site-packages/vunit/vhdl/core/src/core_pkg.vhd|
+!i113 1
+R21
+R22
+Bbody
+R37
+R26
+R27
+R24
+R2
+R3
+R4
+R5
+R6
+R25
+R39
+R28
+R40
+R36
+R11
+!i122 31
+l0
+Z87 L27 1
+VgdAY=LjK<hHgSF`C0AEiZ3
+!s100 z6MX^:eUm=783cf8Ai8:b3
+R16
+33
+R53
+!i10b 1
+R54
+R85
+R86
+!i113 1
+R21
+R22
+^#data_types_context
+R12
+!i122 29
+R0
+8/home/borg/.local/lib/python3.8/site-packages/vunit/vhdl/data_types/src/data_types_context.vhd
+F/home/borg/.local/lib/python3.8/site-packages/vunit/vhdl/data_types/src/data_types_context.vhd
+l0
+L7 1
+V[Ik[<YbW8Ag;h5P``aP2g3
+!s100 HeRIX0=cA1>SfFRXj=<IA3
+R16
+33
+R53
+!i10b 0
+R54
+!s90 -quiet|-modelsimini|/home/borg/Documents/Elesis/Z01.1--Dio/Projetos/C-UnidadeLogicaAritmetica/vunit_out/modelsim/modelsim.ini|-2008|-work|vunit_lib|/home/borg/.local/lib/python3.8/site-packages/vunit/vhdl/data_types/src/data_types_context.vhd|
+!s107 /home/borg/.local/lib/python3.8/site-packages/vunit/vhdl/data_types/src/data_types_context.vhd|
+!i113 1
+R21
+R22
+Pdict_pkg
+Z88 DPx4 work 27 integer_vector_ptr_pool_pkg 0 22 FX=7VbM]W@D7RN`^3N8aJ3
+Z89 DPx4 work 17 integer_array_pkg 0 22 o:H2ie>cVB<O<8]@gJG;:3
+R39
+R40
+Z90 DPx4 work 9 queue_pkg 0 22 CMi_fVS`R;@j5e>onMNln3
+Z91 DPx4 work 19 string_ptr_pool_pkg 0 22 ;oGa_UEi8nVncYkDRR_Aj1
+R24
+R2
+R3
+R4
+R5
+R11
+R6
+R25
+R26
+R28
+R27
+!i122 28
+R12
+R0
+Z92 8/home/borg/.local/lib/python3.8/site-packages/vunit/vhdl/data_types/src/dict_pkg.vhd
+Z93 F/home/borg/.local/lib/python3.8/site-packages/vunit/vhdl/data_types/src/dict_pkg.vhd
+l0
+R15
+V_EQKR[P[ibBW^<0mzPejD2
+!s100 Bj?^<hbk3g93[5HKM`M3o0
+R16
+33
+b1
+R53
+!i10b 1
+R54
+Z94 !s90 -quiet|-modelsimini|/home/borg/Documents/Elesis/Z01.1--Dio/Projetos/C-UnidadeLogicaAritmetica/vunit_out/modelsim/modelsim.ini|-2008|-work|vunit_lib|/home/borg/.local/lib/python3.8/site-packages/vunit/vhdl/data_types/src/dict_pkg.vhd|
+Z95 !s107 /home/borg/.local/lib/python3.8/site-packages/vunit/vhdl/data_types/src/dict_pkg.vhd|
+!i113 1
+R21
+R22
+Bbody
+DPx4 work 8 dict_pkg 0 22 _EQKR[P[ibBW^<0mzPejD2
+R88
+R89
+R39
+R40
+R90
+R91
+R24
+R2
+R3
+R4
+R5
+R11
+R6
+R25
+R26
+R28
+R27
+!i122 28
+l0
+Z96 L53 1
+VlfO:g?mY1i9HNQRLe0EU`0
+!s100 Q1GMljof_QP]GGf>I9USE2
+R16
+33
+R53
+!i10b 1
+R54
+R94
+R95
+!i113 1
+R21
+R22
+Pdictionary
+R39
+R40
+R41
+R23
+R24
+R3
+R4
+R5
+R25
+R26
+R28
+R27
+R43
+R42
+R2
+R11
+R6
+R51
+!i122 17
+R12
+R0
+Z97 8/home/borg/.local/lib/python3.8/site-packages/vunit/vhdl/dictionary/src/dictionary.vhd
+Z98 F/home/borg/.local/lib/python3.8/site-packages/vunit/vhdl/dictionary/src/dictionary.vhd
+l0
+R52
+V_W8>On_YoEFWEDP8TQC@R0
+!s100 g<eY0OObJ7F=90>YV3IZb1
+R16
+33
+b1
+Z99 !s110 1648055609
+!i10b 1
+R18
+Z100 !s90 -quiet|-modelsimini|/home/borg/Documents/Elesis/Z01.1--Dio/Projetos/C-UnidadeLogicaAritmetica/vunit_out/modelsim/modelsim.ini|-2008|-work|vunit_lib|/home/borg/.local/lib/python3.8/site-packages/vunit/vhdl/dictionary/src/dictionary.vhd|
+Z101 !s107 /home/borg/.local/lib/python3.8/site-packages/vunit/vhdl/dictionary/src/dictionary.vhd|
+!i113 1
+R21
+R22
+Bbody
+Z102 DPx4 work 10 dictionary 0 22 _W8>On_YoEFWEDP8TQC@R0
+R39
+R40
+R41
+R23
+R24
+R3
+R4
+R5
+R25
+R26
+R28
+R27
+R43
+R42
+R2
+R11
+R6
+R51
+!i122 17
+l0
+L43 1
+V8CVSf18_ff:I>4F9aBU]Y1
+!s100 7iN>b^=QhoF1UT=d;S=K]2
+R16
+33
+R99
+!i10b 1
+R18
+R100
+R101
+!i113 1
+R21
+R22
+Pexternal_integer_vector_pkg
+R28
+!i122 13
+R12
+R0
+Z103 8/home/borg/.local/lib/python3.8/site-packages/vunit/vhdl/data_types/src/api/external_integer_vector_pkg.vhd
+Z104 F/home/borg/.local/lib/python3.8/site-packages/vunit/vhdl/data_types/src/api/external_integer_vector_pkg.vhd
+l0
+L9 1
+Vhl?S7F7[zeX8D09=mXj_W2
+!s100 SRVeW[f=:]A5obH6I^Y8N3
+R16
+33
+b1
+R17
+!i10b 1
+R18
+Z105 !s90 -quiet|-modelsimini|/home/borg/Documents/Elesis/Z01.1--Dio/Projetos/C-UnidadeLogicaAritmetica/vunit_out/modelsim/modelsim.ini|-2008|-work|vunit_lib|/home/borg/.local/lib/python3.8/site-packages/vunit/vhdl/data_types/src/api/external_integer_vector_pkg.vhd|
+Z106 !s107 /home/borg/.local/lib/python3.8/site-packages/vunit/vhdl/data_types/src/api/external_integer_vector_pkg.vhd|
+!i113 1
+R21
+R22
+Bbody
+R39
+R28
+!i122 13
+l0
+Z107 L26 1
+VX917S1mHid;ZNNCcG@;C21
+!s100 cgl]OD6h9>RD;TzBM[Bg:1
+R16
+33
+R17
+!i10b 1
+R18
+R105
+R106
+!i113 1
+R21
+R22
+Pexternal_string_pkg
+R28
+!i122 8
+R12
+R0
+Z108 8/home/borg/.local/lib/python3.8/site-packages/vunit/vhdl/data_types/src/api/external_string_pkg.vhd
+Z109 F/home/borg/.local/lib/python3.8/site-packages/vunit/vhdl/data_types/src/api/external_string_pkg.vhd
+l0
+L9 1
+ViE_JL@S7G[ScLPziLPH3]3
+!s100 B=z[WVdz]zj=eYK=jmD[>0
+R16
+33
+b1
+R17
+!i10b 1
+R18
+Z110 !s90 -quiet|-modelsimini|/home/borg/Documents/Elesis/Z01.1--Dio/Projetos/C-UnidadeLogicaAritmetica/vunit_out/modelsim/modelsim.ini|-2008|-work|vunit_lib|/home/borg/.local/lib/python3.8/site-packages/vunit/vhdl/data_types/src/api/external_string_pkg.vhd|
+Z111 !s107 /home/borg/.local/lib/python3.8/site-packages/vunit/vhdl/data_types/src/api/external_string_pkg.vhd|
+!i113 1
+R21
+R22
+Bbody
+R26
+R28
+!i122 8
+l0
+R107
+VNASF]AS87^_NROTV_kk870
+!s100 EFCeU;bL5X6fI<Lg2RODF3
+R16
+33
+R17
+!i10b 1
+R18
+R110
+R111
+!i113 1
+R21
+R22
+Pfile_pkg
+R26
+R27
+R24
+R2
+R3
+R4
+R5
+R6
+R25
+R39
+R28
+R40
+R11
+!i122 19
+R12
+R0
+Z112 8/home/borg/.local/lib/python3.8/site-packages/vunit/vhdl/logging/src/file_pkg.vhd
+Z113 F/home/borg/.local/lib/python3.8/site-packages/vunit/vhdl/logging/src/file_pkg.vhd
+l0
+Z114 L11 1
+VkmkmiD?Az`;?8K8jhCaXk1
+!s100 DTP1[DAE28:U8kGf@eUla3
+R16
+33
+b1
+R99
+!i10b 1
+Z115 !s108 1648055609.000000
+Z116 !s90 -quiet|-modelsimini|/home/borg/Documents/Elesis/Z01.1--Dio/Projetos/C-UnidadeLogicaAritmetica/vunit_out/modelsim/modelsim.ini|-2008|-work|vunit_lib|/home/borg/.local/lib/python3.8/site-packages/vunit/vhdl/logging/src/file_pkg.vhd|
+Z117 !s107 /home/borg/.local/lib/python3.8/site-packages/vunit/vhdl/logging/src/file_pkg.vhd|
+!i113 1
+R21
+R22
+Bbody
+Z118 DPx4 work 8 file_pkg 0 22 kmkmiD?Az`;?8K8jhCaXk1
+R26
+R27
+R24
+R2
+R3
+R4
+R5
+R6
+R25
+R39
+R28
+R40
+R11
+!i122 19
+l0
+L30 1
+VNl`=YP=K;]TlPk2dGO@>X1
+!s100 44l@ZcKX1nFb20XjZW7lI3
+R16
+33
+R99
+!i10b 1
+R115
+R116
+R117
+!i113 1
+R21
+R22
+Pinteger_array_pkg
+R24
+R2
+R3
+R4
+R5
+R11
+R6
+R25
+R39
+R28
+R40
+!i122 20
+R12
+R0
+8/home/borg/.local/lib/python3.8/site-packages/vunit/vhdl/data_types/src/integer_array_pkg.vhd
+F/home/borg/.local/lib/python3.8/site-packages/vunit/vhdl/data_types/src/integer_array_pkg.vhd
+l0
+L9 1
+Vo:H2ie>cVB<O<8]@gJG;:3
+!s100 bnW]VJ9gL?8_zG@T^5hX]3
+R16
+33
+b1
+R99
+!i10b 1
+R115
+!s90 -quiet|-modelsimini|/home/borg/Documents/Elesis/Z01.1--Dio/Projetos/C-UnidadeLogicaAritmetica/vunit_out/modelsim/modelsim.ini|-2008|-work|vunit_lib|/home/borg/.local/lib/python3.8/site-packages/vunit/vhdl/data_types/src/integer_array_pkg.vhd|
+!s107 /home/borg/.local/lib/python3.8/site-packages/vunit/vhdl/data_types/src/integer_array_pkg.vhd|
+!i113 1
+R21
+R22
+Bbody
+R89
+R24
+R2
+R3
+R4
+R5
+R11
+R6
+R25
+R39
+R28
+R40
+!i122 28
+8/home/borg/.local/lib/python3.8/site-packages/vunit/vhdl/data_types/src/integer_array_pkg-body.vhd
+F/home/borg/.local/lib/python3.8/site-packages/vunit/vhdl/data_types/src/integer_array_pkg-body.vhd
+l0
+L9 1
+V`VQP4Q8Y@kD_0CgbZiLK52
+!s100 >S9CaQ_79Ee7L3:WiWIBg3
+R16
+33
+R53
+!i10b 1
+R54
+!s90 -quiet|-modelsimini|/home/borg/Documents/Elesis/Z01.1--Dio/Projetos/C-UnidadeLogicaAritmetica/vunit_out/modelsim/modelsim.ini|-2008|-work|vunit_lib|/home/borg/.local/lib/python3.8/site-packages/vunit/vhdl/data_types/src/integer_array_pkg-body.vhd|
+!s107 /home/borg/.local/lib/python3.8/site-packages/vunit/vhdl/data_types/src/integer_array_pkg-body.vhd|
+!i113 1
+R21
+R22
+Pinteger_vector_ptr_pkg
+R24
+R2
+R3
+R4
+R5
+R11
+R6
+R25
+R39
+R28
+!i122 14
+R12
+R0
+8/home/borg/.local/lib/python3.8/site-packages/vunit/vhdl/data_types/src/integer_vector_ptr_pkg.vhd
+F/home/borg/.local/lib/python3.8/site-packages/vunit/vhdl/data_types/src/integer_vector_ptr_pkg.vhd
+l0
+R63
+VdQHde;mb=n>VUWALE0?M33
+!s100 hg6@a[=Dl3inZ4TaKM[RU3
+R16
+33
+b1
+R17
+!i10b 1
+R18
+!s90 -quiet|-modelsimini|/home/borg/Documents/Elesis/Z01.1--Dio/Projetos/C-UnidadeLogicaAritmetica/vunit_out/modelsim/modelsim.ini|-2008|-work|vunit_lib|/home/borg/.local/lib/python3.8/site-packages/vunit/vhdl/data_types/src/integer_vector_ptr_pkg.vhd|
+!s107 /home/borg/.local/lib/python3.8/site-packages/vunit/vhdl/data_types/src/integer_vector_ptr_pkg.vhd|
+!i113 1
+R21
+R22
+Bbody
+R40
+R24
+R2
+R3
+R4
+R5
+R11
+R6
+R25
+R39
+R28
+!i122 20
+8/home/borg/.local/lib/python3.8/site-packages/vunit/vhdl/data_types/src/integer_vector_ptr_pkg-body-2002p.vhd
+F/home/borg/.local/lib/python3.8/site-packages/vunit/vhdl/data_types/src/integer_vector_ptr_pkg-body-2002p.vhd
+l0
+L7 1
+VFNfLShL7I8gFgPD<PGIDz0
+!s100 @]i9g@D?akhj:8XHPSY<P3
+R16
+33
+R99
+!i10b 1
+R115
+!s90 -quiet|-modelsimini|/home/borg/Documents/Elesis/Z01.1--Dio/Projetos/C-UnidadeLogicaAritmetica/vunit_out/modelsim/modelsim.ini|-2008|-work|vunit_lib|/home/borg/.local/lib/python3.8/site-packages/vunit/vhdl/data_types/src/integer_vector_ptr_pkg-body-2002p.vhd|
+!s107 /home/borg/.local/lib/python3.8/site-packages/vunit/vhdl/data_types/src/integer_vector_ptr_pkg-body-2002p.vhd|
+!i113 1
+R21
+R22
+Pinteger_vector_ptr_pool_pkg
+R89
+R26
+R27
+R90
+R24
+R2
+R3
+R4
+R5
+R25
+R39
+R28
+R40
+R11
+R6
+!i122 24
+R12
+R0
+Z119 8/home/borg/.local/lib/python3.8/site-packages/vunit/vhdl/data_types/src/integer_vector_ptr_pool_pkg.vhd
+Z120 F/home/borg/.local/lib/python3.8/site-packages/vunit/vhdl/data_types/src/integer_vector_ptr_pool_pkg.vhd
+l0
+R52
+VFX=7VbM]W@D7RN`^3N8aJ3
+!s100 O2b3f3OH@_eblPg=1]aan3
+R16
+33
+b1
+R99
+!i10b 1
+R115
+Z121 !s90 -quiet|-modelsimini|/home/borg/Documents/Elesis/Z01.1--Dio/Projetos/C-UnidadeLogicaAritmetica/vunit_out/modelsim/modelsim.ini|-2008|-work|vunit_lib|/home/borg/.local/lib/python3.8/site-packages/vunit/vhdl/data_types/src/integer_vector_ptr_pool_pkg.vhd|
+Z122 !s107 /home/borg/.local/lib/python3.8/site-packages/vunit/vhdl/data_types/src/integer_vector_ptr_pool_pkg.vhd|
+!i113 1
+R21
+R22
+Bbody
+R88
+R89
+R26
+R27
+R90
+R24
+R2
+R3
+R4
+R5
+R25
+R39
+R28
+R40
+R11
+R6
+!i122 24
+l0
+Z123 L33 1
+VaR<IX07>]?oOzB^jIMFB01
+!s100 _EYAIQo39mBLCbS;aK_]i1
+R16
+33
+R99
+!i10b 1
+R115
+R121
+R122
+!i113 1
+R21
+R22
+Plog_deprecated_pkg
+R36
+R37
+R39
+R40
+R41
+R42
+R23
+R24
+R2
+R3
+R4
+R5
+R11
+R6
+R25
+R26
+R28
+R27
+R43
+!i122 32
+R12
+R0
+Z124 8/home/borg/.local/lib/python3.8/site-packages/vunit/vhdl/logging/src/log_deprecated_pkg.vhd
+Z125 F/home/borg/.local/lib/python3.8/site-packages/vunit/vhdl/logging/src/log_deprecated_pkg.vhd
+l0
+Z126 L15 1
+VQ7[lfBh_WC:ca^W64YP1U2
+!s100 C_^fGo=JS^;hlEOJdRA4D1
+R16
+33
+b1
+R53
+!i10b 1
+R54
+Z127 !s90 -quiet|-modelsimini|/home/borg/Documents/Elesis/Z01.1--Dio/Projetos/C-UnidadeLogicaAritmetica/vunit_out/modelsim/modelsim.ini|-2008|-work|vunit_lib|/home/borg/.local/lib/python3.8/site-packages/vunit/vhdl/logging/src/log_deprecated_pkg.vhd|
+Z128 !s107 /home/borg/.local/lib/python3.8/site-packages/vunit/vhdl/logging/src/log_deprecated_pkg.vhd|
+!i113 1
+R21
+R22
+Bbody
+R38
+R36
+R37
+R39
+R40
+R41
+R42
+R23
+R24
+R2
+R3
+R4
+R5
+R11
+R6
+R25
+R26
+R28
+R27
+R43
+!i122 32
+l0
+L63 1
+V4nDXH:2Kn`2?OIei>k2nX2
+!s100 HjCQ8z4`cGBZSo:TSCLH`1
+R16
+33
+R53
+!i10b 1
+R54
+R127
+R128
+!i113 1
+R21
+R22
+Plog_handler_pkg
+R23
+R26
+R27
+R43
+R24
+R2
+R3
+R4
+R5
+R11
+R6
+R25
+R39
+R28
+R40
+!i122 15
+R12
+R0
+8/home/borg/.local/lib/python3.8/site-packages/vunit/vhdl/logging/src/log_handler_pkg.vhd
+F/home/borg/.local/lib/python3.8/site-packages/vunit/vhdl/logging/src/log_handler_pkg.vhd
+l0
+R55
+V4LC?iW3FIdm8J@]^l:Fa_0
+!s100 =FE1SOf99WzzB1Sh]a<;T1
+R16
+33
+b1
+R17
+!i10b 1
+R18
+!s90 -quiet|-modelsimini|/home/borg/Documents/Elesis/Z01.1--Dio/Projetos/C-UnidadeLogicaAritmetica/vunit_out/modelsim/modelsim.ini|-2008|-work|vunit_lib|/home/borg/.local/lib/python3.8/site-packages/vunit/vhdl/logging/src/log_handler_pkg.vhd|
+!s107 /home/borg/.local/lib/python3.8/site-packages/vunit/vhdl/logging/src/log_handler_pkg.vhd|
+!i113 1
+R21
+R22
+Bbody
+R41
+R118
+R51
+R23
+R8
+R10
+R43
+R1
+R2
+R3
+R4
+R5
+R11
+R6
+R7
+DPx9 vunit_lib 27 external_integer_vector_pkg 0 22 hl?S7F7[zeX8D09=mXj_W2
+R9
+DPx9 vunit_lib 22 integer_vector_ptr_pkg 0 22 dQHde;mb=n>VUWALE0?M33
+!i122 20
+8/home/borg/.local/lib/python3.8/site-packages/vunit/vhdl/logging/src/log_handler_pkg-body.vhd
+F/home/borg/.local/lib/python3.8/site-packages/vunit/vhdl/logging/src/log_handler_pkg-body.vhd
+l0
+R76
+VNgkaFXgzeV5Ugda?QdJ3P1
+!s100 beM^2LenbML1k4b1g@GKM0
+R16
+33
+R99
+!i10b 1
+R115
+!s90 -quiet|-modelsimini|/home/borg/Documents/Elesis/Z01.1--Dio/Projetos/C-UnidadeLogicaAritmetica/vunit_out/modelsim/modelsim.ini|-2008|-work|vunit_lib|/home/borg/.local/lib/python3.8/site-packages/vunit/vhdl/logging/src/log_handler_pkg-body.vhd|
+!s107 /home/borg/.local/lib/python3.8/site-packages/vunit/vhdl/logging/src/log_handler_pkg-body.vhd|
+!i113 1
+R21
+R22
+Plog_levels_pkg
+R23
+R24
+R2
+R3
+R4
+R5
+R11
+R6
+R25
+R26
+R28
+R27
+!i122 11
+R12
+R0
+8/home/borg/.local/lib/python3.8/site-packages/vunit/vhdl/logging/src/log_levels_pkg.vhd
+F/home/borg/.local/lib/python3.8/site-packages/vunit/vhdl/logging/src/log_levels_pkg.vhd
+l0
+R55
+VjGUFnEUH1mU?HKm3YRPGj3
+!s100 ;8d3W4?0zJ`:>2CL8G`NA1
+R16
+33
+b1
+R17
+!i10b 1
+R18
+!s90 -quiet|-modelsimini|/home/borg/Documents/Elesis/Z01.1--Dio/Projetos/C-UnidadeLogicaAritmetica/vunit_out/modelsim/modelsim.ini|-2008|-work|vunit_lib|/home/borg/.local/lib/python3.8/site-packages/vunit/vhdl/logging/src/log_levels_pkg.vhd|
+!s107 /home/borg/.local/lib/python3.8/site-packages/vunit/vhdl/logging/src/log_levels_pkg.vhd|
+!i113 1
+R21
+R22
+Bbody
+R43
+R36
+R37
+R39
+R40
+R23
+R24
+R2
+R3
+R4
+R5
+R11
+R6
+R25
+R26
+R28
+R27
+!i122 32
+8/home/borg/.local/lib/python3.8/site-packages/vunit/vhdl/logging/src/log_levels_pkg-body.vhd
+F/home/borg/.local/lib/python3.8/site-packages/vunit/vhdl/logging/src/log_levels_pkg-body.vhd
+l0
+R114
+VFB??U8HFT]54d=fmEWa>C1
+!s100 ZFGOJA=5IX1Fg?P24ijE71
+R16
+33
+R53
+!i10b 1
+R54
+!s90 -quiet|-modelsimini|/home/borg/Documents/Elesis/Z01.1--Dio/Projetos/C-UnidadeLogicaAritmetica/vunit_out/modelsim/modelsim.ini|-2008|-work|vunit_lib|/home/borg/.local/lib/python3.8/site-packages/vunit/vhdl/logging/src/log_levels_pkg-body.vhd|
+!s107 /home/borg/.local/lib/python3.8/site-packages/vunit/vhdl/logging/src/log_levels_pkg-body.vhd|
+!i113 1
+R21
+R22
+Plogger_pkg
+R39
+R40
+R41
+R23
+R24
+R2
+R3
+R4
+R5
+R11
+R6
+R25
+R26
+R28
+R27
+R43
+!i122 16
+R12
+R0
+8/home/borg/.local/lib/python3.8/site-packages/vunit/vhdl/logging/src/logger_pkg.vhd
+F/home/borg/.local/lib/python3.8/site-packages/vunit/vhdl/logging/src/logger_pkg.vhd
+l0
+R114
+VJj3MC9=bR4jQbFA1jSDXY2
+!s100 95?2O@o>j>WnLQ8Al^7gR0
+R16
+33
+b1
+R17
+!i10b 1
+R18
+!s90 -quiet|-modelsimini|/home/borg/Documents/Elesis/Z01.1--Dio/Projetos/C-UnidadeLogicaAritmetica/vunit_out/modelsim/modelsim.ini|-2008|-work|vunit_lib|/home/borg/.local/lib/python3.8/site-packages/vunit/vhdl/logging/src/logger_pkg.vhd|
+!s107 /home/borg/.local/lib/python3.8/site-packages/vunit/vhdl/logging/src/logger_pkg.vhd|
+!i113 1
+R21
+R22
+Bbody
+R42
+Z129 DPx4 work 9 print_pkg 0 22 z3A9G[B4JdMci]Ub;PK=S3
+R51
+R36
+R37
+R89
+R90
+R39
+R40
+R41
+R23
+R24
+R2
+R3
+R4
+R5
+R11
+R6
+R25
+R26
+R28
+R27
+R43
+!i122 32
+8/home/borg/.local/lib/python3.8/site-packages/vunit/vhdl/logging/src/logger_pkg-body.vhd
+F/home/borg/.local/lib/python3.8/site-packages/vunit/vhdl/logging/src/logger_pkg-body.vhd
+l0
+R31
+VD3Q6AU6?2Ug49]WgQJ6Lb1
+!s100 >0UUmWJJ@;R_1Tol6ANka0
+R16
+33
+R53
+!i10b 1
+R54
+!s90 -quiet|-modelsimini|/home/borg/Documents/Elesis/Z01.1--Dio/Projetos/C-UnidadeLogicaAritmetica/vunit_out/modelsim/modelsim.ini|-2008|-work|vunit_lib|/home/borg/.local/lib/python3.8/site-packages/vunit/vhdl/logging/src/logger_pkg-body.vhd|
+!s107 /home/borg/.local/lib/python3.8/site-packages/vunit/vhdl/logging/src/logger_pkg-body.vhd|
+!i113 1
+R21
+R22
+Ppath
+R2
+R11
+R6
+R51
+!i122 1
+R12
+R0
+Z130 8/home/borg/.local/lib/python3.8/site-packages/vunit/vhdl/path/src/path.vhd
+Z131 F/home/borg/.local/lib/python3.8/site-packages/vunit/vhdl/path/src/path.vhd
+l0
+R15
+V]@TR:IFM`TWfiVL<ZjY=I3
+!s100 bd`V5a;OSeSzJaWnof]gI2
+R16
+33
+b1
+R70
+!i10b 1
+R71
+Z132 !s90 -quiet|-modelsimini|/home/borg/Documents/Elesis/Z01.1--Dio/Projetos/C-UnidadeLogicaAritmetica/vunit_out/modelsim/modelsim.ini|-2008|-work|vunit_lib|/home/borg/.local/lib/python3.8/site-packages/vunit/vhdl/path/src/path.vhd|
+Z133 !s107 /home/borg/.local/lib/python3.8/site-packages/vunit/vhdl/path/src/path.vhd|
+!i113 1
+R21
+R22
+Bbody
+Z134 DPx4 work 4 path 0 22 ]@TR:IFM`TWfiVL<ZjY=I3
+R2
+R11
+R6
+R51
+!i122 1
+l0
+R87
+VgFYAF;YS6hfWH_JGXjAIn1
+!s100 1e>H:z]K9`Z1M<DYO2G[e1
+R16
+33
+R70
+!i10b 1
+R71
+R132
+R133
+!i113 1
+R21
+R22
+Pprint_pkg
+R11
+!i122 2
+R12
+R0
+8/home/borg/.local/lib/python3.8/site-packages/vunit/vhdl/logging/src/print_pkg.vhd
+F/home/borg/.local/lib/python3.8/site-packages/vunit/vhdl/logging/src/print_pkg.vhd
+l0
+L9 1
+Vz3A9G[B4JdMci]Ub;PK=S3
+!s100 KE@C?hnn1l3FUY<7WVl]H1
+R16
+33
+b1
+R70
+!i10b 1
+R71
+!s90 -quiet|-modelsimini|/home/borg/Documents/Elesis/Z01.1--Dio/Projetos/C-UnidadeLogicaAritmetica/vunit_out/modelsim/modelsim.ini|-2008|-work|vunit_lib|/home/borg/.local/lib/python3.8/site-packages/vunit/vhdl/logging/src/print_pkg.vhd|
+!s107 /home/borg/.local/lib/python3.8/site-packages/vunit/vhdl/logging/src/print_pkg.vhd|
+!i113 1
+R21
+R22
+Bbody
+R129
+R23
+R26
+R27
+R43
+R24
+R2
+R3
+R4
+R5
+R6
+R25
+R39
+R28
+R40
+R41
+R11
+!i122 16
+8/home/borg/.local/lib/python3.8/site-packages/vunit/vhdl/logging/src/print_pkg-body.vhd
+F/home/borg/.local/lib/python3.8/site-packages/vunit/vhdl/logging/src/print_pkg-body.vhd
+l0
+L9 1
+VOU51AWA;Q7CL3akh`]BP_0
+!s100 9REQ9zX3E8FAJ3WXn@S7c1
+R16
+33
+R17
+!i10b 1
+R18
+!s90 -quiet|-modelsimini|/home/borg/Documents/Elesis/Z01.1--Dio/Projetos/C-UnidadeLogicaAritmetica/vunit_out/modelsim/modelsim.ini|-2008|-work|vunit_lib|/home/borg/.local/lib/python3.8/site-packages/vunit/vhdl/logging/src/print_pkg-body.vhd|
+!s107 /home/borg/.local/lib/python3.8/site-packages/vunit/vhdl/logging/src/print_pkg-body.vhd|
+!i113 1
+R21
+R22
+Pqueue_2008p_pkg
+R67
+R66
+R89
+R26
+R27
+R24
+R25
+R39
+R28
+R40
+R3
+R4
+R5
+R90
+R56
+R57
+R58
+R2
+R6
+R11
+R59
+R60
+!i122 23
+R12
+R0
+Z135 8/home/borg/.local/lib/python3.8/site-packages/vunit/vhdl/data_types/src/queue_pkg-2008p.vhd
+Z136 F/home/borg/.local/lib/python3.8/site-packages/vunit/vhdl/data_types/src/queue_pkg-2008p.vhd
+l0
+R126
+V7=Da8d6E0ZPoI=2]2Ja6n2
+!s100 >eQmSAXBBIQHF5YbQVkck1
+R16
+33
+b1
+R99
+!i10b 1
+R115
+Z137 !s90 -quiet|-modelsimini|/home/borg/Documents/Elesis/Z01.1--Dio/Projetos/C-UnidadeLogicaAritmetica/vunit_out/modelsim/modelsim.ini|-2008|-work|vunit_lib|/home/borg/.local/lib/python3.8/site-packages/vunit/vhdl/data_types/src/queue_pkg-2008p.vhd|
+Z138 !s107 /home/borg/.local/lib/python3.8/site-packages/vunit/vhdl/data_types/src/queue_pkg-2008p.vhd|
+!i113 1
+R21
+R22
+Bbody
+DPx4 work 15 queue_2008p_pkg 0 22 7=Da8d6E0ZPoI=2]2Ja6n2
+R67
+R66
+R89
+R26
+R27
+R24
+R25
+R39
+R28
+R40
+R3
+R4
+R5
+R90
+R56
+R57
+R58
+R2
+R6
+R11
+R59
+R60
+!i122 23
+l0
+L101 1
+VJ;DLO1fD`Q:LBccJWNVbW2
+!s100 cfOR1SnH5;bN5GU[_YAX40
+R16
+33
+R99
+!i10b 1
+R115
+R137
+R138
+!i113 1
+R21
+R22
+Pqueue_pkg
+R89
+R26
+R27
+R24
+R25
+R39
+R28
+R40
+R2
+R3
+R4
+R5
+R11
+R6
+!i122 21
+R12
+R0
+8/home/borg/.local/lib/python3.8/site-packages/vunit/vhdl/data_types/src/queue_pkg.vhd
+F/home/borg/.local/lib/python3.8/site-packages/vunit/vhdl/data_types/src/queue_pkg.vhd
+l0
+R31
+VCMi_fVS`R;@j5e>onMNln3
+!s100 8fY`@PeDcUMeBfI8U?]^P0
+R16
+33
+b1
+R99
+!i10b 1
+R115
+!s90 -quiet|-modelsimini|/home/borg/Documents/Elesis/Z01.1--Dio/Projetos/C-UnidadeLogicaAritmetica/vunit_out/modelsim/modelsim.ini|-2008|-work|vunit_lib|/home/borg/.local/lib/python3.8/site-packages/vunit/vhdl/data_types/src/queue_pkg.vhd|
+!s107 /home/borg/.local/lib/python3.8/site-packages/vunit/vhdl/data_types/src/queue_pkg.vhd|
+!i113 1
+R21
+R22
+Bbody
+R90
+R89
+R26
+R27
+R24
+R25
+R39
+R28
+R40
+R2
+R3
+R4
+R5
+R11
+R6
+!i122 23
+8/home/borg/.local/lib/python3.8/site-packages/vunit/vhdl/data_types/src/queue_pkg-body.vhd
+F/home/borg/.local/lib/python3.8/site-packages/vunit/vhdl/data_types/src/queue_pkg-body.vhd
+l0
+R52
+V;8_U?GAdFbYCJXe9dmH663
+!s100 Rz6IkE:G^]aWmFBi49B993
+R16
+33
+R99
+!i10b 1
+R115
+!s90 -quiet|-modelsimini|/home/borg/Documents/Elesis/Z01.1--Dio/Projetos/C-UnidadeLogicaAritmetica/vunit_out/modelsim/modelsim.ini|-2008|-work|vunit_lib|/home/borg/.local/lib/python3.8/site-packages/vunit/vhdl/data_types/src/queue_pkg-body.vhd|
+!s107 /home/borg/.local/lib/python3.8/site-packages/vunit/vhdl/data_types/src/queue_pkg-body.vhd|
+!i113 1
+R21
+R22
+Pqueue_pool_pkg
+R91
+R89
+R26
+R27
+R90
+R24
+R2
+R3
+R4
+R5
+R25
+R39
+R28
+R40
+R11
+R6
+R88
+!i122 27
+R12
+R0
+Z139 8/home/borg/.local/lib/python3.8/site-packages/vunit/vhdl/data_types/src/queue_pool_pkg.vhd
+Z140 F/home/borg/.local/lib/python3.8/site-packages/vunit/vhdl/data_types/src/queue_pool_pkg.vhd
+l0
+R114
+VW_@1eWPT4E>cBF2g>m`PC0
+!s100 _;G]U?J<g^B4Alfij5WV71
+R16
+33
+b1
+R53
+!i10b 1
+R54
+Z141 !s90 -quiet|-modelsimini|/home/borg/Documents/Elesis/Z01.1--Dio/Projetos/C-UnidadeLogicaAritmetica/vunit_out/modelsim/modelsim.ini|-2008|-work|vunit_lib|/home/borg/.local/lib/python3.8/site-packages/vunit/vhdl/data_types/src/queue_pool_pkg.vhd|
+Z142 !s107 /home/borg/.local/lib/python3.8/site-packages/vunit/vhdl/data_types/src/queue_pool_pkg.vhd|
+!i113 1
+R21
+R22
+Bbody
+DPx4 work 14 queue_pool_pkg 0 22 W_@1eWPT4E>cBF2g>m`PC0
+R91
+R89
+R26
+R27
+R90
+R24
+R2
+R3
+R4
+R5
+R25
+R39
+R28
+R40
+R11
+R6
+R88
+!i122 27
+l0
+R123
+Vkn6MSeBEJP7XKeE8EEIYV2
+!s100 M7>6S3G^0GH=A7ZE?=1[m0
+R16
+33
+R53
+!i10b 1
+R54
+R141
+R142
+!i113 1
+R21
+R22
+Prun_deprecated_pkg
+R36
+R37
+Z143 DPx4 work 7 run_pkg 0 22 L;71H6TCjU4gL1AJPm_Vd0
+R51
+R102
+Z144 DPx4 work 13 run_types_pkg 0 22 ZfDWW?_fEaQBz>VkefFUV2
+R88
+R89
+R90
+R91
+Z145 DPx4 work 10 runner_pkg 0 22 NQlg?N:7cfzSYD?FX_C9W0
+R35
+R39
+R40
+R41
+R23
+R24
+R2
+R3
+R4
+R5
+R11
+R6
+R25
+R26
+R28
+R27
+R43
+R42
+!i122 34
+R12
+R0
+Z146 8/home/borg/.local/lib/python3.8/site-packages/vunit/vhdl/run/src/run_deprecated_pkg.vhd
+Z147 F/home/borg/.local/lib/python3.8/site-packages/vunit/vhdl/run/src/run_deprecated_pkg.vhd
+l0
+Z148 L14 1
+V06HHNn=l0Y?PoSLo8^<h00
+!s100 4Hoj><ZICz1T^fYN8MWkj1
+R16
+33
+b1
+R47
+!i10b 1
+R54
+Z149 !s90 -quiet|-modelsimini|/home/borg/Documents/Elesis/Z01.1--Dio/Projetos/C-UnidadeLogicaAritmetica/vunit_out/modelsim/modelsim.ini|-2008|-work|vunit_lib|/home/borg/.local/lib/python3.8/site-packages/vunit/vhdl/run/src/run_deprecated_pkg.vhd|
+Z150 !s107 /home/borg/.local/lib/python3.8/site-packages/vunit/vhdl/run/src/run_deprecated_pkg.vhd|
+!i113 1
+R21
+R22
+Bbody
+DPx4 work 18 run_deprecated_pkg 0 22 06HHNn=l0Y?PoSLo8^<h00
+R36
+R37
+R143
+R51
+R102
+R144
+R88
+R89
+R90
+R91
+R145
+R35
+R39
+R40
+R41
+R23
+R24
+R2
+R3
+R4
+R5
+R11
+R6
+R25
+R26
+R28
+R27
+R43
+R42
+!i122 34
+l0
+L22 1
+V[kgRkgcXIjT2KVd`RUXER1
+!s100 9nkN_n:zY>a?72FLeN@X13
+R16
+33
+R47
+!i10b 1
+R54
+R149
+R150
+!i113 1
+R21
+R22
+Prun_pkg
+R51
+R102
+R144
+R88
+R89
+R90
+R91
+R145
+R39
+R40
+R41
+R23
+R24
+R2
+R3
+R4
+R5
+R11
+R6
+R25
+R26
+R28
+R27
+R43
+R42
+!i122 26
+R12
+R0
+8/home/borg/.local/lib/python3.8/site-packages/vunit/vhdl/run/src/run_api.vhd
+F/home/borg/.local/lib/python3.8/site-packages/vunit/vhdl/run/src/run_api.vhd
+l0
+R76
+VL;71H6TCjU4gL1AJPm_Vd0
+!s100 :lIc^TWB[biloD9RM3RLJ1
+R16
+33
+b1
+R53
+!i10b 1
+R54
+!s90 -quiet|-modelsimini|/home/borg/Documents/Elesis/Z01.1--Dio/Projetos/C-UnidadeLogicaAritmetica/vunit_out/modelsim/modelsim.ini|-2008|-work|vunit_lib|/home/borg/.local/lib/python3.8/site-packages/vunit/vhdl/run/src/run_api.vhd|
+!s107 /home/borg/.local/lib/python3.8/site-packages/vunit/vhdl/run/src/run_api.vhd|
+!i113 1
+R21
+R22
+Bbody
+R143
+R36
+R37
+R134
+R51
+R102
+R144
+R88
+R89
+R90
+R91
+R145
+R39
+R40
+R41
+R23
+R24
+R2
+R3
+R4
+R5
+R11
+R6
+R25
+R26
+R28
+R27
+R43
+R42
+!i122 32
+8/home/borg/.local/lib/python3.8/site-packages/vunit/vhdl/run/src/run.vhd
+F/home/borg/.local/lib/python3.8/site-packages/vunit/vhdl/run/src/run.vhd
+l0
+R63
+VO]>:_Ei[dV;5`hbKnRB4[3
+!s100 ^h6>;;[m0<c4<Tc==LgkY1
+R16
+33
+R53
+!i10b 1
+R54
+!s90 -quiet|-modelsimini|/home/borg/Documents/Elesis/Z01.1--Dio/Projetos/C-UnidadeLogicaAritmetica/vunit_out/modelsim/modelsim.ini|-2008|-work|vunit_lib|/home/borg/.local/lib/python3.8/site-packages/vunit/vhdl/run/src/run.vhd|
+!s107 /home/borg/.local/lib/python3.8/site-packages/vunit/vhdl/run/src/run.vhd|
+!i113 1
+R21
+R22
+Prun_types_pkg
+R39
+R40
+R41
+R23
+R24
+R3
+R4
+R5
+R25
+R26
+R28
+R27
+R43
+R42
+R2
+R6
+R51
+R102
+R11
+!i122 18
+R12
+R0
+Z151 8/home/borg/.local/lib/python3.8/site-packages/vunit/vhdl/run/src/run_types.vhd
+Z152 F/home/borg/.local/lib/python3.8/site-packages/vunit/vhdl/run/src/run_types.vhd
+l0
+R126
+VZfDWW?_fEaQBz>VkefFUV2
+!s100 3T`JVW3Bd;7hbB2_=`oKm3
+R16
+33
+R99
+!i10b 1
+R115
+Z153 !s90 -quiet|-modelsimini|/home/borg/Documents/Elesis/Z01.1--Dio/Projetos/C-UnidadeLogicaAritmetica/vunit_out/modelsim/modelsim.ini|-2008|-work|vunit_lib|/home/borg/.local/lib/python3.8/site-packages/vunit/vhdl/run/src/run_types.vhd|
+Z154 !s107 /home/borg/.local/lib/python3.8/site-packages/vunit/vhdl/run/src/run_types.vhd|
+!i113 1
+R21
+R22
+Bbody
+R144
+R39
+R40
+R41
+R23
+R24
+R3
+R4
+R5
+R25
+R26
+R28
+R27
+R43
+R42
+R2
+R6
+R51
+R102
+R11
+!i122 18
+l0
+R96
+VR7`j]8dlWWgaEONc5dY9N1
+!s100 af23QeMo4UObMQ`W5kSQ53
+R16
+33
+R99
+!i10b 1
+R115
+R153
+R154
+!i113 1
+R21
+R22
+Prunner_pkg
+R41
+R23
+R43
+R42
+R51
+R102
+R144
+R88
+R89
+R39
+R40
+R90
+R91
+R24
+R2
+R3
+R4
+R5
+R11
+R6
+R25
+R26
+R28
+R27
+!i122 25
+R12
+R0
+Z155 8/home/borg/.local/lib/python3.8/site-packages/vunit/vhdl/run/src/runner_pkg.vhd
+Z156 F/home/borg/.local/lib/python3.8/site-packages/vunit/vhdl/run/src/runner_pkg.vhd
+l0
+R46
+VNQlg?N:7cfzSYD?FX_C9W0
+!s100 >ZkWeQ7aR;U28D5`g9>Ba3
+R16
+33
+b1
+R53
+!i10b 1
+R115
+Z157 !s90 -quiet|-modelsimini|/home/borg/Documents/Elesis/Z01.1--Dio/Projetos/C-UnidadeLogicaAritmetica/vunit_out/modelsim/modelsim.ini|-2008|-work|vunit_lib|/home/borg/.local/lib/python3.8/site-packages/vunit/vhdl/run/src/runner_pkg.vhd|
+Z158 !s107 /home/borg/.local/lib/python3.8/site-packages/vunit/vhdl/run/src/runner_pkg.vhd|
+!i113 1
+R21
+R22
+Bbody
+R145
+R41
+R23
+R43
+R42
+R51
+R102
+R144
+R88
+R89
+R39
+R40
+R90
+R91
+R24
+R2
+R3
+R4
+R5
+R11
+R6
+R25
+R26
+R28
+R27
+!i122 25
+l0
+L129 1
+VmZPQn6m>]8d^B[7b2@NMz2
+!s100 <W>a`mf>O93iHPD5GR:YO1
+R16
+33
+R53
+!i10b 1
+R115
+R157
+R158
+!i113 1
+R21
+R22
+Pstop_pkg
+!i122 30
+R12
+R0
+8/home/borg/.local/lib/python3.8/site-packages/vunit/vhdl/core/src/stop_pkg.vhd
+F/home/borg/.local/lib/python3.8/site-packages/vunit/vhdl/core/src/stop_pkg.vhd
+l0
+L7 1
+VUjKiHFdPQ97>_>m`nM3cg3
+!s100 @V=lof^VKhmzo:??5b06J3
+R16
+33
+b1
+R53
+!i10b 1
+R54
+!s90 -quiet|-modelsimini|/home/borg/Documents/Elesis/Z01.1--Dio/Projetos/C-UnidadeLogicaAritmetica/vunit_out/modelsim/modelsim.ini|-2008|-work|vunit_lib|/home/borg/.local/lib/python3.8/site-packages/vunit/vhdl/core/src/stop_pkg.vhd|
+!s107 /home/borg/.local/lib/python3.8/site-packages/vunit/vhdl/core/src/stop_pkg.vhd|
+!i113 1
+R21
+R22
+Bbody
+DPx3 std 3 env 0 22 d?`1ck@NdeD@H3RZG7FgZ2
+R36
+!i122 31
+8/home/borg/.local/lib/python3.8/site-packages/vunit/vhdl/core/src/stop_body_2008p.vhd
+F/home/borg/.local/lib/python3.8/site-packages/vunit/vhdl/core/src/stop_body_2008p.vhd
+l0
+L7 1
+VdYgBOh7Tk04dD_1m1[L?=1
+!s100 GIGE03KCeb`?D<jYN0MPT2
+R16
+33
+R53
+!i10b 1
+R54
+!s90 -quiet|-modelsimini|/home/borg/Documents/Elesis/Z01.1--Dio/Projetos/C-UnidadeLogicaAritmetica/vunit_out/modelsim/modelsim.ini|-2008|-work|vunit_lib|/home/borg/.local/lib/python3.8/site-packages/vunit/vhdl/core/src/stop_body_2008p.vhd|
+!s107 /home/borg/.local/lib/python3.8/site-packages/vunit/vhdl/core/src/stop_body_2008p.vhd|
+!i113 1
+R21
+R22
+Pstring_ops
+R2
+R11
+R6
+!i122 0
+R12
+R0
+Z159 8/home/borg/.local/lib/python3.8/site-packages/vunit/vhdl/string_ops/src/string_ops.vhd
+Z160 F/home/borg/.local/lib/python3.8/site-packages/vunit/vhdl/string_ops/src/string_ops.vhd
+l0
+R148
+V>6lVd?dSYVCeeU;1?_=bg2
+!s100 L<_Na6h6QanSJ:8@THlmI2
+R16
+33
+b1
+R70
+!i10b 1
+R71
+Z161 !s90 -quiet|-modelsimini|/home/borg/Documents/Elesis/Z01.1--Dio/Projetos/C-UnidadeLogicaAritmetica/vunit_out/modelsim/modelsim.ini|-2008|-work|vunit_lib|/home/borg/.local/lib/python3.8/site-packages/vunit/vhdl/string_ops/src/string_ops.vhd|
+Z162 !s107 /home/borg/.local/lib/python3.8/site-packages/vunit/vhdl/string_ops/src/string_ops.vhd|
+!i113 1
+R21
+R22
+Bbody
+R51
+R2
+R11
+R6
+!i122 0
+l0
+L118 1
+V2zgdC_g5z_P<COSWzU4813
+!s100 17T3YWdDG5X2SlCbSJ_8=0
+R16
+33
+R70
+!i10b 1
+R71
+R161
+R162
+!i113 1
+R21
+R22
+Pstring_ptr_pkg
+R24
+R2
+R3
+R4
+R5
+R11
+R6
+R25
+R26
+R28
+!i122 9
+R12
+R0
+8/home/borg/.local/lib/python3.8/site-packages/vunit/vhdl/data_types/src/string_ptr_pkg.vhd
+F/home/borg/.local/lib/python3.8/site-packages/vunit/vhdl/data_types/src/string_ptr_pkg.vhd
+l0
+R63
+Vn[AzFb_A:6S@HQFZYcL]h0
+!s100 XPI]I_3@gL<2AOO5ec2gJ2
+R16
+33
+b1
+R17
+!i10b 1
+R18
+!s90 -quiet|-modelsimini|/home/borg/Documents/Elesis/Z01.1--Dio/Projetos/C-UnidadeLogicaAritmetica/vunit_out/modelsim/modelsim.ini|-2008|-work|vunit_lib|/home/borg/.local/lib/python3.8/site-packages/vunit/vhdl/data_types/src/string_ptr_pkg.vhd|
+!s107 /home/borg/.local/lib/python3.8/site-packages/vunit/vhdl/data_types/src/string_ptr_pkg.vhd|
+!i113 1
+R21
+R22
+Bbody
+R27
+R24
+R2
+R3
+R4
+R5
+R11
+R6
+R25
+R26
+R28
+!i122 12
+8/home/borg/.local/lib/python3.8/site-packages/vunit/vhdl/data_types/src/string_ptr_pkg-body-2002p.vhd
+F/home/borg/.local/lib/python3.8/site-packages/vunit/vhdl/data_types/src/string_ptr_pkg-body-2002p.vhd
+l0
+L7 1
+V?=02^8F6oLj=WGWJf1h_V1
+!s100 NX@1HfeELnlEB`SM_Vd1E0
+R16
+33
+R17
+!i10b 1
+R18
+!s90 -quiet|-modelsimini|/home/borg/Documents/Elesis/Z01.1--Dio/Projetos/C-UnidadeLogicaAritmetica/vunit_out/modelsim/modelsim.ini|-2008|-work|vunit_lib|/home/borg/.local/lib/python3.8/site-packages/vunit/vhdl/data_types/src/string_ptr_pkg-body-2002p.vhd|
+!s107 /home/borg/.local/lib/python3.8/site-packages/vunit/vhdl/data_types/src/string_ptr_pkg-body-2002p.vhd|
+!i113 1
+R21
+R22
+Pstring_ptr_pool_pkg
+R89
+R39
+R40
+R90
+R24
+R2
+R3
+R4
+R5
+R25
+R26
+R28
+R27
+R11
+R6
+!i122 22
+R12
+R0
+Z163 8/home/borg/.local/lib/python3.8/site-packages/vunit/vhdl/data_types/src/string_ptr_pool_pkg.vhd
+Z164 F/home/borg/.local/lib/python3.8/site-packages/vunit/vhdl/data_types/src/string_ptr_pool_pkg.vhd
+l0
+R52
+V;oGa_UEi8nVncYkDRR_Aj1
+!s100 1Ine?OLEo6NUjVXmLI;nH0
+R16
+33
+b1
+R99
+!i10b 1
+R115
+Z165 !s90 -quiet|-modelsimini|/home/borg/Documents/Elesis/Z01.1--Dio/Projetos/C-UnidadeLogicaAritmetica/vunit_out/modelsim/modelsim.ini|-2008|-work|vunit_lib|/home/borg/.local/lib/python3.8/site-packages/vunit/vhdl/data_types/src/string_ptr_pool_pkg.vhd|
+Z166 !s107 /home/borg/.local/lib/python3.8/site-packages/vunit/vhdl/data_types/src/string_ptr_pool_pkg.vhd|
+!i113 1
+R21
+R22
+Bbody
+R91
+R89
+R39
+R40
+R90
+R24
+R2
+R3
+R4
+R5
+R25
+R26
+R28
+R27
+R11
+R6
+!i122 22
+l0
+L38 1
+V_?06Ge?P4zLJz>gJQ=C:[3
+!s100 h]IecjYM^l4;@;dZYBOYh0
+R16
+33
+R99
+!i10b 1
+R115
+R165
+R166
+!i113 1
+R21
+R22
+Ptypes_pkg
+!i122 3
+R12
+R0
+8/home/borg/.local/lib/python3.8/site-packages/vunit/vhdl/data_types/src/types.vhd
+F/home/borg/.local/lib/python3.8/site-packages/vunit/vhdl/data_types/src/types.vhd
+l0
+L7 1
+V8X1EBI95Q8hI=Vi3D9DP;0
+!s100 ]4TB[@=9AE]Xb^5^zG^T80
+R16
+33
+R70
+!i10b 1
+R71
+!s90 -quiet|-modelsimini|/home/borg/Documents/Elesis/Z01.1--Dio/Projetos/C-UnidadeLogicaAritmetica/vunit_out/modelsim/modelsim.ini|-2008|-work|vunit_lib|/home/borg/.local/lib/python3.8/site-packages/vunit/vhdl/data_types/src/types.vhd|
+!s107 /home/borg/.local/lib/python3.8/site-packages/vunit/vhdl/data_types/src/types.vhd|
+!i113 1
+R21
+R22
+^#vunit_context
+R12
+!i122 38
+R0
+8/home/borg/.local/lib/python3.8/site-packages/vunit/vhdl/vunit_context.vhd
+F/home/borg/.local/lib/python3.8/site-packages/vunit/vhdl/vunit_context.vhd
+l0
+L7 1
+V5PF4h;N3nzRfAo898Q8WS3
+!s100 =czAPB:8BLSOk_S`VXRnP2
+R16
+33
+R47
+!i10b 0
+R48
+!s90 -quiet|-modelsimini|/home/borg/Documents/Elesis/Z01.1--Dio/Projetos/C-UnidadeLogicaAritmetica/vunit_out/modelsim/modelsim.ini|-2008|-work|vunit_lib|/home/borg/.local/lib/python3.8/site-packages/vunit/vhdl/vunit_context.vhd|
+!s107 /home/borg/.local/lib/python3.8/site-packages/vunit/vhdl/vunit_context.vhd|
+!i113 1
+R21
+R22
+^#vunit_run_context
+R12
+!i122 35
+R0
+8/home/borg/.local/lib/python3.8/site-packages/vunit/vhdl/vunit_run_context.vhd
+F/home/borg/.local/lib/python3.8/site-packages/vunit/vhdl/vunit_run_context.vhd
+l0
+L7 1
+VfVjocRh=;LN124I5T0F7J3
+!s100 7ccT^6hFADi:JSJ@Ym1Sn1
+R16
+33
+R47
+!i10b 0
+R48
+!s90 -quiet|-modelsimini|/home/borg/Documents/Elesis/Z01.1--Dio/Projetos/C-UnidadeLogicaAritmetica/vunit_out/modelsim/modelsim.ini|-2008|-work|vunit_lib|/home/borg/.local/lib/python3.8/site-packages/vunit/vhdl/vunit_run_context.vhd|
+!s107 /home/borg/.local/lib/python3.8/site-packages/vunit/vhdl/vunit_run_context.vhd|
+!i113 1
+R21
+R22
