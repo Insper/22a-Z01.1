@@ -164,5 +164,4 @@ begin
 	)
 
 	saida <= precomp
-
 end architecture;
