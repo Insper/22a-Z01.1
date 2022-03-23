@@ -19,6 +19,8 @@ architecture rtl of inversor16 is
   -- utilizados nesse modulo.
 
 begin
-  -- Implementação vem aqui!
-
+  -- Implementação vem aqui
+   with z select
+    y<= a when '0', not(a) when others;
+	 
 end architecture;
