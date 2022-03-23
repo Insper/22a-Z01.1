@@ -35,7 +35,7 @@ entity ALU is
 			nx:    in STD_LOGIC;                     -- inverte a entrada x
 			zy:    in STD_LOGIC;                     -- zera a entrada y
 			ny:    in STD_LOGIC;                     -- inverte a entrada y
-			f:     in STD_LOGIC_VECTOR(2 downto 0);  -- se 0 calcula x & y, se 1 calcula x + y se 2 calcula x xor y
+			f:     in STD_LOGIC_VECTOR(1 downto 0);  -- se 0 calcula x & y, se 1 calcula x + y se 2 calcula x xor y
 			no:    in STD_LOGIC;                     -- inverte o valor da saída
 			zr:    out STD_LOGIC;                    -- setado se saída igual a zero
 			ng:    out STD_LOGIC;                    -- setado se saída é negativa
@@ -92,7 +92,7 @@ architecture  rtl OF alu is
 		port (
 			a:   in  STD_LOGIC_VECTOR(15 downto 0);
 			b:   in  STD_LOGIC_VECTOR(15 downto 0);
-			sel: in  STD_LOGIC_VECTOR(2 downto 0);
+			sel: in  STD_LOGIC_VECTOR(1 downto 0);
 			q:   out STD_LOGIC_VECTOR(15 downto 0)
 		);
 	end component;
@@ -127,72 +127,72 @@ begin
 		a => x,
 		y => zxout	
 
-	)
+	);
 
 	zeradory : zerador16
 	port map(
 		z => zy,
 		a =>y,
 		y => zyout
-	)
+	);
 
 	inversorx : inversor16
 	port map(
 		z => nx,
-		a => zxout
+		a => zxout,
 		y => nxout
-	)
+	);
 
 	inversory : inversor16
 	port map(
 		z => ny,
 		a => y,
 		y =>nyout
-	)
+	);
 
-	add16 : Add16
+	add : Add16
 	port map(
 		a => nxout,
 		b => nyout,
 		q => adderout
-	)
+	);
 
-	and16 : And16
+	and1 : And16
 	port map(
 		a => nxout,
-		b => nouty,
+		b => nyout,
 		q => andout
 		
-	)
+	);
 
-	xor16: Xor16
+	xor1: Xor16
 	port map(
 		a => nxout,
 		b => nyout,
 		q => xorout
-	)
+	);
 
-	mux16 : muxXor
+	muxi : muxXor
 	port map(
 		a => adderout,
 		b => andout,
 		c => xorout,
 		sel => f,
 		q => muxout
-	)
+	);
 
 	inversor0 : inversor16
 	port map(
 		z => no,
 		a => muxout,
 		y => precomp
-	)
+	);
 	compara : comparador16
 	port map(
-		a => precomp
+		a => precomp,
 		zrc => zr,
 		ngc => ng
-	)
+	);
 
-	saida <= precomp
+	saida <= precomp;
 end architecture;

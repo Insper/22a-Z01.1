@@ -60,10 +60,6 @@ architecture rtl of TopLevel is
 			leds : out STD_LOGIC_VECTOR(6 downto 0));
 	end component;
 
-	component Xor is
-		port(
-			a => 
-		);
 
 --------------
 -- signals

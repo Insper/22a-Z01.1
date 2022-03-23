@@ -9,7 +9,7 @@ entity Xor16 is
 	);
 end entity;
 
-architecture rtl of Xor is
+architecture rtl of Xor16 is
   -- Aqui declaramos sinais (fios auxiliares)
   -- e componentes (outros módulos) que serao
   -- utilizados nesse modulo.
