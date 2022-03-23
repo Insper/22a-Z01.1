@@ -1,0 +1,2228 @@
+m255
+K4
+z2
+!s11e vcom 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 d/home/borg/Documents/Elesis/Z01.1--Dio/Projetos/C-UnidadeLogicaAritmetica
+Eadd16
+Z1 w1647607334
+Z2 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z3 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+!i122 7
+R0
+Z4 8/home/borg/Documents/Elesis/Z01.1--Dio/Projetos/C-UnidadeLogicaAritmetica/src/Add16.vhd
+Z5 F/home/borg/Documents/Elesis/Z01.1--Dio/Projetos/C-UnidadeLogicaAritmetica/src/Add16.vhd
+l0
+Z6 L11 1
+V^@FJVKXm8?U0L69OkeYXZ1
+!s100 SiSIIDRe2L<Y`4Mn=<Q<i1
+Z7 OV;C;2020.1;71
+33
+Z8 !s110 1648055605
+!i10b 1
+Z9 !s108 1648055605.000000
+Z10 !s90 -quiet|-modelsimini|/home/borg/Documents/Elesis/Z01.1--Dio/Projetos/C-UnidadeLogicaAritmetica/vunit_out/modelsim/modelsim.ini|-2008|-work|lib|/home/borg/Documents/Elesis/Z01.1--Dio/Projetos/C-UnidadeLogicaAritmetica/src/Add16.vhd|
+Z11 !s107 /home/borg/Documents/Elesis/Z01.1--Dio/Projetos/C-UnidadeLogicaAritmetica/src/Add16.vhd|
+!i113 1
+Z12 o-quiet -2008 -work lib
+Z13 tExplicit 1 CvgOpt 0
+Artl
+R2
+R3
+DEx4 work 5 add16 0 22 ^@FJVKXm8?U0L69OkeYXZ1
+!i122 7
+l31
+L19 16
+VT6^0dM;daMX9n7V`Ao5Gh1
+!s100 ef6[[NkWnK_=`hL247@M80
+R7
+33
+R8
+!i10b 1
+R9
+R10
+R11
+!i113 1
+R12
+R13
+Ealu
+R1
+R2
+R3
+!i122 8
+R0
+Z14 8/home/borg/Documents/Elesis/Z01.1--Dio/Projetos/C-UnidadeLogicaAritmetica/src/ALU.vhd
+Z15 F/home/borg/Documents/Elesis/Z01.1--Dio/Projetos/C-UnidadeLogicaAritmetica/src/ALU.vhd
+l0
+L29 1
+VMT^L8DV<ch`z60KDB@OUg0
+!s100 ;H:E>8hji@:aE]F93AJU@0
+R7
+33
+R8
+!i10b 1
+R9
+Z16 !s90 -quiet|-modelsimini|/home/borg/Documents/Elesis/Z01.1--Dio/Projetos/C-UnidadeLogicaAritmetica/vunit_out/modelsim/modelsim.ini|-2008|-work|lib|/home/borg/Documents/Elesis/Z01.1--Dio/Projetos/C-UnidadeLogicaAritmetica/src/ALU.vhd|
+Z17 !s107 /home/borg/Documents/Elesis/Z01.1--Dio/Projetos/C-UnidadeLogicaAritmetica/src/ALU.vhd|
+!i113 1
+R12
+R13
+Artl
+R2
+R3
+DEx4 work 3 alu 0 22 MT^L8DV<ch`z60KDB@OUg0
+!i122 8
+l98
+L44 58
+Vai?EgbhiPbfQCCCD9S7oV1
+!s100 d1IERJ`a8F`k8G:>NPN[60
+R7
+33
+R8
+!i10b 1
+R9
+R16
+R17
+!i113 1
+R12
+R13
+Eand16
+Z18 w1647541269
+R2
+R3
+!i122 31
+R0
+Z19 8/home/borg/Documents/Elesis/Z01.1--Dio/Projetos/B-LogicaCombinacional/src/And16.vhd
+Z20 F/home/borg/Documents/Elesis/Z01.1--Dio/Projetos/B-LogicaCombinacional/src/And16.vhd
+l0
+L4 1
+Vh]ej`Ck73hG:Zd8Jo=jjc1
+!s100 4g2NdCHBc<J3K7jR5WC:B0
+R7
+33
+Z21 !s110 1648055607
+!i10b 1
+Z22 !s108 1648055607.000000
+Z23 !s90 -quiet|-modelsimini|/home/borg/Documents/Elesis/Z01.1--Dio/Projetos/C-UnidadeLogicaAritmetica/vunit_out/modelsim/modelsim.ini|-2008|-work|lib|/home/borg/Documents/Elesis/Z01.1--Dio/Projetos/B-LogicaCombinacional/src/And16.vhd|
+Z24 !s107 /home/borg/Documents/Elesis/Z01.1--Dio/Projetos/B-LogicaCombinacional/src/And16.vhd|
+!i113 1
+R12
+R13
+Aarch
+R2
+R3
+DEx4 work 5 and16 0 22 h]ej`Ck73hG:Zd8Jo=jjc1
+!i122 31
+l13
+L11 7
+Vjc6`O1SbB67?bN7CIYmm?3
+!s100 a>9IT39oVfioD@8a6=;i73
+R7
+33
+R21
+!i10b 1
+R22
+R23
+R24
+!i113 1
+R12
+R13
+Ebarrelshifter16
+R18
+Z25 DPx4 ieee 11 numeric_std 0 22 aU^R8eGcicLcUFIaBQSL>3
+R2
+R3
+!i122 30
+R0
+Z26 8/home/borg/Documents/Elesis/Z01.1--Dio/Projetos/B-LogicaCombinacional/src/BarrelShifter16.vhd
+Z27 F/home/borg/Documents/Elesis/Z01.1--Dio/Projetos/B-LogicaCombinacional/src/BarrelShifter16.vhd
+l0
+L5 1
+VCaOo:=TkAZ^2P1A;L3oI:1
+!s100 ?`1J2i4@hB[PKidXQj87D0
+R7
+33
+R21
+!i10b 1
+R22
+Z28 !s90 -quiet|-modelsimini|/home/borg/Documents/Elesis/Z01.1--Dio/Projetos/C-UnidadeLogicaAritmetica/vunit_out/modelsim/modelsim.ini|-2008|-work|lib|/home/borg/Documents/Elesis/Z01.1--Dio/Projetos/B-LogicaCombinacional/src/BarrelShifter16.vhd|
+Z29 !s107 /home/borg/Documents/Elesis/Z01.1--Dio/Projetos/B-LogicaCombinacional/src/BarrelShifter16.vhd|
+!i113 1
+R12
+R13
+Artl
+R25
+R2
+R3
+DEx4 work 15 barrelshifter16 0 22 CaOo:=TkAZ^2P1A;L3oI:1
+!i122 30
+l14
+L13 10
+VZ=Ao2eUM7:1gD?a5XM2G10
+!s100 TL`OURbWe7ANS:Y4`oPVZ2
+R7
+33
+R21
+!i10b 1
+R22
+R28
+R29
+!i113 1
+R12
+R13
+Ebinariotobcd
+R18
+Z30 DPx4 ieee 15 std_logic_arith 0 22 [G314=:2zXJ`VORJe1J@Z1
+Z31 DPx4 ieee 18 std_logic_unsigned 0 22 ;eZjO2D4ZDz<]0>8AL<ne1
+R2
+R3
+!i122 13
+R0
+Z32 8/home/borg/Documents/Elesis/Z01.1--Dio/Projetos/B-LogicaCombinacional/src/binarioToBcd.vhd
+Z33 F/home/borg/Documents/Elesis/Z01.1--Dio/Projetos/B-LogicaCombinacional/src/binarioToBcd.vhd
+l0
+L8 1
+VI19a<iFWbfZ0SWGf=`F:20
+!s100 :4FYRUlC<2Fb@bHhj3LM<0
+R7
+33
+Z34 !s110 1648055606
+!i10b 1
+Z35 !s108 1648055606.000000
+Z36 !s90 -quiet|-modelsimini|/home/borg/Documents/Elesis/Z01.1--Dio/Projetos/C-UnidadeLogicaAritmetica/vunit_out/modelsim/modelsim.ini|-2008|-work|lib|/home/borg/Documents/Elesis/Z01.1--Dio/Projetos/B-LogicaCombinacional/src/binarioToBcd.vhd|
+Z37 !s107 /home/borg/Documents/Elesis/Z01.1--Dio/Projetos/B-LogicaCombinacional/src/binarioToBcd.vhd|
+!i113 1
+R12
+R13
+Abehaviour
+R30
+R31
+R2
+R3
+DEx4 work 12 binariotobcd 0 22 I19a<iFWbfZ0SWGf=`F:20
+!i122 13
+l27
+L17 77
+VA<n<EJ<8U4RkKCGaz5CDV3
+!s100 oi0D7`:`AM=OP43658iCn2
+R7
+33
+R34
+!i10b 1
+R35
+R36
+R37
+!i113 1
+R12
+R13
+Ecircuito
+R18
+R2
+R3
+!i122 12
+R0
+Z38 8/home/borg/Documents/Elesis/Z01.1--Dio/Projetos/B-LogicaCombinacional/src/circuito.vhd
+Z39 F/home/borg/Documents/Elesis/Z01.1--Dio/Projetos/B-LogicaCombinacional/src/circuito.vhd
+l0
+L4 1
+VQBQIj`R>78621b^V>3oQg1
+!s100 o]3AXHENE2[1YZDZ9QMnG1
+R7
+33
+R34
+!i10b 1
+R9
+Z40 !s90 -quiet|-modelsimini|/home/borg/Documents/Elesis/Z01.1--Dio/Projetos/C-UnidadeLogicaAritmetica/vunit_out/modelsim/modelsim.ini|-2008|-work|lib|/home/borg/Documents/Elesis/Z01.1--Dio/Projetos/B-LogicaCombinacional/src/circuito.vhd|
+Z41 !s107 /home/borg/Documents/Elesis/Z01.1--Dio/Projetos/B-LogicaCombinacional/src/circuito.vhd|
+!i113 1
+R12
+R13
+Aarch
+R2
+R3
+DEx4 work 8 circuito 0 22 QBQIj`R>78621b^V>3oQg1
+!i122 12
+l12
+L10 7
+VR7YbZgdV1g9:mKmUAI`Ee3
+!s100 ffLhLEjZh^L:PiXj?VCb]3
+R7
+33
+R34
+!i10b 1
+R9
+R40
+R41
+!i113 1
+R12
+R13
+Ecomparador16
+R1
+R2
+R3
+!i122 2
+R0
+Z42 8/home/borg/Documents/Elesis/Z01.1--Dio/Projetos/C-UnidadeLogicaAritmetica/src/comparador16.vhd
+Z43 F/home/borg/Documents/Elesis/Z01.1--Dio/Projetos/C-UnidadeLogicaAritmetica/src/comparador16.vhd
+l0
+L8 1
+VbbjmeK1BQ4Kb7jBbI77Rg2
+!s100 6Q613_:GLMIK913:C5DoD3
+R7
+33
+R8
+!i10b 1
+R9
+Z44 !s90 -quiet|-modelsimini|/home/borg/Documents/Elesis/Z01.1--Dio/Projetos/C-UnidadeLogicaAritmetica/vunit_out/modelsim/modelsim.ini|-2008|-work|lib|/home/borg/Documents/Elesis/Z01.1--Dio/Projetos/C-UnidadeLogicaAritmetica/src/comparador16.vhd|
+Z45 !s107 /home/borg/Documents/Elesis/Z01.1--Dio/Projetos/C-UnidadeLogicaAritmetica/src/comparador16.vhd|
+!i113 1
+R12
+R13
+Artl
+R2
+R3
+DEx4 work 12 comparador16 0 22 bbjmeK1BQ4Kb7jBbI77Rg2
+!i122 2
+l21
+Z46 L16 9
+VzfK^0_[NBf_8iGhJg3NVO3
+!s100 GHM5dONB[5kG^YZ5??bfk2
+R7
+33
+R8
+!i10b 1
+R9
+R44
+R45
+!i113 1
+R12
+R13
+Econceitoa
+R18
+R25
+R2
+R3
+!i122 29
+R0
+Z47 8/home/borg/Documents/Elesis/Z01.1--Dio/Projetos/B-LogicaCombinacional/src/ConceitoA.vhd
+Z48 F/home/borg/Documents/Elesis/Z01.1--Dio/Projetos/B-LogicaCombinacional/src/ConceitoA.vhd
+l0
+Z49 L12 1
+V]Y8nRGSE6NAcRGHPk=9KG0
+!s100 AE5M:R58SBSKJe6hz`Xi;2
+R7
+33
+R21
+!i10b 1
+R22
+Z50 !s90 -quiet|-modelsimini|/home/borg/Documents/Elesis/Z01.1--Dio/Projetos/C-UnidadeLogicaAritmetica/vunit_out/modelsim/modelsim.ini|-2008|-work|lib|/home/borg/Documents/Elesis/Z01.1--Dio/Projetos/B-LogicaCombinacional/src/ConceitoA.vhd|
+Z51 !s107 /home/borg/Documents/Elesis/Z01.1--Dio/Projetos/B-LogicaCombinacional/src/ConceitoA.vhd|
+!i113 1
+R12
+R13
+Artl
+R25
+R2
+R3
+DEx4 work 9 conceitoa 0 22 ]Y8nRGSE6NAcRGHPk=9KG0
+!i122 29
+l35
+L26 13
+V5hFJ1H0>^gPh:e9>J5cnd0
+!s100 59F_RgN?5IJ:O05IhHeo?2
+R7
+33
+R21
+!i10b 1
+R22
+R50
+R51
+!i113 1
+R12
+R13
+Edetectordemoedas
+R18
+R2
+R3
+!i122 11
+R0
+Z52 8/home/borg/Documents/Elesis/Z01.1--Dio/Projetos/B-LogicaCombinacional/src/detectorDeMoedas.vhd
+Z53 F/home/borg/Documents/Elesis/Z01.1--Dio/Projetos/B-LogicaCombinacional/src/detectorDeMoedas.vhd
+l0
+L4 1
+VSd0AX;8RlG:F_LO9J_6j^3
+!s100 eBG_FEDA1m8g9Gonl?[8k0
+R7
+33
+R8
+!i10b 1
+R9
+Z54 !s90 -quiet|-modelsimini|/home/borg/Documents/Elesis/Z01.1--Dio/Projetos/C-UnidadeLogicaAritmetica/vunit_out/modelsim/modelsim.ini|-2008|-work|lib|/home/borg/Documents/Elesis/Z01.1--Dio/Projetos/B-LogicaCombinacional/src/detectorDeMoedas.vhd|
+Z55 !s107 /home/borg/Documents/Elesis/Z01.1--Dio/Projetos/B-LogicaCombinacional/src/detectorDeMoedas.vhd|
+!i113 1
+R12
+R13
+Aarch
+R2
+R3
+DEx4 work 16 detectordemoedas 0 22 Sd0AX;8RlG:F_LO9J_6j^3
+!i122 11
+l12
+L10 8
+VcRGhcPX^OMWP16[6_SaoJ0
+!s100 GnmhE``o<`1PHAQ[EI=EC3
+R7
+33
+R8
+!i10b 1
+R9
+R54
+R55
+!i113 1
+R12
+R13
+Edmux2way
+R18
+R2
+R3
+!i122 28
+R0
+Z56 8/home/borg/Documents/Elesis/Z01.1--Dio/Projetos/B-LogicaCombinacional/src/DMux2Way.vhd
+Z57 F/home/borg/Documents/Elesis/Z01.1--Dio/Projetos/B-LogicaCombinacional/src/DMux2Way.vhd
+l0
+L4 1
+V>:IF]Koi99f<cJ0CmCAM51
+!s100 Mk4MPhHXoJhVbDN8OhUzJ0
+R7
+33
+R21
+!i10b 1
+R35
+Z58 !s90 -quiet|-modelsimini|/home/borg/Documents/Elesis/Z01.1--Dio/Projetos/C-UnidadeLogicaAritmetica/vunit_out/modelsim/modelsim.ini|-2008|-work|lib|/home/borg/Documents/Elesis/Z01.1--Dio/Projetos/B-LogicaCombinacional/src/DMux2Way.vhd|
+Z59 !s107 /home/borg/Documents/Elesis/Z01.1--Dio/Projetos/B-LogicaCombinacional/src/DMux2Way.vhd|
+!i113 1
+R12
+R13
+Artl
+R2
+R3
+DEx4 work 8 dmux2way 0 22 >:IF]Koi99f<cJ0CmCAM51
+!i122 28
+l13
+L12 6
+VY_alRP<e9YEVV7?E[fn`31
+!s100 eW85T=oPIWQ7miG8@<I]61
+R7
+33
+R21
+!i10b 1
+R35
+R58
+R59
+!i113 1
+R12
+R13
+Edmux4way
+R18
+R2
+R3
+!i122 27
+R0
+Z60 8/home/borg/Documents/Elesis/Z01.1--Dio/Projetos/B-LogicaCombinacional/src/DMux4Way.vhd
+Z61 F/home/borg/Documents/Elesis/Z01.1--Dio/Projetos/B-LogicaCombinacional/src/DMux4Way.vhd
+l0
+L4 1
+VchCWhU[f@SDYOfM[z`KAD3
+!s100 ;Fe6?`C@SB@=WbZbaI^E^0
+R7
+33
+R34
+!i10b 1
+R35
+Z62 !s90 -quiet|-modelsimini|/home/borg/Documents/Elesis/Z01.1--Dio/Projetos/C-UnidadeLogicaAritmetica/vunit_out/modelsim/modelsim.ini|-2008|-work|lib|/home/borg/Documents/Elesis/Z01.1--Dio/Projetos/B-LogicaCombinacional/src/DMux4Way.vhd|
+Z63 !s107 /home/borg/Documents/Elesis/Z01.1--Dio/Projetos/B-LogicaCombinacional/src/DMux4Way.vhd|
+!i113 1
+R12
+R13
+Artl
+R2
+R3
+DEx4 work 8 dmux4way 0 22 chCWhU[f@SDYOfM[z`KAD3
+!i122 27
+l15
+L14 8
+VMkTM<iI<_JXEC;Z6Wh1_l1
+!s100 k;HQ>4kj2]0f;m@M3K<d:1
+R7
+33
+R34
+!i10b 1
+R35
+R62
+R63
+!i113 1
+R12
+R13
+Edmux8way
+R18
+R2
+R3
+!i122 26
+R0
+Z64 8/home/borg/Documents/Elesis/Z01.1--Dio/Projetos/B-LogicaCombinacional/src/DMux8Way.vhd
+Z65 F/home/borg/Documents/Elesis/Z01.1--Dio/Projetos/B-LogicaCombinacional/src/DMux8Way.vhd
+l0
+L4 1
+V4@:^4]]>d5jd<9PRAJQi32
+!s100 zC5^AWzR72_D_1oKAO8`>2
+R7
+33
+R34
+!i10b 1
+R35
+Z66 !s90 -quiet|-modelsimini|/home/borg/Documents/Elesis/Z01.1--Dio/Projetos/C-UnidadeLogicaAritmetica/vunit_out/modelsim/modelsim.ini|-2008|-work|lib|/home/borg/Documents/Elesis/Z01.1--Dio/Projetos/B-LogicaCombinacional/src/DMux8Way.vhd|
+Z67 !s107 /home/borg/Documents/Elesis/Z01.1--Dio/Projetos/B-LogicaCombinacional/src/DMux8Way.vhd|
+!i113 1
+R12
+R13
+Aarch
+R2
+R3
+DEx4 work 8 dmux8way 0 22 4@:^4]]>d5jd<9PRAJQi32
+!i122 26
+l19
+L18 14
+Von6RmoEeHk[KiA;jdn5_10
+!s100 _<7oz43h8X=2[O?0gD?SI0
+R7
+33
+R34
+!i10b 1
+R35
+R66
+R67
+!i113 1
+R12
+R13
+Efulladder
+Z68 w1648053091
+R2
+R3
+!i122 6
+R0
+Z69 8/home/borg/Documents/Elesis/Z01.1--Dio/Projetos/C-UnidadeLogicaAritmetica/src/FullAdder.vhd
+Z70 F/home/borg/Documents/Elesis/Z01.1--Dio/Projetos/C-UnidadeLogicaAritmetica/src/FullAdder.vhd
+l0
+Z71 L10 1
+V;RB>US:oiVgf@@2;ERnEW2
+!s100 ^oFEXWUb;T^9LUJXBGnJH2
+R7
+33
+R8
+!i10b 1
+R9
+Z72 !s90 -quiet|-modelsimini|/home/borg/Documents/Elesis/Z01.1--Dio/Projetos/C-UnidadeLogicaAritmetica/vunit_out/modelsim/modelsim.ini|-2008|-work|lib|/home/borg/Documents/Elesis/Z01.1--Dio/Projetos/C-UnidadeLogicaAritmetica/src/FullAdder.vhd|
+Z73 !s107 /home/borg/Documents/Elesis/Z01.1--Dio/Projetos/C-UnidadeLogicaAritmetica/src/FullAdder.vhd|
+!i113 1
+R12
+R13
+Artl
+R2
+R3
+DEx4 work 9 fulladder 0 22 ;RB>US:oiVgf@@2;ERnEW2
+!i122 6
+l22
+L17 12
+VXclL52FE2F7NJAc5h9@4H2
+!s100 <RkjR<[J@=7eFKN61Vd=<2
+R7
+33
+R8
+!i10b 1
+R9
+R72
+R73
+!i113 1
+R12
+R13
+Ehalfadder
+R68
+R2
+R3
+!i122 5
+R0
+Z74 8/home/borg/Documents/Elesis/Z01.1--Dio/Projetos/C-UnidadeLogicaAritmetica/src/HalfAdder.vhd
+Z75 F/home/borg/Documents/Elesis/Z01.1--Dio/Projetos/C-UnidadeLogicaAritmetica/src/HalfAdder.vhd
+l0
+R71
+VL0]G_0fS9^WC^L]C@X[Y^0
+!s100 h@?RhTGZ[QMJjM?>AnoBQ0
+R7
+33
+R8
+!i10b 1
+R9
+Z76 !s90 -quiet|-modelsimini|/home/borg/Documents/Elesis/Z01.1--Dio/Projetos/C-UnidadeLogicaAritmetica/vunit_out/modelsim/modelsim.ini|-2008|-work|lib|/home/borg/Documents/Elesis/Z01.1--Dio/Projetos/C-UnidadeLogicaAritmetica/src/HalfAdder.vhd|
+Z77 !s107 /home/borg/Documents/Elesis/Z01.1--Dio/Projetos/C-UnidadeLogicaAritmetica/src/HalfAdder.vhd|
+!i113 1
+R12
+R13
+Artl
+R2
+R3
+DEx4 work 9 halfadder 0 22 L0]G_0fS9^WC^L]C@X[Y^0
+!i122 5
+l22
+L17 11
+VJhVc1_H_8cTTg=mhjA16;1
+!s100 94]fY3RaCEU]AD`]CNGfa0
+R7
+33
+R8
+!i10b 1
+R9
+R76
+R77
+!i113 1
+R12
+R13
+Eimpressora
+R18
+R2
+R3
+!i122 10
+R0
+Z78 8/home/borg/Documents/Elesis/Z01.1--Dio/Projetos/B-LogicaCombinacional/src/impressora.vhd
+Z79 F/home/borg/Documents/Elesis/Z01.1--Dio/Projetos/B-LogicaCombinacional/src/impressora.vhd
+l0
+L4 1
+V2Vf]_[jCT:XbB[Tz[fgb@2
+!s100 3VLb^^iLS^2QPXha=FQ=@1
+R7
+33
+R8
+!i10b 1
+R9
+Z80 !s90 -quiet|-modelsimini|/home/borg/Documents/Elesis/Z01.1--Dio/Projetos/C-UnidadeLogicaAritmetica/vunit_out/modelsim/modelsim.ini|-2008|-work|lib|/home/borg/Documents/Elesis/Z01.1--Dio/Projetos/B-LogicaCombinacional/src/impressora.vhd|
+Z81 !s107 /home/borg/Documents/Elesis/Z01.1--Dio/Projetos/B-LogicaCombinacional/src/impressora.vhd|
+!i113 1
+R12
+R13
+Aarch
+R2
+R3
+DEx4 work 10 impressora 0 22 2Vf]_[jCT:XbB[Tz[fgb@2
+!i122 10
+l12
+L10 13
+VmSG^h`;n]YKeHZlRbCK`=2
+!s100 LCleBIhmXm5ZmjDI4hM^I0
+R7
+33
+R8
+!i10b 1
+R9
+R80
+R81
+!i113 1
+R12
+R13
+Einc16
+R1
+R2
+R3
+!i122 4
+R0
+Z82 8/home/borg/Documents/Elesis/Z01.1--Dio/Projetos/C-UnidadeLogicaAritmetica/src/Inc16.vhd
+Z83 F/home/borg/Documents/Elesis/Z01.1--Dio/Projetos/C-UnidadeLogicaAritmetica/src/Inc16.vhd
+l0
+R6
+V;OmAHIS@A^0AT]ojlejag2
+!s100 zf5`@f[Vj[mSi<_bFTEQi3
+R7
+33
+R8
+!i10b 1
+R9
+Z84 !s90 -quiet|-modelsimini|/home/borg/Documents/Elesis/Z01.1--Dio/Projetos/C-UnidadeLogicaAritmetica/vunit_out/modelsim/modelsim.ini|-2008|-work|lib|/home/borg/Documents/Elesis/Z01.1--Dio/Projetos/C-UnidadeLogicaAritmetica/src/Inc16.vhd|
+Z85 !s107 /home/borg/Documents/Elesis/Z01.1--Dio/Projetos/C-UnidadeLogicaAritmetica/src/Inc16.vhd|
+!i113 1
+R12
+R13
+Artl
+R2
+R3
+DEx4 work 5 inc16 0 22 ;OmAHIS@A^0AT]ojlejag2
+!i122 4
+l31
+L18 17
+VBe]Y2jknd@]EOAmPQZY;43
+!s100 KkSH<]zbaC5^`EF^A0aHE2
+R7
+33
+R8
+!i10b 1
+R9
+R84
+R85
+!i113 1
+R12
+R13
+Einversor16
+R1
+R2
+R3
+!i122 1
+R0
+Z86 8/home/borg/Documents/Elesis/Z01.1--Dio/Projetos/C-UnidadeLogicaAritmetica/src/inversor16.vhd
+Z87 F/home/borg/Documents/Elesis/Z01.1--Dio/Projetos/C-UnidadeLogicaAritmetica/src/inversor16.vhd
+l0
+L8 1
+VVkHiPDk`Ml2f_7V714<nn2
+!s100 :1_@R;4H?WBDlVmIlH2LX3
+R7
+33
+R8
+!i10b 1
+R9
+Z88 !s90 -quiet|-modelsimini|/home/borg/Documents/Elesis/Z01.1--Dio/Projetos/C-UnidadeLogicaAritmetica/vunit_out/modelsim/modelsim.ini|-2008|-work|lib|/home/borg/Documents/Elesis/Z01.1--Dio/Projetos/C-UnidadeLogicaAritmetica/src/inversor16.vhd|
+Z89 !s107 /home/borg/Documents/Elesis/Z01.1--Dio/Projetos/C-UnidadeLogicaAritmetica/src/inversor16.vhd|
+!i113 1
+R12
+R13
+Artl
+R2
+R3
+DEx4 work 10 inversor16 0 22 VkHiPDk`Ml2f_7V714<nn2
+!i122 1
+l21
+R46
+VLb0UK2BEECKK;3_m>Bel82
+!s100 ;GOY;3Z7k<:X^RhEHWa;U0
+R7
+33
+R8
+!i10b 1
+R9
+R88
+R89
+!i113 1
+R12
+R13
+Emux16
+R18
+R2
+R3
+!i122 25
+R0
+Z90 8/home/borg/Documents/Elesis/Z01.1--Dio/Projetos/B-LogicaCombinacional/src/Mux16.vhd
+Z91 F/home/borg/Documents/Elesis/Z01.1--Dio/Projetos/B-LogicaCombinacional/src/Mux16.vhd
+l0
+L4 1
+V^KK7>>=?KzfHlc;dK>^H53
+!s100 IzGKQCSkQ7RCdJh>^j0Q61
+R7
+33
+R34
+!i10b 1
+R35
+Z92 !s90 -quiet|-modelsimini|/home/borg/Documents/Elesis/Z01.1--Dio/Projetos/C-UnidadeLogicaAritmetica/vunit_out/modelsim/modelsim.ini|-2008|-work|lib|/home/borg/Documents/Elesis/Z01.1--Dio/Projetos/B-LogicaCombinacional/src/Mux16.vhd|
+Z93 !s107 /home/borg/Documents/Elesis/Z01.1--Dio/Projetos/B-LogicaCombinacional/src/Mux16.vhd|
+!i113 1
+R12
+R13
+Aarch
+R2
+R3
+DEx4 work 5 mux16 0 22 ^KK7>>=?KzfHlc;dK>^H53
+!i122 25
+l13
+Z94 L12 7
+V]5XKXQ5k3k8jo9:]hDF200
+!s100 A2=C`TCKcPzK5^DQI9NRd1
+R7
+33
+R34
+!i10b 1
+R35
+R92
+R93
+!i113 1
+R12
+R13
+Emux2way
+R18
+R2
+R3
+!i122 24
+R0
+Z95 8/home/borg/Documents/Elesis/Z01.1--Dio/Projetos/B-LogicaCombinacional/src/Mux2Way.vhd
+Z96 F/home/borg/Documents/Elesis/Z01.1--Dio/Projetos/B-LogicaCombinacional/src/Mux2Way.vhd
+l0
+L4 1
+V5Md04iB]KYYIl:m:EPnQ[3
+!s100 L]VTV_?L9fN8g2_`K9nZQ2
+R7
+33
+R34
+!i10b 1
+R35
+Z97 !s90 -quiet|-modelsimini|/home/borg/Documents/Elesis/Z01.1--Dio/Projetos/C-UnidadeLogicaAritmetica/vunit_out/modelsim/modelsim.ini|-2008|-work|lib|/home/borg/Documents/Elesis/Z01.1--Dio/Projetos/B-LogicaCombinacional/src/Mux2Way.vhd|
+Z98 !s107 /home/borg/Documents/Elesis/Z01.1--Dio/Projetos/B-LogicaCombinacional/src/Mux2Way.vhd|
+!i113 1
+R12
+R13
+Aarch
+R2
+R3
+DEx4 work 7 mux2way 0 22 5Md04iB]KYYIl:m:EPnQ[3
+!i122 24
+l13
+R94
+V5Pkj7zU6XVI^OQ:9I59V[2
+!s100 @H:]2YbSZ`c0bJe[>WBNL1
+R7
+33
+R34
+!i10b 1
+R35
+R97
+R98
+!i113 1
+R12
+R13
+Emux4way
+R18
+R2
+R3
+!i122 23
+R0
+Z99 8/home/borg/Documents/Elesis/Z01.1--Dio/Projetos/B-LogicaCombinacional/src/Mux4Way.vhd
+Z100 F/home/borg/Documents/Elesis/Z01.1--Dio/Projetos/B-LogicaCombinacional/src/Mux4Way.vhd
+l0
+L4 1
+VS6DJa:23Uele:d0oQjjO[0
+!s100 X`n8^nYIhlnNgIfP_EkID1
+R7
+33
+R34
+!i10b 1
+R35
+Z101 !s90 -quiet|-modelsimini|/home/borg/Documents/Elesis/Z01.1--Dio/Projetos/C-UnidadeLogicaAritmetica/vunit_out/modelsim/modelsim.ini|-2008|-work|lib|/home/borg/Documents/Elesis/Z01.1--Dio/Projetos/B-LogicaCombinacional/src/Mux4Way.vhd|
+Z102 !s107 /home/borg/Documents/Elesis/Z01.1--Dio/Projetos/B-LogicaCombinacional/src/Mux4Way.vhd|
+!i113 1
+R12
+R13
+Aarch
+R2
+R3
+DEx4 work 7 mux4way 0 22 S6DJa:23Uele:d0oQjjO[0
+!i122 23
+l15
+L14 9
+VAWd4Y532U7o^YQ2N>mn1Z3
+!s100 l]DPGhBb4A]TkFSmET9lz1
+R7
+33
+R34
+!i10b 1
+R35
+R101
+R102
+!i113 1
+R12
+R13
+Emux4way16
+R18
+R2
+R3
+!i122 22
+R0
+Z103 8/home/borg/Documents/Elesis/Z01.1--Dio/Projetos/B-LogicaCombinacional/src/Mux4Way16.vhd
+Z104 F/home/borg/Documents/Elesis/Z01.1--Dio/Projetos/B-LogicaCombinacional/src/Mux4Way16.vhd
+l0
+L4 1
+VgIliodZR>K=jaJZeHi]]@1
+!s100 8]mCOPe5cHg3o24Lz?cGK0
+R7
+33
+R34
+!i10b 1
+R35
+Z105 !s90 -quiet|-modelsimini|/home/borg/Documents/Elesis/Z01.1--Dio/Projetos/C-UnidadeLogicaAritmetica/vunit_out/modelsim/modelsim.ini|-2008|-work|lib|/home/borg/Documents/Elesis/Z01.1--Dio/Projetos/B-LogicaCombinacional/src/Mux4Way16.vhd|
+Z106 !s107 /home/borg/Documents/Elesis/Z01.1--Dio/Projetos/B-LogicaCombinacional/src/Mux4Way16.vhd|
+!i113 1
+R12
+R13
+Aarch
+R2
+R3
+DEx4 work 9 mux4way16 0 22 gIliodZR>K=jaJZeHi]]@1
+!i122 22
+l15
+L14 11
+VOK4YV9aK:1QXWog<W>:_D1
+!s100 RNVFi0W08>BYjf@LS0Ro81
+R7
+33
+R34
+!i10b 1
+R35
+R105
+R106
+!i113 1
+R12
+R13
+Emux8way
+R18
+R2
+R3
+!i122 21
+R0
+Z107 8/home/borg/Documents/Elesis/Z01.1--Dio/Projetos/B-LogicaCombinacional/src/Mux8Way.vhd
+Z108 F/home/borg/Documents/Elesis/Z01.1--Dio/Projetos/B-LogicaCombinacional/src/Mux8Way.vhd
+l0
+L4 1
+VcMIZim^j_>0TGlG7NC03C3
+!s100 ^ag5`^MlkFaAfCaX]@3>L0
+R7
+33
+R34
+!i10b 1
+R35
+Z109 !s90 -quiet|-modelsimini|/home/borg/Documents/Elesis/Z01.1--Dio/Projetos/C-UnidadeLogicaAritmetica/vunit_out/modelsim/modelsim.ini|-2008|-work|lib|/home/borg/Documents/Elesis/Z01.1--Dio/Projetos/B-LogicaCombinacional/src/Mux8Way.vhd|
+Z110 !s107 /home/borg/Documents/Elesis/Z01.1--Dio/Projetos/B-LogicaCombinacional/src/Mux8Way.vhd|
+!i113 1
+R12
+R13
+Aarch
+R2
+R3
+DEx4 work 7 mux8way 0 22 cMIZim^j_>0TGlG7NC03C3
+!i122 21
+l19
+L18 15
+VmcTWHBb19BzL:L>9G==2c1
+!s100 611F=EBSaj=S7?PQP0:B73
+R7
+33
+R34
+!i10b 1
+R35
+R109
+R110
+!i113 1
+R12
+R13
+Emux8way16
+R18
+R2
+R3
+!i122 20
+R0
+Z111 8/home/borg/Documents/Elesis/Z01.1--Dio/Projetos/B-LogicaCombinacional/src/Mux8Way16.vhd
+Z112 F/home/borg/Documents/Elesis/Z01.1--Dio/Projetos/B-LogicaCombinacional/src/Mux8Way16.vhd
+l0
+L4 1
+V7MWl=:zn]>Q>M5K]`_b<60
+!s100 @m115@68;o9gzO2VgfBG]0
+R7
+33
+R34
+!i10b 1
+R35
+Z113 !s90 -quiet|-modelsimini|/home/borg/Documents/Elesis/Z01.1--Dio/Projetos/C-UnidadeLogicaAritmetica/vunit_out/modelsim/modelsim.ini|-2008|-work|lib|/home/borg/Documents/Elesis/Z01.1--Dio/Projetos/B-LogicaCombinacional/src/Mux8Way16.vhd|
+Z114 !s107 /home/borg/Documents/Elesis/Z01.1--Dio/Projetos/B-LogicaCombinacional/src/Mux8Way16.vhd|
+!i113 1
+R12
+R13
+Aarch
+R2
+R3
+DEx4 work 9 mux8way16 0 22 7MWl=:zn]>Q>M5K]`_b<60
+!i122 20
+l19
+L18 13
+VbCY1dXKGDb?7TDnCRAjPl0
+!s100 8QgPzjDoBCPE^hEJoUh`K0
+R7
+33
+R34
+!i10b 1
+R35
+R113
+R114
+!i113 1
+R12
+R13
+Enand2
+R18
+R2
+R3
+!i122 19
+R0
+Z115 8/home/borg/Documents/Elesis/Z01.1--Dio/Projetos/B-LogicaCombinacional/src/Nand2.vhd
+Z116 F/home/borg/Documents/Elesis/Z01.1--Dio/Projetos/B-LogicaCombinacional/src/Nand2.vhd
+l0
+L4 1
+VV6aic[TMmDzJcCEf<O]ge1
+!s100 _8@7`=N8;PUn8KC]j]b<H3
+R7
+33
+R34
+!i10b 1
+R35
+Z117 !s90 -quiet|-modelsimini|/home/borg/Documents/Elesis/Z01.1--Dio/Projetos/C-UnidadeLogicaAritmetica/vunit_out/modelsim/modelsim.ini|-2008|-work|lib|/home/borg/Documents/Elesis/Z01.1--Dio/Projetos/B-LogicaCombinacional/src/Nand2.vhd|
+Z118 !s107 /home/borg/Documents/Elesis/Z01.1--Dio/Projetos/B-LogicaCombinacional/src/Nand2.vhd|
+!i113 1
+R12
+R13
+Artl
+R2
+R3
+DEx4 work 5 nand2 0 22 V6aic[TMmDzJcCEf<O]ge1
+!i122 19
+l13
+L12 4
+VdUGLBVd0IJVdTd43=H7ef1
+!s100 2Q1e]E>@323^hS@;M=L370
+R7
+33
+R34
+!i10b 1
+R35
+R117
+R118
+!i113 1
+R12
+R13
+Enor8way
+R18
+R2
+R3
+!i122 18
+R0
+Z119 8/home/borg/Documents/Elesis/Z01.1--Dio/Projetos/B-LogicaCombinacional/src/Nor8Way.vhd
+Z120 F/home/borg/Documents/Elesis/Z01.1--Dio/Projetos/B-LogicaCombinacional/src/Nor8Way.vhd
+l0
+L4 1
+VI6@ZGJd>JSC7UGzNAn6GU2
+!s100 bzc2JH[>FOP2l:COLj<IY2
+R7
+33
+R34
+!i10b 1
+R35
+Z121 !s90 -quiet|-modelsimini|/home/borg/Documents/Elesis/Z01.1--Dio/Projetos/C-UnidadeLogicaAritmetica/vunit_out/modelsim/modelsim.ini|-2008|-work|lib|/home/borg/Documents/Elesis/Z01.1--Dio/Projetos/B-LogicaCombinacional/src/Nor8Way.vhd|
+Z122 !s107 /home/borg/Documents/Elesis/Z01.1--Dio/Projetos/B-LogicaCombinacional/src/Nor8Way.vhd|
+!i113 1
+R12
+R13
+Aarch
+R2
+R3
+DEx4 work 7 nor8way 0 22 I6@ZGJd>JSC7UGzNAn6GU2
+!i122 18
+l18
+L17 5
+VFcQ<X<Q2JVY9FQXYbVe[X1
+!s100 oC:9XSHKh0ncjFSJLZG5`2
+R7
+33
+R34
+!i10b 1
+R35
+R121
+R122
+!i113 1
+R12
+R13
+Enot16
+R18
+R2
+R3
+!i122 17
+R0
+Z123 8/home/borg/Documents/Elesis/Z01.1--Dio/Projetos/B-LogicaCombinacional/src/Not16.vhd
+Z124 F/home/borg/Documents/Elesis/Z01.1--Dio/Projetos/B-LogicaCombinacional/src/Not16.vhd
+l0
+L4 1
+VC]SG@M]l`d<egUIK]zP2?0
+!s100 fYJ1`YCnUZe9F?2KLeD4V3
+R7
+33
+R34
+!i10b 1
+R35
+Z125 !s90 -quiet|-modelsimini|/home/borg/Documents/Elesis/Z01.1--Dio/Projetos/C-UnidadeLogicaAritmetica/vunit_out/modelsim/modelsim.ini|-2008|-work|lib|/home/borg/Documents/Elesis/Z01.1--Dio/Projetos/B-LogicaCombinacional/src/Not16.vhd|
+Z126 !s107 /home/borg/Documents/Elesis/Z01.1--Dio/Projetos/B-LogicaCombinacional/src/Not16.vhd|
+!i113 1
+R12
+R13
+Aarch
+R2
+R3
+DEx4 work 5 not16 0 22 C]SG@M]l`d<egUIK]zP2?0
+!i122 17
+l11
+L10 5
+VgTM[Th5G[:3N<O?Ke1Bo`3
+!s100 O3nG=VZKK=>4_EVc?1<Gg0
+R7
+33
+R34
+!i10b 1
+R35
+R125
+R126
+!i113 1
+R12
+R13
+Eor16
+R18
+R2
+R3
+!i122 16
+R0
+Z127 8/home/borg/Documents/Elesis/Z01.1--Dio/Projetos/B-LogicaCombinacional/src/Or16.vhd
+Z128 F/home/borg/Documents/Elesis/Z01.1--Dio/Projetos/B-LogicaCombinacional/src/Or16.vhd
+l0
+L4 1
+VFm015BPNjKE2P[ZaFANAP1
+!s100 >QKR87GJWMdVLQz<g8^hf0
+R7
+33
+R34
+!i10b 1
+R35
+Z129 !s90 -quiet|-modelsimini|/home/borg/Documents/Elesis/Z01.1--Dio/Projetos/C-UnidadeLogicaAritmetica/vunit_out/modelsim/modelsim.ini|-2008|-work|lib|/home/borg/Documents/Elesis/Z01.1--Dio/Projetos/B-LogicaCombinacional/src/Or16.vhd|
+Z130 !s107 /home/borg/Documents/Elesis/Z01.1--Dio/Projetos/B-LogicaCombinacional/src/Or16.vhd|
+!i113 1
+R12
+R13
+Aarch
+R2
+R3
+DEx4 work 4 or16 0 22 Fm015BPNjKE2P[ZaFANAP1
+!i122 16
+l12
+L11 4
+V;O:G2Z662CbQ]H8`j<_]I3
+!s100 Toj]a;3MSIfnSVCmJS:T`3
+R7
+33
+R34
+!i10b 1
+R35
+R129
+R130
+!i113 1
+R12
+R13
+Eor8way
+R18
+R2
+R3
+!i122 15
+R0
+Z131 8/home/borg/Documents/Elesis/Z01.1--Dio/Projetos/B-LogicaCombinacional/src/Or8Way.vhd
+Z132 F/home/borg/Documents/Elesis/Z01.1--Dio/Projetos/B-LogicaCombinacional/src/Or8Way.vhd
+l0
+L4 1
+V6_>9FK_U9`n7]^73i4MMa1
+!s100 Ag3dFfPkCD2FhoYEajciW3
+R7
+33
+R34
+!i10b 1
+R35
+Z133 !s90 -quiet|-modelsimini|/home/borg/Documents/Elesis/Z01.1--Dio/Projetos/C-UnidadeLogicaAritmetica/vunit_out/modelsim/modelsim.ini|-2008|-work|lib|/home/borg/Documents/Elesis/Z01.1--Dio/Projetos/B-LogicaCombinacional/src/Or8Way.vhd|
+Z134 !s107 /home/borg/Documents/Elesis/Z01.1--Dio/Projetos/B-LogicaCombinacional/src/Or8Way.vhd|
+!i113 1
+R12
+R13
+Aarch
+R2
+R3
+DEx4 work 6 or8way 0 22 6_>9FK_U9`n7]^73i4MMa1
+!i122 15
+l18
+L17 4
+V?bJ;SDZ>8j59=8F2H_5S;2
+!s100 fEW83aO?CjomaMDY5Z<5j0
+R7
+33
+R34
+!i10b 1
+R35
+R133
+R134
+!i113 1
+R12
+R13
+Esevenseg
+R18
+R2
+R3
+!i122 9
+R0
+Z135 8/home/borg/Documents/Elesis/Z01.1--Dio/Projetos/B-LogicaCombinacional/src/sevenSeg.vhd
+Z136 F/home/borg/Documents/Elesis/Z01.1--Dio/Projetos/B-LogicaCombinacional/src/sevenSeg.vhd
+l0
+L4 1
+VgdITb;WTH[5cZbCd[CR:E0
+!s100 XWCP4A?:A0m34fY00Z:oS0
+R7
+33
+R8
+!i10b 1
+R9
+Z137 !s90 -quiet|-modelsimini|/home/borg/Documents/Elesis/Z01.1--Dio/Projetos/C-UnidadeLogicaAritmetica/vunit_out/modelsim/modelsim.ini|-2008|-work|lib|/home/borg/Documents/Elesis/Z01.1--Dio/Projetos/B-LogicaCombinacional/src/sevenSeg.vhd|
+Z138 !s107 /home/borg/Documents/Elesis/Z01.1--Dio/Projetos/B-LogicaCombinacional/src/sevenSeg.vhd|
+!i113 1
+R12
+R13
+Aarch
+R2
+R3
+DEx4 work 8 sevenseg 0 22 gdITb;WTH[5cZbCd[CR:E0
+!i122 9
+l11
+L10 16
+V2VY;n>QRnXcn1TN:XIIa[3
+!s100 N^26S:LODY=9Z6YDA8O933
+R7
+33
+R8
+!i10b 1
+R9
+R137
+R138
+!i113 1
+R12
+R13
+Etb_add16
+R1
+Z139 D^#x9 vunit_lib 13 vunit_context 0 22 5PF4h;N3nzRfAo898Q8WS3
+Z140 DPx9 vunit_lib 18 run_deprecated_pkg 0 22 06HHNn=l0Y?PoSLo8^<h00
+Z141 DPx9 vunit_lib 10 runner_pkg 0 22 NQlg?N:7cfzSYD?FX_C9W0
+Z142 DPx9 vunit_lib 7 run_pkg 0 22 L;71H6TCjU4gL1AJPm_Vd0
+Z143 DPx9 vunit_lib 13 run_types_pkg 0 22 ZfDWW?_fEaQBz>VkefFUV2
+Z144 DPx9 vunit_lib 20 check_deprecated_pkg 0 22 Y>TVz>[kI8XoP@P02gCOJ2
+Z145 DPx9 vunit_lib 9 check_pkg 0 22 k_?TDGU?=n?1Z0oahO>zF0
+Z146 DPx9 vunit_lib 11 checker_pkg 0 22 E?dhhcE;9VWnHLW[lW4`Y1
+Z147 DPx9 vunit_lib 8 stop_pkg 0 22 UjKiHFdPQ97>_>m`nM3cg3
+Z148 DPx9 vunit_lib 8 core_pkg 0 22 0M7EG>QDghVT?B78KOYPn0
+Z149 DPx9 vunit_lib 18 log_deprecated_pkg 0 22 Q7[lfBh_WC:ca^W64YP1U2
+Z150 DPx9 vunit_lib 9 print_pkg 0 22 z3A9G[B4JdMci]Ub;PK=S3
+Z151 DPx9 vunit_lib 4 path 0 22 ]@TR:IFM`TWfiVL<ZjY=I3
+Z152 DPx9 vunit_lib 15 log_handler_pkg 0 22 4LC?iW3FIdm8J@]^l:Fa_0
+Z153 DPx9 vunit_lib 8 ansi_pkg 0 22 h9cG]NHf=IYSX>SV5U_OM1
+Z154 DPx9 vunit_lib 14 log_levels_pkg 0 22 jGUFnEUH1mU?HKm3YRPGj3
+Z155 DPx9 vunit_lib 10 logger_pkg 0 22 Jj3MC9=bR4jQbFA1jSDXY2
+Z156 DPx9 vunit_lib 10 dictionary 0 22 _W8>On_YoEFWEDP8TQC@R0
+Z157 DPx9 vunit_lib 10 string_ops 0 22 >6lVd?dSYVCeeU;1?_=bg2
+Z158 D^#x9 vunit_lib 18 data_types_context 0 22 [Ik[<YbW8Ag;h5P``aP2g3
+Z159 DPx9 vunit_lib 8 dict_pkg 0 22 _EQKR[P[ibBW^<0mzPejD2
+Z160 DPx9 vunit_lib 19 byte_vector_ptr_pkg 0 22 nMb7G]QlQkbCia?ecQlOB1
+Z161 DPx9 vunit_lib 19 string_ptr_pool_pkg 0 22 ;oGa_UEi8nVncYkDRR_Aj1
+Z162 DPx9 vunit_lib 14 queue_pool_pkg 0 22 W_@1eWPT4E>cBF2g>m`PC0
+Z163 DPx9 vunit_lib 17 integer_array_pkg 0 22 o:H2ie>cVB<O<8]@gJG;:3
+Z164 DPx9 vunit_lib 19 external_string_pkg 0 22 iE_JL@S7G[ScLPziLPH3]3
+Z165 DPx9 vunit_lib 14 string_ptr_pkg 0 22 n[AzFb_A:6S@HQFZYcL]h0
+Z166 DPx9 vunit_lib 9 queue_pkg 0 22 CMi_fVS`R;@j5e>onMNln3
+Z167 DPx9 vunit_lib 27 integer_vector_ptr_pool_pkg 0 22 FX=7VbM]W@D7RN`^3N8aJ3
+Z168 DPx9 vunit_lib 17 codec_builder_pkg 0 22 lMzaQB]AGo[9c?7g60J_93
+R25
+Z169 DPx4 ieee 11 numeric_bit 0 22 G2;d`f^X6V]cQEn8_38:i1
+Z170 DPx4 ieee 9 math_real 0 22 gNk<PdFJ<XNPcfef`f?Z81
+Z171 DPx4 ieee 12 math_complex 0 22 lndMRF4<kJnT_9]@:30S@3
+Z172 DPx9 vunit_lib 9 codec_pkg 0 22 VE]>YKnj@eiUJ<U1YSEXb3
+Z173 DPx9 vunit_lib 27 external_integer_vector_pkg 0 22 hl?S7F7[zeX8D09=mXj_W2
+Z174 DPx9 vunit_lib 22 integer_vector_ptr_pkg 0 22 dQHde;mb=n>VUWALE0?M33
+Z175 DPx9 vunit_lib 9 types_pkg 0 22 8X1EBI95Q8hI=Vi3D9DP;0
+R2
+R3
+!i122 38
+R0
+Z176 8/home/borg/Documents/Elesis/Z01.1--Dio/Projetos/C-UnidadeLogicaAritmetica/testes/tb_Add16.vhd
+Z177 F/home/borg/Documents/Elesis/Z01.1--Dio/Projetos/C-UnidadeLogicaAritmetica/testes/tb_Add16.vhd
+l0
+R49
+VhgNGb2oQ5c1006Y1zQTmz1
+!s100 77RA^4iTgKfKX]UO[D^BS0
+R7
+33
+Z178 !s110 1648055732
+!i10b 1
+Z179 !s108 1648055732.000000
+Z180 !s90 -quiet|-modelsimini|/home/borg/Documents/Elesis/Z01.1--Dio/Projetos/C-UnidadeLogicaAritmetica/vunit_out/modelsim/modelsim.ini|-2008|-work|lib|/home/borg/Documents/Elesis/Z01.1--Dio/Projetos/C-UnidadeLogicaAritmetica/testes/tb_Add16.vhd|
+Z181 !s107 /home/borg/Documents/Elesis/Z01.1--Dio/Projetos/C-UnidadeLogicaAritmetica/testes/tb_Add16.vhd|
+!i113 1
+R12
+R13
+Atb
+R139
+R140
+R141
+R142
+R143
+R144
+R145
+R146
+R147
+R148
+R149
+R150
+R151
+R152
+R153
+R154
+R155
+R156
+R157
+R158
+R159
+R160
+R161
+R162
+R163
+R164
+R165
+R166
+R167
+R168
+R25
+R169
+R170
+R171
+R172
+R173
+R174
+R175
+R2
+R3
+DEx4 work 8 tb_add16 0 22 hgNGb2oQ5c1006Y1zQTmz1
+!i122 38
+l28
+L16 54
+VFYl>djzSJj06iZNgkmO?F3
+!s100 @fSmgf?fTP^V=^_e?;XFJ1
+R7
+33
+R178
+!i10b 1
+R179
+R180
+R181
+!i113 1
+R12
+R13
+Etb_alu
+R1
+R139
+R140
+R141
+R142
+R143
+R144
+R145
+R146
+R147
+R148
+R149
+R150
+R151
+R152
+R153
+R154
+R155
+R156
+R157
+R158
+R159
+R160
+R161
+R162
+R163
+R164
+R165
+R166
+R167
+R168
+R25
+R169
+R170
+R171
+R172
+R173
+R174
+R175
+R2
+R3
+!i122 39
+R0
+Z182 8/home/borg/Documents/Elesis/Z01.1--Dio/Projetos/C-UnidadeLogicaAritmetica/testes/tb_ALU.vhd
+Z183 F/home/borg/Documents/Elesis/Z01.1--Dio/Projetos/C-UnidadeLogicaAritmetica/testes/tb_ALU.vhd
+l0
+R49
+V<BYgR99dMme>VMNA?@iWh2
+!s100 =iE_?APIHc?H1k29OSzE61
+R7
+33
+R178
+!i10b 1
+R179
+Z184 !s90 -quiet|-modelsimini|/home/borg/Documents/Elesis/Z01.1--Dio/Projetos/C-UnidadeLogicaAritmetica/vunit_out/modelsim/modelsim.ini|-2008|-work|lib|/home/borg/Documents/Elesis/Z01.1--Dio/Projetos/C-UnidadeLogicaAritmetica/testes/tb_ALU.vhd|
+!s107 /home/borg/Documents/Elesis/Z01.1--Dio/Projetos/C-UnidadeLogicaAritmetica/testes/tb_ALU.vhd|
+!i113 1
+R12
+R13
+Atb
+R139
+R140
+R141
+R142
+R143
+R144
+R145
+R146
+R147
+R148
+R149
+R150
+R151
+R152
+R153
+R154
+R155
+R156
+R157
+R158
+R159
+R160
+R161
+R162
+R163
+R164
+R165
+R166
+R167
+R168
+R25
+R169
+R170
+R171
+R172
+R173
+R174
+R175
+R2
+R3
+DEx4 work 6 tb_alu 0 22 <BYgR99dMme>VMNA?@iWh2
+!i122 39
+l37
+L16 158
+VnD`SIk:XzZhoiQ]E4d4:n0
+!s100 92A@DhTmYCJ1iz8UzT;[E0
+R7
+33
+R178
+!i10b 1
+R179
+R184
+Z185 !s107 /home/borg/Documents/Elesis/Z01.1--Dio/Projetos/C-UnidadeLogicaAritmetica/testes/tb_ALU.vhd|
+!i113 1
+R12
+R13
+Etb_comparador16
+R1
+R139
+R140
+R141
+R142
+R143
+R144
+R145
+R146
+R147
+R148
+R149
+R150
+R151
+R152
+R153
+R154
+R155
+R156
+R157
+R158
+R159
+R160
+R161
+R162
+R163
+R164
+R165
+R166
+R167
+R168
+R25
+R169
+R170
+R171
+R172
+R173
+R174
+R175
+R2
+R3
+!i122 35
+R0
+Z186 8/home/borg/Documents/Elesis/Z01.1--Dio/Projetos/C-UnidadeLogicaAritmetica/testes/tb_comparador16.vhd
+Z187 F/home/borg/Documents/Elesis/Z01.1--Dio/Projetos/C-UnidadeLogicaAritmetica/testes/tb_comparador16.vhd
+l0
+R49
+VVUDPfQ]`C`2AhKW>>IJ6o1
+!s100 I_g]JMk`mXQEHH=P@1gOo2
+R7
+33
+Z188 !s110 1648055731
+!i10b 1
+Z189 !s108 1648055731.000000
+Z190 !s90 -quiet|-modelsimini|/home/borg/Documents/Elesis/Z01.1--Dio/Projetos/C-UnidadeLogicaAritmetica/vunit_out/modelsim/modelsim.ini|-2008|-work|lib|/home/borg/Documents/Elesis/Z01.1--Dio/Projetos/C-UnidadeLogicaAritmetica/testes/tb_comparador16.vhd|
+Z191 !s107 /home/borg/Documents/Elesis/Z01.1--Dio/Projetos/C-UnidadeLogicaAritmetica/testes/tb_comparador16.vhd|
+!i113 1
+R12
+R13
+Atb
+R139
+R140
+R141
+R142
+R143
+R144
+R145
+R146
+R147
+R148
+R149
+R150
+R151
+R152
+R153
+R154
+R155
+R156
+R157
+R158
+R159
+R160
+R161
+R162
+R163
+R164
+R165
+R166
+R167
+R168
+R25
+R169
+R170
+R171
+R172
+R173
+R174
+R175
+R2
+R3
+DEx4 work 15 tb_comparador16 0 22 VUDPfQ]`C`2AhKW>>IJ6o1
+!i122 35
+l29
+L16 48
+VXUgehJe1?XREdG=IlaF_D2
+!s100 cVREJcW;_N;b>`<29L:[10
+R7
+33
+R188
+!i10b 1
+R189
+R190
+R191
+!i113 1
+R12
+R13
+Etb_fulladder
+R1
+R139
+R140
+R141
+R142
+R143
+R144
+R145
+R146
+R147
+R148
+R149
+R150
+R151
+R152
+R153
+R154
+R155
+R156
+R157
+R158
+R159
+R160
+R161
+R162
+R163
+R164
+R165
+R166
+R167
+R168
+R25
+R169
+R170
+R171
+R172
+R173
+R174
+R175
+R2
+R3
+!i122 37
+R0
+Z192 8/home/borg/Documents/Elesis/Z01.1--Dio/Projetos/C-UnidadeLogicaAritmetica/testes/tb_FullAdder.vhd
+Z193 F/home/borg/Documents/Elesis/Z01.1--Dio/Projetos/C-UnidadeLogicaAritmetica/testes/tb_FullAdder.vhd
+l0
+R49
+VIHgOARFR?[o8i4cV3E^K_0
+!s100 B?H4Yi6N6]id;0kbZFZH?1
+R7
+33
+R178
+!i10b 1
+R179
+Z194 !s90 -quiet|-modelsimini|/home/borg/Documents/Elesis/Z01.1--Dio/Projetos/C-UnidadeLogicaAritmetica/vunit_out/modelsim/modelsim.ini|-2008|-work|lib|/home/borg/Documents/Elesis/Z01.1--Dio/Projetos/C-UnidadeLogicaAritmetica/testes/tb_FullAdder.vhd|
+Z195 !s107 /home/borg/Documents/Elesis/Z01.1--Dio/Projetos/C-UnidadeLogicaAritmetica/testes/tb_FullAdder.vhd|
+!i113 1
+R12
+R13
+Atb
+R139
+R140
+R141
+R142
+R143
+R144
+R145
+R146
+R147
+R148
+R149
+R150
+R151
+R152
+R153
+R154
+R155
+R156
+R157
+R158
+R159
+R160
+R161
+R162
+R163
+R164
+R165
+R166
+R167
+R168
+R25
+R169
+R170
+R171
+R172
+R173
+R174
+R175
+R2
+R3
+DEx4 work 12 tb_fulladder 0 22 IHgOARFR?[o8i4cV3E^K_0
+!i122 37
+l27
+L16 64
+Vcn@33bnl<Y@IE[DI0?CcC3
+!s100 Xe2EZ6YDc`AV0HAMinEgY0
+R7
+33
+R178
+!i10b 1
+R179
+R194
+R195
+!i113 1
+R12
+R13
+Etb_halfadder
+R1
+R139
+R140
+R141
+R142
+R143
+R144
+R145
+R146
+R147
+R148
+R149
+R150
+R151
+R152
+R153
+R154
+R155
+R156
+R157
+R158
+R159
+R160
+R161
+R162
+R163
+R164
+R165
+R166
+R167
+R168
+R25
+R169
+R170
+R171
+R172
+R173
+R174
+R175
+R2
+R3
+!i122 32
+R0
+Z196 8/home/borg/Documents/Elesis/Z01.1--Dio/Projetos/C-UnidadeLogicaAritmetica/testes/tb_HalfAdder.vhd
+Z197 F/home/borg/Documents/Elesis/Z01.1--Dio/Projetos/C-UnidadeLogicaAritmetica/testes/tb_HalfAdder.vhd
+l0
+R49
+VEL1]mXj4HPzTD>UiaJ?dR1
+!s100 6QP``nA[z>g7<bmUG3jcQ2
+R7
+33
+Z198 !s110 1648055611
+!i10b 1
+Z199 !s108 1648055611.000000
+Z200 !s90 -quiet|-modelsimini|/home/borg/Documents/Elesis/Z01.1--Dio/Projetos/C-UnidadeLogicaAritmetica/vunit_out/modelsim/modelsim.ini|-2008|-work|lib|/home/borg/Documents/Elesis/Z01.1--Dio/Projetos/C-UnidadeLogicaAritmetica/testes/tb_HalfAdder.vhd|
+Z201 !s107 /home/borg/Documents/Elesis/Z01.1--Dio/Projetos/C-UnidadeLogicaAritmetica/testes/tb_HalfAdder.vhd|
+!i113 1
+R12
+R13
+Atb
+R139
+R140
+R141
+R142
+R143
+R144
+R145
+R146
+R147
+R148
+R149
+R150
+R151
+R152
+R153
+R154
+R155
+R156
+R157
+R158
+R159
+R160
+R161
+R162
+R163
+R164
+R165
+R166
+R167
+R168
+R25
+R169
+R170
+R171
+R172
+R173
+R174
+R175
+R2
+R3
+DEx4 work 12 tb_halfadder 0 22 EL1]mXj4HPzTD>UiaJ?dR1
+!i122 32
+l27
+Z202 L16 43
+VW:6UinRLa<W19UlU]HNWU2
+!s100 k@j?2_2=XZ=Ai]=[ARz^03
+R7
+33
+R198
+!i10b 1
+R199
+R200
+R201
+!i113 1
+R12
+R13
+Etb_inc16
+R1
+R139
+R140
+R141
+R142
+R143
+R144
+R145
+R146
+R147
+R148
+R149
+R150
+R151
+R152
+R153
+R154
+R155
+R156
+R157
+R158
+R159
+R160
+R161
+R162
+R163
+R164
+R165
+R166
+R167
+R168
+R25
+R169
+R170
+R171
+R172
+R173
+R174
+R175
+R2
+R3
+!i122 36
+R0
+Z203 8/home/borg/Documents/Elesis/Z01.1--Dio/Projetos/C-UnidadeLogicaAritmetica/testes/tb_Inc16.vhd
+Z204 F/home/borg/Documents/Elesis/Z01.1--Dio/Projetos/C-UnidadeLogicaAritmetica/testes/tb_Inc16.vhd
+l0
+R49
+VM8Bj`IbE5a<bQ1Q4?o;AQ3
+!s100 ?AK^a0iYVQ[RS9`Mcj7E]0
+R7
+33
+R178
+!i10b 1
+R189
+Z205 !s90 -quiet|-modelsimini|/home/borg/Documents/Elesis/Z01.1--Dio/Projetos/C-UnidadeLogicaAritmetica/vunit_out/modelsim/modelsim.ini|-2008|-work|lib|/home/borg/Documents/Elesis/Z01.1--Dio/Projetos/C-UnidadeLogicaAritmetica/testes/tb_Inc16.vhd|
+Z206 !s107 /home/borg/Documents/Elesis/Z01.1--Dio/Projetos/C-UnidadeLogicaAritmetica/testes/tb_Inc16.vhd|
+!i113 1
+R12
+R13
+Atb
+R139
+R140
+R141
+R142
+R143
+R144
+R145
+R146
+R147
+R148
+R149
+R150
+R151
+R152
+R153
+R154
+R155
+R156
+R157
+R158
+R159
+R160
+R161
+R162
+R163
+R164
+R165
+R166
+R167
+R168
+R25
+R169
+R170
+R171
+R172
+R173
+R174
+R175
+R2
+R3
+DEx4 work 8 tb_inc16 0 22 M8Bj`IbE5a<bQ1Q4?o;AQ3
+!i122 36
+l27
+R202
+VWB>:3=9WB[=SbAZBf;>:31
+!s100 Obn9H8cJenTZ?5RZ8Sha?1
+R7
+33
+R178
+!i10b 1
+R189
+R205
+R206
+!i113 1
+R12
+R13
+Etb_inversor16
+R1
+R139
+R140
+R141
+R142
+R143
+R144
+R145
+R146
+R147
+R148
+R149
+R150
+R151
+R152
+R153
+R154
+R155
+R156
+R157
+R158
+R159
+R160
+R161
+R162
+R163
+R164
+R165
+R166
+R167
+R168
+R25
+R169
+R170
+R171
+R172
+R173
+R174
+R175
+R2
+R3
+!i122 34
+R0
+Z207 8/home/borg/Documents/Elesis/Z01.1--Dio/Projetos/C-UnidadeLogicaAritmetica/testes/tb_inversor16.vhd
+Z208 F/home/borg/Documents/Elesis/Z01.1--Dio/Projetos/C-UnidadeLogicaAritmetica/testes/tb_inversor16.vhd
+l0
+R49
+V3V2MO1R]UfbC[QV8MY3>P0
+!s100 PW[am_O=GGFJ3T9NKU>0`3
+R7
+33
+R188
+!i10b 1
+R189
+Z209 !s90 -quiet|-modelsimini|/home/borg/Documents/Elesis/Z01.1--Dio/Projetos/C-UnidadeLogicaAritmetica/vunit_out/modelsim/modelsim.ini|-2008|-work|lib|/home/borg/Documents/Elesis/Z01.1--Dio/Projetos/C-UnidadeLogicaAritmetica/testes/tb_inversor16.vhd|
+Z210 !s107 /home/borg/Documents/Elesis/Z01.1--Dio/Projetos/C-UnidadeLogicaAritmetica/testes/tb_inversor16.vhd|
+!i113 1
+R12
+R13
+Atb
+R139
+R140
+R141
+R142
+R143
+R144
+R145
+R146
+R147
+R148
+R149
+R150
+R151
+R152
+R153
+R154
+R155
+R156
+R157
+R158
+R159
+R160
+R161
+R162
+R163
+R164
+R165
+R166
+R167
+R168
+R25
+R169
+R170
+R171
+R172
+R173
+R174
+R175
+R2
+R3
+DEx4 work 13 tb_inversor16 0 22 3V2MO1R]UfbC[QV8MY3>P0
+!i122 34
+l28
+L16 41
+VAbJFbnY:ZoHJSXZdoBbkg3
+!s100 KF4ndaa6P<l`^XgJcSa?o3
+R7
+33
+R188
+!i10b 1
+R189
+R209
+R210
+!i113 1
+R12
+R13
+Etb_zerador16
+R1
+R139
+R140
+R141
+R142
+R143
+R144
+R145
+R146
+R147
+R148
+R149
+R150
+R151
+R152
+R153
+R154
+R155
+R156
+R157
+R158
+R159
+R160
+R161
+R162
+R163
+R164
+R165
+R166
+R167
+R168
+R25
+R169
+R170
+R171
+R172
+R173
+R174
+R175
+R2
+R3
+!i122 33
+R0
+Z211 8/home/borg/Documents/Elesis/Z01.1--Dio/Projetos/C-UnidadeLogicaAritmetica/testes/tb_zerador16.vhd
+Z212 F/home/borg/Documents/Elesis/Z01.1--Dio/Projetos/C-UnidadeLogicaAritmetica/testes/tb_zerador16.vhd
+l0
+R49
+V18^dU4AXcDO7HF<NSj1023
+!s100 CjK3oICe3bGE?_EmQ>=oJ0
+R7
+33
+R188
+!i10b 1
+R189
+Z213 !s90 -quiet|-modelsimini|/home/borg/Documents/Elesis/Z01.1--Dio/Projetos/C-UnidadeLogicaAritmetica/vunit_out/modelsim/modelsim.ini|-2008|-work|lib|/home/borg/Documents/Elesis/Z01.1--Dio/Projetos/C-UnidadeLogicaAritmetica/testes/tb_zerador16.vhd|
+Z214 !s107 /home/borg/Documents/Elesis/Z01.1--Dio/Projetos/C-UnidadeLogicaAritmetica/testes/tb_zerador16.vhd|
+!i113 1
+R12
+R13
+Atb
+R139
+R140
+R141
+R142
+R143
+R144
+R145
+R146
+R147
+R148
+R149
+R150
+R151
+R152
+R153
+R154
+R155
+R156
+R157
+R158
+R159
+R160
+R161
+R162
+R163
+R164
+R165
+R166
+R167
+R168
+R25
+R169
+R170
+R171
+R172
+R173
+R174
+R175
+R2
+R3
+DEx4 work 12 tb_zerador16 0 22 18^dU4AXcDO7HF<NSj1023
+!i122 33
+l28
+L16 38
+VB1cHXP6z`@3hL;];j;9Q12
+!s100 >=E4LZ7m8DUCVOGUeRoEP2
+R7
+33
+R188
+!i10b 1
+R189
+R213
+R214
+!i113 1
+R12
+R13
+Etoplevel
+R18
+R25
+R2
+R3
+!i122 14
+R0
+Z215 8/home/borg/Documents/Elesis/Z01.1--Dio/Projetos/B-LogicaCombinacional/src/TopLevel.vhd
+Z216 F/home/borg/Documents/Elesis/Z01.1--Dio/Projetos/B-LogicaCombinacional/src/TopLevel.vhd
+l0
+L20 1
+VFCa<;a8<?R^U<ZKD[QTQj2
+!s100 TMGM1N]j:4gl?hLT<M<KU0
+R7
+33
+R34
+!i10b 1
+R35
+Z217 !s90 -quiet|-modelsimini|/home/borg/Documents/Elesis/Z01.1--Dio/Projetos/C-UnidadeLogicaAritmetica/vunit_out/modelsim/modelsim.ini|-2008|-work|lib|/home/borg/Documents/Elesis/Z01.1--Dio/Projetos/B-LogicaCombinacional/src/TopLevel.vhd|
+Z218 !s107 /home/borg/Documents/Elesis/Z01.1--Dio/Projetos/B-LogicaCombinacional/src/TopLevel.vhd|
+!i113 1
+R12
+R13
+Artl
+R25
+R2
+R3
+DEx4 work 8 toplevel 0 22 FCa<;a8<?R^U<ZKD[QTQj2
+!i122 14
+l40
+L31 13
+V9T`OLbRZW1V6fiPzo>0Pn0
+!s100 GgI8@9c=GUV9C_=o_YUz52
+R7
+33
+R34
+!i10b 1
+R35
+R217
+R218
+!i113 1
+R12
+R13
+Ezerador16
+R1
+R2
+R3
+!i122 0
+R0
+Z219 8/home/borg/Documents/Elesis/Z01.1--Dio/Projetos/C-UnidadeLogicaAritmetica/src/zerador16.vhd
+Z220 F/home/borg/Documents/Elesis/Z01.1--Dio/Projetos/C-UnidadeLogicaAritmetica/src/zerador16.vhd
+l0
+L8 1
+VnHjHn^^b>WhfhGLTYS^N30
+!s100 GFgmn:R<h:[ci`T3hP7g?0
+R7
+33
+R8
+!i10b 1
+Z221 !s108 1648055604.000000
+Z222 !s90 -quiet|-modelsimini|/home/borg/Documents/Elesis/Z01.1--Dio/Projetos/C-UnidadeLogicaAritmetica/vunit_out/modelsim/modelsim.ini|-2008|-work|lib|/home/borg/Documents/Elesis/Z01.1--Dio/Projetos/C-UnidadeLogicaAritmetica/src/zerador16.vhd|
+Z223 !s107 /home/borg/Documents/Elesis/Z01.1--Dio/Projetos/C-UnidadeLogicaAritmetica/src/zerador16.vhd|
+!i113 1
+R12
+R13
+Artl
+R2
+R3
+DEx4 work 9 zerador16 0 22 nHjHn^^b>WhfhGLTYS^N30
+!i122 0
+l21
+L16 12
+VKIW3_52ClQI]3J=E`1gQB0
+!s100 =ZFN2OTn[ISI]=Di1T6Ef3
+R7
+33
+R8
+!i10b 1
+R221
+R222
+R223
+!i113 1
+R12
+R13

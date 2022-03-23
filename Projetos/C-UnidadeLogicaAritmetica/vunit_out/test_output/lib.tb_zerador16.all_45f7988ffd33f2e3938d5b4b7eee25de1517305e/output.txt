@@ -1,0 +1,2 @@
+skip (P=2 S=1 F=0 T=3) lib.tb_zerador16.all (385.7 seconds)
+

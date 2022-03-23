@@ -1,0 +1,25 @@
+# Reading pref.tcl
+# source "/home/borg/Documents/Elesis/Z01.1--Dio/Projetos/C-UnidadeLogicaAritmetica/vunit_out/test_output/lib.tb_zerador16.all_45f7988ffd33f2e3938d5b4b7eee25de1517305e/modelsim/gui.do"
+# vsim -modelsimini /home/borg/Documents/Elesis/Z01.1--Dio/Projetos/C-UnidadeLogicaAritmetica/vunit_out/modelsim/modelsim.ini -wlf /home/borg/Documents/Elesis/Z01.1--Dio/Projetos/C-UnidadeLogicaAritmetica/vunit_out/test_output/lib.tb_zerador16.all_45f7988ffd33f2e3938d5b4b7eee25de1517305e/modelsim/vsim.wlf -quiet -t ps -onfinish stop lib.tb_zerador16(tb) -L vunit_lib -L lib -g/tb_zerador16/runner_cfg="active python runner : true,enabled_test_cases : ,output path : /home/borg/Documents/Elesis/Z01.1--Dio/Projetos/C-UnidadeLogicaAritmetica/vunit_out/test_output/lib.tb_zerador16.all_45f7988ffd33f2e3938d5b4b7eee25de1517305e/,tb path : /home/borg/Documents/Elesis/Z01.1--Dio/Projetos/C-UnidadeLogicaAritmetica/testes/,use_color : false" 
+# Start time: 14:45:03 on Mar 23,2022
+# ** Warning: Design size of 21385 statements exceeds ModelSim-Intel FPGA Starter Edition recommended capacity.
+# Expect performance to be adversely affected.
+# List of VUnit commands:
+# vunit_help
+#   - Prints this help
+# vunit_load [vsim_extra_args]
+#   - Load design with correct generics for the test
+#   - Optional first argument are passed as extra flags to vsim
+# vunit_user_init
+#   - Re-runs the user defined init file
+# vunit_run
+#   - Run test, must do vunit_load first
+# vunit_compile
+#   - Recompiles the source files
+# vunit_restart
+#   - Recompiles the source files
+#   - and re-runs the simulation if the compile was successful
+add wave -position end sim:/tb_zerador16/ze16/*
+vunit_run
+# Break in Subprogram stop at /home/borg/.local/lib/python3.8/site-packages/vunit/vhdl/core/src/stop_body_2008p.vhd line 13
+# false

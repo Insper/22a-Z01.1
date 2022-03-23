@@ -1,0 +1,27 @@
+# Reading pref.tcl
+# source "/home/borg/Documents/Elesis/Z01.1--Dio/Projetos/C-UnidadeLogicaAritmetica/vunit_out/test_output/lib.tb_comparador16.all_53751435b7028e85b030e707046b124bb6cda23d/modelsim/gui.do"
+# vsim -modelsimini /home/borg/Documents/Elesis/Z01.1--Dio/Projetos/C-UnidadeLogicaAritmetica/vunit_out/modelsim/modelsim.ini -wlf /home/borg/Documents/Elesis/Z01.1--Dio/Projetos/C-UnidadeLogicaAritmetica/vunit_out/test_output/lib.tb_comparador16.all_53751435b7028e85b030e707046b124bb6cda23d/modelsim/vsim.wlf -quiet -t ps -onfinish stop lib.tb_comparador16(tb) -L vunit_lib -L lib -g/tb_comparador16/runner_cfg="active python runner : true,enabled_test_cases : ,output path : /home/borg/Documents/Elesis/Z01.1--Dio/Projetos/C-UnidadeLogicaAritmetica/vunit_out/test_output/lib.tb_comparador16.all_53751435b7028e85b030e707046b124bb6cda23d/,tb path : /home/borg/Documents/Elesis/Z01.1--Dio/Projetos/C-UnidadeLogicaAritmetica/testes/,use_color : false" 
+# Start time: 14:23:42 on Mar 23,2022
+# ** Warning: Design size of 21396 statements exceeds ModelSim-Intel FPGA Starter Edition recommended capacity.
+# Expect performance to be adversely affected.
+# ** Warning: (vsim-8683) Uninitialized out port /tb_comparador16/cmp16/zr has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /tb_comparador16/cmp16/ng has no driver.
+# This port will contribute value (U) to the signal network.
+# List of VUnit commands:
+# vunit_help
+#   - Prints this help
+# vunit_load [vsim_extra_args]
+#   - Load design with correct generics for the test
+#   - Optional first argument are passed as extra flags to vsim
+# vunit_user_init
+#   - Re-runs the user defined init file
+# vunit_run
+#   - Run test, must do vunit_load first
+# vunit_compile
+#   - Recompiles the source files
+# vunit_restart
+#   - Recompiles the source files
+#   - and re-runs the simulation if the compile was successful
+# End time: 14:23:47 on Mar 23,2022, Elapsed time: 0:00:05
+# Errors: 0, Warnings: 3
