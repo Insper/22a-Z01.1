@@ -15,10 +15,12 @@ entity Inc16 is
 	);
 end entity;
 
+
+
 architecture rtl of Inc16 is
   -- Aqui declaramos sinais (fios auxiliares)
   -- e componentes (outros módulos) que serao
-  -- utilizados nesse modulo.
+  -- utilizados nesse modulo!!!!
 
   component Add16 is
     port(
@@ -30,5 +32,9 @@ architecture rtl of Inc16 is
 
 begin
   -- Implementação vem aqui!
+s0 : Add16 port map(
+  a=> a,
+  b => "0000000000000001",
+  q=>q);
 
 end architecture;
