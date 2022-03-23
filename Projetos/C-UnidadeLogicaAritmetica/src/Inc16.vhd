@@ -10,8 +10,8 @@ use IEEE.STD_LOGIC_1164.all;
 
 entity Inc16 is
 	port(
-		original   :  in STD_LOGIC_VECTOR(15 downto 0);
-		incrementado   : out STD_LOGIC_VECTOR(15 downto 0)
+		a   :  in STD_LOGIC_VECTOR(15 downto 0);
+		q   : out STD_LOGIC_VECTOR(15 downto 0)
 	);
 end entity;
 
@@ -30,8 +30,8 @@ architecture rtl of Inc16 is
 
 begin
   u1: Add16 port map(
-    a => original,
+    a => a,
     b => "0000000000000001",
-    q => incrementado
+    q => q
   );
 end architecture;
