@@ -24,8 +24,8 @@ entity TopLevel is
 		HEX1     : out std_logic_vector(6 downto 0);
 		HEX2     : out std_logic_vector(6 downto 0);
 		HEX3     : out std_logic_vector(6 downto 0);
-		LED0     : out std_logic; -- definindo os leds para ligar zr e ng
-		LED1     : out std_logic
+		-- HEX5     : out std_logic_vector(6 downto 0);
+		LEDR    : out std_logic_vector(9 downto 0) -- definindo os leds para ligar zr e 
 );
 end entity;
 
@@ -102,8 +102,8 @@ begin
 		ny => SW(3),
 		f  => SW(5 downto 4),
 		no => SW(6),
-		zr => LED0,
-		ng => LED1,
+		zr => LEDR(0),
+		ng => LEDR(1),
 		saida => aluout
 	);
 
@@ -126,5 +126,10 @@ begin
 	bcd => aluout(15 downto 12),
 	leds => HEX3 -- LIGAR A SAIDA DA ULA
 	);
+
+	-- u5 : sevenSeg port map(
+	-- bcd => aluout(15 downto 12),
+	-- leds => HEX5 -- LIGAR A SAIDA DA ULA
+	-- );
 
 end rtl;
