@@ -18,7 +18,10 @@ architecture rtl of inversor16 is
   -- e componentes (outros módulos) que serao
   -- utilizados nesse modulo.
 
-begin
-  -- Implementação vem aqui!
+  begin
 
-end architecture;
+    with z select
+    y <= (not a) when '1',
+    a when others;
+    
+  end architecture;
