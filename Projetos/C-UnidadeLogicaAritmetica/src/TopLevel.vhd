@@ -76,12 +76,12 @@ begin
 	alu : ALUconceitoB port map(
 		x => entrada0,
 		y => entrada1,
-		zx => SW(0 downto 0),
-		nx => SW(1 downto 1),
-		zy => SW(2 downto 2),
-		ny => SW(3 downto 3),
+		zx => SW(0),
+		nx => SW(1),
+		zy => SW(2),
+		ny => SW(3),
 		f  => SW(5 downto 4),
-		no => SW(6 downto 6)
+		no => SW(6),
 		zr => LED0,
 		ng => LED1,
 		saida => aluout
