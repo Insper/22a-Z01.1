@@ -27,172 +27,138 @@
 
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
-
+ 
 entity ALU is
-	port (
-			x,y:   in STD_LOGIC_VECTOR(15 downto 0); -- entradas de dados da ALU
-			zx:    in STD_LOGIC;                     -- zera a entrada x
-			nx:    in STD_LOGIC;                     -- inverte a entrada x
-			zy:    in STD_LOGIC;                     -- zera a entrada y
-			ny:    in STD_LOGIC;                     -- inverte a entrada y
-			f:     in STD_LOGIC_VECTOR(1 downto 0);  -- se 0 calcula x & y, se 1 calcula x + y se 2 calcula x xor y
-			no:    in STD_LOGIC;                     -- inverte o valor da saída
-			zr:    out STD_LOGIC;                    -- setado se saída igual a zero
-			ng:    out STD_LOGIC;                    -- setado se saída é negativa
-			saida: out STD_LOGIC_VECTOR(15 downto 0) -- saída de dados da ALU
-	);
+    port (
+            x,y:   in STD_LOGIC_VECTOR(15 downto 0); -- entradas de dados da ALU
+            zx:    in STD_LOGIC;                     -- zera a entrada x
+            nx:    in STD_LOGIC;                     -- inverte a entrada x
+            zy:    in STD_LOGIC;                     -- zera a entrada y
+            ny:    in STD_LOGIC;                     -- inverte a entrada y
+            f:     in STD_LOGIC;                     -- se 0 calcula x & y, senão x + y
+            no:    in STD_LOGIC;                     -- inverte o valor da saída
+            zr:    out STD_LOGIC;                    -- setado se saída igual a zero
+            ng:    out STD_LOGIC;                    -- setado se saída é negativa
+            saida: out STD_LOGIC_VECTOR(15 downto 0) -- saída de dados da ALU
+    );
 end entity;
-
+ 
 architecture  rtl OF alu is
   -- Aqui declaramos sinais (fios auxiliares)
   -- e componentes (outros módulos) que serao
   -- utilizados nesse modulo.
-
-	component zerador16 IS
-		port(z   : in STD_LOGIC;
-			 a   : in STD_LOGIC_VECTOR(15 downto 0);
-			 y   : out STD_LOGIC_VECTOR(15 downto 0)
-			);
-	end component;
-
-	component inversor16 is
-		port(z   : in STD_LOGIC;
-			 a   : in STD_LOGIC_VECTOR(15 downto 0);
-			 y   : out STD_LOGIC_VECTOR(15 downto 0)
-		);
-	end component;
-
-	component Add16 is
-		port(
-			a   :  in STD_LOGIC_VECTOR(15 downto 0);
-			b   :  in STD_LOGIC_VECTOR(15 downto 0);
-			q   : out STD_LOGIC_VECTOR(15 downto 0)
-		);
-	end component;
-
-	component And16 is
-		port (
-			a:   in  STD_LOGIC_VECTOR(15 downto 0);
-			b:   in  STD_LOGIC_VECTOR(15 downto 0);
-			q:   out STD_LOGIC_VECTOR(15 downto 0)
-		);
-	end component;
-
-	component comparador16 is
-		port(
-			a   : in STD_LOGIC_VECTOR(15 downto 0);
-			zrc   : out STD_LOGIC;
-			ngc   : out STD_LOGIC
+ 
+    component zerador16 IS
+        port(z   : in STD_LOGIC;
+             a   : in STD_LOGIC_VECTOR(15 downto 0);
+             y   : out STD_LOGIC_VECTOR(15 downto 0)
+            );
+    end component;
+ 
+    component inversor16 is
+        port(z   : in STD_LOGIC;
+             a   : in STD_LOGIC_VECTOR(15 downto 0);
+             y   : out STD_LOGIC_VECTOR(15 downto 0)
+        );
+    end component;
+ 
+    component Add16 is
+        port(
+            a   :  in STD_LOGIC_VECTOR(15 downto 0);
+            b   :  in STD_LOGIC_VECTOR(15 downto 0);
+            q   : out STD_LOGIC_VECTOR(15 downto 0)
+        );
+    end component;
+ 
+    component And16 is
+        port (
+            a:   in  STD_LOGIC_VECTOR(15 downto 0);
+            b:   in  STD_LOGIC_VECTOR(15 downto 0);
+            q:   out STD_LOGIC_VECTOR(15 downto 0)
+        );
+    end component;
+ 
+    component comparador16 is
+        port(
+            a   : in STD_LOGIC_VECTOR(15 downto 0);
+            zr   : out STD_LOGIC;
+            ng   : out STD_LOGIC
     );
-	end component;
-
-	--  mudei o seletor para vetor de 3 elementos
-
-	component Mux16 is
-		port (
-			a:   in  STD_LOGIC_VECTOR(15 downto 0);
-			b:   in  STD_LOGIC_VECTOR(15 downto 0);
-			sel: in  STD_LOGIC_VECTOR(1 downto 0);
-			q:   out STD_LOGIC_VECTOR(15 downto 0)
-		);
-	end component;
-
-	component Xor16 is
-		port (
-			a:   in  STD_LOGIC_VECTOR(15 downto 0);
-			b:   in  STD_LOGIC_VECTOR(15 downto 0);
-			q:   out STD_LOGIC_VECTOR(15 downto 0)
-		);
-	end component;
-
-	-- componet xor para ula do conceito B (mux que selecionara entre add and ou xor)
-	component muxXor is
-		port(
-			a   :  in STD_LOGIC_VECTOR(15 downto 0);
-			b   :  in STD_LOGIC_VECTOR(15 downto 0);
-			c   :  in  STD_LOGIC_VECTOR(15 downto 0);
-			sel :  in  STD_LOGIC_VECTOR(1 downto 0);
-			q   : out STD_LOGIC_VECTOR(15 downto 0)
-		);
-	end component;
-
-   SIGNAL zxout,zyout,nxout,nyout,andout,adderout,muxout,xorout,precomp: std_logic_vector(15 downto 0);
-
+    end component;
+ 
+    component Mux16 is
+        port (
+            a:   in  STD_LOGIC_VECTOR(15 downto 0);
+            b:   in  STD_LOGIC_VECTOR(15 downto 0);
+            sel: in  STD_LOGIC;
+            q:   out STD_LOGIC_VECTOR(15 downto 0)
+        );
+    end component;
+ 
+   SIGNAL zxout,zyout,nxout,nyout,andout,adderout,muxout,precomp: std_logic_vector(15 downto 0);
+ 
 begin
   -- Implementação vem aqui!
-	zeradorx : zerador16
-	port map	
-	(
-		z => zx,
-		a => x,
-		y => zxout	
-
-	);
-
-	zeradory : zerador16
-	port map(
-		z => zy,
-		a => y,
-		y => zyout
-	);
-
-	inversorx : inversor16
-	port map(
-		z => nx,
-		a => zxout,
-		y => nxout
-	);
-
-	inversory : inversor16
-	port map(
-		z => ny,
-		a => zyout,
-		y =>nyout
-	);
-
-	add : Add16
-	port map(
-		a => nxout,
-		b => nyout,
-		q => adderout
-	);
-
-	and1 : And16
-	port map(
-		a => nxout,
-		b => nyout,
-		q => andout
-		
-	);
-
-	xor1: Xor16
-	port map(
-		a => nxout,
-		b => nyout,
-		q => xorout
-	);
-
-	muxi : muxXor
-	port map(
-		a => adderout,
-		b => andout,
-		c => xorout,
-		sel => f,
-		q => muxout
-	);
-
-	inversor0 : inversor16
-	port map(
-		z => no,
-		a => muxout,
-		y => precomp
-	);
-	compara : comparador16
-	port map(
-		a => precomp,
-		zrc => zr,
-		ngc => ng
-	);
-
-	saida <= precomp;
+    ZeradorX : zerador16
+    port map (
+        z => zx,
+        a => x,
+        y => zxout
+    );
+ 
+    ZeradorY : zerador16
+    port map (
+        z => zy,
+        a => y,
+        y => zyout
+    );
+ 
+    InvX : inversor16
+    port map (
+        z => nx,
+        a => zxout,
+        y => nxout
+    );
+ 
+    InvY : inversor16
+    port map (
+        z => ny,
+        a => zyout,
+        y => nyout
+    );
+ 
+    andout <= nxout and nyout;
+    
+    Adder : Add16 
+    port map(
+        a => nxout,
+        b => nyout,
+        q => adderout
+    );
+ 
+    Mux : Mux16
+    port map (
+        a => andout,
+        b => adderout,
+        sel => f,
+        q => muxout
+    );
+ 
+    InvOut : inversor16
+    port map (
+        z => no,
+        a => muxout,
+        y => precomp
+    );
+ 
+    Comp : comparador16
+    port map (
+        a => precomp,
+        zr => zr,
+        ng => ng
+    );
+ 
+    saida <= precomp;
+ 
+    
 end architecture;
