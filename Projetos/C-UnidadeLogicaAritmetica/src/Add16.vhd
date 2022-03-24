@@ -46,5 +46,5 @@ begin
   u12 : FullAdder port map(a => a(12), b => b(12), c => carry(11), soma => q(12), vaium => carry(12));
   u13 : FullAdder port map(a => a(13), b => b(13), c => carry(12), soma => q(13), vaium => carry(13));
   u14 : FullAdder port map(a => a(14), b => b(14), c => carry(13), soma => q(14), vaium => carry(14));
-  u15 : FullAdder port map(a => a(15), b => b(15), c => carry(14), soma => q(15), vaium => carry(15));
+  u15 : FullAdder port map(a => a(15), b => b(15), c => carry(14), soma => q(15));
 end architecture;
