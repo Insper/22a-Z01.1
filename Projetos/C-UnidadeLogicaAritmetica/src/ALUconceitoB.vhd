@@ -28,7 +28,7 @@
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 
-entity ALU is
+entity ALUb is
 	port (
 			x,y:   in STD_LOGIC_VECTOR(15 downto 0); -- entradas de dados da ALU
 			zx:    in STD_LOGIC;                     -- zera a entrada x
@@ -43,7 +43,7 @@ entity ALU is
 	);
 end entity;
 
-architecture  rtl OF alu is
+architecture  rtl OF ALUb is
   -- Aqui declaramos sinais (fios auxiliares)
   -- e componentes (outros módulos) que serao
   -- utilizados nesse modulo.

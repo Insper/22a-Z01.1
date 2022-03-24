@@ -41,7 +41,7 @@ architecture rtl of TopLevel is
 
 --- IMPORTAR A ULA
 
-	component ALUconceitoB is
+	component ALUb is
 		port(
 			x,y:   in STD_LOGIC_VECTOR(15 downto 0); -- entradas de dados da ALU
 			zx:    in STD_LOGIC;                     -- zera a entrada x
@@ -70,10 +70,30 @@ signal entrada0,entrada1,aluout : std_logic_vector(15 downto 0);
 ---------------
 -- implementacao
 ---------------
+
+-----------------
+
+-- !5555(16) = AAAA (16)
+-- !FF(16) = ff00 (16)
+-- -FF(16) = ff01 (16)
+-- -5555(16) = AAAB
+-- 5555(16) + 1(16) = 5556 (16)
+-- FF(16) + 1(16) = 100 (16)
+-- FF - 1 = fe (16)
+-- 5555(16) + FF(16) = 5654 (16)
+-- FF(16) - 5555(16) = ABAA (16)
+-- 0101010101010101 AND 0000000011111111 == 55 (16)
+-- 5555(16) OR FF(16) = 55FF
+-- 0101010101010101 XOR 0000000011111111 == 55AA (16)
+
+
+
+----------------
+
 begin
-	entrada0 <= "0101010101010101";
-	entrada1 <= "0000000011111111";
-	alu : ALUconceitoB port map(
+	entrada0 <= "0101010101010101"; -- 5555 (16)
+	entrada1 <= "0000000011111111"; -- FF (16)
+	alu : ALUb port map(
 		x => entrada0,
 		y => entrada1,
 		zx => SW(0),
