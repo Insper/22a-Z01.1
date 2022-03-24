@@ -79,8 +79,8 @@ architecture  rtl OF alu is
 	component comparador16 is
 		port(
 			a   : in STD_LOGIC_VECTOR(15 downto 0);
-			zrc   : out STD_LOGIC;
-			ngc   : out STD_LOGIC
+			zr   : out STD_LOGIC;
+			ng   : out STD_LOGIC
     );
 	end component;
 
@@ -123,7 +123,7 @@ begin
 	port map(
 		z => ny,
 		a => zyout,
-		y =>nyout
+		y => nyout
 	);
 
 	add : Add16
@@ -156,12 +156,14 @@ begin
 		a => muxout,
 		y => precomp
 	);
-	compara : comparador16
+	comparador : comparador16
 	port map(
 		a => precomp,	
-		zrc => zr,
-		ngc => ng
+		zr => zr,
+		ng => ng
 	);
 
 	saida <= precomp;
 end architecture;
+
+
