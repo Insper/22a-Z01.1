@@ -47,42 +47,42 @@ architecture  rtl OF alu is
   -- Aqui declaramos sinais (fios auxiliares)
   -- e componentes (outros módulos) que serao
   -- utilizados nesse modulo.
- 
-    component zerador16 IS
-        port(z   : in STD_LOGIC;
-             a   : in STD_LOGIC_VECTOR(15 downto 0);
-             y   : out STD_LOGIC_VECTOR(15 downto 0)
-            );
-    end component;
- 
-    component inversor16 is
-        port(z   : in STD_LOGIC;
-             a   : in STD_LOGIC_VECTOR(15 downto 0);
-             y   : out STD_LOGIC_VECTOR(15 downto 0)
-        );
-    end component;
- 
-    component Add16 is
-        port(
-            a   :  in STD_LOGIC_VECTOR(15 downto 0);
-            b   :  in STD_LOGIC_VECTOR(15 downto 0);
-            q   : out STD_LOGIC_VECTOR(15 downto 0)
-        );
-    end component;
- 
-    component And16 is
-        port (
-            a:   in  STD_LOGIC_VECTOR(15 downto 0);
-            b:   in  STD_LOGIC_VECTOR(15 downto 0);
-            q:   out STD_LOGIC_VECTOR(15 downto 0)
-        );
-    end component;
- 
-    component comparador16 is
-        port(
-            a   : in STD_LOGIC_VECTOR(15 downto 0);
-            zr   : out STD_LOGIC;
-            ng   : out STD_LOGIC
+
+	component zerador16 IS
+		port(z   : in STD_LOGIC;
+			 a   : in STD_LOGIC_VECTOR(15 downto 0);
+			 y   : out STD_LOGIC_VECTOR(15 downto 0)
+			);
+	end component;
+
+	component inversor16 is
+		port(z   : in STD_LOGIC;
+			 a   : in STD_LOGIC_VECTOR(15 downto 0);
+			 y   : out STD_LOGIC_VECTOR(15 downto 0)
+		);
+	end component;
+
+	component Add16 is
+		port(
+			a   :  in STD_LOGIC_VECTOR(15 downto 0);
+			b   :  in STD_LOGIC_VECTOR(15 downto 0);
+			q   : out STD_LOGIC_VECTOR(15 downto 0)
+		);
+	end component;
+
+	component And16 is
+		port (
+			a:   in  STD_LOGIC_VECTOR(15 downto 0);
+			b:   in  STD_LOGIC_VECTOR(15 downto 0);
+			q:   out STD_LOGIC_VECTOR(15 downto 0)
+		);
+	end component;
+
+	component comparador16 is
+		port(
+			a   : in STD_LOGIC_VECTOR(15 downto 0);
+			zr   : out STD_LOGIC;
+			ng   : out STD_LOGIC
     );
     end component;
  
@@ -99,66 +99,73 @@ architecture  rtl OF alu is
  
 begin
   -- Implementação vem aqui!
-    ZeradorX : zerador16
-    port map (
-        z => zx,
-        a => x,
-        y => zxout
-    );
- 
-    ZeradorY : zerador16
-    port map (
-        z => zy,
-        a => y,
-        y => zyout
-    );
- 
-    InvX : inversor16
-    port map (
-        z => nx,
-        a => zxout,
-        y => nxout
-    );
- 
-    InvY : inversor16
-    port map (
-        z => ny,
-        a => zyout,
-        y => nyout
-    );
- 
-    andout <= nxout and nyout;
-    
-    Adder : Add16 
-    port map(
-        a => nxout,
-        b => nyout,
-        q => adderout
-    );
- 
-    Mux : Mux16
-    port map (
-        a => andout,
-        b => adderout,
-        sel => f,
-        q => muxout
-    );
- 
-    InvOut : inversor16
-    port map (
-        z => no,
-        a => muxout,
-        y => precomp
-    );
- 
-    Comp : comparador16
-    port map (
-        a => precomp,
-        zr => zr,
-        ng => ng
-    );
- 
-    saida <= precomp;
- 
-    
+	zeradorx : zerador16
+	port map	
+	(
+		z => zx,
+		a => x,
+		y => zxout
+	);
+
+	zeradory : zerador16
+	port map(
+		z => zy,
+		a => y,
+		y => zyout
+	);
+
+	inversorx : inversor16
+	port map(
+		z => nx,
+		a => zxout,
+		y => nxout
+	);
+
+	inversory : inversor16
+	port map(
+		z => ny,
+		a => zyout,
+		y => nyout
+	);
+
+	add : Add16
+	port map(
+		a => nxout,
+		b => nyout,
+		q => adderout
+	);
+
+
+	andy : And16
+	port map(
+		a => nxout,
+		b => nyout,
+		q => andout
+		
+	);
+
+	mux : Mux16
+	port map(
+		a => andout,
+		b => adderout,
+		sel => f,
+		q => muxout
+	);
+
+	inversor0 : inversor16
+	port map(
+		z => no,
+		a => muxout,
+		y => precomp
+	);
+	comparador : comparador16
+	port map(
+		a => precomp,	
+		zr => zr,
+		ng => ng
+	);
+
+	saida <= precomp;
 end architecture;
+
+
