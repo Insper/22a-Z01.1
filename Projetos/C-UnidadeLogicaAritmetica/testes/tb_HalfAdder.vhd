@@ -50,7 +50,11 @@ begin
     wait for 200 ps;
     assert(soma = '1' and vaium = '0')  report "Falha em teste: 3" severity error;
 
-
+    -- Teste: 4
+    -- 1 + 1
+    inA <= '1'; inB<= '1';
+    wait for 200 ps;
+    assert(soma = '0' and vaium = '1')  report "Falha em teste: 3" severity error;
 
     test_runner_cleanup(runner); -- Simulacao acaba aqui
 
