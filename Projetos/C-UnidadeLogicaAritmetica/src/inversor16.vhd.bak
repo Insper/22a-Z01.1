@@ -7,7 +7,7 @@ use IEEE.STD_LOGIC_1164.all;
 
 entity inversor16 is
   port(
-        z   : in std_logic;
+        z   : in STD_LOGIC;
         a   : in STD_LOGIC_VECTOR(15 downto 0);
         y   : out STD_LOGIC_VECTOR(15 downto 0)
       );
