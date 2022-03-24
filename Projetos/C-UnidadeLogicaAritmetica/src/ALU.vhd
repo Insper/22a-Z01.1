@@ -121,11 +121,7 @@ begin
 		y=>nyout
 	);
 
-	ander: And16 port map(
-		a=>nxout,
-		b=>nyout,
-		q=>andout
-	);
+	andout<=nxout and nyout;
 
 	adder: Add16 port map(
 		a=>nxout,
