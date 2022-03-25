@@ -83,6 +83,7 @@ begin
 	ny => SW(3),
 	f => SW(5 downto 4),
 	no => SW(6),
+	dir => SW(7),
 	zr => LEDR(0),
 	ng => LEDR(1),
 	est => LEDR(2),

@@ -537,6 +537,9 @@ set_global_assignment -name OUTPUT_IO_TIMING_FAR_END_VMEAS "HALF SIGNAL SWING" -
 # end ENTITY(TopLevel)
 # --------------------
 
+set_global_assignment -name VHDL_FILE "../../B-LogicaCombinacional/src/Mux4Way16.vhd"
+set_global_assignment -name VHDL_FILE ../src/Xor16.vhd
+set_global_assignment -name VHDL_FILE "../../B-LogicaCombinacional/src/BarrelShifter16.vhd"
 set_global_assignment -name VHDL_FILE "../../B-LogicaCombinacional/src/Mux16.vhd"
 set_global_assignment -name VHDL_FILE "../../B-LogicaCombinacional/src/And16.vhd"
 set_global_assignment -name VHDL_FILE "../../B-LogicaCombinacional/src/sevenSeg.vhd"

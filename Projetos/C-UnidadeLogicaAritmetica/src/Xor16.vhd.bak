@@ -8,7 +8,7 @@ entity xor16 is
 			q:   out STD_LOGIC_VECTOR(15 downto 0));
 end entity;
 
-architecture arch of Xor16 is
+architecture arch of And16 is
 begin
 q <= a xor b;
 end architecture;
