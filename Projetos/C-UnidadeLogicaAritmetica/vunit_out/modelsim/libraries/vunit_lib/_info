@@ -33,9 +33,15 @@ Vh9cG]NHf=IYSX>SV5U_OM1
 Z17 OV;C;2020.1;71
 33
 b1
+<<<<<<< HEAD
+Z18 !s110 1648143311
+!i10b 1
+Z19 !s108 1648143311.000000
+=======
 Z18 !s110 1648143313
 !i10b 1
 Z19 !s108 1648143313.000000
+>>>>>>> 0d33457bef6327acb83fd8f8eccadc1888b82696
 Z20 !s90 -quiet|-modelsimini|/home/borg/Z01.1--Dio/Projetos/C-UnidadeLogicaAritmetica/vunit_out/modelsim/modelsim.ini|-2008|-work|vunit_lib|/home/borg/.local/lib/python3.8/site-packages/vunit/vhdl/logging/src/ansi_pkg.vhd|
 Z21 !s107 /home/borg/.local/lib/python3.8/site-packages/vunit/vhdl/logging/src/ansi_pkg.vhd|
 !i113 1
@@ -164,9 +170,15 @@ VY>TVz>[kI8XoP@P02gCOJ2
 R17
 33
 b1
+<<<<<<< HEAD
+Z50 !s110 1648143312
+!i10b 1
+Z51 !s108 1648143312.000000
+=======
 Z50 !s110 1648143314
 !i10b 1
 Z51 !s108 1648143314.000000
+>>>>>>> 0d33457bef6327acb83fd8f8eccadc1888b82696
 Z52 !s90 -quiet|-modelsimini|/home/borg/Z01.1--Dio/Projetos/C-UnidadeLogicaAritmetica/vunit_out/modelsim/modelsim.ini|-2008|-work|vunit_lib|/home/borg/.local/lib/python3.8/site-packages/vunit/vhdl/check/src/check_deprecated_pkg.vhd|
 Z53 !s107 /home/borg/.local/lib/python3.8/site-packages/vunit/vhdl/check/src/check_deprecated_pkg.vhd|
 !i113 1
@@ -280,9 +292,15 @@ Z57 V9UiUee74WgKB1TY^:B?4N1
 Z58 !s100 IFOLZS3@H<:[h5Yfm6a]V2
 R17
 33
+<<<<<<< HEAD
+R50
+!i10b 1
+R51
+=======
 !s110 1648143315
 !i10b 1
 !s108 1648143315.000000
+>>>>>>> 0d33457bef6327acb83fd8f8eccadc1888b82696
 !s90 -quiet|-modelsimini|/home/borg/Z01.1--Dio/Projetos/C-UnidadeLogicaAritmetica/vunit_out/modelsim/modelsim.ini|-2008|-work|vunit_lib|/home/borg/.local/lib/python3.8/site-packages/vunit/vhdl/check/src/check.vhd|
 Z59 !s107 /home/borg/.local/lib/python3.8/site-packages/vunit/vhdl/check/src/check.vhd|
 !i113 1
@@ -318,9 +336,15 @@ VE?dhhcE;9VWnHLW[lW4`Y1
 R17
 33
 b1
+<<<<<<< HEAD
+R18
+!i10b 1
+R19
+=======
 R50
 !i10b 1
 R51
+>>>>>>> 0d33457bef6327acb83fd8f8eccadc1888b82696
 !s90 -quiet|-modelsimini|/home/borg/Z01.1--Dio/Projetos/C-UnidadeLogicaAritmetica/vunit_out/modelsim/modelsim.ini|-2008|-work|vunit_lib|/home/borg/.local/lib/python3.8/site-packages/vunit/vhdl/check/src/checker_pkg.vhd|
 !s107 /home/borg/.local/lib/python3.8/site-packages/vunit/vhdl/check/src/checker_pkg.vhd|
 !i113 1
@@ -1187,9 +1211,15 @@ VQ7[lfBh_WC:ca^W64YP1U2
 R17
 33
 b1
+<<<<<<< HEAD
+R18
+!i10b 1
+R19
+=======
 R50
 !i10b 1
 R51
+>>>>>>> 0d33457bef6327acb83fd8f8eccadc1888b82696
 Z135 !s90 -quiet|-modelsimini|/home/borg/Z01.1--Dio/Projetos/C-UnidadeLogicaAritmetica/vunit_out/modelsim/modelsim.ini|-2008|-work|vunit_lib|/home/borg/.local/lib/python3.8/site-packages/vunit/vhdl/logging/src/log_deprecated_pkg.vhd|
 Z136 !s107 /home/borg/.local/lib/python3.8/site-packages/vunit/vhdl/logging/src/log_deprecated_pkg.vhd|
 !i113 1
@@ -1223,9 +1253,15 @@ V4nDXH:2Kn`2?OIei>k2nX2
 !s100 HjCQ8z4`cGBZSo:TSCLH`1
 R17
 33
+<<<<<<< HEAD
+R18
+!i10b 1
+R19
+=======
 R50
 !i10b 1
 R51
+>>>>>>> 0d33457bef6327acb83fd8f8eccadc1888b82696
 R135
 R136
 !i113 1
@@ -1363,9 +1399,15 @@ VFB??U8HFT]54d=fmEWa>C1
 !s100 ZFGOJA=5IX1Fg?P24ijE71
 R17
 33
+<<<<<<< HEAD
+R18
+!i10b 1
+R19
+=======
 R50
 !i10b 1
 R51
+>>>>>>> 0d33457bef6327acb83fd8f8eccadc1888b82696
 !s90 -quiet|-modelsimini|/home/borg/Z01.1--Dio/Projetos/C-UnidadeLogicaAritmetica/vunit_out/modelsim/modelsim.ini|-2008|-work|vunit_lib|/home/borg/.local/lib/python3.8/site-packages/vunit/vhdl/logging/src/log_levels_pkg-body.vhd|
 !s107 /home/borg/.local/lib/python3.8/site-packages/vunit/vhdl/logging/src/log_levels_pkg-body.vhd|
 !i113 1
@@ -1441,7 +1483,11 @@ VD3Q6AU6?2Ug49]WgQJ6Lb1
 !s100 >0UUmWJJ@;R_1Tol6ANka0
 R17
 33
+<<<<<<< HEAD
+R18
+=======
 R50
+>>>>>>> 0d33457bef6327acb83fd8f8eccadc1888b82696
 !i10b 1
 R19
 !s90 -quiet|-modelsimini|/home/borg/Z01.1--Dio/Projetos/C-UnidadeLogicaAritmetica/vunit_out/modelsim/modelsim.ini|-2008|-work|vunit_lib|/home/borg/.local/lib/python3.8/site-packages/vunit/vhdl/logging/src/logger_pkg-body.vhd|
@@ -1819,7 +1865,11 @@ R17
 b1
 R50
 !i10b 1
+<<<<<<< HEAD
+R19
+=======
 R51
+>>>>>>> 0d33457bef6327acb83fd8f8eccadc1888b82696
 Z157 !s90 -quiet|-modelsimini|/home/borg/Z01.1--Dio/Projetos/C-UnidadeLogicaAritmetica/vunit_out/modelsim/modelsim.ini|-2008|-work|vunit_lib|/home/borg/.local/lib/python3.8/site-packages/vunit/vhdl/run/src/run_deprecated_pkg.vhd|
 Z158 !s107 /home/borg/.local/lib/python3.8/site-packages/vunit/vhdl/run/src/run_deprecated_pkg.vhd|
 !i113 1
@@ -1865,7 +1915,11 @@ R17
 33
 R50
 !i10b 1
+<<<<<<< HEAD
+R19
+=======
 R51
+>>>>>>> 0d33457bef6327acb83fd8f8eccadc1888b82696
 R157
 R158
 !i113 1
