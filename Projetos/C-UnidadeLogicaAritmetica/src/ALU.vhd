@@ -33,7 +33,7 @@ entity ALU is
         nx    : in std_logic; -- inverte a entrada x
         zy    : in std_logic; -- zera a entrada y
         ny    : in std_logic; -- inverte a entrada y
-        f     : in std_logic; -- se 0 calcula x & y, senão x + y
+        f     : in std_logic_vector(1 downto 0); -- se 0 calcula x & y, senão x + y
         no    : in std_logic; -- inverte o valor da saída
         zr    : out std_logic; -- setado se saída igual a zero
         ng    : out std_logic; -- setado se saída é negativa
