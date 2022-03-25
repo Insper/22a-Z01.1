@@ -44,13 +44,15 @@ architecture rtl of TopLevel is
 -- component
 --------------
 	component ALU is port(
-		  x, y  : in std_logic_vector(15 downto 0); -- entradas de dados da ALU
+		x, y  : in std_logic_vector(15 downto 0); -- entradas de dados da ALU
         zx    : in std_logic; -- zera a entrada x
         nx    : in std_logic; -- inverte a entrada x
         zy    : in std_logic; -- zera a entrada y
         ny    : in std_logic; -- inverte a entrada y
-        f     : in std_logic; -- se 0 calcula x & y, senão x + y
+        f     : in std_logic_vector(1 downto 0); -- se 0 calcula x & y, senão x + y
         no    : in std_logic; -- inverte o valor da saída
+        dir   : in std_logic; -- direcao do shifter
+        est   : out std_logic; -- saida do estouro
         zr    : out std_logic; -- setado se saída igual a zero
         ng    : out std_logic; -- setado se saída é negativa
         saida : out std_logic_vector(15 downto 0) -- saída de dados da ALU
@@ -69,7 +71,7 @@ architecture rtl of TopLevel is
 ---------------
 -- implementacao
 ---------------
--- SW(0) = ZX , SW(1) = ZY, SW(2) = NX, SW(3) = NY, SW(4) = f, SW(5) = no || 
+-- SW(0) = ZX , SW(1) = ZY, SW(2) = NX, SW(3) = NY, SW(4),SW(5) = f, SW(6) = no || 
 begin
 
 	u1 : ALU port map(
@@ -79,10 +81,11 @@ begin
 	zy => SW(1),
 	nx => SW(2),
 	ny => SW(3),
-	f => SW(4),
-	no => SW(5),
+	f => SW(5 downto 4),
+	no => SW(6),
 	zr => LEDR(0),
 	ng => LEDR(1),
+	est => LEDR(2),
 	saida => precomp
 
 	);

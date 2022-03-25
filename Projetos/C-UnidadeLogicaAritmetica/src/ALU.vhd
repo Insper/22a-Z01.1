@@ -35,6 +35,8 @@ entity ALU is
         ny    : in std_logic; -- inverte a entrada y
         f     : in std_logic_vector(1 downto 0); -- se 0 calcula x & y, senão x + y
         no    : in std_logic; -- inverte o valor da saída
+        dir   : in std_logic; -- direcao do shifter
+        est   : out std_logic; -- saida do estouro
         zr    : out std_logic; -- setado se saída igual a zero
         ng    : out std_logic; -- setado se saída é negativa
         saida : out std_logic_vector(15 downto 0) -- saída de dados da ALU
@@ -66,7 +68,8 @@ architecture rtl of alu is
         port (
             a : in std_logic_vector(15 downto 0);
             b : in std_logic_vector(15 downto 0);
-            q : out std_logic_vector(15 downto 0)
+            q : out std_logic_vector(15 downto 0);
+            carry : out std_logic
         );
     end component;
 
@@ -104,8 +107,23 @@ architecture rtl of alu is
             q   : out std_logic_vector(15 downto 0)
         );
     end component;
+    component Xor16 is
+        port ( 
+			a:   in  STD_LOGIC_VECTOR(15 downto 0);
+			b:   in  STD_LOGIC_VECTOR(15 downto 0);
+			q:   out STD_LOGIC_VECTOR(15 downto 0)
+        );
+    end component;
+    component BarrelShifter16 is
+        port ( 
+                a:    in  STD_LOGIC_VECTOR(15 downto 0);   -- input vector
+                dir:  in  std_logic;                       -- 0=>left 1=>right
+                size: in  std_logic_vector(2 downto 0);    -- shift amount
+                q:    out STD_LOGIC_VECTOR(15 downto 0)
+                );  
+    end component;
 
-    signal zxout, zyout, nxout, nyout, andout, adderout, xorout, muxout, precomp : std_logic_vector(15 downto 0);
+    signal zxout, zyout, nxout, nyout, andout, adderout, xorout, muxout, precomp, carry, shifter_out : std_logic_vector(15 downto 0);
 
 begin
     zerx : zerador16 port map(
@@ -124,6 +142,14 @@ begin
         y => nxout
 
     );
+    shifter : BarrelShifter16 port map(
+        a => x,
+        dir => dir,
+        size => y(2 downto 0),
+        q => shifter_out
+
+    );
+
     invy : inversor16 port map(
         z => ny,
         a => zyout,
@@ -138,7 +164,8 @@ begin
     add_16 : add16 port map(
         a => nxout,
         b => nyout,
-        q => adderout
+        q => adderout,
+        carry => carry
     );
 
     xor_16: xor16 port map(
@@ -150,8 +177,8 @@ begin
     mux : Mux4Way16 port map(
         a => andout,
         b => adderout,
-        c => xorout
-        d => "0000000000000000"
+        c => xorout,
+        d => shifter_out,
 		sel => f,
 		q => muxout
     );
