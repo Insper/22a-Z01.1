@@ -1,13 +1,29 @@
 <<<<<<< HEAD
+# vsim -modelsimini /home/borg/Z01.1--Dio/Projetos/C-UnidadeLogicaAritmetica/vunit_out/modelsim/modelsim.ini -wlf /home/borg/Z01.1--Dio/Projetos/C-UnidadeLogicaAritmetica/vunit_out/test_output/lib.tb_inversor16.all_cf124a04e75272dadd8625f1aac52b48d9b344c6/modelsim/vsim.wlf -quiet -t ps -onfinish stop lib.tb_inversor16(tb) -L vunit_lib -L lib -g/tb_inversor16/runner_cfg="active python runner : true,enabled_test_cases : ,output path : /home/borg/Z01.1--Dio/Projetos/C-UnidadeLogicaAritmetica/vunit_out/test_output/lib.tb_inversor16.all_cf124a04e75272dadd8625f1aac52b48d9b344c6/,tb path : /home/borg/Z01.1--Dio/Projetos/C-UnidadeLogicaAritmetica/testes/,use_color : true" 
+# Start time: 09:29:41 on Mar 25,2022
+=======
+<<<<<<< HEAD
+# vsim -modelsimini /home/borg/Z01.1--Dio/Projetos/C-UnidadeLogicaAritmetica/vunit_out/modelsim/modelsim.ini -wlf /home/borg/Z01.1--Dio/Projetos/C-UnidadeLogicaAritmetica/vunit_out/test_output/lib.tb_inversor16.all_cf124a04e75272dadd8625f1aac52b48d9b344c6/modelsim/vsim.wlf -quiet -t ps -onfinish stop lib.tb_inversor16(tb) -L vunit_lib -L lib -g/tb_inversor16/runner_cfg="active python runner : true,enabled_test_cases : ,output path : /home/borg/Z01.1--Dio/Projetos/C-UnidadeLogicaAritmetica/vunit_out/test_output/lib.tb_inversor16.all_cf124a04e75272dadd8625f1aac52b48d9b344c6/,tb path : /home/borg/Z01.1--Dio/Projetos/C-UnidadeLogicaAritmetica/testes/,use_color : true" 
+# Start time: 09:05:40 on Mar 25,2022
+=======
+<<<<<<< HEAD
 # End time: 14:59:08 on Mar 24,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 1
 # vsim -modelsimini /home/borg/Z01.1--Dio/Projetos/C-UnidadeLogicaAritmetica/vunit_out/modelsim/modelsim.ini -wlf /home/borg/Z01.1--Dio/Projetos/C-UnidadeLogicaAritmetica/vunit_out/test_output/lib.tb_inversor16.all_cf124a04e75272dadd8625f1aac52b48d9b344c6/modelsim/vsim.wlf -quiet -t ps -onfinish stop lib.tb_inversor16(tb) -L vunit_lib -L lib -g/tb_inversor16/runner_cfg="active python runner : true,enabled_test_cases : ,output path : /home/borg/Z01.1--Dio/Projetos/C-UnidadeLogicaAritmetica/vunit_out/test_output/lib.tb_inversor16.all_cf124a04e75272dadd8625f1aac52b48d9b344c6/,tb path : /home/borg/Z01.1--Dio/Projetos/C-UnidadeLogicaAritmetica/testes/,use_color : true" 
 # Start time: 14:59:08 on Mar 24,2022
+>>>>>>> 069ad95a860a09a693ac1c7aafdae82a631f51b4
+>>>>>>> 5a70c1dbd3cf24b843dd76f2cf8c4006fb11dd72
 # ** Warning: Design size of 21385 statements exceeds ModelSim-Intel FPGA Starter Edition recommended capacity.
 # Expect performance to be adversely affected.
 # Break in Subprogram stop at /home/borg/.local/lib/python3.8/site-packages/vunit/vhdl/core/src/stop_body_2008p.vhd line 13
 # Stopped at /home/borg/.local/lib/python3.8/site-packages/vunit/vhdl/core/src/stop_body_2008p.vhd line 13
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
 =======
 skip (P=0 S=1 F=0 T=1) lib.tb_inversor16.all (82.4 seconds)
 
 >>>>>>> 0d33457bef6327acb83fd8f8eccadc1888b82696
+>>>>>>> 069ad95a860a09a693ac1c7aafdae82a631f51b4
+>>>>>>> 5a70c1dbd3cf24b843dd76f2cf8c4006fb11dd72

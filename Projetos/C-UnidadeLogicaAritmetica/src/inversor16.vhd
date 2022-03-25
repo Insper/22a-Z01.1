@@ -21,6 +21,6 @@ architecture rtl of inversor16 is
 begin
   -- Implementação vem aqui
    with z select
-    y<= a when '0', not(a) when others;
+		y<= a when '0', not(a) when others;
 	 
 end architecture;

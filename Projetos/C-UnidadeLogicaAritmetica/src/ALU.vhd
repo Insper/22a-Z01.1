@@ -35,6 +35,8 @@ entity ALU is
 			ny:    in STD_LOGIC;                     -- inverte a entrada y
 			f:     in STD_LOGIC;                     -- se 0 calcula x & y, senão x + y
 			no:    in STD_LOGIC;                     -- inverte o valor da saída
+			dir:	 in STD_LOGIC;
+			size:  in  std_logic_vector(2 downto 0); 
 			zr:    out STD_LOGIC;                    -- setado se saída igual a zero
 			ng:    out STD_LOGIC;                    -- setado se saída é negativa
 			saida: out STD_LOGIC_VECTOR(15 downto 0); -- saída de dados da ALU
@@ -47,11 +49,32 @@ architecture  rtl OF alu is
   -- e componentes (outros módulos) que serao
   -- utilizados nesse modulo.
 
+<<<<<<< HEAD
 	component zerador16 IS
+		port(z  : in STD_LOGIC;
+=======
+  	component xor16 is
+		port ( 
+			a:   in  STD_LOGIC_VECTOR(15 downto 0);
+			b:   in  STD_LOGIC_VECTOR(15 downto 0);
+			q:   out STD_LOGIC_VECTOR(15 downto 0)
+			);
+		end component;
+
+	component zerador16 is
 		port(z   : in STD_LOGIC;
+>>>>>>> 5a70c1dbd3cf24b843dd76f2cf8c4006fb11dd72
 			 a   : in STD_LOGIC_VECTOR(15 downto 0);
 			 y   : out STD_LOGIC_VECTOR(15 downto 0)
 			);
+	end component;
+	
+	component BarrelShifter16 IS
+		port ( 
+			a:    in  STD_LOGIC_VECTOR(15 downto 0);   -- input vector
+			dir:  in  std_logic;                       -- 0=>left 1=>right
+			size: in  std_logic_vector(2 downto 0);    -- shift amount
+			q:    out STD_LOGIC_VECTOR(15 downto 0));
 	end component;
 
 	component inversor16 is
@@ -98,11 +121,19 @@ architecture  rtl OF alu is
    SIGNAL zxout,zyout,nxout,nyout,andout,adderout,muxout,precomp: std_logic_vector(15 downto 0);
 
 begin
+
+  xor1:xor16 port map(
+	a => x,
+	b => y,
+	q => saida
+  );	
+
   z1: zerador16 port map(
       z =>zx,
 		a => x,
 		y =>zxout
    );
+   
   z2: zerador16 port map(
       z =>zy,
 		a => y,
@@ -114,7 +145,7 @@ begin
 		y => nxout
 	);
 	i2: inversor16 port map(
-		z =>ny,
+		z => ny,
 		a => zyout,
 		y => nyout
 	);
@@ -132,7 +163,7 @@ begin
 		q =>muxout
 	);
 	i3: inversor16 port map(
-		z =>no,
+		z => no,
 		a => muxout,
 		y => precomp
 	);
@@ -141,5 +172,11 @@ begin
 		zr => zr,
 		ng => ng
 	);
+	s1: BarrelShifter16 port map(
+      a => x,
+		dir => dir,
+		size => size,
+		q => precomp
+   );
 	saida <= precomp;
 end architecture;
