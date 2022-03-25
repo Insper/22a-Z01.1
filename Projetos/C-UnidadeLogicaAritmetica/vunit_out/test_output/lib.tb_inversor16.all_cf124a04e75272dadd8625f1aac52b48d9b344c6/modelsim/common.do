@@ -43,19 +43,11 @@ proc _vunit_source_init_files_before_run {} {
 
 proc vunit_load {{vsim_extra_args ""}} {
     set vsim_failed [catch {
-<<<<<<< HEAD
         eval vsim ${vsim_extra_args} {-modelsimini /home/borg/Z01.1--Dio/Projetos/C-UnidadeLogicaAritmetica/vunit_out/modelsim/modelsim.ini -wlf {/home/borg/Z01.1--Dio/Projetos/C-UnidadeLogicaAritmetica/vunit_out/test_output/lib.tb_inversor16.all_cf124a04e75272dadd8625f1aac52b48d9b344c6/modelsim/vsim.wlf} -quiet -t ps -onfinish stop  -g/tb_inversor16/runner_cfg={"active python runner : true,enabled_test_cases : ,output path : /home/borg/Z01.1--Dio/Projetos/C-UnidadeLogicaAritmetica/vunit_out/test_output/lib.tb_inversor16.all_cf124a04e75272dadd8625f1aac52b48d9b344c6/,tb path : /home/borg/Z01.1--Dio/Projetos/C-UnidadeLogicaAritmetica/testes/,use_color : true"} lib.tb_inversor16(tb)   -L vunit_lib -L lib}
     }]
 
     if {${vsim_failed}} {
        echo Command 'vsim ${vsim_extra_args} -modelsimini /home/borg/Z01.1--Dio/Projetos/C-UnidadeLogicaAritmetica/vunit_out/modelsim/modelsim.ini -wlf {/home/borg/Z01.1--Dio/Projetos/C-UnidadeLogicaAritmetica/vunit_out/test_output/lib.tb_inversor16.all_cf124a04e75272dadd8625f1aac52b48d9b344c6/modelsim/vsim.wlf} -quiet -t ps -onfinish stop  -g/tb_inversor16/runner_cfg={"active python runner : true,enabled_test_cases : ,output path : /home/borg/Z01.1--Dio/Projetos/C-UnidadeLogicaAritmetica/vunit_out/test_output/lib.tb_inversor16.all_cf124a04e75272dadd8625f1aac52b48d9b344c6/,tb path : /home/borg/Z01.1--Dio/Projetos/C-UnidadeLogicaAritmetica/testes/,use_color : true"} lib.tb_inversor16(tb)   -L vunit_lib -L lib' failed
-=======
-        eval vsim ${vsim_extra_args} {-modelsimini /home/borg/Z01.1--Dio/Projetos/C-UnidadeLogicaAritmetica/vunit_out/modelsim/modelsim.ini -wlf {/home/borg/Z01.1--Dio/Projetos/C-UnidadeLogicaAritmetica/vunit_out/test_output/lib.tb_inversor16.all_cf124a04e75272dadd8625f1aac52b48d9b344c6/modelsim/vsim.wlf} -quiet -t ps -onfinish stop  -g/tb_inversor16/runner_cfg={"active python runner : true,enabled_test_cases : ,output path : /home/borg/Z01.1--Dio/Projetos/C-UnidadeLogicaAritmetica/vunit_out/test_output/lib.tb_inversor16.all_cf124a04e75272dadd8625f1aac52b48d9b344c6/,tb path : /home/borg/Z01.1--Dio/Projetos/C-UnidadeLogicaAritmetica/testes/,use_color : false"} lib.tb_inversor16(tb)   -L vunit_lib -L lib}
-    }]
-
-    if {${vsim_failed}} {
-       echo Command 'vsim ${vsim_extra_args} -modelsimini /home/borg/Z01.1--Dio/Projetos/C-UnidadeLogicaAritmetica/vunit_out/modelsim/modelsim.ini -wlf {/home/borg/Z01.1--Dio/Projetos/C-UnidadeLogicaAritmetica/vunit_out/test_output/lib.tb_inversor16.all_cf124a04e75272dadd8625f1aac52b48d9b344c6/modelsim/vsim.wlf} -quiet -t ps -onfinish stop  -g/tb_inversor16/runner_cfg={"active python runner : true,enabled_test_cases : ,output path : /home/borg/Z01.1--Dio/Projetos/C-UnidadeLogicaAritmetica/vunit_out/test_output/lib.tb_inversor16.all_cf124a04e75272dadd8625f1aac52b48d9b344c6/,tb path : /home/borg/Z01.1--Dio/Projetos/C-UnidadeLogicaAritmetica/testes/,use_color : false"} lib.tb_inversor16(tb)   -L vunit_lib -L lib' failed
->>>>>>> 0d33457bef6327acb83fd8f8eccadc1888b82696
        echo Bad flag from vsim_extra_args?
        return true
     }
@@ -122,14 +114,10 @@ proc _vunit_sim_restart {} {
 }
 
 proc vunit_compile {} {
-    set cmd_show {/usr/bin/python3 -u ./testeULA.py --compile --gui}
+    set cmd_show {/usr/bin/python3 -u ./testeULA.py --compile}
     puts "Re-compiling using command ${cmd_show}"
 
-<<<<<<< HEAD
     set chan [open |[list {/usr/bin/python3} {-u} {-c} {import sys;import subprocess;exit(subprocess.call(['/usr/bin/python3', '-u', './testeULA.py', '--compile'], cwd='/home/borg/Z01.1--Dio/Projetos/C-UnidadeLogicaAritmetica', bufsize=0, universal_newlines=True, stdout=sys.stdout, stderr=sys.stdout))}] r]
-=======
-    set chan [open |[list {/usr/bin/python3} {-u} {-c} {import sys;import subprocess;exit(subprocess.call(['/usr/bin/python3', '-u', './testeULA.py', '--compile', '--gui'], cwd='/home/borg/Z01.1--Dio/Projetos/C-UnidadeLogicaAritmetica', bufsize=0, universal_newlines=True, stdout=sys.stdout, stderr=sys.stdout))}] r]
->>>>>>> 0d33457bef6327acb83fd8f8eccadc1888b82696
 
     while {[gets $chan line] >= 0} {
         puts $line

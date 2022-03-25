@@ -35,6 +35,8 @@ entity ALU is
 			ny:    in STD_LOGIC;                     -- inverte a entrada y
 			f:     in STD_LOGIC;                     -- se 0 calcula x & y, senão x + y
 			no:    in STD_LOGIC;                     -- inverte o valor da saída
+			dir:	 in STD_LOGIC;
+			size:  in  std_logic_vector(2 downto 0); 
 			zr:    out STD_LOGIC;                    -- setado se saída igual a zero
 			ng:    out STD_LOGIC;                    -- setado se saída é negativa
 			saida: out STD_LOGIC_VECTOR(15 downto 0); -- saída de dados da ALU
@@ -48,10 +50,18 @@ architecture  rtl OF alu is
   -- utilizados nesse modulo.
 
 	component zerador16 IS
-		port(z   : in STD_LOGIC;
+		port(z  : in STD_LOGIC;
 			 a   : in STD_LOGIC_VECTOR(15 downto 0);
 			 y   : out STD_LOGIC_VECTOR(15 downto 0)
 			);
+	end component;
+	
+	component BarrelShifter16 IS
+		port ( 
+			a:    in  STD_LOGIC_VECTOR(15 downto 0);   -- input vector
+			dir:  in  std_logic;                       -- 0=>left 1=>right
+			size: in  std_logic_vector(2 downto 0);    -- shift amount
+			q:    out STD_LOGIC_VECTOR(15 downto 0));
 	end component;
 
 	component inversor16 is
@@ -114,7 +124,7 @@ begin
 		y => nxout
 	);
 	i2: inversor16 port map(
-		z =>ny,
+		z => ny,
 		a => zyout,
 		y => nyout
 	);
@@ -132,7 +142,7 @@ begin
 		q =>muxout
 	);
 	i3: inversor16 port map(
-		z =>no,
+		z => no,
 		a => muxout,
 		y => precomp
 	);
@@ -141,5 +151,11 @@ begin
 		zr => zr,
 		ng => ng
 	);
+	s1: BarrelShifter16 port map(
+      a => x,
+		dir => dir,
+		size => size,
+		q => precomp
+   );
 	saida <= precomp;
 end architecture;
