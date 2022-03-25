@@ -37,8 +37,7 @@ entity ALU is
 			no:    in STD_LOGIC;                     -- inverte o valor da saída
 			zr:    out STD_LOGIC;                    -- setado se saída igual a zero
 			ng:    out STD_LOGIC;                    -- setado se saída é negativa
-			saida: out STD_LOGIC_VECTOR(15 downto 0); -- saída de dados da ALU
-			vaium: out STD_LOGIC
+			saida: out STD_LOGIC_VECTOR(15 downto 0) -- saída de dados da ALU
 	);
 end entity;
 
@@ -47,15 +46,7 @@ architecture  rtl OF alu is
   -- e componentes (outros módulos) que serao
   -- utilizados nesse modulo.
 
-  	component xor16 is
-		port ( 
-			a:   in  STD_LOGIC_VECTOR(15 downto 0);
-			b:   in  STD_LOGIC_VECTOR(15 downto 0);
-			q:   out STD_LOGIC_VECTOR(15 downto 0)
-			);
-		end component;
-
-	component zerador16 is
+	component zerador16 IS
 		port(z   : in STD_LOGIC;
 			 a   : in STD_LOGIC_VECTOR(15 downto 0);
 			 y   : out STD_LOGIC_VECTOR(15 downto 0)
@@ -73,8 +64,7 @@ architecture  rtl OF alu is
 		port(
 			a   :  in STD_LOGIC_VECTOR(15 downto 0);
 			b   :  in STD_LOGIC_VECTOR(15 downto 0);
-			q   : out STD_LOGIC_VECTOR(15 downto 0);
-			carry: out STD_LOGIC
+			q   : out STD_LOGIC_VECTOR(15 downto 0)
 		);
 	end component;
 
@@ -106,19 +96,11 @@ architecture  rtl OF alu is
    SIGNAL zxout,zyout,nxout,nyout,andout,adderout,muxout,precomp: std_logic_vector(15 downto 0);
 
 begin
-
-  xor1:xor16 port map(
-	a => x,
-	b => y,
-	q => saida
-  );	
-
   z1: zerador16 port map(
       z =>zx,
 		a => x,
 		y =>zxout
    );
-   
   z2: zerador16 port map(
       z =>zy,
 		a => y,
@@ -137,8 +119,7 @@ begin
 	add: Add16 port map(
 		a => nxout,
 		b => nyout,
-		q => adderout,
-		carry => vaium
+		q => adderout
 	);
 	andout <= nyout and nxout;
 	mux :Mux16 port map(
