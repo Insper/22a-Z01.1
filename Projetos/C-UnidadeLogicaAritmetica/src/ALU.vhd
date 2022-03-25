@@ -78,6 +78,14 @@ architecture rtl of alu is
         );
     end component;
 
+    component xor16 is
+        port(
+            a : in std_logic_vector(15 downto 0);
+            b : in std_logic_vector(15 downto 0);
+            q : out std_logic_vector(15 downto 0)
+        );
+    end component;
+
     component comparador16 is
         port (
             a  : in std_logic_vector(15 downto 0);
@@ -86,16 +94,18 @@ architecture rtl of alu is
         );
     end component;
 
-    component Mux16 is
+    component Mux4Way16 is
         port (
             a   : in std_logic_vector(15 downto 0);
             b   : in std_logic_vector(15 downto 0);
+            c   : in std_logic_vector(15 downto 0);
+            d   : in std_logic_vector(15 downto 0);
             sel : in std_logic;
             q   : out std_logic_vector(15 downto 0)
         );
     end component;
 
-    signal zxout, zyout, nxout, nyout, andout, adderout, muxout, precomp : std_logic_vector(15 downto 0);
+    signal zxout, zyout, nxout, nyout, andout, adderout, xorout, muxout, precomp : std_logic_vector(15 downto 0);
 
 begin
     zerx : zerador16 port map(
@@ -130,9 +140,18 @@ begin
         b => nyout,
         q => adderout
     );
-    mux : Mux16 port map(
+
+    xor_16: xor16 port map(
+        a => nxout,
+        b => nyout,
+        q=> xorout
+    );
+
+    mux : Mux4Way16 port map(
         a => andout,
         b => adderout,
+        c => xorout
+        d => "0000000000000000"
 		sel => f,
 		q => muxout
     );
