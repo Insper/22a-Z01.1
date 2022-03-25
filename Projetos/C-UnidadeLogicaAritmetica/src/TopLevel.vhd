@@ -38,64 +38,32 @@ architecture rtl of TopLevel is
 
   signal x : std_logic_vector(15 downto 0) := x"0073"; -- 115
   signal y : std_logic_vector(15 downto 0) := x"005F"; -- 95
-  signal zxout, zyout, nxout, nyout, andout, adderout, muxout, precomp : std_logic_vector(15 downto 0);
+  signal precomp : std_logic_vector(15 downto 0);
 
 --------------
 -- component
 --------------
-    component zerador16 is
-        port (
-            z : in std_logic;
-            a : in std_logic_vector(15 downto 0);
-            y : out std_logic_vector(15 downto 0)
-        );
-    end component;
+	component ALU is port(
+		  x, y  : in std_logic_vector(15 downto 0); -- entradas de dados da ALU
+        zx    : in std_logic; -- zera a entrada x
+        nx    : in std_logic; -- inverte a entrada x
+        zy    : in std_logic; -- zera a entrada y
+        ny    : in std_logic; -- inverte a entrada y
+        f     : in std_logic; -- se 0 calcula x & y, senão x + y
+        no    : in std_logic; -- inverte o valor da saída
+        zr    : out std_logic; -- setado se saída igual a zero
+        ng    : out std_logic; -- setado se saída é negativa
+        saida : out std_logic_vector(15 downto 0) -- saída de dados da ALU
+    );
+	 end component;
 
-    component inversor16 is
-        port (
-            z : in std_logic;
-            a : in std_logic_vector(15 downto 0);
-            y : out std_logic_vector(15 downto 0)
-        );
-    end component;
-
-    component Add16 is
-        port (
-            a : in std_logic_vector(15 downto 0);
-            b : in std_logic_vector(15 downto 0);
-            q : out std_logic_vector(15 downto 0)
-        );
-    end component;
-
-    component And16 is
-        port (
-            a : in std_logic_vector(15 downto 0);
-            b : in std_logic_vector(15 downto 0);
-            q : out std_logic_vector(15 downto 0)
-        );
-    end component;
-
-    component comparador16 is
-        port (
-            a  : in std_logic_vector(15 downto 0);
-            zr : out std_logic;
-            ng : out std_logic
-        );
-    end component;
-
-    component Mux16 is
-        port (
-            a   : in std_logic_vector(15 downto 0);
-            b   : in std_logic_vector(15 downto 0);
-            sel : in std_logic;
-            q   : out std_logic_vector(15 downto 0)
-        );
-    end component;
 	 component sevenSeg is	
 	 port (
 			bcd : in  STD_LOGIC_VECTOR(3 downto 0);
-			leds: out STD_LOGIC_VECTOR(6 downto 0));
-end component;
+			leds: out STD_LOGIC_VECTOR(6 downto 0)
+			);
+			
+	end component;
 	
 
 ---------------
@@ -103,76 +71,42 @@ end component;
 ---------------
 -- SW(0) = ZX , SW(1) = ZY, SW(2) = NX, SW(3) = NY, SW(4) = f, SW(5) = no || 
 begin
-    zerx : zerador16 port map(
-        z => SW(0),
-        a => x,
-        y => zxout
-    );
-    zery : zerador16 port map(
-        z => SW(1),
-        a => y,
-        y => zyout
-    );
-    invx : inversor16 port map(
-        z => SW(2),
-        a => zxout,
-        y => nxout
 
-    );
-    invy : inversor16 port map(
-        z => SW(3),
-        a => zyout,
-        y => nyout
+	u1 : ALU port map(
+	x => x,
+	y => y,
+	zx => SW(0),
+	zy => SW(1),
+	nx => SW(2),
+	ny => SW(3),
+	f => SW(4),
+	no => SW(5),
+	zr => LEDR(0),
+	ng => LEDR(1),
+	saida => precomp
 
-    );
-    and_16 : and16 port map(
-        a => nxout,
-        b => nyout,
-        q => andout
-    );
-    add_16 : add16 port map(
-        a => nxout,
-        b => nyout,
-        q => adderout
-    );
-    mux : Mux16 port map(
-        a => andout,
-        b => adderout,
-		sel => SW(4),
-		q => muxout
-    );
-	invf : inversor16 port map(
-		z => SW(5),
-		a => muxout,
-		y => precomp
 	);
 	
-	compf : comparador16 port map(
-		a => precomp,
-		zr => LEDR(0),
-		ng => LEDR(1)
+		s1 : sevenSeg port map(
+		bcd => precomp(3 downto 0),
+		leds => HEX0
+	);
+
+	s2 : sevenSeg port map(
+		bcd => precomp(7 downto 4),
+		leds => HEX1
+	);
+
+	s3 : sevenSeg port map(
+		bcd => precomp(11 downto 8),
+		leds => HEX2
+	);
+
+	s4 : sevenSeg port map(
+		bcd => precomp(15 downto 12),
+		leds => HEX3
 	);
 
 
-
-s1 : sevenSeg port map(
-	bcd => precomp(3 downto 0),
-	leds => HEX0
-);
-
-s2 : sevenSeg port map(
-	bcd => precomp(7 downto 4),
-	leds => HEX1
-);
-
-s3 : sevenSeg port map(
-	bcd => precomp(11 downto 8),
-	leds => HEX2
-);
-
-s4 : sevenSeg port map(
-	bcd => precomp(15 downto 12),
-	leds => HEX3
-);
 
 end architecture;
