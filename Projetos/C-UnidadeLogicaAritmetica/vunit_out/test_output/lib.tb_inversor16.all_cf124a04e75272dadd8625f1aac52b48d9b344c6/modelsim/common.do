@@ -48,6 +48,24 @@ proc vunit_load {{vsim_extra_args ""}} {
 
     if {${vsim_failed}} {
        echo Command 'vsim ${vsim_extra_args} -modelsimini /home/borg/Z01.1--Dio/Projetos/C-UnidadeLogicaAritmetica/vunit_out/modelsim/modelsim.ini -wlf {/home/borg/Z01.1--Dio/Projetos/C-UnidadeLogicaAritmetica/vunit_out/test_output/lib.tb_inversor16.all_cf124a04e75272dadd8625f1aac52b48d9b344c6/modelsim/vsim.wlf} -quiet -t ps -onfinish stop  -g/tb_inversor16/runner_cfg={"active python runner : true,enabled_test_cases : ,output path : /home/borg/Z01.1--Dio/Projetos/C-UnidadeLogicaAritmetica/vunit_out/test_output/lib.tb_inversor16.all_cf124a04e75272dadd8625f1aac52b48d9b344c6/,tb path : /home/borg/Z01.1--Dio/Projetos/C-UnidadeLogicaAritmetica/testes/,use_color : true"} lib.tb_inversor16(tb)   -L vunit_lib -L lib' failed
+<<<<<<< HEAD
+=======
+=======
+<<<<<<< HEAD
+        eval vsim ${vsim_extra_args} {-modelsimini /home/borg/Z01.1--Dio/Projetos/C-UnidadeLogicaAritmetica/vunit_out/modelsim/modelsim.ini -wlf {/home/borg/Z01.1--Dio/Projetos/C-UnidadeLogicaAritmetica/vunit_out/test_output/lib.tb_inversor16.all_cf124a04e75272dadd8625f1aac52b48d9b344c6/modelsim/vsim.wlf} -quiet -t ps -onfinish stop  -g/tb_inversor16/runner_cfg={"active python runner : true,enabled_test_cases : ,output path : /home/borg/Z01.1--Dio/Projetos/C-UnidadeLogicaAritmetica/vunit_out/test_output/lib.tb_inversor16.all_cf124a04e75272dadd8625f1aac52b48d9b344c6/,tb path : /home/borg/Z01.1--Dio/Projetos/C-UnidadeLogicaAritmetica/testes/,use_color : true"} lib.tb_inversor16(tb)   -L vunit_lib -L lib}
+    }]
+
+    if {${vsim_failed}} {
+       echo Command 'vsim ${vsim_extra_args} -modelsimini /home/borg/Z01.1--Dio/Projetos/C-UnidadeLogicaAritmetica/vunit_out/modelsim/modelsim.ini -wlf {/home/borg/Z01.1--Dio/Projetos/C-UnidadeLogicaAritmetica/vunit_out/test_output/lib.tb_inversor16.all_cf124a04e75272dadd8625f1aac52b48d9b344c6/modelsim/vsim.wlf} -quiet -t ps -onfinish stop  -g/tb_inversor16/runner_cfg={"active python runner : true,enabled_test_cases : ,output path : /home/borg/Z01.1--Dio/Projetos/C-UnidadeLogicaAritmetica/vunit_out/test_output/lib.tb_inversor16.all_cf124a04e75272dadd8625f1aac52b48d9b344c6/,tb path : /home/borg/Z01.1--Dio/Projetos/C-UnidadeLogicaAritmetica/testes/,use_color : true"} lib.tb_inversor16(tb)   -L vunit_lib -L lib' failed
+=======
+        eval vsim ${vsim_extra_args} {-modelsimini /home/borg/Z01.1--Dio/Projetos/C-UnidadeLogicaAritmetica/vunit_out/modelsim/modelsim.ini -wlf {/home/borg/Z01.1--Dio/Projetos/C-UnidadeLogicaAritmetica/vunit_out/test_output/lib.tb_inversor16.all_cf124a04e75272dadd8625f1aac52b48d9b344c6/modelsim/vsim.wlf} -quiet -t ps -onfinish stop  -g/tb_inversor16/runner_cfg={"active python runner : true,enabled_test_cases : ,output path : /home/borg/Z01.1--Dio/Projetos/C-UnidadeLogicaAritmetica/vunit_out/test_output/lib.tb_inversor16.all_cf124a04e75272dadd8625f1aac52b48d9b344c6/,tb path : /home/borg/Z01.1--Dio/Projetos/C-UnidadeLogicaAritmetica/testes/,use_color : false"} lib.tb_inversor16(tb)   -L vunit_lib -L lib}
+    }]
+
+    if {${vsim_failed}} {
+       echo Command 'vsim ${vsim_extra_args} -modelsimini /home/borg/Z01.1--Dio/Projetos/C-UnidadeLogicaAritmetica/vunit_out/modelsim/modelsim.ini -wlf {/home/borg/Z01.1--Dio/Projetos/C-UnidadeLogicaAritmetica/vunit_out/test_output/lib.tb_inversor16.all_cf124a04e75272dadd8625f1aac52b48d9b344c6/modelsim/vsim.wlf} -quiet -t ps -onfinish stop  -g/tb_inversor16/runner_cfg={"active python runner : true,enabled_test_cases : ,output path : /home/borg/Z01.1--Dio/Projetos/C-UnidadeLogicaAritmetica/vunit_out/test_output/lib.tb_inversor16.all_cf124a04e75272dadd8625f1aac52b48d9b344c6/,tb path : /home/borg/Z01.1--Dio/Projetos/C-UnidadeLogicaAritmetica/testes/,use_color : false"} lib.tb_inversor16(tb)   -L vunit_lib -L lib' failed
+>>>>>>> 0d33457bef6327acb83fd8f8eccadc1888b82696
+>>>>>>> 069ad95a860a09a693ac1c7aafdae82a631f51b4
+>>>>>>> 5a70c1dbd3cf24b843dd76f2cf8c4006fb11dd72
        echo Bad flag from vsim_extra_args?
        return true
     }
@@ -118,6 +136,16 @@ proc vunit_compile {} {
     puts "Re-compiling using command ${cmd_show}"
 
     set chan [open |[list {/usr/bin/python3} {-u} {-c} {import sys;import subprocess;exit(subprocess.call(['/usr/bin/python3', '-u', './testeULA.py', '--compile'], cwd='/home/borg/Z01.1--Dio/Projetos/C-UnidadeLogicaAritmetica', bufsize=0, universal_newlines=True, stdout=sys.stdout, stderr=sys.stdout))}] r]
+<<<<<<< HEAD
+=======
+=======
+<<<<<<< HEAD
+    set chan [open |[list {/usr/bin/python3} {-u} {-c} {import sys;import subprocess;exit(subprocess.call(['/usr/bin/python3', '-u', './testeULA.py', '--compile'], cwd='/home/borg/Z01.1--Dio/Projetos/C-UnidadeLogicaAritmetica', bufsize=0, universal_newlines=True, stdout=sys.stdout, stderr=sys.stdout))}] r]
+=======
+    set chan [open |[list {/usr/bin/python3} {-u} {-c} {import sys;import subprocess;exit(subprocess.call(['/usr/bin/python3', '-u', './testeULA.py', '--compile', '--gui'], cwd='/home/borg/Z01.1--Dio/Projetos/C-UnidadeLogicaAritmetica', bufsize=0, universal_newlines=True, stdout=sys.stdout, stderr=sys.stdout))}] r]
+>>>>>>> 0d33457bef6327acb83fd8f8eccadc1888b82696
+>>>>>>> 069ad95a860a09a693ac1c7aafdae82a631f51b4
+>>>>>>> 5a70c1dbd3cf24b843dd76f2cf8c4006fb11dd72
 
     while {[gets $chan line] >= 0} {
         puts $line

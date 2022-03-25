@@ -49,8 +49,21 @@ architecture  rtl OF alu is
   -- e componentes (outros módulos) que serao
   -- utilizados nesse modulo.
 
+<<<<<<< HEAD
 	component zerador16 IS
 		port(z  : in STD_LOGIC;
+=======
+  	component xor16 is
+		port ( 
+			a:   in  STD_LOGIC_VECTOR(15 downto 0);
+			b:   in  STD_LOGIC_VECTOR(15 downto 0);
+			q:   out STD_LOGIC_VECTOR(15 downto 0)
+			);
+		end component;
+
+	component zerador16 is
+		port(z   : in STD_LOGIC;
+>>>>>>> 5a70c1dbd3cf24b843dd76f2cf8c4006fb11dd72
 			 a   : in STD_LOGIC_VECTOR(15 downto 0);
 			 y   : out STD_LOGIC_VECTOR(15 downto 0)
 			);
@@ -108,11 +121,19 @@ architecture  rtl OF alu is
    SIGNAL zxout,zyout,nxout,nyout,andout,adderout,muxout,precomp: std_logic_vector(15 downto 0);
 
 begin
+
+  xor1:xor16 port map(
+	a => x,
+	b => y,
+	q => saida
+  );	
+
   z1: zerador16 port map(
       z =>zx,
 		a => x,
 		y =>zxout
    );
+   
   z2: zerador16 port map(
       z =>zy,
 		a => y,
