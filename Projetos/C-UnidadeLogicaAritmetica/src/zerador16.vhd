@@ -20,7 +20,4 @@ architecture rtl of zerador16 is
 
 begin
   -- Implementação vem aqui!
-  y <= "0000000000000000" when (z = '1') else 
-  a;
-
 end architecture;
