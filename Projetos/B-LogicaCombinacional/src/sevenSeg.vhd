@@ -25,4 +25,5 @@ begin
 		"0100001" when bcd = "1101" else
 		"0000110" when bcd = "1110" else
 		"0001110" when bcd = "1111";
+		
 end architecture;

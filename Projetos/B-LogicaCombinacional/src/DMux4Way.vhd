@@ -18,4 +18,5 @@ begin
 	q2 <= a when sel = "10" else '0';
 	q3 <= a when sel = "11" else '0';
 
+
 end architecture;

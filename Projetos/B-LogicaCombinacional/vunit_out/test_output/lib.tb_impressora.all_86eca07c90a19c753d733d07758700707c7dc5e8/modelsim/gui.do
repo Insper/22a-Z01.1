@@ -1,0 +1,8 @@
+source "/home/gustavoeso/Documents/insper/trancando/elementos/Z01.1-Boolean/Projetos/B-LogicaCombinacional/vunit_out/test_output/lib.tb_impressora.all_86eca07c90a19c753d733d07758700707c7dc5e8/modelsim/common.do"
+proc vunit_user_init {} {
+    return 0
+}
+if {![vunit_load]} {
+  vunit_user_init
+  vunit_help
+}
