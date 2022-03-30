@@ -1,0 +1,30 @@
+# do /home/borg/.local/lib/python3.8/site-packages/vunit/sim_if/tcl_read_eval_loop.tcl
+# vsim -modelsimini /home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/D-LogicaSequencial/vunit_out/modelsim/modelsim.ini -wlf /home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/D-LogicaSequencial/vunit_out/test_output/lib.tb_flipflopt.all_19a04691ebde4105e54fcdf8e6a8d80b3a1b8fe6/modelsim/vsim.wlf -quiet -t ps -onfinish stop lib.tb_flipflopt(tb) -L vunit_lib -L lib -g/tb_flipflopt/runner_cfg="active python runner : true,enabled_test_cases : ,output path : /home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/D-LogicaSequencial/vunit_out/test_output/lib.tb_flipflopt.all_19a04691ebde4105e54fcdf8e6a8d80b3a1b8fe6/,tb path : /home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/D-LogicaSequencial/testes/,use_color : true" 
+# Start time: 19:24:45 on Mar 29,2022
+# ** Warning: Design size of 21424 statements exceeds ModelSim-Intel FPGA Starter Edition recommended capacity.
+# Expect performance to be adversely affected.
+# ** Error: Falha em teste: 2
+#    Time: 600 ps  Iteration: 0  Process: /tb_flipflopt/main File: /home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/D-LogicaSequencial/testes/tb_FlipFlopJK.vhd
+# Break in Process main at /home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/D-LogicaSequencial/testes/tb_FlipFlopJK.vhd line 52
+# Stopped at /home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/D-LogicaSequencial/testes/tb_FlipFlopJK.vhd line 52
+# 
+# Test Run Failed!
+# 
+# Stack trace result from 'tb' command
+#  /home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/D-LogicaSequencial/testes/tb_FlipFlopJK.vhd 52 return [address 0xf6d67a27] Process main
+# 
+# 
+# Surrounding code from 'see' command
+#   47 :     assert(sq = '0' and snotq = '1')  report "Falha em teste: 1" severity error;
+#   48 : 
+#   49 :   -- Teste 2
+#   50 :     j <= '1'; k <= '1';
+#   51 :   wait until clk'event and clk='0';
+# ->52 :     assert(sq = '1' and snotq = '0')  report "Falha em teste: 2" severity error;
+#   53 : 
+#   54 :   -- Teste 3
+#   55 :     j <= '1'; k <= '0';
+#   56 :   wait until clk'event and clk='0';
+# 
+# End time: 19:24:45 on Mar 29,2022, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 1

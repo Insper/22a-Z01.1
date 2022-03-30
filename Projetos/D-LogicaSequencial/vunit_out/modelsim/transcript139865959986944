@@ -1,0 +1,32 @@
+# do /home/borg/.local/lib/python3.8/site-packages/vunit/sim_if/tcl_read_eval_loop.tcl
+# vsim -modelsimini /home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/D-LogicaSequencial/vunit_out/modelsim/modelsim.ini -wlf /home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/D-LogicaSequencial/vunit_out/test_output/lib.tb_binarydigit.all_26ea1dfa5414b7fcca8a8e18db0f194e16fdf9b4/modelsim/vsim.wlf -quiet -t ps -onfinish stop lib.tb_binarydigit(tb) -L vunit_lib -L lib -g/tb_binarydigit/runner_cfg="active python runner : true,enabled_test_cases : ,output path : /home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/D-LogicaSequencial/vunit_out/test_output/lib.tb_binarydigit.all_26ea1dfa5414b7fcca8a8e18db0f194e16fdf9b4/,tb path : /home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/D-LogicaSequencial/testes/,use_color : true" 
+# Start time: 23:13:15 on Mar 28,2022
+# ** Warning: Design size of 21486 statements exceeds ModelSim-Intel FPGA Starter Edition recommended capacity.
+# Expect performance to be adversely affected.
+# ** Warning: (vsim-8683) Uninitialized out port /tb_binarydigit/mapping/output has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Error: Falha em teste: 0
+#    Time: 200 ps  Iteration: 0  Process: /tb_binarydigit/main File: /home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/D-LogicaSequencial/testes/tb_BinaryDigit.vhd
+# Break in Process main at /home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/D-LogicaSequencial/testes/tb_BinaryDigit.vhd line 43
+# Stopped at /home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/D-LogicaSequencial/testes/tb_BinaryDigit.vhd line 43
+# 
+# Test Run Failed!
+# 
+# Stack trace result from 'tb' command
+#  /home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/D-LogicaSequencial/testes/tb_BinaryDigit.vhd 43 return [address 0xf6d67718] Process main
+# 
+# 
+# Surrounding code from 'see' command
+#   38 :     test_runner_setup(runner, runner_cfg);
+#   39 : 
+#   40 : 		-- Teste: 0
+#   41 : 		inInput <= '0'; inLoad <= '1';
+#   42 :     wait until inClock'event and inClock='0';
+# ->43 : 		assert(outOutput = '0')  report "Falha em teste: 0" severity error;
+#   44 : 
+#   45 : 		-- Teste: 1
+#   46 : 		inInput <= '1'; inLoad <= '0';
+#   47 :     wait until inClock'event and inClock='0';
+# 
+# End time: 23:13:15 on Mar 28,2022, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 2

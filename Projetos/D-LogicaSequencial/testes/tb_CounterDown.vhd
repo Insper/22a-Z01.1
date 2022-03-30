@@ -21,7 +21,7 @@ architecture tb of tb_CounterDown is
 	end component;
 
 	signal clk : std_logic := '0';
-  signal q   : std_logic_vector(2 downto 0);
+  signal q, outQ   : std_logic_vector(2 downto 0);
 
 begin
 
@@ -34,12 +34,13 @@ begin
     test_runner_setup(runner, runner_cfg);
 
     -- IMPLEMENTE AQUI!
-    wait until clk'event and clk='0';
-		assert(Q = "111")  report "Precisa fazer os testes" severity error;
+      q <= "000";
+    wait until clk'event and clk='1';
+    assert(outQ = "111")  report "Falha em teste: 0" severity error;
 
 
     -- finish
-    wait until clk'event and clk='0';
+    wait until clk'event and clk='1';
     test_runner_cleanup(runner); -- Simulation ends here
 
 	wait;

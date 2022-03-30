@@ -1,0 +1,6 @@
+# do /home/borg/.local/lib/python3.8/site-packages/vunit/sim_if/tcl_read_eval_loop.tcl
+# vsim -modelsimini /home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/D-LogicaSequencial/vunit_out/modelsim/modelsim.ini -wlf /home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/D-LogicaSequencial/vunit_out/test_output/lib.tb_flipflopt.all_19a04691ebde4105e54fcdf8e6a8d80b3a1b8fe6/modelsim/vsim.wlf -quiet -t ps -onfinish stop lib.tb_flipflopt(tb) -L vunit_lib -L lib -g/tb_flipflopt/runner_cfg="active python runner : true,enabled_test_cases : ,output path : /home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/D-LogicaSequencial/vunit_out/test_output/lib.tb_flipflopt.all_19a04691ebde4105e54fcdf8e6a8d80b3a1b8fe6/,tb path : /home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/D-LogicaSequencial/testes/,use_color : true" 
+# Start time: 19:26:21 on Mar 29,2022
+# ** Warning: Design size of 21381 statements exceeds ModelSim-Intel FPGA Starter Edition recommended capacity.
+# Expect performance to be adversely affected.
+# End time: 19:26:56 on Mar 29,2022, Elapsed time: 0:00:35

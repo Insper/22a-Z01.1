@@ -1,17 +1,17 @@
 # Testes a serem executados
 # Descomente os módulos que deseja testar
   
-FlipFlopD.vhd
-#BinaryDigit.vhd
-#PC.vhd
-#Register8.vhd
-#Register16.vhd
-#Register32.vhd
-#Register64.vhd
-#Ram8.vhd
-#Ram64.vhd
-#Ram512.vhd
-#Ram4K.vhd
+# FlipFlopD.vhd
+# BinaryDigit.vhd
+# PC.vhd
+# Register8.vhd
+# Register16.vhd
+# Register32.vhd
+# Register64.vhd
+# Ram8.vhd
+# Ram64.vhd
+# Ram512.vhd
+# Ram4K.vhd
 
 ########
 # Rubrica A
@@ -19,4 +19,3 @@ FlipFlopD.vhd
 FlipFlopT.vhd
 FlipFlopJK.vhd
 CounterDown.vhd
- 

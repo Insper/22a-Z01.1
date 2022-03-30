@@ -52,18 +52,18 @@ signal clock, clear, set : std_logic;
 ---------------
 begin
 
-Clock <= not KEY(0); -- os botoes quando nao apertado vale 1
-                     -- e apertado 0, essa logica inverte isso
-clear <= not KEY(1);
-set	<= not KEY(2);
+ Clock <= not KEY(0); -- os botoes quando nao apertado vale 1
+                      -- e apertado 0, essa logica inverte isso
+ clear <= not KEY(1);
+ set	<= not KEY(2);
 
-u0 : FlipFlopD port map (
-		clock    => Clock,
-		d        => SW(0),
-		clear    => clear,
-		preset   => set,
-		q        => LEDR(0)
-	);		
+ u0 : FlipFlopD port map (
+ 		clock    => Clock,
+ 		d        => SW(0),
+ 		clear    => clear,
+ 		preset   => set,
+ 		q        => LEDR(0)
+ 	);		
  
 
 end rtl;
