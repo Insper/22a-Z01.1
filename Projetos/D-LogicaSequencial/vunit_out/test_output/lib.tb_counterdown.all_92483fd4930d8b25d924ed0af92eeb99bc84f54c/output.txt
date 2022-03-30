@@ -1,5 +1,5 @@
 # vsim -modelsimini /home/gustavoeso/Documents/insper/trancando/elementos/Z01.1-Boolean/Projetos/D-LogicaSequencial/vunit_out/modelsim/modelsim.ini -wlf /home/gustavoeso/Documents/insper/trancando/elementos/Z01.1-Boolean/Projetos/D-LogicaSequencial/vunit_out/test_output/lib.tb_counterdown.all_92483fd4930d8b25d924ed0af92eeb99bc84f54c/modelsim/vsim.wlf -quiet -t ps -onfinish stop lib.tb_counterdown(tb) -L vunit_lib -L lib -g/tb_counterdown/runner_cfg="active python runner : true,enabled_test_cases : ,output path : /home/gustavoeso/Documents/insper/trancando/elementos/Z01.1-Boolean/Projetos/D-LogicaSequencial/vunit_out/test_output/lib.tb_counterdown.all_92483fd4930d8b25d924ed0af92eeb99bc84f54c/,tb path : /home/gustavoeso/Documents/insper/trancando/elementos/Z01.1-Boolean/Projetos/D-LogicaSequencial/testes/,use_color : true" 
-# Start time: 13:58:26 on Mar 26,2022
+# Start time: 14:28:12 on Mar 26,2022
 # ** Warning: Design size of 21509 statements exceeds ModelSim-Intel FPGA Starter Edition recommended capacity.
 # Expect performance to be adversely affected.
 # ** Error: Precisa fazer os testes

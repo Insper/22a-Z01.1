@@ -26,5 +26,4 @@ begin
 	q6 <= a when sel = "110" else '0';
 	q7 <= a when sel = "111" else '0';
 
-
 end architecture;
