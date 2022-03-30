@@ -26,6 +26,7 @@ architecture arch of Register8 is
 	end component;
 
 begin
+	
 
 
 end architecture;
