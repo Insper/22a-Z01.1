@@ -17,17 +17,19 @@ component FlipFlopT is
 	port(
 		clock:  in std_logic;
 		t:      in std_logic;
-		q:      out std_logic:= '0';
-		notq:   out std_logic:= '1'
+		q:      inout std_logic:= '0';
+		notq:   inout std_logic:= '1'
 	);
 end component;
 
-	signal lixo : std_logic_vector(2 downto 0);
+	signal lixo, sq : std_logic_vector(2 downto 0);
 
 begin
 
---	flip0 : FlipFlopT port map(clock => clock, t => '1', q => q(0), notq => lixo(0));
---	flip1 : FlipFlopT port map(clock => q(0), t => '1', q => q(1), notq => lixo(1));
---	flip2 : FlipFlopT port map(clock => q(1), t => '1', q => q(2), notq => lixo(2));
+	flip0 : FlipFlopT port map(clock => clock, t => '1', q => sq(0), notq => lixo(0));
+	flip1 : FlipFlopT port map(clock => sq(0), t => '1', q => sq(1), notq => lixo(1));
+	flip2 : FlipFlopT port map(clock => sq(1), t => '1', q => sq(2), notq => lixo(2));
+
+	q <= sq;
 
 end architecture;

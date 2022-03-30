@@ -1,0 +1,30 @@
+# do /home/borg/.local/lib/python3.8/site-packages/vunit/sim_if/tcl_read_eval_loop.tcl
+# vsim -modelsimini /home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/D-LogicaSequencial/vunit_out/modelsim/modelsim.ini -wlf /home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/D-LogicaSequencial/vunit_out/test_output/lib.tb_counterdown.all_92483fd4930d8b25d924ed0af92eeb99bc84f54c/modelsim/vsim.wlf -quiet -t ps -onfinish stop lib.tb_counterdown(tb) -L vunit_lib -L lib -g/tb_counterdown/runner_cfg="active python runner : true,enabled_test_cases : ,output path : /home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/D-LogicaSequencial/vunit_out/test_output/lib.tb_counterdown.all_92483fd4930d8b25d924ed0af92eeb99bc84f54c/,tb path : /home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/D-LogicaSequencial/testes/,use_color : true" 
+# Start time: 15:13:29 on Mar 30,2022
+# ** Warning: Design size of 21360 statements exceeds ModelSim-Intel FPGA Starter Edition recommended capacity.
+# Expect performance to be adversely affected.
+# ** Error: Falha em teste: 0
+#    Time: 100 ps  Iteration: 0  Process: /tb_counterdown/main File: /home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/D-LogicaSequencial/testes/tb_CounterDown.vhd
+# Break in Process main at /home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/D-LogicaSequencial/testes/tb_CounterDown.vhd line 39
+# Stopped at /home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/D-LogicaSequencial/testes/tb_CounterDown.vhd line 39
+# 
+# Test Run Failed!
+# 
+# Stack trace result from 'tb' command
+#  /home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/D-LogicaSequencial/testes/tb_CounterDown.vhd 39 return [address 0xf6d67649] Process main
+# 
+# 
+# Surrounding code from 'see' command
+#   34 :     test_runner_setup(runner, runner_cfg);
+#   35 : 
+#   36 :     -- IMPLEMENTE AQUI!
+#   37 :       q <= "000";
+#   38 :     wait until clk'event and clk='1';
+# ->39 :     assert(outQ = "111")  report "Falha em teste: 0" severity error;
+#   40 : 
+#   41 : 
+#   42 :     -- finish
+#   43 :     wait until clk'event and clk='1';
+# 
+# End time: 15:13:29 on Mar 30,2022, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 1

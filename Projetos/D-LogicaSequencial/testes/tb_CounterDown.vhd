@@ -35,7 +35,7 @@ begin
 
     -- IMPLEMENTE AQUI!
       q <= "000";
-    wait until clk'event and clk='1';
+    wait for 1000 ps;
     assert(outQ = "111")  report "Falha em teste: 0" severity error;
 
 

@@ -17,8 +17,8 @@ architecture tb of tb_FlipFlopT is
     port(
       clock:  in std_logic;
       t:      in std_logic;
-      q:      out std_logic:= '0';
-      notq:   out std_logic:= '1'
+      q:      inout std_logic:= '0';
+      notq:   inout std_logic:= '1'
       );
 	end component;
 
