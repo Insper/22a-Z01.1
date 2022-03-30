@@ -1,6 +1,8 @@
-## Vídeo Projeto B
-Segue link para vídeo projeto B
+# Vídeo dos Projetos
+## Segue link para vídeo projeto B
 https://youtu.be/wfmpuPC8tjU
+## Segue link para vídeo do projeto C
+https://www.youtube.com/watch?v=58nf77r0mHc
 
 [![](icon-elementos.png)](https://insper.github.io/Z01.1/)
 
