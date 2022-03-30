@@ -22,6 +22,8 @@ begin
 	process(clock, clear) begin
 		if (clear = '1') then
 			q <='0';
+		elsif (preset = '1') then
+			q <= '1';
 		elsif (rising_edge(CLOCK)) then
 			q<=D;
 		end if;
