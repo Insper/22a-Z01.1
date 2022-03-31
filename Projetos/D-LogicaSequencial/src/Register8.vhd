@@ -82,5 +82,4 @@ begin
 		output => output(7)
 	);
 	
-	
 end architecture;
