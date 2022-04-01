@@ -387,10 +387,10 @@ R54
 R12
 R13
 Ecounterdown
-Z55 w1648664914
+Z55 w1648730159
 R1
 R2
-!i122 230
+!i122 244
 R3
 Z56 8/home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/D-LogicaSequencial/src/conceitoA/CounterDown.vhd
 Z57 F/home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/D-LogicaSequencial/src/conceitoA/CounterDown.vhd
@@ -400,9 +400,9 @@ VT^dVPIaBo[k8Ee;^=O>X_0
 !s100 _8<`0C=R7;jA<QoiQjAa90
 R7
 33
-Z58 !s110 1648664957
+Z58 !s110 1648730165
 !i10b 1
-Z59 !s108 1648664957.000000
+Z59 !s108 1648730165.000000
 Z60 !s90 -quiet|-modelsimini|/home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/D-LogicaSequencial/vunit_out/modelsim/modelsim.ini|-2008|-work|lib|/home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/D-LogicaSequencial/src/conceitoA/CounterDown.vhd|
 Z61 !s107 /home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/D-LogicaSequencial/src/conceitoA/CounterDown.vhd|
 !i113 1
@@ -411,12 +411,12 @@ R13
 Aarch
 R1
 R2
-Z62 DEx4 work 11 counterdown 0 22 T^dVPIaBo[k8Ee;^=O>X_0
-!i122 230
+DEx4 work 11 counterdown 0 22 T^dVPIaBo[k8Ee;^=O>X_0
+!i122 244
 l27
-L14 22
-VdY>>1?TV@RgUPOP0hU8Uz3
-!s100 ^nHiB_0Wi<@JA1RFdGa<V3
+L14 21
+V9m?jF0h5]P2[AC2;:XGZ;2
+!s100 19aJX012T;z`YQmQf@07c2
 R7
 33
 R58
@@ -428,24 +428,24 @@ R61
 R12
 R13
 Edetectordemoedas
-Z63 w1648517022
+Z62 w1648517022
 R1
 R2
 !i122 102
 R3
-Z64 8/home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/B-LogicaCombinacional/src/detectorDeMoedas.vhd
-Z65 F/home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/B-LogicaCombinacional/src/detectorDeMoedas.vhd
+Z63 8/home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/B-LogicaCombinacional/src/detectorDeMoedas.vhd
+Z64 F/home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/B-LogicaCombinacional/src/detectorDeMoedas.vhd
 l0
 L4 1
 VSd0AX;8RlG:F_LO9J_6j^3
 !s100 eBG_FEDA1m8g9Gonl?[8k0
 R7
 33
-Z66 !s110 1648519995
+Z65 !s110 1648519995
 !i10b 1
-Z67 !s108 1648519995.000000
-Z68 !s90 -quiet|-modelsimini|/home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/D-LogicaSequencial/vunit_out/modelsim/modelsim.ini|-2008|-work|lib|/home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/B-LogicaCombinacional/src/detectorDeMoedas.vhd|
-Z69 !s107 /home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/B-LogicaCombinacional/src/detectorDeMoedas.vhd|
+Z66 !s108 1648519995.000000
+Z67 !s90 -quiet|-modelsimini|/home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/D-LogicaSequencial/vunit_out/modelsim/modelsim.ini|-2008|-work|lib|/home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/B-LogicaCombinacional/src/detectorDeMoedas.vhd|
+Z68 !s107 /home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/B-LogicaCombinacional/src/detectorDeMoedas.vhd|
 !i113 1
 R12
 R13
@@ -460,11 +460,11 @@ VJ`NCi9=Y1M7LdlEYbVkAl2
 !s100 JPdA5CKNzB=0Tn5G_I:3E1
 R7
 33
-R66
+R65
 !i10b 1
+R66
 R67
 R68
-R69
 !i113 1
 R12
 R13
@@ -474,8 +474,8 @@ R1
 R2
 !i122 94
 R3
-Z70 8/home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/B-LogicaCombinacional/src/DMux2Way.vhd
-Z71 F/home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/B-LogicaCombinacional/src/DMux2Way.vhd
+Z69 8/home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/B-LogicaCombinacional/src/DMux2Way.vhd
+Z70 F/home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/B-LogicaCombinacional/src/DMux2Way.vhd
 l0
 L4 1
 V>:IF]Koi99f<cJ0CmCAM51
@@ -485,8 +485,8 @@ R7
 R16
 !i10b 1
 R21
-Z72 !s90 -quiet|-modelsimini|/home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/D-LogicaSequencial/vunit_out/modelsim/modelsim.ini|-2008|-work|lib|/home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/B-LogicaCombinacional/src/DMux2Way.vhd|
-Z73 !s107 /home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/B-LogicaCombinacional/src/DMux2Way.vhd|
+Z71 !s90 -quiet|-modelsimini|/home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/D-LogicaSequencial/vunit_out/modelsim/modelsim.ini|-2008|-work|lib|/home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/B-LogicaCombinacional/src/DMux2Way.vhd|
+Z72 !s107 /home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/B-LogicaCombinacional/src/DMux2Way.vhd|
 !i113 1
 R12
 R13
@@ -496,7 +496,7 @@ R2
 DEx4 work 8 dmux2way 0 22 >:IF]Koi99f<cJ0CmCAM51
 !i122 94
 l14
-Z74 L12 7
+Z73 L12 7
 VfNO09Z8AGY5jDk?@[U@ci2
 !s100 l_]?WLCPF9h3a=gPEVcVl3
 R7
@@ -504,8 +504,8 @@ R7
 R16
 !i10b 1
 R21
+R71
 R72
-R73
 !i113 1
 R12
 R13
@@ -515,8 +515,8 @@ R1
 R2
 !i122 93
 R3
-Z75 8/home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/B-LogicaCombinacional/src/DMux4Way.vhd
-Z76 F/home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/B-LogicaCombinacional/src/DMux4Way.vhd
+Z74 8/home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/B-LogicaCombinacional/src/DMux4Way.vhd
+Z75 F/home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/B-LogicaCombinacional/src/DMux4Way.vhd
 l0
 L4 1
 VchCWhU[f@SDYOfM[z`KAD3
@@ -526,8 +526,8 @@ R7
 R16
 !i10b 1
 R21
-Z77 !s90 -quiet|-modelsimini|/home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/D-LogicaSequencial/vunit_out/modelsim/modelsim.ini|-2008|-work|lib|/home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/B-LogicaCombinacional/src/DMux4Way.vhd|
-Z78 !s107 /home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/B-LogicaCombinacional/src/DMux4Way.vhd|
+Z76 !s90 -quiet|-modelsimini|/home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/D-LogicaSequencial/vunit_out/modelsim/modelsim.ini|-2008|-work|lib|/home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/B-LogicaCombinacional/src/DMux4Way.vhd|
+Z77 !s107 /home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/B-LogicaCombinacional/src/DMux4Way.vhd|
 !i113 1
 R12
 R13
@@ -537,7 +537,7 @@ R2
 DEx4 work 8 dmux4way 0 22 chCWhU[f@SDYOfM[z`KAD3
 !i122 93
 l15
-Z79 L14 8
+Z78 L14 8
 VkFI1fVIkC9klJ@ZI_jR:51
 !s100 fP=0K?O>Pe_JWhU7ZLoe_0
 R7
@@ -545,8 +545,8 @@ R7
 R16
 !i10b 1
 R21
+R76
 R77
-R78
 !i113 1
 R12
 R13
@@ -556,8 +556,8 @@ R1
 R2
 !i122 92
 R3
-Z80 8/home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/B-LogicaCombinacional/src/DMux8Way.vhd
-Z81 F/home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/B-LogicaCombinacional/src/DMux8Way.vhd
+Z79 8/home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/B-LogicaCombinacional/src/DMux8Way.vhd
+Z80 F/home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/B-LogicaCombinacional/src/DMux8Way.vhd
 l0
 L4 1
 V4@:^4]]>d5jd<9PRAJQi32
@@ -567,8 +567,8 @@ R7
 R16
 !i10b 1
 R21
-Z82 !s90 -quiet|-modelsimini|/home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/D-LogicaSequencial/vunit_out/modelsim/modelsim.ini|-2008|-work|lib|/home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/B-LogicaCombinacional/src/DMux8Way.vhd|
-Z83 !s107 /home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/B-LogicaCombinacional/src/DMux8Way.vhd|
+Z81 !s90 -quiet|-modelsimini|/home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/D-LogicaSequencial/vunit_out/modelsim/modelsim.ini|-2008|-work|lib|/home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/B-LogicaCombinacional/src/DMux8Way.vhd|
+Z82 !s107 /home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/B-LogicaCombinacional/src/DMux8Way.vhd|
 !i113 1
 R12
 R13
@@ -578,7 +578,7 @@ R2
 DEx4 work 8 dmux8way 0 22 4@:^4]]>d5jd<9PRAJQi32
 !i122 92
 l19
-Z84 L18 13
+Z83 L18 13
 V9RYgTX^UjcO9I:W;U0c=[2
 !s100 RoT2fHg@KX_BZ_iTSaj8>3
 R7
@@ -586,30 +586,30 @@ R7
 R16
 !i10b 1
 R21
+R81
 R82
-R83
 !i113 1
 R12
 R13
 Eflipflopd
-Z85 w1648516737
+Z84 w1648516737
 R1
 R2
 !i122 100
 R3
-Z86 8/home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/D-LogicaSequencial/src/FlipFlopD.vhd
-Z87 F/home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/D-LogicaSequencial/src/FlipFlopD.vhd
+Z85 8/home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/D-LogicaSequencial/src/FlipFlopD.vhd
+Z86 F/home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/D-LogicaSequencial/src/FlipFlopD.vhd
 l0
 L8 1
 Vb>0d0SFJ7I_bZn7^0fNI20
 !s100 dO0M_NbMc7lj3o=60[LCQ0
 R7
 33
-Z88 !s110 1648516740
+Z87 !s110 1648516740
 !i10b 1
-Z89 !s108 1648516740.000000
-Z90 !s90 -quiet|-modelsimini|/home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/D-LogicaSequencial/vunit_out/modelsim/modelsim.ini|-2008|-work|lib|/home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/D-LogicaSequencial/src/FlipFlopD.vhd|
-Z91 !s107 /home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/D-LogicaSequencial/src/FlipFlopD.vhd|
+Z88 !s108 1648516740.000000
+Z89 !s90 -quiet|-modelsimini|/home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/D-LogicaSequencial/vunit_out/modelsim/modelsim.ini|-2008|-work|lib|/home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/D-LogicaSequencial/src/FlipFlopD.vhd|
+Z90 !s107 /home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/D-LogicaSequencial/src/FlipFlopD.vhd|
 !i113 1
 R12
 R13
@@ -624,33 +624,33 @@ VN7ZKDA^1GbU]_ibgA^R6G2
 !s100 n[^`LYPBhXSk7Uce13mn80
 R7
 33
-R88
+R87
 !i10b 1
+R88
 R89
 R90
-R91
 !i113 1
 R12
 R13
 Eflipflopjk
-Z92 w1648662388
+Z91 w1648731164
 R1
 R2
-!i122 215
+!i122 251
 R3
-Z93 8/home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/D-LogicaSequencial/src/conceitoA/FlipFlopJK.vhd
-Z94 F/home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/D-LogicaSequencial/src/conceitoA/FlipFlopJK.vhd
+Z92 8/home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/D-LogicaSequencial/src/conceitoA/FlipFlopJK.vhd
+Z93 F/home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/D-LogicaSequencial/src/conceitoA/FlipFlopJK.vhd
 l0
 L7 1
 VGVV[Wm1ISXEB1;Nh]6F@S2
 !s100 C]4MlXA9UKHz79jNJB^VT2
 R7
 33
-Z95 !s110 1648662425
+Z94 !s110 1648731166
 !i10b 1
-Z96 !s108 1648662425.000000
-Z97 !s90 -quiet|-modelsimini|/home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/D-LogicaSequencial/vunit_out/modelsim/modelsim.ini|-2008|-work|lib|/home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/D-LogicaSequencial/src/conceitoA/FlipFlopJK.vhd|
-Z98 !s107 /home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/D-LogicaSequencial/src/conceitoA/FlipFlopJK.vhd|
+Z95 !s108 1648731166.000000
+Z96 !s90 -quiet|-modelsimini|/home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/D-LogicaSequencial/vunit_out/modelsim/modelsim.ini|-2008|-work|lib|/home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/D-LogicaSequencial/src/conceitoA/FlipFlopJK.vhd|
+Z97 !s107 /home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/D-LogicaSequencial/src/conceitoA/FlipFlopJK.vhd|
 !i113 1
 R12
 R13
@@ -658,59 +658,59 @@ Aarch
 R1
 R2
 DEx4 work 10 flipflopjk 0 22 GVV[Wm1ISXEB1;Nh]6F@S2
-!i122 215
+!i122 251
 l19
 L17 27
-Va?IR`1NDTmi5Dfb=HV^QD1
-!s100 U?jbbkF?C2V[lb8?UUL=]2
+V;j8]Ei5OjOJFd3P]gZbC=2
+!s100 hiM0<[C@C5BOUcf@MKlgB3
 R7
 33
-R95
+R94
 !i10b 1
+R95
 R96
 R97
-R98
 !i113 1
 R12
 R13
 Eflipflopt
-Z99 w1648662315
+Z98 w1648731181
 R1
 R2
-!i122 213
+!i122 253
 R3
-Z100 8/home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/D-LogicaSequencial/src/conceitoA/FlipFlopT.vhd
-Z101 F/home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/D-LogicaSequencial/src/conceitoA/FlipFlopT.vhd
+Z99 8/home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/D-LogicaSequencial/src/conceitoA/FlipFlopT.vhd
+Z100 F/home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/D-LogicaSequencial/src/conceitoA/FlipFlopT.vhd
 l0
 L7 1
 Vf;o5m`F`;8[=l0CS4J3WP2
 !s100 S;Hn4BNSB8VT`bC9K4==63
 R7
 33
-Z102 !s110 1648662340
+Z101 !s110 1648731184
 !i10b 1
-Z103 !s108 1648662340.000000
-Z104 !s90 -quiet|-modelsimini|/home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/D-LogicaSequencial/vunit_out/modelsim/modelsim.ini|-2008|-work|lib|/home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/D-LogicaSequencial/src/conceitoA/FlipFlopT.vhd|
-Z105 !s107 /home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/D-LogicaSequencial/src/conceitoA/FlipFlopT.vhd|
+Z102 !s108 1648731184.000000
+Z103 !s90 -quiet|-modelsimini|/home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/D-LogicaSequencial/vunit_out/modelsim/modelsim.ini|-2008|-work|lib|/home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/D-LogicaSequencial/src/conceitoA/FlipFlopT.vhd|
+Z104 !s107 /home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/D-LogicaSequencial/src/conceitoA/FlipFlopT.vhd|
 !i113 1
 R12
 R13
 Aarch
 R1
 R2
-DEx4 work 9 flipflopt 0 22 f;o5m`F`;8[=l0CS4J3WP2
-!i122 213
+Z105 DEx4 work 9 flipflopt 0 22 f;o5m`F`;8[=l0CS4J3WP2
+!i122 253
 l21
-L16 22
-VbB9Z8:f9jIDBTB^VdEW^`0
-!s100 o?Q>=?>:EHk?Kc01RK[n11
+Z106 L16 22
+VV^k8Jh]DnUD24b3zIeRli1
+!s100 OOEh_hhz5R1W0ORmEU1bN3
 R7
 33
-R102
+R101
 !i10b 1
+R102
 R103
 R104
-R105
 !i113 1
 R12
 R13
@@ -720,10 +720,10 @@ R1
 R2
 !i122 72
 R3
-Z106 8/home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/C-UnidadeLogicaAritmetica/src/FullAdder.vhd
-Z107 F/home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/C-UnidadeLogicaAritmetica/src/FullAdder.vhd
+Z107 8/home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/C-UnidadeLogicaAritmetica/src/FullAdder.vhd
+Z108 F/home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/C-UnidadeLogicaAritmetica/src/FullAdder.vhd
 l0
-Z108 L10 1
+Z109 L10 1
 V;RB>US:oiVgf@@2;ERnEW2
 !s100 ^oFEXWUb;T^9LUJXBGnJH2
 R7
@@ -731,8 +731,8 @@ R7
 R8
 !i10b 1
 R9
-Z109 !s90 -quiet|-modelsimini|/home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/D-LogicaSequencial/vunit_out/modelsim/modelsim.ini|-2008|-work|lib|/home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/C-UnidadeLogicaAritmetica/src/FullAdder.vhd|
-Z110 !s107 /home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/C-UnidadeLogicaAritmetica/src/FullAdder.vhd|
+Z110 !s90 -quiet|-modelsimini|/home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/D-LogicaSequencial/vunit_out/modelsim/modelsim.ini|-2008|-work|lib|/home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/C-UnidadeLogicaAritmetica/src/FullAdder.vhd|
+Z111 !s107 /home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/C-UnidadeLogicaAritmetica/src/FullAdder.vhd|
 !i113 1
 R12
 R13
@@ -750,8 +750,8 @@ R7
 R8
 !i10b 1
 R9
-R109
 R110
+R111
 !i113 1
 R12
 R13
@@ -761,10 +761,10 @@ R1
 R2
 !i122 71
 R3
-Z111 8/home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/C-UnidadeLogicaAritmetica/src/HalfAdder.vhd
-Z112 F/home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/C-UnidadeLogicaAritmetica/src/HalfAdder.vhd
+Z112 8/home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/C-UnidadeLogicaAritmetica/src/HalfAdder.vhd
+Z113 F/home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/C-UnidadeLogicaAritmetica/src/HalfAdder.vhd
 l0
-R108
+R109
 VL0]G_0fS9^WC^L]C@X[Y^0
 !s100 h@?RhTGZ[QMJjM?>AnoBQ0
 R7
@@ -772,8 +772,8 @@ R7
 R8
 !i10b 1
 R9
-Z113 !s90 -quiet|-modelsimini|/home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/D-LogicaSequencial/vunit_out/modelsim/modelsim.ini|-2008|-work|lib|/home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/C-UnidadeLogicaAritmetica/src/HalfAdder.vhd|
-Z114 !s107 /home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/C-UnidadeLogicaAritmetica/src/HalfAdder.vhd|
+Z114 !s90 -quiet|-modelsimini|/home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/D-LogicaSequencial/vunit_out/modelsim/modelsim.ini|-2008|-work|lib|/home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/C-UnidadeLogicaAritmetica/src/HalfAdder.vhd|
+Z115 !s107 /home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/C-UnidadeLogicaAritmetica/src/HalfAdder.vhd|
 !i113 1
 R12
 R13
@@ -791,8 +791,8 @@ R7
 R8
 !i10b 1
 R9
-R113
 R114
+R115
 !i113 1
 R12
 R13
@@ -802,8 +802,8 @@ R1
 R2
 !i122 76
 R3
-Z115 8/home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/B-LogicaCombinacional/src/impressora.vhd
-Z116 F/home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/B-LogicaCombinacional/src/impressora.vhd
+Z116 8/home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/B-LogicaCombinacional/src/impressora.vhd
+Z117 F/home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/B-LogicaCombinacional/src/impressora.vhd
 l0
 L4 1
 V2Vf]_[jCT:XbB[Tz[fgb@2
@@ -813,8 +813,8 @@ R7
 R16
 !i10b 1
 R21
-Z117 !s90 -quiet|-modelsimini|/home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/D-LogicaSequencial/vunit_out/modelsim/modelsim.ini|-2008|-work|lib|/home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/B-LogicaCombinacional/src/impressora.vhd|
-Z118 !s107 /home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/B-LogicaCombinacional/src/impressora.vhd|
+Z118 !s90 -quiet|-modelsimini|/home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/D-LogicaSequencial/vunit_out/modelsim/modelsim.ini|-2008|-work|lib|/home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/B-LogicaCombinacional/src/impressora.vhd|
+Z119 !s107 /home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/B-LogicaCombinacional/src/impressora.vhd|
 !i113 1
 R12
 R13
@@ -832,8 +832,8 @@ R7
 R16
 !i10b 1
 R21
-R117
 R118
+R119
 !i113 1
 R12
 R13
@@ -843,8 +843,8 @@ R1
 R2
 !i122 70
 R3
-Z119 8/home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/C-UnidadeLogicaAritmetica/src/Inc16.vhd
-Z120 F/home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/C-UnidadeLogicaAritmetica/src/Inc16.vhd
+Z120 8/home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/C-UnidadeLogicaAritmetica/src/Inc16.vhd
+Z121 F/home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/C-UnidadeLogicaAritmetica/src/Inc16.vhd
 l0
 R6
 V;OmAHIS@A^0AT]ojlejag2
@@ -854,8 +854,8 @@ R7
 R8
 !i10b 1
 R9
-Z121 !s90 -quiet|-modelsimini|/home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/D-LogicaSequencial/vunit_out/modelsim/modelsim.ini|-2008|-work|lib|/home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/C-UnidadeLogicaAritmetica/src/Inc16.vhd|
-Z122 !s107 /home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/C-UnidadeLogicaAritmetica/src/Inc16.vhd|
+Z122 !s90 -quiet|-modelsimini|/home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/D-LogicaSequencial/vunit_out/modelsim/modelsim.ini|-2008|-work|lib|/home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/C-UnidadeLogicaAritmetica/src/Inc16.vhd|
+Z123 !s107 /home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/C-UnidadeLogicaAritmetica/src/Inc16.vhd|
 !i113 1
 R12
 R13
@@ -873,8 +873,8 @@ R7
 R8
 !i10b 1
 R9
-R121
 R122
+R123
 !i113 1
 R12
 R13
@@ -884,8 +884,8 @@ R1
 R2
 !i122 67
 R3
-Z123 8/home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/C-UnidadeLogicaAritmetica/src/inversor16.vhd
-Z124 F/home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/C-UnidadeLogicaAritmetica/src/inversor16.vhd
+Z124 8/home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/C-UnidadeLogicaAritmetica/src/inversor16.vhd
+Z125 F/home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/C-UnidadeLogicaAritmetica/src/inversor16.vhd
 l0
 L8 1
 VVkHiPDk`Ml2f_7V714<nn2
@@ -895,8 +895,8 @@ R7
 R8
 !i10b 1
 R9
-Z125 !s90 -quiet|-modelsimini|/home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/D-LogicaSequencial/vunit_out/modelsim/modelsim.ini|-2008|-work|lib|/home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/C-UnidadeLogicaAritmetica/src/inversor16.vhd|
-Z126 !s107 /home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/C-UnidadeLogicaAritmetica/src/inversor16.vhd|
+Z126 !s90 -quiet|-modelsimini|/home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/D-LogicaSequencial/vunit_out/modelsim/modelsim.ini|-2008|-work|lib|/home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/C-UnidadeLogicaAritmetica/src/inversor16.vhd|
+Z127 !s107 /home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/C-UnidadeLogicaAritmetica/src/inversor16.vhd|
 !i113 1
 R12
 R13
@@ -914,8 +914,8 @@ R7
 R8
 !i10b 1
 R9
-R125
 R126
+R127
 !i113 1
 R12
 R13
@@ -925,8 +925,8 @@ R1
 R2
 !i122 91
 R3
-Z127 8/home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/B-LogicaCombinacional/src/Mux16.vhd
-Z128 F/home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/B-LogicaCombinacional/src/Mux16.vhd
+Z128 8/home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/B-LogicaCombinacional/src/Mux16.vhd
+Z129 F/home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/B-LogicaCombinacional/src/Mux16.vhd
 l0
 L4 1
 V^KK7>>=?KzfHlc;dK>^H53
@@ -936,8 +936,8 @@ R7
 R16
 !i10b 1
 R21
-Z129 !s90 -quiet|-modelsimini|/home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/D-LogicaSequencial/vunit_out/modelsim/modelsim.ini|-2008|-work|lib|/home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/B-LogicaCombinacional/src/Mux16.vhd|
-Z130 !s107 /home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/B-LogicaCombinacional/src/Mux16.vhd|
+Z130 !s90 -quiet|-modelsimini|/home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/D-LogicaSequencial/vunit_out/modelsim/modelsim.ini|-2008|-work|lib|/home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/B-LogicaCombinacional/src/Mux16.vhd|
+Z131 !s107 /home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/B-LogicaCombinacional/src/Mux16.vhd|
 !i113 1
 R12
 R13
@@ -955,8 +955,8 @@ R7
 R16
 !i10b 1
 R21
-R129
 R130
+R131
 !i113 1
 R12
 R13
@@ -966,8 +966,8 @@ R1
 R2
 !i122 90
 R3
-Z131 8/home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/B-LogicaCombinacional/src/Mux2Way.vhd
-Z132 F/home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/B-LogicaCombinacional/src/Mux2Way.vhd
+Z132 8/home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/B-LogicaCombinacional/src/Mux2Way.vhd
+Z133 F/home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/B-LogicaCombinacional/src/Mux2Way.vhd
 l0
 L4 1
 V5Md04iB]KYYIl:m:EPnQ[3
@@ -977,8 +977,8 @@ R7
 R16
 !i10b 1
 R21
-Z133 !s90 -quiet|-modelsimini|/home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/D-LogicaSequencial/vunit_out/modelsim/modelsim.ini|-2008|-work|lib|/home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/B-LogicaCombinacional/src/Mux2Way.vhd|
-Z134 !s107 /home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/B-LogicaCombinacional/src/Mux2Way.vhd|
+Z134 !s90 -quiet|-modelsimini|/home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/D-LogicaSequencial/vunit_out/modelsim/modelsim.ini|-2008|-work|lib|/home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/B-LogicaCombinacional/src/Mux2Way.vhd|
+Z135 !s107 /home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/B-LogicaCombinacional/src/Mux2Way.vhd|
 !i113 1
 R12
 R13
@@ -988,7 +988,7 @@ R2
 DEx4 work 7 mux2way 0 22 5Md04iB]KYYIl:m:EPnQ[3
 !i122 90
 l13
-R74
+R73
 VMFJKYD8SWLzf3ZgmCQFT^2
 !s100 fa;S>`^Mnac?8Tj31^bMk0
 R7
@@ -996,8 +996,8 @@ R7
 R16
 !i10b 1
 R21
-R133
 R134
+R135
 !i113 1
 R12
 R13
@@ -1007,8 +1007,8 @@ R1
 R2
 !i122 89
 R3
-Z135 8/home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/B-LogicaCombinacional/src/Mux4Way.vhd
-Z136 F/home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/B-LogicaCombinacional/src/Mux4Way.vhd
+Z136 8/home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/B-LogicaCombinacional/src/Mux4Way.vhd
+Z137 F/home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/B-LogicaCombinacional/src/Mux4Way.vhd
 l0
 L4 1
 VS6DJa:23Uele:d0oQjjO[0
@@ -1018,8 +1018,8 @@ R7
 R16
 !i10b 1
 R21
-Z137 !s90 -quiet|-modelsimini|/home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/D-LogicaSequencial/vunit_out/modelsim/modelsim.ini|-2008|-work|lib|/home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/B-LogicaCombinacional/src/Mux4Way.vhd|
-Z138 !s107 /home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/B-LogicaCombinacional/src/Mux4Way.vhd|
+Z138 !s90 -quiet|-modelsimini|/home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/D-LogicaSequencial/vunit_out/modelsim/modelsim.ini|-2008|-work|lib|/home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/B-LogicaCombinacional/src/Mux4Way.vhd|
+Z139 !s107 /home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/B-LogicaCombinacional/src/Mux4Way.vhd|
 !i113 1
 R12
 R13
@@ -1037,8 +1037,8 @@ R7
 R16
 !i10b 1
 R21
-R137
 R138
+R139
 !i113 1
 R12
 R13
@@ -1048,8 +1048,8 @@ R1
 R2
 !i122 88
 R3
-Z139 8/home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/B-LogicaCombinacional/src/Mux4Way16.vhd
-Z140 F/home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/B-LogicaCombinacional/src/Mux4Way16.vhd
+Z140 8/home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/B-LogicaCombinacional/src/Mux4Way16.vhd
+Z141 F/home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/B-LogicaCombinacional/src/Mux4Way16.vhd
 l0
 L4 1
 VgIliodZR>K=jaJZeHi]]@1
@@ -1059,8 +1059,8 @@ R7
 R16
 !i10b 1
 R21
-Z141 !s90 -quiet|-modelsimini|/home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/D-LogicaSequencial/vunit_out/modelsim/modelsim.ini|-2008|-work|lib|/home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/B-LogicaCombinacional/src/Mux4Way16.vhd|
-Z142 !s107 /home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/B-LogicaCombinacional/src/Mux4Way16.vhd|
+Z142 !s90 -quiet|-modelsimini|/home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/D-LogicaSequencial/vunit_out/modelsim/modelsim.ini|-2008|-work|lib|/home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/B-LogicaCombinacional/src/Mux4Way16.vhd|
+Z143 !s107 /home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/B-LogicaCombinacional/src/Mux4Way16.vhd|
 !i113 1
 R12
 R13
@@ -1070,7 +1070,7 @@ R2
 DEx4 work 9 mux4way16 0 22 gIliodZR>K=jaJZeHi]]@1
 !i122 88
 l15
-R79
+R78
 VjLY1oe>6>Ca`oNK^J;9BC0
 !s100 RX>R>_8I:kS70z17<8g_Y2
 R7
@@ -1078,8 +1078,8 @@ R7
 R16
 !i10b 1
 R21
-R141
 R142
+R143
 !i113 1
 R12
 R13
@@ -1089,8 +1089,8 @@ R1
 R2
 !i122 87
 R3
-Z143 8/home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/B-LogicaCombinacional/src/Mux8Way.vhd
-Z144 F/home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/B-LogicaCombinacional/src/Mux8Way.vhd
+Z144 8/home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/B-LogicaCombinacional/src/Mux8Way.vhd
+Z145 F/home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/B-LogicaCombinacional/src/Mux8Way.vhd
 l0
 L4 1
 VcMIZim^j_>0TGlG7NC03C3
@@ -1100,8 +1100,8 @@ R7
 R16
 !i10b 1
 R21
-Z145 !s90 -quiet|-modelsimini|/home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/D-LogicaSequencial/vunit_out/modelsim/modelsim.ini|-2008|-work|lib|/home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/B-LogicaCombinacional/src/Mux8Way.vhd|
-Z146 !s107 /home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/B-LogicaCombinacional/src/Mux8Way.vhd|
+Z146 !s90 -quiet|-modelsimini|/home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/D-LogicaSequencial/vunit_out/modelsim/modelsim.ini|-2008|-work|lib|/home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/B-LogicaCombinacional/src/Mux8Way.vhd|
+Z147 !s107 /home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/B-LogicaCombinacional/src/Mux8Way.vhd|
 !i113 1
 R12
 R13
@@ -1119,8 +1119,8 @@ R7
 R16
 !i10b 1
 R21
-R145
 R146
+R147
 !i113 1
 R12
 R13
@@ -1130,8 +1130,8 @@ R1
 R2
 !i122 86
 R3
-Z147 8/home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/B-LogicaCombinacional/src/Mux8Way16.vhd
-Z148 F/home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/B-LogicaCombinacional/src/Mux8Way16.vhd
+Z148 8/home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/B-LogicaCombinacional/src/Mux8Way16.vhd
+Z149 F/home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/B-LogicaCombinacional/src/Mux8Way16.vhd
 l0
 L4 1
 V7MWl=:zn]>Q>M5K]`_b<60
@@ -1141,8 +1141,8 @@ R7
 R16
 !i10b 1
 R21
-Z149 !s90 -quiet|-modelsimini|/home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/D-LogicaSequencial/vunit_out/modelsim/modelsim.ini|-2008|-work|lib|/home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/B-LogicaCombinacional/src/Mux8Way16.vhd|
-Z150 !s107 /home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/B-LogicaCombinacional/src/Mux8Way16.vhd|
+Z150 !s90 -quiet|-modelsimini|/home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/D-LogicaSequencial/vunit_out/modelsim/modelsim.ini|-2008|-work|lib|/home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/B-LogicaCombinacional/src/Mux8Way16.vhd|
+Z151 !s107 /home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/B-LogicaCombinacional/src/Mux8Way16.vhd|
 !i113 1
 R12
 R13
@@ -1152,7 +1152,7 @@ R2
 DEx4 work 9 mux8way16 0 22 7MWl=:zn]>Q>M5K]`_b<60
 !i122 86
 l19
-R84
+R83
 Vl0gaESHfC=89]<W5bbWRM1
 !s100 Ib@YMZDoLFnIke?[9kAm32
 R7
@@ -1160,8 +1160,8 @@ R7
 R16
 !i10b 1
 R21
-R149
 R150
+R151
 !i113 1
 R12
 R13
@@ -1171,8 +1171,8 @@ R1
 R2
 !i122 85
 R3
-Z151 8/home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/B-LogicaCombinacional/src/Nand2.vhd
-Z152 F/home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/B-LogicaCombinacional/src/Nand2.vhd
+Z152 8/home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/B-LogicaCombinacional/src/Nand2.vhd
+Z153 F/home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/B-LogicaCombinacional/src/Nand2.vhd
 l0
 L4 1
 VV6aic[TMmDzJcCEf<O]ge1
@@ -1182,8 +1182,8 @@ R7
 R16
 !i10b 1
 R21
-Z153 !s90 -quiet|-modelsimini|/home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/D-LogicaSequencial/vunit_out/modelsim/modelsim.ini|-2008|-work|lib|/home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/B-LogicaCombinacional/src/Nand2.vhd|
-Z154 !s107 /home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/B-LogicaCombinacional/src/Nand2.vhd|
+Z154 !s90 -quiet|-modelsimini|/home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/D-LogicaSequencial/vunit_out/modelsim/modelsim.ini|-2008|-work|lib|/home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/B-LogicaCombinacional/src/Nand2.vhd|
+Z155 !s107 /home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/B-LogicaCombinacional/src/Nand2.vhd|
 !i113 1
 R12
 R13
@@ -1201,8 +1201,8 @@ R7
 R16
 !i10b 1
 R21
-R153
 R154
+R155
 !i113 1
 R12
 R13
@@ -1212,8 +1212,8 @@ R1
 R2
 !i122 84
 R3
-Z155 8/home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/B-LogicaCombinacional/src/Nor8Way.vhd
-Z156 F/home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/B-LogicaCombinacional/src/Nor8Way.vhd
+Z156 8/home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/B-LogicaCombinacional/src/Nor8Way.vhd
+Z157 F/home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/B-LogicaCombinacional/src/Nor8Way.vhd
 l0
 L4 1
 VI6@ZGJd>JSC7UGzNAn6GU2
@@ -1223,8 +1223,8 @@ R7
 R16
 !i10b 1
 R21
-Z157 !s90 -quiet|-modelsimini|/home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/D-LogicaSequencial/vunit_out/modelsim/modelsim.ini|-2008|-work|lib|/home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/B-LogicaCombinacional/src/Nor8Way.vhd|
-Z158 !s107 /home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/B-LogicaCombinacional/src/Nor8Way.vhd|
+Z158 !s90 -quiet|-modelsimini|/home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/D-LogicaSequencial/vunit_out/modelsim/modelsim.ini|-2008|-work|lib|/home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/B-LogicaCombinacional/src/Nor8Way.vhd|
+Z159 !s107 /home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/B-LogicaCombinacional/src/Nor8Way.vhd|
 !i113 1
 R12
 R13
@@ -1242,8 +1242,8 @@ R7
 R16
 !i10b 1
 R21
-R157
 R158
+R159
 !i113 1
 R12
 R13
@@ -1253,8 +1253,8 @@ R1
 R2
 !i122 83
 R3
-Z159 8/home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/B-LogicaCombinacional/src/Not16.vhd
-Z160 F/home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/B-LogicaCombinacional/src/Not16.vhd
+Z160 8/home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/B-LogicaCombinacional/src/Not16.vhd
+Z161 F/home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/B-LogicaCombinacional/src/Not16.vhd
 l0
 L4 1
 VC]SG@M]l`d<egUIK]zP2?0
@@ -1264,8 +1264,8 @@ R7
 R16
 !i10b 1
 R21
-Z161 !s90 -quiet|-modelsimini|/home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/D-LogicaSequencial/vunit_out/modelsim/modelsim.ini|-2008|-work|lib|/home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/B-LogicaCombinacional/src/Not16.vhd|
-Z162 !s107 /home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/B-LogicaCombinacional/src/Not16.vhd|
+Z162 !s90 -quiet|-modelsimini|/home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/D-LogicaSequencial/vunit_out/modelsim/modelsim.ini|-2008|-work|lib|/home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/B-LogicaCombinacional/src/Not16.vhd|
+Z163 !s107 /home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/B-LogicaCombinacional/src/Not16.vhd|
 !i113 1
 R12
 R13
@@ -1283,8 +1283,8 @@ R7
 R16
 !i10b 1
 R21
-R161
 R162
+R163
 !i113 1
 R12
 R13
@@ -1294,8 +1294,8 @@ R1
 R2
 !i122 82
 R3
-Z163 8/home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/B-LogicaCombinacional/src/Or16.vhd
-Z164 F/home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/B-LogicaCombinacional/src/Or16.vhd
+Z164 8/home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/B-LogicaCombinacional/src/Or16.vhd
+Z165 F/home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/B-LogicaCombinacional/src/Or16.vhd
 l0
 L4 1
 VFm015BPNjKE2P[ZaFANAP1
@@ -1305,8 +1305,8 @@ R7
 R16
 !i10b 1
 R21
-Z165 !s90 -quiet|-modelsimini|/home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/D-LogicaSequencial/vunit_out/modelsim/modelsim.ini|-2008|-work|lib|/home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/B-LogicaCombinacional/src/Or16.vhd|
-Z166 !s107 /home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/B-LogicaCombinacional/src/Or16.vhd|
+Z166 !s90 -quiet|-modelsimini|/home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/D-LogicaSequencial/vunit_out/modelsim/modelsim.ini|-2008|-work|lib|/home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/B-LogicaCombinacional/src/Or16.vhd|
+Z167 !s107 /home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/B-LogicaCombinacional/src/Or16.vhd|
 !i113 1
 R12
 R13
@@ -1324,8 +1324,8 @@ R7
 R16
 !i10b 1
 R21
-R165
 R166
+R167
 !i113 1
 R12
 R13
@@ -1335,8 +1335,8 @@ R1
 R2
 !i122 81
 R3
-Z167 8/home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/B-LogicaCombinacional/src/Or8Way.vhd
-Z168 F/home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/B-LogicaCombinacional/src/Or8Way.vhd
+Z168 8/home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/B-LogicaCombinacional/src/Or8Way.vhd
+Z169 F/home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/B-LogicaCombinacional/src/Or8Way.vhd
 l0
 L4 1
 V6_>9FK_U9`n7]^73i4MMa1
@@ -1346,8 +1346,8 @@ R7
 R16
 !i10b 1
 R21
-Z169 !s90 -quiet|-modelsimini|/home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/D-LogicaSequencial/vunit_out/modelsim/modelsim.ini|-2008|-work|lib|/home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/B-LogicaCombinacional/src/Or8Way.vhd|
-Z170 !s107 /home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/B-LogicaCombinacional/src/Or8Way.vhd|
+Z170 !s90 -quiet|-modelsimini|/home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/D-LogicaSequencial/vunit_out/modelsim/modelsim.ini|-2008|-work|lib|/home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/B-LogicaCombinacional/src/Or8Way.vhd|
+Z171 !s107 /home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/B-LogicaCombinacional/src/Or8Way.vhd|
 !i113 1
 R12
 R13
@@ -1365,31 +1365,31 @@ R7
 R16
 !i10b 1
 R21
-R169
 R170
+R171
 !i113 1
 R12
 R13
 Epc
-Z171 w1648523063
+Z172 w1648523063
 R24
 R1
 R2
 !i122 125
 R3
-Z172 8/home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/D-LogicaSequencial/src/PC.vhd
-Z173 F/home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/D-LogicaSequencial/src/PC.vhd
+Z173 8/home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/D-LogicaSequencial/src/PC.vhd
+Z174 F/home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/D-LogicaSequencial/src/PC.vhd
 l0
 L16 1
 VzaQSMhREHbJK:GJ=aSh4H2
 !s100 [X=gb6SiLihcOc_HL>:i<2
 R7
 33
-Z174 !s110 1648523479
+Z175 !s110 1648523479
 !i10b 1
-Z175 !s108 1648523479.000000
-Z176 !s90 -quiet|-modelsimini|/home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/D-LogicaSequencial/vunit_out/modelsim/modelsim.ini|-2008|-work|lib|/home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/D-LogicaSequencial/src/PC.vhd|
-Z177 !s107 /home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/D-LogicaSequencial/src/PC.vhd|
+Z176 !s108 1648523479.000000
+Z177 !s90 -quiet|-modelsimini|/home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/D-LogicaSequencial/vunit_out/modelsim/modelsim.ini|-2008|-work|lib|/home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/D-LogicaSequencial/src/PC.vhd|
+Z178 !s107 /home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/D-LogicaSequencial/src/PC.vhd|
 !i113 1
 R12
 R13
@@ -1405,33 +1405,33 @@ VS0RZLZ9Bk0>56Vng;eE5W3
 !s100 0cXCmAHXD<H]PRlgfg^4a2
 R7
 33
-R174
-!i10b 1
 R175
+!i10b 1
 R176
 R177
+R178
 !i113 1
 R12
 R13
 Eram4k
-Z178 w1648524221
+Z179 w1648524221
 R1
 R2
 !i122 139
 R3
-Z179 8/home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/D-LogicaSequencial/src/Ram4K.vhd
-Z180 F/home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/D-LogicaSequencial/src/Ram4K.vhd
+Z180 8/home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/D-LogicaSequencial/src/Ram4K.vhd
+Z181 F/home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/D-LogicaSequencial/src/Ram4K.vhd
 l0
 L8 1
 Vz8dhdjLKA6AlXRDQnUY4b0
 !s100 ESk?XNEfJCWi[LAlUVY:i3
 R7
 33
-Z181 !s110 1648524236
+Z182 !s110 1648524236
 !i10b 1
-Z182 !s108 1648524236.000000
-Z183 !s90 -quiet|-modelsimini|/home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/D-LogicaSequencial/vunit_out/modelsim/modelsim.ini|-2008|-work|lib|/home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/D-LogicaSequencial/src/Ram4K.vhd|
-Z184 !s107 /home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/D-LogicaSequencial/src/Ram4K.vhd|
+Z183 !s108 1648524236.000000
+Z184 !s90 -quiet|-modelsimini|/home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/D-LogicaSequencial/vunit_out/modelsim/modelsim.ini|-2008|-work|lib|/home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/D-LogicaSequencial/src/Ram4K.vhd|
+Z185 !s107 /home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/D-LogicaSequencial/src/Ram4K.vhd|
 !i113 1
 R12
 R13
@@ -1441,38 +1441,38 @@ R2
 DEx4 work 5 ram4k 0 22 z8dhdjLKA6AlXRDQnUY4b0
 !i122 139
 l61
-Z185 L18 81
+Z186 L18 81
 VdhaUP7=>JL]0YMYW4`i@>0
 !s100 oA[b`_Hnj1mFT7YJl4J4k1
 R7
 33
-R181
-!i10b 1
 R182
+!i10b 1
 R183
 R184
+R185
 !i113 1
 R12
 R13
 Eram512
-Z186 w1648524166
+Z187 w1648524166
 R1
 R2
 !i122 137
 R3
-Z187 8/home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/D-LogicaSequencial/src/Ram512.vhd
-Z188 F/home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/D-LogicaSequencial/src/Ram512.vhd
+Z188 8/home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/D-LogicaSequencial/src/Ram512.vhd
+Z189 F/home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/D-LogicaSequencial/src/Ram512.vhd
 l0
 L8 1
 V?TMOH43N3BPBToMhV=T1d2
 !s100 FYRGTP_J><7Eg6[=T19WR0
 R7
 33
-Z189 !s110 1648524169
+Z190 !s110 1648524169
 !i10b 1
-Z190 !s108 1648524169.000000
-Z191 !s90 -quiet|-modelsimini|/home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/D-LogicaSequencial/vunit_out/modelsim/modelsim.ini|-2008|-work|lib|/home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/D-LogicaSequencial/src/Ram512.vhd|
-Z192 !s107 /home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/D-LogicaSequencial/src/Ram512.vhd|
+Z191 !s108 1648524169.000000
+Z192 !s90 -quiet|-modelsimini|/home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/D-LogicaSequencial/vunit_out/modelsim/modelsim.ini|-2008|-work|lib|/home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/D-LogicaSequencial/src/Ram512.vhd|
+Z193 !s107 /home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/D-LogicaSequencial/src/Ram512.vhd|
 !i113 1
 R12
 R13
@@ -1482,38 +1482,38 @@ R2
 DEx4 work 6 ram512 0 22 ?TMOH43N3BPBToMhV=T1d2
 !i122 137
 l61
-R185
+R186
 VP@MiID<Az@AkUGM=lm5:M0
 !s100 OB7YcDmQjdZ=f]dTiFl@92
 R7
 33
-R189
-!i10b 1
 R190
+!i10b 1
 R191
 R192
+R193
 !i113 1
 R12
 R13
 Eram64
-Z193 w1648524027
+Z194 w1648524027
 R1
 R2
 !i122 132
 R3
-Z194 8/home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/D-LogicaSequencial/src/Ram64.vhd
-Z195 F/home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/D-LogicaSequencial/src/Ram64.vhd
+Z195 8/home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/D-LogicaSequencial/src/Ram64.vhd
+Z196 F/home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/D-LogicaSequencial/src/Ram64.vhd
 l0
 L8 1
 V6U<oiPMM:>3WJ4d79MbBR2
 !s100 BEh57KIOb9eE?WnXTi60d3
 R7
 33
-Z196 !s110 1648524076
+Z197 !s110 1648524076
 !i10b 1
-Z197 !s108 1648524076.000000
-Z198 !s90 -quiet|-modelsimini|/home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/D-LogicaSequencial/vunit_out/modelsim/modelsim.ini|-2008|-work|lib|/home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/D-LogicaSequencial/src/Ram64.vhd|
-Z199 !s107 /home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/D-LogicaSequencial/src/Ram64.vhd|
+Z198 !s108 1648524076.000000
+Z199 !s90 -quiet|-modelsimini|/home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/D-LogicaSequencial/vunit_out/modelsim/modelsim.ini|-2008|-work|lib|/home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/D-LogicaSequencial/src/Ram64.vhd|
+Z200 !s107 /home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/D-LogicaSequencial/src/Ram64.vhd|
 !i113 1
 R12
 R13
@@ -1523,38 +1523,38 @@ R2
 DEx4 work 5 ram64 0 22 6U<oiPMM:>3WJ4d79MbBR2
 !i122 132
 l61
-R185
+R186
 Vm0BP;0_0`dGG9jlV`]cnC3
 !s100 G:oRk=LHa47jedkK8E:AK2
 R7
 33
-R196
-!i10b 1
 R197
+!i10b 1
 R198
 R199
+R200
 !i113 1
 R12
 R13
 Eram8
-Z200 w1648523443
+Z201 w1648523443
 R1
 R2
 !i122 124
 R3
-Z201 8/home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/D-LogicaSequencial/src/Ram8.vhd
-Z202 F/home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/D-LogicaSequencial/src/Ram8.vhd
+Z202 8/home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/D-LogicaSequencial/src/Ram8.vhd
+Z203 F/home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/D-LogicaSequencial/src/Ram8.vhd
 l0
 L8 1
 V=Ib5JIKmmmB7?D0le6RFP2
 !s100 6oPAbdfMb3_`fgeKPSd`_3
 R7
 33
-R174
-!i10b 1
 R175
-Z203 !s90 -quiet|-modelsimini|/home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/D-LogicaSequencial/vunit_out/modelsim/modelsim.ini|-2008|-work|lib|/home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/D-LogicaSequencial/src/Ram8.vhd|
-Z204 !s107 /home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/D-LogicaSequencial/src/Ram8.vhd|
+!i10b 1
+R176
+Z204 !s90 -quiet|-modelsimini|/home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/D-LogicaSequencial/vunit_out/modelsim/modelsim.ini|-2008|-work|lib|/home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/D-LogicaSequencial/src/Ram8.vhd|
+Z205 !s107 /home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/D-LogicaSequencial/src/Ram8.vhd|
 !i113 1
 R12
 R13
@@ -1569,33 +1569,33 @@ V?kFT?RA=P5UTTTTLUeIll1
 !s100 LFE7I`Go[2Dh<>a=goko;3
 R7
 33
-R174
-!i10b 1
 R175
-R203
+!i10b 1
+R176
 R204
+R205
 !i113 1
 R12
 R13
 Eregister16
-Z205 w1648520576
+Z206 w1648520576
 R1
 R2
 !i122 113
 R3
-Z206 8/home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/D-LogicaSequencial/src/Register16.vhd
-Z207 F/home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/D-LogicaSequencial/src/Register16.vhd
+Z207 8/home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/D-LogicaSequencial/src/Register16.vhd
+Z208 F/home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/D-LogicaSequencial/src/Register16.vhd
 l0
 L8 1
 VLBR;A=e>>e_QSBKCXWa5d3
 !s100 n^CUeJ^:id2hXcoBoB>TS3
 R7
 33
-Z208 !s110 1648520728
+Z209 !s110 1648520728
 !i10b 1
-Z209 !s108 1648520728.000000
-Z210 !s90 -quiet|-modelsimini|/home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/D-LogicaSequencial/vunit_out/modelsim/modelsim.ini|-2008|-work|lib|/home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/D-LogicaSequencial/src/Register16.vhd|
-Z211 !s107 /home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/D-LogicaSequencial/src/Register16.vhd|
+Z210 !s108 1648520728.000000
+Z211 !s90 -quiet|-modelsimini|/home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/D-LogicaSequencial/vunit_out/modelsim/modelsim.ini|-2008|-work|lib|/home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/D-LogicaSequencial/src/Register16.vhd|
+Z212 !s107 /home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/D-LogicaSequencial/src/Register16.vhd|
 !i113 1
 R12
 R13
@@ -1605,38 +1605,38 @@ R2
 DEx4 work 10 register16 0 22 LBR;A=e>>e_QSBKCXWa5d3
 !i122 113
 l28
-Z212 L17 17
+Z213 L17 17
 V[kK16Y?R9EkTgcDHn:STe2
 !s100 Xg2<ZSGGj9mlT2]5aV]Ra0
 R7
 33
-R208
-!i10b 1
 R209
+!i10b 1
 R210
 R211
+R212
 !i113 1
 R12
 R13
 Eregister32
-Z213 w1648520727
+Z214 w1648520727
 R1
 R2
 !i122 112
 R3
-Z214 8/home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/D-LogicaSequencial/src/Register32.vhd
-Z215 F/home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/D-LogicaSequencial/src/Register32.vhd
+Z215 8/home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/D-LogicaSequencial/src/Register32.vhd
+Z216 F/home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/D-LogicaSequencial/src/Register32.vhd
 l0
 L8 1
 VP]c@k:W8fWg]Xko[>MWb^1
 !s100 []:^=AY8a3]ML1PkdZ@Ea3
 R7
 33
-R208
-!i10b 1
 R209
-Z216 !s90 -quiet|-modelsimini|/home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/D-LogicaSequencial/vunit_out/modelsim/modelsim.ini|-2008|-work|lib|/home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/D-LogicaSequencial/src/Register32.vhd|
-Z217 !s107 /home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/D-LogicaSequencial/src/Register32.vhd|
+!i10b 1
+R210
+Z217 !s90 -quiet|-modelsimini|/home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/D-LogicaSequencial/vunit_out/modelsim/modelsim.ini|-2008|-work|lib|/home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/D-LogicaSequencial/src/Register32.vhd|
+Z218 !s107 /home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/D-LogicaSequencial/src/Register32.vhd|
 !i113 1
 R12
 R13
@@ -1646,38 +1646,38 @@ R2
 DEx4 work 10 register32 0 22 P]c@k:W8fWg]Xko[>MWb^1
 !i122 112
 l28
-R212
+R213
 VmOYBAeB5LUR:_NOOd6MEF1
 !s100 c3_JY9L]MJTUQWV]J44cC0
 R7
 33
-R208
-!i10b 1
 R209
-R216
+!i10b 1
+R210
 R217
+R218
 !i113 1
 R12
 R13
 Eregister64
-Z218 w1648520870
+Z219 w1648520870
 R1
 R2
 !i122 115
 R3
-Z219 8/home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/D-LogicaSequencial/src/Register64.vhd
-Z220 F/home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/D-LogicaSequencial/src/Register64.vhd
+Z220 8/home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/D-LogicaSequencial/src/Register64.vhd
+Z221 F/home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/D-LogicaSequencial/src/Register64.vhd
 l0
 L8 1
 V;LzQ2fOcY6f?Oc68WJCXG2
 !s100 LCbS]1neA;d2ePolK?XW]3
 R7
 33
-Z221 !s110 1648520872
+Z222 !s110 1648520872
 !i10b 1
-Z222 !s108 1648520872.000000
-Z223 !s90 -quiet|-modelsimini|/home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/D-LogicaSequencial/vunit_out/modelsim/modelsim.ini|-2008|-work|lib|/home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/D-LogicaSequencial/src/Register64.vhd|
-Z224 !s107 /home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/D-LogicaSequencial/src/Register64.vhd|
+Z223 !s108 1648520872.000000
+Z224 !s90 -quiet|-modelsimini|/home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/D-LogicaSequencial/vunit_out/modelsim/modelsim.ini|-2008|-work|lib|/home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/D-LogicaSequencial/src/Register64.vhd|
+Z225 !s107 /home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/D-LogicaSequencial/src/Register64.vhd|
 !i113 1
 R12
 R13
@@ -1687,38 +1687,38 @@ R2
 DEx4 work 10 register64 0 22 ;LzQ2fOcY6f?Oc68WJCXG2
 !i122 115
 l28
-R212
+R213
 VZ3]_5JLN9ZhH?3Em0PBQI1
 !s100 8iem3c;>YYoeFQL16i6W91
 R7
 33
-R221
-!i10b 1
 R222
+!i10b 1
 R223
 R224
+R225
 !i113 1
 R12
 R13
 Eregister8
-Z225 w1648520389
+Z226 w1648520389
 R1
 R2
 !i122 107
 R3
-Z226 8/home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/D-LogicaSequencial/src/Register8.vhd
-Z227 F/home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/D-LogicaSequencial/src/Register8.vhd
+Z227 8/home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/D-LogicaSequencial/src/Register8.vhd
+Z228 F/home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/D-LogicaSequencial/src/Register8.vhd
 l0
 L8 1
 V9P<nc9YOOPP_Z`H4KFKkR3
 !s100 RH;m?0bQIi^ohZMhS9XdS0
 R7
 33
-Z228 !s110 1648520412
+Z229 !s110 1648520412
 !i10b 1
-Z229 !s108 1648520412.000000
-Z230 !s90 -quiet|-modelsimini|/home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/D-LogicaSequencial/vunit_out/modelsim/modelsim.ini|-2008|-work|lib|/home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/D-LogicaSequencial/src/Register8.vhd|
-Z231 !s107 /home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/D-LogicaSequencial/src/Register8.vhd|
+Z230 !s108 1648520412.000000
+Z231 !s90 -quiet|-modelsimini|/home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/D-LogicaSequencial/vunit_out/modelsim/modelsim.ini|-2008|-work|lib|/home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/D-LogicaSequencial/src/Register8.vhd|
+Z232 !s107 /home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/D-LogicaSequencial/src/Register8.vhd|
 !i113 1
 R12
 R13
@@ -1733,11 +1733,11 @@ Vefo3^ZIImA^3G8?32T`:@2
 !s100 G]c1YF=jEQhU4kll@RRK^2
 R7
 33
-R228
-!i10b 1
 R229
+!i10b 1
 R230
 R231
+R232
 !i113 1
 R12
 R13
@@ -1747,8 +1747,8 @@ R1
 R2
 !i122 75
 R3
-Z232 8/home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/B-LogicaCombinacional/src/sevenSeg.vhd
-Z233 F/home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/B-LogicaCombinacional/src/sevenSeg.vhd
+Z233 8/home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/B-LogicaCombinacional/src/sevenSeg.vhd
+Z234 F/home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/B-LogicaCombinacional/src/sevenSeg.vhd
 l0
 L4 1
 VgdITb;WTH[5cZbCd[CR:E0
@@ -1758,8 +1758,8 @@ R7
 R16
 !i10b 1
 R21
-Z234 !s90 -quiet|-modelsimini|/home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/D-LogicaSequencial/vunit_out/modelsim/modelsim.ini|-2008|-work|lib|/home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/B-LogicaCombinacional/src/sevenSeg.vhd|
-Z235 !s107 /home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/B-LogicaCombinacional/src/sevenSeg.vhd|
+Z235 !s90 -quiet|-modelsimini|/home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/D-LogicaSequencial/vunit_out/modelsim/modelsim.ini|-2008|-work|lib|/home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/B-LogicaCombinacional/src/sevenSeg.vhd|
+Z236 !s107 /home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/B-LogicaCombinacional/src/sevenSeg.vhd|
 !i113 1
 R12
 R13
@@ -1777,73 +1777,72 @@ R7
 R16
 !i10b 1
 R21
-R234
 R235
+R236
 !i113 1
 R12
 R13
 Etb_binarydigit
 R0
-Z236 D^#x9 vunit_lib 13 vunit_context 0 22 5PF4h;N3nzRfAo898Q8WS3
-Z237 DPx9 vunit_lib 18 run_deprecated_pkg 0 22 06HHNn=l0Y?PoSLo8^<h00
-Z238 DPx9 vunit_lib 10 runner_pkg 0 22 NQlg?N:7cfzSYD?FX_C9W0
-Z239 DPx9 vunit_lib 7 run_pkg 0 22 L;71H6TCjU4gL1AJPm_Vd0
-Z240 DPx9 vunit_lib 13 run_types_pkg 0 22 ZfDWW?_fEaQBz>VkefFUV2
-Z241 DPx9 vunit_lib 20 check_deprecated_pkg 0 22 Y>TVz>[kI8XoP@P02gCOJ2
-Z242 DPx9 vunit_lib 9 check_pkg 0 22 k_?TDGU?=n?1Z0oahO>zF0
-Z243 DPx9 vunit_lib 11 checker_pkg 0 22 E?dhhcE;9VWnHLW[lW4`Y1
-Z244 DPx9 vunit_lib 8 stop_pkg 0 22 UjKiHFdPQ97>_>m`nM3cg3
-Z245 DPx9 vunit_lib 8 core_pkg 0 22 0M7EG>QDghVT?B78KOYPn0
-Z246 DPx9 vunit_lib 18 log_deprecated_pkg 0 22 Q7[lfBh_WC:ca^W64YP1U2
-Z247 DPx9 vunit_lib 9 print_pkg 0 22 z3A9G[B4JdMci]Ub;PK=S3
-Z248 DPx9 vunit_lib 4 path 0 22 ]@TR:IFM`TWfiVL<ZjY=I3
-Z249 DPx9 vunit_lib 15 log_handler_pkg 0 22 4LC?iW3FIdm8J@]^l:Fa_0
-Z250 DPx9 vunit_lib 8 ansi_pkg 0 22 h9cG]NHf=IYSX>SV5U_OM1
-Z251 DPx9 vunit_lib 14 log_levels_pkg 0 22 jGUFnEUH1mU?HKm3YRPGj3
-Z252 DPx9 vunit_lib 10 logger_pkg 0 22 Jj3MC9=bR4jQbFA1jSDXY2
-Z253 DPx9 vunit_lib 10 dictionary 0 22 _W8>On_YoEFWEDP8TQC@R0
-Z254 DPx9 vunit_lib 10 string_ops 0 22 >6lVd?dSYVCeeU;1?_=bg2
-Z255 D^#x9 vunit_lib 18 data_types_context 0 22 [Ik[<YbW8Ag;h5P``aP2g3
-Z256 DPx9 vunit_lib 8 dict_pkg 0 22 _EQKR[P[ibBW^<0mzPejD2
-Z257 DPx9 vunit_lib 19 byte_vector_ptr_pkg 0 22 nMb7G]QlQkbCia?ecQlOB1
-Z258 DPx9 vunit_lib 19 string_ptr_pool_pkg 0 22 ;oGa_UEi8nVncYkDRR_Aj1
-Z259 DPx9 vunit_lib 14 queue_pool_pkg 0 22 W_@1eWPT4E>cBF2g>m`PC0
-Z260 DPx9 vunit_lib 17 integer_array_pkg 0 22 o:H2ie>cVB<O<8]@gJG;:3
-Z261 DPx9 vunit_lib 19 external_string_pkg 0 22 iE_JL@S7G[ScLPziLPH3]3
-Z262 DPx9 vunit_lib 14 string_ptr_pkg 0 22 n[AzFb_A:6S@HQFZYcL]h0
-Z263 DPx9 vunit_lib 9 queue_pkg 0 22 CMi_fVS`R;@j5e>onMNln3
-Z264 DPx9 vunit_lib 27 integer_vector_ptr_pool_pkg 0 22 FX=7VbM]W@D7RN`^3N8aJ3
-Z265 DPx9 vunit_lib 17 codec_builder_pkg 0 22 lMzaQB]AGo[9c?7g60J_93
+Z237 D^#x9 vunit_lib 13 vunit_context 0 22 5PF4h;N3nzRfAo898Q8WS3
+Z238 DPx9 vunit_lib 18 run_deprecated_pkg 0 22 06HHNn=l0Y?PoSLo8^<h00
+Z239 DPx9 vunit_lib 10 runner_pkg 0 22 NQlg?N:7cfzSYD?FX_C9W0
+Z240 DPx9 vunit_lib 7 run_pkg 0 22 L;71H6TCjU4gL1AJPm_Vd0
+Z241 DPx9 vunit_lib 13 run_types_pkg 0 22 ZfDWW?_fEaQBz>VkefFUV2
+Z242 DPx9 vunit_lib 20 check_deprecated_pkg 0 22 Y>TVz>[kI8XoP@P02gCOJ2
+Z243 DPx9 vunit_lib 9 check_pkg 0 22 k_?TDGU?=n?1Z0oahO>zF0
+Z244 DPx9 vunit_lib 11 checker_pkg 0 22 E?dhhcE;9VWnHLW[lW4`Y1
+Z245 DPx9 vunit_lib 8 stop_pkg 0 22 UjKiHFdPQ97>_>m`nM3cg3
+Z246 DPx9 vunit_lib 8 core_pkg 0 22 0M7EG>QDghVT?B78KOYPn0
+Z247 DPx9 vunit_lib 18 log_deprecated_pkg 0 22 Q7[lfBh_WC:ca^W64YP1U2
+Z248 DPx9 vunit_lib 9 print_pkg 0 22 z3A9G[B4JdMci]Ub;PK=S3
+Z249 DPx9 vunit_lib 4 path 0 22 ]@TR:IFM`TWfiVL<ZjY=I3
+Z250 DPx9 vunit_lib 15 log_handler_pkg 0 22 4LC?iW3FIdm8J@]^l:Fa_0
+Z251 DPx9 vunit_lib 8 ansi_pkg 0 22 h9cG]NHf=IYSX>SV5U_OM1
+Z252 DPx9 vunit_lib 14 log_levels_pkg 0 22 jGUFnEUH1mU?HKm3YRPGj3
+Z253 DPx9 vunit_lib 10 logger_pkg 0 22 Jj3MC9=bR4jQbFA1jSDXY2
+Z254 DPx9 vunit_lib 10 dictionary 0 22 _W8>On_YoEFWEDP8TQC@R0
+Z255 DPx9 vunit_lib 10 string_ops 0 22 >6lVd?dSYVCeeU;1?_=bg2
+Z256 D^#x9 vunit_lib 18 data_types_context 0 22 [Ik[<YbW8Ag;h5P``aP2g3
+Z257 DPx9 vunit_lib 8 dict_pkg 0 22 _EQKR[P[ibBW^<0mzPejD2
+Z258 DPx9 vunit_lib 19 byte_vector_ptr_pkg 0 22 nMb7G]QlQkbCia?ecQlOB1
+Z259 DPx9 vunit_lib 19 string_ptr_pool_pkg 0 22 ;oGa_UEi8nVncYkDRR_Aj1
+Z260 DPx9 vunit_lib 14 queue_pool_pkg 0 22 W_@1eWPT4E>cBF2g>m`PC0
+Z261 DPx9 vunit_lib 17 integer_array_pkg 0 22 o:H2ie>cVB<O<8]@gJG;:3
+Z262 DPx9 vunit_lib 19 external_string_pkg 0 22 iE_JL@S7G[ScLPziLPH3]3
+Z263 DPx9 vunit_lib 14 string_ptr_pkg 0 22 n[AzFb_A:6S@HQFZYcL]h0
+Z264 DPx9 vunit_lib 9 queue_pkg 0 22 CMi_fVS`R;@j5e>onMNln3
+Z265 DPx9 vunit_lib 27 integer_vector_ptr_pool_pkg 0 22 FX=7VbM]W@D7RN`^3N8aJ3
+Z266 DPx9 vunit_lib 17 codec_builder_pkg 0 22 lMzaQB]AGo[9c?7g60J_93
 R24
-Z266 DPx4 ieee 11 numeric_bit 0 22 G2;d`f^X6V]cQEn8_38:i1
-Z267 DPx4 ieee 9 math_real 0 22 gNk<PdFJ<XNPcfef`f?Z81
-Z268 DPx4 ieee 12 math_complex 0 22 lndMRF4<kJnT_9]@:30S@3
-Z269 DPx9 vunit_lib 9 codec_pkg 0 22 VE]>YKnj@eiUJ<U1YSEXb3
-Z270 DPx9 vunit_lib 27 external_integer_vector_pkg 0 22 hl?S7F7[zeX8D09=mXj_W2
-Z271 DPx9 vunit_lib 22 integer_vector_ptr_pkg 0 22 dQHde;mb=n>VUWALE0?M33
-Z272 DPx9 vunit_lib 9 types_pkg 0 22 8X1EBI95Q8hI=Vi3D9DP;0
+Z267 DPx4 ieee 11 numeric_bit 0 22 G2;d`f^X6V]cQEn8_38:i1
+Z268 DPx4 ieee 9 math_real 0 22 gNk<PdFJ<XNPcfef`f?Z81
+Z269 DPx4 ieee 12 math_complex 0 22 lndMRF4<kJnT_9]@:30S@3
+Z270 DPx9 vunit_lib 9 codec_pkg 0 22 VE]>YKnj@eiUJ<U1YSEXb3
+Z271 DPx9 vunit_lib 27 external_integer_vector_pkg 0 22 hl?S7F7[zeX8D09=mXj_W2
+Z272 DPx9 vunit_lib 22 integer_vector_ptr_pkg 0 22 dQHde;mb=n>VUWALE0?M33
+Z273 DPx9 vunit_lib 9 types_pkg 0 22 8X1EBI95Q8hI=Vi3D9DP;0
 R1
 R2
 !i122 103
 R3
-Z273 8/home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/D-LogicaSequencial/testes/tb_BinaryDigit.vhd
-Z274 F/home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/D-LogicaSequencial/testes/tb_BinaryDigit.vhd
+Z274 8/home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/D-LogicaSequencial/testes/tb_BinaryDigit.vhd
+Z275 F/home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/D-LogicaSequencial/testes/tb_BinaryDigit.vhd
 l0
 R52
 VeZdN;[`k75J1zD5APC6fg3
 !s100 REZ_kKK2zd=H>`S1=_`0j1
 R7
 33
-R66
+R65
 !i10b 1
-R67
-Z275 !s90 -quiet|-modelsimini|/home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/D-LogicaSequencial/vunit_out/modelsim/modelsim.ini|-2008|-work|lib|/home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/D-LogicaSequencial/testes/tb_BinaryDigit.vhd|
-Z276 !s107 /home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/D-LogicaSequencial/testes/tb_BinaryDigit.vhd|
+R66
+Z276 !s90 -quiet|-modelsimini|/home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/D-LogicaSequencial/vunit_out/modelsim/modelsim.ini|-2008|-work|lib|/home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/D-LogicaSequencial/testes/tb_BinaryDigit.vhd|
+Z277 !s107 /home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/D-LogicaSequencial/testes/tb_BinaryDigit.vhd|
 !i113 1
 R12
 R13
 Atb
-R236
 R237
 R238
 R239
@@ -1873,35 +1872,35 @@ R262
 R263
 R264
 R265
-R24
 R266
+R24
 R267
 R268
 R269
 R270
 R271
 R272
+R273
 R1
 R2
 DEx4 work 14 tb_binarydigit 0 22 eZdN;[`k75J1zD5APC6fg3
 !i122 103
 l30
-Z277 L16 52
+Z278 L16 52
 VKd=2>Jmm=9>NQb3Z;X8<62
 !s100 _Df=?QK0n=JAafNOPGKlB1
 R7
 33
-R66
+R65
 !i10b 1
-R67
-R275
+R66
 R276
+R277
 !i113 1
 R12
 R13
 Etb_counterdown
-Z278 w1648664415
-R236
+Z279 w1648730315
 R237
 R238
 R239
@@ -1931,36 +1930,36 @@ R262
 R263
 R264
 R265
-R24
 R266
+R24
 R267
 R268
 R269
 R270
 R271
 R272
+R273
 R1
 R2
-!i122 229
+!i122 245
 R3
-Z279 8/home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/D-LogicaSequencial/testes/tb_CounterDown.vhd
-Z280 F/home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/D-LogicaSequencial/testes/tb_CounterDown.vhd
+Z280 8/home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/D-LogicaSequencial/testes/tb_CounterDown.vhd
+Z281 F/home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/D-LogicaSequencial/testes/tb_CounterDown.vhd
 l0
-R108
+R109
 Vaj@W9Zg8]H`L>7k`>Z3h72
 !s100 Ri6D6MnT<[MD9[`ZYicSO2
 R7
 33
-Z281 !s110 1648664417
+Z282 !s110 1648730320
 !i10b 1
-Z282 !s108 1648664417.000000
-Z283 !s90 -quiet|-modelsimini|/home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/D-LogicaSequencial/vunit_out/modelsim/modelsim.ini|-2008|-work|lib|/home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/D-LogicaSequencial/testes/tb_CounterDown.vhd|
-Z284 !s107 /home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/D-LogicaSequencial/testes/tb_CounterDown.vhd|
+Z283 !s108 1648730320.000000
+Z284 !s90 -quiet|-modelsimini|/home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/D-LogicaSequencial/vunit_out/modelsim/modelsim.ini|-2008|-work|lib|/home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/D-LogicaSequencial/testes/tb_CounterDown.vhd|
+Z285 !s107 /home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/D-LogicaSequencial/testes/tb_CounterDown.vhd|
 !i113 1
 R12
 R13
 Atb
-R236
 R237
 R238
 R239
@@ -1990,35 +1989,35 @@ R262
 R263
 R264
 R265
-R24
 R266
+R24
 R267
 R268
 R269
 R270
 R271
 R272
+R273
 R1
 R2
 DEx4 work 14 tb_counterdown 0 22 aj@W9Zg8]H`L>7k`>Z3h72
-!i122 229
+!i122 245
 l26
-L14 35
-VAY:B9Rze_o>:6e[bok=A`0
-!s100 :=hP:;K<[=MP81P]2o>SC0
+L14 43
+V?0K3^:jO[1o4X<UKl>UBO2
+!s100 ;i:4oSKJ2J`APJS:3KIbX0
 R7
 33
-R281
-!i10b 1
 R282
+!i10b 1
 R283
 R284
+R285
 !i113 1
 R12
 R13
 Etb_flipflopd
 R0
-R236
 R237
 R238
 R239
@@ -2048,36 +2047,36 @@ R262
 R263
 R264
 R265
-R24
 R266
+R24
 R267
 R268
 R269
 R270
 R271
 R272
+R273
 R1
 R2
 !i122 98
 R3
-Z285 8/home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/D-LogicaSequencial/testes/tb_FlipFlopD.vhd
-Z286 F/home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/D-LogicaSequencial/testes/tb_FlipFlopD.vhd
+Z286 8/home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/D-LogicaSequencial/testes/tb_FlipFlopD.vhd
+Z287 F/home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/D-LogicaSequencial/testes/tb_FlipFlopD.vhd
 l0
 R52
 VfHc44cLl@IDQ114>GSdm^1
 !s100 Mz2D0a_Fee>:O9S6F=zIz1
 R7
 33
-Z287 !s110 1648516713
+Z288 !s110 1648516713
 !i10b 1
-Z288 !s108 1648516713.000000
-Z289 !s90 -quiet|-modelsimini|/home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/D-LogicaSequencial/vunit_out/modelsim/modelsim.ini|-2008|-work|lib|/home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/D-LogicaSequencial/testes/tb_FlipFlopD.vhd|
-Z290 !s107 /home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/D-LogicaSequencial/testes/tb_FlipFlopD.vhd|
+Z289 !s108 1648516713.000000
+Z290 !s90 -quiet|-modelsimini|/home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/D-LogicaSequencial/vunit_out/modelsim/modelsim.ini|-2008|-work|lib|/home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/D-LogicaSequencial/testes/tb_FlipFlopD.vhd|
+Z291 !s107 /home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/D-LogicaSequencial/testes/tb_FlipFlopD.vhd|
 !i113 1
 R12
 R13
 Atb
-R236
 R237
 R238
 R239
@@ -2107,35 +2106,35 @@ R262
 R263
 R264
 R265
-R24
 R266
+R24
 R267
 R268
 R269
 R270
 R271
 R272
+R273
 R1
 R2
 DEx4 work 12 tb_flipflopd 0 22 fHc44cLl@IDQ114>GSdm^1
 !i122 98
 l34
-Z291 L16 65
+Z292 L16 65
 VIHiV[c8L:CBS]OB;O:EVN0
 !s100 a6MHG1EBa9Nb]mc;S:Oo40
 R7
 33
-R287
-!i10b 1
 R288
+!i10b 1
 R289
 R290
+R291
 !i113 1
 R12
 R13
-Etb_flipflopt
-Z292 w1648662366
-R236
+Etb_flipflopjk
+Z293 w1648731134
 R237
 R238
 R239
@@ -2165,36 +2164,36 @@ R262
 R263
 R264
 R265
-R24
 R266
+R24
 R267
 R268
 R269
 R270
 R271
 R272
+R273
 R1
 R2
-!i122 217
+!i122 252
 R3
-Z293 8/home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/D-LogicaSequencial/testes/tb_FlipFlopT.vhd
-Z294 F/home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/D-LogicaSequencial/testes/tb_FlipFlopT.vhd
+Z294 8/home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/D-LogicaSequencial/testes/tb_FlipFlopJK.vhd
+Z295 F/home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/D-LogicaSequencial/testes/tb_FlipFlopJK.vhd
 l0
-R108
-VTR@n0H[0;F0CjcAnZHYAD1
-!s100 jY2EJ8AT22>DF56gTj2jf1
+R109
+V;ocom`39c0fIi1;KJ]WIe1
+!s100 5Ha?hYBX1@HWhihk9G[PV3
 R7
 33
-R95
+R94
 !i10b 1
-R96
-Z295 !s90 -quiet|-modelsimini|/home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/D-LogicaSequencial/vunit_out/modelsim/modelsim.ini|-2008|-work|lib|/home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/D-LogicaSequencial/testes/tb_FlipFlopT.vhd|
-Z296 !s107 /home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/D-LogicaSequencial/testes/tb_FlipFlopT.vhd|
+R95
+Z296 !s90 -quiet|-modelsimini|/home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/D-LogicaSequencial/vunit_out/modelsim/modelsim.ini|-2008|-work|lib|/home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/D-LogicaSequencial/testes/tb_FlipFlopJK.vhd|
+Z297 !s107 /home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/D-LogicaSequencial/testes/tb_FlipFlopJK.vhd|
 !i113 1
 R12
 R13
 Atb
-R236
 R237
 R238
 R239
@@ -2224,35 +2223,152 @@ R262
 R263
 R264
 R265
-R24
 R266
+R24
 R267
 R268
 R269
 R270
 R271
 R272
+R273
+R1
+R2
+DEx4 work 13 tb_flipflopjk 0 22 ;ocom`39c0fIi1;KJ]WIe1
+!i122 252
+l29
+L14 70
+VXm2o=NeYeFV1=jUR71m][2
+!s100 =P_3I`STdKOa0j8zKUiKV2
+R7
+33
+R94
+!i10b 1
+R95
+R296
+R297
+!i113 1
+R12
+R13
+Etb_flipflopt
+Z298 w1648730505
+R237
+R238
+R239
+R240
+R241
+R242
+R243
+R244
+R245
+R246
+R247
+R248
+R249
+R250
+R251
+R252
+R253
+R254
+R255
+R256
+R257
+R258
+R259
+R260
+R261
+R262
+R263
+R264
+R265
+R266
+R24
+R267
+R268
+R269
+R270
+R271
+R272
+R273
+R1
+R2
+!i122 249
+R3
+Z299 8/home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/D-LogicaSequencial/testes/tb_FlipFlopT.vhd
+Z300 F/home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/D-LogicaSequencial/testes/tb_FlipFlopT.vhd
+l0
+R109
+VTR@n0H[0;F0CjcAnZHYAD1
+!s100 jY2EJ8AT22>DF56gTj2jf1
+R7
+33
+Z301 !s110 1648730508
+!i10b 1
+Z302 !s108 1648730508.000000
+Z303 !s90 -quiet|-modelsimini|/home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/D-LogicaSequencial/vunit_out/modelsim/modelsim.ini|-2008|-work|lib|/home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/D-LogicaSequencial/testes/tb_FlipFlopT.vhd|
+Z304 !s107 /home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/D-LogicaSequencial/testes/tb_FlipFlopT.vhd|
+!i113 1
+R12
+R13
+Atb
+R237
+R238
+R239
+R240
+R241
+R242
+R243
+R244
+R245
+R246
+R247
+R248
+R249
+R250
+R251
+R252
+R253
+R254
+R255
+R256
+R257
+R258
+R259
+R260
+R261
+R262
+R263
+R264
+R265
+R266
+R24
+R267
+R268
+R269
+R270
+R271
+R272
+R273
 R1
 R2
 DEx4 work 12 tb_flipflopt 0 22 TR@n0H[0;F0CjcAnZHYAD1
-!i122 217
+!i122 249
 l28
 L14 59
-VZh9c?Oka^^R9I85C`3NPB2
-!s100 ]WL_M2dKRPSajHJgoB0NO3
+Vd@0knKoCVP06RBazG77Z12
+!s100 f>S8=XkjI0S>neLi1ZP=]2
 R7
 33
-R95
+R301
 !i10b 1
-R96
-R295
-R296
+R302
+R303
+R304
 !i113 1
 R12
 R13
 Etb_pc
 R0
-R236
 R237
 R238
 R239
@@ -2282,36 +2398,36 @@ R262
 R263
 R264
 R265
-R24
 R266
+R24
 R267
 R268
 R269
 R270
 R271
 R272
+R273
 R1
 R2
 !i122 118
 R3
-Z297 8/home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/D-LogicaSequencial/testes/tb_PC.vhd
-Z298 F/home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/D-LogicaSequencial/testes/tb_PC.vhd
+Z305 8/home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/D-LogicaSequencial/testes/tb_PC.vhd
+Z306 F/home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/D-LogicaSequencial/testes/tb_PC.vhd
 l0
 R52
 V[D81CnT42QfXRm1@aNo2J3
 !s100 J1Nhc5dRMT]HPgKQlP41`2
 R7
 33
-Z299 !s110 1648521358
+Z307 !s110 1648521358
 !i10b 1
-Z300 !s108 1648521358.000000
-Z301 !s90 -quiet|-modelsimini|/home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/D-LogicaSequencial/vunit_out/modelsim/modelsim.ini|-2008|-work|lib|/home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/D-LogicaSequencial/testes/tb_PC.vhd|
-Z302 !s107 /home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/D-LogicaSequencial/testes/tb_PC.vhd|
+Z308 !s108 1648521358.000000
+Z309 !s90 -quiet|-modelsimini|/home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/D-LogicaSequencial/vunit_out/modelsim/modelsim.ini|-2008|-work|lib|/home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/D-LogicaSequencial/testes/tb_PC.vhd|
+Z310 !s107 /home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/D-LogicaSequencial/testes/tb_PC.vhd|
 !i113 1
 R12
 R13
 Atb
-R236
 R237
 R238
 R239
@@ -2341,14 +2457,15 @@ R262
 R263
 R264
 R265
-R24
 R266
+R24
 R267
 R268
 R269
 R270
 R271
 R272
+R273
 R1
 R2
 DEx4 work 5 tb_pc 0 22 [D81CnT42QfXRm1@aNo2J3
@@ -2359,17 +2476,16 @@ VkSb2C>@Sg9hd00Z615lWi2
 !s100 gTVPQ>S<;`ADO:mz?E8=V2
 R7
 33
-R299
+R307
 !i10b 1
-R300
-R301
-R302
+R308
+R309
+R310
 !i113 1
 R12
 R13
 Etb_ram4k
 R0
-R236
 R237
 R238
 R239
@@ -2399,36 +2515,36 @@ R262
 R263
 R264
 R265
-R24
 R266
+R24
 R267
 R268
 R269
 R270
 R271
 R272
+R273
 R1
 R2
 !i122 140
 R3
-Z303 8/home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/D-LogicaSequencial/testes/tb_Ram4K.vhd
-Z304 F/home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/D-LogicaSequencial/testes/tb_Ram4K.vhd
+Z311 8/home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/D-LogicaSequencial/testes/tb_Ram4K.vhd
+Z312 F/home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/D-LogicaSequencial/testes/tb_Ram4K.vhd
 l0
 R52
 V=>6D5eeL;?13G@G71zeCU2
 !s100 S9=3b[obZ2Ifm=SDXZIHm0
 R7
 33
-R181
-!i10b 1
 R182
-Z305 !s90 -quiet|-modelsimini|/home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/D-LogicaSequencial/vunit_out/modelsim/modelsim.ini|-2008|-work|lib|/home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/D-LogicaSequencial/testes/tb_Ram4K.vhd|
-Z306 !s107 /home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/D-LogicaSequencial/testes/tb_Ram4K.vhd|
+!i10b 1
+R183
+Z313 !s90 -quiet|-modelsimini|/home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/D-LogicaSequencial/vunit_out/modelsim/modelsim.ini|-2008|-work|lib|/home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/D-LogicaSequencial/testes/tb_Ram4K.vhd|
+Z314 !s107 /home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/D-LogicaSequencial/testes/tb_Ram4K.vhd|
 !i113 1
 R12
 R13
 Atb
-R236
 R237
 R238
 R239
@@ -2458,35 +2574,35 @@ R262
 R263
 R264
 R265
-R24
 R266
+R24
 R267
 R268
 R269
 R270
 R271
 R272
+R273
 R1
 R2
 DEx4 work 8 tb_ram4k 0 22 =>6D5eeL;?13G@G71zeCU2
 !i122 140
 l34
-Z307 L16 119
+Z315 L16 119
 VNgj1Gf_aGa^4NKfMK_Ckg2
 !s100 BFQ_jZhlTB3TfccoV?;d<2
 R7
 33
-R181
-!i10b 1
 R182
-R305
-R306
+!i10b 1
+R183
+R313
+R314
 !i113 1
 R12
 R13
 Etb_ram512
 R0
-R236
 R237
 R238
 R239
@@ -2516,36 +2632,36 @@ R262
 R263
 R264
 R265
-R24
 R266
+R24
 R267
 R268
 R269
 R270
 R271
 R272
+R273
 R1
 R2
 !i122 138
 R3
-Z308 8/home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/D-LogicaSequencial/testes/tb_Ram512.vhd
-Z309 F/home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/D-LogicaSequencial/testes/tb_Ram512.vhd
+Z316 8/home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/D-LogicaSequencial/testes/tb_Ram512.vhd
+Z317 F/home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/D-LogicaSequencial/testes/tb_Ram512.vhd
 l0
 R52
 V:TniVicX8?K4l3BY6h9i73
 !s100 l[>z```f9OPCKU2R:Hh8R1
 R7
 33
-R189
-!i10b 1
 R190
-Z310 !s90 -quiet|-modelsimini|/home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/D-LogicaSequencial/vunit_out/modelsim/modelsim.ini|-2008|-work|lib|/home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/D-LogicaSequencial/testes/tb_Ram512.vhd|
-Z311 !s107 /home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/D-LogicaSequencial/testes/tb_Ram512.vhd|
+!i10b 1
+R191
+Z318 !s90 -quiet|-modelsimini|/home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/D-LogicaSequencial/vunit_out/modelsim/modelsim.ini|-2008|-work|lib|/home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/D-LogicaSequencial/testes/tb_Ram512.vhd|
+Z319 !s107 /home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/D-LogicaSequencial/testes/tb_Ram512.vhd|
 !i113 1
 R12
 R13
 Atb
-R236
 R237
 R238
 R239
@@ -2575,35 +2691,35 @@ R262
 R263
 R264
 R265
-R24
 R266
+R24
 R267
 R268
 R269
 R270
 R271
 R272
+R273
 R1
 R2
 DEx4 work 9 tb_ram512 0 22 :TniVicX8?K4l3BY6h9i73
 !i122 138
 l34
-R307
+R315
 VNhhS6>;z?AUYb_??T5TA[1
 !s100 QC3ejk5B^f0<Y;dZP>QQ10
 R7
 33
-R189
-!i10b 1
 R190
-R310
-R311
+!i10b 1
+R191
+R318
+R319
 !i113 1
 R12
 R13
 Etb_ram64
 R0
-R236
 R237
 R238
 R239
@@ -2633,36 +2749,36 @@ R262
 R263
 R264
 R265
-R24
 R266
+R24
 R267
 R268
 R269
 R270
 R271
 R272
+R273
 R1
 R2
 !i122 129
 R3
-Z312 8/home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/D-LogicaSequencial/testes/tb_Ram64.vhd
-Z313 F/home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/D-LogicaSequencial/testes/tb_Ram64.vhd
+Z320 8/home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/D-LogicaSequencial/testes/tb_Ram64.vhd
+Z321 F/home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/D-LogicaSequencial/testes/tb_Ram64.vhd
 l0
 R52
 V[7Hg?PIf1`A6bH;:KPAF<3
 !s100 [fgR]GASWg6=mal6K<jlZ2
 R7
 33
-Z314 !s110 1648523866
+Z322 !s110 1648523866
 !i10b 1
-Z315 !s108 1648523866.000000
-Z316 !s90 -quiet|-modelsimini|/home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/D-LogicaSequencial/vunit_out/modelsim/modelsim.ini|-2008|-work|lib|/home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/D-LogicaSequencial/testes/tb_Ram64.vhd|
-Z317 !s107 /home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/D-LogicaSequencial/testes/tb_Ram64.vhd|
+Z323 !s108 1648523866.000000
+Z324 !s90 -quiet|-modelsimini|/home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/D-LogicaSequencial/vunit_out/modelsim/modelsim.ini|-2008|-work|lib|/home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/D-LogicaSequencial/testes/tb_Ram64.vhd|
+Z325 !s107 /home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/D-LogicaSequencial/testes/tb_Ram64.vhd|
 !i113 1
 R12
 R13
 Atb
-R236
 R237
 R238
 R239
@@ -2692,14 +2808,15 @@ R262
 R263
 R264
 R265
-R24
 R266
+R24
 R267
 R268
 R269
 R270
 R271
 R272
+R273
 R1
 R2
 DEx4 work 8 tb_ram64 0 22 [7Hg?PIf1`A6bH;:KPAF<3
@@ -2710,17 +2827,16 @@ VBBLCTe1j9bdzIfWY0OB`e0
 !s100 OoUcloWF7[f`7LMoS3ln=1
 R7
 33
-R314
+R322
 !i10b 1
-R315
-R316
-R317
+R323
+R324
+R325
 !i113 1
 R12
 R13
 Etb_ram8
 R0
-R236
 R237
 R238
 R239
@@ -2750,36 +2866,36 @@ R262
 R263
 R264
 R265
-R24
 R266
+R24
 R267
 R268
 R269
 R270
 R271
 R272
+R273
 R1
 R2
 !i122 126
 R3
-Z318 8/home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/D-LogicaSequencial/testes/tb_Ram8.vhd
-Z319 F/home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/D-LogicaSequencial/testes/tb_Ram8.vhd
+Z326 8/home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/D-LogicaSequencial/testes/tb_Ram8.vhd
+Z327 F/home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/D-LogicaSequencial/testes/tb_Ram8.vhd
 l0
 R52
 VUBHLN;M<bN6Hj2X]Ib7d:3
 !s100 Y@[3l6FJmbm8KH45_S7L80
 R7
 33
-R174
-!i10b 1
 R175
-Z320 !s90 -quiet|-modelsimini|/home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/D-LogicaSequencial/vunit_out/modelsim/modelsim.ini|-2008|-work|lib|/home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/D-LogicaSequencial/testes/tb_Ram8.vhd|
-Z321 !s107 /home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/D-LogicaSequencial/testes/tb_Ram8.vhd|
+!i10b 1
+R176
+Z328 !s90 -quiet|-modelsimini|/home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/D-LogicaSequencial/vunit_out/modelsim/modelsim.ini|-2008|-work|lib|/home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/D-LogicaSequencial/testes/tb_Ram8.vhd|
+Z329 !s107 /home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/D-LogicaSequencial/testes/tb_Ram8.vhd|
 !i113 1
 R12
 R13
 Atb
-R236
 R237
 R238
 R239
@@ -2809,35 +2925,35 @@ R262
 R263
 R264
 R265
-R24
 R266
+R24
 R267
 R268
 R269
 R270
 R271
 R272
+R273
 R1
 R2
 DEx4 work 7 tb_ram8 0 22 UBHLN;M<bN6Hj2X]Ib7d:3
 !i122 126
 l34
-R291
+R292
 VaaP3jO[kE2E>cTfQUUSkm1
 !s100 MQ=<K@hcHE]gIeD7:^@0Z2
 R7
 33
-R174
-!i10b 1
 R175
-R320
-R321
+!i10b 1
+R176
+R328
+R329
 !i113 1
 R12
 R13
 Etb_register16
 R0
-R236
 R237
 R238
 R239
@@ -2867,36 +2983,36 @@ R262
 R263
 R264
 R265
-R24
 R266
+R24
 R267
 R268
 R269
 R270
 R271
 R272
+R273
 R1
 R2
 !i122 111
 R3
-Z322 8/home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/D-LogicaSequencial/testes/tb_Register16.vhd
-Z323 F/home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/D-LogicaSequencial/testes/tb_Register16.vhd
+Z330 8/home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/D-LogicaSequencial/testes/tb_Register16.vhd
+Z331 F/home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/D-LogicaSequencial/testes/tb_Register16.vhd
 l0
 R52
 VneGCFDX;acZZ2Gi0=VNBK1
 !s100 B0ho:<MTRHJJGgA2N_GAD0
 R7
 33
-Z324 !s110 1648520571
+Z332 !s110 1648520571
 !i10b 1
-Z325 !s108 1648520571.000000
-Z326 !s90 -quiet|-modelsimini|/home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/D-LogicaSequencial/vunit_out/modelsim/modelsim.ini|-2008|-work|lib|/home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/D-LogicaSequencial/testes/tb_Register16.vhd|
-Z327 !s107 /home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/D-LogicaSequencial/testes/tb_Register16.vhd|
+Z333 !s108 1648520571.000000
+Z334 !s90 -quiet|-modelsimini|/home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/D-LogicaSequencial/vunit_out/modelsim/modelsim.ini|-2008|-work|lib|/home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/D-LogicaSequencial/testes/tb_Register16.vhd|
+Z335 !s107 /home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/D-LogicaSequencial/testes/tb_Register16.vhd|
 !i113 1
 R12
 R13
 Atb
-R236
 R237
 R238
 R239
@@ -2926,35 +3042,35 @@ R262
 R263
 R264
 R265
-R24
 R266
+R24
 R267
 R268
 R269
 R270
 R271
 R272
+R273
 R1
 R2
 DEx4 work 13 tb_register16 0 22 neGCFDX;acZZ2Gi0=VNBK1
 !i122 111
 l32
-Z328 L16 53
+Z336 L16 53
 VFbQE38jBKL0e>@UeWX0SW3
 !s100 I604lb[IJ^nY<ASXgeJ;31
 R7
 33
-R324
+R332
 !i10b 1
-R325
-R326
-R327
+R333
+R334
+R335
 !i113 1
 R12
 R13
 Etb_register32
 R0
-R236
 R237
 R238
 R239
@@ -2984,36 +3100,36 @@ R262
 R263
 R264
 R265
-R24
 R266
+R24
 R267
 R268
 R269
 R270
 R271
 R272
+R273
 R1
 R2
 !i122 114
 R3
-Z329 8/home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/D-LogicaSequencial/testes/tb_Register32.vhd
-Z330 F/home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/D-LogicaSequencial/testes/tb_Register32.vhd
+Z337 8/home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/D-LogicaSequencial/testes/tb_Register32.vhd
+Z338 F/home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/D-LogicaSequencial/testes/tb_Register32.vhd
 l0
 R52
 VSJ0`l8SZa2l=_YO77RYHV0
 !s100 W3LMbeI<dMFOf]X`Ylj^02
 R7
 33
-Z331 !s110 1648520761
+Z339 !s110 1648520761
 !i10b 1
-Z332 !s108 1648520761.000000
-Z333 !s90 -quiet|-modelsimini|/home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/D-LogicaSequencial/vunit_out/modelsim/modelsim.ini|-2008|-work|lib|/home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/D-LogicaSequencial/testes/tb_Register32.vhd|
-Z334 !s107 /home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/D-LogicaSequencial/testes/tb_Register32.vhd|
+Z340 !s108 1648520761.000000
+Z341 !s90 -quiet|-modelsimini|/home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/D-LogicaSequencial/vunit_out/modelsim/modelsim.ini|-2008|-work|lib|/home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/D-LogicaSequencial/testes/tb_Register32.vhd|
+Z342 !s107 /home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/D-LogicaSequencial/testes/tb_Register32.vhd|
 !i113 1
 R12
 R13
 Atb
-R236
 R237
 R238
 R239
@@ -3043,35 +3159,35 @@ R262
 R263
 R264
 R265
-R24
 R266
+R24
 R267
 R268
 R269
 R270
 R271
 R272
+R273
 R1
 R2
 DEx4 work 13 tb_register32 0 22 SJ0`l8SZa2l=_YO77RYHV0
 !i122 114
 l32
-R328
+R336
 VBB2zbhlVLSg>K5RU7:VkS2
 !s100 I>Fbf_[e0E>SXZWe5HRKD1
 R7
 33
-R331
+R339
 !i10b 1
-R332
-R333
-R334
+R340
+R341
+R342
 !i113 1
 R12
 R13
 Etb_register64
 R0
-R236
 R237
 R238
 R239
@@ -3101,36 +3217,36 @@ R262
 R263
 R264
 R265
-R24
 R266
+R24
 R267
 R268
 R269
 R270
 R271
 R272
+R273
 R1
 R2
 !i122 116
 R3
-Z335 8/home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/D-LogicaSequencial/testes/tb_Register64.vhd
-Z336 F/home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/D-LogicaSequencial/testes/tb_Register64.vhd
+Z343 8/home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/D-LogicaSequencial/testes/tb_Register64.vhd
+Z344 F/home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/D-LogicaSequencial/testes/tb_Register64.vhd
 l0
 R52
 V>E:WiDI``GMka=5UM>kU80
 !s100 _BznoGzmY[T[:okRZGRm52
 R7
 33
-R221
-!i10b 1
 R222
-Z337 !s90 -quiet|-modelsimini|/home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/D-LogicaSequencial/vunit_out/modelsim/modelsim.ini|-2008|-work|lib|/home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/D-LogicaSequencial/testes/tb_Register64.vhd|
-Z338 !s107 /home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/D-LogicaSequencial/testes/tb_Register64.vhd|
+!i10b 1
+R223
+Z345 !s90 -quiet|-modelsimini|/home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/D-LogicaSequencial/vunit_out/modelsim/modelsim.ini|-2008|-work|lib|/home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/D-LogicaSequencial/testes/tb_Register64.vhd|
+Z346 !s107 /home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/D-LogicaSequencial/testes/tb_Register64.vhd|
 !i113 1
 R12
 R13
 Atb
-R236
 R237
 R238
 R239
@@ -3160,35 +3276,35 @@ R262
 R263
 R264
 R265
-R24
 R266
+R24
 R267
 R268
 R269
 R270
 R271
 R272
+R273
 R1
 R2
 DEx4 work 13 tb_register64 0 22 >E:WiDI``GMka=5UM>kU80
 !i122 116
 l32
-R328
+R336
 V35O2n8Y5Y1DOdc2XSPB:A1
 !s100 _QIf<:8PL@ZjN;;_P?gFU1
 R7
 33
-R221
-!i10b 1
 R222
-R337
-R338
+!i10b 1
+R223
+R345
+R346
 !i113 1
 R12
 R13
 Etb_register8
 R0
-R236
 R237
 R238
 R239
@@ -3218,36 +3334,36 @@ R262
 R263
 R264
 R265
-R24
 R266
+R24
 R267
 R268
 R269
 R270
 R271
 R272
+R273
 R1
 R2
 !i122 108
 R3
-Z339 8/home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/D-LogicaSequencial/testes/tb_Register8.vhd
-Z340 F/home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/D-LogicaSequencial/testes/tb_Register8.vhd
+Z347 8/home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/D-LogicaSequencial/testes/tb_Register8.vhd
+Z348 F/home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/D-LogicaSequencial/testes/tb_Register8.vhd
 l0
 R52
 Vge:MDKDbHAAL_cJ9i[6Q^1
 !s100 >fTU?2ZCn[TWhMe34oW7;2
 R7
 33
-Z341 !s110 1648520413
+Z349 !s110 1648520413
 !i10b 1
-R229
-Z342 !s90 -quiet|-modelsimini|/home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/D-LogicaSequencial/vunit_out/modelsim/modelsim.ini|-2008|-work|lib|/home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/D-LogicaSequencial/testes/tb_Register8.vhd|
-Z343 !s107 /home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/D-LogicaSequencial/testes/tb_Register8.vhd|
+R230
+Z350 !s90 -quiet|-modelsimini|/home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/D-LogicaSequencial/vunit_out/modelsim/modelsim.ini|-2008|-work|lib|/home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/D-LogicaSequencial/testes/tb_Register8.vhd|
+Z351 !s107 /home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/D-LogicaSequencial/testes/tb_Register8.vhd|
 !i113 1
 R12
 R13
 Atb
-R236
 R237
 R238
 R239
@@ -3277,29 +3393,30 @@ R262
 R263
 R264
 R265
-R24
 R266
+R24
 R267
 R268
 R269
 R270
 R271
 R272
+R273
 R1
 R2
 DEx4 work 12 tb_register8 0 22 ge:MDKDbHAAL_cJ9i[6Q^1
 !i122 108
 l32
-R277
+R278
 VEaM<N?99684DFW03eKFfl1
 !s100 63e6UF7nF;eGd3djL28R03
 R7
 33
-R341
+R349
 !i10b 1
-R229
-R342
-R343
+R230
+R350
+R351
 !i113 1
 R12
 R13
@@ -3308,21 +3425,21 @@ R0
 R24
 R1
 R2
-!i122 222
+!i122 233
 R3
-Z344 8/home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/B-LogicaCombinacional/src/TopLevel.vhd
-Z345 F/home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/B-LogicaCombinacional/src/TopLevel.vhd
+Z352 8/home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/B-LogicaCombinacional/src/TopLevel.vhd
+Z353 F/home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/B-LogicaCombinacional/src/TopLevel.vhd
 l0
 L20 1
 V[6XZW8V:?;<9^FCAQC9AK2
 !s100 04mn3hH7ia92Oa>2N0[551
 R7
 33
-Z346 !s110 1648664008
+Z354 !s110 1648729896
 !i10b 1
-Z347 !s108 1648664008.000000
-Z348 !s90 -quiet|-modelsimini|/home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/D-LogicaSequencial/vunit_out/modelsim/modelsim.ini|-2008|-work|lib|/home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/B-LogicaCombinacional/src/TopLevel.vhd|
-Z349 !s107 /home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/B-LogicaCombinacional/src/TopLevel.vhd|
+Z355 !s108 1648729896.000000
+Z356 !s90 -quiet|-modelsimini|/home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/D-LogicaSequencial/vunit_out/modelsim/modelsim.ini|-2008|-work|lib|/home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/B-LogicaCombinacional/src/TopLevel.vhd|
+Z357 !s107 /home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/B-LogicaCombinacional/src/TopLevel.vhd|
 !i113 1
 R12
 R13
@@ -3331,18 +3448,18 @@ R24
 R1
 R2
 DEx4 work 8 toplevel 0 22 [6XZW8V:?;<9^FCAQC9AK2
-!i122 222
+!i122 233
 l48
 L35 56
 V6dP?M0XH>1>J;Ag3EIh_?3
 !s100 ek9onBIOFG0Icgn:<Wf7`2
 R7
 33
-R346
+R354
 !i10b 1
-R347
-R348
-R349
+R355
+R356
+R357
 !i113 1
 R12
 R13
@@ -3352,8 +3469,8 @@ R1
 R2
 !i122 66
 R3
-Z350 8/home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/C-UnidadeLogicaAritmetica/src/zerador16.vhd
-Z351 F/home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/C-UnidadeLogicaAritmetica/src/zerador16.vhd
+Z358 8/home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/C-UnidadeLogicaAritmetica/src/zerador16.vhd
+Z359 F/home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/C-UnidadeLogicaAritmetica/src/zerador16.vhd
 l0
 L8 1
 VnHjHn^^b>WhfhGLTYS^N30
@@ -3363,8 +3480,8 @@ R7
 R8
 !i10b 1
 R9
-Z352 !s90 -quiet|-modelsimini|/home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/D-LogicaSequencial/vunit_out/modelsim/modelsim.ini|-2008|-work|lib|/home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/C-UnidadeLogicaAritmetica/src/zerador16.vhd|
-Z353 !s107 /home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/C-UnidadeLogicaAritmetica/src/zerador16.vhd|
+Z360 !s90 -quiet|-modelsimini|/home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/D-LogicaSequencial/vunit_out/modelsim/modelsim.ini|-2008|-work|lib|/home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/C-UnidadeLogicaAritmetica/src/zerador16.vhd|
+Z361 !s107 /home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/C-UnidadeLogicaAritmetica/src/zerador16.vhd|
 !i113 1
 R12
 R13
@@ -3382,8 +3499,8 @@ R7
 R8
 !i10b 1
 R9
-R352
-R353
+R360
+R361
 !i113 1
 R12
 R13

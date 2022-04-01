@@ -19,7 +19,7 @@ architecture arch of FlipFlopJK is
 begin
 
 	process(clock, J, K) begin
-		if (falling_edge(clock)) then
+		if (rising_edge(clock)) then
 			if (J = '0' and K = '0') then
 				q <= q;
 				notq <= notq;

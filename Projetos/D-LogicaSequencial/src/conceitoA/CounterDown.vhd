@@ -22,14 +22,13 @@ component FlipFlopT is
 	);
 end component;
 
-	signal lixo, sq : std_logic_vector(2 downto 0);
+	signal sq : std_logic_vector(2 downto 0);
 
 begin
 
-	flip0 : FlipFlopT port map(clock => clock, t => '1', q => sq(0), notq => lixo(0));
-	flip1 : FlipFlopT port map(clock => sq(0), t => '1', q => sq(1), notq => lixo(1));
-	flip2 : FlipFlopT port map(clock => sq(1), t => '1', q => sq(2), notq => lixo(2));
+	flip0 : FlipFlopT port map(clock => clock, t => '1', q => sq(0), notq => Open);
+	flip1 : FlipFlopT port map(clock => sq(0), t => '1', q => sq(1), notq => Open);
+	flip2 : FlipFlopT port map(clock => sq(1), t => '1', q => sq(2), notq => Open);
 
 	q <= sq;
-
 end architecture;
