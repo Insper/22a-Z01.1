@@ -59,5 +59,86 @@ architecture arch of Ram8 is
 
 begin
 
+DMux8: Dmux8Way port map(
+	a => load,
+	sel => address,
+	q0 => load0,
+	q1 => load1,
+	q2 => load2,
+	q3 => load3,
+	q4 => load4,
+	q5 => load5,
+	q6 => load6,
+	q7 => load7
+);
+
+Register0: Register16 port map(
+	clock => clock,
+	input => input(15 downto 0),
+	load => load0,
+	output => output0(15 downto 0)
+);
+
+Register1: Register16 port map(
+	clock => clock,
+	input => input(15 downto 0),
+	load => load1,
+	output => output1(15 downto 0)
+);
+
+Register2: Register16 port map(
+	clock => clock,
+	input => input(15 downto 0),
+	load => load2,
+	output => output2(15 downto 0)
+);
+
+Register3: Register16 port map(
+	clock => clock,
+	input => input(15 downto 0),
+	load => load3,
+	output => output3(15 downto 0)
+);
+
+Register4: Register16 port map(
+	clock => clock,
+	input => input(15 downto 0),
+	load => load4,
+	output => output4(15 downto 0)
+);
+
+Register5: Register16 port map(
+	clock => clock,
+	input => input(15 downto 0),
+	load => load5,
+	output => output5(15 downto 0)
+);
+
+Register6: Register16 port map(
+	clock => clock,
+	input => input(15 downto 0),
+	load => load6,
+	output => output6(15 downto 0)
+);
+
+Register7: Register16 port map(
+	clock => clock,
+	input => input(15 downto 0),
+	load => load7,
+	output => output7(15 downto 0)
+);
+
+Mux8Way: Mux8Way16 port map(
+	a => output0,
+	b => output1,
+	c => output2,
+	d => output3,
+	e => output4,
+	f => output5,
+	g => output6,
+	h => output7,
+	sel => address,
+	q => output
+);
 
 end architecture;
