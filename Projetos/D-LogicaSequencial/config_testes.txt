@@ -16,7 +16,7 @@ FlipFlopD.vhd
 ########
 # Rubrica A
 #
-FlipFlopT.vhd
-FlipFlopJK.vhd
-CounterDown.vhd
+# FlipFlopT.vhd
+# FlipFlopJK.vhd
+# CounterDown.vhd
  
