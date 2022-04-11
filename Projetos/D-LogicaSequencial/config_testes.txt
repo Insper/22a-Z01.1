@@ -1,7 +1,7 @@
 # Testes a serem executados
 # Descomente os módulos que deseja testar
   
-FlipFlopD.vhd
+# FlipFlopD.vhd
 #BinaryDigit.vhd
 #PC.vhd
 #Register8.vhd
@@ -17,6 +17,6 @@ FlipFlopD.vhd
 # Rubrica A
 #
 FlipFlopT.vhd
-FlipFlopJK.vhd
-CounterDown.vhd
+# FlipFlopJK.vhd
+# CounterDown.vhd
  

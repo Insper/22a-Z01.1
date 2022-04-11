@@ -20,6 +20,7 @@ begin
 		if rising_edge(clock) then
 			if (t = '1') then
 				q <= notq;
+				notq <= q;
 			end if;
 		end if;
 	end process;

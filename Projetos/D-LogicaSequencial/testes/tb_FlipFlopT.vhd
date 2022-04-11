@@ -36,10 +36,20 @@ begin
     test_runner_setup(runner, runner_cfg);
 
     -- IMPLEMENTE AQUI!
+    t <= '0';
     wait until clk'event and clk='0';
+    assert(q = '0' and notq = '1')  report "Falha em teste: 0" severity error;
 
     -- finish
+    t <= '1';
     wait until clk'event and clk='0';
+    assert(q = '1' and notq = '0')  report "Falha em teste: 0" severity error;
+
+    t <= '1';
+    wait until clk'event and clk='0';
+    assert(q = '0' and notq = '1')  report "Falha em teste: 0" severity error;
+    
+    
     test_runner_cleanup(runner); -- Simulation ends here
 
 	wait;
