@@ -46,5 +46,31 @@ architecture arch of PC is
 
 begin
 
+    Inc16 inc16(
+        a => muxOut,
+        q => muxOut
+    );
+
+    Register16 reg16(
+        clock => clock,
+        input => input,
+        load => load,
+        output => muxOut
+    );
+
+    process(clock)
+    begin
+        if rising_edge(clock) then
+            if reset = '1' then
+                muxOut <= (others => '0');
+            elsif load = '1' then
+                muxOut <= input;
+            elsif increment = '1' then
+                muxOut <= muxOut + (others => '1');
+            end if;
+        end if;
+    end process;
+
+    muxOut <= reg16.output;
 
 end architecture;
