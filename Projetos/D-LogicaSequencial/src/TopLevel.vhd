@@ -19,9 +19,10 @@ use work.all;
 ----------------------------
 entity TopLevel is
 	port(
-		SW      : in  std_logic_vector(9 downto 0);
-		KEY     : in  std_logic_vector(3 downto 0);
-		LEDR    : out std_logic_vector(9 downto 0)
+		clock:   in STD_LOGIC;
+		input:   in STD_LOGIC_VECTOR(15 downto 0);
+		load:    in STD_LOGIC;
+		output: out STD_LOGIC_VECTOR(15 downto 0)
 	);
 end entity;
 
@@ -31,39 +32,36 @@ end entity;
 architecture rtl of TopLevel is
 
 
-component FlipFlopD is
+component Register8 is
 	port(
-		clock:  in std_logic;
-		d:      in std_logic;
-		clear:  in std_logic;
-		preset: in std_logic;
-		q:     out std_logic
+		clock:   in STD_LOGIC;
+		input:   in STD_LOGIC_VECTOR(7 downto 0);
+		load:    in STD_LOGIC;
+		output: out STD_LOGIC_VECTOR(7 downto 0)
 	);
 end component;
-
---------------
--- signals
---------------
-
-signal clock, clear, set : std_logic;
+signal input_reg: STD_LOGIC_VECTOR(15 downto 0);
+signal output_reg: STD_LOGIC_VECTOR(15 downto 0);
+signal load_reg: STD_LOGIC;
 
 ---------------
 -- implementacao
 ---------------
 begin
-
-Clock <= not KEY(0); -- os botoes quando nao apertado vale 1
-                     -- e apertado 0, essa logica inverte isso
-clear <= not KEY(1);
-set	<= not KEY(2);
-
-u0 : FlipFlopD port map (
-		clock    => Clock,
-		d        => SW(0),
-		clear    => clear,
-		preset   => set,
-		q        => LEDR(0)
-	);		
- 
+	b0 : Register8 port map (
+		clock => clock,
+		input => input_reg(7 downto 0),
+		load => load_reg,
+		output => output_reg(7 downto 0)
+	);
+	b1 : Register8 port map (
+		clock => clock,
+		input => input_reg(15 downto 8),
+		load => load_reg,
+		output => output_reg(15 downto 8)
+	);
+	output<=output_reg;
+	input_reg<=input;
+	load_reg<=load;
 
 end rtl;
