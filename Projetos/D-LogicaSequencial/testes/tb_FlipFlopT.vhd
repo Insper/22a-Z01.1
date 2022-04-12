@@ -39,17 +39,11 @@ begin
       t <= '0'; 
     wait until clk'event and clk='0';
 		  assert(q = '0')  report "Falha em teste: 0" severity error;
-
-      t <= '0'; 
-    wait until clk'event and clk='0';
-		  assert(notq = '1')  report "Falha em teste: 1" severity error;
-
-      t <= '1'; 
-    wait until clk'event and clk='0';
-      assert(q = '1')  report "Falha em teste: 2" severity error;
+      assert(notq = '1')  report "Falha em teste: 1" severity error;
 
       t <= '1';
     wait until clk'event and clk='0';
+      assert(q = '1')  report "Falha em teste: 2" severity error;
       assert(notq = '0')  report "Falha em teste: 3" severity error;
     -- finish
     wait until clk'event and clk='0';
