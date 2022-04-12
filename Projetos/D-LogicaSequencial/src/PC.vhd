@@ -3,12 +3,6 @@
 -- file: PC.vhd
 -- date: 4/4/2017
 
--- Contador de 16bits
--- if (reset[t] == 1) out[t+1] = 0
--- else if (load[t] == 1)  out[t+1] = in[t]
--- else if (inc[t] == 1) out[t+1] = out[t] + 1
--- else out[t+1] = out[t]
-
 library ieee;
 use ieee.std_logic_1164.all;
 use IEEE.NUMERIC_STD.ALL;
@@ -26,6 +20,9 @@ end entity;
 
 architecture arch of PC is
 
+ signal regIn : std_logic_vector(15 downto 0);
+ signal regOut : std_logic_vector(15 downto 0);
+ signal icrOut : std_logic_vector(15 downto 0);
  signal muxOut : std_logic_vector(15 downto 0);
 
   component Inc16 is
@@ -44,33 +41,48 @@ architecture arch of PC is
         );
     end component;
 
+    component Mux16 is
+      port(
+          a: in STD_LOGIC_VECTOR(15 downto 0);
+          b: in STD_LOGIC_VECTOR(15 downto 0);
+          sel: in STD_LOGIC;
+          q: out STD_LOGIC_VECTOR(15 downto 0)
+        );
+    end component;
+
 begin
 
-    inc16 : Inc16 port map(
-        a => muxOut,
+    icr16 : Inc16 port map(
+        a => regOut,
+        q => icrOut
+    );
+    
+    reg16 : Register16 port map(
+        clock => clock,
+        input => regIn,
+        load => '1',
+        output => regOut
+    );
+    
+    mux1 : Mux16 port map(
+        a => regOut,
+        b => icrOut,
+        sel => increment,
         q => muxOut
     );
 
-    reg16 : Register16 port map(
-        clock => clock,
-        input => input,
-        load => load,
-        output => muxOut
+    mux2 : Mux16 port map(
+        a => muxOut,
+        b => input,
+        sel => load,
+        q => regIn
     );
 
-    process(clock)
-    begin
-        if rising_edge(clock) then
-            if reset = '1' then
-                muxOut <= (others => '0');
-            elsif load = '1' then
-                muxOut <= input;
-            elsif increment = '1' then
-                muxOut <= muxOut + (others => '1');
-            end if;
-        end if;
-    end process;
-
-    output <= muxOut;
+    mux3 : Mux16 port map(
+        a => regOut,
+        b => "0000000000000000",
+        sel => reset,
+        q => output
+    );
 
 end architecture;
