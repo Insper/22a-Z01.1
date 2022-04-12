@@ -27,38 +27,14 @@ architecture arch of Register8 is
 
 begin
 
-
-
-	-- Agora com o componente 'criado'
-	-- podemos utilizar no nosso projeto
-	--
-	--  podemos dar um 'nome' à instancia do componente
-	--  |
-	--  |          nome do componente a ser usado
-	--  |          | 
-	--  v          v
-	BinaryDigit0 : BinaryDigit port map(
-		clock  => clock,
-		input  => input(0),
-		load   => load,
-		output => output(0)
-	);
-
-	BinaryDigit1 : BinaryDigit port map(
-		clock  => clock,
-		input  => input(1),
-		load   => load,
-		output => output(1)
-
-	);
-
-	BinaryDigit2 : BinaryDigit port map(
-		clock  => clock,
-		input  => input(2),
-		load   => load,
-		output => output(2)
- 
-	);
+	Reg0 : BinaryDigit port map(clock => clock, input => input(0), load => load, output => output(0));
+	Reg1 : BinaryDigit port map(clock => clock, input => input(1), load => load, output => output(1));
+	Reg2 : BinaryDigit port map(clock => clock, input => input(2), load => load, output => output(2));
+	Reg3 : BinaryDigit port map(clock => clock, input => input(3), load => load, output => output(3));
+	Reg4 : BinaryDigit port map(clock => clock, input => input(4), load => load, output => output(4));
+	Reg5 : BinaryDigit port map(clock => clock, input => input(5), load => load, output => output(5));
+	Reg6 : BinaryDigit port map(clock => clock, input => input(6), load => load, output => output(6));
+	Reg7 : BinaryDigit port map(clock => clock, input => input(7), load => load, output => output(7));
 
 	BinaryDigit3 : BinaryDigit port map(
 		clock  => clock,
@@ -97,9 +73,3 @@ begin
 		input  => input(7),
 		load   => load,
 		output => output(7)
- 
-	);
-
-
-
-end architecture;
