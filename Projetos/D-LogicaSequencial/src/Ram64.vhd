@@ -62,7 +62,7 @@ begin
 
 	mux1: Mux8Way16 port map (
 		a => output0, b => output1, c => output2, d => output3, e => output4, f => output5, g => output6, h => output7,
-		sel => address (5 downto 4), q => output);
+		sel => address (5 downto 3), q => output);
 
 	ram1: Ram8 port map (clock, input, load0, address(2 downto 0), output0);
 	ram2: Ram8 port map (clock, input, load1, address(2 downto 0), output1);
@@ -71,7 +71,7 @@ begin
 	ram5: Ram8 port map (clock, input, load4, address(2 downto 0), output4);
 	ram6: Ram8 port map (clock, input, load5, address(2 downto 0), output5);
 	ram7: Ram8 port map (clock, input, load6, address(2 downto 0), output6);
-	ram8: Ram8 port map (clock, input, load7, address(2 downto 0), output7);
+	ram12: Ram8 port map (clock, input, load7, address(2 downto 0), output7);
 
 	dmux1: DMux8Way port map (
 		a => load, sel => address (5 downto 3),
