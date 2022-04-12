@@ -46,12 +46,12 @@ architecture arch of PC is
 
 begin
 
-    Inc16 inc16(
+    inc16 : Inc16 port map(
         a => muxOut,
         q => muxOut
     );
 
-    Register16 reg16(
+    reg16 : Register16 port map(
         clock => clock,
         input => input,
         load => load,
@@ -71,6 +71,6 @@ begin
         end if;
     end process;
 
-    muxOut <= reg16.output;
+    output <= muxOut;
 
 end architecture;
