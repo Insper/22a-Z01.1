@@ -27,4 +27,7 @@ architecture arch of Register64 is
 
 begin
 
+	Reg0 : Register32 port map(clock => clock, input => input(31 downto 0), load => load, output => output(31 downto 0));
+	Reg1 : Register32 port map(clock => clock, input => input(63 downto 32), load => load, output => output(63 downto 32));
+	
 end architecture;
