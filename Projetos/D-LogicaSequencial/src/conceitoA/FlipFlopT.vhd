@@ -14,6 +14,7 @@ entity FlipFlopT is
 end entity;
 
 architecture arch of FlipFlopT is
+	signal saida : STD_LOGIC;
 
 begin
 	process(clock) begin
@@ -22,8 +23,8 @@ begin
 				q<= q;
 				notq <= notq;
 			elsif (t = '1') then
-				q <= notq;
-				notq <= q;
+				q <= not(q);
+				notq <= not(q);
 			end if;
 		end if;
   end process;
