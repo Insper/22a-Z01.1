@@ -35,11 +35,14 @@ begin
 
     -- IMPLEMENTE AQUI!
     wait until clk'event and clk='0';
-		assert(Q = "111")  report "Precisa fazer os testes" severity error;
+		assert(q = "111")  report "Falhou no primeiro teste" severity error;
 
-
-    -- finish
     wait until clk'event and clk='0';
+		assert(q = "110")  report "Falhou no segundo teste" severity error;
+
+    wait until clk'event and clk='0';
+		assert(q = "101")  report "Falhou no terceiro teste" severity error;
+
     test_runner_cleanup(runner); -- Simulation ends here
 
 	wait;
