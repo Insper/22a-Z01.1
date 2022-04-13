@@ -1,0 +1,9 @@
+# do /home/borg/.local/lib/python3.8/site-packages/vunit/sim_if/tcl_read_eval_loop.tcl
+# vsim -modelsimini /home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/D-LogicaSequencial/vunit_out/modelsim/modelsim.ini -wlf /home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/D-LogicaSequencial/vunit_out/test_output/lib.tb_flipflopjk.all_9d64ce8fdac1f786e8a805d2925482d388c3ef65/modelsim/vsim.wlf -quiet -t ps -onfinish stop lib.tb_flipflopjk(tb) -L vunit_lib -L lib -g/tb_flipflopjk/runner_cfg="active python runner : true,enabled_test_cases : ,output path : /home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/D-LogicaSequencial/vunit_out/test_output/lib.tb_flipflopjk.all_9d64ce8fdac1f786e8a805d2925482d388c3ef65/,tb path : /home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/D-LogicaSequencial/testes/,use_color : true" 
+# Start time: 09:52:47 on Mar 31,2022
+# ** Warning: Design size of 21452 statements exceeds ModelSim-Intel FPGA Starter Edition recommended capacity.
+# Expect performance to be adversely affected.
+# Break in Subprogram stop at /home/borg/.local/lib/python3.8/site-packages/vunit/vhdl/core/src/stop_body_2008p.vhd line 13
+# Stopped at /home/borg/.local/lib/python3.8/site-packages/vunit/vhdl/core/src/stop_body_2008p.vhd line 13
+# End time: 09:52:47 on Mar 31,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 1

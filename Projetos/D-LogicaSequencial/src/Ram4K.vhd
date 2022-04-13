@@ -22,7 +22,7 @@ architecture arch of Ram4K is
 			clock:   in  STD_LOGIC;
 			input:   in  STD_LOGIC_VECTOR(15 downto 0);
 			load:    in  STD_LOGIC;
-			address: in  STD_LOGIC_VECTOR( 8 downto 0);
+			address: in  STD_LOGIC_VECTOR(8 downto 0);
 			output:  out STD_LOGIC_VECTOR(15 downto 0)
 		);
 	end component;
@@ -60,15 +60,40 @@ architecture arch of Ram4K is
 
 begin
 
-	demux8way : DMux8Way port map(load, address (11 downto 9), load0, load1, load2, load3, load4, load5, load6, load7);
-    ram0 : Ram512 port map(clock, input, load0, address(8 downto 0), output0);
-    ram1 : Ram512 port map(clock, input, load1, address(8 downto 0), output1);
-    ram2 : Ram512 port map(clock, input, load2, address(8 downto 0), output2);
-    ram3 : Ram512 port map(clock, input, load3, address(8 downto 0), output3);
-    ram4 : Ram512 port map(clock, input, load4, address(8 downto 0), output4);
-    ram5 : Ram512 port map(clock, input, load5, address(8 downto 0), output5);
-    ram6 : Ram512 port map(clock, input, load6, address(8 downto 0), output6);
-    ram7 : Ram512 port map(clock, input, load7, address(8 downto 0), output7);
-    mux8w16 : Mux8Way16 port map(output0, output1, output2, output3, output4, output5, output6, output7, address(11 downto 9), output);
+	demux: DMux8Way port map (
+		a => load,
+		sel => address(2 downto 0),
+		q0 => load0,
+		q1 => load1,
+		q2 => load2,
+		q3 => load3,
+		q4 => load4,
+		q5 => load5,
+		q6 => load6,
+		q7 => load7
+	);
 	
+	r1: Ram512 port map(clock => clock, input => input, load => load0, address => address(8 downto 0), output => output0);
+	r2: Ram512 port map(clock => clock, input => input, load => load1, address => address(8 downto 0), output => output1);
+	r3: Ram512 port map(clock => clock, input => input, load => load2, address => address(8 downto 0), output => output2);
+	r4: Ram512 port map(clock => clock, input => input, load => load3, address => address(8 downto 0), output => output3);
+	r5: Ram512 port map(clock => clock, input => input, load => load4, address => address(8 downto 0), output => output4);
+	r6: Ram512 port map(clock => clock, input => input, load => load5, address => address(8 downto 0), output => output5);
+	r7: Ram512 port map(clock => clock, input => input, load => load6, address => address(8 downto 0), output => output6);
+	r8: Ram512 port map(clock => clock, input => input, load => load7, address => address(8 downto 0), output => output7);
+	
+	mux: Mux8Way16 port map (
+		a => output0,
+		b => output1,
+		c => output2,
+		d => output3,
+		e => output4,
+		f => output5,
+		g => output6,
+		h => output7,
+		sel => address(2 downto 0),
+		q => output
+	);
+
+
 end architecture;

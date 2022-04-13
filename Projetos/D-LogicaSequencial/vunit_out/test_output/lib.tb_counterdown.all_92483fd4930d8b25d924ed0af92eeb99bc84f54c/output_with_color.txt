@@ -2,26 +2,5 @@
 # Start time: 14:28:12 on Mar 26,2022
 # ** Warning: Design size of 21509 statements exceeds ModelSim-Intel FPGA Starter Edition recommended capacity.
 # Expect performance to be adversely affected.
-# ** Error: Precisa fazer os testes
-#    Time: 200 ps  Iteration: 0  Process: /tb_counterdown/main File: /home/gustavoeso/Documents/insper/trancando/elementos/Z01.1-Boolean/Projetos/D-LogicaSequencial/testes/tb_CounterDown.vhd
-# Break in Process main at /home/gustavoeso/Documents/insper/trancando/elementos/Z01.1-Boolean/Projetos/D-LogicaSequencial/testes/tb_CounterDown.vhd line 38
-# Stopped at /home/gustavoeso/Documents/insper/trancando/elementos/Z01.1-Boolean/Projetos/D-LogicaSequencial/testes/tb_CounterDown.vhd line 38
-# 
-# Test Run Failed!
-# 
-# Stack trace result from 'tb' command
-#  /home/gustavoeso/Documents/insper/trancando/elementos/Z01.1-Boolean/Projetos/D-LogicaSequencial/testes/tb_CounterDown.vhd 38 return [address 0xf6d73949] Process main
-# 
-# 
-# Surrounding code from 'see' command
-#   33 :   begin
-#   34 :     test_runner_setup(runner, runner_cfg);
-#   35 : 
-#   36 :     -- IMPLEMENTE AQUI!
-#   37 :     wait until clk'event and clk='0';
-# ->38 : 		assert(Q = "111")  report "Precisa fazer os testes" severity error;
-#   39 : 
-#   40 : 
-#   41 :     -- finish
-#   42 :     wait until clk'event and clk='0';
-# 
+# Break in Subprogram stop at /home/borg/.local/lib/python3.8/site-packages/vunit/vhdl/core/src/stop_body_2008p.vhd line 13
+# Stopped at /home/borg/.local/lib/python3.8/site-packages/vunit/vhdl/core/src/stop_body_2008p.vhd line 13

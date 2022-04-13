@@ -26,6 +26,7 @@ architecture arch of Register16 is
 	end component;
 
 begin
+
 	Resgister8_1 : Register8 port map (
 		clock => clock,
 		input => input(7 downto 0),
