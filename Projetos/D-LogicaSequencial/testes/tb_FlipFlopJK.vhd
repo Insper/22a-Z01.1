@@ -1,6 +1,9 @@
 -- Elementos de Sistemas
 -- tb_A-FlipFlopJK.vhd
 
+-- Implementa o teste do flipflopJK
+-- arquivo : tb_FlipFlopJK.vhd
+
 Library ieee;
 use ieee.std_logic_1164.all;
 
@@ -37,7 +40,44 @@ begin
     test_runner_setup(runner, runner_cfg);
 
     -- IMPLEMENTE AQUI!
+    -- Teste do flipflopJK
+    J <= '0'; 
+    K <= '0';
     wait until clk'event and clk='0';
+    assert(
+      q = '0' 
+      and notq='1') 
+    report "Teste 1 nao passou" severity error;
+
+    J <= '0'; 
+    K <= '1';
+    wait until clk'event and clk='0';
+    assert(
+      q = '0' 
+      and notq='1')
+    report "Teste 2 nao passou" severity error;
+	 
+    J <= '1'; 
+    K <= '0';
+    wait until clk'event and clk='0';
+    assert(
+      q = '1' 
+      and notq='0')
+    report "Teste 3 nao passou" severity error;
+    
+    J <= '1'; 
+    K <= '1';
+    wait until clk'event and clk='0';
+    assert(
+      q ='0' 
+    and notq='1')  
+    report "Teste 4 nao passou" severity error;
+	 
+	 wait until clk'event and clk='0';
+    assert(
+      q ='1' 
+      and notq='0')  
+    report "Teste 5 nao passou" severity error;
 
     -- finish
     wait until clk'event and clk='0';

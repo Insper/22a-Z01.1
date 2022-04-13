@@ -14,7 +14,17 @@ entity FlipFlopT is
 end entity;
 
 architecture arch of FlipFlopT is
-
 begin
 
+	process(clock) begin
+		if (rising_edge(CLOCK)) then
+			if (t = '0') then
+				q<= q;
+				notq <= notq;
+			elsif (t = '1') then
+				q <= not(q);
+				notq <= not(notq);
+			end if;
+		end if;
+  end process;
 end architecture;
