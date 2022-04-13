@@ -36,4 +36,43 @@ begin
 	Reg6 : BinaryDigit port map(clock => clock, input => input(6), load => load, output => output(6));
 	Reg7 : BinaryDigit port map(clock => clock, input => input(7), load => load, output => output(7));
 
+	-- BinaryDigit3 : BinaryDigit port map(
+	-- 	clock  => clock,
+	-- 	input  => input(3),
+	-- 	load   => load,
+	-- 	output => output(3)
+ 
+	-- );
+
+	-- BinaryDigit4 : BinaryDigit port map(
+	-- 	clock  => clock,
+	-- 	input  => input(4),
+	-- 	load   => load,
+	-- 	output => output(4)
+ 
+	-- );
+
+	-- BinaryDigit5 : BinaryDigit port map(
+	-- 	clock  => clock,
+	-- 	input  => input(5),
+	-- 	load   => load,
+	-- 	output => output(5)
+ 
+	-- );
+
+	-- BinaryDigit6 : BinaryDigit port map(
+	-- 	clock  => clock,
+	-- 	input  => input(6),
+	-- 	load   => load,
+	-- 	output => output(6)
+ 
+	-- );
+
+	-- BinaryDigit7 : BinaryDigit port map(
+	-- 	clock  => clock,
+	-- 	input  => input(7),
+	-- 	load   => load,
+	-- 	output => output(7)
+	-- );
+
 end architecture;

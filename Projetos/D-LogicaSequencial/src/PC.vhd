@@ -45,31 +45,53 @@ architecture arch of PC is
     end component;
 
     component Mux16 is
-        port ( 
-                a:   in  STD_LOGIC_VECTOR(15 downto 0);
-                b:   in  STD_LOGIC_VECTOR(15 downto 0);
-                sel: in  STD_LOGIC;
-                q:   out STD_LOGIC_VECTOR(15 downto 0));
+    port (
+        a: in STD_LOGIC_VECTOR(15 downto 0);
+        b: in STD_LOGIC_VECTOR(15 downto 0);
+        sel: in STD_LOGIC;
+        q: out STD_LOGIC_VECTOR(15 downto 0)
+    );
     end component;
 
-    signal outputReg16, inputReg16,Incrementado, saidamuxinc, muxloadeOut, muxResetOut : STD_LOGIC_VECTOR(15 downto 0);
-    
+  signal inc_out, mux1_out, mux2_out, mux3_out,o_t: STD_LOGIC_VECTOR(15 downto 0);
+
+
 begin
-    
-    incrementer: Inc16 port map(a => outputReg16, q => Incrementado);
-    
-    muxincrementacao: Mux16 port map(a => outputReg16, b => Incrementado, 
-    sel => increment, q => saidamuxinc);
-    
-    muxloader: Mux16 port map(a => saidamuxinc, b => input, sel => load, 
-    q => muxloadeOut);
-    
-    muxreseter: Mux16 port map(a => muxloadeOut, b => "0000000000000000", 
-    sel => reset, q => muxResetOut);
 
-    registrador: Register16 port map(clock => clock, input => muxResetOut, 
-    load =>'1', output => outputReg16);
+    inc: Inc16 port map (         
+        a => o_t,             -- saída o(t)
+        q => inc_out          -- saída incrementada
+    );
 
-    output <= outputReg16;
+   
+    mux1: Mux16 port map (    -- Multiplexador incremental
+        a => o_t,             
+        b => inc_out,         -- Caso increment = 0
+        sel => increment,     -- Caso increment = 1  / o(t+1) = o(t)+1 (saída incrementada)
+        q => mux1_out
+    );
+
+    mux2: Mux16 port map(
+        a => mux1_out,            -- Caso load = 0         
+        b => input,               -- Caso load = 1 / o(t+1) = in(t)
+        sel => load,
+        q => mux2_out 
+    );
+
+    mux3: Mux16 port map(
+        a => mux2_out,          -- Caso reset = 0      
+        b => x"0000",           -- Caso reset = 1   
+        sel => reset,
+        q => mux3_out 
+    );
+
+    registrador : Register16 port map (     -- Registrador
+        clock => clock,
+        input => mux3_out,
+        load  => '1',                       
+        output => o_t
+    );
+
+    output <= o_t;                          -- saída
 
 end architecture;

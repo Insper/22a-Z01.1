@@ -1,0 +1,10 @@
+# End time: 10:34:38 on Mar 28,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 1
+# vsim -modelsimini /home/gustavoeso/Documents/insper/trancando/elementos/Z01.1-Boolean/Projetos/B-LogicaCombinacional/vunit_out/modelsim/modelsim.ini -wlf /home/gustavoeso/Documents/insper/trancando/elementos/Z01.1-Boolean/Projetos/B-LogicaCombinacional/vunit_out/test_output/lib.tb_barrelshifter16.all_fd54692e9cc3108fd2877e54a5465bee032e18cb/modelsim/vsim.wlf -quiet -t ps -onfinish stop lib.tb_barrelshifter16(tb) -L vunit_lib -L lib -g/tb_barrelshifter16/runner_cfg="active python runner : true,enabled_test_cases : ,output path : /home/gustavoeso/Documents/insper/trancando/elementos/Z01.1-Boolean/Projetos/B-LogicaCombinacional/vunit_out/test_output/lib.tb_barrelshifter16.all_fd54692e9cc3108fd2877e54a5465bee032e18cb/,tb path : /home/gustavoeso/Documents/insper/trancando/elementos/Z01.1-Boolean/Projetos/B-LogicaCombinacional/testes/,use_color : true" 
+# Start time: 10:34:38 on Mar 28,2022
+# ** Warning: Design size of 21625 statements exceeds ModelSim-Intel FPGA Starter Edition recommended capacity.
+# Expect performance to be adversely affected.
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_barrelshifter16/mapping
+# Break in Subprogram stop at /home/gustavoeso/.local/lib/python3.8/site-packages/vunit/vhdl/core/src/stop_body_2008p.vhd line 13
+# Stopped at /home/gustavoeso/.local/lib/python3.8/site-packages/vunit/vhdl/core/src/stop_body_2008p.vhd line 13

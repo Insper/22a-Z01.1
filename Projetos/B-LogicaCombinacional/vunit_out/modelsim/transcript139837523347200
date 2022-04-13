@@ -1,0 +1,112 @@
+# do /home/gustavoeso/.local/lib/python3.8/site-packages/vunit/sim_if/tcl_read_eval_loop.tcl
+# vsim -modelsimini /home/gustavoeso/Documents/insper/trancando/elementos/Z01.1-Boolean/Projetos/B-LogicaCombinacional/vunit_out/modelsim/modelsim.ini -wlf /home/gustavoeso/Documents/insper/trancando/elementos/Z01.1-Boolean/Projetos/B-LogicaCombinacional/vunit_out/test_output/lib.tb_or16.all_cfb9f3841c28e91861188c31754b6dea4385f15a/modelsim/vsim.wlf -quiet -t ps -onfinish stop lib.tb_or16(tb) -L vunit_lib -L lib -g/tb_or16/runner_cfg="active python runner : true,enabled_test_cases : ,output path : /home/gustavoeso/Documents/insper/trancando/elementos/Z01.1-Boolean/Projetos/B-LogicaCombinacional/vunit_out/test_output/lib.tb_or16.all_cfb9f3841c28e91861188c31754b6dea4385f15a/,tb path : /home/gustavoeso/Documents/insper/trancando/elementos/Z01.1-Boolean/Projetos/B-LogicaCombinacional/testes/,use_color : true" 
+# Start time: 09:40:54 on Mar 28,2022
+# ** Warning: Design size of 21582 statements exceeds ModelSim-Intel FPGA Starter Edition recommended capacity.
+# Expect performance to be adversely affected.
+# Break in Subprogram stop at /home/gustavoeso/.local/lib/python3.8/site-packages/vunit/vhdl/core/src/stop_body_2008p.vhd line 13
+# Stopped at /home/gustavoeso/.local/lib/python3.8/site-packages/vunit/vhdl/core/src/stop_body_2008p.vhd line 13
+# End time: 09:40:55 on Mar 28,2022, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 1
+# vsim -modelsimini /home/gustavoeso/Documents/insper/trancando/elementos/Z01.1-Boolean/Projetos/B-LogicaCombinacional/vunit_out/modelsim/modelsim.ini -wlf /home/gustavoeso/Documents/insper/trancando/elementos/Z01.1-Boolean/Projetos/B-LogicaCombinacional/vunit_out/test_output/lib.tb_dmux2way.all_a8a6edfaeffa9d5204e37fd61e7c8fe0325f81fa/modelsim/vsim.wlf -quiet -t ps -onfinish stop lib.tb_dmux2way(tb) -L vunit_lib -L lib -g/tb_dmux2way/runner_cfg="active python runner : true,enabled_test_cases : ,output path : /home/gustavoeso/Documents/insper/trancando/elementos/Z01.1-Boolean/Projetos/B-LogicaCombinacional/vunit_out/test_output/lib.tb_dmux2way.all_a8a6edfaeffa9d5204e37fd61e7c8fe0325f81fa/,tb path : /home/gustavoeso/Documents/insper/trancando/elementos/Z01.1-Boolean/Projetos/B-LogicaCombinacional/testes/,use_color : true" 
+# Start time: 09:40:55 on Mar 28,2022
+# ** Warning: Design size of 21568 statements exceeds ModelSim-Intel FPGA Starter Edition recommended capacity.
+# Expect performance to be adversely affected.
+# ** Warning: (vsim-8683) Uninitialized out port /tb_dmux2way/mapping/q0 has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /tb_dmux2way/mapping/q1 has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Error: Falha em teste: 1
+#    Time: 500 ps  Iteration: 1  Process: /tb_dmux2way/main File: /home/gustavoeso/Documents/insper/trancando/elementos/Z01.1-Boolean/Projetos/B-LogicaCombinacional/testes/tb_DMux2Way.vhd
+# Break in Process main at /home/gustavoeso/Documents/insper/trancando/elementos/Z01.1-Boolean/Projetos/B-LogicaCombinacional/testes/tb_DMux2Way.vhd line 51
+# Stopped at /home/gustavoeso/Documents/insper/trancando/elementos/Z01.1-Boolean/Projetos/B-LogicaCombinacional/testes/tb_DMux2Way.vhd line 51
+# 
+# Test Run Failed!
+# 
+# Stack trace result from 'tb' command
+#  /home/gustavoeso/Documents/insper/trancando/elementos/Z01.1-Boolean/Projetos/B-LogicaCombinacional/testes/tb_DMux2Way.vhd 51 return [address 0xf6d73b2b] Process main
+# 
+# 
+# Surrounding code from 'see' command
+#   46 :     test_runner_setup(runner, runner_cfg);
+#   47 : 
+#   48 :     -- Teste: 1
+#   49 :     inA <= '1'; inSel<= '0';
+#   50 :     wait until clk='1' ;
+# ->51 :     assert(outQ0 = '1' and outQ1 = '0')  report "Falha em teste: 1" severity error;
+#   52 : 
+#   53 :     -- Teste: 2
+#   54 :     inA <= '1'; inSel<= '1';
+#   55 :     wait until clk='1' ;
+# 
+# End time: 09:40:55 on Mar 28,2022, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 3
+# vsim -modelsimini /home/gustavoeso/Documents/insper/trancando/elementos/Z01.1-Boolean/Projetos/B-LogicaCombinacional/vunit_out/modelsim/modelsim.ini -wlf /home/gustavoeso/Documents/insper/trancando/elementos/Z01.1-Boolean/Projetos/B-LogicaCombinacional/vunit_out/test_output/lib.tb_mux4way.all_eb305fd8bfee2240fe2d11f62749d522292ea5cb/modelsim/vsim.wlf -quiet -t ps -onfinish stop lib.tb_mux4way(tb) -L vunit_lib -L lib -g/tb_mux4way/runner_cfg="active python runner : true,enabled_test_cases : ,output path : /home/gustavoeso/Documents/insper/trancando/elementos/Z01.1-Boolean/Projetos/B-LogicaCombinacional/vunit_out/test_output/lib.tb_mux4way.all_eb305fd8bfee2240fe2d11f62749d522292ea5cb/,tb path : /home/gustavoeso/Documents/insper/trancando/elementos/Z01.1-Boolean/Projetos/B-LogicaCombinacional/testes/,use_color : true" 
+# Start time: 09:40:55 on Mar 28,2022
+# ** Warning: Design size of 21649 statements exceeds ModelSim-Intel FPGA Starter Edition recommended capacity.
+# Expect performance to be adversely affected.
+# Break in Subprogram stop at /home/gustavoeso/.local/lib/python3.8/site-packages/vunit/vhdl/core/src/stop_body_2008p.vhd line 13
+# Stopped at /home/gustavoeso/.local/lib/python3.8/site-packages/vunit/vhdl/core/src/stop_body_2008p.vhd line 13
+# End time: 09:40:55 on Mar 28,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 1
+# vsim -modelsimini /home/gustavoeso/Documents/insper/trancando/elementos/Z01.1-Boolean/Projetos/B-LogicaCombinacional/vunit_out/modelsim/modelsim.ini -wlf /home/gustavoeso/Documents/insper/trancando/elementos/Z01.1-Boolean/Projetos/B-LogicaCombinacional/vunit_out/test_output/lib.tb_mux8way16.all_bb14d33e746ee3d85cb7ba2b460e0aeab8347928/modelsim/vsim.wlf -quiet -t ps -onfinish stop lib.tb_mux8way16(tb) -L vunit_lib -L lib -g/tb_mux8way16/runner_cfg="active python runner : true,enabled_test_cases : ,output path : /home/gustavoeso/Documents/insper/trancando/elementos/Z01.1-Boolean/Projetos/B-LogicaCombinacional/vunit_out/test_output/lib.tb_mux8way16.all_bb14d33e746ee3d85cb7ba2b460e0aeab8347928/,tb path : /home/gustavoeso/Documents/insper/trancando/elementos/Z01.1-Boolean/Projetos/B-LogicaCombinacional/testes/,use_color : true" 
+# Start time: 09:40:55 on Mar 28,2022
+# ** Warning: Design size of 21628 statements exceeds ModelSim-Intel FPGA Starter Edition recommended capacity.
+# Expect performance to be adversely affected.
+# ** Warning: (vsim-8683) Uninitialized out port /tb_mux8way16/mapping/q(15 downto 0) has no driver.
+# This port will contribute value (UUUUUUUUUUUUUUUU) to the signal network.
+# ** Error: Falha em teste: 1
+#    Time: 500 ps  Iteration: 1  Process: /tb_mux8way16/main File: /home/gustavoeso/Documents/insper/trancando/elementos/Z01.1-Boolean/Projetos/B-LogicaCombinacional/testes/tb_Mux8Way16.vhd
+# Break in Process main at /home/gustavoeso/Documents/insper/trancando/elementos/Z01.1-Boolean/Projetos/B-LogicaCombinacional/testes/tb_Mux8Way16.vhd line 59
+# Stopped at /home/gustavoeso/Documents/insper/trancando/elementos/Z01.1-Boolean/Projetos/B-LogicaCombinacional/testes/tb_Mux8Way16.vhd line 59
+# 
+# Test Run Failed!
+# 
+# Stack trace result from 'tb' command
+#  /home/gustavoeso/Documents/insper/trancando/elementos/Z01.1-Boolean/Projetos/B-LogicaCombinacional/testes/tb_Mux8Way16.vhd 59 return [address 0xf6d73bdc] Process main
+# 
+# 
+# Surrounding code from 'see' command
+#   54 : 
+#   55 :     -- Teste: 1
+#   56 :     inA <= "1111111111111111"; inB <= "0000000000000000"; inC <="0000000000000000"; inD <="0000000000000000";
+#   57 :     inE <= "0000000000000000"; inF <= "0000000000000000"; inG <="0000000000000000"; inH<="0000000000000000"; inSel<= "000";
+#   58 :     wait until clk='1';
+# ->59 :     assert(outQ = "1111111111111111")  report "Falha em teste: 1" severity error;
+#   60 : 
+#   61 : 
+#   62 :     test_runner_cleanup(runner); -- Simulacao acaba aqui
+#   63 : 
+# 
+# End time: 09:40:55 on Mar 28,2022, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 2
+# vsim -modelsimini /home/gustavoeso/Documents/insper/trancando/elementos/Z01.1-Boolean/Projetos/B-LogicaCombinacional/vunit_out/modelsim/modelsim.ini -wlf /home/gustavoeso/Documents/insper/trancando/elementos/Z01.1-Boolean/Projetos/B-LogicaCombinacional/vunit_out/test_output/lib.tb_impressora.all_86eca07c90a19c753d733d07758700707c7dc5e8/modelsim/vsim.wlf -quiet -t ps -onfinish stop lib.tb_impressora(tb) -L vunit_lib -L lib -g/tb_impressora/runner_cfg="active python runner : true,enabled_test_cases : ,output path : /home/gustavoeso/Documents/insper/trancando/elementos/Z01.1-Boolean/Projetos/B-LogicaCombinacional/vunit_out/test_output/lib.tb_impressora.all_86eca07c90a19c753d733d07758700707c7dc5e8/,tb path : /home/gustavoeso/Documents/insper/trancando/elementos/Z01.1-Boolean/Projetos/B-LogicaCombinacional/testes/,use_color : true" 
+# Start time: 09:40:55 on Mar 28,2022
+# ** Warning: Design size of 21622 statements exceeds ModelSim-Intel FPGA Starter Edition recommended capacity.
+# Expect performance to be adversely affected.
+# ** Warning: (vsim-8683) Uninitialized out port /tb_impressora/uMoedas/x has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Error: 0
+#    Time: 500 ps  Iteration: 1  Process: /tb_impressora/main File: /home/gustavoeso/Documents/insper/trancando/elementos/Z01.1-Boolean/Projetos/B-LogicaCombinacional/testes/tb_impressora.vhd
+# Break in Process main at /home/gustavoeso/Documents/insper/trancando/elementos/Z01.1-Boolean/Projetos/B-LogicaCombinacional/testes/tb_impressora.vhd line 49
+# Stopped at /home/gustavoeso/Documents/insper/trancando/elementos/Z01.1-Boolean/Projetos/B-LogicaCombinacional/testes/tb_impressora.vhd line 49
+# 
+# Test Run Failed!
+# 
+# Stack trace result from 'tb' command
+#  /home/gustavoeso/Documents/insper/trancando/elementos/Z01.1-Boolean/Projetos/B-LogicaCombinacional/testes/tb_impressora.vhd 49 return [address 0xf6d73b3b] Process main
+# 
+# 
+# Surrounding code from 'see' command
+#   44 :   begin
+#   45 :     test_runner_setup(runner, runner_cfg);
+#   46 : 
+#   47 :     sw1 <= '0'; sw2 <= '0'; sw3 <= '0'; sw4 <= '1';
+#   48 :     wait until clk='1' ;
+# ->49 :     assert(x = '1')  report "0" severity error;
+#   50 : 
+#   51 :     sw1 <= '1'; sw2 <= '0'; sw3 <= '0'; sw4 <= '1';
+#   52 :     wait until clk='1' ;
+#   53 :     assert(x = '1')  report "0" severity error;
+# 
+# End time: 09:40:55 on Mar 28,2022, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 2
