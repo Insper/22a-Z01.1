@@ -59,6 +59,7 @@ architecture arch of Ram64 is
 	signal output0, output1, output2, output3, output4, output5, output6, output7 : STD_LOGIC_VECTOR(15 downto 0);
 
 begin
+
 	dmux : DMux8Way port map(load, address(2 downto 0), load0, load1, load2, load3, load4, load5, load6, load7);
 	registro0 : Ram8 port map(clock, input, load0, address(2 downto 0), output0);
 	registro1 : Ram8 port map(clock, input, load1, address(2 downto 0), output1);
