@@ -579,7 +579,6 @@ set_global_assignment -name VHDL_FILE ../src/FlipFlopD.vhd
 set_global_assignment -name VHDL_FILE ../src/BinaryDigit.vhd
 set_global_assignment -name VHDL_FILE ../src/conceitoA/FlipFlopT.vhd
 set_global_assignment -name VHDL_FILE ../src/conceitoA/FlipFlopJK.vhd
-set_global_assignment -name VHDL_FILE ../src/conceitoA/CounterDown.vhd
 set_global_assignment -name VHDL_FILE ../src/TopLevel.vhd
 set_global_assignment -name SDC_FILE DE0_CV_Default.sdc
 
