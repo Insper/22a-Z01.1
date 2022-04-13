@@ -10,7 +10,7 @@ entity Ram512 is
 		clock:   in  STD_LOGIC;
 		input:   in  STD_LOGIC_VECTOR(15 downto 0);
 		load:    in  STD_LOGIC;
-		address: in  STD_LOGIC_VECTOR( 8 downto 0);
+		address: in  STD_LOGIC_VECTOR(8 downto 0);
 		output:  out STD_LOGIC_VECTOR(15 downto 0)
 	);
 end entity;
@@ -22,7 +22,7 @@ architecture arch of Ram512 is
 			clock:   in  STD_LOGIC;
 			input:   in  STD_LOGIC_VECTOR(15 downto 0);
 			load:    in  STD_LOGIC;
-			address: in  STD_LOGIC_VECTOR( 5 downto 0);
+			address: in  STD_LOGIC_VECTOR(5 downto 0);
 			output:  out STD_LOGIC_VECTOR(15 downto 0)
 		);
 	end component;
@@ -60,5 +60,39 @@ architecture arch of Ram512 is
 
 begin
 
+	demux: DMux8Way port map (
+		a => load,
+		sel => address(2 downto 0),
+		q0 => load0,
+		q1 => load1,
+		q2 => load2,
+		q3 => load3,
+		q4 => load4,
+		q5 => load5,
+		q6 => load6,
+		q7 => load7
+	);
+	
+	r1: Ram64 port map(clock => clock, input => input, load => load0, address => address(5 downto 0), output => output0);
+	r2: Ram64 port map(clock => clock, input => input, load => load1, address => address(5 downto 0), output => output1);
+	r3: Ram64 port map(clock => clock, input => input, load => load2, address => address(5 downto 0), output => output2);
+	r4: Ram64 port map(clock => clock, input => input, load => load3, address => address(5 downto 0), output => output3);
+	r5: Ram64 port map(clock => clock, input => input, load => load4, address => address(5 downto 0), output => output4);
+	r6: Ram64 port map(clock => clock, input => input, load => load5, address => address(5 downto 0), output => output5);
+	r7: Ram64 port map(clock => clock, input => input, load => load6, address => address(5 downto 0), output => output6);
+	r8: Ram64 port map(clock => clock, input => input, load => load7, address => address(5 downto 0), output => output7);
+	
+	mux: Mux8Way16 port map (
+		a => output0,
+		b => output1,
+		c => output2,
+		d => output3,
+		e => output4,
+		f => output5,
+		g => output6,
+		h => output7,
+		sel => address(2 downto 0),
+		q => output
+	);
 
 end architecture;
