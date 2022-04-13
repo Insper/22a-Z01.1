@@ -22,7 +22,7 @@ architecture arch of Ram4K is
 			clock:   in  STD_LOGIC;
 			input:   in  STD_LOGIC_VECTOR(15 downto 0);
 			load:    in  STD_LOGIC;
-			address: in  STD_LOGIC_VECTOR( 8 downto 0);
+			address: in  STD_LOGIC_VECTOR(8 downto 0);
 			output:  out STD_LOGIC_VECTOR(15 downto 0)
 		);
 	end component;

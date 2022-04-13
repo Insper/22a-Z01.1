@@ -80,21 +80,11 @@ begin
                       -- e apertado 0, essa logica inverte isso
  load <= not KEY(1);
  
- ram0 : Ram8 port map(clock => Clock, input => x, load => SW(0), address => SW(3 downto 1), output => ramOut);
+ ram0 : Ram8 port map(clock => Clock, input => x, load => load, address => SW(2 downto 0), output => ramOut);
  
  SEVEN0 : sevenSeg port map(bcd => ramOut(3 downto 0), leds => HEX0);
  SEVEN1 : sevenSeg port map(bcd => ramOut(7 downto 4), leds => HEX1);
  SEVEN2 : sevenSeg port map(bcd => ramOut(11 downto 8), leds => HEX2);
  SEVEN3 : sevenSeg port map(bcd => ramOut(15 downto 12), leds => HEX3);
- 
-
--- u0 : FlipFlopD port map (
--- 		clock    => Clock,
--- 		d        => SW(0),
--- 		clear    => clear,
--- 		preset   => set,
--- 		q        => LEDR(0)
--- 	);		
- 
 
 end rtl;
