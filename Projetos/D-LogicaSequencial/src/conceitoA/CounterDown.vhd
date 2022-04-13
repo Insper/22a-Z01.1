@@ -30,6 +30,6 @@ begin
 	flipflopt2: FlipFlopt port map (output0, t => 1, output1);
 	flipflopt3: FlipFlopt port map (output1, t => 1, output2);
 
-	q <= output0 & output1 & output2
+	q <= output2 & output1 & output0
 
 end architecture;
