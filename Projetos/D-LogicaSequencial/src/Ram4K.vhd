@@ -84,57 +84,57 @@ DMux8: Dmux8Way port map(
   R1: Ram512 port map(
  clock => clock,
  input => input(15 downto 0),
- load => load0,
+ load => load1,
  address => address(11 downto 3),
- output => output0(15 downto 0)
+ output => output1(15 downto 0)
  );
  
   R2: Ram512 port map(
  clock => clock,
  input => input(15 downto 0),
- load => load0,
+ load => load2,
  address => address(11 downto 3),
- output => output0(15 downto 0)
+ output => output2(15 downto 0)
  );
  
   R3: Ram512 port map(
  clock => clock,
  input => input(15 downto 0),
- load => load0,
+ load => load3,
  address => address(11 downto 3),
- output => output0(15 downto 0)
+ output => output3(15 downto 0)
  );
  
   R4: Ram512 port map(
  clock => clock,
  input => input(15 downto 0),
- load => load0,
+ load => load4,
  address => address(11 downto 3),
- output => output0(15 downto 0)
+ output => output4(15 downto 0)
  );
  
   R5: Ram512 port map(
  clock => clock,
  input => input(15 downto 0),
- load => load0,
+ load => load5,
  address => address(11 downto 3),
- output => output0(15 downto 0)
+ output => output5(15 downto 0)
  );
  
   R6: Ram512 port map(
  clock => clock,
  input => input(15 downto 0),
- load => load0,
+ load => load6,
  address => address(11 downto 3),
- output => output0(15 downto 0)
+ output => output6(15 downto 0)
  );
  
    R7: Ram512 port map(
  clock => clock,
  input => input(15 downto 0),
- load => load0,
+ load => load7,
  address => address(11 downto 3),
- output => output0(15 downto 0)
+ output => output7(15 downto 0)
  );
  
 Mux8Way: Mux8Way16 port map(
