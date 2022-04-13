@@ -1,0 +1,59 @@
+# do /home/borg/.local/lib/python3.8/site-packages/vunit/sim_if/tcl_read_eval_loop.tcl
+# vsim -modelsimini /home/borg/Desktop/-Z01.1-EdnaldoPereira/vunit_out/modelsim/modelsim.ini -wlf /home/borg/Desktop/-Z01.1-EdnaldoPereira/vunit_out/test_output/lib.tb_binarydigit.all_26ea1dfa5414b7fcca8a8e18db0f194e16fdf9b4/modelsim/vsim.wlf -quiet -t ps -onfinish stop lib.tb_binarydigit(tb) -L vunit_lib -L lib -g/tb_binarydigit/runner_cfg="active python runner : true,enabled_test_cases : ,output path : /home/borg/Desktop/-Z01.1-EdnaldoPereira/vunit_out/test_output/lib.tb_binarydigit.all_26ea1dfa5414b7fcca8a8e18db0f194e16fdf9b4/,tb path : /home/borg/Desktop/-Z01.1-EdnaldoPereira/Projetos/D-LogicaSequencial/testes/,use_color : true" 
+# Start time: 18:05:14 on Mar 30,2022
+# ** Warning: Design size of 21486 statements exceeds ModelSim-Intel FPGA Starter Edition recommended capacity.
+# Expect performance to be adversely affected.
+# ** Error: Falha em teste: 1
+#    Time: 400 ps  Iteration: 0  Process: /tb_binarydigit/main File: /home/borg/Desktop/-Z01.1-EdnaldoPereira/Projetos/D-LogicaSequencial/testes/tb_BinaryDigit.vhd
+# Break in Process main at /home/borg/Desktop/-Z01.1-EdnaldoPereira/Projetos/D-LogicaSequencial/testes/tb_BinaryDigit.vhd line 48
+# Stopped at /home/borg/Desktop/-Z01.1-EdnaldoPereira/Projetos/D-LogicaSequencial/testes/tb_BinaryDigit.vhd line 48
+# 
+# Test Run Failed!
+# 
+# Stack trace result from 'tb' command
+#  /home/borg/Desktop/-Z01.1-EdnaldoPereira/Projetos/D-LogicaSequencial/testes/tb_BinaryDigit.vhd 48 return [address 0xf6d698a8] Process main
+# 
+# 
+# Surrounding code from 'see' command
+#   43 : 		assert(outOutput = '0')  report "Falha em teste: 0" severity error;
+#   44 : 
+#   45 : 		-- Teste: 1
+#   46 : 		inInput <= '1'; inLoad <= '0';
+#   47 :     wait until inClock'event and inClock='0';
+# ->48 : 		assert(outOutput = '0')  report "Falha em teste: 1" severity error;
+#   49 : 
+#   50 : 		-- Teste: 2
+#   51 : 		inInput <= '1'; inLoad <= '1';
+#   52 :     wait until inClock'event and inClock='0';
+# 
+# End time: 18:05:14 on Mar 30,2022, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 1
+# vsim -modelsimini /home/borg/Desktop/-Z01.1-EdnaldoPereira/vunit_out/modelsim/modelsim.ini -wlf /home/borg/Desktop/-Z01.1-EdnaldoPereira/vunit_out/test_output/lib.tb_counterdown.all_92483fd4930d8b25d924ed0af92eeb99bc84f54c/modelsim/vsim.wlf -quiet -t ps -onfinish stop lib.tb_counterdown(tb) -L vunit_lib -L lib -g/tb_counterdown/runner_cfg="active python runner : true,enabled_test_cases : ,output path : /home/borg/Desktop/-Z01.1-EdnaldoPereira/vunit_out/test_output/lib.tb_counterdown.all_92483fd4930d8b25d924ed0af92eeb99bc84f54c/,tb path : /home/borg/Desktop/-Z01.1-EdnaldoPereira/Projetos/D-LogicaSequencial/testes/,use_color : true" 
+# Start time: 18:05:14 on Mar 30,2022
+# ** Warning: Design size of 21349 statements exceeds ModelSim-Intel FPGA Starter Edition recommended capacity.
+# Expect performance to be adversely affected.
+# ** Error: Precisa fazer os testes
+#    Time: 200 ps  Iteration: 0  Process: /tb_counterdown/main File: /home/borg/Desktop/-Z01.1-EdnaldoPereira/Projetos/D-LogicaSequencial/testes/tb_CounterDown.vhd
+# Break in Process main at /home/borg/Desktop/-Z01.1-EdnaldoPereira/Projetos/D-LogicaSequencial/testes/tb_CounterDown.vhd line 38
+# Stopped at /home/borg/Desktop/-Z01.1-EdnaldoPereira/Projetos/D-LogicaSequencial/testes/tb_CounterDown.vhd line 38
+# 
+# Test Run Failed!
+# 
+# Stack trace result from 'tb' command
+#  /home/borg/Desktop/-Z01.1-EdnaldoPereira/Projetos/D-LogicaSequencial/testes/tb_CounterDown.vhd 38 return [address 0xf6d69609] Process main
+# 
+# 
+# Surrounding code from 'see' command
+#   33 :   begin
+#   34 :     test_runner_setup(runner, runner_cfg);
+#   35 : 
+#   36 :     -- IMPLEMENTE AQUI!
+#   37 :     wait until clk'event and clk='0';
+# ->38 : 		assert(Q = "111")  report "Precisa fazer os testes" severity error;
+#   39 : 
+#   40 : 
+#   41 :     -- finish
+#   42 :     wait until clk'event and clk='0';
+# 
+# End time: 18:05:15 on Mar 30,2022, Elapsed time: 0:00:01
+# Errors: 1, Warnings: 1

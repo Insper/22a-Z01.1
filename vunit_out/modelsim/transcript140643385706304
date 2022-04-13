@@ -1,0 +1,38 @@
+# do /home/borg/.local/lib/python3.8/site-packages/vunit/sim_if/tcl_read_eval_loop.tcl
+# vsim -modelsimini /home/borg/Desktop/-Z01.1-EdnaldoPereira/vunit_out/modelsim/modelsim.ini -wlf /home/borg/Desktop/-Z01.1-EdnaldoPereira/vunit_out/test_output/lib.tb_flipflopt.all_19a04691ebde4105e54fcdf8e6a8d80b3a1b8fe6/modelsim/vsim.wlf -quiet -t ps -onfinish stop lib.tb_flipflopt(tb) -L vunit_lib -L lib -g/tb_flipflopt/runner_cfg="active python runner : true,enabled_test_cases : ,output path : /home/borg/Desktop/-Z01.1-EdnaldoPereira/vunit_out/test_output/lib.tb_flipflopt.all_19a04691ebde4105e54fcdf8e6a8d80b3a1b8fe6/,tb path : /home/borg/Desktop/-Z01.1-EdnaldoPereira/Projetos/D-LogicaSequencial/testes/,use_color : true" 
+# Start time: 18:18:52 on Mar 30,2022
+# ** Warning: Design size of 21363 statements exceeds ModelSim-Intel FPGA Starter Edition recommended capacity.
+# Expect performance to be adversely affected.
+# Break in Subprogram stop at /home/borg/.local/lib/python3.8/site-packages/vunit/vhdl/core/src/stop_body_2008p.vhd line 13
+# Stopped at /home/borg/.local/lib/python3.8/site-packages/vunit/vhdl/core/src/stop_body_2008p.vhd line 13
+# End time: 18:18:53 on Mar 30,2022, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 1
+# vsim -modelsimini /home/borg/Desktop/-Z01.1-EdnaldoPereira/vunit_out/modelsim/modelsim.ini -wlf /home/borg/Desktop/-Z01.1-EdnaldoPereira/vunit_out/test_output/lib.tb_counterdown.all_92483fd4930d8b25d924ed0af92eeb99bc84f54c/modelsim/vsim.wlf -quiet -t ps -onfinish stop lib.tb_counterdown(tb) -L vunit_lib -L lib -g/tb_counterdown/runner_cfg="active python runner : true,enabled_test_cases : ,output path : /home/borg/Desktop/-Z01.1-EdnaldoPereira/vunit_out/test_output/lib.tb_counterdown.all_92483fd4930d8b25d924ed0af92eeb99bc84f54c/,tb path : /home/borg/Desktop/-Z01.1-EdnaldoPereira/Projetos/D-LogicaSequencial/testes/,use_color : true" 
+# Start time: 18:18:53 on Mar 30,2022
+# ** Warning: Design size of 21349 statements exceeds ModelSim-Intel FPGA Starter Edition recommended capacity.
+# Expect performance to be adversely affected.
+# ** Error: Precisa fazer os testes
+#    Time: 200 ps  Iteration: 0  Process: /tb_counterdown/main File: /home/borg/Desktop/-Z01.1-EdnaldoPereira/Projetos/D-LogicaSequencial/testes/tb_CounterDown.vhd
+# Break in Process main at /home/borg/Desktop/-Z01.1-EdnaldoPereira/Projetos/D-LogicaSequencial/testes/tb_CounterDown.vhd line 38
+# Stopped at /home/borg/Desktop/-Z01.1-EdnaldoPereira/Projetos/D-LogicaSequencial/testes/tb_CounterDown.vhd line 38
+# 
+# Test Run Failed!
+# 
+# Stack trace result from 'tb' command
+#  /home/borg/Desktop/-Z01.1-EdnaldoPereira/Projetos/D-LogicaSequencial/testes/tb_CounterDown.vhd 38 return [address 0xf6d69609] Process main
+# 
+# 
+# Surrounding code from 'see' command
+#   33 :   begin
+#   34 :     test_runner_setup(runner, runner_cfg);
+#   35 : 
+#   36 :     -- IMPLEMENTE AQUI!
+#   37 :     wait until clk'event and clk='0';
+# ->38 : 		assert(Q = "111")  report "Precisa fazer os testes" severity error;
+#   39 : 
+#   40 : 
+#   41 :     -- finish
+#   42 :     wait until clk'event and clk='0';
+# 
+# End time: 18:18:53 on Mar 30,2022, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 1

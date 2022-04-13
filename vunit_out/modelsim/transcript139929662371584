@@ -1,0 +1,30 @@
+# do /home/borg/.local/lib/python3.8/site-packages/vunit/sim_if/tcl_read_eval_loop.tcl
+# vsim -modelsimini /home/borg/Desktop/-Z01.1-EdnaldoPereira/vunit_out/modelsim/modelsim.ini -wlf /home/borg/Desktop/-Z01.1-EdnaldoPereira/vunit_out/test_output/lib.tb_register8.all_0308869cb9dc72b51c624fc073592f3339b2d81c/modelsim/vsim.wlf -quiet -t ps -onfinish stop lib.tb_register8(tb) -L vunit_lib -L lib -g/tb_register8/runner_cfg="active python runner : true,enabled_test_cases : ,output path : /home/borg/Desktop/-Z01.1-EdnaldoPereira/vunit_out/test_output/lib.tb_register8.all_0308869cb9dc72b51c624fc073592f3339b2d81c/,tb path : /home/borg/Desktop/-Z01.1-EdnaldoPereira/Projetos/D-LogicaSequencial/testes/,use_color : true" 
+# Start time: 18:05:14 on Mar 30,2022
+# ** Warning: Design size of 21954 statements exceeds ModelSim-Intel FPGA Starter Edition recommended capacity.
+# Expect performance to be adversely affected.
+# ** Error: Falha em teste: 0
+#    Time: 200 ps  Iteration: 0  Process: /tb_register8/main File: /home/borg/Desktop/-Z01.1-EdnaldoPereira/Projetos/D-LogicaSequencial/testes/tb_Register8.vhd
+# Break in Process main at /home/borg/Desktop/-Z01.1-EdnaldoPereira/Projetos/D-LogicaSequencial/testes/tb_Register8.vhd line 45
+# Stopped at /home/borg/Desktop/-Z01.1-EdnaldoPereira/Projetos/D-LogicaSequencial/testes/tb_Register8.vhd line 45
+# 
+# Test Run Failed!
+# 
+# Stack trace result from 'tb' command
+#  /home/borg/Desktop/-Z01.1-EdnaldoPereira/Projetos/D-LogicaSequencial/testes/tb_Register8.vhd 45 return [address 0xf6d69769] Process main
+# 
+# 
+# Surrounding code from 'see' command
+#   40 :     test_runner_setup(runner, runner_cfg);
+#   41 : 
+#   42 : 		-- Teste: 0
+#   43 : 		inInput <= "00100001"; inLoad <= '1';
+#   44 :     wait until inClock'event and inClock='0';
+# ->45 : 		assert(outOutput = "00100001")  report "Falha em teste: 0" severity error;
+#   46 : 
+#   47 : 		-- Teste: 1
+#   48 : 		inInput <= "11011110"; inLoad <= '0';
+#   49 :     wait until inClock'event and inClock='0';
+# 
+# End time: 18:05:14 on Mar 30,2022, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 1
