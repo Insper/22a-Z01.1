@@ -2,7 +2,7 @@
 # Descomente os módulos que deseja testar
   
 FlipFlopD.vhd
-#BinaryDigit.vhd
+BinaryDigit.vhd
 #PC.vhd
 #Register8.vhd
 #Register16.vhd
