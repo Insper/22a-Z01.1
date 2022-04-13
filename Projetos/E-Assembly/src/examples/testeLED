@@ -1,0 +1,55 @@
+; ####################################################################
+; Rafael Corsi @ 2018  
+;
+; Aciona os LEDs com um contador:
+; ####################################################################
+
+  ;; valor inicial do led
+  ;; RAM[1] = CNT
+ leaw $0, %A
+ movw %A, %D
+ leaw $1, %A
+ movw %D, (%A)
+
+  ;; %D = RAM[1] = CNT
+  ;; LED = CNT
+  ;; RAM[1] = CNT + 1
+LED:
+  leaw $1, %A
+  movw (%A), %D
+  leaw $21184, %A
+  movw %D, (%A)
+  incw %D
+  leaw $1, %A
+  movw %D, (%A)
+
+  ;; RAM[0] = 8
+DELAY:
+  leaw $8, %A
+  movw %A, %D
+  movw $0, %A
+  movw %D, (%A)                 
+
+  ;; conta ate 32k (2^15)
+  ;; %S = 32k
+LOOP1:
+  leaw $32000, %A
+  movw %A, %D
+  leaw $LOOP2, %A
+
+LOOP2:
+  decw %S
+  jg   %S
+  nop
+
+  leaw $0, %A
+  subw (%A), $1, %D
+  movw %D, (%A)
+  leaw %LOOP1, %A
+  jg %D
+  nop
+
+ ;; retorna para atualizar o LED
+  leaw $LED, %A
+  jmp
+  nop
