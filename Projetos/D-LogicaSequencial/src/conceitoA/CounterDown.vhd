@@ -1,5 +1,7 @@
 -- Elementos de Sistemas
 -- CounterDown.vhd
+-- Elementos de Sistemas
+-- CounterDown.vhd
 
 library ieee;
 use ieee.std_logic_1164.all;
@@ -20,16 +22,26 @@ architecture arch of CounterDown is
 			notq:   out std_logic:= '1'
 		);
 	end component;
-
-	signal t;
-	signal output0, output1, output2;
+	signal output0, output1, output2: std_logic;
 	
 begin
 
-	flipflopt1: FlipFlopt port map (clock, t => 1, output0);
-	flipflopt2: FlipFlopt port map (output0, t => 1, output1);
-	flipflopt3: FlipFlopt port map (output1, t => 1, output2);
+	flipflopt1: FlipFlopt port map (
+		clock =>clock, 
+		t => '1',
+		q => output0
+	);
+	flipflopt2: FlipFlopt port map (
+		clock => output0, 
+		t => '1',
+		q => output1
+	);
+	flipflopt3: FlipFlopt port map (
+		clock => output1, 
+		t => '1',
+		q => output2
+	);
 
-	q <= output2 & output1 & output0
+	q <= output2 & output1 & output0;
 
 end architecture;
