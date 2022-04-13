@@ -7,11 +7,11 @@ use ieee.std_logic_1164.all;
 library vunit_lib;
 context vunit_lib.vunit_context;
 
-entity tb_FlipFlopT is
+entity tb_FlipFlopJK is
   generic (runner_cfg : string);
 end entity;
 
-architecture tb of tb_FlipFlopT is
+architecture tb of tb_FlipFlopJK is
 
 	component FlipFlopJK is
     port(
