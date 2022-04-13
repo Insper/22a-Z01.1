@@ -4,8 +4,8 @@
 FlipFlopD.vhd
 BinaryDigit.vhd
 #PC.vhd
-#Register8.vhd
-#Register16.vhd
+Register8.vhd
+Register16.vhd
 #Register32.vhd
 #Register64.vhd
 #Ram8.vhd
@@ -18,5 +18,5 @@ BinaryDigit.vhd
 #
 FlipFlopT.vhd
 FlipFlopJK.vhd
-CounterDown.vhd
+# CounterDown.vhd
  
