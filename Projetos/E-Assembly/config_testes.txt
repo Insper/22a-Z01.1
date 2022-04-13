@@ -30,15 +30,15 @@ LCDletraGrupo.nasm 0 10000
 ## conceito B
 ###########################
 
-#isEven.nasm 2 1000
-#palindromo.nasm 2 1000
-#LCDnomeGrupo.nasm 0 10000
+isEven.nasm 2 1000
+palindromo.nasm 2 1000
+LCDnomeGrupo.nasm 0 10000
 
 ###########################
 ## conceito A
 ###########################
 
-#vectorMean.nasm 2 2000
-#SWeLED2.nasm 1 1000
+vectorMean.nasm 2 2000
+SWeLED2.nasm 1 1000
 
 
