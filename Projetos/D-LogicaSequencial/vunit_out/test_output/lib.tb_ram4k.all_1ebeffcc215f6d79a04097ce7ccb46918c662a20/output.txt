@@ -1,7 +1,7 @@
-# End time: 14:38:32 on Apr 13,2022, Elapsed time: 0:00:01
+# End time: 15:09:12 on Apr 13,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 1
 # vsim -modelsimini /home/borg/Documents/Elesis/Z01.1--Dio/Projetos/D-LogicaSequencial/vunit_out/modelsim/modelsim.ini -wlf /home/borg/Documents/Elesis/Z01.1--Dio/Projetos/D-LogicaSequencial/vunit_out/test_output/lib.tb_ram4k.all_1ebeffcc215f6d79a04097ce7ccb46918c662a20/modelsim/vsim.wlf -quiet -t ps -onfinish stop lib.tb_ram4k(tb) -L vunit_lib -L lib -g/tb_ram4k/runner_cfg="active python runner : true,enabled_test_cases : ,output path : /home/borg/Documents/Elesis/Z01.1--Dio/Projetos/D-LogicaSequencial/vunit_out/test_output/lib.tb_ram4k.all_1ebeffcc215f6d79a04097ce7ccb46918c662a20/,tb path : /home/borg/Documents/Elesis/Z01.1--Dio/Projetos/D-LogicaSequencial/testes/,use_color : true" 
-# Start time: 14:38:32 on Apr 13,2022
+# Start time: 15:09:12 on Apr 13,2022
 # ** Warning: Design size of 21579 statements exceeds ModelSim-Intel FPGA Starter Edition recommended capacity.
 # Expect performance to be adversely affected.
 # ** Warning: (vsim-8683) Uninitialized out port /tb_ram4k/mapping/output(15 downto 0) has no driver.
