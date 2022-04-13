@@ -27,5 +27,28 @@ architecture arch of Register8 is
 
 begin
 
-
+	bd0 : BinaryDigit port map(
+		clock => clock,input => input(0),load =>load,output => output(0)
+	);
+	bd1 : BinaryDigit port map(
+		clock => clock,input => input(1),load =>load,output => output(1)
+	);
+	bd2 : BinaryDigit port map(
+		clock => clock,input => input(2),load =>load,output => output(2)
+	);
+	bd3 : BinaryDigit port map(
+		clock => clock,input => input(3),load =>load,output => output(3)
+	);
+	bd4 : BinaryDigit port map(
+		clock => clock,input => input(4),load =>load,output => output(4)
+	);
+	bd5 : BinaryDigit port map(
+		clock => clock,input => input(5),load =>load,output => output(5)
+	);
+	bd6 : BinaryDigit port map(
+		clock => clock,input => input(6),load =>load,output => output(6)
+	);
+	bd7 : BinaryDigit port map(
+		clock => clock,input => input(7),load =>load,output => output(7)
+	);
 end architecture;
