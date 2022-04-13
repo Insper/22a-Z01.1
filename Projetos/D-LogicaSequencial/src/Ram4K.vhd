@@ -60,5 +60,92 @@ architecture arch of Ram4K is
 
 begin
 
+DMux8: Dmux8Way port map(
+	a => load,
+	sel => address(2 downto 0),
+	q0 => load0,
+	q1 => load1,
+	q2 => load2,
+	q3 => load3,
+	q4 => load4,
+	q5 => load5,
+	q6 => load6,
+	q7 => load7
+);
 
-end architecture;
+ R0: Ram512 port map(
+ clock => clock,
+ input => input(15 downto 0),
+ load => load0,
+ address => address(11 downto 3),
+ output => output0(15 downto 0)
+ );
+ 
+  R1: Ram512 port map(
+ clock => clock,
+ input => input(15 downto 0),
+ load => load0,
+ address => address(11 downto 3),
+ output => output0(15 downto 0)
+ );
+ 
+  R2: Ram512 port map(
+ clock => clock,
+ input => input(15 downto 0),
+ load => load0,
+ address => address(11 downto 3),
+ output => output0(15 downto 0)
+ );
+ 
+  R3: Ram512 port map(
+ clock => clock,
+ input => input(15 downto 0),
+ load => load0,
+ address => address(11 downto 3),
+ output => output0(15 downto 0)
+ );
+ 
+  R4: Ram512 port map(
+ clock => clock,
+ input => input(15 downto 0),
+ load => load0,
+ address => address(11 downto 3),
+ output => output0(15 downto 0)
+ );
+ 
+  R5: Ram512 port map(
+ clock => clock,
+ input => input(15 downto 0),
+ load => load0,
+ address => address(11 downto 3),
+ output => output0(15 downto 0)
+ );
+ 
+  R6: Ram512 port map(
+ clock => clock,
+ input => input(15 downto 0),
+ load => load0,
+ address => address(11 downto 3),
+ output => output0(15 downto 0)
+ );
+ 
+   R7: Ram512 port map(
+ clock => clock,
+ input => input(15 downto 0),
+ load => load0,
+ address => address(11 downto 3),
+ output => output0(15 downto 0)
+ );
+ 
+Mux8Way: Mux8Way16 port map(
+	a => output0,
+	b => output1,
+	c => output2,
+	d => output3,
+	e => output4,
+	f => output5,
+	g => output6,
+	h => output7,
+	sel => address(2 downto 0),
+	q => output
+);end architecture;
