@@ -3,12 +3,6 @@
 -- file: PC.vhd
 -- date: 4/4/2017
 
--- Contador de 16bits
--- if (reset[t] == 1) out[t+1] = 0
--- else if (load[t] == 1)  out[t+1] = in[t]
--- else if (inc[t] == 1) out[t+1] = out[t] + 1
--- else out[t+1] = out[t]
-
 library ieee;
 use ieee.std_logic_1164.all;
 use IEEE.NUMERIC_STD.ALL;
@@ -26,6 +20,9 @@ end entity;
 
 architecture arch of PC is
 
+ signal regIn : std_logic_vector(15 downto 0);
+ signal regOut : std_logic_vector(15 downto 0);
+ signal icrOut : std_logic_vector(15 downto 0);
  signal muxOut : std_logic_vector(15 downto 0);
 
   component Inc16 is
@@ -44,7 +41,48 @@ architecture arch of PC is
         );
     end component;
 
+    component Mux16 is
+      port(
+          a: in STD_LOGIC_VECTOR(15 downto 0);
+          b: in STD_LOGIC_VECTOR(15 downto 0);
+          sel: in STD_LOGIC;
+          q: out STD_LOGIC_VECTOR(15 downto 0)
+        );
+    end component;
+
 begin
 
+    icr16 : Inc16 port map(
+        a => regOut,
+        q => icrOut
+    );
+    
+    reg16 : Register16 port map(
+        clock => clock,
+        input => regIn,
+        load => '1',
+        output => regOut
+    );
+    
+    mux1 : Mux16 port map(
+        a => regOut,
+        b => icrOut,
+        sel => increment,
+        q => muxOut
+    );
+
+    mux2 : Mux16 port map(
+        a => muxOut,
+        b => input,
+        sel => load,
+        q => regIn
+    );
+
+    mux3 : Mux16 port map(
+        a => regOut,
+        b => "0000000000000000",
+        sel => reset,
+        q => output
+    );
 
 end architecture;
