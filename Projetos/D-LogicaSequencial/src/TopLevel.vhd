@@ -21,11 +21,13 @@ entity TopLevel is
 	port(
 		SW      : in  std_logic_vector(9 downto 0);
 		KEY     : in  std_logic_vector(3 downto 0);
+
 		LEDR    : out std_logic_vector(9 downto 0);
 		HEX0     : out std_logic_vector(6 downto 0); -- 7seg0
 		HEX1     : out std_logic_vector(6 downto 0); -- 7seg0
 		HEX2     : out std_logic_vector(6 downto 0);
 		HEX3     : out std_logic_vector(6 downto 0)
+
 	);
 end entity;
 
@@ -33,6 +35,7 @@ end entity;
 -- Implementacao do bloco -- 
 ----------------------------
 architecture rtl of TopLevel is
+
 
 
 	component Ram8 is
@@ -50,13 +53,16 @@ architecture rtl of TopLevel is
 			leds :  out STD_LOGIC_VECTOR(6 downto 0)
 		);
 	end component;
+
 --------------
 -- signals
 --------------
 
+
 signal clock: std_logic;
 signal saida : std_logic_vector(15 downto 0);
 signal x : std_logic_vector(15 downto 0) := x"0073";
+
 ---------------
 -- implementacao
 ---------------
@@ -64,6 +70,7 @@ begin
 
 Clock <= not KEY(0); -- os botoes quando nao apertado vale 1
                      -- e apertado 0, essa logica inverte isso
+
 
 
 u0 : Ram8 port map (
@@ -93,6 +100,7 @@ hex_1 : sevenSeg port map (
 		bcd => saida(3 downto 0),
 		leds => HEX0
 	);
+
 
  
 

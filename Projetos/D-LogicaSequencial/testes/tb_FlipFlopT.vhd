@@ -34,7 +34,7 @@ begin
   main : process
   begin
     test_runner_setup(runner, runner_cfg);
-    
+
     
     
     t<= '1'; 
@@ -47,6 +47,7 @@ begin
 
 
     
+
     test_runner_cleanup(runner); -- Simulation ends here
 
 	wait;

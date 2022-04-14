@@ -59,6 +59,7 @@ architecture arch of Ram512 is
 	signal output0, output1, output2, output3, output4, output5, output6, output7 : STD_LOGIC_VECTOR(15 downto 0);
 
 begin
+
 s1: Mux8Way16 port map (
 		a=> output0,
 		b=> output1,
@@ -195,5 +196,6 @@ s1: Mux8Way16 port map (
 		address => address(8 downto 3),
 		output => output7
 	);
+
 
 end architecture;
