@@ -31,4 +31,5 @@ begin
 	q(0) <= q0;
 	q(1) <= q1;
 	q(2) <= q2;
+
 end architecture;

@@ -17,6 +17,8 @@ end entity;
 architecture arch of FlipFlopJK is
 
 begin
+  
 	q <= (J and not(q)) or (not(K) and q);
 	notq <= not(q);
+
 end architecture;

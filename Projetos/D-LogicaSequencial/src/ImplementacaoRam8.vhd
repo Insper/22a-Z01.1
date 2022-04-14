@@ -27,7 +27,6 @@ entity TopLevel is
       HEX2     : out std_logic_vector(6 downto 0); -- 7seg0
 		HEX3     : out std_logic_vector(6 downto 0)
 		);
-
 end entity;
 
 ----------------------------
@@ -35,30 +34,27 @@ end entity;
 ----------------------------
 architecture rtl of TopLevel is
 
-component PC is
-    port(
-        clock     : in  STD_LOGIC;
-        increment : in  STD_LOGIC;
-        load      : in  STD_LOGIC;
-        reset     : in  STD_LOGIC;
-        input     : in  STD_LOGIC_VECTOR(15 downto 0);
-        output    : out STD_LOGIC_VECTOR(15 downto 0)
-    );
+component Ram8 is
+	port(
+		clock:   in  STD_LOGIC;
+		input:   in  STD_LOGIC_VECTOR(15 downto 0);
+		load:    in  STD_LOGIC;
+		address: in  STD_LOGIC_VECTOR(2 downto 0);
+		output:  out STD_LOGIC_VECTOR(15 downto 0)
+	);
 end component;
 
 component sevenSeg is
 	port (
 			bcd : in  STD_LOGIC_VECTOR(3 downto 0);
 			leds: out STD_LOGIC_VECTOR(6 downto 0));
-
 end component;
 
 --------------
 -- signals
 --------------
 
-=======
-signal clock, increment, reset : std_logic;
+signal clock, clear, set : std_logic;
 signal entrada, saida  : STD_LOGIC_VECTOR(15 downto 0);
 
 ---------------
@@ -66,18 +62,17 @@ signal entrada, saida  : STD_LOGIC_VECTOR(15 downto 0);
 ---------------
 begin
 
-clock <= KEY(0); -- os botoes quando nao apertado vale 1
+Clock <= not KEY(0); -- os botoes quando nao apertado vale 1
                      -- e apertado 0, essa logica inverte isso
 
-entrada <= "0000000000000010";
+entrada <= "0000000000000001";
 
 
-u1: PC port map(
-	clock => clock,
-	increment => SW(2),
-	load => Sw(0),
-	reset => SW(1),
+u1: Ram8 port map(
+	clock => Clock,
 	input => entrada,
+	load => Sw(0),
+	address => SW(9 downto 7),
 	output => saida
 	);
 	
