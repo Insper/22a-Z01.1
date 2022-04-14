@@ -2,6 +2,8 @@
 # Descomente os módulos que deseja testar
   
 FlipFlopD.vhd
+
+=======
 BinaryDigit.vhd
 PC.vhd
 Register8.vhd

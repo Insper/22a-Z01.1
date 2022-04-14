@@ -8,12 +8,15 @@ entity FlipFlopT is
 	port(
 		clock:  in std_logic;
 		t:      in std_logic;
+
 		q:      buffer std_logic:= '0';
+
 		notq:   out std_logic:= '1'
 	);
 end entity;
 
 architecture arch of FlipFlopT is
+
 	signal saida: std_logic;
 begin
 	process(clock ) begin
@@ -26,4 +29,5 @@ begin
         end if;
 notq <= not(q);
 end process;
+
 end architecture;

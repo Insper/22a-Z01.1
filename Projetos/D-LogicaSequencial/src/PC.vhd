@@ -20,13 +20,15 @@ entity PC is
         load      : in  STD_LOGIC;
         reset     : in  STD_LOGIC;
         input     : in  STD_LOGIC_VECTOR(15 downto 0);
-        output    : out STD_LOGIC_VECTOR(15 downto 0)
+
+        output    : out STD_LOGIC_VECTOR(15 downto 0):="0000000000000000"
+
     );
 end entity;
 
 architecture arch of PC is
 
- signal muxOut : std_logic_vector(15 downto 0);
+
 
   component Inc16 is
       port(
@@ -44,7 +46,32 @@ architecture arch of PC is
         );
     end component;
 
+
+signal incout,incin,regisout,regisin : std_logic_vector(15 downto 0);
 begin
+
+    a0 : Register16 port map(
+		clock => clock,
+		input =>regisin,
+		load =>'1',
+		output=> regisout
+	);
+    s1 : Inc16 port map(
+        a=> regisout,
+        q=> incout
+    );
+    
+
+    
+    regisin <= "0000000000000000" when reset='1' else
+        input when load = '1'  else
+        incout when increment = '1' else
+        regisout;
+    output <= regisout;
+
+
+
 
 
 end architecture;
+

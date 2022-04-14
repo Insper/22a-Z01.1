@@ -9,6 +9,7 @@ entity FlipFlopJK is
 		clock:  in std_logic;
 		J:      in std_logic;
 		K:      in std_logic;
+
 		q:      buffer std_logic:= '0';
 		notq:   out std_logic:= '1'
 	);
@@ -17,6 +18,7 @@ end entity;
 architecture arch of FlipFlopJK is
 
 begin
+
 
 	process(clock) begin
         if (rising_edge(clock)) then

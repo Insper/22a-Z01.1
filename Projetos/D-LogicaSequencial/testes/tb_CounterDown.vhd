@@ -37,6 +37,7 @@ begin
     wait until clk'event and clk='0';
 		assert(Q = "111")  report "Precisa fazer os testes" severity error;
 
+
      wait until clk'event and clk='0';
 		assert(Q = "110")  report "Precisa fazer os testes" severity error;
 
