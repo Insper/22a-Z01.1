@@ -27,6 +27,7 @@ entity TopLevel is
       HEX2     : out std_logic_vector(6 downto 0); -- 7seg0
 		HEX3     : out std_logic_vector(6 downto 0)
 		);
+
 end entity;
 
 ----------------------------
@@ -49,12 +50,14 @@ component sevenSeg is
 	port (
 			bcd : in  STD_LOGIC_VECTOR(3 downto 0);
 			leds: out STD_LOGIC_VECTOR(6 downto 0));
+
 end component;
 
 --------------
 -- signals
 --------------
 
+=======
 signal clock, increment, reset : std_logic;
 signal entrada, saida  : STD_LOGIC_VECTOR(15 downto 0);
 

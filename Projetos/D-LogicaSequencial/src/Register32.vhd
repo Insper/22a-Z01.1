@@ -26,6 +26,7 @@ architecture arch of Register32 is
 	end component;
 
 begin
+
 	P1_Resgister32 : Register16
 		port map (
 			clock  => clock,
@@ -41,4 +42,5 @@ begin
 			load   => load,
 			output => output(31 downto 16)
 	);
+
 end architecture;

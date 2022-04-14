@@ -54,4 +54,5 @@ begin
 		
 	   
 	output<= BDout;
+
 end architecture;

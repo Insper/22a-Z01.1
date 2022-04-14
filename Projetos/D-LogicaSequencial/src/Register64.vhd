@@ -26,6 +26,7 @@ architecture arch of Register64 is
 	end component;
 
 begin
+
 	P1_Resgister64 : Register32
 		port map (
 			clock  => clock,

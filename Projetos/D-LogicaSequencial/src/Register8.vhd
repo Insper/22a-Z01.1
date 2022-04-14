@@ -51,4 +51,5 @@ begin
 	bd7 : BinaryDigit port map(
 		clock => clock,input => input(7),load =>load,output => output(7)
 	);
+
 end architecture;
