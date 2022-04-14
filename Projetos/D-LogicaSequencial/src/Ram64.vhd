@@ -59,6 +59,69 @@ architecture arch of Ram64 is
 	signal output0, output1, output2, output3, output4, output5, output6, output7 : STD_LOGIC_VECTOR(15 downto 0);
 
 begin
-
+	ram0 : Ram8
+	port map(
+		clock => clock,
+		input => input,
+		load => load,
+		address => address( 2 downto 0),
+		output => output
+	);
+	ram1 : Ram8
+	port map(
+		clock => clock,
+		input => input,
+		load => load,
+		address => address( 2 downto 0),
+		output => output
+	);
+	ram2 : Ram8
+	port map(
+		clock => clock,
+		input => input,
+		load => load,
+		address => address( 2 downto 0),
+		output => output
+	);
+	ram3 : Ram8
+	port map(
+		clock => clock,
+		input => input,
+		load => load,
+		address => address( 2 downto 0),
+		output => output
+	);
+	ram4 : Ram8
+	port map(
+		clock => clock,
+		input => input,
+		load => load,
+		address => address( 2 downto 0),
+		output => output
+	);
+	ram5 : Ram8
+	port map(
+		clock => clock,
+		input => input,
+		load => load,
+		address => address( 2 downto 0),
+		output => output
+	);
+	ram6 : Ram8
+	port map(
+		clock => clock,
+		input => input,
+		load => load,
+		address => address( 2 downto 0),
+		output => output
+	);
+	ram7 : Ram8
+	port map(
+		clock => clock,
+		input => input,
+		load => load,
+		address => address( 2 downto 0),
+		output => output
+	);
 
 end architecture;
