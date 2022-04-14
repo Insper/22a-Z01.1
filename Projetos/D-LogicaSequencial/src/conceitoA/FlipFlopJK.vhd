@@ -18,27 +18,25 @@ architecture arch of FlipFlopJK is
 
 
 signal outsignal: std_logic:= '0';
-signal notoutsignal: std_logic:= '1';
 
 
 begin
-	process (clock,J,K) begin
-		
+	q <= outsignal;
+	notq <= not outsignal;
+	process (clock) begin
+
 		if (J='1' and K='0') then
 			outsignal<='1';
-			notoutsignal<='0';
 
 		elsif (J='1' and K='1') then
-			outsignal<=not outsignal;
-			notoutsignal<=not notoutsignal;
+			outsignal<= not outsignal;
 
 		elsif (J='0' and K='1') then
 			outsignal<='0';
-			notoutsignal<='1';
 		end if;
 	
 	end process;
-	q<=outsignal;
-	notq<=notoutsignal;
+	
+	
 end architecture;
 

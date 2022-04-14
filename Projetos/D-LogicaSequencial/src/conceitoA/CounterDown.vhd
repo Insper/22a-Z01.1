@@ -13,6 +13,10 @@ end entity;
 
 architecture arch of CounterDown is
 
+signal out0:std_logic:='0';
+signal out1:std_logic:='0';
+
+
 	component FlipFlopT is
 		port(
 			clock:  in std_logic;
@@ -24,20 +28,23 @@ architecture arch of CounterDown is
 	
 begin
 
+	q(0)<=out0;
+	q(1)<=out1;
+	
 	fft1: FlipFlopT port map (
 		clock=>clock,
 		t=>'1',
-		q=>q(0)
+		q=>out0
 	);
 
 	fft2: FlipFlopT port map (
-		clock=>q(0),
+		clock=>out0,
 		t=>'1',
-		q=>q(1)
+		q=>out1
 	);
 
 	fft3: FlipFlopT port map (
-		clock=>q(1),
+		clock=>out1,
 		t=>'1',
 		q=>q(2)
 	);
