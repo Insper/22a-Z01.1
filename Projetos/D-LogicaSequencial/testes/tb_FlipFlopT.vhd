@@ -23,11 +23,11 @@ architecture tb of tb_FlipFlopT is
 	end component;
 
 	signal clk : std_logic := '0';
-  signal t,q,notq : std_logic;
+  signal int,outq,outnotq : std_logic;
 
 begin
 
-	mapping: FlipFlopT port map(clk, t, q, notq);
+	mapping: FlipFlopT port map(clk, int, outq, outnotq);
 
 	clk <= not clk after 100 ps;
 
@@ -35,8 +35,15 @@ begin
   begin
     test_runner_setup(runner, runner_cfg);
 
-    -- IMPLEMENTE AQUI!
+    -- Teste: 0
+		int <= '0';
     wait until clk'event and clk='0';
+		assert(outq = '0')  report "Falha em teste: 0" severity error;
+
+      -- Teste: 1
+		int <= '1';
+    wait until clk'event and clk='0';
+		assert(outq = '1')  report "Falha em teste: 1" severity error;
 
     -- finish
     wait until clk'event and clk='0';

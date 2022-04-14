@@ -7,11 +7,11 @@ use ieee.std_logic_1164.all;
 library vunit_lib;
 context vunit_lib.vunit_context;
 
-entity tb_FlipFlopT is
+entity tb_FlipFlopJK is
   generic (runner_cfg : string);
 end entity;
 
-architecture tb of tb_FlipFlopT is
+architecture tb of tb_FlipFlopJK is
 
 	component FlipFlopJK is
     port(
@@ -24,11 +24,11 @@ architecture tb of tb_FlipFlopT is
 	end component;
 
 	signal clk : std_logic := '0';
-  signal j,k,q,notq : std_logic;
+  signal inj,ink,outq,outnotq : std_logic;
 
 begin
 
-	mapping: FlipFlopJK port map(clk, j, k, q, notq);
+	mapping: FlipFlopJK port map(clk, inj, ink, outq, outnotq);
 
 	clk <= not clk after 100 ps;
 
@@ -38,6 +38,26 @@ begin
 
     -- IMPLEMENTE AQUI!
     wait until clk'event and clk='0';
+
+    -- Teste: 0
+		inj <= '0'; ink<='0';
+    wait until clk'event and clk='0';
+		assert(outq = '0')  report "Falha em teste: 0" severity error;
+
+    -- Teste: 1
+		inj <= '1'; ink<='0';
+    wait until clk'event and clk='0';
+		assert(outq = '1')  report "Falha em teste: 1" severity error;
+
+    -- Teste: 2
+		inj <= '0'; ink<='1';
+    wait until clk'event and clk='0';
+		assert(outq = '0')  report "Falha em teste: 2" severity error;
+
+    -- Teste: 3
+		inj <= '1'; ink<='1';
+    wait until clk'event and clk='0';
+		assert(outq = '1')  report "Falha em teste: 3" severity error;
 
     -- finish
     wait until clk'event and clk='0';
