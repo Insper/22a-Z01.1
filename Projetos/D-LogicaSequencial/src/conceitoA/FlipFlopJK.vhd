@@ -17,6 +17,7 @@ end entity;
 architecture arch of FlipFlopJK is
 
 begin
+
 	process (clock) begin
 		if (rising_edge(clock) and J = '0' and K ='0') then
 			q <= q;
