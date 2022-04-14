@@ -60,7 +60,7 @@ architecture arch of Ram8 is
 begin
 
 	mux: Mux8Way16 port map(
-		sel=>adress,
+		sel=>address,
 		a=>output0,
 		b=>output1,
 		c=>output2,
@@ -75,7 +75,7 @@ begin
 
 	dmux: DMux8Way port map(
 		a=>load,
-		sel=>adress,
+		sel=>address,
 		q0=>load0,
 		q1=>load1,
 		q2=>load2,
