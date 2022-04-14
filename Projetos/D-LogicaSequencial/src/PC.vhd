@@ -20,7 +20,9 @@ entity PC is
         load      : in  STD_LOGIC;
         reset     : in  STD_LOGIC;
         input     : in  STD_LOGIC_VECTOR(15 downto 0);
+
         output    : out STD_LOGIC_VECTOR(15 downto 0):="0000000000000000"
+
     );
 end entity;
 
@@ -43,6 +45,7 @@ architecture arch of PC is
           output: out STD_LOGIC_VECTOR(15 downto 0)
         );
     end component;
+
 
 signal incout,incin,regisout,regisin : std_logic_vector(15 downto 0);
 begin
@@ -71,3 +74,4 @@ begin
 
 
 end architecture;
+
