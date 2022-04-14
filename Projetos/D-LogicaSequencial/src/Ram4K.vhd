@@ -60,5 +60,68 @@ architecture arch of Ram4K is
 
 begin
 
-
+	ram0 : Ram512
+	port map(
+		clock => clock,
+		input => input,
+		load => load,
+		address => address( 8 downto 0),
+		output => output
+	);
+	ram1 : Ram512
+	port map(
+		clock => clock,
+		input => input,
+		load => load,
+		address => address( 8 downto 0),
+		output => output
+	);
+	ram2 : Ram512
+	port map(
+		clock => clock,
+		input => input,
+		load => load,
+		address => address( 8 downto 0),
+		output => output
+	);
+	ram3 : Ram512
+	port map(
+		clock => clock,
+		input => input,
+		load => load,
+		address => address( 8 downto 0),
+		output => output
+	);
+	ram4 : Ram512
+	port map(
+		clock => clock,
+		input => input,
+		load => load,
+		address => address( 8 downto 0),
+		output => output
+	);
+	ram5 : Ram512
+	port map(
+		clock => clock,
+		input => input,
+		load => load,
+		address => address( 8 downto 0),
+		output => output
+	);
+	ram6 : Ram512
+	port map(
+		clock => clock,
+		input => input,
+		load => load,
+		address => address( 8 downto 0),
+		output => output
+	);
+	ram7 : Ram512
+	port map(
+		clock => clock,
+		input => input,
+		load => load,
+		address => address( 8 downto 0),
+		output => output
+	);
 end architecture;
