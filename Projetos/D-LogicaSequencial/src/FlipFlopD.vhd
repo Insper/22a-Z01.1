@@ -19,6 +19,7 @@ architecture arch of FlipFlopD is
 
 begin
 --iniciando o flipflop
+--corrigido de fato
 	process(clock, clear, preset) begin
 		if (clear = '1') then
 			q <='0';
