@@ -27,5 +27,7 @@ architecture arch of Register32 is
 
 begin
 
+	registro0: Register16 port map(clock, input(15 downto 0), load, output(15 downto 0));
+	registro1: Register16 port map(clock, input(31 downto 16), load, output(31 downto 16));
 
 end architecture;
