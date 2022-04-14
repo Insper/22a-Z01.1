@@ -1,0 +1,65 @@
+# do /home/borg/.local/lib/python3.8/site-packages/vunit/sim_if/tcl_read_eval_loop.tcl
+# vsim -modelsimini /home/borg/Z01.1-Invencible/Projetos/C-UnidadeLogicaAritmetica/vunit_out/modelsim/modelsim.ini -wlf /home/borg/Z01.1-Invencible/Projetos/C-UnidadeLogicaAritmetica/vunit_out/test_output/lib.tb_halfadder.all_2a9f30afe01faed90d95ca9cf2cee2354e984c4c/modelsim/vsim.wlf -quiet -t ps -onfinish stop lib.tb_halfadder(tb) -L vunit_lib -L lib -g/tb_halfadder/runner_cfg="active python runner : true,enabled_test_cases : ,output path : /home/borg/Z01.1-Invencible/Projetos/C-UnidadeLogicaAritmetica/vunit_out/test_output/lib.tb_halfadder.all_2a9f30afe01faed90d95ca9cf2cee2354e984c4c/,tb path : /home/borg/Z01.1-Invencible/Projetos/C-UnidadeLogicaAritmetica/testes/,use_color : true" 
+# Start time: 14:17:50 on Mar 23,2022
+# ** Warning: Design size of 21387 statements exceeds ModelSim-Intel FPGA Starter Edition recommended capacity.
+# Expect performance to be adversely affected.
+# ** Warning: (vsim-8683) Uninitialized out port /tb_halfadder/u1HalfAdder/soma has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /tb_halfadder/u1HalfAdder/vaium has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Error: Falha em teste: 1
+#    Time: 200 ps  Iteration: 0  Process: /tb_halfadder/main File: /home/borg/Z01.1-Invencible/Projetos/C-UnidadeLogicaAritmetica/testes/tb_HalfAdder.vhd
+# Break in Process main at /home/borg/Z01.1-Invencible/Projetos/C-UnidadeLogicaAritmetica/testes/tb_HalfAdder.vhd line 39
+# Stopped at /home/borg/Z01.1-Invencible/Projetos/C-UnidadeLogicaAritmetica/testes/tb_HalfAdder.vhd line 39
+# 
+# Test Run Failed!
+# 
+# Stack trace result from 'tb' command
+#  /home/borg/Z01.1-Invencible/Projetos/C-UnidadeLogicaAritmetica/testes/tb_HalfAdder.vhd 39 return [address 0xf6d49603] Process main
+# 
+# 
+# Surrounding code from 'see' command
+#   34 : 
+#   35 :     -- Teste: 1
+#   36 :     -- 0 + 0
+#   37 :     inA <= '0'; inB<= '0';
+#   38 :     wait for 200 ps;
+# ->39 :     assert(soma = '0' and vaium = '0')  report "Falha em teste: 1" severity error;
+#   40 : 
+#   41 :     -- Teste: 2
+#   42 :     -- 0 + 1
+#   43 :     inA <= '0'; inB<= '1';
+# 
+# End time: 14:17:51 on Mar 23,2022, Elapsed time: 0:00:01
+# Errors: 1, Warnings: 3
+# vsim -modelsimini /home/borg/Z01.1-Invencible/Projetos/C-UnidadeLogicaAritmetica/vunit_out/modelsim/modelsim.ini -wlf /home/borg/Z01.1-Invencible/Projetos/C-UnidadeLogicaAritmetica/vunit_out/test_output/lib.tb_inversor16.all_cf124a04e75272dadd8625f1aac52b48d9b344c6/modelsim/vsim.wlf -quiet -t ps -onfinish stop lib.tb_inversor16(tb) -L vunit_lib -L lib -g/tb_inversor16/runner_cfg="active python runner : true,enabled_test_cases : ,output path : /home/borg/Z01.1-Invencible/Projetos/C-UnidadeLogicaAritmetica/vunit_out/test_output/lib.tb_inversor16.all_cf124a04e75272dadd8625f1aac52b48d9b344c6/,tb path : /home/borg/Z01.1-Invencible/Projetos/C-UnidadeLogicaAritmetica/testes/,use_color : true" 
+# Start time: 14:17:51 on Mar 23,2022
+# ** Warning: Design size of 21382 statements exceeds ModelSim-Intel FPGA Starter Edition recommended capacity.
+# Expect performance to be adversely affected.
+# ** Warning: (vsim-8683) Uninitialized out port /tb_inversor16/inv16/y(15 downto 0) has no driver.
+# This port will contribute value (UUUUUUUUUUUUUUUU) to the signal network.
+# ** Error: a=0000, z=0, y=0000
+#    Time: 40 ns  Iteration: 1  Process: /tb_inversor16/main File: /home/borg/Z01.1-Invencible/Projetos/C-UnidadeLogicaAritmetica/testes/tb_inversor16.vhd
+# Break in Process main at /home/borg/Z01.1-Invencible/Projetos/C-UnidadeLogicaAritmetica/testes/tb_inversor16.vhd line 46
+# Stopped at /home/borg/Z01.1-Invencible/Projetos/C-UnidadeLogicaAritmetica/testes/tb_inversor16.vhd line 46
+# 
+# Test Run Failed!
+# 
+# Stack trace result from 'tb' command
+#  /home/borg/Z01.1-Invencible/Projetos/C-UnidadeLogicaAritmetica/testes/tb_inversor16.vhd 46 return [address 0xf6d497c9] Process main
+# 
+# 
+# Surrounding code from 'see' command
+#   41 :     wait until clk'event and clk='1';
+#   42 : 
+#   43 :     a <= x"0000";
+#   44 :     z <= '0';
+#   45 :     wait until clk'event and clk='1';
+# ->46 :     assert(y = x"0000") report "a=0000, z=0, y=0000";
+#   47 : 
+#   48 :     wait until clk'event and clk='1';
+#   49 :     a <= x"0000";
+#   50 :     z <= '1';
+# 
+# End time: 14:17:51 on Mar 23,2022, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 2

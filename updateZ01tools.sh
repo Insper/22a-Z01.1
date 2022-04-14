@@ -13,7 +13,7 @@ echo "-------------------------------------------------------"
 echo "- Z01 tools"
 echo "-------------------------------------------------------"
 Z01_PATH=$HOME/Z01-Tools/
-Z01_TOOLS_URL=https://github.com/insper/Z01-tools
+Z01_TOOLS_URL="https://github.com/insper/Z01-tools"
 if [ ! -d "$Z01_PATH" ]; then
     echo "Instalando Z01-1 tools"
 else
