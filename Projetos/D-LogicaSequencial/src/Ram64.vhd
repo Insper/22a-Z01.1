@@ -59,7 +59,7 @@ architecture arch of Ram64 is
 	signal output0, output1, output2, output3, output4, output5, output6, output7 : STD_LOGIC_VECTOR(15 downto 0);
 
 begin
-
+-- Muxes
 	s1: Mux8Way16 port map (
 		a=> output0,
 		b=> output1,
@@ -73,6 +73,7 @@ begin
 		q=>output
 
 	);
+
 	s2: Mux8Way16 port map (
 		a=> output0,
 		b=> output1,
@@ -85,7 +86,7 @@ begin
 		sel => address(5 downto 3),
 		q=>output);
 
-
+--Dmuxes
 	s4: DMux8Way port map (
 		a => load,
 		sel => address(2 downto 0),
@@ -114,7 +115,7 @@ begin
 
 	);
 
-
+--Rams8s
 	r0 : Ram8 port map (
 		clock => clock,
 		input=> input,
@@ -172,6 +173,7 @@ begin
 		output => output7
 	);
 
+--Mux
 	s2: Mux8Way16 port map (
 		a=> output0,
 		b=> output1,
@@ -186,7 +188,7 @@ begin
 
 
 
-
+--Dmux
 	s5: DMux8Way port map (
 		a => load,
 		sel => address(5 downto 3),
@@ -201,7 +203,7 @@ begin
 
 	);
 
-
+--Ram8s
 	r0 : Ram8 port map (
 		clock => clock,
 		input=> input,
