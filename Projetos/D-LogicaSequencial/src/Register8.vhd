@@ -43,6 +43,7 @@ s2 : BinaryDigit port map(
 	input  => input(2),
 	load => load,
 	output => output(2)
+
 );
 s3 : BinaryDigit port map(
 	clock => clock,
