@@ -56,8 +56,8 @@ end component;
 begin
 
     saida0: Mux16 port map(incout, input, load, muxOut1);
-    saida1: Mux16 port map(muxOut1, "0000000000000000", reset, muxOut2);
-    saida2: Mux16 port map(muxOut2, incout, increment, muxOut3);
+    saida1: Mux16 port map(muxOut1, incout, increment, muxOut2);
+    saida2: Mux16 port map(muxOut2, "0000000000000000", reset, muxOut3);
 
     saida3: Inc16 port map(regout, incout);
 
