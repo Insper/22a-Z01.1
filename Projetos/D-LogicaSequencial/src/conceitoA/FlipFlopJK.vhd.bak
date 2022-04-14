@@ -15,13 +15,13 @@ entity FlipFlopJK is
 end entity;
 
 architecture arch of FlipFlopJK is
-
+signal nottt: std_logic:='0';
 begin
 
 	process(clock) begin
         if (rising_edge(clock)) then
             if ((j='1') and (k='1')) then
-                q <= not(q);
+                q <='1' when notq='0' else '0';
             elsif ((k='1') and ((not(j))= '1')) then
                 q<='0';
 
