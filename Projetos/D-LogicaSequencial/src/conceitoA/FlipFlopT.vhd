@@ -8,7 +8,7 @@ entity FlipFlopT is
 	port(
 		clock:  in std_logic;
 		t:      in std_logic;
-		q:      out std_logic:= '0';
+		q:      buffer std_logic:= '0';
 		notq:   out std_logic:= '1'
 	);
 end entity;

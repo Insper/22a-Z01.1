@@ -9,7 +9,7 @@ entity FlipFlopJK is
 		clock:  in std_logic;
 		J:      in std_logic;
 		K:      in std_logic;
-		q:      out std_logic:= '0';
+		q:      buffer std_logic:= '0';
 		notq:   out std_logic:= '1'
 	);
 end entity;
