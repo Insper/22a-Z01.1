@@ -47,12 +47,12 @@ if __name__ == "__main__":
     tstLogiSeq = tstLogiSeq()
 
     # Logica Combinacional RTL
-    tstLogiComb = tstLogiComb()
-    tstLogiComb.addSrc(tstLogiSeq.work)
+    #tstLogiComb = tstLogiComb()
+    #tstLogiComb.addSrc(tstLogiSeq.work)
 
     # ULA
-    tstUla = tstUla()
-    tstUla.addSrc(tstLogiSeq.work)
+    #tstUla = tstUla()
+    #tstUla.addSrc(tstLogiSeq.work)
 
     # Logica Sequencial
     tstLogiSeq.add(tstLogiSeq.work)
