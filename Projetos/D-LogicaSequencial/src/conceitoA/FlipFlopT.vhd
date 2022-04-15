@@ -21,6 +21,7 @@ signal saida_notq: STD_LOGIC:= '1';
 begin
 
 	process(clock) begin
+
 		if (t='1') then
 			if (rising_edge(clock)) then
 				saida_q <= not saida_q;
