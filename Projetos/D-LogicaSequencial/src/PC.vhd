@@ -26,7 +26,10 @@ end entity;
 
 architecture arch of PC is
 
- signal muxOut : std_logic_vector(15 downto 0);
+ signal muxOut : std_logic_vector(15 downto 0):="0000000000000000";
+ signal out1 : std_logic_vector(15 downto 0);
+ signal out2 : std_logic_vector(15 downto 0);
+ signal out0 : std_logic_vector(15 downto 0);
 
   component Inc16 is
       port(
@@ -45,6 +48,24 @@ architecture arch of PC is
     end component;
 
 begin
+    out0<="0000000000000000";
+    out1<=input;
+    inc: Inc16 port map(
+        a=>muxout,
+        q=>out2
+    );
 
+    process(clock) begin
+        if rising_edge(clock) then
+            if (reset='1') then
+                muxout<=out0;
+            elsif (load='1') then
+                muxout<=out1;
+            elsif (increment='1') then
+                muxout<=out2;
+            end if;
+        end if;
+    end process;
+    output<=muxout;
 
 end architecture;
