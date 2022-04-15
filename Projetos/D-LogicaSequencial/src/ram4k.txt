@@ -1,0 +1,1 @@
+Não foi possível criar o rtl do ram 4k devido a este exceder o tempo de compilação
