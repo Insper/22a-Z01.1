@@ -22,14 +22,31 @@ architecture arch of CounterDown is
 		);
 	end component;
 
-signal q0, q1, q2, notqq: STD_LOGIC:=0;
+signal q0, q1, q2: STD_LOGIC:='0';
 
 begin
-	FFT0: FlipFlopT port map(clock, '1', q0, notqq);
-	FFT1: FlipFlopT port map(q0, '1', q1, notqq);
-	FFT2: FlipFlopT port map(q1, '1', q2, notqq);
-	q(0) <= q0;
-	q(1) <= q1;
-	q(2) <= q2;
+FFT1:	FlipFlopT port map(
+	clock => clock,
+	t => '1',
+	q => q0,
+	notq => open
+);
+
+FFT2:	FlipFlopT port map(
+	clock => q0,
+	t => '1',
+	q => q1,
+	notq =>  open
+);
+
+FFT3:	FlipFlopT port map(
+	clock =>  q1,
+	t => '1',
+	q => q2,
+	notq => open
+);
+q(0) <= q0;
+q(1) <= q1;
+q(2) <= q2;
 
 end architecture;
