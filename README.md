@@ -1,3 +1,9 @@
+#Importate: o rtl do Ram4k nn foi possível de ser gerado após multiplas tentavivas de compilação
+
+
+
+
+
 [![](icon-elementos.png)](https://insper.github.io/Z01.1/)
 
 > Desenvolvendo um computador do ZERO!
