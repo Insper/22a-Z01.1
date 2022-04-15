@@ -15,20 +15,21 @@ end entity;
 
 architecture arch of FlipFlopT is
 
+signal saida_q: STD_LOGIC:= '0';
+signal saida_notq: STD_LOGIC:= '1';
+
 begin
 
 	process(clock) begin
-		if (rising_edge(clock)) then
-			if (t = '0') then
-				q <= q;
-				notq <= notq;
-			else
-				q <= not(q);
-				notq <= not(notq);
-				--q <= t xor q;
-				--notq <= not(q);
+
+		if (t='1') then
+			if (rising_edge(clock)) then
+				saida_q <= not saida_q;
+				saida_notq <= not saida_notq;
 			end if;
 		end if;
   	end process;
+q <= saida_q;
+notq <= saida_notq;
 
 end architecture;
