@@ -1,4 +1,4 @@
-source "/home/gustavoeso/Documents/insper/trancando/elementos/Z01.1-Boolean/Projetos/D-LogicaSequencial/vunit_out/test_output/lib.tb_counterdown.all_92483fd4930d8b25d924ed0af92eeb99bc84f54c/modelsim/common.do"
+source "/home/borg/elementos_de_sistemas/Z01.1-Boolean/Projetos/D-LogicaSequencial/vunit_out/test_output/lib.tb_counterdown.all_92483fd4930d8b25d924ed0af92eeb99bc84f54c/modelsim/common.do"
 proc vunit_user_init {} {
     return 0
 }

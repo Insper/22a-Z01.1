@@ -55,6 +55,7 @@ architecture arch of PC is
 
   signal inc_out, mux1_out, mux2_out, mux3_out,o_t: STD_LOGIC_VECTOR(15 downto 0);
 
+
 begin
 
     inc: Inc16 port map (         

@@ -21,6 +21,10 @@ entity TopLevel is
 	port(
 		SW      : in  std_logic_vector(9 downto 0);
 		KEY     : in  std_logic_vector(3 downto 0);
+		HEX0     : out std_logic_vector(6 downto 0); -- 7seg0
+      HEX1     : out std_logic_vector(6 downto 0); -- 7seg0
+      HEX2     : out std_logic_vector(6 downto 0); -- 7seg0
+		HEX3     : out std_logic_vector(6 downto 0); -- 7seg0
 		LEDR    : out std_logic_vector(9 downto 0)
 	);
 end entity;
@@ -41,29 +45,46 @@ component FlipFlopD is
 	);
 end component;
 
+component Ram8 is
+	port(
+		clock:   in  STD_LOGIC;
+		input:   in  STD_LOGIC_VECTOR(15 downto 0);
+		load:    in  STD_LOGIC;
+		address: in  STD_LOGIC_VECTOR(2 downto 0);
+		output:  out STD_LOGIC_VECTOR(15 downto 0)
+	);
+end component;
+
+component sevenSeg is
+	port (
+			bcd : in  STD_LOGIC_VECTOR(3 downto 0);
+			leds: out STD_LOGIC_VECTOR(6 downto 0));
+end component;
+
 --------------
 -- signals
 --------------
 
-signal clock, clear, set : std_logic;
+signal load, Clock : std_logic;
+signal x : STD_LOGIC_VECTOR(15 downto 0):= x"00F5";
+signal ramOut : STD_LOGIC_VECTOR(15 downto 0);
+
 
 ---------------
 -- implementacao
 ---------------
+
 begin
 
-Clock <= not KEY(0); -- os botoes quando nao apertado vale 1
-                     -- e apertado 0, essa logica inverte isso
-clear <= not KEY(1);
-set	<= not KEY(2);
-
-u0 : FlipFlopD port map (
-		clock    => Clock,
-		d        => SW(0),
-		clear    => clear,
-		preset   => set,
-		q        => LEDR(0)
-	);		
+ Clock <= not KEY(0); -- os botoes quando nao apertado vale 1
+                      -- e apertado 0, essa logica inverte isso
+ load <= not KEY(1);
  
+ ram0 : Ram8 port map(clock => Clock, input => x, load => load, address => SW(2 downto 0), output => ramOut);
+ 
+ SEVEN0 : sevenSeg port map(bcd => ramOut(3 downto 0), leds => HEX0);
+ SEVEN1 : sevenSeg port map(bcd => ramOut(7 downto 4), leds => HEX1);
+ SEVEN2 : sevenSeg port map(bcd => ramOut(11 downto 8), leds => HEX2);
+ SEVEN3 : sevenSeg port map(bcd => ramOut(15 downto 12), leds => HEX3);
 
 end rtl;
