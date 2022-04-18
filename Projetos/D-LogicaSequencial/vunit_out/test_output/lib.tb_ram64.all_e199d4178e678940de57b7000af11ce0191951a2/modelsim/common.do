@@ -43,11 +43,19 @@ proc _vunit_source_init_files_before_run {} {
 
 proc vunit_load {{vsim_extra_args ""}} {
     set vsim_failed [catch {
+<<<<<<< HEAD
         eval vsim ${vsim_extra_args} {-modelsimini /home/borg/Z01.1--Dio/Projetos/D-LogicaSequencial/vunit_out/modelsim/modelsim.ini -wlf {/home/borg/Z01.1--Dio/Projetos/D-LogicaSequencial/vunit_out/test_output/lib.tb_ram64.all_e199d4178e678940de57b7000af11ce0191951a2/modelsim/vsim.wlf} -quiet -t ps -onfinish stop  -g/tb_ram64/runner_cfg={"active python runner : true,enabled_test_cases : ,output path : /home/borg/Z01.1--Dio/Projetos/D-LogicaSequencial/vunit_out/test_output/lib.tb_ram64.all_e199d4178e678940de57b7000af11ce0191951a2/,tb path : /home/borg/Z01.1--Dio/Projetos/D-LogicaSequencial/testes/,use_color : true"} lib.tb_ram64(tb)   -L vunit_lib -L lib}
     }]
 
     if {${vsim_failed}} {
        echo Command 'vsim ${vsim_extra_args} -modelsimini /home/borg/Z01.1--Dio/Projetos/D-LogicaSequencial/vunit_out/modelsim/modelsim.ini -wlf {/home/borg/Z01.1--Dio/Projetos/D-LogicaSequencial/vunit_out/test_output/lib.tb_ram64.all_e199d4178e678940de57b7000af11ce0191951a2/modelsim/vsim.wlf} -quiet -t ps -onfinish stop  -g/tb_ram64/runner_cfg={"active python runner : true,enabled_test_cases : ,output path : /home/borg/Z01.1--Dio/Projetos/D-LogicaSequencial/vunit_out/test_output/lib.tb_ram64.all_e199d4178e678940de57b7000af11ce0191951a2/,tb path : /home/borg/Z01.1--Dio/Projetos/D-LogicaSequencial/testes/,use_color : true"} lib.tb_ram64(tb)   -L vunit_lib -L lib' failed
+=======
+        eval vsim ${vsim_extra_args} {-modelsimini /home/borg/Documents/Elesis/Z01.1--Dio/Projetos/D-LogicaSequencial/vunit_out/modelsim/modelsim.ini -wlf {/home/borg/Documents/Elesis/Z01.1--Dio/Projetos/D-LogicaSequencial/vunit_out/test_output/lib.tb_ram64.all_e199d4178e678940de57b7000af11ce0191951a2/modelsim/vsim.wlf} -quiet -t ps -onfinish stop  -g/tb_ram64/runner_cfg={"active python runner : true,enabled_test_cases : ,output path : /home/borg/Documents/Elesis/Z01.1--Dio/Projetos/D-LogicaSequencial/vunit_out/test_output/lib.tb_ram64.all_e199d4178e678940de57b7000af11ce0191951a2/,tb path : /home/borg/Documents/Elesis/Z01.1--Dio/Projetos/D-LogicaSequencial/testes/,use_color : true"} lib.tb_ram64(tb)   -L vunit_lib -L lib}
+    }]
+
+    if {${vsim_failed}} {
+       echo Command 'vsim ${vsim_extra_args} -modelsimini /home/borg/Documents/Elesis/Z01.1--Dio/Projetos/D-LogicaSequencial/vunit_out/modelsim/modelsim.ini -wlf {/home/borg/Documents/Elesis/Z01.1--Dio/Projetos/D-LogicaSequencial/vunit_out/test_output/lib.tb_ram64.all_e199d4178e678940de57b7000af11ce0191951a2/modelsim/vsim.wlf} -quiet -t ps -onfinish stop  -g/tb_ram64/runner_cfg={"active python runner : true,enabled_test_cases : ,output path : /home/borg/Documents/Elesis/Z01.1--Dio/Projetos/D-LogicaSequencial/vunit_out/test_output/lib.tb_ram64.all_e199d4178e678940de57b7000af11ce0191951a2/,tb path : /home/borg/Documents/Elesis/Z01.1--Dio/Projetos/D-LogicaSequencial/testes/,use_color : true"} lib.tb_ram64(tb)   -L vunit_lib -L lib' failed
+>>>>>>> main
        echo Bad flag from vsim_extra_args?
        return true
     }
@@ -70,7 +78,11 @@ proc vunit_load {{vsim_extra_args ""}} {
 }
 
 proc is_test_suite_done {} {
+<<<<<<< HEAD
     set fd [open "/home/borg/Z01.1--Dio/Projetos/D-LogicaSequencial/vunit_out/test_output/lib.tb_ram64.all_e199d4178e678940de57b7000af11ce0191951a2/vunit_results" "r"]
+=======
+    set fd [open "/home/borg/Documents/Elesis/Z01.1--Dio/Projetos/D-LogicaSequencial/vunit_out/test_output/lib.tb_ram64.all_e199d4178e678940de57b7000af11ce0191951a2/vunit_results" "r"]
+>>>>>>> main
     set contents [read $fd]
     close $fd
     set lines [split $contents "
@@ -117,7 +129,11 @@ proc vunit_compile {} {
     set cmd_show {/usr/bin/python3 -u ./testeLogicaSequencial.py --compile}
     puts "Re-compiling using command ${cmd_show}"
 
+<<<<<<< HEAD
     set chan [open |[list {/usr/bin/python3} {-u} {-c} {import sys;import subprocess;exit(subprocess.call(['/usr/bin/python3', '-u', './testeLogicaSequencial.py', '--compile'], cwd='/home/borg/Z01.1--Dio/Projetos/D-LogicaSequencial', bufsize=0, universal_newlines=True, stdout=sys.stdout, stderr=sys.stdout))}] r]
+=======
+    set chan [open |[list {/usr/bin/python3} {-u} {-c} {import sys;import subprocess;exit(subprocess.call(['/usr/bin/python3', '-u', './testeLogicaSequencial.py', '--compile'], cwd='/home/borg/Documents/Elesis/Z01.1--Dio/Projetos/D-LogicaSequencial', bufsize=0, universal_newlines=True, stdout=sys.stdout, stderr=sys.stdout))}] r]
+>>>>>>> main
 
     while {[gets $chan line] >= 0} {
         puts $line

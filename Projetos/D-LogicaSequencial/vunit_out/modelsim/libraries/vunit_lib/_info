@@ -8,7 +8,11 @@ z2
 !i10e 25
 !i10f 100
 cModel Technology
+<<<<<<< HEAD
 Z0 d/home/borg/Z01.1--Dio/Projetos/D-LogicaSequencial
+=======
+Z0 d/home/borg/Documents/Elesis/Z01.1--Dio/Projetos/D-LogicaSequencial
+>>>>>>> main
 Pansi_pkg
 Z1 DPx9 vunit_lib 17 codec_builder_pkg 0 22 lMzaQB]AGo[9c?7g60J_93
 Z2 DPx4 ieee 11 numeric_std 0 22 aU^R8eGcicLcUFIaBQSL>3
@@ -33,10 +37,17 @@ Vh9cG]NHf=IYSX>SV5U_OM1
 Z16 OV;C;2020.1;71
 33
 b1
+<<<<<<< HEAD
 Z17 !s110 1649870100
 !i10b 1
 Z18 !s108 1649870100.000000
 Z19 !s90 -quiet|-modelsimini|/home/borg/Z01.1--Dio/Projetos/D-LogicaSequencial/vunit_out/modelsim/modelsim.ini|-2008|-work|vunit_lib|/home/borg/.local/lib/python3.8/site-packages/vunit/vhdl/logging/src/ansi_pkg.vhd|
+=======
+Z17 !s110 1649873346
+!i10b 1
+Z18 !s108 1649873346.000000
+Z19 !s90 -quiet|-modelsimini|/home/borg/Documents/Elesis/Z01.1--Dio/Projetos/D-LogicaSequencial/vunit_out/modelsim/modelsim.ini|-2008|-work|vunit_lib|/home/borg/.local/lib/python3.8/site-packages/vunit/vhdl/logging/src/ansi_pkg.vhd|
+>>>>>>> main
 Z20 !s107 /home/borg/.local/lib/python3.8/site-packages/vunit/vhdl/logging/src/ansi_pkg.vhd|
 !i113 1
 Z21 o-quiet -2008 -work vunit_lib
@@ -96,7 +107,11 @@ b1
 R17
 !i10b 1
 R18
+<<<<<<< HEAD
 Z32 !s90 -quiet|-modelsimini|/home/borg/Z01.1--Dio/Projetos/D-LogicaSequencial/vunit_out/modelsim/modelsim.ini|-2008|-work|vunit_lib|/home/borg/.local/lib/python3.8/site-packages/vunit/vhdl/data_types/src/byte_vector_ptr_pkg.vhd|
+=======
+Z32 !s90 -quiet|-modelsimini|/home/borg/Documents/Elesis/Z01.1--Dio/Projetos/D-LogicaSequencial/vunit_out/modelsim/modelsim.ini|-2008|-work|vunit_lib|/home/borg/.local/lib/python3.8/site-packages/vunit/vhdl/data_types/src/byte_vector_ptr_pkg.vhd|
+>>>>>>> main
 Z33 !s107 /home/borg/.local/lib/python3.8/site-packages/vunit/vhdl/data_types/src/byte_vector_ptr_pkg.vhd|
 !i113 1
 R21
@@ -164,10 +179,17 @@ VY>TVz>[kI8XoP@P02gCOJ2
 R16
 33
 b1
+<<<<<<< HEAD
 Z47 !s110 1649870102
 !i10b 1
 Z48 !s108 1649870102.000000
 Z49 !s90 -quiet|-modelsimini|/home/borg/Z01.1--Dio/Projetos/D-LogicaSequencial/vunit_out/modelsim/modelsim.ini|-2008|-work|vunit_lib|/home/borg/.local/lib/python3.8/site-packages/vunit/vhdl/check/src/check_deprecated_pkg.vhd|
+=======
+Z47 !s110 1649873349
+!i10b 1
+Z48 !s108 1649873349.000000
+Z49 !s90 -quiet|-modelsimini|/home/borg/Documents/Elesis/Z01.1--Dio/Projetos/D-LogicaSequencial/vunit_out/modelsim/modelsim.ini|-2008|-work|vunit_lib|/home/borg/.local/lib/python3.8/site-packages/vunit/vhdl/check/src/check_deprecated_pkg.vhd|
+>>>>>>> main
 Z50 !s107 /home/borg/.local/lib/python3.8/site-packages/vunit/vhdl/check/src/check_deprecated_pkg.vhd|
 !i113 1
 R21
@@ -245,7 +267,11 @@ b1
 R47
 !i10b 1
 R48
+<<<<<<< HEAD
 !s90 -quiet|-modelsimini|/home/borg/Z01.1--Dio/Projetos/D-LogicaSequencial/vunit_out/modelsim/modelsim.ini|-2008|-work|vunit_lib|/home/borg/.local/lib/python3.8/site-packages/vunit/vhdl/check/src/check_api.vhd|
+=======
+!s90 -quiet|-modelsimini|/home/borg/Documents/Elesis/Z01.1--Dio/Projetos/D-LogicaSequencial/vunit_out/modelsim/modelsim.ini|-2008|-work|vunit_lib|/home/borg/.local/lib/python3.8/site-packages/vunit/vhdl/check/src/check_api.vhd|
+>>>>>>> main
 !s107 /home/borg/.local/lib/python3.8/site-packages/vunit/vhdl/check/src/check_api.vhd|
 !i113 1
 R21
@@ -280,10 +306,17 @@ V9UiUee74WgKB1TY^:B?4N1
 !s100 IFOLZS3@H<:[h5Yfm6a]V2
 R16
 33
+<<<<<<< HEAD
 !s110 1649870103
 !i10b 1
 R48
 !s90 -quiet|-modelsimini|/home/borg/Z01.1--Dio/Projetos/D-LogicaSequencial/vunit_out/modelsim/modelsim.ini|-2008|-work|vunit_lib|/home/borg/.local/lib/python3.8/site-packages/vunit/vhdl/check/src/check.vhd|
+=======
+!s110 1649873350
+!i10b 1
+!s108 1649873350.000000
+!s90 -quiet|-modelsimini|/home/borg/Documents/Elesis/Z01.1--Dio/Projetos/D-LogicaSequencial/vunit_out/modelsim/modelsim.ini|-2008|-work|vunit_lib|/home/borg/.local/lib/python3.8/site-packages/vunit/vhdl/check/src/check.vhd|
+>>>>>>> main
 !s107 /home/borg/.local/lib/python3.8/site-packages/vunit/vhdl/check/src/check.vhd|
 !i113 1
 R21
@@ -320,8 +353,13 @@ R16
 b1
 R47
 !i10b 1
+<<<<<<< HEAD
 R48
 !s90 -quiet|-modelsimini|/home/borg/Z01.1--Dio/Projetos/D-LogicaSequencial/vunit_out/modelsim/modelsim.ini|-2008|-work|vunit_lib|/home/borg/.local/lib/python3.8/site-packages/vunit/vhdl/check/src/checker_pkg.vhd|
+=======
+Z53 !s108 1649873348.000000
+!s90 -quiet|-modelsimini|/home/borg/Documents/Elesis/Z01.1--Dio/Projetos/D-LogicaSequencial/vunit_out/modelsim/modelsim.ini|-2008|-work|vunit_lib|/home/borg/.local/lib/python3.8/site-packages/vunit/vhdl/check/src/checker_pkg.vhd|
+>>>>>>> main
 !s107 /home/borg/.local/lib/python3.8/site-packages/vunit/vhdl/check/src/checker_pkg.vhd|
 !i113 1
 R21
@@ -349,7 +387,11 @@ R43
 8/home/borg/.local/lib/python3.8/site-packages/vunit/vhdl/check/src/checker_pkg-body.vhd
 F/home/borg/.local/lib/python3.8/site-packages/vunit/vhdl/check/src/checker_pkg-body.vhd
 l0
+<<<<<<< HEAD
 Z53 L10 1
+=======
+Z54 L10 1
+>>>>>>> main
 VR6>IRTjahc7V=hWEiR^`60
 !s100 1hXodV^D_Xh5?ThRc9MVl1
 R16
@@ -357,17 +399,29 @@ R16
 R47
 !i10b 1
 R48
+<<<<<<< HEAD
 !s90 -quiet|-modelsimini|/home/borg/Z01.1--Dio/Projetos/D-LogicaSequencial/vunit_out/modelsim/modelsim.ini|-2008|-work|vunit_lib|/home/borg/.local/lib/python3.8/site-packages/vunit/vhdl/check/src/checker_pkg-body.vhd|
+=======
+!s90 -quiet|-modelsimini|/home/borg/Documents/Elesis/Z01.1--Dio/Projetos/D-LogicaSequencial/vunit_out/modelsim/modelsim.ini|-2008|-work|vunit_lib|/home/borg/.local/lib/python3.8/site-packages/vunit/vhdl/check/src/checker_pkg-body.vhd|
+>>>>>>> main
 !s107 /home/borg/.local/lib/python3.8/site-packages/vunit/vhdl/check/src/checker_pkg-body.vhd|
 !i113 1
 R21
 R22
 Pcodec_2008p_pkg
+<<<<<<< HEAD
 Z54 DBx4 ieee 17 float_generic_pkg 4 body 22 H?RSbZ=lR0[b?m<zWkZGN1
 Z55 DPx4 ieee 9 float_pkg 0 22 DJZPnOhNOL=fWo3;8j`XI0
 Z56 DPx4 ieee 17 fixed_float_types 0 22 j<WD5SZ6`I4KC;8P]h@_10
 Z57 DBx4 ieee 17 fixed_generic_pkg 4 body 22 YX7o<=i^@69Sm1gW_d;XB1
 Z58 DPx4 ieee 9 fixed_pkg 0 22 c`b>2Shb`ic5KAcV=K;Co1
+=======
+Z55 DBx4 ieee 17 float_generic_pkg 4 body 22 H?RSbZ=lR0[b?m<zWkZGN1
+Z56 DPx4 ieee 9 float_pkg 0 22 DJZPnOhNOL=fWo3;8j`XI0
+Z57 DPx4 ieee 17 fixed_float_types 0 22 j<WD5SZ6`I4KC;8P]h@_10
+Z58 DBx4 ieee 17 fixed_generic_pkg 4 body 22 YX7o<=i^@69Sm1gW_d;XB1
+Z59 DPx4 ieee 9 fixed_pkg 0 22 c`b>2Shb`ic5KAcV=K;Co1
+>>>>>>> main
 R2
 R3
 R4
@@ -377,10 +431,17 @@ R6
 !i122 7
 R12
 R0
+<<<<<<< HEAD
 Z59 8/home/borg/.local/lib/python3.8/site-packages/vunit/vhdl/data_types/src/codec-2008p.vhd
 Z60 F/home/borg/.local/lib/python3.8/site-packages/vunit/vhdl/data_types/src/codec-2008p.vhd
 l0
 Z61 L19 1
+=======
+Z60 8/home/borg/.local/lib/python3.8/site-packages/vunit/vhdl/data_types/src/codec-2008p.vhd
+Z61 F/home/borg/.local/lib/python3.8/site-packages/vunit/vhdl/data_types/src/codec-2008p.vhd
+l0
+Z62 L19 1
+>>>>>>> main
 VYdl`fR51<M4jb`o4KiJO13
 !s100 DN@^zRab:GQ:]bi[E@m0T2
 R16
@@ -388,22 +449,39 @@ R16
 b1
 R17
 !i10b 1
+<<<<<<< HEAD
 R18
 Z62 !s90 -quiet|-modelsimini|/home/borg/Z01.1--Dio/Projetos/D-LogicaSequencial/vunit_out/modelsim/modelsim.ini|-2008|-work|vunit_lib|/home/borg/.local/lib/python3.8/site-packages/vunit/vhdl/data_types/src/codec-2008p.vhd|
 Z63 !s107 /home/borg/.local/lib/python3.8/site-packages/vunit/vhdl/data_types/src/codec-2008p.vhd|
+=======
+Z63 !s108 1649873345.000000
+Z64 !s90 -quiet|-modelsimini|/home/borg/Documents/Elesis/Z01.1--Dio/Projetos/D-LogicaSequencial/vunit_out/modelsim/modelsim.ini|-2008|-work|vunit_lib|/home/borg/.local/lib/python3.8/site-packages/vunit/vhdl/data_types/src/codec-2008p.vhd|
+Z65 !s107 /home/borg/.local/lib/python3.8/site-packages/vunit/vhdl/data_types/src/codec-2008p.vhd|
+>>>>>>> main
 !i113 1
 R21
 R22
 Bbody
+<<<<<<< HEAD
 Z64 DPx4 work 15 codec_2008p_pkg 0 22 Ydl`fR51<M4jb`o4KiJO13
 Z65 DPx4 work 23 codec_builder_2008p_pkg 0 22 mh;L9^nKGkl]1GJbCTOmi2
 R24
 R25
 R54
+=======
+Z66 DPx4 work 15 codec_2008p_pkg 0 22 Ydl`fR51<M4jb`o4KiJO13
+Z67 DPx4 work 23 codec_builder_2008p_pkg 0 22 mh;L9^nKGkl]1GJbCTOmi2
+R24
+R25
+>>>>>>> main
 R55
 R56
 R57
 R58
+<<<<<<< HEAD
+=======
+R59
+>>>>>>> main
 R2
 R3
 R4
@@ -419,19 +497,32 @@ R16
 33
 R17
 !i10b 1
+<<<<<<< HEAD
 R18
 R62
 R63
+=======
+R63
+R64
+R65
+>>>>>>> main
 !i113 1
 R21
 R22
 Pcodec_builder_2008p_pkg
 R24
+<<<<<<< HEAD
 R54
+=======
+>>>>>>> main
 R55
 R56
 R57
 R58
+<<<<<<< HEAD
+=======
+R59
+>>>>>>> main
 R2
 R3
 R4
@@ -441,8 +532,13 @@ R6
 !i122 5
 R12
 R0
+<<<<<<< HEAD
 Z66 8/home/borg/.local/lib/python3.8/site-packages/vunit/vhdl/data_types/src/codec_builder-2008p.vhd
 Z67 F/home/borg/.local/lib/python3.8/site-packages/vunit/vhdl/data_types/src/codec_builder-2008p.vhd
+=======
+Z68 8/home/borg/.local/lib/python3.8/site-packages/vunit/vhdl/data_types/src/codec_builder-2008p.vhd
+Z69 F/home/borg/.local/lib/python3.8/site-packages/vunit/vhdl/data_types/src/codec_builder-2008p.vhd
+>>>>>>> main
 l0
 L21 1
 Vmh;L9^nKGkl]1GJbCTOmi2
@@ -450,22 +546,39 @@ Vmh;L9^nKGkl]1GJbCTOmi2
 R16
 33
 b1
+<<<<<<< HEAD
 Z68 !s110 1649870099
 !i10b 1
 Z69 !s108 1649870099.000000
 Z70 !s90 -quiet|-modelsimini|/home/borg/Z01.1--Dio/Projetos/D-LogicaSequencial/vunit_out/modelsim/modelsim.ini|-2008|-work|vunit_lib|/home/borg/.local/lib/python3.8/site-packages/vunit/vhdl/data_types/src/codec_builder-2008p.vhd|
 Z71 !s107 /home/borg/.local/lib/python3.8/site-packages/vunit/vhdl/data_types/src/codec_builder-2008p.vhd|
+=======
+Z70 !s110 1649873345
+!i10b 1
+R63
+Z71 !s90 -quiet|-modelsimini|/home/borg/Documents/Elesis/Z01.1--Dio/Projetos/D-LogicaSequencial/vunit_out/modelsim/modelsim.ini|-2008|-work|vunit_lib|/home/borg/.local/lib/python3.8/site-packages/vunit/vhdl/data_types/src/codec_builder-2008p.vhd|
+Z72 !s107 /home/borg/.local/lib/python3.8/site-packages/vunit/vhdl/data_types/src/codec_builder-2008p.vhd|
+>>>>>>> main
 !i113 1
 R21
 R22
 Bbody
+<<<<<<< HEAD
 R65
 R24
 R54
+=======
+R67
+R24
+>>>>>>> main
 R55
 R56
 R57
 R58
+<<<<<<< HEAD
+=======
+R59
+>>>>>>> main
 R2
 R3
 R4
@@ -479,11 +592,19 @@ VZdJbKizEo5_iaV8IN1To`0
 !s100 QY3nmWkQaFk5c@@02n4aG3
 R16
 33
+<<<<<<< HEAD
 R68
 !i10b 1
 R69
 R70
 R71
+=======
+R70
+!i10b 1
+R63
+R71
+R72
+>>>>>>> main
 !i113 1
 R21
 R22
@@ -497,20 +618,35 @@ R6
 !i122 4
 R12
 R0
+<<<<<<< HEAD
 Z72 8/home/borg/.local/lib/python3.8/site-packages/vunit/vhdl/data_types/src/codec_builder.vhd
 Z73 F/home/borg/.local/lib/python3.8/site-packages/vunit/vhdl/data_types/src/codec_builder.vhd
 l0
 Z74 L17 1
+=======
+Z73 8/home/borg/.local/lib/python3.8/site-packages/vunit/vhdl/data_types/src/codec_builder.vhd
+Z74 F/home/borg/.local/lib/python3.8/site-packages/vunit/vhdl/data_types/src/codec_builder.vhd
+l0
+Z75 L17 1
+>>>>>>> main
 VlMzaQB]AGo[9c?7g60J_93
 !s100 UfBi>F[gOYbVneZ^Q_5[>2
 R16
 33
 b1
+<<<<<<< HEAD
 R68
 !i10b 1
 R69
 Z75 !s90 -quiet|-modelsimini|/home/borg/Z01.1--Dio/Projetos/D-LogicaSequencial/vunit_out/modelsim/modelsim.ini|-2008|-work|vunit_lib|/home/borg/.local/lib/python3.8/site-packages/vunit/vhdl/data_types/src/codec_builder.vhd|
 Z76 !s107 /home/borg/.local/lib/python3.8/site-packages/vunit/vhdl/data_types/src/codec_builder.vhd|
+=======
+R70
+!i10b 1
+R63
+Z76 !s90 -quiet|-modelsimini|/home/borg/Documents/Elesis/Z01.1--Dio/Projetos/D-LogicaSequencial/vunit_out/modelsim/modelsim.ini|-2008|-work|vunit_lib|/home/borg/.local/lib/python3.8/site-packages/vunit/vhdl/data_types/src/codec_builder.vhd|
+Z77 !s107 /home/borg/.local/lib/python3.8/site-packages/vunit/vhdl/data_types/src/codec_builder.vhd|
+>>>>>>> main
 !i113 1
 R21
 R22
@@ -529,11 +665,19 @@ VP:Ao@:`Ki1@5ji^K>5lQF3
 !s100 CLK^@[KFJ=GEzMD;9k3V31
 R16
 33
+<<<<<<< HEAD
 R68
 !i10b 1
 R69
 R75
 R76
+=======
+R70
+!i10b 1
+R63
+R76
+R77
+>>>>>>> main
 !i113 1
 R21
 R22
@@ -548,8 +692,13 @@ R6
 !i122 6
 R12
 R0
+<<<<<<< HEAD
 Z77 8/home/borg/.local/lib/python3.8/site-packages/vunit/vhdl/data_types/src/codec.vhd
 Z78 F/home/borg/.local/lib/python3.8/site-packages/vunit/vhdl/data_types/src/codec.vhd
+=======
+Z78 8/home/borg/.local/lib/python3.8/site-packages/vunit/vhdl/data_types/src/codec.vhd
+Z79 F/home/borg/.local/lib/python3.8/site-packages/vunit/vhdl/data_types/src/codec.vhd
+>>>>>>> main
 l0
 L20 1
 VVE]>YKnj@eiUJ<U1YSEXb3
@@ -557,11 +706,19 @@ VVE]>YKnj@eiUJ<U1YSEXb3
 R16
 33
 b1
+<<<<<<< HEAD
 R17
 !i10b 1
 R69
 Z79 !s90 -quiet|-modelsimini|/home/borg/Z01.1--Dio/Projetos/D-LogicaSequencial/vunit_out/modelsim/modelsim.ini|-2008|-work|vunit_lib|/home/borg/.local/lib/python3.8/site-packages/vunit/vhdl/data_types/src/codec.vhd|
 Z80 !s107 /home/borg/.local/lib/python3.8/site-packages/vunit/vhdl/data_types/src/codec.vhd|
+=======
+R70
+!i10b 1
+R63
+Z80 !s90 -quiet|-modelsimini|/home/borg/Documents/Elesis/Z01.1--Dio/Projetos/D-LogicaSequencial/vunit_out/modelsim/modelsim.ini|-2008|-work|vunit_lib|/home/borg/.local/lib/python3.8/site-packages/vunit/vhdl/data_types/src/codec.vhd|
+Z81 !s107 /home/borg/.local/lib/python3.8/site-packages/vunit/vhdl/data_types/src/codec.vhd|
+>>>>>>> main
 !i113 1
 R21
 R22
@@ -581,11 +738,19 @@ V>67F;OQHO@R]RP2Tkl[TA2
 !s100 Y3LDhUAddGQ_a`4WI^FH@0
 R16
 33
+<<<<<<< HEAD
 R17
 !i10b 1
 R69
 R79
 R80
+=======
+R70
+!i10b 1
+R63
+R80
+R81
+>>>>>>> main
 !i113 1
 R21
 R22
@@ -607,8 +772,13 @@ R11
 !i122 31
 R12
 R0
+<<<<<<< HEAD
 Z81 8/home/borg/.local/lib/python3.8/site-packages/vunit/vhdl/core/src/core_pkg.vhd
 Z82 F/home/borg/.local/lib/python3.8/site-packages/vunit/vhdl/core/src/core_pkg.vhd
+=======
+Z82 8/home/borg/.local/lib/python3.8/site-packages/vunit/vhdl/core/src/core_pkg.vhd
+Z83 F/home/borg/.local/lib/python3.8/site-packages/vunit/vhdl/core/src/core_pkg.vhd
+>>>>>>> main
 l0
 R15
 V0M7EG>QDghVT?B78KOYPn0
@@ -616,11 +786,19 @@ V0M7EG>QDghVT?B78KOYPn0
 R16
 33
 b1
+<<<<<<< HEAD
 R47
 !i10b 1
 Z83 !s108 1649870101.000000
 Z84 !s90 -quiet|-modelsimini|/home/borg/Z01.1--Dio/Projetos/D-LogicaSequencial/vunit_out/modelsim/modelsim.ini|-2008|-work|vunit_lib|/home/borg/.local/lib/python3.8/site-packages/vunit/vhdl/core/src/core_pkg.vhd|
 Z85 !s107 /home/borg/.local/lib/python3.8/site-packages/vunit/vhdl/core/src/core_pkg.vhd|
+=======
+Z84 !s110 1649873348
+!i10b 1
+R53
+Z85 !s90 -quiet|-modelsimini|/home/borg/Documents/Elesis/Z01.1--Dio/Projetos/D-LogicaSequencial/vunit_out/modelsim/modelsim.ini|-2008|-work|vunit_lib|/home/borg/.local/lib/python3.8/site-packages/vunit/vhdl/core/src/core_pkg.vhd|
+Z86 !s107 /home/borg/.local/lib/python3.8/site-packages/vunit/vhdl/core/src/core_pkg.vhd|
+>>>>>>> main
 !i113 1
 R21
 R22
@@ -642,16 +820,28 @@ R36
 R11
 !i122 31
 l0
+<<<<<<< HEAD
 Z86 L27 1
+=======
+Z87 L27 1
+>>>>>>> main
 VgdAY=LjK<hHgSF`C0AEiZ3
 !s100 z6MX^:eUm=783cf8Ai8:b3
 R16
 33
+<<<<<<< HEAD
 R47
 !i10b 1
 R83
 R84
 R85
+=======
+R84
+!i10b 1
+R53
+R85
+R86
+>>>>>>> main
 !i113 1
 R21
 R22
@@ -667,10 +857,17 @@ V[Ik[<YbW8Ag;h5P``aP2g3
 !s100 HeRIX0=cA1>SfFRXj=<IA3
 R16
 33
+<<<<<<< HEAD
 Z87 !s110 1649870101
 !i10b 0
 R83
 !s90 -quiet|-modelsimini|/home/borg/Z01.1--Dio/Projetos/D-LogicaSequencial/vunit_out/modelsim/modelsim.ini|-2008|-work|vunit_lib|/home/borg/.local/lib/python3.8/site-packages/vunit/vhdl/data_types/src/data_types_context.vhd|
+=======
+R84
+!i10b 0
+R53
+!s90 -quiet|-modelsimini|/home/borg/Documents/Elesis/Z01.1--Dio/Projetos/D-LogicaSequencial/vunit_out/modelsim/modelsim.ini|-2008|-work|vunit_lib|/home/borg/.local/lib/python3.8/site-packages/vunit/vhdl/data_types/src/data_types_context.vhd|
+>>>>>>> main
 !s107 /home/borg/.local/lib/python3.8/site-packages/vunit/vhdl/data_types/src/data_types_context.vhd|
 !i113 1
 R21
@@ -705,10 +902,17 @@ V_EQKR[P[ibBW^<0mzPejD2
 R16
 33
 b1
+<<<<<<< HEAD
 R87
 !i10b 1
 R83
 Z94 !s90 -quiet|-modelsimini|/home/borg/Z01.1--Dio/Projetos/D-LogicaSequencial/vunit_out/modelsim/modelsim.ini|-2008|-work|vunit_lib|/home/borg/.local/lib/python3.8/site-packages/vunit/vhdl/data_types/src/dict_pkg.vhd|
+=======
+R84
+!i10b 1
+R53
+Z94 !s90 -quiet|-modelsimini|/home/borg/Documents/Elesis/Z01.1--Dio/Projetos/D-LogicaSequencial/vunit_out/modelsim/modelsim.ini|-2008|-work|vunit_lib|/home/borg/.local/lib/python3.8/site-packages/vunit/vhdl/data_types/src/dict_pkg.vhd|
+>>>>>>> main
 Z95 !s107 /home/borg/.local/lib/python3.8/site-packages/vunit/vhdl/data_types/src/dict_pkg.vhd|
 !i113 1
 R21
@@ -739,9 +943,15 @@ VlfO:g?mY1i9HNQRLe0EU`0
 !s100 Q1GMljof_QP]GGf>I9USE2
 R16
 33
+<<<<<<< HEAD
 R87
 !i10b 1
 R83
+=======
+R84
+!i10b 1
+R53
+>>>>>>> main
 R94
 R95
 !i113 1
@@ -781,7 +991,11 @@ b1
 R17
 !i10b 1
 R18
+<<<<<<< HEAD
 Z99 !s90 -quiet|-modelsimini|/home/borg/Z01.1--Dio/Projetos/D-LogicaSequencial/vunit_out/modelsim/modelsim.ini|-2008|-work|vunit_lib|/home/borg/.local/lib/python3.8/site-packages/vunit/vhdl/dictionary/src/dictionary.vhd|
+=======
+Z99 !s90 -quiet|-modelsimini|/home/borg/Documents/Elesis/Z01.1--Dio/Projetos/D-LogicaSequencial/vunit_out/modelsim/modelsim.ini|-2008|-work|vunit_lib|/home/borg/.local/lib/python3.8/site-packages/vunit/vhdl/dictionary/src/dictionary.vhd|
+>>>>>>> main
 Z100 !s107 /home/borg/.local/lib/python3.8/site-packages/vunit/vhdl/dictionary/src/dictionary.vhd|
 !i113 1
 R21
@@ -838,7 +1052,11 @@ b1
 R17
 !i10b 1
 R18
+<<<<<<< HEAD
 Z104 !s90 -quiet|-modelsimini|/home/borg/Z01.1--Dio/Projetos/D-LogicaSequencial/vunit_out/modelsim/modelsim.ini|-2008|-work|vunit_lib|/home/borg/.local/lib/python3.8/site-packages/vunit/vhdl/data_types/src/api/external_integer_vector_pkg.vhd|
+=======
+Z104 !s90 -quiet|-modelsimini|/home/borg/Documents/Elesis/Z01.1--Dio/Projetos/D-LogicaSequencial/vunit_out/modelsim/modelsim.ini|-2008|-work|vunit_lib|/home/borg/.local/lib/python3.8/site-packages/vunit/vhdl/data_types/src/api/external_integer_vector_pkg.vhd|
+>>>>>>> main
 Z105 !s107 /home/borg/.local/lib/python3.8/site-packages/vunit/vhdl/data_types/src/api/external_integer_vector_pkg.vhd|
 !i113 1
 R21
@@ -878,7 +1096,11 @@ b1
 R17
 !i10b 1
 R18
+<<<<<<< HEAD
 Z109 !s90 -quiet|-modelsimini|/home/borg/Z01.1--Dio/Projetos/D-LogicaSequencial/vunit_out/modelsim/modelsim.ini|-2008|-work|vunit_lib|/home/borg/.local/lib/python3.8/site-packages/vunit/vhdl/data_types/src/api/external_string_pkg.vhd|
+=======
+Z109 !s90 -quiet|-modelsimini|/home/borg/Documents/Elesis/Z01.1--Dio/Projetos/D-LogicaSequencial/vunit_out/modelsim/modelsim.ini|-2008|-work|vunit_lib|/home/borg/.local/lib/python3.8/site-packages/vunit/vhdl/data_types/src/api/external_string_pkg.vhd|
+>>>>>>> main
 Z110 !s107 /home/borg/.local/lib/python3.8/site-packages/vunit/vhdl/data_types/src/api/external_string_pkg.vhd|
 !i113 1
 R21
@@ -927,16 +1149,28 @@ VkmkmiD?Az`;?8K8jhCaXk1
 R16
 33
 b1
+<<<<<<< HEAD
 R17
 !i10b 1
 R18
 Z114 !s90 -quiet|-modelsimini|/home/borg/Z01.1--Dio/Projetos/D-LogicaSequencial/vunit_out/modelsim/modelsim.ini|-2008|-work|vunit_lib|/home/borg/.local/lib/python3.8/site-packages/vunit/vhdl/logging/src/file_pkg.vhd|
 Z115 !s107 /home/borg/.local/lib/python3.8/site-packages/vunit/vhdl/logging/src/file_pkg.vhd|
+=======
+Z114 !s110 1649873347
+!i10b 1
+Z115 !s108 1649873347.000000
+Z116 !s90 -quiet|-modelsimini|/home/borg/Documents/Elesis/Z01.1--Dio/Projetos/D-LogicaSequencial/vunit_out/modelsim/modelsim.ini|-2008|-work|vunit_lib|/home/borg/.local/lib/python3.8/site-packages/vunit/vhdl/logging/src/file_pkg.vhd|
+Z117 !s107 /home/borg/.local/lib/python3.8/site-packages/vunit/vhdl/logging/src/file_pkg.vhd|
+>>>>>>> main
 !i113 1
 R21
 R22
 Bbody
+<<<<<<< HEAD
 Z116 DPx4 work 8 file_pkg 0 22 kmkmiD?Az`;?8K8jhCaXk1
+=======
+Z118 DPx4 work 8 file_pkg 0 22 kmkmiD?Az`;?8K8jhCaXk1
+>>>>>>> main
 R26
 R27
 R24
@@ -957,11 +1191,19 @@ VNl`=YP=K;]TlPk2dGO@>X1
 !s100 44l@ZcKX1nFb20XjZW7lI3
 R16
 33
+<<<<<<< HEAD
 R17
 !i10b 1
 R18
 R114
 R115
+=======
+R114
+!i10b 1
+R115
+R116
+R117
+>>>>>>> main
 !i113 1
 R21
 R22
@@ -989,10 +1231,17 @@ Vo:H2ie>cVB<O<8]@gJG;:3
 R16
 33
 b1
+<<<<<<< HEAD
 R87
 !i10b 1
 R83
 !s90 -quiet|-modelsimini|/home/borg/Z01.1--Dio/Projetos/D-LogicaSequencial/vunit_out/modelsim/modelsim.ini|-2008|-work|vunit_lib|/home/borg/.local/lib/python3.8/site-packages/vunit/vhdl/data_types/src/integer_array_pkg.vhd|
+=======
+R114
+!i10b 1
+R115
+!s90 -quiet|-modelsimini|/home/borg/Documents/Elesis/Z01.1--Dio/Projetos/D-LogicaSequencial/vunit_out/modelsim/modelsim.ini|-2008|-work|vunit_lib|/home/borg/.local/lib/python3.8/site-packages/vunit/vhdl/data_types/src/integer_array_pkg.vhd|
+>>>>>>> main
 !s107 /home/borg/.local/lib/python3.8/site-packages/vunit/vhdl/data_types/src/integer_array_pkg.vhd|
 !i113 1
 R21
@@ -1019,10 +1268,17 @@ V`VQP4Q8Y@kD_0CgbZiLK52
 !s100 >S9CaQ_79Ee7L3:WiWIBg3
 R16
 33
+<<<<<<< HEAD
 R87
 !i10b 1
 R83
 !s90 -quiet|-modelsimini|/home/borg/Z01.1--Dio/Projetos/D-LogicaSequencial/vunit_out/modelsim/modelsim.ini|-2008|-work|vunit_lib|/home/borg/.local/lib/python3.8/site-packages/vunit/vhdl/data_types/src/integer_array_pkg-body.vhd|
+=======
+R84
+!i10b 1
+R53
+!s90 -quiet|-modelsimini|/home/borg/Documents/Elesis/Z01.1--Dio/Projetos/D-LogicaSequencial/vunit_out/modelsim/modelsim.ini|-2008|-work|vunit_lib|/home/borg/.local/lib/python3.8/site-packages/vunit/vhdl/data_types/src/integer_array_pkg-body.vhd|
+>>>>>>> main
 !s107 /home/borg/.local/lib/python3.8/site-packages/vunit/vhdl/data_types/src/integer_array_pkg-body.vhd|
 !i113 1
 R21
@@ -1044,7 +1300,11 @@ R0
 8/home/borg/.local/lib/python3.8/site-packages/vunit/vhdl/data_types/src/integer_vector_ptr_pkg.vhd
 F/home/borg/.local/lib/python3.8/site-packages/vunit/vhdl/data_types/src/integer_vector_ptr_pkg.vhd
 l0
+<<<<<<< HEAD
 R61
+=======
+R62
+>>>>>>> main
 VdQHde;mb=n>VUWALE0?M33
 !s100 hg6@a[=Dl3inZ4TaKM[RU3
 R16
@@ -1053,7 +1313,11 @@ b1
 R17
 !i10b 1
 R18
+<<<<<<< HEAD
 !s90 -quiet|-modelsimini|/home/borg/Z01.1--Dio/Projetos/D-LogicaSequencial/vunit_out/modelsim/modelsim.ini|-2008|-work|vunit_lib|/home/borg/.local/lib/python3.8/site-packages/vunit/vhdl/data_types/src/integer_vector_ptr_pkg.vhd|
+=======
+!s90 -quiet|-modelsimini|/home/borg/Documents/Elesis/Z01.1--Dio/Projetos/D-LogicaSequencial/vunit_out/modelsim/modelsim.ini|-2008|-work|vunit_lib|/home/borg/.local/lib/python3.8/site-packages/vunit/vhdl/data_types/src/integer_vector_ptr_pkg.vhd|
+>>>>>>> main
 !s107 /home/borg/.local/lib/python3.8/site-packages/vunit/vhdl/data_types/src/integer_vector_ptr_pkg.vhd|
 !i113 1
 R21
@@ -1079,10 +1343,17 @@ VFNfLShL7I8gFgPD<PGIDz0
 !s100 @]i9g@D?akhj:8XHPSY<P3
 R16
 33
+<<<<<<< HEAD
 R87
 !i10b 1
 R18
 !s90 -quiet|-modelsimini|/home/borg/Z01.1--Dio/Projetos/D-LogicaSequencial/vunit_out/modelsim/modelsim.ini|-2008|-work|vunit_lib|/home/borg/.local/lib/python3.8/site-packages/vunit/vhdl/data_types/src/integer_vector_ptr_pkg-body-2002p.vhd|
+=======
+R114
+!i10b 1
+R115
+!s90 -quiet|-modelsimini|/home/borg/Documents/Elesis/Z01.1--Dio/Projetos/D-LogicaSequencial/vunit_out/modelsim/modelsim.ini|-2008|-work|vunit_lib|/home/borg/.local/lib/python3.8/site-packages/vunit/vhdl/data_types/src/integer_vector_ptr_pkg-body-2002p.vhd|
+>>>>>>> main
 !s107 /home/borg/.local/lib/python3.8/site-packages/vunit/vhdl/data_types/src/integer_vector_ptr_pkg-body-2002p.vhd|
 !i113 1
 R21
@@ -1106,8 +1377,13 @@ R6
 !i122 24
 R12
 R0
+<<<<<<< HEAD
 Z117 8/home/borg/.local/lib/python3.8/site-packages/vunit/vhdl/data_types/src/integer_vector_ptr_pool_pkg.vhd
 Z118 F/home/borg/.local/lib/python3.8/site-packages/vunit/vhdl/data_types/src/integer_vector_ptr_pool_pkg.vhd
+=======
+Z119 8/home/borg/.local/lib/python3.8/site-packages/vunit/vhdl/data_types/src/integer_vector_ptr_pool_pkg.vhd
+Z120 F/home/borg/.local/lib/python3.8/site-packages/vunit/vhdl/data_types/src/integer_vector_ptr_pool_pkg.vhd
+>>>>>>> main
 l0
 R52
 VFX=7VbM]W@D7RN`^3N8aJ3
@@ -1115,11 +1391,19 @@ VFX=7VbM]W@D7RN`^3N8aJ3
 R16
 33
 b1
+<<<<<<< HEAD
 R87
 !i10b 1
 R83
 Z119 !s90 -quiet|-modelsimini|/home/borg/Z01.1--Dio/Projetos/D-LogicaSequencial/vunit_out/modelsim/modelsim.ini|-2008|-work|vunit_lib|/home/borg/.local/lib/python3.8/site-packages/vunit/vhdl/data_types/src/integer_vector_ptr_pool_pkg.vhd|
 Z120 !s107 /home/borg/.local/lib/python3.8/site-packages/vunit/vhdl/data_types/src/integer_vector_ptr_pool_pkg.vhd|
+=======
+R114
+!i10b 1
+R115
+Z121 !s90 -quiet|-modelsimini|/home/borg/Documents/Elesis/Z01.1--Dio/Projetos/D-LogicaSequencial/vunit_out/modelsim/modelsim.ini|-2008|-work|vunit_lib|/home/borg/.local/lib/python3.8/site-packages/vunit/vhdl/data_types/src/integer_vector_ptr_pool_pkg.vhd|
+Z122 !s107 /home/borg/.local/lib/python3.8/site-packages/vunit/vhdl/data_types/src/integer_vector_ptr_pool_pkg.vhd|
+>>>>>>> main
 !i113 1
 R21
 R22
@@ -1142,16 +1426,28 @@ R11
 R6
 !i122 24
 l0
+<<<<<<< HEAD
 Z121 L33 1
+=======
+Z123 L33 1
+>>>>>>> main
 VaR<IX07>]?oOzB^jIMFB01
 !s100 _EYAIQo39mBLCbS;aK_]i1
 R16
 33
+<<<<<<< HEAD
 R87
 !i10b 1
 R83
 R119
 R120
+=======
+R114
+!i10b 1
+R115
+R121
+R122
+>>>>>>> main
 !i113 1
 R21
 R22
@@ -1178,20 +1474,35 @@ R43
 !i122 32
 R12
 R0
+<<<<<<< HEAD
 Z122 8/home/borg/.local/lib/python3.8/site-packages/vunit/vhdl/logging/src/log_deprecated_pkg.vhd
 Z123 F/home/borg/.local/lib/python3.8/site-packages/vunit/vhdl/logging/src/log_deprecated_pkg.vhd
 l0
 Z124 L15 1
+=======
+Z124 8/home/borg/.local/lib/python3.8/site-packages/vunit/vhdl/logging/src/log_deprecated_pkg.vhd
+Z125 F/home/borg/.local/lib/python3.8/site-packages/vunit/vhdl/logging/src/log_deprecated_pkg.vhd
+l0
+Z126 L15 1
+>>>>>>> main
 VQ7[lfBh_WC:ca^W64YP1U2
 !s100 C_^fGo=JS^;hlEOJdRA4D1
 R16
 33
 b1
+<<<<<<< HEAD
 R47
 !i10b 1
 R48
 Z125 !s90 -quiet|-modelsimini|/home/borg/Z01.1--Dio/Projetos/D-LogicaSequencial/vunit_out/modelsim/modelsim.ini|-2008|-work|vunit_lib|/home/borg/.local/lib/python3.8/site-packages/vunit/vhdl/logging/src/log_deprecated_pkg.vhd|
 Z126 !s107 /home/borg/.local/lib/python3.8/site-packages/vunit/vhdl/logging/src/log_deprecated_pkg.vhd|
+=======
+R84
+!i10b 1
+R53
+Z127 !s90 -quiet|-modelsimini|/home/borg/Documents/Elesis/Z01.1--Dio/Projetos/D-LogicaSequencial/vunit_out/modelsim/modelsim.ini|-2008|-work|vunit_lib|/home/borg/.local/lib/python3.8/site-packages/vunit/vhdl/logging/src/log_deprecated_pkg.vhd|
+Z128 !s107 /home/borg/.local/lib/python3.8/site-packages/vunit/vhdl/logging/src/log_deprecated_pkg.vhd|
+>>>>>>> main
 !i113 1
 R21
 R22
@@ -1223,11 +1534,19 @@ V4nDXH:2Kn`2?OIei>k2nX2
 !s100 HjCQ8z4`cGBZSo:TSCLH`1
 R16
 33
+<<<<<<< HEAD
 R47
 !i10b 1
 R48
 R125
 R126
+=======
+R84
+!i10b 1
+R53
+R127
+R128
+>>>>>>> main
 !i113 1
 R21
 R22
@@ -1253,7 +1572,11 @@ R0
 8/home/borg/.local/lib/python3.8/site-packages/vunit/vhdl/logging/src/log_handler_pkg.vhd
 F/home/borg/.local/lib/python3.8/site-packages/vunit/vhdl/logging/src/log_handler_pkg.vhd
 l0
+<<<<<<< HEAD
 R53
+=======
+R54
+>>>>>>> main
 V4LC?iW3FIdm8J@]^l:Fa_0
 !s100 =FE1SOf99WzzB1Sh]a<;T1
 R16
@@ -1262,14 +1585,22 @@ b1
 R17
 !i10b 1
 R18
+<<<<<<< HEAD
 !s90 -quiet|-modelsimini|/home/borg/Z01.1--Dio/Projetos/D-LogicaSequencial/vunit_out/modelsim/modelsim.ini|-2008|-work|vunit_lib|/home/borg/.local/lib/python3.8/site-packages/vunit/vhdl/logging/src/log_handler_pkg.vhd|
+=======
+!s90 -quiet|-modelsimini|/home/borg/Documents/Elesis/Z01.1--Dio/Projetos/D-LogicaSequencial/vunit_out/modelsim/modelsim.ini|-2008|-work|vunit_lib|/home/borg/.local/lib/python3.8/site-packages/vunit/vhdl/logging/src/log_handler_pkg.vhd|
+>>>>>>> main
 !s107 /home/borg/.local/lib/python3.8/site-packages/vunit/vhdl/logging/src/log_handler_pkg.vhd|
 !i113 1
 R21
 R22
 Bbody
 R41
+<<<<<<< HEAD
 R116
+=======
+R118
+>>>>>>> main
 R51
 R23
 R8
@@ -1290,15 +1621,26 @@ DPx9 vunit_lib 22 integer_vector_ptr_pkg 0 22 dQHde;mb=n>VUWALE0?M33
 8/home/borg/.local/lib/python3.8/site-packages/vunit/vhdl/logging/src/log_handler_pkg-body.vhd
 F/home/borg/.local/lib/python3.8/site-packages/vunit/vhdl/logging/src/log_handler_pkg-body.vhd
 l0
+<<<<<<< HEAD
 R74
+=======
+R75
+>>>>>>> main
 VNgkaFXgzeV5Ugda?QdJ3P1
 !s100 beM^2LenbML1k4b1g@GKM0
 R16
 33
+<<<<<<< HEAD
 R17
 !i10b 1
 R18
 !s90 -quiet|-modelsimini|/home/borg/Z01.1--Dio/Projetos/D-LogicaSequencial/vunit_out/modelsim/modelsim.ini|-2008|-work|vunit_lib|/home/borg/.local/lib/python3.8/site-packages/vunit/vhdl/logging/src/log_handler_pkg-body.vhd|
+=======
+R114
+!i10b 1
+R115
+!s90 -quiet|-modelsimini|/home/borg/Documents/Elesis/Z01.1--Dio/Projetos/D-LogicaSequencial/vunit_out/modelsim/modelsim.ini|-2008|-work|vunit_lib|/home/borg/.local/lib/python3.8/site-packages/vunit/vhdl/logging/src/log_handler_pkg-body.vhd|
+>>>>>>> main
 !s107 /home/borg/.local/lib/python3.8/site-packages/vunit/vhdl/logging/src/log_handler_pkg-body.vhd|
 !i113 1
 R21
@@ -1322,7 +1664,11 @@ R0
 8/home/borg/.local/lib/python3.8/site-packages/vunit/vhdl/logging/src/log_levels_pkg.vhd
 F/home/borg/.local/lib/python3.8/site-packages/vunit/vhdl/logging/src/log_levels_pkg.vhd
 l0
+<<<<<<< HEAD
 R53
+=======
+R54
+>>>>>>> main
 VjGUFnEUH1mU?HKm3YRPGj3
 !s100 ;8d3W4?0zJ`:>2CL8G`NA1
 R16
@@ -1331,7 +1677,11 @@ b1
 R17
 !i10b 1
 R18
+<<<<<<< HEAD
 !s90 -quiet|-modelsimini|/home/borg/Z01.1--Dio/Projetos/D-LogicaSequencial/vunit_out/modelsim/modelsim.ini|-2008|-work|vunit_lib|/home/borg/.local/lib/python3.8/site-packages/vunit/vhdl/logging/src/log_levels_pkg.vhd|
+=======
+!s90 -quiet|-modelsimini|/home/borg/Documents/Elesis/Z01.1--Dio/Projetos/D-LogicaSequencial/vunit_out/modelsim/modelsim.ini|-2008|-work|vunit_lib|/home/borg/.local/lib/python3.8/site-packages/vunit/vhdl/logging/src/log_levels_pkg.vhd|
+>>>>>>> main
 !s107 /home/borg/.local/lib/python3.8/site-packages/vunit/vhdl/logging/src/log_levels_pkg.vhd|
 !i113 1
 R21
@@ -1363,10 +1713,17 @@ VFB??U8HFT]54d=fmEWa>C1
 !s100 ZFGOJA=5IX1Fg?P24ijE71
 R16
 33
+<<<<<<< HEAD
 R47
 !i10b 1
 R48
 !s90 -quiet|-modelsimini|/home/borg/Z01.1--Dio/Projetos/D-LogicaSequencial/vunit_out/modelsim/modelsim.ini|-2008|-work|vunit_lib|/home/borg/.local/lib/python3.8/site-packages/vunit/vhdl/logging/src/log_levels_pkg-body.vhd|
+=======
+R84
+!i10b 1
+R53
+!s90 -quiet|-modelsimini|/home/borg/Documents/Elesis/Z01.1--Dio/Projetos/D-LogicaSequencial/vunit_out/modelsim/modelsim.ini|-2008|-work|vunit_lib|/home/borg/.local/lib/python3.8/site-packages/vunit/vhdl/logging/src/log_levels_pkg-body.vhd|
+>>>>>>> main
 !s107 /home/borg/.local/lib/python3.8/site-packages/vunit/vhdl/logging/src/log_levels_pkg-body.vhd|
 !i113 1
 R21
@@ -1403,14 +1760,22 @@ b1
 R17
 !i10b 1
 R18
+<<<<<<< HEAD
 !s90 -quiet|-modelsimini|/home/borg/Z01.1--Dio/Projetos/D-LogicaSequencial/vunit_out/modelsim/modelsim.ini|-2008|-work|vunit_lib|/home/borg/.local/lib/python3.8/site-packages/vunit/vhdl/logging/src/logger_pkg.vhd|
+=======
+!s90 -quiet|-modelsimini|/home/borg/Documents/Elesis/Z01.1--Dio/Projetos/D-LogicaSequencial/vunit_out/modelsim/modelsim.ini|-2008|-work|vunit_lib|/home/borg/.local/lib/python3.8/site-packages/vunit/vhdl/logging/src/logger_pkg.vhd|
+>>>>>>> main
 !s107 /home/borg/.local/lib/python3.8/site-packages/vunit/vhdl/logging/src/logger_pkg.vhd|
 !i113 1
 R21
 R22
 Bbody
 R42
+<<<<<<< HEAD
 Z127 DPx4 work 9 print_pkg 0 22 z3A9G[B4JdMci]Ub;PK=S3
+=======
+Z129 DPx4 work 9 print_pkg 0 22 z3A9G[B4JdMci]Ub;PK=S3
+>>>>>>> main
 R51
 R36
 R37
@@ -1441,10 +1806,17 @@ VD3Q6AU6?2Ug49]WgQJ6Lb1
 !s100 >0UUmWJJ@;R_1Tol6ANka0
 R16
 33
+<<<<<<< HEAD
 R47
 !i10b 1
 R48
 !s90 -quiet|-modelsimini|/home/borg/Z01.1--Dio/Projetos/D-LogicaSequencial/vunit_out/modelsim/modelsim.ini|-2008|-work|vunit_lib|/home/borg/.local/lib/python3.8/site-packages/vunit/vhdl/logging/src/logger_pkg-body.vhd|
+=======
+R84
+!i10b 1
+R53
+!s90 -quiet|-modelsimini|/home/borg/Documents/Elesis/Z01.1--Dio/Projetos/D-LogicaSequencial/vunit_out/modelsim/modelsim.ini|-2008|-work|vunit_lib|/home/borg/.local/lib/python3.8/site-packages/vunit/vhdl/logging/src/logger_pkg-body.vhd|
+>>>>>>> main
 !s107 /home/borg/.local/lib/python3.8/site-packages/vunit/vhdl/logging/src/logger_pkg-body.vhd|
 !i113 1
 R21
@@ -1457,8 +1829,13 @@ R51
 !i122 1
 R12
 R0
+<<<<<<< HEAD
 Z128 8/home/borg/.local/lib/python3.8/site-packages/vunit/vhdl/path/src/path.vhd
 Z129 F/home/borg/.local/lib/python3.8/site-packages/vunit/vhdl/path/src/path.vhd
+=======
+Z130 8/home/borg/.local/lib/python3.8/site-packages/vunit/vhdl/path/src/path.vhd
+Z131 F/home/borg/.local/lib/python3.8/site-packages/vunit/vhdl/path/src/path.vhd
+>>>>>>> main
 l0
 R15
 V]@TR:IFM`TWfiVL<ZjY=I3
@@ -1466,32 +1843,56 @@ V]@TR:IFM`TWfiVL<ZjY=I3
 R16
 33
 b1
+<<<<<<< HEAD
 R68
 !i10b 1
 R69
 Z130 !s90 -quiet|-modelsimini|/home/borg/Z01.1--Dio/Projetos/D-LogicaSequencial/vunit_out/modelsim/modelsim.ini|-2008|-work|vunit_lib|/home/borg/.local/lib/python3.8/site-packages/vunit/vhdl/path/src/path.vhd|
 Z131 !s107 /home/borg/.local/lib/python3.8/site-packages/vunit/vhdl/path/src/path.vhd|
+=======
+R70
+!i10b 1
+R63
+Z132 !s90 -quiet|-modelsimini|/home/borg/Documents/Elesis/Z01.1--Dio/Projetos/D-LogicaSequencial/vunit_out/modelsim/modelsim.ini|-2008|-work|vunit_lib|/home/borg/.local/lib/python3.8/site-packages/vunit/vhdl/path/src/path.vhd|
+Z133 !s107 /home/borg/.local/lib/python3.8/site-packages/vunit/vhdl/path/src/path.vhd|
+>>>>>>> main
 !i113 1
 R21
 R22
 Bbody
+<<<<<<< HEAD
 Z132 DPx4 work 4 path 0 22 ]@TR:IFM`TWfiVL<ZjY=I3
+=======
+Z134 DPx4 work 4 path 0 22 ]@TR:IFM`TWfiVL<ZjY=I3
+>>>>>>> main
 R2
 R11
 R6
 R51
 !i122 1
 l0
+<<<<<<< HEAD
 R86
+=======
+R87
+>>>>>>> main
 VgFYAF;YS6hfWH_JGXjAIn1
 !s100 1e>H:z]K9`Z1M<DYO2G[e1
 R16
 33
+<<<<<<< HEAD
 R68
 !i10b 1
 R69
 R130
 R131
+=======
+R70
+!i10b 1
+R63
+R132
+R133
+>>>>>>> main
 !i113 1
 R21
 R22
@@ -1509,16 +1910,27 @@ Vz3A9G[B4JdMci]Ub;PK=S3
 R16
 33
 b1
+<<<<<<< HEAD
 R68
 !i10b 1
 R69
 !s90 -quiet|-modelsimini|/home/borg/Z01.1--Dio/Projetos/D-LogicaSequencial/vunit_out/modelsim/modelsim.ini|-2008|-work|vunit_lib|/home/borg/.local/lib/python3.8/site-packages/vunit/vhdl/logging/src/print_pkg.vhd|
+=======
+R70
+!i10b 1
+R63
+!s90 -quiet|-modelsimini|/home/borg/Documents/Elesis/Z01.1--Dio/Projetos/D-LogicaSequencial/vunit_out/modelsim/modelsim.ini|-2008|-work|vunit_lib|/home/borg/.local/lib/python3.8/site-packages/vunit/vhdl/logging/src/print_pkg.vhd|
+>>>>>>> main
 !s107 /home/borg/.local/lib/python3.8/site-packages/vunit/vhdl/logging/src/print_pkg.vhd|
 !i113 1
 R21
 R22
 Bbody
+<<<<<<< HEAD
 R127
+=======
+R129
+>>>>>>> main
 R23
 R26
 R27
@@ -1547,14 +1959,23 @@ R16
 R17
 !i10b 1
 R18
+<<<<<<< HEAD
 !s90 -quiet|-modelsimini|/home/borg/Z01.1--Dio/Projetos/D-LogicaSequencial/vunit_out/modelsim/modelsim.ini|-2008|-work|vunit_lib|/home/borg/.local/lib/python3.8/site-packages/vunit/vhdl/logging/src/print_pkg-body.vhd|
+=======
+!s90 -quiet|-modelsimini|/home/borg/Documents/Elesis/Z01.1--Dio/Projetos/D-LogicaSequencial/vunit_out/modelsim/modelsim.ini|-2008|-work|vunit_lib|/home/borg/.local/lib/python3.8/site-packages/vunit/vhdl/logging/src/print_pkg-body.vhd|
+>>>>>>> main
 !s107 /home/borg/.local/lib/python3.8/site-packages/vunit/vhdl/logging/src/print_pkg-body.vhd|
 !i113 1
 R21
 R22
 Pqueue_2008p_pkg
+<<<<<<< HEAD
 R65
 R64
+=======
+R67
+R66
+>>>>>>> main
 R89
 R26
 R27
@@ -1567,6 +1988,7 @@ R3
 R4
 R5
 R90
+<<<<<<< HEAD
 R54
 R55
 R56
@@ -1582,23 +2004,53 @@ Z133 8/home/borg/.local/lib/python3.8/site-packages/vunit/vhdl/data_types/src/qu
 Z134 F/home/borg/.local/lib/python3.8/site-packages/vunit/vhdl/data_types/src/queue_pkg-2008p.vhd
 l0
 R124
+=======
+R55
+R56
+R57
+R2
+R6
+R11
+R58
+R59
+!i122 23
+R12
+R0
+Z135 8/home/borg/.local/lib/python3.8/site-packages/vunit/vhdl/data_types/src/queue_pkg-2008p.vhd
+Z136 F/home/borg/.local/lib/python3.8/site-packages/vunit/vhdl/data_types/src/queue_pkg-2008p.vhd
+l0
+R126
+>>>>>>> main
 V7=Da8d6E0ZPoI=2]2Ja6n2
 !s100 >eQmSAXBBIQHF5YbQVkck1
 R16
 33
 b1
+<<<<<<< HEAD
 R87
 !i10b 1
 R83
 Z135 !s90 -quiet|-modelsimini|/home/borg/Z01.1--Dio/Projetos/D-LogicaSequencial/vunit_out/modelsim/modelsim.ini|-2008|-work|vunit_lib|/home/borg/.local/lib/python3.8/site-packages/vunit/vhdl/data_types/src/queue_pkg-2008p.vhd|
 Z136 !s107 /home/borg/.local/lib/python3.8/site-packages/vunit/vhdl/data_types/src/queue_pkg-2008p.vhd|
+=======
+R114
+!i10b 1
+R115
+Z137 !s90 -quiet|-modelsimini|/home/borg/Documents/Elesis/Z01.1--Dio/Projetos/D-LogicaSequencial/vunit_out/modelsim/modelsim.ini|-2008|-work|vunit_lib|/home/borg/.local/lib/python3.8/site-packages/vunit/vhdl/data_types/src/queue_pkg-2008p.vhd|
+Z138 !s107 /home/borg/.local/lib/python3.8/site-packages/vunit/vhdl/data_types/src/queue_pkg-2008p.vhd|
+>>>>>>> main
 !i113 1
 R21
 R22
 Bbody
 DPx4 work 15 queue_2008p_pkg 0 22 7=Da8d6E0ZPoI=2]2Ja6n2
+<<<<<<< HEAD
 R65
 R64
+=======
+R67
+R66
+>>>>>>> main
 R89
 R26
 R27
@@ -1611,6 +2063,7 @@ R3
 R4
 R5
 R90
+<<<<<<< HEAD
 R54
 R55
 R56
@@ -1619,6 +2072,16 @@ R6
 R11
 R57
 R58
+=======
+R55
+R56
+R57
+R2
+R6
+R11
+R58
+R59
+>>>>>>> main
 !i122 23
 l0
 L101 1
@@ -1626,11 +2089,19 @@ VJ;DLO1fD`Q:LBccJWNVbW2
 !s100 cfOR1SnH5;bN5GU[_YAX40
 R16
 33
+<<<<<<< HEAD
 R87
 !i10b 1
 R83
 R135
 R136
+=======
+R114
+!i10b 1
+R115
+R137
+R138
+>>>>>>> main
 !i113 1
 R21
 R22
@@ -1661,10 +2132,17 @@ VCMi_fVS`R;@j5e>onMNln3
 R16
 33
 b1
+<<<<<<< HEAD
 R87
 !i10b 1
 R83
 !s90 -quiet|-modelsimini|/home/borg/Z01.1--Dio/Projetos/D-LogicaSequencial/vunit_out/modelsim/modelsim.ini|-2008|-work|vunit_lib|/home/borg/.local/lib/python3.8/site-packages/vunit/vhdl/data_types/src/queue_pkg.vhd|
+=======
+R114
+!i10b 1
+R115
+!s90 -quiet|-modelsimini|/home/borg/Documents/Elesis/Z01.1--Dio/Projetos/D-LogicaSequencial/vunit_out/modelsim/modelsim.ini|-2008|-work|vunit_lib|/home/borg/.local/lib/python3.8/site-packages/vunit/vhdl/data_types/src/queue_pkg.vhd|
+>>>>>>> main
 !s107 /home/borg/.local/lib/python3.8/site-packages/vunit/vhdl/data_types/src/queue_pkg.vhd|
 !i113 1
 R21
@@ -1694,10 +2172,17 @@ V;8_U?GAdFbYCJXe9dmH663
 !s100 Rz6IkE:G^]aWmFBi49B993
 R16
 33
+<<<<<<< HEAD
 R87
 !i10b 1
 R83
 !s90 -quiet|-modelsimini|/home/borg/Z01.1--Dio/Projetos/D-LogicaSequencial/vunit_out/modelsim/modelsim.ini|-2008|-work|vunit_lib|/home/borg/.local/lib/python3.8/site-packages/vunit/vhdl/data_types/src/queue_pkg-body.vhd|
+=======
+R114
+!i10b 1
+R115
+!s90 -quiet|-modelsimini|/home/borg/Documents/Elesis/Z01.1--Dio/Projetos/D-LogicaSequencial/vunit_out/modelsim/modelsim.ini|-2008|-work|vunit_lib|/home/borg/.local/lib/python3.8/site-packages/vunit/vhdl/data_types/src/queue_pkg-body.vhd|
+>>>>>>> main
 !s107 /home/borg/.local/lib/python3.8/site-packages/vunit/vhdl/data_types/src/queue_pkg-body.vhd|
 !i113 1
 R21
@@ -1723,8 +2208,13 @@ R88
 !i122 27
 R12
 R0
+<<<<<<< HEAD
 Z137 8/home/borg/.local/lib/python3.8/site-packages/vunit/vhdl/data_types/src/queue_pool_pkg.vhd
 Z138 F/home/borg/.local/lib/python3.8/site-packages/vunit/vhdl/data_types/src/queue_pool_pkg.vhd
+=======
+Z139 8/home/borg/.local/lib/python3.8/site-packages/vunit/vhdl/data_types/src/queue_pool_pkg.vhd
+Z140 F/home/borg/.local/lib/python3.8/site-packages/vunit/vhdl/data_types/src/queue_pool_pkg.vhd
+>>>>>>> main
 l0
 R113
 VW_@1eWPT4E>cBF2g>m`PC0
@@ -1732,11 +2222,19 @@ VW_@1eWPT4E>cBF2g>m`PC0
 R16
 33
 b1
+<<<<<<< HEAD
 R87
 !i10b 1
 R83
 Z139 !s90 -quiet|-modelsimini|/home/borg/Z01.1--Dio/Projetos/D-LogicaSequencial/vunit_out/modelsim/modelsim.ini|-2008|-work|vunit_lib|/home/borg/.local/lib/python3.8/site-packages/vunit/vhdl/data_types/src/queue_pool_pkg.vhd|
 Z140 !s107 /home/borg/.local/lib/python3.8/site-packages/vunit/vhdl/data_types/src/queue_pool_pkg.vhd|
+=======
+R84
+!i10b 1
+R53
+Z141 !s90 -quiet|-modelsimini|/home/borg/Documents/Elesis/Z01.1--Dio/Projetos/D-LogicaSequencial/vunit_out/modelsim/modelsim.ini|-2008|-work|vunit_lib|/home/borg/.local/lib/python3.8/site-packages/vunit/vhdl/data_types/src/queue_pool_pkg.vhd|
+Z142 !s107 /home/borg/.local/lib/python3.8/site-packages/vunit/vhdl/data_types/src/queue_pool_pkg.vhd|
+>>>>>>> main
 !i113 1
 R21
 R22
@@ -1761,31 +2259,54 @@ R6
 R88
 !i122 27
 l0
+<<<<<<< HEAD
 R121
+=======
+R123
+>>>>>>> main
 Vkn6MSeBEJP7XKeE8EEIYV2
 !s100 M7>6S3G^0GH=A7ZE?=1[m0
 R16
 33
+<<<<<<< HEAD
 R87
 !i10b 1
 R83
 R139
 R140
+=======
+R84
+!i10b 1
+R53
+R141
+R142
+>>>>>>> main
 !i113 1
 R21
 R22
 Prun_deprecated_pkg
 R36
 R37
+<<<<<<< HEAD
 Z141 DPx4 work 7 run_pkg 0 22 L;71H6TCjU4gL1AJPm_Vd0
 R51
 R101
 Z142 DPx4 work 13 run_types_pkg 0 22 ZfDWW?_fEaQBz>VkefFUV2
+=======
+Z143 DPx4 work 7 run_pkg 0 22 L;71H6TCjU4gL1AJPm_Vd0
+R51
+R101
+Z144 DPx4 work 13 run_types_pkg 0 22 ZfDWW?_fEaQBz>VkefFUV2
+>>>>>>> main
 R88
 R89
 R90
 R91
+<<<<<<< HEAD
 Z143 DPx4 work 10 runner_pkg 0 22 NQlg?N:7cfzSYD?FX_C9W0
+=======
+Z145 DPx4 work 10 runner_pkg 0 22 NQlg?N:7cfzSYD?FX_C9W0
+>>>>>>> main
 R35
 R39
 R40
@@ -1807,10 +2328,17 @@ R42
 !i122 34
 R12
 R0
+<<<<<<< HEAD
 Z144 8/home/borg/.local/lib/python3.8/site-packages/vunit/vhdl/run/src/run_deprecated_pkg.vhd
 Z145 F/home/borg/.local/lib/python3.8/site-packages/vunit/vhdl/run/src/run_deprecated_pkg.vhd
 l0
 Z146 L14 1
+=======
+Z146 8/home/borg/.local/lib/python3.8/site-packages/vunit/vhdl/run/src/run_deprecated_pkg.vhd
+Z147 F/home/borg/.local/lib/python3.8/site-packages/vunit/vhdl/run/src/run_deprecated_pkg.vhd
+l0
+Z148 L14 1
+>>>>>>> main
 V06HHNn=l0Y?PoSLo8^<h00
 !s100 4Hoj><ZICz1T^fYN8MWkj1
 R16
@@ -1819,8 +2347,13 @@ b1
 R47
 !i10b 1
 R48
+<<<<<<< HEAD
 Z147 !s90 -quiet|-modelsimini|/home/borg/Z01.1--Dio/Projetos/D-LogicaSequencial/vunit_out/modelsim/modelsim.ini|-2008|-work|vunit_lib|/home/borg/.local/lib/python3.8/site-packages/vunit/vhdl/run/src/run_deprecated_pkg.vhd|
 Z148 !s107 /home/borg/.local/lib/python3.8/site-packages/vunit/vhdl/run/src/run_deprecated_pkg.vhd|
+=======
+Z149 !s90 -quiet|-modelsimini|/home/borg/Documents/Elesis/Z01.1--Dio/Projetos/D-LogicaSequencial/vunit_out/modelsim/modelsim.ini|-2008|-work|vunit_lib|/home/borg/.local/lib/python3.8/site-packages/vunit/vhdl/run/src/run_deprecated_pkg.vhd|
+Z150 !s107 /home/borg/.local/lib/python3.8/site-packages/vunit/vhdl/run/src/run_deprecated_pkg.vhd|
+>>>>>>> main
 !i113 1
 R21
 R22
@@ -1828,15 +2361,26 @@ Bbody
 DPx4 work 18 run_deprecated_pkg 0 22 06HHNn=l0Y?PoSLo8^<h00
 R36
 R37
+<<<<<<< HEAD
 R141
 R51
 R101
 R142
+=======
+R143
+R51
+R101
+R144
+>>>>>>> main
 R88
 R89
 R90
 R91
+<<<<<<< HEAD
 R143
+=======
+R145
+>>>>>>> main
 R35
 R39
 R40
@@ -1865,20 +2409,33 @@ R16
 R47
 !i10b 1
 R48
+<<<<<<< HEAD
 R147
 R148
+=======
+R149
+R150
+>>>>>>> main
 !i113 1
 R21
 R22
 Prun_pkg
 R51
 R101
+<<<<<<< HEAD
 R142
+=======
+R144
+>>>>>>> main
 R88
 R89
 R90
 R91
+<<<<<<< HEAD
 R143
+=======
+R145
+>>>>>>> main
 R39
 R40
 R41
@@ -1902,21 +2459,33 @@ R0
 8/home/borg/.local/lib/python3.8/site-packages/vunit/vhdl/run/src/run_api.vhd
 F/home/borg/.local/lib/python3.8/site-packages/vunit/vhdl/run/src/run_api.vhd
 l0
+<<<<<<< HEAD
 R74
+=======
+R75
+>>>>>>> main
 VL;71H6TCjU4gL1AJPm_Vd0
 !s100 :lIc^TWB[biloD9RM3RLJ1
 R16
 33
 b1
+<<<<<<< HEAD
 R87
 !i10b 1
 R83
 !s90 -quiet|-modelsimini|/home/borg/Z01.1--Dio/Projetos/D-LogicaSequencial/vunit_out/modelsim/modelsim.ini|-2008|-work|vunit_lib|/home/borg/.local/lib/python3.8/site-packages/vunit/vhdl/run/src/run_api.vhd|
+=======
+R84
+!i10b 1
+R115
+!s90 -quiet|-modelsimini|/home/borg/Documents/Elesis/Z01.1--Dio/Projetos/D-LogicaSequencial/vunit_out/modelsim/modelsim.ini|-2008|-work|vunit_lib|/home/borg/.local/lib/python3.8/site-packages/vunit/vhdl/run/src/run_api.vhd|
+>>>>>>> main
 !s107 /home/borg/.local/lib/python3.8/site-packages/vunit/vhdl/run/src/run_api.vhd|
 !i113 1
 R21
 R22
 Bbody
+<<<<<<< HEAD
 R141
 R36
 R37
@@ -1924,11 +2493,24 @@ R132
 R51
 R101
 R142
+=======
+R143
+R36
+R37
+R134
+R51
+R101
+R144
+>>>>>>> main
 R88
 R89
 R90
 R91
+<<<<<<< HEAD
 R143
+=======
+R145
+>>>>>>> main
 R39
 R40
 R41
@@ -1950,15 +2532,26 @@ R42
 8/home/borg/.local/lib/python3.8/site-packages/vunit/vhdl/run/src/run.vhd
 F/home/borg/.local/lib/python3.8/site-packages/vunit/vhdl/run/src/run.vhd
 l0
+<<<<<<< HEAD
 R61
+=======
+R62
+>>>>>>> main
 VO]>:_Ei[dV;5`hbKnRB4[3
 !s100 ^h6>;;[m0<c4<Tc==LgkY1
 R16
 33
+<<<<<<< HEAD
 R47
 !i10b 1
 R48
 !s90 -quiet|-modelsimini|/home/borg/Z01.1--Dio/Projetos/D-LogicaSequencial/vunit_out/modelsim/modelsim.ini|-2008|-work|vunit_lib|/home/borg/.local/lib/python3.8/site-packages/vunit/vhdl/run/src/run.vhd|
+=======
+R84
+!i10b 1
+R53
+!s90 -quiet|-modelsimini|/home/borg/Documents/Elesis/Z01.1--Dio/Projetos/D-LogicaSequencial/vunit_out/modelsim/modelsim.ini|-2008|-work|vunit_lib|/home/borg/.local/lib/python3.8/site-packages/vunit/vhdl/run/src/run.vhd|
+>>>>>>> main
 !s107 /home/borg/.local/lib/python3.8/site-packages/vunit/vhdl/run/src/run.vhd|
 !i113 1
 R21
@@ -1986,24 +2579,43 @@ R11
 !i122 18
 R12
 R0
+<<<<<<< HEAD
 Z149 8/home/borg/.local/lib/python3.8/site-packages/vunit/vhdl/run/src/run_types.vhd
 Z150 F/home/borg/.local/lib/python3.8/site-packages/vunit/vhdl/run/src/run_types.vhd
 l0
 R124
+=======
+Z151 8/home/borg/.local/lib/python3.8/site-packages/vunit/vhdl/run/src/run_types.vhd
+Z152 F/home/borg/.local/lib/python3.8/site-packages/vunit/vhdl/run/src/run_types.vhd
+l0
+R126
+>>>>>>> main
 VZfDWW?_fEaQBz>VkefFUV2
 !s100 3T`JVW3Bd;7hbB2_=`oKm3
 R16
 33
+<<<<<<< HEAD
 R17
 !i10b 1
 R18
 Z151 !s90 -quiet|-modelsimini|/home/borg/Z01.1--Dio/Projetos/D-LogicaSequencial/vunit_out/modelsim/modelsim.ini|-2008|-work|vunit_lib|/home/borg/.local/lib/python3.8/site-packages/vunit/vhdl/run/src/run_types.vhd|
 Z152 !s107 /home/borg/.local/lib/python3.8/site-packages/vunit/vhdl/run/src/run_types.vhd|
+=======
+R114
+!i10b 1
+R18
+Z153 !s90 -quiet|-modelsimini|/home/borg/Documents/Elesis/Z01.1--Dio/Projetos/D-LogicaSequencial/vunit_out/modelsim/modelsim.ini|-2008|-work|vunit_lib|/home/borg/.local/lib/python3.8/site-packages/vunit/vhdl/run/src/run_types.vhd|
+Z154 !s107 /home/borg/.local/lib/python3.8/site-packages/vunit/vhdl/run/src/run_types.vhd|
+>>>>>>> main
 !i113 1
 R21
 R22
 Bbody
+<<<<<<< HEAD
 R142
+=======
+R144
+>>>>>>> main
 R39
 R40
 R41
@@ -2030,11 +2642,19 @@ VR7`j]8dlWWgaEONc5dY9N1
 !s100 af23QeMo4UObMQ`W5kSQ53
 R16
 33
+<<<<<<< HEAD
 R17
 !i10b 1
 R18
 R151
 R152
+=======
+R114
+!i10b 1
+R18
+R153
+R154
+>>>>>>> main
 !i113 1
 R21
 R22
@@ -2045,7 +2665,11 @@ R43
 R42
 R51
 R101
+<<<<<<< HEAD
 R142
+=======
+R144
+>>>>>>> main
 R88
 R89
 R39
@@ -2066,8 +2690,13 @@ R27
 !i122 25
 R12
 R0
+<<<<<<< HEAD
 Z153 8/home/borg/.local/lib/python3.8/site-packages/vunit/vhdl/run/src/runner_pkg.vhd
 Z154 F/home/borg/.local/lib/python3.8/site-packages/vunit/vhdl/run/src/runner_pkg.vhd
+=======
+Z155 8/home/borg/.local/lib/python3.8/site-packages/vunit/vhdl/run/src/runner_pkg.vhd
+Z156 F/home/borg/.local/lib/python3.8/site-packages/vunit/vhdl/run/src/runner_pkg.vhd
+>>>>>>> main
 l0
 R46
 VNQlg?N:7cfzSYD?FX_C9W0
@@ -2075,23 +2704,39 @@ VNQlg?N:7cfzSYD?FX_C9W0
 R16
 33
 b1
+<<<<<<< HEAD
 R87
 !i10b 1
 R83
 Z155 !s90 -quiet|-modelsimini|/home/borg/Z01.1--Dio/Projetos/D-LogicaSequencial/vunit_out/modelsim/modelsim.ini|-2008|-work|vunit_lib|/home/borg/.local/lib/python3.8/site-packages/vunit/vhdl/run/src/runner_pkg.vhd|
 Z156 !s107 /home/borg/.local/lib/python3.8/site-packages/vunit/vhdl/run/src/runner_pkg.vhd|
+=======
+R114
+!i10b 1
+R115
+Z157 !s90 -quiet|-modelsimini|/home/borg/Documents/Elesis/Z01.1--Dio/Projetos/D-LogicaSequencial/vunit_out/modelsim/modelsim.ini|-2008|-work|vunit_lib|/home/borg/.local/lib/python3.8/site-packages/vunit/vhdl/run/src/runner_pkg.vhd|
+Z158 !s107 /home/borg/.local/lib/python3.8/site-packages/vunit/vhdl/run/src/runner_pkg.vhd|
+>>>>>>> main
 !i113 1
 R21
 R22
 Bbody
+<<<<<<< HEAD
 R143
+=======
+R145
+>>>>>>> main
 R41
 R23
 R43
 R42
 R51
 R101
+<<<<<<< HEAD
 R142
+=======
+R144
+>>>>>>> main
 R88
 R89
 R39
@@ -2116,11 +2761,19 @@ VmZPQn6m>]8d^B[7b2@NMz2
 !s100 <W>a`mf>O93iHPD5GR:YO1
 R16
 33
+<<<<<<< HEAD
 R87
 !i10b 1
 R83
 R155
 R156
+=======
+R114
+!i10b 1
+R115
+R157
+R158
+>>>>>>> main
 !i113 1
 R21
 R22
@@ -2137,10 +2790,17 @@ VUjKiHFdPQ97>_>m`nM3cg3
 R16
 33
 b1
+<<<<<<< HEAD
 R87
 !i10b 1
 R83
 !s90 -quiet|-modelsimini|/home/borg/Z01.1--Dio/Projetos/D-LogicaSequencial/vunit_out/modelsim/modelsim.ini|-2008|-work|vunit_lib|/home/borg/.local/lib/python3.8/site-packages/vunit/vhdl/core/src/stop_pkg.vhd|
+=======
+R84
+!i10b 1
+R53
+!s90 -quiet|-modelsimini|/home/borg/Documents/Elesis/Z01.1--Dio/Projetos/D-LogicaSequencial/vunit_out/modelsim/modelsim.ini|-2008|-work|vunit_lib|/home/borg/.local/lib/python3.8/site-packages/vunit/vhdl/core/src/stop_pkg.vhd|
+>>>>>>> main
 !s107 /home/borg/.local/lib/python3.8/site-packages/vunit/vhdl/core/src/stop_pkg.vhd|
 !i113 1
 R21
@@ -2157,10 +2817,17 @@ VdYgBOh7Tk04dD_1m1[L?=1
 !s100 GIGE03KCeb`?D<jYN0MPT2
 R16
 33
+<<<<<<< HEAD
 R87
 !i10b 1
 R83
 !s90 -quiet|-modelsimini|/home/borg/Z01.1--Dio/Projetos/D-LogicaSequencial/vunit_out/modelsim/modelsim.ini|-2008|-work|vunit_lib|/home/borg/.local/lib/python3.8/site-packages/vunit/vhdl/core/src/stop_body_2008p.vhd|
+=======
+R84
+!i10b 1
+R53
+!s90 -quiet|-modelsimini|/home/borg/Documents/Elesis/Z01.1--Dio/Projetos/D-LogicaSequencial/vunit_out/modelsim/modelsim.ini|-2008|-work|vunit_lib|/home/borg/.local/lib/python3.8/site-packages/vunit/vhdl/core/src/stop_body_2008p.vhd|
+>>>>>>> main
 !s107 /home/borg/.local/lib/python3.8/site-packages/vunit/vhdl/core/src/stop_body_2008p.vhd|
 !i113 1
 R21
@@ -2172,20 +2839,35 @@ R6
 !i122 0
 R12
 R0
+<<<<<<< HEAD
 Z157 8/home/borg/.local/lib/python3.8/site-packages/vunit/vhdl/string_ops/src/string_ops.vhd
 Z158 F/home/borg/.local/lib/python3.8/site-packages/vunit/vhdl/string_ops/src/string_ops.vhd
 l0
 R146
+=======
+Z159 8/home/borg/.local/lib/python3.8/site-packages/vunit/vhdl/string_ops/src/string_ops.vhd
+Z160 F/home/borg/.local/lib/python3.8/site-packages/vunit/vhdl/string_ops/src/string_ops.vhd
+l0
+R148
+>>>>>>> main
 V>6lVd?dSYVCeeU;1?_=bg2
 !s100 L<_Na6h6QanSJ:8@THlmI2
 R16
 33
 b1
+<<<<<<< HEAD
 R68
 !i10b 1
 R69
 Z159 !s90 -quiet|-modelsimini|/home/borg/Z01.1--Dio/Projetos/D-LogicaSequencial/vunit_out/modelsim/modelsim.ini|-2008|-work|vunit_lib|/home/borg/.local/lib/python3.8/site-packages/vunit/vhdl/string_ops/src/string_ops.vhd|
 Z160 !s107 /home/borg/.local/lib/python3.8/site-packages/vunit/vhdl/string_ops/src/string_ops.vhd|
+=======
+R70
+!i10b 1
+R63
+Z161 !s90 -quiet|-modelsimini|/home/borg/Documents/Elesis/Z01.1--Dio/Projetos/D-LogicaSequencial/vunit_out/modelsim/modelsim.ini|-2008|-work|vunit_lib|/home/borg/.local/lib/python3.8/site-packages/vunit/vhdl/string_ops/src/string_ops.vhd|
+Z162 !s107 /home/borg/.local/lib/python3.8/site-packages/vunit/vhdl/string_ops/src/string_ops.vhd|
+>>>>>>> main
 !i113 1
 R21
 R22
@@ -2201,11 +2883,19 @@ V2zgdC_g5z_P<COSWzU4813
 !s100 17T3YWdDG5X2SlCbSJ_8=0
 R16
 33
+<<<<<<< HEAD
 R68
 !i10b 1
 R69
 R159
 R160
+=======
+R70
+!i10b 1
+R63
+R161
+R162
+>>>>>>> main
 !i113 1
 R21
 R22
@@ -2226,7 +2916,11 @@ R0
 8/home/borg/.local/lib/python3.8/site-packages/vunit/vhdl/data_types/src/string_ptr_pkg.vhd
 F/home/borg/.local/lib/python3.8/site-packages/vunit/vhdl/data_types/src/string_ptr_pkg.vhd
 l0
+<<<<<<< HEAD
 R61
+=======
+R62
+>>>>>>> main
 Vn[AzFb_A:6S@HQFZYcL]h0
 !s100 XPI]I_3@gL<2AOO5ec2gJ2
 R16
@@ -2235,7 +2929,11 @@ b1
 R17
 !i10b 1
 R18
+<<<<<<< HEAD
 !s90 -quiet|-modelsimini|/home/borg/Z01.1--Dio/Projetos/D-LogicaSequencial/vunit_out/modelsim/modelsim.ini|-2008|-work|vunit_lib|/home/borg/.local/lib/python3.8/site-packages/vunit/vhdl/data_types/src/string_ptr_pkg.vhd|
+=======
+!s90 -quiet|-modelsimini|/home/borg/Documents/Elesis/Z01.1--Dio/Projetos/D-LogicaSequencial/vunit_out/modelsim/modelsim.ini|-2008|-work|vunit_lib|/home/borg/.local/lib/python3.8/site-packages/vunit/vhdl/data_types/src/string_ptr_pkg.vhd|
+>>>>>>> main
 !s107 /home/borg/.local/lib/python3.8/site-packages/vunit/vhdl/data_types/src/string_ptr_pkg.vhd|
 !i113 1
 R21
@@ -2264,7 +2962,11 @@ R16
 R17
 !i10b 1
 R18
+<<<<<<< HEAD
 !s90 -quiet|-modelsimini|/home/borg/Z01.1--Dio/Projetos/D-LogicaSequencial/vunit_out/modelsim/modelsim.ini|-2008|-work|vunit_lib|/home/borg/.local/lib/python3.8/site-packages/vunit/vhdl/data_types/src/string_ptr_pkg-body-2002p.vhd|
+=======
+!s90 -quiet|-modelsimini|/home/borg/Documents/Elesis/Z01.1--Dio/Projetos/D-LogicaSequencial/vunit_out/modelsim/modelsim.ini|-2008|-work|vunit_lib|/home/borg/.local/lib/python3.8/site-packages/vunit/vhdl/data_types/src/string_ptr_pkg-body-2002p.vhd|
+>>>>>>> main
 !s107 /home/borg/.local/lib/python3.8/site-packages/vunit/vhdl/data_types/src/string_ptr_pkg-body-2002p.vhd|
 !i113 1
 R21
@@ -2288,8 +2990,13 @@ R6
 !i122 22
 R12
 R0
+<<<<<<< HEAD
 Z161 8/home/borg/.local/lib/python3.8/site-packages/vunit/vhdl/data_types/src/string_ptr_pool_pkg.vhd
 Z162 F/home/borg/.local/lib/python3.8/site-packages/vunit/vhdl/data_types/src/string_ptr_pool_pkg.vhd
+=======
+Z163 8/home/borg/.local/lib/python3.8/site-packages/vunit/vhdl/data_types/src/string_ptr_pool_pkg.vhd
+Z164 F/home/borg/.local/lib/python3.8/site-packages/vunit/vhdl/data_types/src/string_ptr_pool_pkg.vhd
+>>>>>>> main
 l0
 R52
 V;oGa_UEi8nVncYkDRR_Aj1
@@ -2297,11 +3004,19 @@ V;oGa_UEi8nVncYkDRR_Aj1
 R16
 33
 b1
+<<<<<<< HEAD
 R87
 !i10b 1
 R83
 Z163 !s90 -quiet|-modelsimini|/home/borg/Z01.1--Dio/Projetos/D-LogicaSequencial/vunit_out/modelsim/modelsim.ini|-2008|-work|vunit_lib|/home/borg/.local/lib/python3.8/site-packages/vunit/vhdl/data_types/src/string_ptr_pool_pkg.vhd|
 Z164 !s107 /home/borg/.local/lib/python3.8/site-packages/vunit/vhdl/data_types/src/string_ptr_pool_pkg.vhd|
+=======
+R114
+!i10b 1
+R115
+Z165 !s90 -quiet|-modelsimini|/home/borg/Documents/Elesis/Z01.1--Dio/Projetos/D-LogicaSequencial/vunit_out/modelsim/modelsim.ini|-2008|-work|vunit_lib|/home/borg/.local/lib/python3.8/site-packages/vunit/vhdl/data_types/src/string_ptr_pool_pkg.vhd|
+Z166 !s107 /home/borg/.local/lib/python3.8/site-packages/vunit/vhdl/data_types/src/string_ptr_pool_pkg.vhd|
+>>>>>>> main
 !i113 1
 R21
 R22
@@ -2329,11 +3044,19 @@ V_?06Ge?P4zLJz>gJQ=C:[3
 !s100 h]IecjYM^l4;@;dZYBOYh0
 R16
 33
+<<<<<<< HEAD
 R87
 !i10b 1
 R83
 R163
 R164
+=======
+R114
+!i10b 1
+R115
+R165
+R166
+>>>>>>> main
 !i113 1
 R21
 R22
@@ -2349,10 +3072,17 @@ V8X1EBI95Q8hI=Vi3D9DP;0
 !s100 ]4TB[@=9AE]Xb^5^zG^T80
 R16
 33
+<<<<<<< HEAD
 R68
 !i10b 1
 R69
 !s90 -quiet|-modelsimini|/home/borg/Z01.1--Dio/Projetos/D-LogicaSequencial/vunit_out/modelsim/modelsim.ini|-2008|-work|vunit_lib|/home/borg/.local/lib/python3.8/site-packages/vunit/vhdl/data_types/src/types.vhd|
+=======
+R70
+!i10b 1
+R63
+!s90 -quiet|-modelsimini|/home/borg/Documents/Elesis/Z01.1--Dio/Projetos/D-LogicaSequencial/vunit_out/modelsim/modelsim.ini|-2008|-work|vunit_lib|/home/borg/.local/lib/python3.8/site-packages/vunit/vhdl/data_types/src/types.vhd|
+>>>>>>> main
 !s107 /home/borg/.local/lib/python3.8/site-packages/vunit/vhdl/data_types/src/types.vhd|
 !i113 1
 R21
@@ -2372,7 +3102,11 @@ R16
 R47
 !i10b 0
 R48
+<<<<<<< HEAD
 !s90 -quiet|-modelsimini|/home/borg/Z01.1--Dio/Projetos/D-LogicaSequencial/vunit_out/modelsim/modelsim.ini|-2008|-work|vunit_lib|/home/borg/.local/lib/python3.8/site-packages/vunit/vhdl/vunit_context.vhd|
+=======
+!s90 -quiet|-modelsimini|/home/borg/Documents/Elesis/Z01.1--Dio/Projetos/D-LogicaSequencial/vunit_out/modelsim/modelsim.ini|-2008|-work|vunit_lib|/home/borg/.local/lib/python3.8/site-packages/vunit/vhdl/vunit_context.vhd|
+>>>>>>> main
 !s107 /home/borg/.local/lib/python3.8/site-packages/vunit/vhdl/vunit_context.vhd|
 !i113 1
 R21
@@ -2392,7 +3126,11 @@ R16
 R47
 !i10b 0
 R48
+<<<<<<< HEAD
 !s90 -quiet|-modelsimini|/home/borg/Z01.1--Dio/Projetos/D-LogicaSequencial/vunit_out/modelsim/modelsim.ini|-2008|-work|vunit_lib|/home/borg/.local/lib/python3.8/site-packages/vunit/vhdl/vunit_run_context.vhd|
+=======
+!s90 -quiet|-modelsimini|/home/borg/Documents/Elesis/Z01.1--Dio/Projetos/D-LogicaSequencial/vunit_out/modelsim/modelsim.ini|-2008|-work|vunit_lib|/home/borg/.local/lib/python3.8/site-packages/vunit/vhdl/vunit_run_context.vhd|
+>>>>>>> main
 !s107 /home/borg/.local/lib/python3.8/site-packages/vunit/vhdl/vunit_run_context.vhd|
 !i113 1
 R21

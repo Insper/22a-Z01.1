@@ -25,26 +25,27 @@ entity PC is
 end entity;
 
 architecture arch of PC is
-
- signal muxOut : std_logic_vector(15 downto 0);
-
-  component Inc16 is
-      port(
-          a   :  in STD_LOGIC_VECTOR(15 downto 0);
-          q   : out STD_LOGIC_VECTOR(15 downto 0)
-          );
-  end component;
-
-  component Register16 is
-      port(
-          clock:   in STD_LOGIC;
-          input:   in STD_LOGIC_VECTOR(15 downto 0);
-          load:    in STD_LOGIC;
-          output: out STD_LOGIC_VECTOR(15 downto 0)
-        );
-    end component;
+  
+signal contador: unsigned(15 downto 0):= "0000000000000000";
 
 begin
-
+	
+		process(clock, reset, increment,load) is begin
+		
+		if (reset = '1') then contador <= "0000000000000000";
+		
+			elsif (rising_edge(clock)) then
+				if(load = '1') then contador <= unsigned(input);
+		
+			elsif(increment = '1') then contador <= contador + "0000000000000001";
+			
+			else contador <= contador;
+			
+			end if;
+			
+		end if;
+	
+	end process;
+	output <= STD_LOGIC_VECTOR(contador);
 
 end architecture;
