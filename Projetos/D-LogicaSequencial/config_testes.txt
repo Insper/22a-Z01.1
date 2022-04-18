@@ -1,7 +1,11 @@
 # Testes a serem executados
 # Descomente os módulos que deseja testar
-  
+
 FlipFlopD.vhd
+<<<<<<< HEAD
+=======
+
+>>>>>>> 45cb6c79233485dd25214403a9259dce97a2e918
 BinaryDigit.vhd
 PC.vhd
 Register8.vhd
