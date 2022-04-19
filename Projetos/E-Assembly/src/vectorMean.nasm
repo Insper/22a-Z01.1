@@ -19,3 +19,62 @@
 ; RAM[7]:  1  | RAM[7]:  1 |
 ; RAM[8]:  4  | RAM[8]:  4 -
 ; ------------------------------------
+
+
+
+leaw $4, %A
+movw (%A), %D
+leaw $2, %A
+movw %D, (%A)
+
+SOMA:
+
+    leaw $4, %A
+    movw (%A), %D
+    leaw $4, %A
+    addw %D, %A, %A
+
+    movw (%A), %D
+    leaw $1, %A
+    addw %D, (%A), %D
+    movw %D, (%A)
+    leaw $3, %A
+    movw %D, (%A)
+    
+    leaw $4, %A
+    movw (%A), %D
+
+    leaw $MEDIA, %A
+    je %D
+    nop
+
+    decw %D
+    leaw $4, %A
+    movw %D, (%A)
+
+    leaw $SOMA, %A
+    jmp
+    nop
+
+MEDIA:
+
+    leaw $2, %A
+    movw (%A), %D
+    leaw $3, %A
+    subw (%A), %D, %D
+    
+    movw %D, (%A)
+
+    leaw $FIM, %A
+    jl %D
+    nop
+
+    leaw $0, %A
+    addw $1, (%A), %D
+    movw %D, (%A)
+
+    leaw $MEDIA, %A
+    jmp
+    nop
+
+FIM:
