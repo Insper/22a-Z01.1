@@ -1,6 +1,36 @@
+<<<<<<< HEAD
+# vsim -modelsimini /home/borg/Z01.1--Dio/Projetos/D-LogicaSequencial/vunit_out/modelsim/modelsim.ini -wlf /home/borg/Z01.1--Dio/Projetos/D-LogicaSequencial/vunit_out/test_output/lib.tb_flipflopd.all_7cd4f0a30ec078deb9c790d31313e1e49355c443/modelsim/vsim.wlf -quiet -t ps -onfinish stop lib.tb_flipflopd(tb) -L vunit_lib -L lib -g/tb_flipflopd/runner_cfg="active python runner : true,enabled_test_cases : ,output path : /home/borg/Z01.1--Dio/Projetos/D-LogicaSequencial/vunit_out/test_output/lib.tb_flipflopd.all_7cd4f0a30ec078deb9c790d31313e1e49355c443/,tb path : /home/borg/Z01.1--Dio/Projetos/D-LogicaSequencial/testes/,use_color : true" 
+# Start time: 14:16:04 on Apr 13,2022
+# ** Warning: Design size of 21436 statements exceeds ModelSim-Intel FPGA Starter Edition recommended capacity.
+# Expect performance to be adversely affected.
+# ** Error: Falha em teste: 2
+#    Time: 600 ps  Iteration: 0  Process: /tb_flipflopd/main File: /home/borg/Z01.1--Dio/Projetos/D-LogicaSequencial/testes/tb_FlipFlopD.vhd
+# Break in Process main at /home/borg/Z01.1--Dio/Projetos/D-LogicaSequencial/testes/tb_FlipFlopD.vhd line 57
+# Stopped at /home/borg/Z01.1--Dio/Projetos/D-LogicaSequencial/testes/tb_FlipFlopD.vhd line 57
+# 
+# Test Run Failed!
+# 
+# Stack trace result from 'tb' command
+#  /home/borg/Z01.1--Dio/Projetos/D-LogicaSequencial/testes/tb_FlipFlopD.vhd 57 return [address 0xf6d689f8] Process main
+# 
+# 
+# Surrounding code from 'see' command
+#   52 : 		assert(outQ = '1')  report "Falha em teste: 1" severity error;
+#   53 : 
+#   54 : 		-- Teste: 2
+#   55 : 		inD <= '0'; inClear <= '0'; inPreset <= '1';
+#   56 :     wait until inClock'event and inClock='0';
+# ->57 : 		assert(outQ = '1')  report "Falha em teste: 2" severity error;
+#   58 : 
+#   59 : 		-- Teste: 3
+#   60 : 		inD <= '0'; inClear <= '0'; inPreset <= '0';
+#   61 :     wait until inClock'event and inClock='0';
+# 
+=======
 # vsim -modelsimini /home/borg/Documents/Elesis/Z01.1--Dio/Projetos/D-LogicaSequencial/vunit_out/modelsim/modelsim.ini -wlf /home/borg/Documents/Elesis/Z01.1--Dio/Projetos/D-LogicaSequencial/vunit_out/test_output/lib.tb_flipflopd.all_7cd4f0a30ec078deb9c790d31313e1e49355c443/modelsim/vsim.wlf -quiet -t ps -onfinish stop lib.tb_flipflopd(tb) -L vunit_lib -L lib -g/tb_flipflopd/runner_cfg="active python runner : true,enabled_test_cases : ,output path : /home/borg/Documents/Elesis/Z01.1--Dio/Projetos/D-LogicaSequencial/vunit_out/test_output/lib.tb_flipflopd.all_7cd4f0a30ec078deb9c790d31313e1e49355c443/,tb path : /home/borg/Documents/Elesis/Z01.1--Dio/Projetos/D-LogicaSequencial/testes/,use_color : true" 
 # Start time: 15:09:11 on Apr 13,2022
 # ** Warning: Design size of 21438 statements exceeds ModelSim-Intel FPGA Starter Edition recommended capacity.
 # Expect performance to be adversely affected.
 # Break in Subprogram stop at /home/borg/.local/lib/python3.8/site-packages/vunit/vhdl/core/src/stop_body_2008p.vhd line 13
 # Stopped at /home/borg/.local/lib/python3.8/site-packages/vunit/vhdl/core/src/stop_body_2008p.vhd line 13
+>>>>>>> main

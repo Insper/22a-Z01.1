@@ -1,4 +1,8 @@
+<<<<<<< HEAD
+source "/home/borg/Z01.1--Dio/Projetos/D-LogicaSequencial/vunit_out/test_output/lib.tb_pc.all_a61c5d24baae050030845d57ee475a62677f4ed3/modelsim/common.do"
+=======
 source "/home/borg/Documents/Elesis/Z01.1--Dio/Projetos/D-LogicaSequencial/vunit_out/test_output/lib.tb_pc.all_a61c5d24baae050030845d57ee475a62677f4ed3/modelsim/common.do"
+>>>>>>> main
 proc vunit_user_init {} {
     return 0
 }
