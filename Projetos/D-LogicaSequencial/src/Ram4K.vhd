@@ -29,6 +29,7 @@ architecture arch of Ram4K is
 
 	component Mux8Way16 is
 		port (
+
 			a:   in  STD_LOGIC_VECTOR(15 downto 0);
 			b:   in  STD_LOGIC_VECTOR(15 downto 0);
 			c:   in  STD_LOGIC_VECTOR(15 downto 0);
@@ -39,6 +40,7 @@ architecture arch of Ram4K is
 			h:   in  STD_LOGIC_VECTOR(15 downto 0);
 			sel: in  STD_LOGIC_VECTOR( 2 downto 0);
 			q:   out STD_LOGIC_VECTOR(15 downto 0));
+
 	end component;
 
 	component DMux8Way is
@@ -59,7 +61,6 @@ architecture arch of Ram4K is
 	signal output0, output1, output2, output3, output4, output5, output6, output7 : STD_LOGIC_VECTOR(15 downto 0);
 
 begin
-
 
 	s4: Mux8Way16 port map (
 		a=> output0,
@@ -145,5 +146,6 @@ begin
 		address => address(8 downto 0),
 		output => output7
 	);
+
 
 end architecture;

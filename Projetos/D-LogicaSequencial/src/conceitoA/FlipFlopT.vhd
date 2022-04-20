@@ -9,7 +9,9 @@ entity FlipFlopT is
 		clock:  in std_logic;
 		t:      in std_logic;
 
+
 		q:      buffer std_logic:= '0';
+
 
 		notq:   out std_logic:= '1'
 	);
@@ -29,5 +31,6 @@ begin
         end if;
 notq <= not(q);
 end process;
+
 
 end architecture;

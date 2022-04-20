@@ -13,6 +13,7 @@ end entity;
 
 architecture arch of CounterDown is
 
+
 	component FlipFlopT is 
 		port(
 			clock: in std_logic;
@@ -49,6 +50,7 @@ s3: FlipFlopT port map(
 	notq => not_q(2)
 );
 q<= a_q;
+
 
 
 
