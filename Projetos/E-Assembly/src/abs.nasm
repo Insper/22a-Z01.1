@@ -8,8 +8,8 @@
 leaw $R1, %A		;
 movw %A, %D		;
 negw %D			;
-jg %A			;
+jg %D			;
 nop			;
 movw %A, %D		;
 leaw $R0, %A		;
-movw %D, (%A)		;
+movw %D, (%A)		;  
