@@ -147,7 +147,7 @@ begin
 	port map(
 		clock => clock,
 		input => input,
-		load => load6,
+		load => load7,
 		address => address( 2 downto 0),
 		output => output7
 	);
