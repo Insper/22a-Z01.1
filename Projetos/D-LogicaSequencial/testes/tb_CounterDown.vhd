@@ -1,3 +1,4 @@
+
 -- Elementos de Sistemas
 -- tb_CounterDown.vhd
 
@@ -34,8 +35,39 @@ begin
     test_runner_setup(runner, runner_cfg);
 
     -- IMPLEMENTE AQUI!
+
+    wait until clk'event and clk='1';
+		assert(Q = "000")  report "Precisa fazer os testes" severity error;
+
     wait until clk'event and clk='0';
 		assert(Q = "111")  report "Precisa fazer os testes" severity error;
+
+     wait until clk'event and clk='0';
+		assert(Q = "110")  report "Precisa fazer os testes" severity error;
+
+    
+     wait until clk'event and clk='0';
+		assert(Q = "101")  report "Precisa fazer os testes" severity error;
+
+    
+     wait until clk'event and clk='0';
+		assert(Q = "100")  report "Precisa fazer os testes" severity error;
+
+    
+     wait until clk'event and clk='0';
+		assert(Q = "011")  report "Precisa fazer os testes" severity error;
+
+    
+     wait until clk'event and clk='0';
+		assert(Q = "010")  report "Precisa fazer os testes" severity error;
+
+    
+     wait until clk'event and clk='0';
+		assert(Q = "001")  report "Precisa fazer os testes" severity error;
+
+    
+     wait until clk'event and clk='0';
+		assert(Q = "000")  report "Precisa fazer os testes" severity error;
 
 
     -- finish
