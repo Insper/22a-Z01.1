@@ -61,7 +61,7 @@ architecture arch of Ram64 is
 begin
 
 	mux: Mux8Way16 port map(
-		sel=>address ( 2 downto 0),
+		sel=>address (5 downto 3),
 		a=>output0,
 		b=>output1,
 		c=>output2,
@@ -76,7 +76,7 @@ begin
 
 	dmux: DMux8Way port map(
 		a=>load,
-		sel=>address ( 2 downto 0),
+		sel=>address (5 downto 3),
 		q0=>load0,
 		q1=>load1,
 		q2=>load2,
