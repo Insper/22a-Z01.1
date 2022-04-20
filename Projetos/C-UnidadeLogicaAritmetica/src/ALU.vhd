@@ -93,7 +93,7 @@ architecture  rtl OF alu is
 		);
 	end component;
 
-   SIGNAL zxout,zyout,nxout,nyout,andout,adderout,muxout,precomp: std_logic_vector(15 downto 0);
+   SIGNAL saida2,zxout,zyout,nxout,nyout,andout,adderout,muxout,precomp: std_logic_vector(15 downto 0);
 
 begin
 	zerax: zerador16 port map(
@@ -142,6 +142,6 @@ begin
 		zr => zr,
 		ng => ng
 	);
-	saida <= precomp;
+	saida <=precomp;
 
 end architecture;
