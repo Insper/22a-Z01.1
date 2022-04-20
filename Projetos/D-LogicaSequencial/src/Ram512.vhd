@@ -123,28 +123,28 @@ begin
 		clock => clock,
 		input=> input,
 		load => load4,
-		address => address(8 downto 3),
+		address => address(5 downto 0),
 		output => output4
 	);
 	r5 : Ram64 port map (
 		clock => clock,
 		input=> input,
 		load => load5,
-		address => address(8 downto 3),
+		address => address(5 downto 0),
 		output => output5
 	);
 	r6 : Ram64 port map (
 		clock => clock,
 		input=> input,
 		load => load6,
-		address => address(8 downto 3),
+		address => address(5 downto 0),
 		output => output6
 	);
 	r7 : Ram64 port map (
 		clock => clock,
 		input=> input,
 		load => load7,
-		address => address(8 downto 3),
+		address => address(5 downto 0),
 		output => output7
 	);
 
