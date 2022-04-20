@@ -1,3 +1,4 @@
+
 -- Elementos de Sistemas
 -- by Luciano Soares
 -- BinaryDigit.vhd
