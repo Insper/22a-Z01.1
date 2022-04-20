@@ -60,30 +60,7 @@ architecture arch of Ram512 is
 
 begin
 
-s1: Mux8Way16 port map (
-		a=> output0,
-		b=> output1,
-		c=> output2,
-		d=> output3,
-		e=> output4,
-		f=> output5,
-		g => output6,
-		h => output7,
-		sel => address(2 downto 0),
-		q=>output
 
-	);
-	s2: Mux8Way16 port map (
-		a=> output0,
-		b=> output1,
-		c=> output2,
-		d=> output3,
-		e=> output4,
-		f=> output5,
-		g => output6,
-		h => output7,
-		sel => address(5 downto 3),
-		q=>output);
 
 	s3: Mux8Way16 port map (
 		a=> output0,
@@ -98,33 +75,7 @@ s1: Mux8Way16 port map (
 		q=>output
 
 	);
-	s4: DMux8Way port map (
-		a => load,
-		sel => address(2 downto 0),
-		q0 => load0,
-		q1=> load1,
-		q2=> load2,
-		q3=> load3,
-		q4=> load4,
-		q5=> load5,
-		q6=> load6,
-		q7=> load7
 
-	);
-
-	s5: DMux8Way port map (
-		a => load,
-		sel => address(5 downto 3),
-		q0 => load0,
-		q1=> load1,
-		q2=> load2,
-		q3=> load3,
-		q4=> load4,
-		q5=> load5,
-		q6=> load6,
-		q7=> load7
-
-	);
 
 	s6: DMux8Way port map (
 		a => load,
@@ -172,28 +123,28 @@ s1: Mux8Way16 port map (
 		clock => clock,
 		input=> input,
 		load => load4,
-		address => address(8 downto 3),
+		address => address(5 downto 0),
 		output => output4
 	);
 	r5 : Ram64 port map (
 		clock => clock,
 		input=> input,
 		load => load5,
-		address => address(8 downto 3),
+		address => address(5 downto 0),
 		output => output5
 	);
 	r6 : Ram64 port map (
 		clock => clock,
 		input=> input,
 		load => load6,
-		address => address(8 downto 3),
+		address => address(5 downto 0),
 		output => output6
 	);
 	r7 : Ram64 port map (
 		clock => clock,
 		input=> input,
 		load => load7,
-		address => address(8 downto 3),
+		address => address(5 downto 0),
 		output => output7
 	);
 
