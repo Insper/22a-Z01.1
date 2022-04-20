@@ -1,3 +1,4 @@
+
 -- Elementos de Sistemas
 -- by Luciano Soares
 -- Register8.vhd
@@ -78,6 +79,7 @@ s7 : BinaryDigit port map(
 );
 
 end architecture;
+
 
 
 

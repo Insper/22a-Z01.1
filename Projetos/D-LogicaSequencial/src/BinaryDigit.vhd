@@ -1,3 +1,4 @@
+
 -- Elementos de Sistemas
 -- by Luciano Soares
 -- BinaryDigit.vhd
@@ -51,3 +52,4 @@ S2: FlipFlopD port map(
 	q => dffout);
 output <= dffout;
 end architecture;
+

@@ -3,7 +3,6 @@
   
 FlipFlopD.vhd
 
-=======
 BinaryDigit.vhd
 PC.vhd
 Register8.vhd
