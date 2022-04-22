@@ -7,7 +7,6 @@
 
 leaw $0,%A;
 movw (%A),%D;
-leaw %1,%A;
+leaw %2,%A;
 movw (%A),%A;
-subw %A,(%D),%D;
-leaw $2,%D;
+subw %A,(%D),%A;
