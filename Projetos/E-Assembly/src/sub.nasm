@@ -9,6 +9,6 @@ leaw $0,%A
 movw (%A),%D
 leaw %1,%A
 movw (%A),%A
-subw %A,(%D),%D
+subw (%A),(%D),%D
 leaw $2, %A
 movw (%D),(%A)
