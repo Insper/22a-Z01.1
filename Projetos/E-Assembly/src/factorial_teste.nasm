@@ -22,16 +22,11 @@ INICIO:
     decw %D
     leaw $1,%A
     movw %D,(%A)
-
-    leaw $1,%A ;salva R1 em R4, pois R1 vai ser zerado durante a multiplicacao
-    movw (%A),%D
-    leaw $4,%A
-    movw %D, (%A)
 MULT:
-    leaw $1,%A
-    movw (%A),%D ; guarda R1 em D
+    leaw $0,%A
+    movw (%A),%D ; guarda R0 em D
     decw %D ; Decrementa D
-    movw %D,(%A) ;guarda D em R1
+    movw %D,(%A) ;guarda D em R0
 
     leaw $END,%A 
     jl %D ; se D for < 0 pula para END, isso pois na primeira execucao estamos somando R3 com R1 e R3 = 0 na primeira entao precisamos iterar R0 + 1 vezes.
@@ -39,8 +34,8 @@ MULT:
 
     leaw $3,%A  ;guarda R3 em D
     movw (%A),%D
-    leaw $0,%A
-    addw %D,(%A),%D ; Soma D com R0 e guarda em D
+    leaw $1,%A
+    addw %D,(%A),%D ; Soma D com R1 e guarda em D
     leaw $3,%A ;guarda D em R3
     movw %D,(%A)
 
@@ -52,12 +47,7 @@ END:
     movw (%A),%D
     leaw $0,%A
     movw %D,(%A)
-                
-    leaw $4,%A ;R1 = R4
-    movw (%A),%D
-    leaw $1,%A
-    movw %D,(%A)
-    
+
     leaw $1,%A ; R1 -= 1
     movw (%A),%D
     decw %D
