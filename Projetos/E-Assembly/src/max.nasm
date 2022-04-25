@@ -14,7 +14,7 @@ movw (%A), %D
 leaw $1, %A
 subw (%A), %D, %D ; R1 - R0
 ; Se essa conta der negativa é porque R0 > R1
-leaw MAXR0, %A
+leaw $MAXR0, %A
 jl %D
 nop
 
@@ -28,9 +28,6 @@ jmp
 nop
 
 MAXR0:
-  leaw $0, %A
-  movw (%A), %D
-  ;; Não sei porque o jump está sendo feito a partir daqui!
   leaw $0, %A
   movw (%A), %D
   leaw $2, %A
