@@ -13,7 +13,7 @@
 #add.nasm 1 1000
 sub.nasm 1 1000
 #mov.nasm 1 1000
-#abs.nasm 2 1000
+abs.nasm 2 1000
 max.nasm 2 10000
 #mult.nasm 1 10000
 #mod.nasm 2 10000
