@@ -17,8 +17,8 @@
 #max.nasm 2 10000
 #mult.nasm 1 10000
 #mod.nasm 2 10000
-div.nasm  2 10000
-#pow.nasm 2 10000
+#div.nasm  2 10000
+pow.nasm 2 10000
 #factorial.nasm 2 10000
 #stringLength.nasm 2 2000
 #SWeLED.nasm 1 1000
