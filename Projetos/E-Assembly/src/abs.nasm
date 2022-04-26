@@ -5,11 +5,24 @@
 
 ; Copia o valor de RAM[1] para RAM[0] deixando o valor sempre positivo.
 
-leaw $R1, %A		;
-movw %A, %D		;
-negw %D			;
-jg %D			;
-nop			;
-movw %A, %D		;
-leaw $R0, %A		;
-movw %D, (%A)		;  
+
+leaw $1, %A    ; faz %A apontar para RAM[1]
+movw (%A), %D  ; carrega o valor de RAM[1] em %D
+leaw $ELSE, %A ; precisamos carregar em %A o valor do salto
+jle %D         ; salta se valor em %D for menor ou igual a zero
+nop            ; 
+               ; if
+leaw $0, %A    ; 
+movw %D, (%A)  ;  
+               ;
+leaw $END, %A  ; agora não podemos executar o trecho 
+jmp            ; do else, vamos pular para o fim 
+nop            ; do código
+               ;
+ELSE:          ; else
+
+negw %D        ;
+leaw $0, %A    ; 
+movw %D, (%A)  ; 
+               ;
+END:           ;
