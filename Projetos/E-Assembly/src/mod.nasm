@@ -13,9 +13,17 @@
 
 leaw $R0, %A
 movw (%A), %D
+LOOP:
+leaw $R3, %A
+movw %D, (%A)
 leaw $R1, %A
-; Fazer JUMPs com subtracoes ate o valor de R0 ser menor que R1. O resto sera esse valor de R0.
-; divw %D, (%A), %D
-subw (%A), %D, %D
-leaw $R2, %A
+subw %D, (%A), %D
+leaw $LOOP, $A
+jge %D
+nop
+
+leaw $R3, %A
 movw (%A), %D
+leaw $R2, %A
+movw %D, (%A)
+
