@@ -28,7 +28,7 @@ LOOP:
     movw (%A), %D ;D = RAM[3]
     incw %D ; D = D + 1
     movw %D, (%A) ; RAM[3] = D
-    ; análise do valor da RAM[1] - RAM[3]
+    ; análise do valor de RAM[1] - RAM[3]
     leaw $1, %A ; A = 1
     subw (%A), %D, %D ; D = RAM[1] - D = RAM[1] - RAM[3] ; 
  
