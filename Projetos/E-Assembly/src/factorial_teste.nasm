@@ -6,27 +6,30 @@
 ; Calcula o fatorial do número em R0 e armazena o valor em R1.
 
 
-;R1 = R0-1
-
-;MULT
-;R0 = mult R0*R1
-;ENDMULT
-;R1 -= 1
-;se R1 > 0 pula para Mult
-;R1 = R0 
+;primeiro teste, fazer r0^r0
 
 
-INICIO:
-    leaw $0,%A ;R1 = R0-1
-    movw (%A),%D
-    decw %D
+; Multiplica o valor de RAM[1] com RAM[2] salvando em RAM[3]
+
+PREMULT:
+    leaw $0,%A ;salva R0 em R1
+    movw (%A),$D
     leaw $1,%A
     movw %D,(%A)
+
+    decw %D ;salva R0-1 em R2
+    leaw $2,%A
+    movw %D,(%A)
+    
+    leaw $0,%A ; salva D (decrementado) em R0
+    movw %D,(%A)
+
 MULT:
-    leaw $0,%A
-    movw (%A),%D ; guarda R0 em D
+
+    leaw $2,%A
+    movw (%A),%D ; guarda R2 em D
     decw %D ; Decrementa D
-    movw %D,(%A) ;guarda D em R0
+    movw %D,(%A) ;guarda D em R2
 
     leaw $END,%A 
     jl %D ; se D for < 0 pula para END, isso pois na primeira execucao estamos somando R3 com R1 e R3 = 0 na primeira entao precisamos iterar R0 + 1 vezes.
@@ -43,21 +46,28 @@ MULT:
     jmp 
     nop
 END:
-    leaw $3,%A ;R0 = R0*R1 --> (esse resultado esta salvo em R3): R0 = R3
-    movw (%A),%D
-    leaw $0,%A
-    movw %D,(%A)
-
-    leaw $1,%A ; R1 -= 1
+    leaw $0,%A ;decrementa R0
     movw (%A),%D
     decw %D
     movw %D,(%A)
 
-    leaw %MULT,%A ;se R1 > 0 pula para Mult
-    jg %D
-    nop
+    leaw $2,%A ;salva R0 (novo R0 decrementado) em R2
+    movw %D,(%A)
 
-    leaw $0,%A ;R1 = R0
-    movw (%A),%D
+    leaw $3,%A ;salva R3 em R1
+    movw (%A),%D 
     leaw $1,%A
     movw %D,(%A)
+
+    leaw $0,%A
+    movw (%A),%D
+    leaw $ENDFAC,%A;pula para ENDFAC se R0 == 0
+    je %D
+    nop
+
+    leaw $MULT,%A ;pula para mult
+    jmp
+    nop
+
+ENDFAC:
+    nop
