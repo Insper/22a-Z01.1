@@ -26,35 +26,28 @@
 ;  RAM[14] = `?`
 ;  RAM[16] = NULL = 0x0000
 
-; Zerando os registradores
-leaw $0, %A ; passa o valor 0 para o registrador A
+leaw $R6, %A ; passa o valor de 0 para o registrador A
 movw %A, %D ; registrador D recebe o valor 0
 movw %D, (%A) ; RAM[0] recebe o valor 0
-
-leaw $8, %A ; passa o valor 8 para o registrador A
-movw %A, %D ; registrador D recebe o valor 8
-
-leaw $6, %A ; passa o valor 6 para o registrador A
-movw %D, (%A) ; RAM[6] recebe o valor 8
-
 LOOP:
-    leaw $6, %A ; passa o valor 6 para o registrador A
-    movw (%A), %D ; registrador D recebe o valor da RAM[6]
-    movw (%A), %A ; registrador A recebe o valor da RAM[6]
-    leaw $END, %A ; passa o valor END para o registrador A
-    je %D ; se o registrador D for igual a 0, então faz um desvio para o endereço END
-    nop
-    leaw $0, %A ; passa o valor 0 para o registrador A
-    movw (%A), %D ; registrador D recebe o valor da RAM[0]
-    incw %D ; incrementa +1 ao valor do registrador D
-    leaw $0, %A ; passa o valor 0 para o registrador A
-    movw %D, (%A) ; RAM[0] recebe o valor do registrador D
-    leaw $6, %A ; passa o valor 6 para o registrador A
-    movw (%A), %A ; registrador A recebe o valor da RAM[6]
-    incw %A ; incrementa +1 ao valor do registrador A
-    movw %A, %D ; registrador D recebe o valor do registrador A
-    leaw $6, %A ; passa o valor 6 para o registrador A
-    movw %D, (%A) ; RAM[6] recebe o valor do registrador D
-    leaw $LOOP, %A ; passa o endereço LOOP para o registrador A
-    jmp ; faz um desvio para o endereço LOOP, continuando o laço
-END: ; endereço final
+leaw $R6, %A ; passa o valor 0 para o registrador A
+movw (%A), %D ; registrador D recebe o valor da RAM[0]
+incw %D ; incrementa +1 ao valor do registrador D
+movw %D, (%A) ; RAM[0] recebe o valor do registrador D
+movw %D, %A ; registrador A recebe o valor do registrador D
+movw (%A), %D ; registrador D recebe o valor da RAM[0]
+leaw $ZERO, %A ; passa o valor 0 para o registrador A
+je %D ; se o valor do registrador D for igual a 0, então desvia o fluxo para ZERO
+nop ; não faz nada
+leaw $R0 , %A ; passa o valor da RAM[0] = 0 para o registrador A
+movw (%A), %D ; registrador D recebe o valor da RAM[0]
+incw %D ; incrementa +1 ao valor do registrador D
+movw %D, (%A) ; RAM[0] recebe o valor do registrador D = 1
+leaw $LOOP, %A ; passa o endereço LOOP para o registrador A
+jmp ; retorna para o endereço armazenado em LOOP
+nop ; não faz nada
+ZERO:
+leaw $R0, %A ; passa o valor da RAM[0] para o registrador A
+movw (%A), %D ; registrador D recebe o valor da RAM[0]
+incw %D ; incrementa +1 ao valor do registrador D
+movw %D, (%A) ; RAM[0] recebe o valor do registrador D = 1
