@@ -27,3 +27,30 @@
 ;  RAM[15] = NULL = 0x0000
 
 
+leaw $0, %A
+movw %A, (%A) ; Inicia RAM[0] (contador)
+
+LOOP:
+  leaw $8, %A
+  movw %A, %D
+  leaw $0, %A 
+  addw (%A), %D, %A ; Pega sempre o próximo endereço da memória -> No primeiro vai ser o próprio 8 porque (%A) = 0
+  movw (%A), %D
+  leaw $END, %A
+  je %D ; Pula para o fim se for igual a 0
+  nop
+
+leaw $0, %A
+movw (%A), %D
+incw %D
+movw %D, (%A)
+leaw $LOOP, %A
+jmp
+nop
+
+END:
+
+
+
+
+
