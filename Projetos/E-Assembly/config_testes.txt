@@ -10,9 +10,9 @@
 # conceito C
 ##########################
 
-#add.nasm 1 1000
+add.nasm 1 1000
 sub.nasm 1 1000
-#mov.nasm 1 1000
+mov.nasm 1 1000
 abs.nasm 2 1000
 max.nasm 2 10000
 #mult.nasm 1 10000
@@ -20,7 +20,7 @@ mod.nasm 2 10000
 #div.nasm  2 10000
 #pow.nasm 2 10000
 #factorial.nasm 2 10000
-#stringLength.nasm 2 2000
+stringLength.nasm 2 2000
 SWeLED.nasm 1 1000
 #LCDlinha.nasm 0 10000
 #LCDquadrado.nasm 0 10000
@@ -38,7 +38,7 @@ palindromo.nasm 2 1000
 ## conceito A
 ###########################
 
-#vectorMean.nasm 2 2000
+vectorMean.nasm 2 2000
 #SWeLED2.nasm 1 1000
 
 
