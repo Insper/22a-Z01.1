@@ -8,86 +8,33 @@
 ; divisao para numeros inteiros positivos
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+; Escreve R[3] = R[0]
+; -------------------
+leaw $1 , %A
+movw (%A), %D
+leaw $0 , %A
+; A = D - RAM[A] 
+subw (%A) , %D, %A
+movw %A , %D
+
+; Definindo o loop
+LOOP:
+    leaw $1 , %A
+    movw (%A), %D
+    leaw $0 , %A
+    ; A = D - RAM[A] 
+    subw (%A) , %D, %A
+    movw %A , %D
+    leaw $0 , %A
+    movw %D , (%A)
+
+    ; incremento Ram[2]
+    leaw $2 , %A
+    movw (%A) , %D
+    incw %D
+    movw %D , (%A)
+    leaw $0, %A
+    movw (%A), %D
+    leaw $LOOP, %A
+    jg 
+    nop
