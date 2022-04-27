@@ -10,3 +10,18 @@
 ; 4  % 3 = 1
 ; 10 % 7 = 3
 ; ------------------------------------------------------------
+LOOP:
+    leaw $1, %A
+    movw (%A), %D
+    leaw $0 , %A
+    subw (%A), %D, %D
+    leaw $0 , %A
+    movw %D, (%A)
+    ;Jump para ver se é maior que  0
+    leaw $LOOP, %A
+    jge %D
+    nop
+    leaw $1, %A
+    addw (%A), %D, %D
+    leaw $2, %A
+    movw %D, (%A)
