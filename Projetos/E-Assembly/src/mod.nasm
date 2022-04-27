@@ -26,4 +26,3 @@ leaw $R3, %A
 movw (%A), %D
 leaw $R2, %A
 movw %D, (%A)
-
