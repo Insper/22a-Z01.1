@@ -21,3 +21,30 @@
 ; 
 
  
+leaw $0, %A
+movw $1, (%A)
+
+;Checa 10 e 14
+leaw $10, %A
+movw (%A), %D
+leaw $14 , %A
+subw (%A) , %D , %D
+leaw %END%, %A
+je %D
+nop
+
+leaw $0, %A
+movw $0, (%A)
+
+END:
+leaw $11, %A
+movw (%A), %D
+leaw $13 , %A
+subw (%A) , %D , %D
+leaw %END2%, %A
+je %D
+nop
+
+leaw $0, %A
+movw $0, (%A)
+END2:
