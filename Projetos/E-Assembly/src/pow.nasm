@@ -31,5 +31,5 @@ LOOP:
 
     ; Neste ponto, o valor armezando na variavel %A vai ser subtraida até atingir o seu valor de zero
     ; Quando isso ocorrer o LOOP será quebrado e o valor armezando na RAM[0] deverá corresonder ao Quadrado do valor inicialmente dado
-    je
+    jg
     nop
