@@ -17,6 +17,7 @@ LOOP:
     addw %D, (%A), %D       ; Soma o valor de RAM[1] com RAM[0] e adiciona a %D
     leaw $0, %A             ; Aponta para RAM[0]
     movw %D, (%A)           ; Move o resultado da soma para a RAM[0]
+    
     ; Até esse momento do codigo foi feita a soma do valor da RAM[1] com zero, e o
     ; Armazenamento deste valor na RAM[0]
 
