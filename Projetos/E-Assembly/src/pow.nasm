@@ -10,17 +10,17 @@
 ; Ex: o Número 4, para chegar em seu quadrado precisa ser somado 4 vezes, ou o número 5 precisa ser somado 5 vezes.
 ; Para isso podemos pegar o valor inicial do número, armazenar no resultado, e utilizar o RAM[1] como contador
 
-leaw $0, $A
+leaw $1, $A
 movw (%A), %D
 leaw $2, %A
 movw %D, (%A)
 
 LOOP:
-    leaw $0, %A             ; Aponta para RAM[0]
+    leaw $1, %A             ; Aponta para RAM[0]
     movw (%A), %D           ; Move o valor da RAM[0] para %D
-    leaw $1, %A             ; Aponta para RAM[1]
+    leaw $0, %A             ; Aponta para RAM[1]
     addw %D, (%A), %D       ; Soma o valor de RAM[1] com RAM[0] e adiciona a %D
-    leaw $0, %A             ; Aponta para RAM[0]
+    leaw $0, %A             ; Aponta para RAM[1]
     movw %D, (%A)           ; Move o resultado da soma para a RAM[0]
     
     ; Até esse momento do codigo foi feita a soma do valor da RAM[1] com zero, e o
