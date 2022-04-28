@@ -5,5 +5,49 @@
 ;
 ; Desenhe uma linha no LCD
 
-leaw $16384, %A
-movw $-1, (%A)
+leaw $0, %A
+movw %A, %D
+notw %D
+
+; linha 1
+leaw $21084, %A
+movw %D, (%A)
+incw %A
+movw %D, (%A)
+incw %A
+movw %D, (%A)
+incw %A
+movw %D, (%A)
+incw %A
+movw %D, (%A)
+incw %A
+movw %D, (%A)
+incw %A
+movw %D, (%A)
+incw %A
+movw %D, (%A)
+incw %A
+movw %D, (%A)
+incw %A
+movw %D, (%A)
+incw %A
+movw %D, (%A)
+incw %A
+movw %D, (%A)
+incw %A
+movw %D, (%A)
+incw %A
+movw %D, (%A)
+incw %A
+movw %D, (%A)
+incw %A
+movw %D, (%A)
+incw %A
+movw %D, (%A)
+incw %A
+movw %D, (%A)
+incw %A
+movw %D, (%A)
+incw %A
+movw %D, (%A)
+
