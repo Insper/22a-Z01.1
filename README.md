@@ -7,7 +7,7 @@ https://www.youtube.com/watch?v=58nf77r0mHc
 Ram8:   https://www.youtube.com/shorts/bf-MWOfZLzs?&ab_channel=HugeCharles
 Pc: https://www.youtube.com/shorts/SwkH8cJDaZo?&ab_channel=HugeCharles
 
-##Segue os Links projeto E
+## Segue os Links projeto E
 
 
 Quadrado LCD: https://www.youtube.com/shorts/jd5lTPvAv2s?&ab_channel=JohnnyDeppBalls
