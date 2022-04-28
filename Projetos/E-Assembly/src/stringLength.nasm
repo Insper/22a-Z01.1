@@ -27,3 +27,28 @@
 ;  RAM[15] = NULL = 0x0000
 
 
+leaw $R7, %A ; passa o valor da RAM[7] = 0 para o registrador A
+movw %A, %D ; registrador D recebe o valor 0
+movw %D, (%A) ; RAM[0] recebe o valor 0
+LOOP:
+leaw $R7, %A ; passa o valor da RAM[7] = 0 para o registrador A
+movw (%A), %D ; registrador D recebe o valor da RAM[0]
+incw %D ; registrador D = 1
+movw %D, (%A) ; RAM[0] recebe o valor 1
+movw %D, %A ; registrador A recebe o valor 1
+movw (%A), %D ; registrador D recebe o valor da RAM[1]
+leaw $ZERO, %A ; passa o endereço ZERO para o registrador A
+je %D ; se o valor do registrador D for igual a 0, então desvia o fluxo para ZERO
+nop ; não faz nada
+leaw $R0 , %A ; passa o valor da RAM[0] para o registrador A
+movw (%A), %D ; registrador D recebe o valor da RAM[0]
+incw %D ; incrementa +1 ao valor do registrador D
+movw %D, (%A) ; RAM[0] recebe o valor do registrador D
+leaw $LOOP, %A ; passa o endereço LOOP para o registrador A
+jmp ; retorna para o endereço armazenado em LOOP
+nop ; não faz nada
+ZERO:
+leaw $R0, %A ; passa o valor da RAM[0] para o registrador A
+movw (%A), %D ; registrador D recebe o valor da RAM[0]
+incw %D ; incrementa +1 ao valor do registrador D
+movw %D, (%A) ; RAM[0] recebe o valor do registrador D = 1
