@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+ #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 # Curso de Elementos de Sistemas
 # Desenvolvido por: Rafael Corsi <rafael.corsi@insper.edu.br>
