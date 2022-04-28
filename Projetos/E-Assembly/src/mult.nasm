@@ -8,6 +8,10 @@ leaw $0, %A
 movw (%A), %D
 leaw $2, %A
 movw %D, (%A)
+leaw %1, %A
+movw (%A), %D
+subw %D, %A, %D
+movw %D, (%A)
 
 LOOP:
     leaw $0, %A
@@ -21,7 +25,8 @@ LOOP:
     movw (%A), %D
     decw %D
     movw %D, (%A)
-    je %D
+    leaw $LOOP, %A
+    jne %D
     nop
 
 leaw $2, %A
