@@ -24,7 +24,8 @@
 ;  RAM[12] =  l`
 ;  RAM[13] = `z`
 ;  RAM[14] = `?`
-;  RAM[16] = NULL = 0x0000
+;  RAM[15] = NULL = 0x0000
+
 
 leaw $R7, %A ; passa o valor da RAM[7] = 0 para o registrador A
 movw %A, %D ; registrador D recebe o valor 0
