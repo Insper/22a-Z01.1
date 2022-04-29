@@ -7,16 +7,18 @@
 
 leaw $1, %A
 movw (%A), %D
-leaw $0, %A
-movw %D, (%A)
-leaw $1, %A
-movw (%A), %D
-leaw $END, %A
-jge
+
+leaw $NEGADO, %A
+jl %D
 nop
-leaw $1, %A
-movw (%A), %D
+
+leaw $END, %A
+jmp
+nop
+
+NEGADO:
 negw %D
+
+END:
 leaw $0, %A
 movw %D, (%A)
-END:
