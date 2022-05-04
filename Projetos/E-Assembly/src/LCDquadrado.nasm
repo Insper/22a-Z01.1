@@ -24,8 +24,8 @@ LOOP: ;adiciona 20 ao valor de r1 a cada iteracao, 30 iteracoes,
     leaw $1,%A ;desenhando
     movw (%A),%A
     movw $-1,(%A)
-    ; addw %A,$1,%A
-    ; movw $-1,(%A)
+    addw %A,$1,%A
+    movw $-1,(%A)
 
     leaw %1,%A ;somando 20 no valor de R1
     movw (%A),%D
