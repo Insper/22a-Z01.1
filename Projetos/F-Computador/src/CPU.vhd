@@ -176,5 +176,3 @@ begin
     saida => s_ALUout
   )
 end architecture;
-
---- writeM
