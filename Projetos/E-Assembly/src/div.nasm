@@ -9,7 +9,30 @@
 
 
 
+DIV:
+    leaw $0,%A
+    movw (%A),%D ; guarda R0 em D
 
+    leaw $1,%A
+    subw %D,(%A),%D ;D = R0-R1
+    leaw $END,%A ;se resto for menor que 0 pula para END
+    jl %D
+    nop
+
+    leaw $0,%A ; escreve resto em R0 (so vai rodar quando o resto for >= 0)
+    movw %D,(%A)
+
+    leaw $2,%A ; incrementa o valor da divisao em R2
+    movw (%A),%D
+    incw %D
+    movw %D,(%A)
+
+    leaw $DIV,%A ; pula para DIV
+    jmp 
+    nop
+
+END:
+    nop
 
 
 
