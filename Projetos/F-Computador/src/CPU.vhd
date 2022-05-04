@@ -114,7 +114,7 @@ begin
     no => c_no,
     loadA => c_loadA,
     loadD => c_loadD,
-    loadM => c_loadM,
+    loadM => writeM,
     loadPC => c_loadPC
   )
 
@@ -143,7 +143,7 @@ begin
 ----------------------------------------------
   adressM <= s_refAout(14 downto 0);
   outM <= s_ALUout;
-  pcout <= s_pcout;
+  pcout <= s_pcout(14 downto 0);
 ----------------------------------------------
 
   muxAM: Mux16 port map(
@@ -155,7 +155,7 @@ begin
 
   PC: pc port map (
     clock => control,
-    increment => ,
+    increment => '1',
     load => loadPC,
     reset => reset,
     input => s_refAout,
