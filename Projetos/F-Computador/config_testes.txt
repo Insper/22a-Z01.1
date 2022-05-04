@@ -1,0 +1,12 @@
+######################################
+# Rafael.Corsi @ Insper.edu.br       #
+#  Elementos de Sistemas             # 
+#                                    # 
+# Arquivos de teste do projeto B     #
+#  - Para incluir o teste basta      #
+#  descomentar a linha               #
+#                                    #
+######################################
+
+ControlUnit.vhd
+MemoryIO.vhd
