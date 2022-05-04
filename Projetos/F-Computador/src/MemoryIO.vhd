@@ -94,6 +94,7 @@ ARCHITECTURE logic OF MemoryIO IS
   SIGNAL OUTPUT_RAM       : STD_LOGIC_VECTOR(15 downto 0);
 	SIGNAL SW16 : STD_LOGIC_VECTOR(15 downto 0);
 	SIGNAL LED16 : STD_LOGIC_VECTOR(15 downto 0);
+  SIGNAL MUX_SEL : STD_LOGIC_VECTOR(1 downto 0);
 
 BEGIN
 
@@ -132,12 +133,21 @@ BEGIN
         output => LED16
         );
 
+    MUXPM: Mux4Way16 port map(
+      sel => MUX_SEL,
+      a  => OUTPUT_RAM,
+      b  => SW16,
+      c  => SW16,
+      d  => SW16,
+      q => OUTPUT
+    );
     ----------------------------------------
     -- Controla LOAD do display e da ram e LED ! --
     ----------------------------------------
-    --LOAD_DISPLAY <= ??????; 
-    --LOAD_RAM     <= ??????; 
-    --LOAD_LED     <= ??????; 
+    LOAD_DISPLAY <= LOAD when ADDRESS >= "100000000000000" and ADDRESS <= "101001010111111" else '0';
+    LOAD_RAM <= LOAD when ADDRESS <= "011111111111111" else '0';
+    LOAD_LED <= LOAD when ADDRESS <= "101001011000000" else '0';
+
 
     ----------------------------------------
     -- SW e LED                           --
@@ -154,6 +164,7 @@ BEGIN
     ----------------------------------------
     -- precisar ser: RAM ou SW16
     -- OUTPUT <= ?????? ;
+    MUX_SEL <= "01" when ADDRESS = "101001011000001" else "00";
 
 
 END logic;
