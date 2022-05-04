@@ -1,4 +1,4 @@
--- Elementos de Sistemas
+-- Elementos de SistemasloadD <= istruction(17) and instruction(4);
 -- developed by Luciano Soares
 -- file: ControlUnit.vhd
 -- date: 4/4/2017
@@ -30,5 +30,17 @@ architecture arch of ControlUnit is
 
 begin
 
+loadD <= instruction(17) and instruction(4);
+loadA <= (instruction(17) and instruction(3)) or (not instruction(17));
+loadM <= instruction(17) and instruction(5);
+muxALUI_A <= not(instruction(17));
+zx <= instruction(17) and instruction(12);
+nx <= instruction(17) and instruction(11);
+zy <= instruction(17) and instruction(10);
+ny <= instruction(17) and instruction(9);
+f <= instruction(17) and instruction(8);
+no <= instruction(17) and instruction(7);
+-- loadPC <= (instruction(2) and instruction(1) and instruction(0)) or (not(instruction(2)) and instruction(1) and not(instruction(0)) and zr) or (not(instruction(2)) and not(instruction(1)) and instruction(0) and not(zr) and not(ng)) or (not(instruction(2)) and instruction(1) and instruction(0) and not(ng)) or (instruction(0) and not(instruction(1)) and not(instruction(0)) and not(zr) and ng) or (instruction(2) and not(instruction(1)) and instruction(0) and not(zr)) or (instruction(2) and instruction(1) and not(instruction(0)) and (zr or ng));
+loadPC <= (instruction(17) and instruction(0) and not(zr) and not(ng)) or (instruction(17) and instruction(1) and zr) or (instruction(17) and instruction(2) and ng);
 
 end architecture;
