@@ -100,7 +100,7 @@ architecture arch of CPU is
 
 begin
 
-  ControlUnit: ControlUnit port map(
+  CU: ControlUnit port map(
     instruction => instruction,
     zr => c_zr, 
     ng => c_ng,
@@ -116,7 +116,7 @@ begin
     loadD => c_loadD,
     loadM => writeM,
     loadPC => c_loadPC
-  )
+  );
 
   muxALUI: Mux16 port map(
     a => s_ALUout,
@@ -129,40 +129,34 @@ begin
   A: Register16 port map(
     clock => clock,
     input => s_muxALUI_Aout,
-    load => loadA,
+    load => c_loadA,
     output => s_regAout
-  )
+  );
 
   D: Register16 port map(
     clock => clock,
     input => s_ALUout,
-    load => loadD,
+    load => c_loadD,
     output => s_regDout
-  )
-
-----------------------------------------------
-  adressM <= s_refAout(14 downto 0);
-  outM <= s_ALUout;
-  pcout <= s_pcout(14 downto 0);
-----------------------------------------------
+  );
 
   muxAM: Mux16 port map(
-    a => s_refAout,
+    a => s_regAout,
     b => inM,
     sel => c_muxAM,
     q => s_muxAM_out
-  )
+  );
 
-  PC: pc port map (
-    clock => control,
+  programCounter: pc port map (
+    clock => clock,
     increment => '1',
-    load => loadPC,
+    load => c_loadPC,
     reset => reset,
-    input => s_refAout,
+    input => s_regAout,
     output => s_pcout
-  )
+  );
 
-  ALU: ALU port map (
+  ULA: ALU port map (
     x => s_regDout,
     y => s_muxAM_out,
     zx => c_zx, 
@@ -174,5 +168,12 @@ begin
     zr => c_zr, 
     ng => c_ng,
     saida => s_ALUout
-  )
+  );
+
+----------------------------------------------
+addressM <= s_regAout(14 downto 0);
+outM <= s_ALUout;
+pcout <= s_pcout(14 downto 0);
+----------------------------------------------
+
 end architecture;
