@@ -153,7 +153,7 @@ BEGIN
     -- SAIDA do memory I/O                --
     ----------------------------------------
     -- precisar ser: RAM ou SW16
-    OUTPUT <= OUTPUT_RAM;
+    OUTPUT <= (LOAD_RAM and OUTPUT_RAM) or (LOAD_LED and SW16);
 
 
 END logic;

@@ -78,7 +78,7 @@ architecture arch of CPU is
 
   signal c_muxALUI_A: STD_LOGIC;
   signal c_muxAM: STD_LOGIC;
-  signal c_zx: STD_LOGIC;x'
+  signal c_zx: STD_LOGIC;
   signal c_nx: STD_LOGIC;
   signal c_zy: STD_LOGIC;
   signal c_ny: STD_LOGIC;
@@ -100,7 +100,7 @@ architecture arch of CPU is
 
 begin
 
-  ControlUnit: ControlUnit port map(
+  ControlUnit2: ControlUnit port map(
     instruction => instruction,
     zr => c_zr,
     ng => c_ng,
@@ -119,7 +119,7 @@ begin
   );
 
   MUXALU_I: Mux16 port map(
-    a => s_ALUout
+    a => s_ALUout,
     b => instruction(15 downto 0),
     sel => c_muxALUI_A,
     q => s_muxALUI_Aout
@@ -146,7 +146,7 @@ begin
     output => s_regDout
   );
 
-  ALU: ALU port map(
+  ALU2: ALU port map(
     x => s_regDout,
     y => s_muxAM_out,
     zx => c_zx,
@@ -160,7 +160,7 @@ begin
     saida => s_ALUout
   );
 
-  PC: pc port map(
+  PC2 : pc port map(
     clock => clock,
     increment => '1',
     load => c_loadPC,
