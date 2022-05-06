@@ -1,5 +1,14 @@
 site
 DEV0_CV_Default.cdf
 /Projetos/B-LogicaCombinacional/Quartus/DE0_CV_Default.cdf
+*.hack
+*.mif
 *.pyc
+*.qpg
+*.qdb
+*.qtl
+*.pgm
+*.wlf
+*.mem
+*.lst
 vunit_out

@@ -152,13 +152,15 @@ begin
 	inversormux: inversor16 port map(
 		z => no,
 		a => muxout,
-		y => saida
+		y => precomp
 	);
 
 	comparador: comparador16 port map(
-		a => saida,
+		a => precomp,
 		zr => zr,
 		ng => ng
 	);
-
+	
+	saida <= precomp;
+	
 end architecture;
