@@ -144,16 +144,24 @@ BEGIN
     ----------------------------------------
     -- Compatibilidade de tamanho
     LED <= LED16(9 downto 0);
-
+    LOAD_RAM <= not(ADDRESS(14));
+    with ADDRESS select
+      LOAD_LED <= '1' when "101001011000000",
+      '0' when others;
+    LOAD_DISPLAY <= not(LOAD_RAM or LOAD_LED);
     -- Compatibilidade de tamanho
     SW16(15 downto 10) <= (others => '0');
     SW16( 9 DOWNTO  0) <= SW;
 
-    ----------------------------------------
+    ----------------------------------------0111111
     -- SAIDA do memory I/O                --
     ----------------------------------------
     -- precisar ser: RAM ou SW16
     -- OUTPUT <= ?????? ;
+    with ADDRESS select
+      OUTPUT <= SW16 when "101001011000001",
+          OUTPUT_RAM when others;
+    
 
 
 END logic;
