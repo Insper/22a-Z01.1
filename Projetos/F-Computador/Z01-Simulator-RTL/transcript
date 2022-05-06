@@ -4,7 +4,7 @@
 # 1
 # ** Warning: (vlib-34) Library already exists at "work".
 # Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 09:13:53 on May 06,2022
+# Start time: 15:23:57 on May 06,2022
 # vcom -reportprogress 300 -work work ../../B-LogicaCombinacional/src/And16.vhd ../../B-LogicaCombinacional/src/BarrelShifter16.vhd ../../B-LogicaCombinacional/src/DMux2Way.vhd ../../B-LogicaCombinacional/src/DMux4Way.vhd ../../B-LogicaCombinacional/src/DMux8Way.vhd ../../B-LogicaCombinacional/src/Mux16.vhd ../../B-LogicaCombinacional/src/Mux2Way.vhd ../../B-LogicaCombinacional/src/Mux4Way.vhd ../../B-LogicaCombinacional/src/Mux4Way16.vhd ../../B-LogicaCombinacional/src/Mux8Way.vhd ../../B-LogicaCombinacional/src/Mux8Way16.vhd ../../B-LogicaCombinacional/src/Nand2.vhd ../../B-LogicaCombinacional/src/Nor8Way.vhd ../../B-LogicaCombinacional/src/Not16.vhd ../../B-LogicaCombinacional/src/Or16.vhd ../../B-LogicaCombinacional/src/Or8Way.vhd ../../B-LogicaCombinacional/src/binarioToBcd.vhd ../../B-LogicaCombinacional/src/circuito.vhd ../../B-LogicaCombinacional/src/detectorDeMoedas.vhd ../../B-LogicaCombinacional/src/impressora.vhd ../../B-LogicaCombinacional/src/sevenSeg.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -54,10 +54,10 @@
 # -- Compiling architecture arch of impressora
 # -- Compiling entity sevenSeg
 # -- Compiling architecture arch of sevenSeg
-# End time: 09:13:53 on May 06,2022, Elapsed time: 0:00:00
+# End time: 15:23:57 on May 06,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 09:13:53 on May 06,2022
+# Start time: 15:23:57 on May 06,2022
 # vcom -reportprogress 300 -work work ../../C-UnidadeLogicaAritmetica/src/ALU.vhd ../../C-UnidadeLogicaAritmetica/src/Add16.vhd ../../C-UnidadeLogicaAritmetica/src/FullAdder.vhd ../../C-UnidadeLogicaAritmetica/src/HalfAdder.vhd ../../C-UnidadeLogicaAritmetica/src/Inc16.vhd ../../C-UnidadeLogicaAritmetica/src/comparador16.vhd ../../C-UnidadeLogicaAritmetica/src/inversor16.vhd ../../C-UnidadeLogicaAritmetica/src/zerador16.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -78,10 +78,10 @@
 # -- Compiling architecture rtl of inversor16
 # -- Compiling entity zerador16
 # -- Compiling architecture rtl of zerador16
-# End time: 09:13:54 on May 06,2022, Elapsed time: 0:00:01
+# End time: 15:23:57 on May 06,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 09:13:54 on May 06,2022
+# Start time: 15:23:57 on May 06,2022
 # vcom -reportprogress 300 -work work ../../D-LogicaSequencial/src/BinaryDigit.vhd ../../D-LogicaSequencial/src/FlipFlopD.vhd ../../D-LogicaSequencial/src/PC.vhd ../../D-LogicaSequencial/src/Ram4K.vhd ../../D-LogicaSequencial/src/Ram512.vhd ../../D-LogicaSequencial/src/Ram64.vhd ../../D-LogicaSequencial/src/Ram8.vhd ../../D-LogicaSequencial/src/Register16.vhd ../../D-LogicaSequencial/src/Register32.vhd ../../D-LogicaSequencial/src/Register64.vhd ../../D-LogicaSequencial/src/Register8.vhd ../../D-LogicaSequencial/src/TopLevel.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -111,10 +111,10 @@
 # -- Compiling architecture arch of Register8
 # -- Compiling entity TopLevel
 # -- Compiling architecture arch of TopLevel
-# End time: 09:13:54 on May 06,2022, Elapsed time: 0:00:00
+# End time: 15:23:57 on May 06,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 09:13:54 on May 06,2022
+# Start time: 15:23:57 on May 06,2022
 # vcom -reportprogress 300 -work work ../src/MemoryIO.vho 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -122,30 +122,30 @@
 # -- Loading package NUMERIC_STD
 # -- Compiling entity MemoryIO
 # -- Compiling architecture logic of MemoryIO
-# End time: 09:13:54 on May 06,2022, Elapsed time: 0:00:00
+# End time: 15:23:57 on May 06,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 09:13:54 on May 06,2022
+# Start time: 15:23:57 on May 06,2022
 # vcom -reportprogress 300 -work work ../src/ControlUnit.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity ControlUnit
 # -- Compiling architecture arch of ControlUnit
-# End time: 09:13:54 on May 06,2022, Elapsed time: 0:00:00
+# End time: 15:23:57 on May 06,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 09:13:54 on May 06,2022
+# Start time: 15:23:57 on May 06,2022
 # vcom -reportprogress 300 -work work ../src/CPU.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity CPU
 # -- Compiling architecture arch of CPU
-# End time: 09:13:54 on May 06,2022, Elapsed time: 0:00:00
+# End time: 15:23:57 on May 06,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 09:13:54 on May 06,2022
+# Start time: 15:23:57 on May 06,2022
 # vcom -reportprogress 300 -work work ../src/Computador.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -153,20 +153,20 @@
 # -- Loading package NUMERIC_STD
 # -- Compiling entity Computador
 # -- Compiling architecture logic of Computador
-# End time: 09:13:54 on May 06,2022, Elapsed time: 0:00:00
+# End time: 15:23:57 on May 06,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 09:13:54 on May 06,2022
+# Start time: 15:23:57 on May 06,2022
 # vcom -reportprogress 300 -work work ../src/Dispositivos/PLL/PLL_sim/PLL.vho 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity PLL
 # -- Compiling architecture RTL of PLL
-# End time: 09:13:54 on May 06,2022, Elapsed time: 0:00:00
+# End time: 15:23:57 on May 06,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 09:13:54 on May 06,2022
+# Start time: 15:23:57 on May 06,2022
 # vcom -reportprogress 300 -work work ../src/Dispositivos/RAM/RAM16K.vho ../src/Dispositivos/RAM/RAM32K.vho 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -176,10 +176,10 @@
 # -- Compiling architecture SYN of ram16k
 # -- Compiling entity ram32k
 # -- Compiling architecture SYN of ram32k
-# End time: 09:13:54 on May 06,2022, Elapsed time: 0:00:00
+# End time: 15:23:57 on May 06,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 09:13:54 on May 06,2022
+# Start time: 15:23:57 on May 06,2022
 # vcom -reportprogress 300 -work work ../src/Dispositivos/ROM/ROM32K.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -187,20 +187,20 @@
 # -- Loading package altera_mf_components
 # -- Compiling entity ROM32K
 # -- Compiling architecture SYN of rom32k
-# End time: 09:13:54 on May 06,2022, Elapsed time: 0:00:00
+# End time: 15:23:57 on May 06,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 09:13:54 on May 06,2022
+# Start time: 15:23:57 on May 06,2022
 # vcom -reportprogress 300 -work work ../src/Dispositivos/Screen/FIFO/FIFO16x4096.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity FIFO16x4096
 # -- Compiling architecture SYN of fifo16x4096
-# End time: 09:13:54 on May 06,2022, Elapsed time: 0:00:00
+# End time: 15:23:57 on May 06,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 09:13:54 on May 06,2022
+# Start time: 15:23:57 on May 06,2022
 # vcom -reportprogress 300 -work work ../src/Dispositivos/Screen/Screen.vho 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -210,10 +210,10 @@
 # -- Loading package STD_LOGIC_UNSIGNED
 # -- Compiling entity Screen
 # -- Compiling architecture logic of Screen
-# End time: 09:13:54 on May 06,2022, Elapsed time: 0:00:00
+# End time: 15:23:57 on May 06,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 09:13:54 on May 06,2022
+# Start time: 15:23:57 on May 06,2022
 # vcom -reportprogress 300 -work work ../testes/Computador_tb.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -221,10 +221,10 @@
 # -- Loading package NUMERIC_STD
 # -- Compiling entity Computador_tb
 # -- Compiling architecture rtl of Computador_tb
-# End time: 09:13:54 on May 06,2022, Elapsed time: 0:00:00
+# End time: 15:23:57 on May 06,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vsim work.computador_tb 
-# Start time: 09:13:54 on May 06,2022
+# Start time: 15:23:57 on May 06,2022
 # Loading std.standard
 # Loading std.textio(body)
 # Loading ieee.std_logic_1164(body)
@@ -274,5 +274,5 @@
 # This port will contribute value (U) to the signal network.
 # ** Warning: (vsim-8683) Uninitialized out port /computador_tb/c1/MEMORY_MAPED/LED(9 downto 0) has no driver.
 # This port will contribute value (UUUUUUUUUU) to the signal network.
-# End time: 09:13:54 on May 06,2022, Elapsed time: 0:00:00
+# End time: 15:23:58 on May 06,2022, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 8
