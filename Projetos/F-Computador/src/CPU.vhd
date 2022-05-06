@@ -100,17 +100,17 @@ architecture arch of CPU is
 
 begin
 
-Alu: ALU port map(
+ula: ALU port map(
   x => s_regDout,
   y => s_muxAM_out,
   zx => c_zx,
-  nx = c_nx,
+  nx => c_nx,
   zy => c_zy,
   ny => c_ny,
   f => c_f,
   no => c_no,
   zr => c_zr,
-  ng => c_nr,
+  ng => c_ng,
   saida => s_ALUout
 );
 
@@ -142,7 +142,7 @@ muxALU: Mux16 port map(
   q => s_muxALUI_Aout
 );
 
-Cu: ControUnit port map(
+Cu: ControlUnit port map(
   instruction => intruction,
   zr => c_zr,
   ng => c_ng,
