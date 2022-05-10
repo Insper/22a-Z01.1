@@ -1,0 +1,281 @@
+# do /home/corsi/work/Z01/Z01.1-priv-2020a/Projetos/F-Computador/Z01-Simulator-RTL/do/sim.do
+# 1
+# 1
+# 1
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 21:56:55 on Apr 21,2020
+# vcom -reportprogress 300 -work work ../../B-LogicaCombinacional/src/rtl/And16.vhd ../../B-LogicaCombinacional/src/rtl/BarrelShifter16.vhd ../../B-LogicaCombinacional/src/rtl/BarrelShifter8.vhd ../../B-LogicaCombinacional/src/rtl/DMux2Way.vhd ../../B-LogicaCombinacional/src/rtl/DMux4Way.vhd ../../B-LogicaCombinacional/src/rtl/DMux8Way.vhd ../../B-LogicaCombinacional/src/rtl/DMux8Way16.vhd ../../B-LogicaCombinacional/src/rtl/Mux16.vhd ../../B-LogicaCombinacional/src/rtl/Mux2Way.vhd ../../B-LogicaCombinacional/src/rtl/Mux4Way.vhd ../../B-LogicaCombinacional/src/rtl/Mux4Way16.vhd ../../B-LogicaCombinacional/src/rtl/Mux8Way.vhd ../../B-LogicaCombinacional/src/rtl/Mux8Way16.vhd ../../B-LogicaCombinacional/src/rtl/Nand.vhd ../../B-LogicaCombinacional/src/rtl/Nor8Way.vhd ../../B-LogicaCombinacional/src/rtl/Not16.vhd ../../B-LogicaCombinacional/src/rtl/Or16.vhd ../../B-LogicaCombinacional/src/rtl/Or8Way.vhd ../../B-LogicaCombinacional/src/rtl/binarioToBcd.vhd ../../B-LogicaCombinacional/src/rtl/circuito.vhd ../../B-LogicaCombinacional/src/rtl/detectorDeMoedas.vhd ../../B-LogicaCombinacional/src/rtl/impressora.vhd ../../B-LogicaCombinacional/src/rtl/sevenSeg.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity And16
+# -- Compiling architecture arch of And16
+# -- Loading package NUMERIC_STD
+# -- Compiling entity BarrelShifter16
+# -- Compiling architecture arch of BarrelShifter16
+# -- Compiling entity BarrelShifter8
+# -- Compiling architecture arch of BarrelShifter8
+# -- Compiling entity DMux2Way
+# -- Compiling architecture arch of DMux2Way
+# -- Compiling entity DMux4Way
+# -- Compiling architecture arch of DMux4Way
+# -- Compiling entity DMux8Way
+# -- Compiling architecture arch of DMux8Way
+# -- Compiling entity DMux8Way16
+# -- Compiling architecture arch of DMux8Way16
+# -- Compiling entity Mux16
+# -- Compiling architecture arch of Mux16
+# -- Compiling entity Mux2Way
+# -- Compiling architecture arch of Mux2Way
+# -- Compiling entity Mux4Way
+# -- Compiling architecture arch of Mux4Way
+# -- Compiling entity Mux4Way16
+# -- Compiling architecture arch of Mux4Way16
+# -- Compiling entity Mux8Way
+# -- Compiling architecture arch of Mux8Way
+# -- Compiling entity Mux8Way16
+# -- Compiling architecture arch of Mux8Way16
+# -- Compiling entity nand_z01
+# -- Compiling architecture rtl of nand_z01
+# -- Compiling entity Nor8Way
+# -- Compiling architecture arch of Nor8Way
+# -- Compiling entity Not16
+# -- Compiling architecture arch of Not16
+# -- Compiling entity Or16
+# -- Compiling architecture arch of Or16
+# -- Compiling entity Or8Way
+# -- Compiling architecture arch of Or8Way
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Compiling entity binarioToBcd
+# -- Compiling architecture behaviour of binarioToBcd
+# -- Compiling entity circuito
+# -- Compiling architecture arch of circuito
+# -- Compiling entity detectorDeMoedas
+# -- Compiling architecture arch of detectorDeMoedas
+# -- Compiling entity impressora
+# -- Compiling architecture arch of impressora
+# -- Compiling entity sevenSeg
+# -- Compiling architecture arch of sevenSeg
+# End time: 21:56:55 on Apr 21,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 21:56:55 on Apr 21,2020
+# vcom -reportprogress 300 -work work ../../C-UnidadeLogicaAritmetica/src/rtl/ALU.vhd ../../C-UnidadeLogicaAritmetica/src/rtl/Add16.vhd ../../C-UnidadeLogicaAritmetica/src/rtl/FullAdder.vhd ../../C-UnidadeLogicaAritmetica/src/rtl/HalfAdder.vhd ../../C-UnidadeLogicaAritmetica/src/rtl/Inc16.vhd ../../C-UnidadeLogicaAritmetica/src/rtl/comparador16.vhd ../../C-UnidadeLogicaAritmetica/src/rtl/inversor16.vhd ../../C-UnidadeLogicaAritmetica/src/rtl/zerador16.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity ALU_a
+# -- Compiling architecture rtl of alu
+# -- Loading entity ALU
+# -- Compiling entity Add16
+# -- Compiling architecture rtl of Add16
+# -- Compiling entity FullAdder
+# -- Compiling architecture rtl of FullAdder
+# -- Compiling entity HalfAdder
+# -- Compiling architecture rtl of HalfAdder
+# -- Compiling entity Inc16
+# -- Compiling architecture rtl of Inc16
+# -- Compiling entity comparador16
+# -- Compiling architecture rtl of comparador16
+# -- Compiling entity inversor16
+# -- Compiling architecture rtl of inversor16
+# -- Compiling entity zerador16
+# -- Compiling architecture rtl of zerador16
+# End time: 21:56:55 on Apr 21,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 21:56:55 on Apr 21,2020
+# vcom -reportprogress 300 -work work ../../D-LogicaSequencial/src/rtl/BinaryDigit.vhd ../../D-LogicaSequencial/src/rtl/FlipFlopD.vhd ../../D-LogicaSequencial/src/rtl/PC.vhd ../../D-LogicaSequencial/src/rtl/Ram4K.vhd ../../D-LogicaSequencial/src/rtl/Ram512.vhd ../../D-LogicaSequencial/src/rtl/Ram64.vhd ../../D-LogicaSequencial/src/rtl/Ram8.vhd ../../D-LogicaSequencial/src/rtl/Register16.vhd ../../D-LogicaSequencial/src/rtl/Register32.vhd ../../D-LogicaSequencial/src/rtl/Register64.vhd ../../D-LogicaSequencial/src/rtl/Register8.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity BinaryDigit
+# -- Compiling architecture arch of BinaryDigit
+# -- Compiling entity FlipFlopD
+# -- Compiling architecture arch of FlipFlopD
+# -- Loading package NUMERIC_STD
+# -- Compiling entity PC
+# -- Compiling architecture arch of PC
+# -- Compiling entity Ram4K
+# -- Compiling architecture arch of Ram4K
+# -- Compiling entity Ram512
+# -- Compiling architecture arch of Ram512
+# -- Compiling entity Ram64
+# -- Compiling architecture arch of Ram64
+# -- Compiling entity Ram8
+# -- Compiling architecture arch of Ram8
+# -- Compiling entity Register16
+# -- Compiling architecture arch of Register16
+# -- Compiling entity Register32
+# -- Compiling architecture arch of Register32
+# -- Compiling entity Register64
+# -- Compiling architecture arch of Register64
+# -- Compiling entity Register8
+# -- Compiling architecture arch of Register8
+# End time: 21:56:55 on Apr 21,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 21:56:55 on Apr 21,2020
+# vcom -reportprogress 300 -work work ../src/rtl/MemoryIO.vho 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity MemoryIO
+# -- Compiling architecture logic of MemoryIO
+# End time: 21:56:55 on Apr 21,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 21:56:55 on Apr 21,2020
+# vcom -reportprogress 300 -work work ../src/rtl/ControlUnit.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity ControlUnit
+# -- Compiling architecture arch of ControlUnit
+# End time: 21:56:55 on Apr 21,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 21:56:55 on Apr 21,2020
+# vcom -reportprogress 300 -work work ../src/rtl/CPU.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity CPU
+# -- Compiling architecture arch of CPU
+# End time: 21:56:55 on Apr 21,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 21:56:55 on Apr 21,2020
+# vcom -reportprogress 300 -work work ../src/rtl/Computador.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity Computador
+# -- Compiling architecture logic of Computador
+# End time: 21:56:55 on Apr 21,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 21:56:55 on Apr 21,2020
+# vcom -reportprogress 300 -work work ../src/rtl/Dispositivos/PLL/PLL_sim/PLL.vho 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity PLL
+# -- Compiling architecture RTL of PLL
+# End time: 21:56:55 on Apr 21,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 21:56:55 on Apr 21,2020
+# vcom -reportprogress 300 -work work ../src/rtl/Dispositivos/RAM/RAM16K.vho ../src/rtl/Dispositivos/RAM/RAM32K.vho 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package altera_mf_components
+# -- Compiling entity RAM16K
+# -- Compiling architecture SYN of ram16k
+# -- Compiling entity ram32k
+# -- Compiling architecture SYN of ram32k
+# End time: 21:56:55 on Apr 21,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 21:56:55 on Apr 21,2020
+# vcom -reportprogress 300 -work work ../src/rtl/Dispositivos/ROM/ROM32K.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package altera_mf_components
+# -- Compiling entity ROM32K
+# -- Compiling architecture SYN of rom32k
+# End time: 21:56:55 on Apr 21,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 21:56:55 on Apr 21,2020
+# vcom -reportprogress 300 -work work ../src/rtl/Dispositivos/Screen/FIFO/FIFO16x4096.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity FIFO16x4096
+# -- Compiling architecture SYN of fifo16x4096
+# End time: 21:56:55 on Apr 21,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 21:56:55 on Apr 21,2020
+# vcom -reportprogress 300 -work work ../src/rtl/Dispositivos/Screen/Screen.vho 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Compiling entity Screen
+# -- Compiling architecture logic of Screen
+# End time: 21:56:55 on Apr 21,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 21:56:55 on Apr 21,2020
+# vcom -reportprogress 300 -work work ../tests/Computador_tb.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity Computador_tb
+# -- Compiling architecture rtl of Computador_tb
+# End time: 21:56:55 on Apr 21,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim work.computador_tb 
+# Start time: 21:56:55 on Apr 21,2020
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.computador_tb(rtl)
+# Loading work.computador(logic)
+# Loading work.pll(rtl)
+# Loading work.cpu(arch)
+# Loading work.controlunit(arch)
+# Loading work.register16(arch)
+# Loading work.register8(arch)
+# Loading work.binarydigit(arch)
+# Loading work.mux2way(arch)
+# Loading work.flipflopd(arch)
+# Loading work.mux16(arch)
+# Loading work.pc(arch)
+# Loading work.alu(rtl)
+# Loading work.zerador16(rtl)
+# Loading work.inversor16(rtl)
+# Loading work.add16(rtl)
+# Loading work.fulladder(rtl)
+# Loading work.and16(arch)
+# Loading work.comparador16(rtl)
+# Loading altera_mf.altera_mf_components
+# Loading work.rom32k(syn)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading altera_mf.altera_common_conversion(body)
+# Loading altera_mf.altera_device_families(body)
+# Loading altera_mf.altsyncram(translated)
+# Loading work.memoryio(logic)
+# Loading work.ram32k(syn)
+# ** Warning: (vsim-8683) Uninitialized out port /computador_tb/c1/MEMORY_MAPED/LCD_CS_N has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized inout port /computador_tb/c1/MEMORY_MAPED/LCD_D(15 downto 0) has no driver.
+# This port will contribute value (UUUUUUUUUUUUUUUU) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /computador_tb/c1/MEMORY_MAPED/LCD_RD_N has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /computador_tb/c1/MEMORY_MAPED/LCD_RESET_N has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /computador_tb/c1/MEMORY_MAPED/LCD_RS has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /computador_tb/c1/MEMORY_MAPED/LCD_WR_N has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /computador_tb/c1/MEMORY_MAPED/LCD_INIT_OK has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /computador_tb/c1/MEMORY_MAPED/LED(9 downto 0) has no driver.
+# This port will contribute value (UUUUUUUUUU) to the signal network.
+# ** Warning: (vsim-3116) Problem reading symbols from linux-gate.so.1 : can not open ELF file.
+# End time: 21:56:56 on Apr 21,2020, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 9
