@@ -143,7 +143,7 @@ muxALU: Mux16 port map(
 );
 
 Cu: ControlUnit port map(
-  instruction => intruction,
+  instruction => instruction,
   zr => c_zr,
   ng => c_ng,
   muxALUI_A => c_muxALUI_A,
@@ -170,5 +170,6 @@ programCounter: PC port map(
 );
 
 outM <= s_ALUout;
-addressM <= s_regAout;
+addressM <= s_regAout(14 downto 0);
+pcout <= s_pcout(14  downto 0);
 end architecture;
