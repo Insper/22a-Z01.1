@@ -57,7 +57,6 @@ end component;
 -- signals
 --------------
 
-=======
 signal clock, increment, reset : std_logic;
 signal entrada, saida  : STD_LOGIC_VECTOR(15 downto 0);
 
