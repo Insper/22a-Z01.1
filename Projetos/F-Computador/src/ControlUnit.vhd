@@ -40,7 +40,7 @@ begin
     ny <= instruction(17) and instruction(9);
     f <= instruction(17) and instruction(8);
     no <= instruction(17) and instruction(7);
-    muxAM <= instruction(17) and instruction(5);
+    muxAM <= instruction(17) and instruction(13);
     loadPC <= ((instruction(17) and (not(instruction(2)) and not(instruction(1)) and instruction(0))) and (not(zr) and not(ng)))
     or ((instruction(17) and (not(instruction(2)) and instruction(1) and not(instruction(0)))) and (zr))
     or ((instruction(17) and (not(instruction(2)) and instruction(1) and instruction(0))) and (not(ng)))
