@@ -21,8 +21,13 @@ entity TopLevel is
 	port(
 		SW      : in  std_logic_vector(9 downto 0);
 		KEY     : in  std_logic_vector(3 downto 0);
-		LEDR    : out std_logic_vector(9 downto 0)
-	);
+		LEDR    : out std_logic_vector(9 downto 0);
+		HEX0     : out std_logic_vector(6 downto 0); -- 7seg0
+      	HEX1     : out std_logic_vector(6 downto 0); -- 7seg0
+      	HEX2     : out std_logic_vector(6 downto 0); -- 7seg0
+		HEX3     : out std_logic_vector(6 downto 0)
+		);
+
 end entity;
 
 ----------------------------
@@ -30,40 +35,66 @@ end entity;
 ----------------------------
 architecture rtl of TopLevel is
 
+component PC is
+    port(
+        clock     : in  STD_LOGIC;
+        increment : in  STD_LOGIC;
+        load      : in  STD_LOGIC;
+        reset     : in  STD_LOGIC;
+        input     : in  STD_LOGIC_VECTOR(15 downto 0);
+        output    : out STD_LOGIC_VECTOR(15 downto 0)
+    );
+end component;
 
-component FlipFlopD is
-	port(
-		clock:  in std_logic;
-		d:      in std_logic;
-		clear:  in std_logic;
-		preset: in std_logic;
-		q:     out std_logic
-	);
+component sevenSeg is
+	port (
+			bcd : in  STD_LOGIC_VECTOR(3 downto 0);
+			leds: out STD_LOGIC_VECTOR(6 downto 0));
+
 end component;
 
 --------------
 -- signals
 --------------
 
-signal clock, clear, set : std_logic;
+signal clock, increment, reset : std_logic;
+signal entrada, saida  : STD_LOGIC_VECTOR(15 downto 0);
 
 ---------------
 -- implementacao
 ---------------
 begin
 
-Clock <= not KEY(0); -- os botoes quando nao apertado vale 1
+clock <= KEY(0); -- os botoes quando nao apertado vale 1
                      -- e apertado 0, essa logica inverte isso
-clear <= not KEY(1);
-set	<= not KEY(2);
 
-u0 : FlipFlopD port map (
-		clock    => Clock,
-		d        => SW(0),
-		clear    => clear,
-		preset   => set,
-		q        => LEDR(0)
-	);		
- 
+entrada <= "0000000000000010";
+
+
+u1: PC port map(
+	clock => clock,
+	increment => SW(2),
+	load => Sw(0),
+	reset => SW(1),
+	input => entrada,
+	output => saida
+	);
+	
+	sai1: sevenSeg port map(
+		bcd => saida(3 downto 0),  
+		leds => HEX0  
+	);
+	sai2: sevenSeg port map(
+		bcd => saida(7 downto 4),  
+		leds => HEX1  
+	);
+	sai3: sevenSeg port map(
+		bcd => saida(11 downto 8),  
+		leds => HEX2  
+	);
+	sai4: sevenSeg port map(
+		bcd => saida(15 downto 12),  
+		leds => HEX3  
+	);
 
 end rtl;

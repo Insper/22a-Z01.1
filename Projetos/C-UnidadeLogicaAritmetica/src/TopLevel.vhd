@@ -19,12 +19,12 @@ use ieee.numeric_std.all;
 entity TopLevel is
 	port(
 		SW      : in  std_logic_vector(9 downto 0);
-		LEDR    : out std_logic_vector(9 downto 0)
+		LEDR    : out std_logic_vector(9 downto 0);
 		HEX0     : out std_logic_vector(6 downto 0); -- 7seg0
     HEX1     : out std_logic_vector(6 downto 0); -- 7seg0
     HEX2     : out std_logic_vector(6 downto 0); -- 7seg0
 		HEX3     : out std_logic_vector(6 downto 0);
-    x,y:   in STD_LOGIC_VECTOR(15 downto 0); -- entradas de dados da ALU
+    x_top,y_top:   in STD_LOGIC_VECTOR(15 downto 0); -- entradas de dados da ALU
     zx:    in STD_LOGIC;                     -- zera a entrada x
     nx:    in STD_LOGIC;                     -- inverte a entrada x
     zy:    in STD_LOGIC;                     -- zera a entrada y
