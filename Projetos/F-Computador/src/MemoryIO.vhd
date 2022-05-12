@@ -131,7 +131,9 @@ BEGIN
         load  => LOAD_LED,
         output => LED16
         );
-
+    LOAD_DISPLAY <= LOAD when ((address >= "100000000000000") and (address<= "101001010111111")) else '0';
+    LOAD_RAM <= LOAD when (address <= "011111111111111") else '0';
+    LOAD_LED <= LOAD when (address = "101001011000000") else '0';
     ----------------------------------------
     -- Controla LOAD do display e da ram e LED ! --
     ----------------------------------------
@@ -154,6 +156,6 @@ BEGIN
     ----------------------------------------
     -- precisar ser: RAM ou SW16
     -- OUTPUT <= ?????? ;
-
+  OUTPUT <= SW16 when address = "101001011000001" else OUTPUT_RAM;
 
 END logic;
