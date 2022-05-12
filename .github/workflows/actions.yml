@@ -52,5 +52,6 @@ jobs:
         python3 Projetos/B-LogicaCombinacional/testeLogicaCombinacional.py
         python3 Projetos/C-UnidadeLogicaAritmetica/testeULA.py
         python3 Projetos/D-LogicaSequencial/testeLogicaSequencial.py
-        
+        python3 Projetos/F-Computador/testeAssemblyMyCPU.py
+        python3 Projetos/F-Computador/testeHW.py
     
