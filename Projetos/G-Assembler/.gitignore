@@ -1,0 +1,15 @@
+target/
+
+######################
+# Eclipse
+######################
+ 
+.project
+.classpath
+.settings/
+.metadata
+*.tmp
+*.bak
+*.swp
+*~.nib
+.loadpath
