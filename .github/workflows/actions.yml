@@ -56,3 +56,4 @@ jobs:
         python3 Projetos/F-Computador/testeHW.py lib.tb_memoryio.all
         python3 Projetos/F-Computador/testeHW.py lib.tb_controlunit.all
         python3 Projetos/F-Computador/testeAssemblyMyCPU.py
+        python3 Projetos/G-Assembler/testeAssembler.py
