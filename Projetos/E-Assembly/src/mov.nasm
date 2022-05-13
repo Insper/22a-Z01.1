@@ -19,26 +19,21 @@
 ; -----------------------
 ; RAM[3] = 1
 ; -----------------------
+leaw $0, %A
+movw (%A), %D
+leaw $3, %A
+movw %D, (%A)
 
+leaw $1, %A
+movw (%A), %D
+leaw $0, %A
+movw %D, (%A)
 
-leaw $0,%A
-movw (%A),%A
-movw %A,%D
-leaw $3,%A    ;armazenando 0 em 3
-movw %D,(%A)
+leaw $3, %A
+movw (%A), %D
+leaw $1, %A
+movw %D, (%A)
 
-leaw $1,%A
-movw (%A),%A
-movw %A,%D
-leaw $0,%A    ;armazenando 1 em 0
-movw %D,(%A)
-
-leaw $3,%A
-movw (%A),%A
-movw %A,%D    ; armazenando 3 em 1
-leaw $1,%A
-movw %D,(%A)
-
-movw $1,%D  ; armazenando 1 em 3
-leaw $3,%A
-movw %D,(%A)
+movw $1, %D
+leaw $3, %A
+movw %D, (%A)

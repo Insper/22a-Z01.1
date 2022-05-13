@@ -11,28 +11,21 @@
 ; 10 % 7 = 3
 ; ------------------------------------------------------------
 
-INICIO: ;guarda R0 em R2
-leaw $0,%A
-movw (%A),%D
-leaw $2,%A
-movw %D,(%A)
+leaw $0, %A
+movw (%A), %D
 
-SUB:
-    leaw $2,%A
-    movw (%A),%D ; guarda R0 em D
-    leaw $1,%A
-
-    subw %D,(%A),%D ;D = R0-R1
-    leaw $END,%A ;se resto for menor que 0 pula para END
-    jl %D
+LOOP:
+    leaw $2, %A
+    movw %D, (%A)
+    leaw $1, %A
+    subw %D, (%A), %D
+    leaw $0, %A
+    movw %D, (%A)
+    leaw $LOOP,%A
+    jge %D
     nop
 
-    leaw $2,%A ; escreve resto em R2 (so vai rodar quando o resto for >= 0)
-    movw %D,(%A)
 
-    leaw $SUB,%A ; pula para SUB
-    jmp 
-    nop
 
-END:
-    nop
+    
+

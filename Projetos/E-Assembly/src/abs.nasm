@@ -5,21 +5,31 @@
 
 ; Copia o valor de RAM[1] para RAM[0] deixando o valor sempre positivo.
 
+ 
+;if (RAM[1]) > 0:
+;   RAM[0] = (RAM[1])
+;else:   
+;    RAM[0] = RAM[1] * -1
 
-leaw $1,%A   ;copia valor de RAM[1] para D
-movw (%A),%D
 
-
-leaw $ABS,%A ; faz o jump se D for >= 0
-jge %D
+leaw $1, %A
+movw (%A), %D
+leaw $ELSE, %A 
+jle %D
 nop
 
-negw %D ;  D = -D (so vai rodar se D < 0)
+leaw $0, %A
+movw %D, (%A)
 
-ABS:
-    leaw $0,%A ;escreve D em RAM[0]
-    movw %D,(%A)
+leaw $END, %A
+jmp
+nop
 
+ELSE:
+leaw $1, %A 
+movw (%A), %D
+negw %D
+leaw $0, %A
+movw %D, (%A)
 
-
-
+END:

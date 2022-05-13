@@ -9,7 +9,10 @@
 
 
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> main
 DIV:
     leaw $0,%A
     movw (%A),%D ; guarda R0 em D

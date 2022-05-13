@@ -96,4 +96,3 @@ DIV: ;divide R2 por R4 e armazena o resultado em R0
 
 END:
     nop
-
