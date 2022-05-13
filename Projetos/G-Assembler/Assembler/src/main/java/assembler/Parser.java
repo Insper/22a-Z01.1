@@ -24,7 +24,7 @@ public class Parser {
     public String currentLine;			    // linha de codigo atual
 
 
-    /** Enumerator para os tipos de comandos do Assembler. */
+    /** Enumerator para os t pos de comandos do Assembler. */
     public enum CommandType {
         A_COMMAND,      // comandos LEA, que armazenam no registrador A
         C_COMMAND,      // comandos de calculos
@@ -89,7 +89,15 @@ public class Parser {
      */
     public CommandType commandType(String command) {
         /* TODO: implementar */
-    	return null;
+        if (command.contains("leaw")){
+            return CommandType.A_COMMAND;
+        }
+        else if (command.contains(":")){
+            return CommandType.L_COMMAND;
+        }
+        else {
+            return CommandType.C_COMMAND;
+        }
     }
 
     /**
