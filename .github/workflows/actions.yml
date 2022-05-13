@@ -49,6 +49,6 @@ jobs:
     - name: teste vhdl
       run: |
         bash updateZ01tools.sh 
-        python3 Projetos/F-Computador/testeHW.py
+        python3 Projetos/G-Assembler/testeAssembler.py
         
   
