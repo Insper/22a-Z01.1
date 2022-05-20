@@ -16,8 +16,44 @@ public class Code {
      * @return Opcode (String de 4 bits) com código em linguagem de máquina para a instrução.
      */
     public static String dest(String[] mnemnonic) {
-        /* TODO: implementar */
-    	return "";
+
+
+        char charAt1='0';
+        char charAt2='0';
+        char charAt3='0';
+        int minIndex = 10;
+        if (mnemnonic[0].equals("leaw") || mnemnonic[0].equals("movw")){
+            minIndex=2;
+        }
+        else if (mnemnonic[0].equals("addw") || mnemnonic[0].equals("subw")
+                || mnemnonic[0].equals("rsubw") || mnemnonic[0].equals("andw")
+                || mnemnonic[0].equals("orw")){
+            minIndex=3;
+        }
+        else if (mnemnonic[0].equals("incw") || mnemnonic[0].equals("decw")
+                || mnemnonic[0].equals("notw") || mnemnonic[0].equals("negw")){
+            minIndex=1;
+        }
+
+
+        for (int i =0;i<mnemnonic.length;i++){
+            if (i>=minIndex){
+                if (mnemnonic[i].equals("(%A)")){
+                    charAt1='1';
+                }
+                else if (mnemnonic[i].equals("%D")){
+                    charAt2='1';
+                }
+                else if (mnemnonic[i].equals("%A")){
+                    charAt3='1';
+                }
+            }
+        }
+
+
+        String output = new StringBuilder().append('0').append(charAt1).append(charAt2).append(charAt3).toString();
+        return output;
+
     }
 
     /**
@@ -27,7 +63,7 @@ public class Code {
      */
     public static String comp(String[] mnemnonic) {
         /* TODO: implementar */
-    	return "";
+        return "";
     }
 
     /**
