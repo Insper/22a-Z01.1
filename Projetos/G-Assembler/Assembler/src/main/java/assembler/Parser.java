@@ -132,7 +132,10 @@ public class Parser {
      */
     public String[] instruction(String command) {
         String[] terms = command.split(" ");
-        String[] mnemonics = terms.remove(0);
+        String[] mnemonics = new String[terms.length - 1];
+        for (int i = 1; i < terms.length; i++) {
+        	mnemonics[i-1] = terms[i];
+        }
     	return mnemonics;
     }
 
