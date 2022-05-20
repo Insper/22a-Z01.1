@@ -15,26 +15,35 @@ entity FlipFlopJK is
 end entity;
 
 architecture arch of FlipFlopJK is
-	signal verificador : std_logic:='0';
+
+signal entrada : STD_LOGIC_VECTOR(1 downto 0);
+signal entradaq : std_logic:='0';
+
 begin
+  
+	entrada<= J & K;
+
 	process (clock) begin
 		if (rising_edge(CLOCK)) then 
+			
+			if entrada="01" then
 
-			if (J='0' and K='0') then
-				verificador<=q;
-			elsif (J='0' and K='1') then
-				verificador<='0';
-			elsif (J='1' and K='0') then
-				verificador<='1';
-			elsif (J='1' and K='1') then
-				verificador<= notq;
+				entradaq<='0';
+
+			elsif entrada="10" then
+
+				entradaq<='1';
+
+			elsif entrada = "11" then
+
+				entradaq<= not entradaq;
 
 			end if;
 		end if;
 
 	end process;
 
-	q<= verificador;
-	notq<= not verificador;
+	q<= entradaq;
+	notq<= not entradaq;
 
 end architecture;
