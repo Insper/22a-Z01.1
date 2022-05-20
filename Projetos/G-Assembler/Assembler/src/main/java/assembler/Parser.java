@@ -88,8 +88,13 @@ public class Parser {
      * @return o tipo da instrução.
      */
     public CommandType commandType(String command) {
-        /* TODO: implementar */
-    	return null;
+        if(command == "leaw"){
+            return CommandType.A_COMMAND;
+        } else if(command.contains(":")){
+            return CommandType.L_COMMAND;
+        } else {
+            return CommandType.C_COMMAND;
+        }
     }
 
     /**
@@ -110,8 +115,10 @@ public class Parser {
      * @return o símbolo da instrução (sem os dois pontos).
      */
     public String label(String command) {
-        /* TODO: implementar */
-    	return null;
+        StringBuffer sb= new StringBuffer(command);
+        int indexLastChar = sb.length()-1;
+        StringBuffer label = sb.deleteCharAt(indexLastChar);
+        return label.toString();
     }
 
     /**
