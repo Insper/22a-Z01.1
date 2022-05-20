@@ -12,3 +12,5 @@ DEV0_CV_Default.cdf
 *.mem
 *.lst
 vunit_out
+Projetos/G-Assembler/Assembler/AssemblerZ01.iml
+Projetos/G-Assembler/Assembler/logJSymbolTable.txt
