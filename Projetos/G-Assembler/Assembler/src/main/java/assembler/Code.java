@@ -37,7 +37,24 @@ public class Code {
      */
     public static String jump(String[] mnemnonic) {
         /* TODO: implementar */
-    	return "";
+        switch (mnemnonic[0]) {
+            case "jg":
+                return "001";
+            case "je":
+                return "010";
+            case "jge":
+                return "011";
+            case "jl":
+                return "100";
+            case "jne":
+                return "101";
+            case "jle":
+                return "110";
+            case "jmp":
+                return "111";
+            default:
+                return "000";
+        }
     }
 
     /**
@@ -47,7 +64,12 @@ public class Code {
      */
     public static String toBinary(String symbol) {
         /* TODO: implementar */
-    	return "";
+        Int num = Interger.parseInt(symbol);
+        Int bin = Integer.toBinaryString(num);
+        while(bin.length() < 16) {
+            bin = "0" + bin;
+        }
+    	return bin;
     }
 
 }
