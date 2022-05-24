@@ -5,6 +5,8 @@
 
 package assembler;
 
+import java.util.ArrayList;
+
 /**
  * Traduz mnemônicos da linguagem assembly para códigos binários da arquitetura Z0.
  */
@@ -16,8 +18,38 @@ public class Code {
      * @return Opcode (String de 4 bits) com código em linguagem de máquina para a instrução.
      */
     public static String dest(String[] mnemnonic) {
-        /* TODO: implementar */
-    	return "";
+        // A   -> 1 -> 0001
+        // D   -> 2 -> 0010
+        // (A) -> 4 -> 0100
+
+        int destination = 0;
+        ArrayList<String> destinationMnemonics = new ArrayList<>();
+
+        String command = mnemnonic[0];
+        if (command.equals("movw") && mnemnonic.length == 4) {
+            // Destino pode ser as duas últimas coisas caso hajam 3 argumentos no movw
+            destinationMnemonics.add(mnemnonic[2]);
+            destinationMnemonics.add(mnemnonic[3]);
+        } else {
+            destinationMnemonics.add(mnemnonic[mnemnonic.length-1]);
+        }
+
+        for (String element : destinationMnemonics) {
+            switch (element) {
+                case "%A":
+                    destination += 1;
+                    break;
+                case "%D":
+                    destination += 2;
+                    break;
+                case "(%A)":
+                    destination += 4;
+                    break;
+            }
+        }
+
+        String bin = Integer.toBinaryString(destination);
+    	return String.format("%4s", bin).replace(' ', '0');
     }
 
     /**
