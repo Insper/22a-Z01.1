@@ -58,8 +58,37 @@ public class Code {
      * @return Opcode (String de 7 bits) com código em linguagem de máquina para a instrução.
      */
     public static String comp(String[] mnemnonic) {
-        /* TODO: implementar */
-    	return "";
+        String command = mnemnonic[0];
+
+        boolean useMemoryA = false;
+        boolean zeroX = false;
+        boolean negateX = false;
+        boolean zeroY = false;
+        boolean negateY = false;
+        boolean f =  false;
+        boolean negateOut = false;
+
+        ArrayList<String> relevantMnemonics = new ArrayList<>();
+
+        /**
+         * O que fazer aqui????
+         */
+
+        // Usar o valor da memória ao invés do registrador caso (%A) esteja presente
+        for (String mne : relevantMnemonics) {
+            if (mne.equals("(%A)")) {
+                useMemoryA = true;
+            }
+        }
+
+    	return "000"
+                + (useMemoryA ? "1" : "0")
+                + (zeroX ? "1" : "0")
+                + (negateX ? "1" : "0")
+                + (zeroY ? "1" : "0")
+                + (negateY ? "1" : "0")
+                +  (f ? "1" : "0")
+                + (negateOut ? "1" : "0");
     }
 
     /**
