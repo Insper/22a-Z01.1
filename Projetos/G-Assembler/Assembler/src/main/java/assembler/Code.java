@@ -46,8 +46,11 @@ public class Code {
      * @return Valor em binário (String de 15 bits) representado com 0s e 1s.
      */
     public static String toBinary(String symbol) {
-        /* TODO: implementar */
-    	return "";
+        // Transformar o número decimal contido na string symbol em binário
+        String bin = Integer.toBinaryString(Integer.parseInt(symbol));
+
+        // Adicionar padding de zeros à esquerda string pois queremos sempre 16 bits
+    	return String.format("%16s", bin).replace(' ', '0');
     }
 
 }
