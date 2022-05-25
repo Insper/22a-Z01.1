@@ -56,6 +56,9 @@ public class Assemble {
             if (parser.commandType(parser.command()) == Parser.CommandType.L_COMMAND) {
                 String label = parser.label(parser.command());
                 /* TODO: implementar */
+                if (table.contains(label) == Boolean.FALSE){
+                    table.addEntry(label,romAddress);
+                }
                 // deve verificar se tal label já existe na tabela,
                 // se não, deve inserir. Caso contrário, ignorar.
             }
@@ -75,11 +78,15 @@ public class Assemble {
                 String symbol = parser.symbol(parser.command());
                 if (Character.isDigit(symbol.charAt(0))){
                     /* TODO: implementar */
+                    if (table.contains(symbol)){
+                        table.addEntry(symbol,ramAddress);
+                    }
                     // deve verificar se tal símbolo já existe na tabela,
                     // se não, deve inserir associando um endereço de
                     // memória RAM a ele.
                 }
             }
+            ramAddress++;
         }
         parser.close();
         return table;
@@ -106,8 +113,15 @@ public class Assemble {
             switch (parser.commandType(parser.command())){
                 /* TODO: implementar */
                 case C_COMMAND:
+                    instruction += "1000";
+                    instruction += Code.comp(parser.instruction(parser.command()));
+                    instruction += Code.dest(parser.instruction(parser.command()));
+                    instruction += Code.jump(parser.instruction(parser.command()));
                 break;
             case A_COMMAND:
+                instruction += "00";
+                instruction += parser.symbol(parser.command());
+
                 break;
             default:
                 continue;
