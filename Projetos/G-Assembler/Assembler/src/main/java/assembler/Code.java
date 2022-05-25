@@ -59,84 +59,109 @@ public class Code {
      */
     public static String comp(String[] mnemnonic) {
         String command = mnemnonic[0];
-        String endereco1 = mnemnonic[1];
-        String endereco2 = mnemnonic[2];
 
-        String binary;
-        if (command == "addw") {
-            if ((endereco2 == "%A") or (endereco1 == "%A")){
+        String binary = "0001100";
+
+        if(command.equals("movw")) {
+
+            if((mnemnonic[1].equals("%A"))) {
+                binary = "0110000";
+            } else if (mnemnonic[1].equals("%D")) {
+                binary = "0001100";
+            } else if (mnemnonic[1].equals("(%A)")) {
+                binary = "1110000";
+            }
+        }
+
+        if (command.equals("addw")) {
+            if ((mnemnonic[1].equals("%A")) && (mnemnonic[2].equals("%D")) ||(mnemnonic[1].equals("%D")) && (mnemnonic[2].equals("%A")) ) {
                 binary = "0000010";
-            } else if ((endereco2 == "(%A)") or (endereco1 == "(%A)")){
+            } else if ((mnemnonic[1].equals("(%A)")) && (mnemnonic[2].equals("%D")) || (mnemnonic[1].equals("%D")) && (mnemnonic[2].equals("(%A)"))) {
                 binary = "1000010";
+            } else if(mnemnonic[1].equals("$1")) {
+                binary = "1110111";
             }
         }
-        if (command == "subw") {
-            if ((endereco2 == "%A") or (endereco1 == "%A")){
-                binary = "0010011";
-            } else if ((endereco2 == "(%A)") or (endereco1 == "(%A)")){
+        if (command.equals("subw")) {
+            if (mnemnonic[1].equals("%D") && mnemnonic[2].equals("(%A)")) {
                 binary = "1010011";
+            } else if (mnemnonic[1].equals("%D") && mnemnonic[2].equals("%A")) {
+                binary = "0010011";
+            } else if (mnemnonic[1].equals("%A") && mnemnonic[2].equals("%D")) {
+                binary = "0000111";
+            } else if (mnemnonic[1].equals("(%A)") && mnemnonic[2].equals("%D")) {
+                binary = "1000111";
+            } else if (mnemnonic[1].equals("%D") && mnemnonic[2].equals("$1")) {
+                binary = "0001110";
+            } else if (mnemnonic[1].equals("%A") && mnemnonic[2].equals("$1")) {
+                binary = "0110010";
+            } else if (mnemnonic[1].equals("(%A)") && mnemnonic[2].equals("$1")) {
+                binary = "1110010";
             }
         }
-        if (command == "rsubw") {
-            if ((endereco2 == "%A") or (endereco1 == "%A")){
+        if (command.equals("rsubw")) {
+            if ((mnemnonic[2].equals("%A")) || (mnemnonic[1].equals("%A"))) {
                 binary = "0000111";
-            } else if ((endereco2 == "(%A)") or (endereco1 == "(%A)")){
+            } else if ((mnemnonic[2].equals("(%A)")) || (mnemnonic[1].equals("(%A)"))) {
                 binary = "1000111";
             }
         }
-        if (command == "incw") {
-            if (endereco1 == "%D"){
+        if (command.equals("incw")) {
+            if (mnemnonic[1].equals("%D")) {
                 binary = "0011111";
-            } else if (endereco1 == "(%A)"){
+            } else if (mnemnonic[1].equals("(%A)")) {
                 binary = "1110111";
-            } else if (endereco1 == "%A"){
+            } else if (mnemnonic[1].equals("%A")) {
                 binary = "0110111";
             }
         }
-        if (command == "decw") {
-            if (endereco1 == "%D"){
+        if (command.equals("decw")) {
+            if (mnemnonic[1].equals("%D")) {
                 binary = "0001110";
-            } else if (endereco1 == "(%A)"){
+            } else if (mnemnonic[1].equals("(%A)")) {
                 binary = "1110010";
-            } else if (endereco1 == "%A"){
+            } else if (mnemnonic[1].equals("%A")) {
                 binary = "0110010";
             }
         }
-        if (command == "notw") {
-            if (endereco1 == "%D"){
+        if (command.equals("notw")) {
+            if (mnemnonic[1].equals("%D")) {
                 binary = "0001101";
-            } else if (endereco1 == "(%A)"){
+            } else if (mnemnonic[1].equals("(%A)")) {
                 binary = "1110001";
-            } else if (endereco1 == "%A"){
+            } else if (mnemnonic[1].equals("%A")) {
                 binary = "0110001";
             }
         }
-        if (command == "negw") {
-            if (endereco1 == "%D"){
+        if (command.equals("negw")) {
+            if (mnemnonic[1].equals("%D")) {
                 binary = "0001111";
-            } else if (endereco1 == "(%A)"){
+            } else if (mnemnonic[1].equals("(%A)")) {
                 binary = "1110011";
-            } else if (endereco1 == "%A"){
+            } else if (mnemnonic[1].equals("%A")) {
                 binary = "0110011";
             }
         }
-        if (command == "andw") {
-            if (endereco1 == "%A"){
+        if (command.equals("andw")) {
+            if ((mnemnonic[1].equals("%A") && mnemnonic[2].equals("%D")) || (mnemnonic[2].equals("%A") && mnemnonic[1].equals("%D"))) {
                 binary = "0000000";
-            } else if (endereco1 == "(%A)"){
+            } else if ((mnemnonic[1].equals("(%A)") && mnemnonic[2].equals("%D")) || (mnemnonic[2].equals("(%A)") && mnemnonic[1].equals("%D"))) {
                 binary = "1000000";
-            } 
+            }
         }
-        if (command == "orw") {
-            if (endereco1 == "%A"){
+        if (command.equals("orw")) {
+            if (mnemnonic[1].equals("%A")) {
                 binary = "0010101";
-            } else if (endereco1 == "(%A)"){
+            } else if (mnemnonic[1].equals("(%A)")) {
                 binary = "1010101";
-            } 
+            } else if (mnemnonic[1].equals("%D")) {
+                binary = "0010101";
+            }
         }
 
-    	return binary
 
+        return "00" + binary;
+    }
     /**
      * Retorna o código binário do mnemônico para realizar uma operação de jump (salto).
      * @param  mnemnonic vetor de mnemônicos "instrução" a ser analisada.
