@@ -59,78 +59,78 @@ public class Code {
      */
     public static String comp(String[] mnemnonic) {
         String command = mnemnonic[0];
-        String somador0 = mnemnonic[1];
-        String somador1 = mnemnonic[2];
+        String endereco1 = mnemnonic[1];
+        String endereco2 = mnemnonic[2];
 
         String binary;
         if (command == "addw") {
-            if ((somador1 == "%A") or (somador0 == "%A")){
+            if ((endereco2 == "%A") or (endereco1 == "%A")){
                 binary = "0000010";
-            } else if ((somador1 == "(%A)") or (somador0 == "(%A)")){
+            } else if ((endereco2 == "(%A)") or (endereco1 == "(%A)")){
                 binary = "1000010";
             }
         }
         if (command == "subw") {
-            if ((somador1 == "%A") or (somador0 == "%A")){
+            if ((endereco2 == "%A") or (endereco1 == "%A")){
                 binary = "0010011";
-            } else if ((somador1 == "(%A)") or (somador0 == "(%A)")){
+            } else if ((endereco2 == "(%A)") or (endereco1 == "(%A)")){
                 binary = "1010011";
             }
         }
         if (command == "rsubw") {
-            if ((somador1 == "%A") or (somador0 == "%A")){
+            if ((endereco2 == "%A") or (endereco1 == "%A")){
                 binary = "0000111";
-            } else if ((somador1 == "(%A)") or (somador0 == "(%A)")){
+            } else if ((endereco2 == "(%A)") or (endereco1 == "(%A)")){
                 binary = "1000111";
             }
         }
         if (command == "incw") {
-            if (somador0 == "%D"){
+            if (endereco1 == "%D"){
                 binary = "0011111";
-            } else if (somador0 == "(%A)"){
+            } else if (endereco1 == "(%A)"){
                 binary = "1110111";
-            } else if (somador0 == "%A"){
+            } else if (endereco1 == "%A"){
                 binary = "0110111";
             }
         }
         if (command == "decw") {
-            if (somador0 == "%D"){
+            if (endereco1 == "%D"){
                 binary = "0001110";
-            } else if (somador0 == "(%A)"){
+            } else if (endereco1 == "(%A)"){
                 binary = "1110010";
-            } else if (somador0 == "%A"){
+            } else if (endereco1 == "%A"){
                 binary = "0110010";
             }
         }
         if (command == "notw") {
-            if (somador0 == "%D"){
+            if (endereco1 == "%D"){
                 binary = "0001101";
-            } else if (somador0 == "(%A)"){
+            } else if (endereco1 == "(%A)"){
                 binary = "1110001";
-            } else if (somador0 == "%A"){
+            } else if (endereco1 == "%A"){
                 binary = "0110001";
             }
         }
         if (command == "negw") {
-            if (somador0 == "%D"){
+            if (endereco1 == "%D"){
                 binary = "0001111";
-            } else if (somador0 == "(%A)"){
+            } else if (endereco1 == "(%A)"){
                 binary = "1110011";
-            } else if (somador0 == "%A"){
+            } else if (endereco1 == "%A"){
                 binary = "0110011";
             }
         }
         if (command == "andw") {
-            if (somador1 == "%A"){
+            if (endereco1 == "%A"){
                 binary = "0000000";
-            } else if (somador1 == "(%A)"){
+            } else if (endereco1 == "(%A)"){
                 binary = "1000000";
             } 
         }
         if (command == "orw") {
-            if (somador1 == "%A"){
+            if (endereco1 == "%A"){
                 binary = "0010101";
-            } else if (somador1 == "(%A)"){
+            } else if (endereco1 == "(%A)"){
                 binary = "1010101";
             } 
         }
