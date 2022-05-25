@@ -17,14 +17,24 @@ public class Code {
      */
     public static String dest(String[] mnemnonic) {
         switch (mnemnonic[0]){
-            case "100":
-            case "2":
-            case "1":
-            case "10":
-            case "1000":
-                return Integer.toBinaryString(Integer.parseInt(mnemnonic[0]));
-            case "0":
-            default: return "0000000000000000";
+
+            case "incw":
+            case "decw":
+                switch (mnemnonic[1]) {
+                    case "%A": return "0001";
+                    case "%D" : return "0010";
+                    case "(%A)" : return "0100";
+                    default: return "0000";
+                }
+            case "movw":
+                switch (mnemnonic[2]) {
+                    case "%A": return "0001";
+                    case "%D" : return "0010";
+                    case "(%A)" : return "0100";
+                    default: return "0000";
+                }
+
+            default: return "0000";
         }
     }
 
@@ -166,8 +176,10 @@ public class Code {
             case "jne" : return "101";
             case "jle" : return "110";
             default : return "000";
+
         }
     }
+
 
     /**
      * Retorna o código binário de um valor decimal armazenado numa String.

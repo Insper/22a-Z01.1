@@ -9,11 +9,11 @@
 
 leaw $0, %A
 movw %A, %D
-movw %D, (%A)
+movw %D, (%A) ; ram[0] = 0
 leaw $5, %A
-movw (%A), %D
-leaw $1, %A
-andw %A, %D, %D
+movw (%A), %D ; D = ram[5]
+leaw $1, %A 
+andw %A, %D, %D; D = ram[5] and 1
 jne %D
 nop
 
