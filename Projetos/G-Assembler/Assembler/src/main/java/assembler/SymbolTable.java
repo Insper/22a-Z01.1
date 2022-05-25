@@ -29,7 +29,6 @@ public class SymbolTable {
      */
     public void addEntry(String symbol, int address) {
         symbolTable.put(symbol, address);
-
     }
 
     /**
@@ -89,6 +88,5 @@ public class SymbolTable {
 
 
     }
-
 
 }
