@@ -144,23 +144,21 @@ public class Parser {
     * Implementação do conceito A e B para verificar se há nop
     * depois de um jump
     * */
-    public int nop(String command) { // leaw $0,%A
+    public String nop(String command) { // leaw $0,%A
         String[] terms = command.split(" ");
-        if (terms[0].equals("jump") || terms[0].equals("je") || terms[0].equals("jne") || terms[0].equals("jg") || terms[0].equals("jge") || terms[0].equals("jl") || terms[0].equals("jle")){
+        if (terms[0].equals("jmp") || terms[0].equals("je") || terms[0].equals("jne") || terms[0].equals("jg") || terms[0].equals("jge") || terms[0].equals("jl") || terms[0].equals("jle")){
             verificaNop = true;
         }
         else if (verificaNop) {
             verificaNop= false;
             if (terms[0].equals("nop")) {
-                System.out.println("Deu Certo");
-                return 1;
+                return "1";
             } else {
-                System.out.println("DEU ERROOOOOOOOO");
-                return 0;
+                return "0";
             }
 
         }
-        return 2;
+        return "2";
     }
 
 
