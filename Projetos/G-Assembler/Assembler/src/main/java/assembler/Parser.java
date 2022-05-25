@@ -103,12 +103,15 @@ public class Parser {
      * @param  command instrução a ser analisada.
      * @return somente o símbolo ou o valor número da instrução.
      */
-    public String symbol(String command) {
-        String[] terms = command.split(" ");
+    public String symbol(String command) { // leaw $0,%A
+
+
+        String command1 = command.replace("$", ""); // = "leaw 0 A
+        String command2 = command1.replaceAll(",", " ");
+        String command3 = command2.replaceAll("%", "");
+        String[] terms = command3.split(" "); // [leaw 0 A]
         String simbolo = terms[1];
-        simbolo = simbolo.replaceAll("$", "");
-        simbolo = simbolo.replaceAll(",", "");
-    	return null;
+    	return simbolo;
     }
 
     /**
@@ -131,12 +134,9 @@ public class Parser {
      * @return um vetor de string contento os tokens da instrução (as partes do comando).
      */
     public String[] instruction(String command) {
+        command = command.replace(","," ");
         String[] terms = command.split(" ");
-        String[] mnemonics = new String[terms.length - 1];
-        for (int i = 1; i < terms.length; i++) {
-        	mnemonics[i-1] = terms[i];
-        }
-    	return mnemonics;
+    	return terms;
     }
 
 
