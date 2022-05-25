@@ -129,7 +129,6 @@ public class Parser {
         return null;
     }
 
-
     /**
      * Retorna o símbolo da instrução passada no argumento.
      * Deve ser chamado somente quando commandType() é L_COMMAND.
