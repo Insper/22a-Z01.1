@@ -14,10 +14,9 @@ import java.io.PrintWriter;
 import org.junit.rules.TestWatcher;
 import org.junit.runner.Description;
 
-import static org.junit.Assert.assertTrue;
-import static org.junit.Assert.assertFalse;
-
 import java.util.Arrays;
+
+import static org.junit.Assert.*;
 
 public class ParserTest {
 
@@ -104,9 +103,9 @@ public class ParserTest {
     	
         try {
 
-            assertTrue("abc:",parser.label("abc:").equals("abc"));
-            assertTrue("TESTE:",parser.label("TESTE:").equals("TESTE"));
-            assertTrue("Z0:",parser.label("Z0:").equals("Z0"));
+            assertTrue("abc", parser.label("abc:").equals("abc"));
+            assertTrue("TESTE", parser.label("TESTE:").equals("TESTE"));
+            assertTrue("Z0", parser.label("Z0:").equals("Z0"));
 	    	
         } catch(Exception e) {
             e.printStackTrace();

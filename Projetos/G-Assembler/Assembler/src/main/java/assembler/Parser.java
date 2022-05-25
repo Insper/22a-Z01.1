@@ -9,6 +9,8 @@ import java.io.BufferedReader;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
+import java.util.Arrays;
+import java.util.List;
 
 /**
  * Encapsula o código de leitura. Carrega as instruções na linguagem assembly,
@@ -88,8 +90,16 @@ public class Parser {
      * @return o tipo da instrução.
      */
     public CommandType commandType(String command) {
-        /* TODO: implementar */
-    	return null;
+        String splitado = command.split(" ")[0];
+        if (command.contains(":")){
+            return CommandType.L_COMMAND;
+        }
+        else if (splitado.equals("leaw")){
+            return CommandType.A_COMMAND;
+        }
+        else{
+            return CommandType.C_COMMAND;
+        }
     }
 
     /**
@@ -100,6 +110,12 @@ public class Parser {
      */
     public String symbol(String command) {
         /* TODO: implementar */
+        String splitado = command.split(",")[0];
+        String splitado2 = splitado.split(" ")[1];
+        String splitfinal = splitado2.replace("$", "");
+        if (commandType(command) == CommandType.A_COMMAND){
+            return splitfinal;
+        }
     	return null;
     }
 
@@ -111,6 +127,11 @@ public class Parser {
      */
     public String label(String command) {
         /* TODO: implementar */
+        String splitado = command.split(":")[0];
+        String splitado2 = splitado.split(" ")[0];
+        if (commandType(command) == CommandType.L_COMMAND){
+            return splitado2;
+        }
     	return null;
     }
 
@@ -122,6 +143,26 @@ public class Parser {
      */
     public String[] instruction(String command) {
         /* TODO: implementar */
+        String replacement = command.replace(" ",",");
+        String[] splitado = replacement.split(",");
+        List<String> lista = Arrays.asList(splitado);
+
+        if (lista.size() == 1){
+            String[] resultado = new String[]{lista.get(0)};
+            return resultado;
+        }
+        else if (lista.size() == 2){
+            String[] resultado = new String[]{lista.get(0), lista.get(1)};
+            return resultado;
+        }
+        else if (lista.size() == 3){
+            String[] resultado = new String[]{lista.get(0), lista.get(1), lista.get(2)};
+            return resultado;
+        }
+        else if (lista.size() == 4){
+            String[] resultado = new String[]{lista.get(0), lista.get(1), lista.get(2), lista.get(3)};
+            return resultado;
+        }
     	return null;
     }
 
