@@ -10,6 +10,7 @@
 package assembler;
 
 import java.io.*;
+import java.util.Arrays;
 
 /**
  * Faz a geração do código gerenciando os demais módulos
@@ -80,8 +81,8 @@ public class Assemble {
                 String symbol = parser.symbol(parser.command());
                 if (Character.isDigit(symbol.charAt(0))){
                     if (!this.table.contains(symbol)) {
-                        ramAddress++;
                         this.table.addEntry(symbol, ramAddress);
+                        ramAddress++;
                     }
                 }
             }
@@ -109,9 +110,28 @@ public class Assemble {
          */
         while (parser.advance()){
             switch (parser.commandType(parser.command())){
-                case C_COMMAND:
-                break;
-            case A_COMMAND:
+                case C_COMMAND: // outros comandos
+                    String[] mnemonics = parser.instruction(parser.currentCommand);
+
+                    instruction = "10"             // 2 bits
+                            + Code.comp(mnemonics) // 9 bits
+                            + Code.dest(mnemonics) // 4 bits
+                            + Code.jump(mnemonics) // 3 bits
+                    ;
+
+                    break;
+            case A_COMMAND: // leaw $X, %A
+                String valor = parser.symbol(parser.currentCommand);
+
+                // Substitui o valor pelo endereço correspondente na tabela caso ele não seja um int
+                // Para os casos de $LABELS ao invés de $1, $2, etc.
+                if (!valor.matches("-?\\d+")) {
+                    valor = this.table.getAddress(valor) + "";
+                }
+
+                String valorBinario = Code.toBinary(valor);
+
+                instruction = "00" + valorBinario;
                 break;
             default:
                 continue;
