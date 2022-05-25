@@ -22,6 +22,7 @@ public class Parser {
     public int lineNumber = 0;		     	// linha atual do arquivo (nao do codigo gerado)
     public String currentCommand = "";      // comando atual
     public String currentLine;			    // linha de codigo atual
+    public boolean verificaNop = false;
 
 
     /** Enumerator para os tipos de comandos do Assembler. */
@@ -137,6 +138,29 @@ public class Parser {
         command = command.replace(","," ");
         String[] terms = command.split(" ");
     	return terms;
+    }
+
+    /**
+    * Implementação do conceito A e B para verificar se há nop
+    * depois de um jump
+    * */
+    public int nop(String command) { // leaw $0,%A
+        String[] terms = command.split(" ");
+        if (terms[0].equals("jump") || terms[0].equals("je") || terms[0].equals("jne") || terms[0].equals("jg") || terms[0].equals("jge") || terms[0].equals("jl") || terms[0].equals("jle")){
+            verificaNop = true;
+        }
+        else if (verificaNop) {
+            verificaNop= false;
+            if (terms[0].equals("nop")) {
+                System.out.println("Deu Certo");
+                return 1;
+            } else {
+                System.out.println("DEU ERROOOOOOOOO");
+                return 0;
+            }
+
+        }
+        return 2;
     }
 
 
