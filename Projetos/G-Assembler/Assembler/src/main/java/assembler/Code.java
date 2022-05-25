@@ -62,8 +62,172 @@ public class Code {
      * @return Opcode (String de 7 bits) com código em linguagem de máquina para a instrução.
      */
     public static String comp(String[] mnemnonic) {
-        /* TODO: implementar */
-        return "";
+        String output="";
+        if (mnemnonic[0].equals("movw")){
+                if ((mnemnonic[1]).equals("%D")){
+                        output="000001100";
+                    }
+                else if ((mnemnonic[1]).equals("(%A)")){
+                        output="001110000";
+                    }
+                else if (((mnemnonic[1]).equals("%A"))){
+                        output = "000110000";
+                    }
+                }
+            else if (mnemnonic[0].equals("addw")){
+                if (
+                        ((mnemnonic[1]).equals("%D") && mnemnonic[2].equals("%A")
+                        ||
+                        ((mnemnonic[2]).equals("%D") && mnemnonic[1].equals("%A"))
+                        )){
+                    output="000000010";
+                }
+                else if (
+                        ((mnemnonic[1]).equals("%D") && mnemnonic[2].equals("(%A)")
+                                ||
+                                ((mnemnonic[2]).equals("%D") && mnemnonic[1].equals("(%A)"))
+                        )){
+                    output="001000010";
+                }
+                else if (
+                        ((mnemnonic[1]).equals("$1") && mnemnonic[2].equals("%D")
+                                ||
+                                ((mnemnonic[2]).equals("$1") && mnemnonic[1].equals("%D"))
+                        )){
+                    output="000011111";
+                }
+                else if (
+                        ((mnemnonic[1]).equals("$1") && mnemnonic[2].equals("(%A)")
+                                ||
+                                ((mnemnonic[2]).equals("$1") && mnemnonic[1].equals("(%A)"))
+                        )){
+                    output="001110111";
+                }
+            }
+            else if (mnemnonic[0].equals("incw")){
+                if(mnemnonic[1].equals("%D")){
+                    output="000011111";
+                }
+                else if(mnemnonic[1].equals("%A")){
+                    output="000110111";
+                  }
+                else if(mnemnonic[1].equals("(%A)")){
+                    output="001110111";
+                }
+        }
+            else if (mnemnonic[0].equals("decw")){
+                if (mnemnonic[1].equals("%D")){
+                    output="000001110";
+                }
+                else if (mnemnonic[1].equals("%A")){
+                    output="000110010";
+                }
+                else if (mnemnonic[1].equals("(%A)")){
+                    output="001110010";
+                }
+        }
+        else if (mnemnonic[0].equals("subw")){
+            if (((mnemnonic[1]).equals("%D") && mnemnonic[2].equals("%A"))){
+                output="000010011";
+            }
+            else if (((mnemnonic[1]).equals("%A") && mnemnonic[2].equals("%D"))){
+                output="000000111";
+            }
+            else if (((mnemnonic[1]).equals("%A") && mnemnonic[2].equals("$1"))){
+                output="000110010";
+            }
+            else if (((mnemnonic[1]).equals("(%A)") && mnemnonic[2].equals("$1"))){
+                output="001110010";
+            }
+            else if (((mnemnonic[1]).equals("%D") && mnemnonic[2].equals("(%A)"))){
+                output="001010011";
+            }
+            else if (((mnemnonic[1]).equals("(%A)") && mnemnonic[2].equals("%D"))){
+                output="01000111";
+            }
+        }
+        else if (mnemnonic[0].equals("rsubw")){
+            if (((mnemnonic[2]).equals("%D") && mnemnonic[1].equals("%A"))){
+                output="000010011";
+            }
+            else if (((mnemnonic[2]).equals("%A") && mnemnonic[1].equals("%D"))){
+                output="000000111";
+            }
+            else if (((mnemnonic[2]).equals("$A") && mnemnonic[1].equals("$1"))){
+                output="000110010";
+            }
+            else if (((mnemnonic[2]).equals("%D") && mnemnonic[1].equals("(%A)"))){
+                output="001000111";
+            }
+            else if (((mnemnonic[2]).equals("(%A)") && mnemnonic[1].equals("%D"))){
+                output="001000111";
+            }
+        }
+        else if (mnemnonic[0].equals("andw")){
+            if (
+                    ((mnemnonic[1]).equals("%D") && mnemnonic[2].equals("%A")
+                            ||
+                            ((mnemnonic[2]).equals("%D") && mnemnonic[1].equals("%A"))
+                    )){
+                output="000000000";
+            }
+            else if (
+                    ((mnemnonic[1]).equals("%D") && mnemnonic[2].equals("(%A)")
+                            ||
+                            ((mnemnonic[2]).equals("%D") && mnemnonic[1].equals("(%A)"))
+                    )){
+                output="001000000";
+            }
+        }
+        else if (mnemnonic[0].equals("orw")){
+            if (
+                    ((mnemnonic[1]).equals("%D") && mnemnonic[2].equals("%A")
+                            ||
+                            ((mnemnonic[2]).equals("%D") && mnemnonic[1].equals("%A"))
+                    )){
+                output="000010101";
+            }
+            else if (
+                    ((mnemnonic[1]).equals("%D") && mnemnonic[2].equals("(%A)")
+                            ||
+                            ((mnemnonic[2]).equals("%D") && mnemnonic[1].equals("(%A)"))
+                    )){
+                output="001010101";
+            }
+        }
+        else if (mnemnonic[0].equals("notw")){
+            if (mnemnonic[1].equals("%D")){
+                output="000001101";
+            }
+            else if (mnemnonic[1].equals("%A")){
+                output="000110001";
+            }
+            else if (mnemnonic[1].equals("(%A)")){
+                output="001110001";
+            }
+        }
+        else if (mnemnonic[0].equals("negw")){
+            if (mnemnonic[1].equals("%D")){
+                output="000001111";
+            }
+            else if (mnemnonic[1].equals("%A")){
+                output="000110011";
+            }
+            else if (mnemnonic[1].equals("(%A)")){
+                output="001110011";
+            }
+        }
+        else if (mnemnonic[0].equals("jmp") || mnemnonic[0].equals("je") || mnemnonic[0].equals("jne")
+                ||
+                mnemnonic[0].equals("jl") || mnemnonic[0].equals("jle") || mnemnonic[0].equals("jg")
+                ||
+                mnemnonic[0].equals("jge"))   {
+            output="000001100";
+        }
+
+
+
+        return output;
     }
 
     /**
