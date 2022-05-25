@@ -137,6 +137,10 @@ public class Parser {
      */
     public String label(String command) {
         /* TODO: implementar */
+        if (commandType(command) == CommandType.L_COMMAND) {
+            String resposta = command.replace(":", "");
+            return resposta;
+        }
         return null;
     }
 
@@ -148,7 +152,9 @@ public class Parser {
      */
     public String[] instruction(String command) {
         /* TODO: implementar */
-    	return null;
+        String[] lista;
+        lista = command.split("[\\s,]+");
+    	return lista;
     }
 
 
