@@ -59,37 +59,19 @@ public class Code {
      */
     public static String comp(String[] mnemnonic) {
         String command = mnemnonic[0];
+        String somador0 = mnemnonic[1];
+        String somador1 = mnemnonic[2];
 
-        boolean useMemoryA = false;
-        boolean zeroX = false;
-        boolean negateX = false;
-        boolean zeroY = false;
-        boolean negateY = false;
-        boolean f =  false;
-        boolean negateOut = false;
-
-        ArrayList<String> relevantMnemonics = new ArrayList<>();
-
-        /**
-         * O que fazer aqui????
-         */
-
-        // Usar o valor da memória ao invés do registrador caso (%A) esteja presente
-        for (String mne : relevantMnemonics) {
-            if (mne.equals("(%A)")) {
-                useMemoryA = true;
+        String binary;
+        if (command == "addw") {
+            if ((somador1 == "%A") or (somador0 == "%A")){
+                binary = "0000010";
+            } else if ((somador1 == "(%A)") or (somador0 == "(%A)")){
+                binary = "1000010";
             }
         }
 
-    	return "000"
-                + (useMemoryA ? "1" : "0")
-                + (zeroX ? "1" : "0")
-                + (negateX ? "1" : "0")
-                + (zeroY ? "1" : "0")
-                + (negateY ? "1" : "0")
-                +  (f ? "1" : "0")
-                + (negateOut ? "1" : "0");
-    }
+    	return binary
 
     /**
      * Retorna o código binário do mnemônico para realizar uma operação de jump (salto).
