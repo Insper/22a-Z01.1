@@ -16,26 +16,53 @@ public class Code {
      * @return Opcode (String de 4 bits) com código em linguagem de máquina para a instrução.
      */
     public static String dest(String[] mnemnonic) {
-        switch (mnemnonic[0]){
-
-            case "incw":
-            case "decw":
-                switch (mnemnonic[1]) {
-                    case "%A": return "0001";
-                    case "%D" : return "0010";
-                    case "(%A)" : return "0100";
-                    default: return "0000";
-                }
-            case "movw":
-                switch (mnemnonic[2]) {
-                    case "%A": return "0001";
-                    case "%D" : return "0010";
-                    case "(%A)" : return "0100";
-                    default: return "0000";
-                }
-
-            default: return "0000";
+        String destino = "0";
+        if(mnemnonic.length>4){
+            return "0111";
+        }else if(mnemnonic.length>3){
+            if(mnemnonic[3]=="(%A)"||mnemnonic[4]=="(%A)" ){
+                destino += "1";
+            }else{
+                destino += "0";
+            }
+            if (mnemnonic[3]=="%D"||mnemnonic[4]=="%D"){
+                destino += "1";
+            }else{
+                destino += "0";
+            }
+            if(mnemnonic[3]=="%A"||mnemnonic[4]=="%A"){
+                destino += "1";
+            }else{
+                destino += "0";
+            }
+            return destino;
+        }else if(mnemnonic.length>2){
+            if(mnemnonic[2]=="(%A)"||mnemnonic[3]=="(%A)" ){
+                destino += "1";
+            }else{
+                destino += "0";
+            }
+            if (mnemnonic[2]=="%D"||mnemnonic[3]=="%D"){
+                destino += "1";
+            }else{
+                destino += "0";
+            }
+            if(mnemnonic[2]=="%A"||mnemnonic[3]=="%A"){
+                destino += "1";
+            }else{
+                destino += "0";
+            }
+            return destino;
+        }else if(mnemnonic.length>1){
+            switch (mnemnonic[1]){
+                case "%A" : return "0001";
+                case "%D" : return "0010";
+                case "(%A)" : return "0100";
+            }
+        }else{
+            return "0000";
         }
+        return "";
     }
 
     /**
