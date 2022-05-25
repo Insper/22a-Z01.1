@@ -89,7 +89,25 @@ public class Parser {
      */
     public CommandType commandType(String command) {
         /* TODO: implementar */
-    	return null;
+        String[] comando;
+        comando = command.split(" ");
+        if (comando[0].equals("leaw")) {
+            return CommandType.A_COMMAND;
+        }
+        else if (comando[0].equals("movw") || comando[0].equals("addw") ||
+                comando[0].equals("andw") || comando[0].equals("orw") ||
+                comando[0].equals("subw") || comando[0].equals("rsubw") ||
+                comando[0].equals("negw") || comando[0].equals("notw") ||
+                comando[0].equals("incw") || comando[0].equals("decw") ||
+                comando[0].equals("jmp") || comando[0].equals("je")||
+                comando[0].equals("jne") || comando[0].equals("jg") ||
+                comando[0].equals("jge") || comando[0].equals("jl") ||
+                comando[0].equals("jle") || comando[0].equals("nop")) {
+            return  CommandType.C_COMMAND;
+        }
+        else {
+            return CommandType.L_COMMAND;
+        }
     }
 
     /**
@@ -100,8 +118,17 @@ public class Parser {
      */
     public String symbol(String command) {
         /* TODO: implementar */
-    	return null;
+        if (commandType(command) == CommandType.A_COMMAND) {
+            String[] comando;
+            String[] simbolo;
+            comando = command.split(" ");
+            simbolo = comando[1].split(",");
+            String retorno = simbolo[0].replace("$", "");
+            return retorno;
+        }
+        return null;
     }
+
 
     /**
      * Retorna o símbolo da instrução passada no argumento.
@@ -111,7 +138,7 @@ public class Parser {
      */
     public String label(String command) {
         /* TODO: implementar */
-    	return null;
+        return null;
     }
 
     /**
