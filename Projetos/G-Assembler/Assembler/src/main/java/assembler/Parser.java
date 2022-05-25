@@ -163,7 +163,6 @@ public class Parser {
         for (char i : command.toCharArray()) {
             if (i == ',' || i == ' '){
                 lista.add(palavra);
-                System.out.println(palavra);
                 palavra = "";
             }
             else{
