@@ -38,7 +38,6 @@ public class SymbolTable {
      */
     public Boolean contains(String symbol) {
         return symbolTable.containsKey(symbol);
-
     }
 
     /**
@@ -88,5 +87,4 @@ public class SymbolTable {
 
 
     }
-
 }

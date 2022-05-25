@@ -48,6 +48,7 @@ public class Code {
      * @return Opcode (String de 7 bits) com código em linguagem de máquina para a instrução.
      */
     public static String comp(String[] mnemnonic) {
+
         String output = "00";
         String r0 = "";
         boolean flag = false;
@@ -288,6 +289,7 @@ public class Code {
      * @return Opcode (String de 3 bits) com código em linguagem de máquina para a instrução.
      */
     public static String jump(String[] mnemnonic) {
+
         switch (mnemnonic[0]){
             case "jg" : return "001";
 
@@ -313,6 +315,7 @@ public class Code {
      * @return Valor em binário (String de 15 bits) representado com 0s e 1s.
      */
     public static String toBinary(String symbol) {
+
         int number = Integer.parseInt(symbol);
         String output = Integer.toBinaryString(number);
         while(output.length() < 16) {
