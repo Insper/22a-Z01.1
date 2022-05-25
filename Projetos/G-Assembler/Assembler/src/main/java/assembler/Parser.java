@@ -88,8 +88,13 @@ public class Parser {
      * @return o tipo da instrução.
      */
     public CommandType commandType(String command) {
-        /* TODO: implementar */
-    	return null;
+        String[] terms = command.split(" ");
+        if (terms[0].equals("leaw"))
+            return CommandType.A_COMMAND;
+        else if (terms[0].endsWith(":"))
+            return CommandType.L_COMMAND;
+        else
+            return CommandType.C_COMMAND;
     }
 
     /**
@@ -98,9 +103,15 @@ public class Parser {
      * @param  command instrução a ser analisada.
      * @return somente o símbolo ou o valor número da instrução.
      */
-    public String symbol(String command) {
-        /* TODO: implementar */
-    	return null;
+    public String symbol(String command) { // leaw $0,%A
+
+
+        String command1 = command.replace("$", ""); // = "leaw 0 A
+        String command2 = command1.replaceAll(",", " ");
+        String command3 = command2.replaceAll("%", "");
+        String[] terms = command3.split(" "); // [leaw 0 A]
+        String simbolo = terms[1];
+    	return simbolo;
     }
 
     /**
@@ -110,8 +121,10 @@ public class Parser {
      * @return o símbolo da instrução (sem os dois pontos).
      */
     public String label(String command) {
-        /* TODO: implementar */
-    	return null;
+        String[] terms = command.split(" ");
+        String rotulo = terms[0];
+        rotulo = rotulo.replaceAll(":", "");
+    	return rotulo;
     }
 
     /**
@@ -121,8 +134,9 @@ public class Parser {
      * @return um vetor de string contento os tokens da instrução (as partes do comando).
      */
     public String[] instruction(String command) {
-        /* TODO: implementar */
-    	return null;
+        command = command.replace(","," ");
+        String[] terms = command.split(" ");
+    	return terms;
     }
 
 
