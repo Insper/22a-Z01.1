@@ -7,12 +7,17 @@
 ; Só funciona com números positivos
 ;adaptando codigo do mult
 
-INICIO: ; salvar R1 na RAM[0]
+INICIO: ; salvar 12 na RAM[0]
     leaw $1,%A
     movw (%A),%D
     leaw $0,%A
     movw %D,(%A)
     
+    leaw $1,%A
+    movw %A,%D
+    leaw $11,%A;salvar 1 na RAM(11)
+    movw %D,(%A)
+
 
 MULT:
 
