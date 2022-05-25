@@ -88,8 +88,16 @@ public class Parser {
      * @return o tipo da instrução.
      */
     public CommandType commandType(String command) {
-        /* TODO: implementar */
-    	return null;
+        String splitado = command.split(" ")[0];
+        if (command.contains(":")){
+            return CommandType.L_COMMAND;
+        }
+        else if (splitado.equals("leaw")){
+            return CommandType.A_COMMAND;
+        }
+        else{
+            return CommandType.C_COMMAND;
+        }
     }
 
     /**
@@ -100,6 +108,12 @@ public class Parser {
      */
     public String symbol(String command) {
         /* TODO: implementar */
+        String splitado = command.split(",")[0];
+        String splitado2 = splitado.split(" ")[1];
+        String splitfinal = splitado2.replace("$", "");
+        if (commandType(command) == CommandType.A_COMMAND){
+            return splitfinal;
+        }
     	return null;
     }
 
@@ -111,6 +125,12 @@ public class Parser {
      */
     public String label(String command) {
         /* TODO: implementar */
+        String splitado = command.split(":")[0];
+        String splitado2 = splitado.split(" ")[0];
+        System.out.println(splitado2);
+        if (commandType(command) == CommandType.L_COMMAND){
+            return splitado2;
+        }
     	return null;
     }
 
