@@ -58,8 +58,13 @@ public class Assemble {
                 if (!this.table.contains(label)) {
                     this.table.addEntry(label, romAddress);
                 }
+            } else {
+                /**
+                 * Adicionamos ao contador do endereço apenas em comandos de outros tipos,
+                 * pois uma label não é uma realmente uma instrução e não deve contar como uma.
+                 */
+                romAddress++;
             }
-            romAddress++;
         }
         parser.close();
 
