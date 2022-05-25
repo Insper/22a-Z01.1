@@ -70,6 +70,70 @@ public class Code {
                 binary = "1000010";
             }
         }
+        if (command == "subw") {
+            if ((somador1 == "%A") or (somador0 == "%A")){
+                binary = "0010011";
+            } else if ((somador1 == "(%A)") or (somador0 == "(%A)")){
+                binary = "1010011";
+            }
+        }
+        if (command == "rsubw") {
+            if ((somador1 == "%A") or (somador0 == "%A")){
+                binary = "0000111";
+            } else if ((somador1 == "(%A)") or (somador0 == "(%A)")){
+                binary = "1000111";
+            }
+        }
+        if (command == "incw") {
+            if (somador0 == "%D"){
+                binary = "0011111";
+            } else if (somador0 == "(%A)"){
+                binary = "1110111";
+            } else if (somador0 == "%A"){
+                binary = "0110111";
+            }
+        }
+        if (command == "decw") {
+            if (somador0 == "%D"){
+                binary = "0001110";
+            } else if (somador0 == "(%A)"){
+                binary = "1110010";
+            } else if (somador0 == "%A"){
+                binary = "0110010";
+            }
+        }
+        if (command == "notw") {
+            if (somador0 == "%D"){
+                binary = "0001101";
+            } else if (somador0 == "(%A)"){
+                binary = "1110001";
+            } else if (somador0 == "%A"){
+                binary = "0110001";
+            }
+        }
+        if (command == "negw") {
+            if (somador0 == "%D"){
+                binary = "0001111";
+            } else if (somador0 == "(%A)"){
+                binary = "1110011";
+            } else if (somador0 == "%A"){
+                binary = "0110011";
+            }
+        }
+        if (command == "andw") {
+            if (somador1 == "%A"){
+                binary = "0000000";
+            } else if (somador1 == "(%A)"){
+                binary = "1000000";
+            } 
+        }
+        if (command == "orw") {
+            if (somador1 == "%A"){
+                binary = "0010101";
+            } else if (somador1 == "(%A)"){
+                binary = "1010101";
+            } 
+        }
 
     	return binary
 
