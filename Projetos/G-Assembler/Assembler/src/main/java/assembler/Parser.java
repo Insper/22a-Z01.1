@@ -9,6 +9,8 @@ import java.io.BufferedReader;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * Encapsula o código de leitura. Carrega as instruções na linguagem assembly,
@@ -107,8 +109,26 @@ public class Parser {
      * @return somente o símbolo ou o valor número da instrução.
      */
     public String symbol(String command) {
-        /* TODO: implementar */
-    	return null;
+        String value = "";
+        boolean isValue = false;
+        boolean dolar = true;
+        for (char i: command.toCharArray()){
+            if (i == '$'){
+                isValue = true;
+            }
+            if (i == ','){
+                isValue = false;
+            }
+            if (isValue == true){
+                if (dolar == false){
+                    value = value + i;
+                }
+                else{
+                    dolar = false;
+                }
+            }
+        }
+        return value;
     }
 
     /**
@@ -118,8 +138,17 @@ public class Parser {
      * @return o símbolo da instrução (sem os dois pontos).
      */
     public String label(String command) {
-        /* TODO: implementar */
-    	return null;
+        String value = new String();
+        boolean isValue = true;
+        for (char i : command.toCharArray()) {
+            if (i == ':') {
+                isValue = false;
+            }
+            if (isValue == true) {
+                value = value + i;
+            }
+        }
+        return value;
     }
 
     /**
@@ -129,8 +158,21 @@ public class Parser {
      * @return um vetor de string contento os tokens da instrução (as partes do comando).
      */
     public String[] instruction(String command) {
-        /* TODO: implementar */
-    	return null;
+        String palavra = new String("");
+        List<String> lista = new ArrayList<String>();
+        for (char i : command.toCharArray()) {
+            if (i == ',' || i == ' '){
+                lista.add(palavra);
+                palavra = "";
+            }
+            else{
+                palavra = palavra + i;
+            }
+        }
+        lista.add(palavra);
+        String[] instrucao = new String[lista.size()];
+        lista.toArray(instrucao);
+        return instrucao;
     }
 
 
