@@ -58,8 +58,15 @@ public class Assemble {
                 /* TODO: implementar */
                 // deve verificar se tal label já existe na tabela,
                 // se não, deve inserir. Caso contrário, ignorar.
+                if(!table.contains(label)){
+                    table.addEntry(label,romAddress);
+                }
             }
-            romAddress++;
+            else{
+                romAddress++;
+
+            }
+            
         }
         parser.close();
 
@@ -78,8 +85,13 @@ public class Assemble {
                     // deve verificar se tal símbolo já existe na tabela,
                     // se não, deve inserir associando um endereço de
                     // memória RAM a ele.
+                    if(!table.contains(symbol)){
+                        table.addEntry(symbol,ramAddress);
+                    }
                 }
+                ramAddress++;
             }
+            
         }
         parser.close();
         return table;
