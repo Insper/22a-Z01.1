@@ -104,10 +104,14 @@ public class Parser {
      * @return somente o símbolo ou o valor número da instrução.
      */
     public String symbol(String command) {
-        String comando = command.replace(","," ").replace("$","");
-        comando = comando.trim().replaceAll(" +", " ");
-        comando =comando.split(" ")[1];
-        return  comando;
+        CommandType c = commandType(command);
+        if(c == CommandType.A_COMMAND) {
+            String comando = command.replace(",", " ");
+            comando = comando.replace("$", "");
+            comando = comando.split(" ")[1];
+            return comando;
+        }
+        return null;
     }
 
     /**
@@ -117,9 +121,14 @@ public class Parser {
      * @return o símbolo da instrução (sem os dois pontos).
      */
     public String label(String command) {
-        String comando = command.trim().replace(":"," ");
-        comando = comando.split(" ")[0];
-        return comando;
+        CommandType c = commandType(command);
+        if(c == CommandType.L_COMMAND) {
+            String comando = command.trim();
+            comando = comando.replace(":", " ");
+            comando = comando.split(" ")[0];
+            return comando;
+        }
+        return null;
     }
 
     /**
@@ -129,11 +138,8 @@ public class Parser {
      * @return um vetor de string contento os tokens da instrução (as partes do comando).
      */
     public String[] instruction(String command) {
-        String comando = command.replace(","," ");
-        comando = comando.trim().replaceAll(" +", " ");
+        String comando = command.replace(",", " ");
         String[] instruction = comando.split(" ");
         return instruction;
     }
-
-
 }
