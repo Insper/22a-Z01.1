@@ -164,6 +164,7 @@ public class Parser {
         else if (verificaNop) {
             verificaNop = false;
             if (!primeiroTermo.equals("nop")) {
+                /** conceito B seria um throw new Exception("NOP não implementado"); nessa linha */
                 implementaNop = true;
             }
         }
