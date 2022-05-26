@@ -75,6 +75,12 @@ public class Code {
                 calc = "110000";
             } else if (origin.equals("%D")){
                 calc = "001100";
+            } else if (origin.equals("$-1")){
+                calc = "111010";
+            } else if (origin.equals("$0")){
+                calc = "101010";
+            } else if (origin.equals("$1")){
+                calc = "111111";
             }
         } else if (op.equals("addw")){
             String a = mnemnonic[1];
