@@ -25,6 +25,17 @@ public class AssembleTest {
         }
     }
 
+    @Test(expected = Error.class)
+    public void findMissingNops_shouldThrow() throws IOException {
+        Assemble nopsAssembler = new Assemble("src/test/resources/missingNops.nasm", "src/test/resources/missingNops.hack", false);
+        nopsAssembler.findMissingNops();
+    }
+
+    @Test
+    public void findMissingNops_dontThrow() throws IOException {
+        assembler.findMissingNops();
+    }
+
     @Test
     public void fillSymbolTable() throws IOException {
         // Cria tabela de símbolos
