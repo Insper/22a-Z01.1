@@ -77,7 +77,7 @@ class AssemblerZ01 {
                                                 verbose);
 
             // Encontra nops faltantes
-            assembler.findMissingNops();
+             assembler.findMissingNops();
 
             // Cria tabela de símbolos
             assembler.fillSymbolTable();

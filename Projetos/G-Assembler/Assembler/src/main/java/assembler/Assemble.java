@@ -98,11 +98,11 @@ public class Assemble {
         // para cada nova variável deve ser alocado um endereço,
         // começando no RAM[15] e seguindo em diante.
         parser = new Parser(inputFile);
-        int ramAddress = 15;
+        int ramAddress = 16;
         while (parser.advance()){
             if (parser.commandType(parser.command()) == Parser.CommandType.A_COMMAND) {
                 String symbol = parser.symbol(parser.command());
-                if (Character.isDigit(symbol.charAt(0))){
+                if (!Character.isDigit(symbol.charAt(0))){
                     if (!this.table.contains(symbol)) {
                         this.table.addEntry(symbol, ramAddress);
                         ramAddress++;
@@ -132,9 +132,10 @@ public class Assemble {
          * seguindo o instruction set
          */
         while (parser.advance()){
+
             switch (parser.commandType(parser.command())){
                 case C_COMMAND: // outros comandos
-                    String[] mnemonics = parser.instruction(parser.currentCommand);
+                    String[] mnemonics = parser.instruction(parser.command());
 
                     instruction = "10"             // 2 bits
                             + Code.comp(mnemonics) // 9 bits
@@ -144,7 +145,7 @@ public class Assemble {
 
                     break;
             case A_COMMAND: // leaw $X, %A
-                String valor = parser.symbol(parser.currentCommand);
+                String valor = parser.symbol(parser.command());
 
                 // Substitui o valor pelo endereço correspondente na tabela caso ele não seja um int
                 // Para os casos de $LABELS ao invés de $1, $2, etc.

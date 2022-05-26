@@ -58,109 +58,98 @@ public class Code {
      * @return Opcode (String de 7 bits) com código em linguagem de máquina para a instrução.
      */
     public static String comp(String[] mnemnonic) {
-        String command = mnemnonic[0];
-
-        String binary = "0001100";
-
-        if(command.equals("movw")) {
-
-            if((mnemnonic[1].equals("%A"))) {
-                binary = "0110000";
-            } else if (mnemnonic[1].equals("%D")) {
-                binary = "0001100";
-            } else if (mnemnonic[1].equals("(%A)")) {
-                binary = "1110000";
-            }
+        switch (mnemnonic[0]) {
+            case "movw":
+                switch (mnemnonic[1]) {
+                    case "%A":
+                        return "000110000";
+                    case "%D":
+                        return "000001100";
+                    case "(%A)":
+                        return "001110000";
+                    case "$1":
+                        return "000111111";
+                    case "$0":
+                        return "000101010";
+                }
+            case "notw":
+                switch (mnemnonic[1]) {
+                    case "%D":
+                        return "000001101";
+                    case "%A":
+                        return "000110001";
+                    case "(%A)":
+                        return "001110001";
+                }
+            case "negw":
+                switch (mnemnonic[1]) {
+                    case "%D":
+                        return "000001111";
+                    case "%A":
+                        return "000110011";
+                    case "(%A)":
+                        return "001110011";
+                }
+            case "incw":
+                switch (mnemnonic[1]) {
+                    case "%A":
+                        return "000110111";
+                    case "%D":
+                        return "000011111";
+                    case "(%A)":
+                        return "001110111";
+                }
+            case "andw":
+                switch (mnemnonic[1]) {
+                    case "(%A)":
+                        return "001000000";
+                    case "%D":
+                        return "000000000";
+                    case "%A":
+                        return "000000000";
+                }
+            case "addw":
+                switch (mnemnonic[1]) {
+                    case "%A":
+                        return "000000010";
+                    case "(%A)":
+                        return "001000010";
+                    case "%D":
+                        return "000000010";
+                    case "$1":
+                        return "001110111";
+                }
+            case "decw":
+                switch (mnemnonic[1]) {
+                    case "%D":
+                        return "000001110";
+                    case "%A":
+                        return "000110010";
+                    case "(%A)":
+                        return "001110010";
+                }
+            case "orw":
+                switch (mnemnonic[1]) {
+                    case "%D":
+                    case "%A":
+                        return "000010101";
+                    case "(%A)":
+                        return "001010101";
+                }
+            case "subw":
+                switch (mnemnonic[1]) {
+                    case "%D":
+                        return "001010011";
+                    case "(%A)":
+                        return "001110010";
+                }
+            case "rsubw":
+                if ("%D".equals(mnemnonic[1])) {
+                    return "001000111";
+                }
+            default:
+                return "000001100";
         }
-
-        if (command.equals("addw")) {
-            if ((mnemnonic[1].equals("%A")) && (mnemnonic[2].equals("%D")) ||(mnemnonic[1].equals("%D")) && (mnemnonic[2].equals("%A")) ) {
-                binary = "0000010";
-            } else if ((mnemnonic[1].equals("(%A)")) && (mnemnonic[2].equals("%D")) || (mnemnonic[1].equals("%D")) && (mnemnonic[2].equals("(%A)"))) {
-                binary = "1000010";
-            } else if(mnemnonic[1].equals("$1")) {
-                binary = "1110111";
-            }
-        }
-        if (command.equals("subw")) {
-            if (mnemnonic[1].equals("%D") && mnemnonic[2].equals("(%A)")) {
-                binary = "1010011";
-            } else if (mnemnonic[1].equals("%D") && mnemnonic[2].equals("%A")) {
-                binary = "0010011";
-            } else if (mnemnonic[1].equals("%A") && mnemnonic[2].equals("%D")) {
-                binary = "0000111";
-            } else if (mnemnonic[1].equals("(%A)") && mnemnonic[2].equals("%D")) {
-                binary = "1000111";
-            } else if (mnemnonic[1].equals("%D") && mnemnonic[2].equals("$1")) {
-                binary = "0001110";
-            } else if (mnemnonic[1].equals("%A") && mnemnonic[2].equals("$1")) {
-                binary = "0110010";
-            } else if (mnemnonic[1].equals("(%A)") && mnemnonic[2].equals("$1")) {
-                binary = "1110010";
-            }
-        }
-        if (command.equals("rsubw")) {
-            if ((mnemnonic[2].equals("%A")) || (mnemnonic[1].equals("%A"))) {
-                binary = "0000111";
-            } else if ((mnemnonic[2].equals("(%A)")) || (mnemnonic[1].equals("(%A)"))) {
-                binary = "1000111";
-            }
-        }
-        if (command.equals("incw")) {
-            if (mnemnonic[1].equals("%D")) {
-                binary = "0011111";
-            } else if (mnemnonic[1].equals("(%A)")) {
-                binary = "1110111";
-            } else if (mnemnonic[1].equals("%A")) {
-                binary = "0110111";
-            }
-        }
-        if (command.equals("decw")) {
-            if (mnemnonic[1].equals("%D")) {
-                binary = "0001110";
-            } else if (mnemnonic[1].equals("(%A)")) {
-                binary = "1110010";
-            } else if (mnemnonic[1].equals("%A")) {
-                binary = "0110010";
-            }
-        }
-        if (command.equals("notw")) {
-            if (mnemnonic[1].equals("%D")) {
-                binary = "0001101";
-            } else if (mnemnonic[1].equals("(%A)")) {
-                binary = "1110001";
-            } else if (mnemnonic[1].equals("%A")) {
-                binary = "0110001";
-            }
-        }
-        if (command.equals("negw")) {
-            if (mnemnonic[1].equals("%D")) {
-                binary = "0001111";
-            } else if (mnemnonic[1].equals("(%A)")) {
-                binary = "1110011";
-            } else if (mnemnonic[1].equals("%A")) {
-                binary = "0110011";
-            }
-        }
-        if (command.equals("andw")) {
-            if ((mnemnonic[1].equals("%A") && mnemnonic[2].equals("%D")) || (mnemnonic[2].equals("%A") && mnemnonic[1].equals("%D"))) {
-                binary = "0000000";
-            } else if ((mnemnonic[1].equals("(%A)") && mnemnonic[2].equals("%D")) || (mnemnonic[2].equals("(%A)") && mnemnonic[1].equals("%D"))) {
-                binary = "1000000";
-            }
-        }
-        if (command.equals("orw")) {
-            if (mnemnonic[1].equals("%A")) {
-                binary = "0010101";
-            } else if (mnemnonic[1].equals("(%A)")) {
-                binary = "1010101";
-            } else if (mnemnonic[1].equals("%D")) {
-                binary = "0010101";
-            }
-        }
-
-
-        return "00" + binary;
     }
     /**
      * Retorna o código binário do mnemônico para realizar uma operação de jump (salto).
