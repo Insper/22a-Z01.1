@@ -19,7 +19,7 @@ import java.util.List;
  * Além disso, remove todos os espaços em branco e comentários.
  */
 public class Parser {
-
+    private Boolean jump = false;
     private final BufferedReader fileReader;
     public String inputFile;		        // arquivo de leitura
     public int lineNumber = 0;		     	// linha atual do arquivo (nao do codigo gerado)
@@ -57,20 +57,44 @@ public class Parser {
      * @return Verdadeiro se ainda há instruções, Falso se as instruções terminaram.
      */
     public Boolean advance() {
-        Boolean jump = false;
+
         while(true){
 
             try {
                 currentLine = fileReader.readLine();
+                try{
+                    String teste = currentLine.replaceAll(" ","");
+                    if (jump == true){
+                        if (!teste.equals ("nop")){
+                            currentLine = "nop";
+                            lineNumber--;
+                            jump = false;
+
+
+                        }
+                        else {
+                            jump = false;
+                        }
+                    }
+
+                    if (teste.charAt(0) == 'j'){
+                        jump = true;
+                    }
+                }
+                catch (Exception e){
+
+                }
 
 
             } catch (IOException e) {
                 e.printStackTrace();
             }
+
             lineNumber++;
             if (currentLine == null)
                 return false;  // caso não haja mais comandos
             currentCommand = currentLine.replaceAll(";.*$", "").trim();
+            System.out.println(currentCommand);
             if (currentCommand.equals(""))
                 continue;
             return true;   // caso um comando seja encontrado

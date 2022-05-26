@@ -118,6 +118,7 @@ public class Assemble {
         String symbol = "";
         int onde = 1;
         while (parser.advance()){
+
             switch (parser.commandType(parser.command())){
 
                 /* TODO: implementar */
