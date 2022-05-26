@@ -144,13 +144,13 @@ public class Parser {
         try{
             splitado2 = splitado.split(" ")[1];}
         catch (Exception e){
-             splitado2 = splitado;
+            splitado2 = splitado;
         }
         String splitfinal = splitado2.replace("$", "");
         if (commandType(command) == CommandType.A_COMMAND){
             return splitfinal;
         }
-    	return null;
+        return null;
     }
 
     /**
@@ -166,7 +166,7 @@ public class Parser {
         if (commandType(command) == CommandType.L_COMMAND){
             return splitado2;
         }
-    	return null;
+        return null;
     }
 
     /**
@@ -205,7 +205,7 @@ public class Parser {
             return resultado;
         }
 
-    	return null;
+        return null;
     }
     public String nop(String command){
         isJmp = true;
