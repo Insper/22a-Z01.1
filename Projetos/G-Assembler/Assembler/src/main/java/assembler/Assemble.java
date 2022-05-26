@@ -38,6 +38,29 @@ public class Assemble {
         table      = new SymbolTable();                          // Cria e inicializa a tabela de simbolos
     }
 
+    public void findMissingNops() throws FileNotFoundException {
+        Parser parser = new Parser(inputFile);
+
+        boolean nextShouldBeNop = false;
+        while (parser.advance()) {
+            String command = parser.command();
+            Parser.CommandType commandType = parser.commandType(command);
+
+            if (nextShouldBeNop) {
+                if (command.startsWith("nop")) {
+                    nextShouldBeNop = false;
+                } else {
+                    System.err.println("Um nop é necessário na linha " + parser.lineNumber + " pois a linha anterior é um jump");
+                    throw new Error("Um nop é necessário na linha " + parser.lineNumber + " pois a linha anterior é um jump");
+                }
+            }
+
+            if (commandType == Parser.CommandType.C_COMMAND && command.startsWith("j")) {
+                nextShouldBeNop = true;
+            }
+        }
+    }
+
     /**
      * primeiro passo para a construção da tabela de símbolos de marcadores (labels)
      * varre o código em busca de novos Labels e Endereços de memórias (variáveis)
