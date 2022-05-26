@@ -9,6 +9,7 @@ import java.io.BufferedReader;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
@@ -18,13 +19,13 @@ import java.util.List;
  * Além disso, remove todos os espaços em branco e comentários.
  */
 public class Parser {
-
+    private Boolean jump = false;
     private final BufferedReader fileReader;
     public String inputFile;		        // arquivo de leitura
     public int lineNumber = 0;		     	// linha atual do arquivo (nao do codigo gerado)
     public String currentCommand = "";      // comando atual
     public String currentLine;			    // linha de codigo atual
-    public boolean isJmp = false;
+    public Boolean isJmp = false;
 
 
     /** Enumerator para os tipos de comandos do Assembler. */
@@ -56,17 +57,44 @@ public class Parser {
      * @return Verdadeiro se ainda há instruções, Falso se as instruções terminaram.
      */
     public Boolean advance() {
-        /* ja esta pronto */
+
         while(true){
+
             try {
                 currentLine = fileReader.readLine();
+                try{
+                    String teste = currentLine.replaceAll(" ","");
+                    if (jump == true){
+                        if (!teste.equals ("nop")){
+                            currentLine = "nop";
+                            lineNumber--;
+                            jump = false;
+
+
+                        }
+                        else {
+                            jump = false;
+                        }
+                    }
+
+                    if (teste.charAt(0) == 'j'){
+                        jump = true;
+                    }
+                }
+                catch (Exception e){
+
+                }
+
+
             } catch (IOException e) {
                 e.printStackTrace();
             }
+
             lineNumber++;
             if (currentLine == null)
                 return false;  // caso não haja mais comandos
             currentCommand = currentLine.replaceAll(";.*$", "").trim();
+            System.out.println(currentCommand);
             if (currentCommand.equals(""))
                 continue;
             return true;   // caso um comando seja encontrado
@@ -110,9 +138,14 @@ public class Parser {
      * @return somente o símbolo ou o valor número da instrução.
      */
     public String symbol(String command) {
+        String splitado2 = "";
         /* TODO: implementar */
         String splitado = command.split(",")[0];
-        String splitado2 = splitado.split(" ")[1];
+        try{
+            splitado2 = splitado.split(" ")[1];}
+        catch (Exception e){
+             splitado2 = splitado;
+        }
         String splitfinal = splitado2.replace("$", "");
         if (commandType(command) == CommandType.A_COMMAND){
             return splitfinal;
@@ -136,16 +169,6 @@ public class Parser {
     	return null;
     }
 
-    public String nop(String command){
-        isJmp = true;
-        if (isJmp){
-            if (command.equals("nop")){
-                return ("Esqueceu do NOP! Erro na linha" + currentLine);
-            }
-        }
-        return null;
-    }
-
     /**
      * Separa os mnemônicos da instrução fornecida em tokens em um vetor de Strings.
      * Deve ser chamado somente quando CommandType () é C_COMMAND.
@@ -157,24 +180,41 @@ public class Parser {
         String replacement = command.replace(" ",",");
         String[] splitado = replacement.split(",");
         List<String> lista = Arrays.asList(splitado);
+        List<String> lista2 = new ArrayList<String>();
+        for (String a : lista){
+            if (a != ""){
+                lista2.add(a);
 
-        if (lista.size() == 1){
-            String[] resultado = new String[]{lista.get(0)};
+            }
+        }
+
+        if (lista2.size() == 1){
+            String[] resultado = new String[]{lista2.get(0)};
             return resultado;
         }
-        else if (lista.size() == 2){
-            String[] resultado = new String[]{lista.get(0), lista.get(1)};
+        else if (lista2.size() == 2){
+            String[] resultado = new String[]{lista2.get(0), lista2.get(1)};
             return resultado;
         }
-        else if (lista.size() == 3){
-            String[] resultado = new String[]{lista.get(0), lista.get(1), lista.get(2)};
+        else if (lista2.size() == 3){
+            String[] resultado = new String[]{lista2.get(0), lista2.get(1), lista2.get(2)};
             return resultado;
         }
-        else if (lista.size() == 4){
-            String[] resultado = new String[]{lista.get(0), lista.get(1), lista.get(2), lista.get(3)};
+        else if (lista2.size() == 4){
+            String[] resultado = new String[]{lista2.get(0), lista2.get(1), lista2.get(2), lista2.get(3)};
             return resultado;
         }
+
     	return null;
+    }
+    public String nop(String command){
+        isJmp = true;
+        if (isJmp){
+            if (command.equals("nop")){
+                return ("Esqueceu do NOP! Erro na linha" + currentLine);
+            }
+        }
+        return null;
     }
 
 

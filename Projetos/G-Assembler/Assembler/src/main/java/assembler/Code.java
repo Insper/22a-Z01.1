@@ -39,7 +39,7 @@ public class Code {
                         return "0101";
 
                 }
-            }else if(mnemnonic.length == 3){
+            }else if(mnemnonic.length < 4){
                 switch (mnemnonic[mnemnonic.length-1]){
                     case "%D": return "0010";
                     case "%A" : return "0001";
@@ -177,102 +177,102 @@ public class Code {
                     return "000000000";
             }
         }
-            if (mnemnonic[0].equals("andw")) {
-                switch (mnemnonic[1] + mnemnonic[2]) {
-                    case "%D%A":
-                    case "%A%D":
-                        return "000000000";
-                    case "(%A)%D":
-                    case "%D(%A)":
-                        return "001000000";
-                    default:
-                        return "000000000";
-                }
-            }
-            if (mnemnonic[0].equals("orw")) {
-                switch (mnemnonic[1] + mnemnonic[2]) {
-                    case "%D%A":
-                    case "%A%D":
-                        return "000010101";
-                    case "(%A)%D":
-                    case "%D(%A)":
-                        return "001010101";
-                    default:
-                        return "000000000";
-                }
-            }
-            if (mnemnonic[0].equals("notw")) {
-                switch (mnemnonic[1]) {
-                    case "%D":
-                        return "000001101";
-                    case "%A":
-                        return "000110001";
-                    case "(%A)":
-                        return "001110001";
-                    default:
-                        return "000000000";
-                }
-            }
-            if (mnemnonic[0].equals("negw")) {
-                switch (mnemnonic[1]) {
-                    case "%D":
-                        return "000001111";
-                    case "%A":
-                        return "000110011";
-                    case "(%A)":
-                        return "001110011";
-                    default:
-                        return "000000000";
-                }
-            }
-            if (mnemnonic[0].charAt(0) == 'j') {
-                return "000001100";
-            } else {
-                return "000000000";
-            }
-    }
-
-
-        /**
-         * Retorna o código binário do mnemônico para realizar uma operação de jump (salto).
-         * @param  mnemnonic vetor de mnemônicos "instrução" a ser analisada.
-         * @retujpmrn Opcode (String de 3 bits) com código em linguagem de máquina para a instrução.
-         */
-        public static String jump(String[] mnemnonic) {
-            /* TODO: implementar */
-            switch (mnemnonic[0]) {
-                case "jg":
-                    return "001";
-                case "je":
-                    return "010";
-                case "jge":
-                    return "011";
-                case "jl":
-                    return "100";
-                case "jne":
-                    return "101";
-                case "jle":
-                    return "110";
-                case "jmp":
-                    return "111";
+        if (mnemnonic[0].equals("andw")) {
+            switch (mnemnonic[1] + mnemnonic[2]) {
+                case "%D%A":
+                case "%A%D":
+                    return "000000000";
+                case "(%A)%D":
+                case "%D(%A)":
+                    return "001000000";
                 default:
-                    return "000";
+                    return "000000000";
             }
         }
-
-        /**
-         * Retorna o código binário de um valor decimal armazenado numa String.
-         * @param  symbol valor numérico decimal armazenado em uma String.
-         * @return Valor em binário (String de 15 bits) representado com 0s e 1s.
-         */
-        public static String toBinary(String symbol) {
-            /* TODO: implementar */
-            int num = Integer.parseInt(symbol);
-            String bin = Integer.toBinaryString(num);
-            while(bin.length() < 16) {
-                bin = "0" + bin;
+        if (mnemnonic[0].equals("orw")) {
+            switch (mnemnonic[1] + mnemnonic[2]) {
+                case "%D%A":
+                case "%A%D":
+                    return "000010101";
+                case "(%A)%D":
+                case "%D(%A)":
+                    return "001010101";
+                default:
+                    return "000000000";
             }
-            return bin;
         }
-
+        if (mnemnonic[0].equals("notw")) {
+            switch (mnemnonic[1]) {
+                case "%D":
+                    return "000001101";
+                case "%A":
+                    return "000110001";
+                case "(%A)":
+                    return "001110001";
+                default:
+                    return "000000000";
+            }
+        }
+        if (mnemnonic[0].equals("negw")) {
+            switch (mnemnonic[1]) {
+                case "%D":
+                    return "000001111";
+                case "%A":
+                    return "000110011";
+                case "(%A)":
+                    return "001110011";
+                default:
+                    return "000000000";
+            }
+        }
+        if (mnemnonic[0].charAt(0) == 'j') {
+            return "000001100";
+        } else {
+            return "000000000";
+        }
     }
+
+
+    /**
+     * Retorna o código binário do mnemônico para realizar uma operação de jump (salto).
+     * @param  mnemnonic vetor de mnemônicos "instrução" a ser analisada.
+     * @retujpmrn Opcode (String de 3 bits) com código em linguagem de máquina para a instrução.
+     */
+    public static String jump(String[] mnemnonic) {
+        /* TODO: implementar */
+        switch (mnemnonic[0]) {
+            case "jg":
+                return "001";
+            case "je":
+                return "010";
+            case "jge":
+                return "011";
+            case "jl":
+                return "100";
+            case "jne":
+                return "101";
+            case "jle":
+                return "110";
+            case "jmp":
+                return "111";
+            default:
+                return "000";
+        }
+    }
+
+    /**
+     * Retorna o código binário de um valor decimal armazenado numa String.
+     * @param  symbol valor numérico decimal armazenado em uma String.
+     * @return Valor em binário (String de 15 bits) representado com 0s e 1s.
+     */
+    public static String toBinary(String symbol) {
+        /* TODO: implementar */
+        int num = Integer.parseInt(symbol);
+        String bin = Integer.toBinaryString(num);
+        while(bin.length() < 16) {
+            bin = "0" + bin;
+        }
+        return bin;
+    }
+
+}
