@@ -10,6 +10,7 @@
 package assembler;
 
 import java.io.*;
+import java.util.Arrays;
 
 /**
  * Faz a geração do código gerenciando os demais módulos
@@ -37,6 +38,29 @@ public class Assemble {
         table      = new SymbolTable();                          // Cria e inicializa a tabela de simbolos
     }
 
+    public void findMissingNops() throws FileNotFoundException {
+        Parser parser = new Parser(inputFile);
+
+        boolean nextShouldBeNop = false;
+        while (parser.advance()) {
+            String command = parser.command();
+            Parser.CommandType commandType = parser.commandType(command);
+
+            if (nextShouldBeNop) {
+                if (command.startsWith("nop")) {
+                    nextShouldBeNop = false;
+                } else {
+                    System.err.println("Um nop é necessário na linha " + parser.lineNumber + " pois a linha anterior é um jump");
+                    throw new Error("Um nop é necessário na linha " + parser.lineNumber + " pois a linha anterior é um jump");
+                }
+            }
+
+            if (commandType == Parser.CommandType.C_COMMAND && command.startsWith("j")) {
+                nextShouldBeNop = true;
+            }
+        }
+    }
+
     /**
      * primeiro passo para a construção da tabela de símbolos de marcadores (labels)
      * varre o código em busca de novos Labels e Endereços de memórias (variáveis)
@@ -55,11 +79,16 @@ public class Assemble {
         while (parser.advance()){
             if (parser.commandType(parser.command()) == Parser.CommandType.L_COMMAND) {
                 String label = parser.label(parser.command());
-                /* TODO: implementar */
-                // deve verificar se tal label já existe na tabela,
-                // se não, deve inserir. Caso contrário, ignorar.
+                if (!this.table.contains(label)) {
+                    this.table.addEntry(label, romAddress);
+                }
+            } else {
+                /**
+                 * Adicionamos ao contador do endereço apenas em comandos de outros tipos,
+                 * pois uma label não é uma realmente uma instrução e não deve contar como uma.
+                 */
+                romAddress++;
             }
-            romAddress++;
         }
         parser.close();
 
@@ -69,15 +98,15 @@ public class Assemble {
         // para cada nova variável deve ser alocado um endereço,
         // começando no RAM[15] e seguindo em diante.
         parser = new Parser(inputFile);
-        int ramAddress = 15;
+        int ramAddress = 16;
         while (parser.advance()){
             if (parser.commandType(parser.command()) == Parser.CommandType.A_COMMAND) {
                 String symbol = parser.symbol(parser.command());
-                if (Character.isDigit(symbol.charAt(0))){
-                    /* TODO: implementar */
-                    // deve verificar se tal símbolo já existe na tabela,
-                    // se não, deve inserir associando um endereço de
-                    // memória RAM a ele.
+                if (!Character.isDigit(symbol.charAt(0))){
+                    if (!this.table.contains(symbol)) {
+                        this.table.addEntry(symbol, ramAddress);
+                        ramAddress++;
+                    }
                 }
             }
         }
@@ -103,11 +132,30 @@ public class Assemble {
          * seguindo o instruction set
          */
         while (parser.advance()){
+
             switch (parser.commandType(parser.command())){
-                /* TODO: implementar */
-                case C_COMMAND:
-                break;
-            case A_COMMAND:
+                case C_COMMAND: // outros comandos
+                    String[] mnemonics = parser.instruction(parser.command());
+
+                    instruction = "10"             // 2 bits
+                            + Code.comp(mnemonics) // 9 bits
+                            + Code.dest(mnemonics) // 4 bits
+                            + Code.jump(mnemonics) // 3 bits
+                    ;
+
+                    break;
+            case A_COMMAND: // leaw $X, %A
+                String valor = parser.symbol(parser.command());
+
+                // Substitui o valor pelo endereço correspondente na tabela caso ele não seja um int
+                // Para os casos de $LABELS ao invés de $1, $2, etc.
+                if (!valor.matches("-?\\d+")) {
+                    valor = this.table.getAddress(valor) + "";
+                }
+
+                String valorBinario = Code.toBinary(valor);
+
+                instruction = "00" + valorBinario;
                 break;
             default:
                 continue;

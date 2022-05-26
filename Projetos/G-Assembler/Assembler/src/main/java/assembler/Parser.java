@@ -20,7 +20,6 @@ public class Parser {
     private final BufferedReader fileReader;
     public String inputFile;		        // arquivo de leitura
     public int lineNumber = 0;		     	// linha atual do arquivo (nao do codigo gerado)
-    public String currentCommand = "";      // comando atual
     public String currentLine;			    // linha de codigo atual
 
 
@@ -53,21 +52,27 @@ public class Parser {
      * @return Verdadeiro se ainda há instruções, Falso se as instruções terminaram.
      */
     public Boolean advance() {
-        /* ja esta pronto */
-        while(true){
-            try {
-                currentLine = fileReader.readLine();
-            } catch (IOException e) {
-                e.printStackTrace();
+        boolean next;
+        try {
+            currentLine = fileReader.readLine();
+            next = currentLine != null;
+            while (next) {
+                if (currentLine.length() == 0 || currentLine.charAt(0) == ';') {
+                    currentLine = fileReader.readLine();
+                    if (currentLine != null) {
+                        next = true;
+                    } else {
+                        return false;
+                    }
+                } else {
+                    return true;
+                }
             }
-            lineNumber++;
-            if (currentLine == null)
-                return false;  // caso não haja mais comandos
-            currentCommand = currentLine.replaceAll(";.*$", "").trim();
-            if (currentCommand.equals(""))
-                continue;
-            return true;   // caso um comando seja encontrado
+        } catch (IOException e) {
+            e.printStackTrace();
+            return null;
         }
+        return false;
     }
 
     /**
@@ -75,8 +80,16 @@ public class Parser {
      * @return a instrução atual para ser analilisada
      */
     public String command() {
+        // Comentários
+        int comment = currentLine.indexOf(";");
+        if (comment != -1) {
+            currentLine = currentLine.substring(0, comment).trim();
+
+        } else {
+            currentLine = currentLine.trim();
+        }
         /* ja esta pronto */
-        return currentCommand;
+        return currentLine;
     }
 
     /**
@@ -131,9 +144,22 @@ public class Parser {
      * @return um vetor de string contento os tokens da instrução (as partes do comando).
      */
     public String[] instruction(String command) {
-        command = command.replaceAll(",", " ").trim();
-        String[] parts = command.split(" ");
-    	return parts;
+        String[] split;
+        String replace = command.replace(" ", "");
+        if (command.charAt(0) == 'j') {
+            String replace2 = replace.replace("%", " %");
+            split = replace2.split(" ");
+        } else {
+            String replace2 = replace.replace("w", "w ");
+            String replace3 = replace2.replace(",", " ");
+            split = replace3.split(" ");
+        }
+
+        if (!commandType(command).equals(CommandType.L_COMMAND)) {
+            return split;
+        } else {
+            return new String[1];
+        }
     }
 
 
