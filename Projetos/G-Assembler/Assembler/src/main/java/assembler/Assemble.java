@@ -55,6 +55,7 @@ public class Assemble {
         while (parser.advance()){
             if (parser.commandType(parser.command()) == Parser.CommandType.L_COMMAND) {
                 String label = parser.label(parser.command());
+<<<<<<< HEAD
                 boolean contem = table.contains(label);
                 if (contem == false) {
                     table.addEntry(label, romAddress);
@@ -65,6 +66,13 @@ public class Assemble {
             else {
                 romAddress++;
             }
+=======
+                /* TODO: implementar */
+                // deve verificar se tal label já existe na tabela,
+                // se não, deve inserir. Caso contrário, ignorar.
+            }
+            romAddress++;
+>>>>>>> main
         }
         parser.close();
 
@@ -79,11 +87,15 @@ public class Assemble {
             if (parser.commandType(parser.command()) == Parser.CommandType.A_COMMAND) {
                 String symbol = parser.symbol(parser.command());
                 if (Character.isDigit(symbol.charAt(0))){
+<<<<<<< HEAD
                     boolean contem =  table.contains(symbol);
                     if (contem == false) {
                         table.addEntry(symbol, ramAddress);
                         ramAddress++;
                     }
+=======
+                    /* TODO: implementar */
+>>>>>>> main
                     // deve verificar se tal símbolo já existe na tabela,
                     // se não, deve inserir associando um endereço de
                     // memória RAM a ele.

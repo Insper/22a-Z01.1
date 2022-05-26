@@ -1,3 +1,4 @@
+
 -- Elementos de SistemasloadD <= istruction(17) and instruction(4);
 -- developed by Luciano Soares
 -- file: ControlUnit.vhd
@@ -29,7 +30,6 @@ end entity;
 architecture arch of ControlUnit is
 
 begin
-
 loadD <= instruction(17) and instruction(4);
 loadA <= (instruction(17) and instruction(3)) or (not instruction(17));
 loadM <= instruction(17) and instruction(5);

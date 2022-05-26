@@ -19,70 +19,66 @@
 ; RAM[7]:  1  | RAM[7]:  1 |
 ; RAM[8]:  4  | RAM[8]:  4 -
 ; ------------------------------------
-
 leaw $4, %A
 movw (%A), %D
-leaw %2, %A
+leaw $3, %A
 movw %D, (%A)
-
 leaw $5, %A
 movw %A, %D
-leaw $3, %A
+leaw $2, %A
 movw %D, (%A)
-
-LOOP:
-leaw $3, %A
+SOMA:
+leaw $2, %A
 movw (%A), %A
 movw (%A), %D
 leaw $1, %A
-addw (%A), %D, %D
+
+addw %D, (%A), %D
+movw %D, (%A)
+leaw $2, %A
+movw (%A), %D
+incw %D
 movw %D, (%A)
 leaw $3, %A
 movw (%A), %D
-addw $1, %D, (%A)
-
-leaw $2, %A
-movw (%A), %D
-decw %D
+subw %D, $1, %D
 movw %D, (%A)
-leaw $END1, %A
-je %D
+leaw $SOMA, %A
+jg %D
 nop
-
-leaw $LOOP, %A
-jmp
-nop
-
-END1:
-
-leaw $2, %A
-movw $0, (%A)
 
 leaw $1, %A
 movw (%A), %D
-leaw $3, %A
+leaw $2, %A
 movw %D, (%A)
 
- LOOP2:
- leaw $2, %A
- movw (%A), %D
- addw %D, $1, (%A)
- leaw $3, %A
- movw (%A), %D
- leaw $4, %A
- subw %D, (%A), %D
- leaw $3, %A
- movw %D, (%A)
- leaw $END2, %A
- je %D
- nop
- leaw $LOOP2, %A
- jmp
- nop
+LOOP:
+    
+    leaw $2, %A
+    movw (%A), %D
+    leaw $4, %A
+    subw %D, (%A), %D
+    
+    leaw $INC, %A
+    jge
+    nop
 
- END2:
+    leaw $ELSE, %A
+    jmp
+    nop
 
- leaw $2, %A
- movw (%A), %D
- leaw $0, %A
- movw %D, (%A)
+    INC:
+    leaw $2, %A
+    movw %D, (%A)
+    leaw $0, %A
+    
+    movw (%A), %D
+    incw %D
+    leaw $0, %A
+
+    movw %D, (%A)
+    leaw $LOOP, %A
+    jmp
+    nop
+ELSE:
+nop
