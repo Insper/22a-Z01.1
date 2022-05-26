@@ -151,7 +151,12 @@ public class Parser {
         if (implementaNop) {
             implementaNop = false;
             currentCommand = "nop";
-            lineNumber--;
+            close();
+            Parser auxParser = new Parser(inputFile);
+            for (int i = 0; i < lineNumber-1; i++) {
+                currentLine = fileReader.readLine();
+            }
+            System.out.println("NOP implementado artificialmente na linha " + String.valueOf(lineNumber));
         }
         else if (Arrays.asList("jmp", "je", "jne", "jg", "jge", "jl", "jle").contains(primeiroTermo)){
             verificaNop = true;
@@ -160,7 +165,6 @@ public class Parser {
             verificaNop = false;
             if (!primeiroTermo.equals("nop")) {
                 implementaNop = true;
-                System.out.println("NOP artificial ativado!");
             }
         }
     }
