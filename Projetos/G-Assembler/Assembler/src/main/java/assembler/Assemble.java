@@ -57,12 +57,16 @@ public class Assemble {
                 String label = parser.label(parser.command());
                 /* TODO: implementar */
                 if (table.contains(label) == Boolean.FALSE){
+                    System.out.println(romAddress);
                     table.addEntry(label,romAddress);
                 }
                 // deve verificar se tal label já existe na tabela,
                 // se não, deve inserir. Caso contrário, ignorar.
             }
-            romAddress++;
+            else {
+                romAddress++;
+            }
+
         }
         parser.close();
 
@@ -86,7 +90,7 @@ public class Assemble {
                     // memória RAM a ele.
                 }
             }
-            ramAddress++;
+
         }
         parser.close();
         return table;
