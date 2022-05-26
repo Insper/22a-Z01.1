@@ -23,6 +23,7 @@ public class Parser {
     public String currentCommand = "";      // comando atual
     public String currentLine;			    // linha de codigo atual
     public boolean verificaNop = false;
+    public boolean implementaNop = false;
 
 
     /** Enumerator para os tipos de comandos do Assembler. */
@@ -144,22 +145,23 @@ public class Parser {
     * Implementação do conceito A e B para verificar se há nop
     * depois de um jump
     * */
-    public String nop(String command) { // leaw $0,%A
-        String[] terms = command.split(" ");
-        if (terms[0].equals("jmp") || terms[0].equals("je") || terms[0].equals("jne") || terms[0].equals("jg") || terms[0].equals("jge") || terms[0].equals("jl") || terms[0].equals("jle")){
+    public void checaNop() { 
+        String[] terms = currentCommand.split(" ");
+        String primeiroTermo = terms[0];
+        if (implementaNop) {
+            implementaNop = false;
+            currentCommand = "nop";
+        }
+        else if (Arrays.asList("jmp", "je", "jne", "jg", "jge", "jl", "jle").contains(primeiroTermo)){
             verificaNop = true;
         }
         else if (verificaNop) {
-            verificaNop= false;
-            if (terms[0].equals("nop")) {
-                return "1";
-            } else {
-                return "0";
+            verificaNop = false;
+            if (!primeiroTermo.equals("nop")) {
+                implementaNop = true;
+                System.out.println("NOP artificial ativado!");
             }
-
         }
-        return "2";
     }
-
 
 }
