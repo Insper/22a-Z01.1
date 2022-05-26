@@ -56,7 +56,7 @@ public class SymbolTable {
     //
     public void initialize() {
         // Exemplo: Registradores Virtuais
-        for (int i = 0; i < 15; i++){
+        for (int i = 0; i <= 15; i++){
             this.addEntry('R' + String.valueOf(i),i);
         }
         this.addEntry("SP",0);
