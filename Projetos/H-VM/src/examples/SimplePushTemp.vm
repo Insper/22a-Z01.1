@@ -1,0 +1,9 @@
+// Pushes and adds two constants.
+push temp 0
+push temp 1
+push temp 2
+push temp 3
+push temp 4
+push temp 5
+push temp 6
+push temp 7
