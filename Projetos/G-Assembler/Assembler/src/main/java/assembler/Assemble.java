@@ -96,6 +96,7 @@ public class Assemble {
         parser.close();
         return table;
     }
+    
 
     /**
      * Segundo passo para a geração do código de máquina
@@ -120,9 +121,10 @@ public class Assemble {
         while (parser.advance()){
 
             switch (parser.commandType(parser.command())){
-
+                
                 /* TODO: implementar */
                 case C_COMMAND:
+                
                      A = "10" ;
 
 
@@ -151,6 +153,7 @@ public class Assemble {
             default:
                 continue;
             }
+            
             // Escreve no arquivo .hack a instrução
             if(outHACK!=null) {
                 outHACK.println(instruction);
