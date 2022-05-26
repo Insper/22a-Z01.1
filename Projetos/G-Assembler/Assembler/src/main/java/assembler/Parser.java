@@ -151,6 +151,7 @@ public class Parser {
         if (implementaNop) {
             implementaNop = false;
             currentCommand = "nop";
+            lineNumber--;
         }
         else if (Arrays.asList("jmp", "je", "jne", "jg", "jge", "jl", "jle").contains(primeiroTermo)){
             verificaNop = true;
