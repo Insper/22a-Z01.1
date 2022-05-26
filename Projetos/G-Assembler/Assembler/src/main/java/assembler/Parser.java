@@ -24,6 +24,7 @@ public class Parser {
     public int lineNumber = 0;		     	// linha atual do arquivo (nao do codigo gerado)
     public String currentCommand = "";      // comando atual
     public String currentLine;			    // linha de codigo atual
+    public boolean isJmp = false;
 
 
     /** Enumerator para os tipos de comandos do Assembler. */
@@ -133,6 +134,16 @@ public class Parser {
             return splitado2;
         }
     	return null;
+    }
+
+    public String nop(String command){
+        isJmp = true;
+        if (isJmp){
+            if (command.equals("nop")){
+                return ("Esqueceu do NOP! Erro na linha" + currentLine);
+            }
+        }
+        return null;
     }
 
     /**
