@@ -5,6 +5,9 @@
 
 package assembler;
 
+//import com.sun.org.apache.bcel.internal.generic.RET;
+//import com.sun.org.apache.bcel.internal.generic.RETURN;
+
 import java.util.HashMap;
 import java.util.Map;
 import java.lang.*;
@@ -19,7 +22,6 @@ public class Code {
      * @return Opcode (String de 4 bits) com código em linguagem de máquina para a instrução.
      */
     public static String dest(String[] mnemnonic) {
-        /* TODO: implementar */
 
         Map <String, Integer> destine = new HashMap<>();
         destine.put("%A"  , 1);
@@ -78,17 +80,94 @@ public class Code {
      * @return Opcode (String de 7 bits) com código em linguagem de máquina para a instrução.
      */
     public static String comp(String[] mnemnonic) {
-        /* TODO: implementar */
-    	return "";
+        switch (mnemnonic[0]){
+            case "movw":
+                switch (mnemnonic[1]){
+                    case "%A":
+                        return "000110000";
+                    case "%D":
+                        return "000001100";
+                    case "(%A)":
+                        return "001110000";
+                }
+            case "addw":
+                switch (mnemnonic[1]){
+                    case "%A":
+                        return "000000010";
+                    case "(%A)":
+                        return "001000010";
+                    case "$1":
+                        return "001110111";
+                }
+            case "incw":
+                switch (mnemnonic[1]){
+                    case "%A":
+                        return "000110111";
+                    case "%D":
+                        return "000011111";
+                    case "(%A)":
+                        return "001110111";
+                }
+            case "subw":
+                switch (mnemnonic[1]){
+                    case "%D":
+                        return "001010011";
+                    case "(%A)":
+                        return "001110010";
+                }
+            case "rsubw":
+                return "001000111";
+            case "decw":
+                switch (mnemnonic[1]){
+                    case "%A":
+                        return "000110010";
+                    case "%D":
+                        return "000001110";
+                }
+            case "notw":
+                switch (mnemnonic[1]){
+                    case "%A":
+                        return "000110001";
+                    case "%D":
+                        return "000001101";
+                }
+            case "negw":
+                switch (mnemnonic[1]){
+                    case "%A":
+                        return "000110011";
+                    case "%D":
+                        return "000001111";
+                }
+            case "andw":
+                switch (mnemnonic[1]){
+                    case "(%A)":
+                        return "001000000";
+                    case "%D":
+                        return "000000000";
+                }
+            case "orw":
+                switch (mnemnonic[1]){
+                    case "(%A)":
+                        return "001010101";
+                    case "%D":
+                        return "000010101";
+                }
+            case "jmp":
+            case "je":
+            case "jne":
+            case "jg":
+            case "jge":
+            case "jl":
+            case "jle": return "000001100";
+            default: return "";
+        }
     }
-
     /**
      * Retorna o código binário do mnemônico para realizar uma operação de jump (salto).
      * @param  mnemnonic vetor de mnemônicos "instrução" a ser analisada.
      * @return Opcode (String de 3 bits) com código em linguagem de máquina para a instrução.
      */
     public static String jump(String[] mnemnonic) {
-        /* TODO: implementar */
         switch (mnemnonic[0]){
             case "jg"  : return "001";
             case "je"  : return "010";
@@ -107,8 +186,12 @@ public class Code {
      * @return Valor em binário (String de 15 bits) representado com 0s e 1s.
      */
     public static String toBinary(String symbol) {
-        /* TODO: implementar */
-    	return "";
+        String binario = Integer.toBinaryString(Integer.valueOf(symbol).intValue());
+        int concatenaveis;
+        concatenaveis = 16 - binario.length();
+        for (int i = 0; i < concatenaveis; i++) {
+            binario = '0' + binario;
+        }
+        return binario;
     }
-
 }
