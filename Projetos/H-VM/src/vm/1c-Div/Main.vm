@@ -17,7 +17,10 @@ function Main.main 0
    
 label end
 
-
+push temp 0
+push temp 1
+call Div 2
+pop temp 3
 // esse loop sempre deve existir!
 // caso contrario o computador vai
 // executar lixo de memoria.
