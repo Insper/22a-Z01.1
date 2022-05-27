@@ -1,0 +1,25 @@
+// ---------------------------------  
+// Rafael Corsi @ insper . edu . br
+//              2018a
+// ---------------------------------
+//
+// Descritivo   :
+//  Faça a divisão do valor de temp 0 por temp 1
+//  salve o resultado em temp 3
+//
+//  temp 3 = temp 0 / temp 1
+//
+//  assuma que temp 0> temp 1 e ambos inteiros
+// ----------------------------------
+
+function Main.main 0
+
+   
+label end
+
+
+// esse loop sempre deve existir!
+// caso contrario o computador vai
+// executar lixo de memoria.
+label while
+  goto while

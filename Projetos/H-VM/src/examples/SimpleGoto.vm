@@ -1,0 +1,7 @@
+// Teste goto (necessita do label e push constant implementado)
+push constant 5
+goto END2
+label DUMMY
+push constant 3
+label END2
+pop temp 0 // DEVE TER 5

@@ -1,0 +1,38 @@
+// ---------------------------------  
+// Rafael Corsi @ insper . edu . br
+//              2018a
+// ---------------------------------
+//
+// Projeto      : Projeto I-VM
+// File         : 2c-Calculadora
+//
+// Descritivo   : 
+//  Escreva um código em VM que realize a seguinte
+//  operação :
+//    15/5
+//
+//  O resultado deve ser salvo em temp 1
+//
+//  Para isso, crie uma funcao div que realiza a divisao
+//  entre o primeiro e o segundo valor da pilha 
+//
+//  Você deve portar o div que foi realizado no exercicio
+//  1c-Div para dentro do arquivo div.vm, você terá que 
+//  ajustar algumas cosas. Use a funcao de mult como exemplo 
+//
+//  ****************************************************
+//  ** A ideia é deixar o Z01 resolver, você não deve **
+//  ** simplificar a equação                          **
+//  ****************************************************
+
+function Main.main 0
+
+// nao precisa mexer aqui, esse
+// exercicio tem que implementar o div.vm
+push constant 15
+push constant 5
+call div 2
+pop temp 1
+
+label while
+    goto while
