@@ -75,9 +75,7 @@ class AssemblerZ01 {
                                                 outputFileHack,
                                                 verbose);
 
-            // Encontra nops faltantes
-            assembler.warnMissingNops();
-
+            // Adiciona nops faltantes
             assembler.addMissingNops();
 
             // Cria tabela de símbolos

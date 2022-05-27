@@ -40,31 +40,6 @@ public class Assemble {
         table      = new SymbolTable();                          // Cria e inicializa a tabela de simbolos
     }
 
-    public void warnMissingNops() throws FileNotFoundException {
-        Parser parser = new Parser(inputFile);
-
-        boolean nextShouldBeNop = false;
-        int index = 0;
-        while (parser.advance()) {
-            String command = parser.command();
-            Parser.CommandType commandType = parser.commandType(command);
-
-            if (nextShouldBeNop) {
-                if (command.startsWith("nop")) {
-                    nextShouldBeNop = false;
-                } else {
-                    System.out.println("Um nop é necessário na linha " + index + " pois a linha anterior é um jump");
-                }
-            }
-
-            if (commandType == Parser.CommandType.C_COMMAND && command.startsWith("j")) {
-                nextShouldBeNop = true;
-            }
-
-            index++;
-        }
-    }
-
     public void addMissingNops() throws IOException {
         BufferedReader reader = new BufferedReader(new FileReader(inputFile));
         String fileContent = reader.lines().collect(Collectors.joining(System.lineSeparator()));
@@ -102,7 +77,7 @@ public class Assemble {
 
         int count = 0;
         for (int ind : nopNeededIndexes) {
-            System.out.println(ind);
+            System.out.println("Um nop faltante será adicionado automaticamente à linha " + ind + " pois a linha anterior é um jump");
             lines.add(ind, " ".repeat(nopPadding.get(count)) + "nop");
             count++;
         }
