@@ -1,0 +1,6 @@
+OK  : testParser_label
+OK  : testParser_commandType
+OK  : testParser_advance
+OK  : testParser_symbol
+OK  : testParser_instruction
+OK  : testParser_checaNop

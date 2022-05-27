@@ -175,56 +175,6 @@ public class ParserTest {
 
 
 
-
-    @Test
-    public void testParser_nop() {
-
-        try {
-
-            assertTrue("leaw $0,%A",parser.nop("leaw $0,%A").equals("2"));
-            assertTrue("leaw $i,%A",parser.nop("leaw $i,%A").equals("2"));
-            assertTrue("leaw $LOOP,%A",parser.nop("leaw $LOOP,%A").equals("2"));
-            assertTrue("leaw $12345,%A",parser.nop("leaw $12345,%A").equals("2"));
-            assertTrue("movw %A,%D",parser.nop("movw %A,%D").equals("2"));
-            assertTrue("movw %D,%A",parser.nop("movw %D,%A").equals("2"));
-            assertTrue("jmp",parser.nop("jmp").equals("2"));
-            assertTrue("nop",parser.nop("nop").equals("1"));
-            assertTrue("addw %S,%A,%D",parser.nop("addw %S,%A,%D").equals("2"));
-            assertTrue("decw %A",parser.nop("jmp").equals("2"));
-            assertTrue("decw %D",parser.nop("decw %D").equals("2"));
-            assertTrue("notw %S",parser.nop("notw %S").equals("2"));
-            assertTrue("notw %D",parser.nop("notw %D").equals("2"));
-            assertTrue("negw %A",parser.nop("negw %A").equals("2"));
-            assertTrue("negw %D",parser.nop("negw %D").equals("2"));
-
-        } catch(Exception e) {
-            e.printStackTrace();
-        }
-
-    }
-
-    @Test
-    public void testParser_nop2() {
-
-        try {
-
-            assertTrue("leaw $0,%A",parser.nop("leaw $0,%A").equals("2"));
-            assertTrue("leaw $i,%A",parser.nop("leaw $i,%A").equals("2"));
-            assertTrue("leaw $LOOP,%A",parser.nop("leaw $LOOP,%A").equals("2"));
-            assertTrue("leaw $12345,%A",parser.nop("leaw $12345,%A").equals("2"));
-            assertTrue("movw %A,%D",parser.nop("movw %A,%D").equals("2"));
-            assertTrue("movw %D,%A",parser.nop("movw %D,%A").equals("2"));
-            assertTrue(parser.nop("jmp").equals("2"));
-            assertTrue(parser.nop("leaw").equals("0"));
-
-        } catch(Exception e) {
-            e.printStackTrace();
-        }
-
-    }
-
-
-
     /**
      * Teste para a instrução instruction
      */
@@ -328,13 +278,27 @@ public class ParserTest {
         }
 
     }
+    
+    
+    
+    @Test
+    public void testParser_checaNop() {
 
+        try {
+        	
+        	parser = new Parser("src/test/resources/testJump.nasm");
+        	for (int i=0; i<13; i++) {
+        		parser.advance();
+            	assertFalse(parser.checaNop());
+        	}
+        	parser.advance();
+        	assertTrue(parser.checaNop());
+        	
+        } catch(Exception e) {
+            e.printStackTrace();
+        }
 
-
-
-
-
-
+    }
 
 
 }

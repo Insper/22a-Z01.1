@@ -9,6 +9,7 @@ import java.io.BufferedReader;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
+import java.util.Arrays;
 
 /**
  * Encapsula o código de leitura. Carrega as instruções na linguagem assembly,
@@ -144,22 +145,21 @@ public class Parser {
     /**
     * Implementação do conceito A e B para verificar se há nop
     * depois de um jump
+     * @throws IOException 
     * */
-    public void checaNop() { 
+    public boolean checaNop() throws IOException { 
         String[] terms = currentCommand.split(" ");
         String primeiroTermo = terms[0];
         if (implementaNop) {
             implementaNop = false;
             currentCommand = "nop";
             close();
-            Parser auxParser = new Parser(inputFile);
+            Parser parser = new Parser(inputFile);
             for (int i = 0; i < lineNumber-1; i++) {
                 currentLine = fileReader.readLine();
             }
             System.out.println("NOP implementado artificialmente na linha " + String.valueOf(lineNumber));
-        }
-        else if (Arrays.asList("jmp", "je", "jne", "jg", "jge", "jl", "jle").contains(primeiroTermo)){
-            verificaNop = true;
+            return true;
         }
         else if (verificaNop) {
             verificaNop = false;
@@ -168,6 +168,10 @@ public class Parser {
                 implementaNop = true;
             }
         }
+        else if (Arrays.asList("jmp", "je", "jne", "jg", "jge", "jl", "jle").contains(primeiroTermo)){
+            verificaNop = true;
+        }
+        return false;
     }
 
 }
