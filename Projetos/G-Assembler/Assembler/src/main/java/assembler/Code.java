@@ -57,8 +57,61 @@ public class Code {
                             }
                     }
                 }
+            case "addw": switch (mnemnonic[3]){
+                case "(%A)": return "0100";
+                case "%D": return "0010";
+                case "%A": return "0001";
+            }
+            case "incw": switch (mnemnonic[1]){
+                case "(%A)": return "0100";
+                case "%D": return "0010";
+                case "%A": return "0001";
+            }
+            case "decw": switch (mnemnonic[1]){
+                case "(%A)": return "0100";
+                case "%D": return "0010";
+                case "%A": return "0001";
+            }
+            case "nop": return "0000";
+            case "subw": switch (mnemnonic[3]){
+                case "(%A)": return "0100";
+                case "%D": return "0010";
+                case "%A": return "0001";
+            }
+            case "rsubw": switch (mnemnonic[3]){
+                case "(%A)": return "0100";
+                case "%D": return "0010";
+                case "%A": return "0001";
+            }
+            case "notw": switch (mnemnonic[1]){
+                case "(%A)": return "0100";
+                case "%D": return "0010";
+                case "%A": return "0001";
+            }
+            case "negw": switch (mnemnonic[1]){
+                case "(%A)": return "0100";
+                case "%D": return "0010";
+                case "%A": return "0001";
+            }
+            case "andw": switch (mnemnonic[3]){
+                case "(%A)": return "0100";
+                case "%D": return "0010";
+                case "%A": return "0001";
+            }
+            case "orw": switch (mnemnonic[3]){
+                case "(%A)": return "0100";
+                case "%D": return "0010";
+                case "%A": return "0001";
+            }
+            case "jmp" : return "0000";
+            case "jg" : return "0000";
+            case "je" : return "0000";
+            case "jge" : return "0000";
+            case "jl" : return "0000";
+            case "jne" : return "0000";
+            case "jle" : return "0000";
         }
-        return "";
+        return "0000";
     }
 
     /**
