@@ -8,7 +8,6 @@
 package assembler;
 
 import java.io.*;
-import java.util.*;
 
 /**
  * Classe principal que orquestra execução do Assembler.
@@ -77,7 +76,9 @@ class AssemblerZ01 {
                                                 verbose);
 
             // Encontra nops faltantes
-             assembler.findMissingNops();
+            assembler.warnMissingNops();
+
+            assembler.addMissingNops();
 
             // Cria tabela de símbolos
             assembler.fillSymbolTable();

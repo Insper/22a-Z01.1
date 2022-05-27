@@ -3,7 +3,6 @@ package assembler;
 import org.junit.Test;
 
 import java.io.BufferedReader;
-import java.io.File;
 import java.io.FileReader;
 import java.io.IOException;
 
@@ -28,12 +27,12 @@ public class AssembleTest {
     @Test(expected = Error.class)
     public void findMissingNops_shouldThrow() throws IOException {
         Assemble nopsAssembler = new Assemble("src/test/resources/missingNops.nasm", "src/test/resources/missingNops.hack", false);
-        nopsAssembler.findMissingNops();
+        nopsAssembler.warnMissingNops();
     }
 
     @Test
     public void findMissingNops_dontThrow() throws IOException {
-        assembler.findMissingNops();
+        assembler.warnMissingNops();
     }
 
     @Test
@@ -47,6 +46,12 @@ public class AssembleTest {
         assertTrue("$par",table.getAddress("par")==2);
         assertTrue("$end",table.contains("end")==true);
         assertTrue("$end",table.getAddress("end")==14);
+    }
+
+    @Test
+    public void addMissingNops() throws IOException {
+        Assemble nopsAssembler = new Assemble("src/test/resources/missingNops.nasm", "src/test/resources/missingNops.hack", false);
+        nopsAssembler.addMissingNops();
     }
 
     @Test
