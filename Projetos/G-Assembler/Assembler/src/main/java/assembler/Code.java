@@ -100,6 +100,9 @@ public class Code {
                 switch (instrucao) {
                     case "%A %D":
                     case "%D %A":
+                switch (mnemnonic[1]){
+                    case "%A":
+                    case "%D":
                         return "000000010";
                     case "(%A) %D":
                     case "%D (%A)":
@@ -195,6 +198,11 @@ public class Code {
                 switch (instrucao) {
                     case "%A %D":
                     case "%D %A":
+                switch (mnemnonic[1]){
+                    case "(%A)":
+                        return "001000000";
+                    case "%D":
+                    case "%A":
                         return "000000000";
                     case "(%A) %D":
                     case "%D (%A)":
@@ -205,6 +213,11 @@ public class Code {
                 switch (instrucao) {
                     case "%A %D":
                     case "%D %A":
+                switch (mnemnonic[1]){
+                    case "(%A)":
+                        return "001010101";
+                    case "%D":
+                    case "%A":
                         return "000010101";
                     case "(%A) %D":
                     case "%D (%A)":
