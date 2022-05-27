@@ -89,10 +89,15 @@ public class Code {
                         return "000001100";
                     case "(%A)":
                         return "001110000";
+                    case "$1":
+                        return "000111111";
+                    case "$0":
+                        return "000101010";
                 }
             case "addw":
                 switch (mnemnonic[1]){
                     case "%A":
+                    case "%D":
                         return "000000010";
                     case "(%A)":
                         return "001000010";
@@ -121,6 +126,8 @@ public class Code {
                 switch (mnemnonic[1]){
                     case "%A":
                         return "000110010";
+                    case "(%A)":
+                        return "001110010";
                     case "%D":
                         return "000001110";
                 }
@@ -128,6 +135,8 @@ public class Code {
                 switch (mnemnonic[1]){
                     case "%A":
                         return "000110001";
+                    case "(%A)":
+                        return "001110001";
                     case "%D":
                         return "000001101";
                 }
@@ -135,6 +144,8 @@ public class Code {
                 switch (mnemnonic[1]){
                     case "%A":
                         return "000110011";
+                    case "(%A)":
+                        return "001110011";
                     case "%D":
                         return "000001111";
                 }
@@ -143,6 +154,7 @@ public class Code {
                     case "(%A)":
                         return "001000000";
                     case "%D":
+                    case "%A":
                         return "000000000";
                 }
             case "orw":
@@ -150,6 +162,7 @@ public class Code {
                     case "(%A)":
                         return "001010101";
                     case "%D":
+                    case "%A":
                         return "000010101";
                 }
             case "jmp":
