@@ -161,7 +161,7 @@ public class Parser {
         String palavra = new String("");
         List<String> lista = new ArrayList<String>();
         for (char i : command.toCharArray()) {
-            if (i == ',' || i == ' '){
+            if (i == ',' || i == ' ' && !palavra.isEmpty()){
                 lista.add(palavra);
                 palavra = "";
             }
