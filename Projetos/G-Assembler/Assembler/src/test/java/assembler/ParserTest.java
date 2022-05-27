@@ -14,10 +14,9 @@ import java.io.PrintWriter;
 import org.junit.rules.TestWatcher;
 import org.junit.runner.Description;
 
-import static org.junit.Assert.assertTrue;
-import static org.junit.Assert.assertFalse;
-
 import java.util.Arrays;
+
+import static org.junit.Assert.*;
 
 public class ParserTest {
 
@@ -170,7 +169,11 @@ public class ParserTest {
             e.printStackTrace();
         }
 
-    }  
+    }
+
+
+
+
 
     /**
      * Teste para a instrução instruction
@@ -274,6 +277,31 @@ public class ParserTest {
             e.printStackTrace();
         }
 
-    }  
+    }
+    
+    
+    
+    @Test
+    public void testParser_checaNop() {
+
+        try {
+        	
+        	parser = new Parser("src/test/resources/testJump.nasm");
+        	for (int i=0; i<13; i++) {
+        		parser.advance();
+            	assertFalse(parser.checaNop());
+        	}
+        	parser.advance();
+        	assertTrue(parser.checaNop());
+        	
+        } catch(Exception e) {
+            e.printStackTrace();
+        }
+
+    }
+
 
 }
+
+
+
