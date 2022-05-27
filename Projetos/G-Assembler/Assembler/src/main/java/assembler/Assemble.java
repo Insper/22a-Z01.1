@@ -139,9 +139,11 @@ public class Assemble {
                     System.out.println(Code.jump(parser.instruction(parser.command())));
                     System.out.println(" - ");
                     instruction = "10" + Code.comp(parser.instruction(parser.command())) + Code.dest(parser.instruction(parser.command())) + Code.jump(parser.instruction(parser.command()));
+
                     if(Code.jump(parser.instruction(parser.command()))!="000"){
                         isJump = true;
                     }
+
                     break;
                 default:
                     instruction = "000000000000000000";
@@ -167,8 +169,8 @@ public class Assemble {
 
                 outHACK.println(instruction);
             }
-            instruction = null;
 
+            instruction = null;
 
         }
     }
