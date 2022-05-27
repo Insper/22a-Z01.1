@@ -19,7 +19,8 @@ import static org.junit.Assert.assertFalse;
 
 import java.util.Arrays;
 
-public class ParserTest {
+public class
+ParserTest {
 
     Parser parser = null;
     private static StringBuilder builder = new StringBuilder();

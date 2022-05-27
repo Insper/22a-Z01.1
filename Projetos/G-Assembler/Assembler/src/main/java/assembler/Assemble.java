@@ -62,7 +62,10 @@ public class Assemble {
                 // deve verificar se tal label já existe na tabela,
                 // se não, deve inserir. Caso contrário, ignorar.
             }
-            romAddress++;
+            else {
+                romAddress++;
+            }
+
         }
         parser.close();
 
@@ -86,7 +89,7 @@ public class Assemble {
                     // memória RAM a ele.
                 }
             }
-            ramAddress++;
+
         }
         parser.close();
         return table;
@@ -113,20 +116,34 @@ public class Assemble {
             switch (parser.commandType(parser.command())){
                 /* TODO: implementar */
                 case C_COMMAND:
+                    instruction = "";
                     instruction += "1000";
                     instruction += Code.comp(parser.instruction(parser.command()));
                     instruction += Code.dest(parser.instruction(parser.command()));
                     instruction += Code.jump(parser.instruction(parser.command()));
+
+
                 break;
             case A_COMMAND:
+                instruction = "";
                 instruction += "00";
-                instruction += parser.symbol(parser.command());
+                if (table.contains(parser.symbol(parser.command()))){
+                    String transformacao = "";
+                    transformacao += table.getAddress(parser.symbol(parser.command()));
+                    instruction += Code.toBinary(transformacao);
+                }
+                else{
+                    instruction += Code.toBinary(parser.symbol(parser.command()));
+                }
+
+
 
                 break;
             default:
                 continue;
             }
             // Escreve no arquivo .hack a instrução
+
             if(outHACK!=null) {
                 outHACK.println(instruction);
             }
