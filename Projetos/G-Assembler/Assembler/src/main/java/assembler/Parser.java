@@ -111,7 +111,7 @@ public class Parser {
         String command3 = command2.replaceAll("%", "");
         String[] terms = command3.split(" "); // [leaw 0 A]
         String simbolo = terms[1];
-    	return simbolo;
+        return simbolo;
     }
 
     /**
@@ -124,7 +124,7 @@ public class Parser {
         String[] terms = command.split(" ");
         String rotulo = terms[0];
         rotulo = rotulo.replaceAll(":", "");
-    	return rotulo;
+        return rotulo;
     }
 
     /**
@@ -134,9 +134,8 @@ public class Parser {
      * @return um vetor de string contento os tokens da instrução (as partes do comando).
      */
     public String[] instruction(String command) {
-        command = command.replace(","," ");
-        String[] terms = command.split(" ");
-    	return terms;
+        String argumento_para_splitar_a_cada_espaco_em_branco = "[\\s,]+";
+        return command.split( argumento_para_splitar_a_cada_espaco_em_branco) ;
     }
 
 

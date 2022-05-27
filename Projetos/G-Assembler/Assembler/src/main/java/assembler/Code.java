@@ -33,7 +33,7 @@ public class Code {
         String aux;
         switch (mnemnonic[0]){
 
-            case "movw" : 
+            case "movw" :
                 for (int i=2; i<mnemnonic.length;i++){
                     finalDestiny += destine.get(mnemnonic[i]);
                 }
@@ -46,8 +46,8 @@ public class Code {
             case "addw" :
             case "subw" :
             case "rsubw" :
-            case "andw" : 
-            case "orw"  : 
+            case "andw" :
+            case "orw"  :
                 for (int i=3; i<mnemnonic.length;i++){
                     finalDestiny += destine.get(mnemnonic[i]);
                 }
@@ -57,7 +57,7 @@ public class Code {
                     aux = '0' + aux;
                 }
                 return aux;
-            case "incw" : 
+            case "incw" :
             case "decw" :
             case "notw" :
             case "negw" :
@@ -80,86 +80,145 @@ public class Code {
      * @return Opcode (String de 7 bits) com código em linguagem de máquina para a instrução.
      */
     public static String comp(String[] mnemnonic) {
+        String instrucao;
         switch (mnemnonic[0]){
             case "movw":
-                switch (mnemnonic[1]){
+                switch (mnemnonic[1]) {
                     case "%A":
                         return "000110000";
                     case "%D":
                         return "000001100";
                     case "(%A)":
                         return "001110000";
+                    case "$1":
+                        return "000111111";
+                    case "$0":
+                        return "000101010";
                 }
             case "addw":
-                switch (mnemnonic[1]){
-                    case "%A":
+                instrucao = mnemnonic[1] + " " + mnemnonic[2];
+                switch (instrucao) {
+                    case "%A %D":
+                    case "%D %A":
                         return "000000010";
-                    case "(%A)":
+                    case "(%A) %D":
+                    case "%D (%A)":
                         return "001000010";
-                    case "$1":
+                    case "$1 %D":
+                    case "%D $1":
+                        return "000011111";
+                    case "$1 %A":
+                    case "%A $1":
+                        return "000110111";
+                    case "$1 (%A)":
+                    case "(%A) $1":
                         return "001110111";
                 }
             case "incw":
-                switch (mnemnonic[1]){
+                instrucao = mnemnonic[1];
+                switch (instrucao) {
                     case "%A":
                         return "000110111";
-                    case "%D":
-                        return "000011111";
                     case "(%A)":
                         return "001110111";
+                    case "%D":
+                        return "000011111";
                 }
             case "subw":
-                switch (mnemnonic[1]){
-                    case "%D":
+                instrucao = mnemnonic[1] + " " + mnemnonic[2];
+                switch (instrucao) {
+                    case "%A %D":
+                        return "000000111";
+                    case "%D %A":
+                        return "000010011";
+                    case "(%A) %D":
+                        return "001000111";
+                    case "%D (%A)":
                         return "001010011";
-                    case "(%A)":
+                    case "%D $1":
+                        return "000001110";
+                    case "%A $1":
+                        return "000110010";
+                    case "(%A) $1":
                         return "001110010";
                 }
             case "rsubw":
-                return "001000111";
+                instrucao = mnemnonic[2] + " " + mnemnonic[1];
+                switch (instrucao) {
+                    case "%A %D":
+                        return "000000111";
+                    case "%D %A":
+                        return "000010011";
+                    case "(%A) %D":
+                        return "001000111";
+                    case "%D (%A)":
+                        return "001010011";
+                    case "%D $1":
+                        return "000001110";
+                    case "%A $1":
+                        return "000110010";
+                    case "(%A) $1":
+                        return "001110010";
+                }
             case "decw":
-                switch (mnemnonic[1]){
+                instrucao = mnemnonic[1];
+                switch (instrucao) {
                     case "%A":
                         return "000110010";
+                    case "(%A)":
+                        return "001110010";
                     case "%D":
                         return "000001110";
                 }
             case "notw":
-                switch (mnemnonic[1]){
+                instrucao = mnemnonic[1];
+                switch (instrucao) {
                     case "%A":
                         return "000110001";
+                    case "(%A)":
+                        return "001110001";
                     case "%D":
                         return "000001101";
                 }
             case "negw":
-                switch (mnemnonic[1]){
+                instrucao = mnemnonic[1];
+                switch (instrucao) {
                     case "%A":
                         return "000110011";
+                    case "(%A)":
+                        return "001110011";
                     case "%D":
                         return "000001111";
                 }
             case "andw":
-                switch (mnemnonic[1]){
-                    case "(%A)":
-                        return "001000000";
-                    case "%D":
+                instrucao = mnemnonic[1] + " " + mnemnonic[2];
+                switch (instrucao) {
+                    case "%A %D":
+                    case "%D %A":
                         return "000000000";
+                    case "(%A) %D":
+                    case "%D (%A)":
+                        return "001000000";
                 }
             case "orw":
-                switch (mnemnonic[1]){
-                    case "(%A)":
-                        return "001010101";
-                    case "%D":
+                instrucao = mnemnonic[1] + " " + mnemnonic[2];
+                switch (instrucao) {
+                    case "%A %D":
+                    case "%D %A":
                         return "000010101";
+                    case "(%A) %D":
+                    case "%D (%A)":
+                        return "001010101";
                 }
             case "jmp":
-            case "je":
-            case "jne":
             case "jg":
+            case "je":
             case "jge":
             case "jl":
-            case "jle": return "000001100";
-            default: return "";
+            case "jne":
+            case "jle":
+                return "000001100";
+            default: return "000000000";
         }
     }
     /**
