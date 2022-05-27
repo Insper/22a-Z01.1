@@ -10,7 +10,9 @@
 package assembler;
 
 import java.io.*;
-import java.util.Arrays;
+import java.lang.reflect.Array;
+import java.util.ArrayList;
+import java.util.stream.Collectors;
 
 /**
  * Faz a geração do código gerenciando os demais módulos
@@ -38,27 +40,51 @@ public class Assemble {
         table      = new SymbolTable();                          // Cria e inicializa a tabela de simbolos
     }
 
-    public void findMissingNops() throws FileNotFoundException {
-        Parser parser = new Parser(inputFile);
+    public void addMissingNops() throws IOException {
+        BufferedReader reader = new BufferedReader(new FileReader(inputFile));
+        String fileContent = reader.lines().collect(Collectors.joining(System.lineSeparator()));
+        reader.close();
 
-        boolean nextShouldBeNop = false;
-        while (parser.advance()) {
-            String command = parser.command();
-            Parser.CommandType commandType = parser.commandType(command);
+        ArrayList<String> lines = new ArrayList<>();
 
-            if (nextShouldBeNop) {
-                if (command.startsWith("nop")) {
-                    nextShouldBeNop = false;
-                } else {
-                    System.err.println("Um nop é necessário na linha " + parser.lineNumber + " pois a linha anterior é um jump");
-                    throw new Error("Um nop é necessário na linha " + parser.lineNumber + " pois a linha anterior é um jump");
-                }
-            }
-
-            if (commandType == Parser.CommandType.C_COMMAND && command.startsWith("j")) {
-                nextShouldBeNop = true;
-            }
+        for (String l : fileContent.split("\n")) {
+            lines.add(l);
         }
+
+        ArrayList<Integer> nopNeededIndexes = new ArrayList<>();
+        ArrayList<Integer> nopPadding = new ArrayList<>();
+        boolean addNop = false;
+        int index = 0;
+        int offset = 0;
+        int linePadding = 0;
+        for (String line : lines) {
+            line = line.trim();
+
+            if (addNop) {
+                if (!line.startsWith("nop")) {
+                    nopNeededIndexes.add(index + offset);
+                    offset++;
+                }
+                addNop = false;
+            } else if (line.length() > 0 && line.charAt(0) == 'j') {
+                nopPadding.add(linePadding);
+                addNop = true;
+            }
+
+            linePadding = line.indexOf(line.trim());
+            index++;
+        }
+
+        int count = 0;
+        for (int ind : nopNeededIndexes) {
+            System.out.println("Um nop faltante será adicionado automaticamente à linha " + ind + " pois a linha anterior é um jump");
+            lines.add(ind, " ".repeat(nopPadding.get(count)) + "nop");
+            count++;
+        }
+
+        BufferedWriter writer = new BufferedWriter(new FileWriter(inputFile));
+        writer.write(String.join("\n", lines));
+        writer.close();
     }
 
     /**
