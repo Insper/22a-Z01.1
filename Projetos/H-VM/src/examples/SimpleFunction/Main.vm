@@ -1,0 +1,6 @@
+function Main.main 0
+	push constant 1
+	push constant 2
+	call SimpleFunction 2
+  label loop
+  goto loop
