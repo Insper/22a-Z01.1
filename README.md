@@ -1,4 +1,4 @@
-#Importate: o rtl do Ram4k nn foi possível de ser gerado após multiplas tentavivas de compilação
+
 
 
 
