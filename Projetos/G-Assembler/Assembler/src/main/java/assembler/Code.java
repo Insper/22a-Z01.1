@@ -58,6 +58,7 @@ public class Code {
                             }
                     }
                 }
+
             case "addw":
                 switch (mnemnonic[3]) {
                     case "(%A)":
@@ -192,35 +193,40 @@ public class Code {
                             case "%D":
                                 return "001110000";
                         }
+                    case "$1":
+                        return "000111111";
+                    case "$0":
+                        return "000101010";
                 }
 
             case "addw":
-                switch (mnemnonic[1]) {
-
-                    case "%A":
-                        switch (mnemnonic[2]) {
-                            case "%D":
-                                switch (mnemnonic[3]) {
-                                    case "%D":
-                                        return "000000010";
-                                }
-                        }
-                    case "(%A)":
-                        switch (mnemnonic[2]) {
-                            case "%D":
-                                switch (mnemnonic[3]) {
-                                    case "%D":
-                                        return "001000010";
-                                }
-                        }
-                    case "$1":
-                        switch (mnemnonic[2]) {
-                            case "(%A)":
-                                switch (mnemnonic[3]) {
-                                    case "%D":
-                                        return "001110111";
-                                }
-                        }
+                if(mnemnonic.length == 4) {
+                    switch (mnemnonic[1]) {
+                        case "%A":
+                            switch (mnemnonic[2]) {
+                                case "%D":
+                                    switch (mnemnonic[3]) {
+                                        case "%D":
+                                            return "000000010";
+                                    }
+                            }
+                        case "(%A)":
+                            switch (mnemnonic[2]) {
+                                case "%D":
+                                    switch (mnemnonic[3]) {
+                                        case "%D":
+                                            return "001000010";
+                                    }
+                            }
+                        case "$1":
+                            switch (mnemnonic[2]) {
+                                case "(%A)":
+                                    switch (mnemnonic[3]) {
+                                        case "%D":
+                                            return "001110111";
+                                    }
+                            }
+                    }
                 }
 
             case "incw":
@@ -290,24 +296,25 @@ public class Code {
                 }
 
             case "andw":
-                switch (mnemnonic[1]) {
-                    case "(%A)":
-                        switch (mnemnonic[2]) {
-                            case "%D":
-                                switch (mnemnonic[3]) {
-                                    case "%D":
-                                        return "001000000";
-                                }
-                        }
-                    case "%D":
-                        switch (mnemnonic[2]) {
-                            case "%A":
-                                switch (mnemnonic[3]) {
-                                    case "%A":
-                                        return "000000000";
-                                }
-                        }
-                }
+                    switch (mnemnonic[1]) {
+                        case "(%A)":
+                            switch (mnemnonic[2]) {
+                                case "%D":
+                                    return "001000000";
+                            }
+
+                        case "%D":
+                            switch (mnemnonic[2]) {
+                                case "%A":
+                                    return "000000000";
+                            }
+                        case "%A":
+                            switch (mnemnonic[2]) {
+                                case "%D":
+                                    return "000000000";
+                            }
+                    }
+
 
             case "orw":
                 switch (mnemnonic[1]) {

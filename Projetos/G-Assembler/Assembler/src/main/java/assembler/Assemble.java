@@ -117,7 +117,7 @@ public class Assemble {
                 /* TODO: implementar */
                 case C_COMMAND:
                     instruction = "";
-                    instruction += "1000";
+                    instruction += "10";
                     instruction += Code.comp(parser.instruction(parser.command()));
                     instruction += Code.dest(parser.instruction(parser.command()));
                     instruction += Code.jump(parser.instruction(parser.command()));

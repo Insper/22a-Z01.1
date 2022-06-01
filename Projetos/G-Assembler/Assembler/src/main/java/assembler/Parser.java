@@ -10,6 +10,7 @@ import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 /**
@@ -158,22 +159,6 @@ public class Parser {
      * @return um vetor de string contento os tokens da instrução (as partes do comando).
      */
     public String[] instruction(String command) {
-        String palavra = new String("");
-        List<String> lista = new ArrayList<String>();
-        for (char i : command.toCharArray()) {
-            if (i == ',' || i == ' '){
-                lista.add(palavra);
-                palavra = "";
-            }
-            else{
-                palavra = palavra + i;
-            }
-        }
-        lista.add(palavra);
-        String[] instrucao = new String[lista.size()];
-        lista.toArray(instrucao);
-        return instrucao;
+        return command.split("[, ]+");
     }
-
-
 }

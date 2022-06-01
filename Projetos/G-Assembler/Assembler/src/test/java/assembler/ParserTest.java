@@ -151,7 +151,7 @@ ParserTest {
     	
         try {
     	
-            assertTrue("leaw $0,%A",Arrays.equals(parser.instruction("leaw $0,%A"),new String[] {"leaw","$0","%A"}));
+            assertTrue("leaw $0,%A",Arrays.equals(parser.instruction("leaw $0, %A"),new String[] {"leaw","$0","%A"}));
             assertTrue("leaw $i,%A",Arrays.equals(parser.instruction("leaw $i,%A"),new String[] {"leaw","$i","%A"}));
             assertTrue("leaw $LOOP,%A",Arrays.equals(parser.instruction("leaw $LOOP,%A"),new String[] {"leaw","$LOOP","%A"}));
             assertTrue("leaw $12345,%A",Arrays.equals(parser.instruction("leaw $12345,%A"),new String[] {"leaw","$12345","%A"}));
