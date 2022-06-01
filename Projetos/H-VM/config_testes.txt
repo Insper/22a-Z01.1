@@ -4,10 +4,10 @@
 
 #1a-Add.vm 1 400
 #1b-Calc.vm 1 400
-1c-loop.vm 1 10000
+#1c-loop.vm 1 10000
 #1c-Div.vm 1 8000
 #2b-Calculadora.vm 1 4000
-#2c-Calculadora.vm 1 4000
+2c-Calculadora.vm 1 4000
 #2d-Calculadora.vm 1 4000
 
 ###--------------------
