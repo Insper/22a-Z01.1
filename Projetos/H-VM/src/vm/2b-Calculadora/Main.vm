@@ -23,6 +23,15 @@
 // ---------------------------------
 
 function Main.main 0
+  push constant 14
+  push constant 2
+  add
+  push constant 8
+  push constant 1
+  sub
+  call mult 2
+  pop temp 1
+
 
 
 
