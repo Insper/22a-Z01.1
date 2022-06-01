@@ -18,7 +18,8 @@
 function Main.main 0
 
 
-
+call LoopFunction 0
+pop temp 3
 // esse loop sempre deve existir!
 // caso contrario o computador vai
 // executar lixo de memoria.
