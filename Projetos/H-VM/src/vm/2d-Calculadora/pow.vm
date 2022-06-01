@@ -19,5 +19,6 @@ function pow 3
     push constant 0
     gt
     if-goto LOOP_START
+    
     push local 1
     return
