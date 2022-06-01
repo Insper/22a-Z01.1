@@ -1,23 +1,25 @@
-function Div 2
+function Div 3
 	push constant 0
+	pop local 2
+	push argument 0
 	pop local 0
 	push argument 1
-	pop local 1  
+	pop local 1
 label loop
-	push constant 0
+	push local 0
 	push local 1
-	eq
+	lt
 	if-goto end
 	push local 0
-	push argument 0
+	push local 1
 	sub
 	pop local 0
-	push local 1
 	push constant 1
+	push local 2
 	add
-	pop local 1
+	pop local 2
 	goto loop
 label end
-	push local 0
+	push local 2
 	return
 

@@ -1,0 +1,16 @@
+function LoopFunction 1
+  push constant 0
+  pop local 0
+  label loop
+    push constant 55
+    push local 0
+    eq
+    if-goto end
+    push constant 1
+    push local 0
+    add
+    pop local 0
+    goto loop
+  label end
+    push local 0
+    return 
