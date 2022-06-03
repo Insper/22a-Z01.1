@@ -1,0 +1,4 @@
+// Pushes and adds two constants.
+push this 0
+push this 1
+push this 2
