@@ -10,6 +10,11 @@
 
 function Main.main 0
 
+push constant 123
+push constant 23
+add
+pop temp 0
+
 
 // esse loop sempre deve existir!
 // caso contrario o computador vai
