@@ -1,0 +1,9 @@
+// Pop values to temp.
+pop temp 7
+pop temp 6
+pop temp 5
+pop temp 4
+pop temp 3
+pop temp 2
+pop temp 1
+pop temp 0
