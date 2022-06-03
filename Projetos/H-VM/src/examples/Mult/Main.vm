@@ -1,0 +1,9 @@
+function Main.main 0
+	push constant 7
+	push constant 2
+	add
+	push constant 3
+	call mult 2
+	label END
+	goto END
+
