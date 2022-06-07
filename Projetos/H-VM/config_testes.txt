@@ -1,0 +1,49 @@
+##--------------------
+## Entrega 
+##--------------------
+
+1a-Add.vm 1 400
+#1b-Calc.vm 1 400
+#1c-loop.vm 1 10000
+#1c-Div.vm 1 8000
+#2b-Calculadora.vm 1 4000
+#2c-Calculadora.vm 1 4000
+#2d-Calculadora.vm 1 4000
+
+###--------------------
+### EXMPLOS: /srcExamples
+###  - funcoes aritmeticas
+###  - push/pop
+###  - parser
+###--------------------
+#SimplePushConst.vm 1 300
+#SimplePushLocal.vm 1 300
+#SimplePushTemp.vm 1 300
+#SimplePushThat.vm 1 300
+#SimplePushThis.vm 1 300
+#
+#SimplePopLocal.vm 1 300
+#SimplePopPointer.vm 1 300
+#SimplePopTemp.vm 1 300
+#SimplePopThat.vm 1 300
+#SimplePopThis.vm 1 300
+#
+#SimpleAdd.vm 1 300
+#SimpleAnd.vm 1 300
+#SimpleNeg.vm 1 300
+#SimpleOr.vm 1 300
+#SimpleSub.vm 1 300
+#
+#SimplePushAdd.vm 1 300
+#SimplePushArg.vm 1 300
+#
+#SimpleEq.vm 3 300
+#SimpleGoto.vm 1 300
+#SimpleGt.vm 3 300
+#SimpleIfGoto.vm 1 300
+#SimpleLt.vm 1 300
+#
+#StackTest.vm 1 3000
+#StaticsTest.vm 1 3000
+#SimpleFunction.vm 1 300
+#Mult.vm 1 4000
