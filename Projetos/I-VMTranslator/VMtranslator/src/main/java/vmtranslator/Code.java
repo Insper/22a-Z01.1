@@ -108,13 +108,66 @@ public class Code {
             if (segment.equals("constant")) {
                 Error.error("Não faz sentido POP com constant");
             } else if (segment.equals("local")) {
+                commands.add("leaw $0,%A");
+                commands.add("movw (%A),%A");
+                commands.add("movw (%A),%D");//movendo o que esta no topo da pilha para D
+
+                commands.add("leaw $1,%A"); // movendo primeiro endereco do local para A
+                commands.add("movw (%A),%A");
+                commands.add("addw %A,$"+index+",%A");
+                commands.add("movw %D,(%A)");
+
+                //incrementa SP
+                commands.add("leaw $0,%A");
+                commands.add("movw (%A),%D");
+                commands.add("incw %D");
+                commands.add("movw %D,(%A)");
 
             } else if (segment.equals("argument")) {
+                commands.add("leaw $0,%A");
+                commands.add("movw (%A),%A");
+                commands.add("movw (%A),%D");//movendo o que esta no topo da pilha para D
 
+                commands.add("leaw $2,%A"); // movendo primeiro endereco do local para A
+                commands.add("movw (%A),%A");
+                commands.add("addw %A,$"+index+",%A");
+                commands.add("movw %D,(%A)");
+
+                //incrementa SP
+                commands.add("leaw $0,%A");
+                commands.add("movw (%A),%D");
+                commands.add("incw %D");
+                commands.add("movw %D,(%A)");
             } else if (segment.equals("this")) {
+                commands.add("leaw $0,%A");
+                commands.add("movw (%A),%A");
+                commands.add("movw (%A),%D");//movendo o que esta no topo da pilha para D
 
+                commands.add("leaw $3,%A"); // movendo primeiro endereco do local para A
+                commands.add("movw (%A),%A");
+                commands.add("addw %A,$"+index+",%A");
+                commands.add("movw %D,(%A)");
+
+                //incrementa SP
+                commands.add("leaw $0,%A");
+                commands.add("movw (%A),%D");
+                commands.add("incw %D");
+                commands.add("movw %D,(%A)");
             } else if (segment.equals("that")) {
+                commands.add("leaw $0,%A");
+                commands.add("movw (%A),%A");
+                commands.add("movw (%A),%D");//movendo o que esta no topo da pilha para D
 
+                commands.add("leaw $4,%A"); // movendo primeiro endereco do local para A
+                commands.add("movw (%A),%A");
+                commands.add("addw %A,$"+index+",%A");
+                commands.add("movw %D,(%A)");
+
+                //incrementa SP
+                commands.add("leaw $0,%A");
+                commands.add("movw (%A),%D");
+                commands.add("incw %D");
+                commands.add("movw %D,(%A)");
             } else if (segment.equals("static")) {
 
             } else if (segment.equals("temp")) {
@@ -130,24 +183,126 @@ public class Code {
             commands.add(String.format("; %d - PUSH %s %d", lineCode++ ,segment, index));
 
             if (segment.equals("constant")) {
-
+                //carrega o valor da constante em D
+                commands.add("leaw $"+index+", %A");
+                commands.add("leaw %A,%D");
+                //move D para o topo da pilha
+                commands.add("leaw $0,%A");
+                commands.add("movw (%A),%A");
+                commands.add("movw %D,(%A)");
+                //incrementa SP
+                commands.add("leaw $0,%A");
+                commands.add("movw (%A),%D");
+                commands.add("incw %D");
+                commands.add("movw %D,(%A)");
             } else if (segment.equals("local")) {
 
+                commands.add("leaw $1,%A"); //pegando posicao do primeiro local na pilha
+                commands.add("movw (%A),%D");
+                commands.add("leaw $"+index+",%A");
+                commands.add("addw %A,%D,%A"); // somando o index com a posicao do local 0 na pilha
+                commands.add("movw (%A),%D");
+                //move D para o topo da pilha
+                commands.add("leaw $0,%A");
+                commands.add("movw (%A),%A");
+                commands.add("movw %D,(%A)");
+                //incrementa SP
+                commands.add("leaw $0,%A");
+                commands.add("movw (%A),%D");
+                commands.add("incw %D");
+                commands.add("movw %D,(%A)");
+
             } else if (segment.equals("argument")) {
-
+                commands.add("leaw $2,%A"); //pegando posicao do primeiro arg na pilha
+                commands.add("movw (%A),%D");
+                commands.add("leaw $"+index+",%A");
+                commands.add("addw %A,%D,%A"); // somando o index com a posicao do local 0 na pilha
+                commands.add("movw (%A),%D");
+                //move D para o topo da pilha
+                commands.add("leaw $0,%A");
+                commands.add("movw (%A),%A");
+                commands.add("movw %D,(%A)");
+                //incrementa SP
+                commands.add("leaw $0,%A");
+                commands.add("movw (%A),%D");
+                commands.add("incw %D");
+                commands.add("movw %D,(%A)");
             } else if (segment.equals("this")) {
-
+                commands.add("leaw $3,%A"); //pegando posicao do primeiro this na pilha
+                commands.add("movw (%A),%D");
+                commands.add("leaw $"+index+",%A");
+                commands.add("addw %A,%D,%A"); // somando o index com a posicao do this 0 na pilha
+                commands.add("movw (%A),%D");
+                //move D para o topo da pilha
+                commands.add("leaw $0,%A");
+                commands.add("movw (%A),%A");
+                commands.add("movw %D,(%A)");
+                //incrementa SP
+                commands.add("leaw $0,%A");
+                commands.add("movw (%A),%D");
+                commands.add("incw %D");
+                commands.add("movw %D,(%A)");
             } else if (segment.equals("that")) {
-
+                commands.add("leaw $4,%A"); //pegando posicao do primeiro that na pilha
+                commands.add("movw (%A),%D");
+                commands.add("leaw $"+index+",%A");
+                commands.add("addw %A,%D,%A"); // somando o index com a posicao do that 0 na pilha
+                commands.add("movw (%A),%D");
+                //move D para o topo da pilha
+                commands.add("leaw $0,%A");
+                commands.add("movw (%A),%A");
+                commands.add("movw %D,(%A)");
+                //incrementa SP
+                commands.add("leaw $0,%A");
+                commands.add("movw (%A),%D");
+                commands.add("incw %D");
+                commands.add("movw %D,(%A)");
             } else if (segment.equals("static")) {
-
+                commands.add("leaw $16,%A"); //pegando posicao do primeiro static
+                commands.add("leaw $"+index+",%A");
+                commands.add("addw %A,%D,%A"); // somando o index com a posicao do static 0 na pilha
+                commands.add("movw (%A),%D");
+                //move D para o topo da pilha
+                commands.add("leaw $0,%A");
+                commands.add("movw (%A),%A");
+                commands.add("movw %D,(%A)");
+                //incrementa SP
+                commands.add("leaw $0,%A");
+                commands.add("movw (%A),%D");
+                commands.add("incw %D");
+                commands.add("movw %D,(%A)");
             } else if (segment.equals("temp")) {
-
+                commands.add("leaw $5,%A"); //pegando posicao do primeiro temp na pilha
+                commands.add("leaw $"+index+",%A");
+                commands.add("addw %A,%D,%A"); // somando o index com a posicao do temp 0 na pilha
+                commands.add("movw (%A),%D");
+                //move D para o topo da pilha
+                commands.add("leaw $0,%A");
+                commands.add("movw (%A),%A");
+                commands.add("movw %D,(%A)");
+                //incrementa SP
+                commands.add("leaw $0,%A");
+                commands.add("movw (%A),%D");
+                commands.add("incw %D");
+                commands.add("movw %D,(%A)");
             } else if (segment.equals("pointer")) {
-                if(index==0) {
+                if(index==0) { // IMPLEMENTAR E VER SE O RESTO DA LOGICA ESTA CERTO
 
                 } else {
-
+                    commands.add("leaw $0,%A"); //pegando posicao do pointer na pilha
+                    commands.add("movw (%A),%D");
+                    commands.add("leaw $"+index+",%A");
+                    commands.add("addw %A,%D,%A"); // somando o index com a posicao do pointer na pilha
+                    commands.add("movw (%A),%D"); //salvando o que esta guardado na posicao do pointer + index em D
+                    //move D para o topo da pilha
+                    commands.add("leaw $0,%A");
+                    commands.add("movw (%A),%A");
+                    commands.add("movw %D,(%A)");
+                    //incrementa SP
+                    commands.add("leaw $0,%A");
+                    commands.add("movw (%A),%D");
+                    commands.add("incw %D");
+                    commands.add("movw %D,(%A)");
                 }
             }
         }
