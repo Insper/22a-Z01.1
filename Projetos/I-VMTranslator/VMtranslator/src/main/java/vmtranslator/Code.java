@@ -287,7 +287,6 @@ public class Code {
      * @param  index índice do segkento de memória a ser usado pelo comando.
      */
     public void writePushPop(Parser.CommandType command, String segment, Integer index) {
-
         if ( command.equals("")) {
             Error.error("Instrução invalida");
         }
@@ -300,53 +299,344 @@ public class Code {
             if (segment.equals("constant")) {
                 Error.error("Não faz sentido POP com constant");
             } else if (segment.equals("local")) {
+                //atualiza SP
+                commands.add("leaw $0, %A");
+                commands.add("movw (%A), %D");
+                commands.add("decw %D");
+                commands.add("movw %D, (%A)");
+
+                //carrega valor do local
+                commands.add("leaw $" + index + " %A");
+                commands.add("movw %A, %D");
+
+                //acessa endereço local
+                commands.add("leaw $1, %A");
+                commands.add("movw (%A), %A");
+                commands.add("addw %A %D, %D");
+
+                //salvando endereço local em temp0
+                commands.add("leaw $5, %A");
+                commands.add("movw %D, (%A)");
+
+                //Carrega em %D valor que quer salvar
+                commands.add("leaw $0, %A");
+                commands.add("movw (%A), %A");
+                commands.add("movw (%A), %D");
+                
+                //Armazena valor no local desejado
+                commands.add("leaw $5, %A");
+                commands.add("movw (%A), %A");
+                commands.add("movw %D, (%A)");
+
+
+            
 
             } else if (segment.equals("argument")) {
+                //atualiza SP
+                commands.add("leaw $0, %A");
+                commands.add("movw (%A), %D");
+                commands.add("decw %D");
+                commands.add("movw %D, (%A)");
+
+                //carrega valor do arg
+                commands.add("leaw $" + index + " %A");
+                commands.add("movw %A, %D");
+
+                //acessa endereço arg
+                commands.add("leaw $2, %A");
+                commands.add("movw (%A), %A");
+                commands.add("addw %A %D, %D");
+
+                //salvando endereço arg em temp0
+                commands.add("leaw $5, %A");
+                commands.add("movw %D, (%A)");
+
+                //Carrega em %D valor que quer salvar
+                commands.add("leaw $0, %A");
+                commands.add("movw (%A), %A");
+                commands.add("movw (%A), %D");
+                
+                //Armazena valor no arg desejado
+                commands.add("leaw $5, %A");
+                commands.add("movw (%A), %A");
+                commands.add("movw %D, (%A)");
 
             } else if (segment.equals("this")) {
+                //atualiza SP
+                commands.add("leaw $0, %A");
+                commands.add("movw (%A), %D");
+                commands.add("decw %D");
+                commands.add("movw %D, (%A)");
+
+                //carrega valor do this
+                commands.add("leaw $" + index + " %A");
+                commands.add("movw %A, %D");
+
+                //acessa endereço this
+                commands.add("leaw $3, %A");
+                commands.add("movw (%A), %A");
+                commands.add("addw %A %D, %D");
+
+                //salvando endereço this em temp0
+                commands.add("leaw $5, %A");
+                commands.add("movw %D, (%A)");
+
+                //Carrega em %D valor que quer salvar
+                commands.add("leaw $0, %A");
+                commands.add("movw (%A), %A");
+                commands.add("movw (%A), %D");
+                
+                //Armazena valor no this desejado
+                commands.add("leaw $5, %A");
+                commands.add("movw (%A), %A");
+                commands.add("movw %D, (%A)");
 
             } else if (segment.equals("that")) {
+                //atualiza SP
+                commands.add("leaw $0, %A");
+                commands.add("movw (%A), %D");
+                commands.add("decw %D");
+                commands.add("movw %D, (%A)");
+
+                //carrega valor do that
+                commands.add("leaw $" + index + " %A");
+                commands.add("movw %A, %D");
+
+                //acessa endereço that
+                commands.add("leaw $4, %A");
+                commands.add("movw (%A), %A");
+                commands.add("addw %A %D, %D");
+
+                //salvando endereço that em temp0
+                commands.add("leaw $5, %A");
+                commands.add("movw %D, (%A)");
+
+                //Carrega em %D valor que quer salvar
+                commands.add("leaw $0, %A");
+                commands.add("movw (%A), %A");
+                commands.add("movw (%A), %D");
+                
+                //Armazena valor no that desejado
+                commands.add("leaw $5, %A");
+                commands.add("movw (%A), %A");
+                commands.add("movw %D, (%A)");
 
             } else if (segment.equals("static")) {
+                //atualiza SP
+                commands.add("leaw $0, %A");
+                commands.add("movw (%A), %D");
+                commands.add("decw %D");
+                commands.add("movw %D, (%A)");
+
+                //Carrega em %D valor que quer salvar
+                commands.add("leaw $0, %A");
+                commands.add("movw (%A), %A");
+                commands.add("movw (%A), %D");
+
+                Integer address = index + 16;
+                //carrega valor do static
+                commands.add("leaw $" + address + " %A");
+                commands.add("movw %D, (%A)");
 
             } else if (segment.equals("temp")) {
+                //atualiza SP
+                commands.add("leaw $0, %A");
+                commands.add("movw (%A), %D");
+                commands.add("decw %D");
+                commands.add("movw %D, (%A)");
+
+                //Carrega em %D valor que quer salvar
+                commands.add("leaw $0, %A");
+                commands.add("movw (%A), %A");
+                commands.add("movw (%A), %D");
+
+                Integer address = index + 5;
+                //carrega valor do temp
+                commands.add("leaw $" + address + " %A");
+                commands.add("movw %D, (%A)");
 
             } else if (segment.equals("pointer")) {
+                //atualiza SP
+                commands.add("leaw $0, %A");
+                commands.add("movw (%A), %D");
+                commands.add("decw %D");
+                commands.add("movw %D, (%A)");
+
+                //Carrega em %D valor que quer salvar
+                commands.add("leaw $0, %A");
+                commands.add("movw (%A), %A");
+                commands.add("movw (%A), %D");
                 if(index==0) {
+                    //armazena em THIS
+                    commands.add("leaw $3, %A");
 
                 } else {
+                    //armazena em THAT
+                    commands.add("leaw $4, %A");
 
                 }
+                commands.add("movw %D, (%A)");
             }
         } else if (command == Parser.CommandType.C_PUSH) {
             commands.add(String.format("; %d - PUSH %s %d", lineCode++ ,segment, index));
 
             if (segment.equals("constant")) {
+                //carrega valor da constante
+                commands.add("leaw $" + index + " %A");
+                commands.add("movw %A, %D");
+                //busca stack vazia
+                commands.add("leaw $0, %A");
+                commands.add("movw (%A), %A");
+                commands.add("movw %D, (%A)");
 
+                //incrementa SP
+                commands.add("addw $1, %A, %D");
+                commands.add("leaw $0, %A");
+                commands.add("movw %D, (%A)");
             } else if (segment.equals("local")) {
+                //carrega valor do local
+                commands.add("leaw $" + index + " %A");
+                commands.add("movw %A, %D");
+
+                //acessa endereço local
+                commands.add("leaw $1, %A");
+                commands.add("movw (%A), %A");
+                commands.add("addw %A %D, %A");
+
+                commands.add("movw (%A), %D");
+
+                //busca stack vazia
+                commands.add("leaw $0, %A");
+                commands.add("movw (%A), %A");
+                commands.add("movw %D, (%A)");
+
+                //incrementa SP
+                commands.add("addw $1, %A, %D");
+                commands.add("leaw $0, %A");
+                commands.add("movw %D, (%A)");
 
             } else if (segment.equals("argument")) {
+                //carrega valor do argumento
+                commands.add("leaw $" + index + " %A");
+                commands.add("movw %A, %D");
+
+                //acessa endereço argumento
+                commands.add("leaw $2, %A");
+                commands.add("movw (%A), %A");
+                commands.add("addw %A %D, %A");
+
+                commands.add("movw (%A), %D");
+
+                //busca stack vazia
+                commands.add("leaw $0, %A");
+                commands.add("movw (%A), %A");
+                commands.add("movw %D, (%A)");
+
+                //incrementa SP
+                commands.add("addw $1, %A, %D");
+                commands.add("leaw $0, %A");
+                commands.add("movw %D, (%A)");
 
             } else if (segment.equals("this")) {
+                //carrega valor do this
+                commands.add("leaw $" + index + " %A");
+                commands.add("movw %A, %D");
+
+                //acessa endereço this
+                commands.add("leaw $3, %A");
+                commands.add("movw (%A), %A");
+                commands.add("addw %A %D, %A");
+
+                commands.add("movw (%A), %D");
+
+                //busca stack vazia
+                commands.add("leaw $0, %A");
+                commands.add("movw (%A), %A");
+                commands.add("movw %D, (%A)");
+
+                //incrementa SP
+                commands.add("addw $1, %A, %D");
+                commands.add("leaw $0, %A");
+                commands.add("movw %D, (%A)");
 
             } else if (segment.equals("that")) {
+                //carrega valor do that
+                commands.add("leaw $" + index + " %A");
+                commands.add("movw %A, %D");
+
+                //acessa endereço that
+                commands.add("leaw $4, %A");
+                commands.add("movw (%A), %A");
+                commands.add("addw %A %D, %A");
+
+                commands.add("movw (%A), %D");
+
+                //busca stack vazia
+                commands.add("leaw $0, %A");
+                commands.add("movw (%A), %A");
+                commands.add("movw %D, (%A)");
+
+                //incrementa SP
+                commands.add("addw $1, %A, %D");
+                commands.add("leaw $0, %A");
+                commands.add("movw %D, (%A)");
 
             } else if (segment.equals("static")) {
+                Integer address = index + 16;
+
+                //carrega valor do static
+                commands.add("leaw $" + address + " %A");
+                commands.add("movw (%A), %D");
+
+                //busca stack vazia
+                commands.add("leaw $0, %A");
+                commands.add("movw (%A), %A");
+                commands.add("movw %D, (%A)");
+
+                //incrementa SP
+                commands.add("addw $1, %A, %D");
+                commands.add("leaw $0, %A");
+                commands.add("movw %D, (%A)");
 
             } else if (segment.equals("temp")) {
+                Integer address = index + 5;
+                //carrega valor do temp
+                commands.add("leaw $" + address + " %A");
+                commands.add("movw (%A), %D");
+
+                //busca stack vazia
+                commands.add("leaw $0, %A");
+                commands.add("movw (%A), %A");
+                commands.add("movw %D, (%A)");
+
+                //incrementa SP
+                commands.add("addw $1, %A, %D");
+                commands.add("leaw $0, %A");
+                commands.add("movw %D, (%A)");
 
             } else if (segment.equals("pointer")) {
                 if(index==0) {
+                    //carrega THIS
+                    commands.add("leaw $3, %A");
 
                 } else {
-
+                    //carrega THAT
+                    commands.add("leaw $4, %A");
                 }
+                //armazena valor em %D
+                commands.add("movw (%A), %D");
+                
+                //busca stack vazia
+                commands.add("leaw $0, %A");
+                commands.add("movw (%A), %A");
+                commands.add("movw %D, (%A)");
+
+                //incrementa SP
+                commands.add("addw $1, %A, %D");
+                commands.add("leaw $0, %A");
+                commands.add("movw %D, (%A)");
             }
         }
-
-        String[] stringArray = new String[ commands.size() ];
-        commands.toArray( stringArray );
-        write(stringArray);
 
     }
 
