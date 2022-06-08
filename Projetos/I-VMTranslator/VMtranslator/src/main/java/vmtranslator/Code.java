@@ -72,20 +72,151 @@ public class Code {
         } else if (command.equals("neg")) {
             commands.add(String.format("; %d - NEG", lineCode++));
             commands.add("leaw $0, %A");
-            commands.add("movw (%A), %A");
-            commands.add("negw (%A), %D");
+            commands.add("movw (%A), %D");
+            commands.add("decw %D");
+            commands.add("movw %D, %A");
+            //Salva em A o endereco SP - 1
+            commands.add("movw (%A), %D");
+            commands.add("negw %D");
             commands.add("movw %D, (%A)");
             commands.add("addw $1, %A, %D");
             commands.add("leaw $0, %A");
             commands.add("movw %D, (%A)");
+
         } else if (command.equals("eq")) {
             commands.add(String.format("; %d - EQ", lineCode++));
+            commands.add("leaw $0, %A");
+            commands.add("movw (%A), %A");
+            commands.add("decw %A");
+            commands.add("movw (%A), %D");
+            commands.add("decw %A");
+            commands.add("subw (%A), %D, %D");
+            commands.add("leaw $EQ, %A");
+            commands.add("je %D");
+            commands.add("nop");
+
+            commands.add("leaw $0, %A");
+            commands.add("movw %A, %D");
+            // D = 0
+            commands.add("movw (%A), %A");
+            commands.add("decw %A");
+            commands.add("decw %A");
+            //A = endereco SP - 2
+            commands.add("movw %D, (%A)");
+            commands.add("leaw $END, %A");
+            commands.add("jmp");
+            commands.add("nop");
+
+            commands.add("EQ:");
+            commands.add("leaw $1, %A");
+            commands.add("negw %A");
+            commands.add("movw %A, %D");
+            // D = -1
+            commands.add("leaw $0, %A");
+            commands.add("movw (%A), %A");
+            commands.add("decw %A");
+            commands.add("decw %A");
+            //A = endereco SP - 2
+            commands.add("movw %D, (%A)");
+            commands.add("END:");
+
+            commands.add("leaw $0, %A");
+            commands.add("movw (%A), %A");
+            commands.add("decw %A");
+            commands.add("decw %A");
+            commands.add("addw $1, %A, %D");
+            commands.add("leaw $0, %A");
+            commands.add("movw %D, (%A)");
 
         } else if (command.equals("gt")) {
             commands.add(String.format("; %d - GT", lineCode++));
+            commands.add("leaw $0, %A");
+            commands.add("movw (%A), %A");
+            commands.add("decw %A");
+            commands.add("movw (%A), %D");
+            commands.add("decw %A");
+            commands.add("subw (%A), %D, %D");
+            commands.add("leaw $EQ, %A");
+            commands.add("jg %D");
+            commands.add("nop");
+
+            commands.add("leaw $0, %A");
+            commands.add("movw %A, %D");
+            // D = 0
+            commands.add("movw (%A), %A");
+            commands.add("decw %A");
+            commands.add("decw %A");
+            //A = endereco SP - 2
+            commands.add("movw %D, (%A)");
+            commands.add("leaw $END, %A");
+            commands.add("jmp");
+            commands.add("nop");
+
+            commands.add("EQ:");
+            commands.add("leaw $1, %A");
+            commands.add("negw %A");
+            commands.add("movw %A, %D");
+            // D = -1
+            commands.add("leaw $0, %A");
+            commands.add("movw (%A), %A");
+            commands.add("decw %A");
+            commands.add("decw %A");
+            //A = endereco SP - 2
+            commands.add("movw %D, (%A)");
+            commands.add("END:");
+
+            commands.add("leaw $0, %A");
+            commands.add("movw (%A), %A");
+            commands.add("decw %A");
+            commands.add("decw %A");
+            commands.add("addw $1, %A, %D");
+            commands.add("leaw $0, %A");
+            commands.add("movw %D, (%A)");
 
         } else if (command.equals("lt")) {
             commands.add(String.format("; %d - LT", lineCode++));
+            commands.add("leaw $0, %A");
+            commands.add("movw (%A), %A");
+            commands.add("decw %A");
+            commands.add("movw (%A), %D");
+            commands.add("decw %A");
+            commands.add("subw (%A), %D, %D");
+            commands.add("leaw $EQ, %A");
+            commands.add("jl %D");
+            commands.add("nop");
+
+            commands.add("leaw $0, %A");
+            commands.add("movw %A, %D");
+            // D = 0
+            commands.add("movw (%A), %A");
+            commands.add("decw %A");
+            commands.add("decw %A");
+            //A = endereco SP - 2
+            commands.add("movw %D, (%A)");
+            commands.add("leaw $END, %A");
+            commands.add("jmp");
+            commands.add("nop");
+
+            commands.add("EQ:");
+            commands.add("leaw $1, %A");
+            commands.add("negw %A");
+            commands.add("movw %A, %D");
+            // D = -1
+            commands.add("leaw $0, %A");
+            commands.add("movw (%A), %A");
+            commands.add("decw %A");
+            commands.add("decw %A");
+            //A = endereco SP - 2
+            commands.add("movw %D, (%A)");
+            commands.add("END:");
+
+            commands.add("leaw $0, %A");
+            commands.add("movw (%A), %A");
+            commands.add("decw %A");
+            commands.add("decw %A");
+            commands.add("addw $1, %A, %D");
+            commands.add("leaw $0, %A");
+            commands.add("movw %D, (%A)");
 
         } else if (command.equals("and")) {
             commands.add(String.format("; %d - AND", lineCode++));
@@ -114,6 +245,18 @@ public class Code {
             commands.add("movw %D, (%A)");
 
         } else if (command.equals("not")) {
+            commands.add(String.format("; %d - NOT", lineCode++));
+            commands.add("leaw $0, %A");
+            commands.add("movw (%A), %D");
+            commands.add("decw %D");
+            commands.add("movw %D, %A");
+            //Salva em A o endereco SP - 1
+            commands.add("movw (%A), %D");
+            commands.add("notw %D");
+            commands.add("movw %D, (%A)");
+            commands.add("addw $1, %A, %D");
+            commands.add("leaw $0, %A");
+            commands.add("movw %D, (%A)");
 
         }
 
@@ -148,10 +291,6 @@ public class Code {
                 commands.add("leaw %1, %A");
                 commands.add("addw (%A), %D, %D");
                 commands.add("movw %A, %D");
-
-
-
-
 
                 commands.add("leaw $0, %A");
                 commands.add("movw (%A), %A");
