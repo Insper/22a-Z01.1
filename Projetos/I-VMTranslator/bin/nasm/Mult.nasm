@@ -96,24 +96,15 @@ movw %D,(%A)
 ; 7 - EQ
 ; 8 - Goto Condicional
 leaw $0,%A
-movw (%A),%A
-decw %A
+subw (%A),$1,%D
+movw %D,(%A)
+movw %D,%A
 movw (%A),%D
 leaw $-1,%A
 subw %A,%D,%D
-leaw $PULA,%A
+leaw $end,%A
 je %D
 nop
-PULA:
-leaw $end,%A
-jmp
-nop
-NAOPULA:
-leaw $0,%A
-movw (%A),%D
-incw %D
-movw %D,(%A)
-END:
 ; 9 - PUSH local 0
 leaw $1,%A
 movw (%A),%D

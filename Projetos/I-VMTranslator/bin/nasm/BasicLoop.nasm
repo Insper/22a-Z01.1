@@ -87,24 +87,15 @@ movw %D, (%A)
 ; 6 - EQ
 ; 7 - Goto Condicional
 leaw $0,%A
-movw (%A),%A
-decw %A
+subw (%A),$1,%D
+movw %D,(%A)
+movw %D,%A
 movw (%A),%D
 leaw $-1,%A
 subw %A,%D,%D
-leaw $PULA,%A
+leaw $END,%A
 je %D
 nop
-PULA:
-leaw $END,%A
-jmp
-nop
-NAOPULA:
-leaw $0,%A
-movw (%A),%D
-incw %D
-movw %D,(%A)
-END:
 ; 8 - PUSH temp 0
 leaw $5,%A
 movw %A,%D

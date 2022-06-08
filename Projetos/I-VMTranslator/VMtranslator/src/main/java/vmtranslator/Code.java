@@ -504,29 +504,19 @@ public class Code {
         List<String> commands = new ArrayList<String>();
         commands.add(String.format("; %d - Goto Condicional", lineCode++));
         commands.add("leaw $0,%A");
-        commands.add("movw (%A),%A"); //guardando no topo da pilha-1 em D
-        commands.add("decw %A");
-        commands.add("movw (%A),%D");
-        commands.add("leaw $-1,%A");
-        commands.add("subw %A,%D,%D"); // checando se o valor e igual a true
-        commands.add("leaw $PULA,%A");
-        commands.add("je %D");
+        commands.add("subw (%A),$1,%D"); //guardando posicao do topo da pilha em A 
+        commands.add("movw %D,(%A)"); 
+        commands.add("movw %D,%A"); 
+        commands.add("movw (%A),%D"); //passando valor no topo da pilha -1 para D
+        commands.add("leaw $-1,%A"); //guardando -1 (true) em A
+        commands.add("subw %A,%D,%D"); // -1-D tem que ser igual a 0
+        commands.add("leaw $"+label+",%A"); //caso seja igual a 0, quer dizer que a condicao em sp-1 e true
+        commands.add("je %D"); 
         commands.add("nop");
-        commands.add("PULA:"); // pulando
-        commands.add("leaw $"+label+",%A");
-        commands.add("jmp");
-        commands.add("nop");
-        commands.add("NAOPULA:");
-//incrementa SP
-        commands.add("leaw $0,%A");
-        commands.add("movw (%A),%D");
-        commands.add("incw %D");
-        commands.add("movw %D,(%A)");
-        commands.add("END:");
+        
         String[] stringArray = new String[ commands.size() ];
         commands.toArray( stringArray );
         write(stringArray);
-
      }
 
     /**
