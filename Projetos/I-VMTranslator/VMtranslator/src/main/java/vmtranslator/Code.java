@@ -238,6 +238,16 @@ public class Code {
         List<String> commands = new ArrayList<String>();
         commands.add(String.format("; %d - Goto Condicional", lineCode++));
 
+        commands.add("leaw $SP, %A");
+        commands.add("movw (%A), %D");
+        commands.add(String.format("leaw %s, %A", label));
+        commands.add("jne %D");
+
+        commands.add("nop");
+        
+        String[] stringArray = new String[ commands.size() ];
+        commands.toArray( stringArray );
+        write(stringArray);
      }
 
     /**
