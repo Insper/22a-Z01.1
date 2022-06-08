@@ -2,7 +2,7 @@
 ## Entrega 
 ##--------------------
 
-1a-Add.vm 1 400
+#1a-Add.vm 1 400
 #1b-Calc.vm 1 400
 #1c-loop.vm 1 10000
 #1c-Div.vm 1 8000
@@ -16,17 +16,17 @@
 ###  - push/pop
 ###  - parser
 ###--------------------
-#SimplePushConst.vm 1 300
-#SimplePushLocal.vm 1 300
-#SimplePushTemp.vm 1 300
-#SimplePushThat.vm 1 300
-#SimplePushThis.vm 1 300
+SimplePushConst.vm 1 300
+SimplePushLocal.vm 1 300
+SimplePushTemp.vm 1 300
+SimplePushThat.vm 1 300
+SimplePushThis.vm 1 300
 #
-#SimplePopLocal.vm 1 300
-#SimplePopPointer.vm 1 300
-#SimplePopTemp.vm 1 300
-#SimplePopThat.vm 1 300
-#SimplePopThis.vm 1 300
+SimplePopLocal.vm 1 300
+SimplePopPointer.vm 1 300
+SimplePopTemp.vm 1 300
+SimplePopThat.vm 1 300
+SimplePopThis.vm 1 300
 #
 #SimpleAdd.vm 1 300
 #SimpleAnd.vm 1 300
