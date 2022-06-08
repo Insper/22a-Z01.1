@@ -286,33 +286,195 @@ public class Code {
             if (segment.equals("constant")) {
                 Error.error("Não faz sentido POP com constant");
             } else if (segment.equals("local")) {
+                //Salvar SP - 1 em local + x
+                commands.add("leaw $1, %A");
+                commands.add("movw (%A), %D");
                 commands.add("leaw $" + Integer.toString(index) + ", %A");
-                commands.add("movw %A, %D");
-                commands.add("leaw %1, %A");
-                commands.add("addw (%A), %D, %D");
-                commands.add("movw %A, %D");
+                commands.add("addw %A, %D, %D");
+                commands.add("leaw $13, %A");
+                commands.add("movw %D, (%A)");
+                //salva o endereco em ram[6]
 
                 commands.add("leaw $0, %A");
                 commands.add("movw (%A), %A");
                 commands.add("decw %A");
-                commands.add("movw %A, %D");
+                commands.add("movw (%A), %D");
+
+                commands.add("leaw $13, %A");
+                commands.add("movw (%A), %A");
+
+                commands.add("movw %D, (%A)");
+
+                commands.add("leaw $0, %A");
+                commands.add("movw (%A), %A");
+                commands.add("decw %A");
+                commands.add("decw %A");
+                commands.add("addw $1, %A, %D");
                 commands.add("leaw $0, %A");
                 commands.add("movw %D, (%A)");
 
             } else if (segment.equals("argument")) {
+//Salvar SP - 1 em local + x
+                commands.add("leaw $2, %A");
+                commands.add("movw (%A), %D");
+                commands.add("leaw $" + Integer.toString(index) + ", %A");
+                commands.add("addw %A, %D, %D");
+                commands.add("leaw $13, %A");
+                commands.add("movw %D, (%A)");
+                //salva o endereco em ram[6]
 
+                commands.add("leaw $0, %A");
+                commands.add("movw (%A), %A");
+                commands.add("decw %A");
+                commands.add("movw (%A), %D");
+
+                commands.add("leaw $13, %A");
+                commands.add("movw (%A), %A");
+
+                commands.add("movw %D, (%A)");
+
+                commands.add("leaw $0, %A");
+                commands.add("movw (%A), %A");
+                commands.add("decw %A");
+                commands.add("decw %A");
+                commands.add("addw $1, %A, %D");
+                commands.add("leaw $0, %A");
+                commands.add("movw %D, (%A)");
             } else if (segment.equals("this")) {
+                //Salvar SP - 1 em local + x
+                commands.add("leaw $3, %A");
+                commands.add("movw (%A), %D");
+                commands.add("leaw $" + Integer.toString(index) + ", %A");
+                commands.add("addw %A, %D, %D");
+                commands.add("leaw $13, %A");
+                commands.add("movw %D, (%A)");
+                //salva o endereco em ram[6]
+
+                commands.add("leaw $0, %A");
+                commands.add("movw (%A), %A");
+                commands.add("decw %A");
+                commands.add("movw (%A), %D");
+
+                commands.add("leaw $13, %A");
+                commands.add("movw (%A), %A");
+
+                commands.add("movw %D, (%A)");
+
+                commands.add("leaw $0, %A");
+                commands.add("movw (%A), %A");
+                commands.add("decw %A");
+                commands.add("decw %A");
+                commands.add("addw $1, %A, %D");
+                commands.add("leaw $0, %A");
+                commands.add("movw %D, (%A)");
 
             } else if (segment.equals("that")) {
+                //Salvar SP - 1 em local + x
+                commands.add("leaw $4, %A");
+                commands.add("movw (%A), %D");
+                commands.add("leaw $" + Integer.toString(index) + ", %A");
+                commands.add("addw %A, %D, %D");
+                commands.add("leaw $13, %A");
+                commands.add("movw %D, (%A)");
+                //salva o endereco em ram[6]
+
+                commands.add("leaw $0, %A");
+                commands.add("movw (%A), %A");
+                commands.add("decw %A");
+                commands.add("movw (%A), %D");
+
+                commands.add("leaw $13, %A");
+                commands.add("movw (%A), %A");
+
+                commands.add("movw %D, (%A)");
+
+                commands.add("leaw $0, %A");
+                commands.add("movw (%A), %A");
+                commands.add("decw %A");
+                commands.add("decw %A");
+                commands.add("addw $1, %A, %D");
+                commands.add("leaw $0, %A");
+                commands.add("movw %D, (%A)");
 
             } else if (segment.equals("static")) {
 
             } else if (segment.equals("temp")) {
+                commands.add("leaw $5, %A");
+                commands.add("movw %A, %D");
+                commands.add("leaw $" + Integer.toString(index) + ", %A");
+                commands.add("addw %A, %D, %D");
+                commands.add("leaw $13, %A");
+                commands.add("movw %D, (%A)");
+                //salva o endereco em ram[6]
+
+                commands.add("leaw $0, %A");
+                commands.add("movw (%A), %A");
+                commands.add("decw %A");
+                commands.add("movw (%A), %D");
+
+                commands.add("leaw $13, %A");
+                commands.add("movw (%A), %A");
+
+                commands.add("movw %D, (%A)");
+
+                commands.add("leaw $0, %A");
+                commands.add("movw (%A), %A");
+                commands.add("decw %A");
+                commands.add("decw %A");
+                commands.add("addw $1, %A, %D");
+                commands.add("leaw $0, %A");
+                commands.add("movw %D, (%A)");
 
             } else if (segment.equals("pointer")) {
-                if(index==0) {
+                if(index==0) { // Altera para onde o this RAM[3] aponta this = SP - 1
+                    commands.add("leaw $3, %A");
+                    commands.add("movw %A, %D");
+                    commands.add("leaw $13, %A");
+                    commands.add("movw %D, (%A)");
+                    //salva o endereco em ram[6]
 
-                } else {
+                    commands.add("leaw $0, %A");
+                    commands.add("movw (%A), %A");
+                    commands.add("decw %A");
+                    commands.add("movw (%A), %D");
+
+                    commands.add("leaw $13, %A");
+                    commands.add("movw (%A), %A");
+
+                    commands.add("movw %D, (%A)");
+
+                    commands.add("leaw $0, %A");
+                    commands.add("movw (%A), %A");
+                    commands.add("decw %A");
+                    commands.add("decw %A");
+                    commands.add("addw $1, %A, %D");
+                    commands.add("leaw $0, %A");
+                    commands.add("movw %D, (%A)");
+
+                } else {// altera para onde o that RAM[4] aponta that = SP - 1
+                    commands.add("leaw $4, %A");
+                    commands.add("movw %A, %D");
+                    commands.add("leaw $13, %A");
+                    commands.add("movw %D, (%A)");
+                    //salva o endereco em ram[6]
+
+                    commands.add("leaw $0, %A");
+                    commands.add("movw (%A), %A");
+                    commands.add("decw %A");
+                    commands.add("movw (%A), %D");
+
+                    commands.add("leaw $13, %A");
+                    commands.add("movw (%A), %A");
+
+                    commands.add("movw %D, (%A)");
+
+                    commands.add("leaw $0, %A");
+                    commands.add("movw (%A), %A");
+                    commands.add("decw %A");
+                    commands.add("decw %A");
+                    commands.add("addw $1, %A, %D");
+                    commands.add("leaw $0, %A");
+                    commands.add("movw %D, (%A)");
 
                 }
             }
@@ -334,6 +496,7 @@ public class Code {
                 commands.add("movw %A, %D");
                 commands.add("leaw %1, %A");
                 commands.add("addw (%A), %D, %A");
+                //%A = local + index
                 commands.add("movw (%A), %D");
                 commands.add("leaw $0, %A");
                 commands.add("movw (%A), %A");
