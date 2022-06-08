@@ -29,6 +29,27 @@ movw (%A),%D
 incw %D
 movw %D, (%A)
 ; 3 - EQ
+; 4 - Goto Condicional
+leaw $0,%A
+movw (%A),%A
+decw %A
+movw (%A),%D
+leaw $-1,%A
+subw %A,%D,%D
+leaw $PULA,%A
+je %D
+nop
+PULA:
+leaw $IF1,%A
+jmp
+nop
+NAOPULA:
+leaw $0,%A
+movw (%A),%D
+incw %D
+movw %D,(%A)
+END:
+ELSE1:
 ; 5 - PUSH constant 3
 leaw $3, %A
 movw %A, %D
@@ -39,6 +60,7 @@ leaw $0,%A
 movw (%A),%D
 incw %D
 movw %D, (%A)
+IF1:
 ; 6 - POP temp 0
 leaw $0,%A
 movw (%A),%D
@@ -81,6 +103,27 @@ movw (%A),%D
 incw %D
 movw %D, (%A)
 ; 9 - EQ
+; 10 - Goto Condicional
+leaw $0,%A
+movw (%A),%A
+decw %A
+movw (%A),%D
+leaw $-1,%A
+subw %A,%D,%D
+leaw $PULA,%A
+je %D
+nop
+PULA:
+leaw $IF2,%A
+jmp
+nop
+NAOPULA:
+leaw $0,%A
+movw (%A),%D
+incw %D
+movw %D,(%A)
+END:
+ELSE2:
 ; 11 - PUSH constant 2
 leaw $2, %A
 movw %A, %D
@@ -112,4 +155,5 @@ leaw $0,%A
 movw %A,%D
 movw (%A),%A
 movw %D,(%A)
+IF2:
 ; End

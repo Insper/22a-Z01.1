@@ -69,6 +69,7 @@ leaw $0,%A
 movw %A,%D
 movw (%A),%A
 movw %D,(%A)
+loop:
 ; 5 - PUSH constant 0
 leaw $0, %A
 movw %A, %D
@@ -93,6 +94,26 @@ movw (%A),%D
 incw %D
 movw %D,(%A)
 ; 7 - EQ
+; 8 - Goto Condicional
+leaw $0,%A
+movw (%A),%A
+decw %A
+movw (%A),%D
+leaw $-1,%A
+subw %A,%D,%D
+leaw $PULA,%A
+je %D
+nop
+PULA:
+leaw $end,%A
+jmp
+nop
+NAOPULA:
+leaw $0,%A
+movw (%A),%D
+incw %D
+movw %D,(%A)
+END:
 ; 9 - PUSH local 0
 leaw $1,%A
 movw (%A),%D
@@ -195,6 +216,11 @@ leaw $0,%A
 movw %A,%D
 movw (%A),%A
 movw %D,(%A)
+; 17 - Goto Incondicional
+leaw $loop,%A
+jmp
+nop
+end:
 ; 18 - PUSH local 0
 leaw $1,%A
 movw (%A),%D
@@ -246,4 +272,9 @@ leaw $0,%A
 movw (%A),%D
 incw %D
 movw %D, (%A)
+END:
+; 26 - Goto Incondicional
+leaw $END,%A
+jmp
+nop
 ; End

@@ -56,4 +56,9 @@ leaw $0,%A
 movw (%A),%D
 incw %D
 movw %D, (%A)
+loop:
+; 9 - Goto Incondicional
+leaw $loop,%A
+jmp
+nop
 ; End

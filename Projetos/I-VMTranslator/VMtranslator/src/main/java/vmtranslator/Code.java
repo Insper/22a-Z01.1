@@ -470,7 +470,10 @@ public class Code {
     public void writeLabel(String label) {
 
         List<String> commands = new ArrayList<String>();
-        commands.add( "; Label (marcador)" );
+        commands.add( label+":" );
+        String[] stringArray = new String[ commands.size() ];
+        commands.toArray( stringArray );
+        write(stringArray);
 
     }
 
@@ -483,7 +486,12 @@ public class Code {
 
         List<String> commands = new ArrayList<String>();
         commands.add(String.format("; %d - Goto Incondicional", lineCode++));
-
+        commands.add("leaw $"+label+",%A");
+        commands.add("jmp");
+        commands.add("nop");
+        String[] stringArray = new String[ commands.size() ];
+        commands.toArray( stringArray );
+        write(stringArray);
     }
 
     /**
@@ -495,6 +503,29 @@ public class Code {
 
         List<String> commands = new ArrayList<String>();
         commands.add(String.format("; %d - Goto Condicional", lineCode++));
+        commands.add("leaw $0,%A");
+        commands.add("movw (%A),%A"); //guardando no topo da pilha-1 em D
+        commands.add("decw %A");
+        commands.add("movw (%A),%D");
+        commands.add("leaw $-1,%A");
+        commands.add("subw %A,%D,%D"); // checando se o valor e igual a true
+        commands.add("leaw $PULA,%A");
+        commands.add("je %D");
+        commands.add("nop");
+        commands.add("PULA:"); // pulando
+        commands.add("leaw $"+label+",%A");
+        commands.add("jmp");
+        commands.add("nop");
+        commands.add("NAOPULA:");
+//incrementa SP
+        commands.add("leaw $0,%A");
+        commands.add("movw (%A),%D");
+        commands.add("incw %D");
+        commands.add("movw %D,(%A)");
+        commands.add("END:");
+        String[] stringArray = new String[ commands.size() ];
+        commands.toArray( stringArray );
+        write(stringArray);
 
      }
 

@@ -60,6 +60,7 @@ leaw $0,%A
 movw %A,%D
 movw (%A),%A
 movw %D,(%A)
+LOOP_START:
 ; 4 - PUSH temp 0
 leaw $5,%A
 movw %A,%D
@@ -84,6 +85,26 @@ movw (%A),%D
 incw %D
 movw %D, (%A)
 ; 6 - EQ
+; 7 - Goto Condicional
+leaw $0,%A
+movw (%A),%A
+decw %A
+movw (%A),%D
+leaw $-1,%A
+subw %A,%D,%D
+leaw $PULA,%A
+je %D
+nop
+PULA:
+leaw $END,%A
+jmp
+nop
+NAOPULA:
+leaw $0,%A
+movw (%A),%D
+incw %D
+movw %D,(%A)
+END:
 ; 8 - PUSH temp 0
 leaw $5,%A
 movw %A,%D
@@ -191,4 +212,9 @@ leaw $0,%A
 movw %A,%D
 movw (%A),%A
 movw %D,(%A)
+; 16 - Goto Incondicional
+leaw $LOOP_START,%A
+jmp
+nop
+END:
 ; End

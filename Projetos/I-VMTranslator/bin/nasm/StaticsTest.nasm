@@ -187,6 +187,11 @@ leaw $0,%A
 movw %A,%D
 movw (%A),%A
 movw %D,(%A)
+WHILE:
+; 23 - Goto Incondicional
+leaw $WHILE,%A
+jmp
+nop
 ; 25 - PUSH argument 0
 leaw $2,%A
 movw (%A),%D

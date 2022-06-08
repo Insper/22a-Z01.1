@@ -8,6 +8,11 @@ leaw $0,%A
 movw (%A),%D
 incw %D
 movw %D, (%A)
+; 1 - Goto Incondicional
+leaw $END2,%A
+jmp
+nop
+DUMMY:
 ; 2 - PUSH constant 3
 leaw $3, %A
 movw %A, %D
@@ -18,6 +23,7 @@ leaw $0,%A
 movw (%A),%D
 incw %D
 movw %D, (%A)
+END2:
 ; 3 - POP temp 0
 leaw $0,%A
 movw (%A),%D
