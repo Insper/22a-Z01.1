@@ -1,0 +1,2352 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://insper.github.io/Z01.1/Historia-linux/">
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.3.0, mkdocs-material-8.3.4">
+    
+    
+      
+        <title>Historia linux - Elementos de Sistemas</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.4a0965b7.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.cbb835fc.min.css">
+        
+          
+          
+          <meta name="theme-color" content="#000000">
+        
+      
+      
+    
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("..",location),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Fira+Sans+Extra+Condensed:700|Oxygen+Mono|Source+Sans+Pro:700|Source+Serif+Pro&amp;display=swap">
+<link rel="stylesheet" href="../assets/css/devlife.css">
+
+
+    <script>
+        window.ihandout_config = JSON.parse(`{"report": {"api-base": "https://127.0.0.1:8080/api/offerings/1/", "url": "https://127.0.0.1:8080/api/offerings/1/exercises/"}}`);
+    </script>
+
+
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="" data-md-color-primary="black" data-md-color-accent="pink">
+  
+    
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#linus" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="Elementos de Sistemas" class="md-header__button md-logo" aria-label="Elementos de Sistemas" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Elementos de Sistemas
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Historia linux
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" aria-label="Clear" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/insper/Z01.1" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    Insper/Z01.1
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Elementos de Sistemas" class="md-nav__button md-logo" aria-label="Elementos de Sistemas" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    Elementos de Sistemas
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/insper/Z01.1" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    Insper/Z01.1
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_1" type="checkbox" id="__nav_1" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_1">
+          Home
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Home" data-md-level="1">
+        <label class="md-nav__title" for="__nav_1">
+          <span class="md-nav__icon md-icon"></span>
+          Home
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        Bem vindo disciplina de Elementos de Sistemas!
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Sobre-Criterios-de-Avaliacao/" class="md-nav__link">
+        Critérios de Avaliação
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Sobre-Rubricas/" class="md-nav__link">
+        Rubricas individuais
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Util-Aulas/" class="md-nav__link">
+        Resumo Aulas
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../21a/Avaliacoes/" class="md-nav__link">
+        Avaliações
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4" type="checkbox" id="__nav_4" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_4">
+          Projetos
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Projetos" data-md-level="1">
+        <label class="md-nav__title" for="__nav_4">
+          <span class="md-nav__icon md-icon"></span>
+          Projetos
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../A-Ambiente-Desenvolvimento-Projeto/" class="md-nav__link">
+        A - Ambiente de desenvolvimento
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../LogiComb-Projeto/" class="md-nav__link">
+        B - Lógica Combinacional
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ula-Projeto/" class="md-nav__link">
+        C - ULA
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../seq-Projeto/" class="md-nav__link">
+        D - Lógica Sequencial
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../assembly-Projeto/" class="md-nav__link">
+        E - Assembly
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_6" type="checkbox" id="__nav_4_6" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_4_6">
+          F - CPU
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="F - CPU" data-md-level="2">
+        <label class="md-nav__title" for="__nav_4_6">
+          <span class="md-nav__icon md-icon"></span>
+          F - CPU
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../cpu-Projeto/" class="md-nav__link">
+        Projeto
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../cpu-Testando/" class="md-nav__link">
+        Testando
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../assembler-Projeto/" class="md-nav__link">
+        G - Assembler
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../vm-Projeto/" class="md-nav__link">
+        H - VM
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../J-VMtranslator-Projeto/" class="md-nav__link">
+        I - VM Translator
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../X-Processadores-Projeto/" class="md-nav__link">
+        Mundo Real
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5" type="checkbox" id="__nav_5" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_5">
+          Labs
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Labs" data-md-level="1">
+        <label class="md-nav__title" for="__nav_5">
+          <span class="md-nav__icon md-icon"></span>
+          Labs
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../A-Transistores-Lab-1-22/" class="md-nav__link">
+        Lab 1: Transistores / CI
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../A-Ambiente-Lab-1/" class="md-nav__link">
+        Lab 2: Configurando Github
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../A-Ambiente-Lab-2/" class="md-nav__link">
+        Lab 3: Github
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../LogiComb-Lab-1/" class="md-nav__link">
+        Lab 4: FPGA - VHDL
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../LogiComb-Lab-2/" class="md-nav__link">
+        Lab 5: Lógica Combinacional
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ula-Lab-1/" class="md-nav__link">
+        Lab 6: Adders
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ula-Lab-2/" class="md-nav__link">
+        Lab 7: Visualizando simulação
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ula-Lab-3/" class="md-nav__link">
+        Lab 8: ULA
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../seq-Lab-1/" class="md-nav__link">
+        Lab 9: Lógica Sequencial
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../assembly-Lab-1/" class="md-nav__link">
+        Lab 10: Assembly
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../assembly-Lab-2/" class="md-nav__link">
+        Lab 11: Periféricos
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../assembly-Lab-3/" class="md-nav__link">
+        Lab 12: saltos (jump)
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../assembly-Lab-4/" class="md-nav__link">
+        Lab 13: praticando nasm
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../assembly-lab-HW/" class="md-nav__link">
+        Programando FPGA
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ula-lab-4/" class="md-nav__link">
+        Lab 14: Pequena CPU
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../cpu-lab-1/" class="md-nav__link">
+        Lab 15: Control Unit
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5_17" type="checkbox" id="__nav_5_17" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_5_17">
+          Lab 16: Assembler
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Lab 16: Assembler" data-md-level="2">
+        <label class="md-nav__title" for="__nav_5_17">
+          <span class="md-nav__icon md-icon"></span>
+          Lab 16: Assembler
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../assembler-Lab-1/" class="md-nav__link">
+        Introdução
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../assembler-Lab-1-parte-1/" class="md-nav__link">
+        parte 1
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../assembler-Lab-1-parte-2/" class="md-nav__link">
+        parte 2
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../assembler-Lab-1-parte-3/" class="md-nav__link">
+        parte 3
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../assembler-Lab-1-parte-4/" class="md-nav__link">
+        parte 4
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../assembler-Lab-1-parte-5/" class="md-nav__link">
+        parte 5
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../vm-Lab-1/" class="md-nav__link">
+        Lab 17: vm
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5_19" type="checkbox" id="__nav_5_19" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_5_19">
+          Lab 18: VMtranslator
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Lab 18: VMtranslator" data-md-level="2">
+        <label class="md-nav__title" for="__nav_5_19">
+          <span class="md-nav__icon md-icon"></span>
+          Lab 18: VMtranslator
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../VMtranslator-Lab-1-old/" class="md-nav__link">
+        Lab 18: Vm Translator
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../VMtranslator-Lab-1/" class="md-nav__link">
+        Lab 18: Vm Translator - Praticando
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_6" type="checkbox" id="__nav_6" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_6">
+          Teoria
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Teoria" data-md-level="1">
+        <label class="md-nav__title" for="__nav_6">
+          <span class="md-nav__icon md-icon"></span>
+          Teoria
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Teoria-Dados/" class="md-nav__link">
+        Dados Digitais
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Teoria-Algebra-Booleana/" class="md-nav__link">
+        Álgebra Booleana
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Teoria-CMOS/" class="md-nav__link">
+        Lógica CMOS (Complementary Metal–Oxide–Semiconductor)
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Teoria-RTL/" class="md-nav__link">
+        Resistor-Transistor Logic (RTL)
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Teoria-Componentes/" class="md-nav__link">
+        Componentes Digitais
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Teoria-Aritmetica-Binaria/" class="md-nav__link">
+        Aritmética Binária
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Teoria-Aritmetica-Binaria-HW/" class="md-nav__link">
+        Aritmética Binária - HW
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Teoria-ULA/" class="md-nav__link">
+        ULA
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Teoria-Logica-Sequencial/" class="md-nav__link">
+        Lógica Sequencial
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Teoria-Sequencial-Componentes/" class="md-nav__link">
+        Componentes Síncronos
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Teoria-Z01/" class="md-nav__link">
+        Z01
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Teoria-Assembly/" class="md-nav__link">
+        ASM - Assembly
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Teoria-Z01-mapadeMemoria/" class="md-nav__link">
+        ASM - Mapa de memória
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Teoria-nasm-jump/" class="md-nav__link">
+        ASM - jump
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Teoria-Linguagem-de-Maquina/" class="md-nav__link">
+        Linguagem de máquina
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Teoria-Assembler/" class="md-nav__link">
+        Assembler
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../assembler-Dicas-SymbolTable/" class="md-nav__link">
+        Tabela de Símbolos
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Teoria-vm/" class="md-nav__link">
+        VM
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Teoria-vm-segmentos/" class="md-nav__link">
+        VM - Segmentos
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Teoria-vm-jump/" class="md-nav__link">
+        VM - jump
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Teoria-vm-funcoes/" class="md-nav__link">
+        VM - Funções
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Teoria-vm-memoria/" class="md-nav__link">
+        VM - Memória
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Util-Video-Aulas/" class="md-nav__link">
+        Vídeo Aulas (Luciano)
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_7" type="checkbox" id="__nav_7" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_7">
+          VHDL
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="VHDL" data-md-level="1">
+        <label class="md-nav__title" for="__nav_7">
+          <span class="md-nav__icon md-icon"></span>
+          VHDL
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../VHDL-basico/" class="md-nav__link">
+        Introdução
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../VHDL-Combinacional/" class="md-nav__link">
+        Combinacional
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../VHDL-port-map/" class="md-nav__link">
+        port map
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../VHDL-Sequencial/" class="md-nav__link">
+        Sequencial
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../VHDL-RTL/" class="md-nav__link">
+        RTL Viewer
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../VHDL-exemplos/" class="md-nav__link">
+        Exemplos completos
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_8" type="checkbox" id="__nav_8" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_8">
+          Z01
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Z01" data-md-level="1">
+        <label class="md-nav__title" for="__nav_8">
+          <span class="md-nav__icon md-icon"></span>
+          Z01
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Util-Resumo-Assembly/" class="md-nav__link">
+        Resumo Assembly
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Util-Z01.1-Cheat-Sheet/" class="md-nav__link">
+        Z01.1 Cheat Sheet
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Util-InstructionSet/" class="md-nav__link">
+        Instruction Set
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Util-Resumo-VM/" class="md-nav__link">
+        Resumo VM
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_9" type="checkbox" id="__nav_9" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_9">
+          Estudo
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Estudo" data-md-level="1">
+        <label class="md-nav__title" for="__nav_9">
+          <span class="md-nav__icon md-icon"></span>
+          Estudo
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://docs.google.com/spreadsheets/d/1rN_zQqYaVI8PjAhKqEBCmY-_06I0X9dD0RddcI-miJs/edit?usp=sharing" class="md-nav__link">
+        Dados Digitais - 1
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://github.com/Insper/Z01.1/blob/main/Exercicios/Dados_1.pdf" class="md-nav__link">
+        Dados Digitais - 1 - pdf
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://github.com/Insper/Z01.1/blob/main/Exercicios/Dados_1_respostas.pdf" class="md-nav__link">
+        Dados Digitais - 1 - respostas
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Exercicio-Dados-2/" class="md-nav__link">
+        Dados Digitais - 2
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://github.com/Insper/Z01.1/blob/main/Exercicios/Exercicio-Dados-2_resolucao.pdf" class="md-nav__link">
+        Dados Digitais - 2 - respostas
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Exercicio-Algebra-Booleana-1/" class="md-nav__link">
+        Álgebra Booleana - 1
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Exercicio-Algebra-Booleana-2/" class="md-nav__link">
+        Álgebra Booleana - 2
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://github.com/Insper/Z01.1/blob/master/Exercicios/Exercicio-Aritmetica-Booleana.pdf" class="md-nav__link">
+        Handout Aritmetica Booleana
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://forms.gle/XMsFCDMYsmz1qUP86" class="md-nav__link">
+        Lógica Sequencial
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://github.com/Insper/Z01.1/blob/master/Exercicios/Linguagem_de_maquina.pdf" class="md-nav__link">
+        Linguagem de Máquina
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Exercicio-CPU-1/" class="md-nav__link">
+        Exercicio CPU - 1
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Exercicio-CPU-2/" class="md-nav__link">
+        Exercício CPU - 2
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_10" type="checkbox" id="__nav_10" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_10">
+          Útil
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Útil" data-md-level="1">
+        <label class="md-nav__title" for="__nav_10">
+          <span class="md-nav__icon md-icon"></span>
+          Útil
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Util-Comecando-novo-projeto/" class="md-nav__link">
+        Começando novo projeto
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Util-vixi-sou-scrum/" class="md-nav__link">
+        Vixi! Sou scrum master
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Util-Dicas-GIT/" class="md-nav__link">
+        Dicas git
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Util-Dicas-Travis/" class="md-nav__link">
+        Dicas Actions
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Util-Infraestrutura/" class="md-nav__link">
+        Infraestrutura
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Util-VM-Linux/" class="md-nav__link">
+        Boot SSD via VirtualBox
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_11" type="checkbox" id="__nav_11" checked>
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_11">
+          História
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="História" data-md-level="1">
+        <label class="md-nav__title" for="__nav_11">
+          <span class="md-nav__icon md-icon"></span>
+          História
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Historia linux
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        Historia linux
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#linus" class="md-nav__link">
+    Linus
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#primeira-versao" class="md-nav__link">
+    Primeira versão
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#gnu" class="md-nav__link">
+    GNU
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#gpl" class="md-nav__link">
+    GPL
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#mascote-tux" class="md-nav__link">
+    Mascote - Tux
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#distribuicoes" class="md-nav__link">
+    Distribuições
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ubuntu" class="md-nav__link">
+    Ubuntu
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#distro-hopping" class="md-nav__link">
+    distro hopping
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#linux-distro-ambiente-de-desktop" class="md-nav__link">
+    linux != Distro != Ambiente de desktop
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#linux-atualmente" class="md-nav__link">
+    Linux atualmente
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#git" class="md-nav__link">
+    git?
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#linus" class="md-nav__link">
+    Linus
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#primeira-versao" class="md-nav__link">
+    Primeira versão
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#gnu" class="md-nav__link">
+    GNU
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#gpl" class="md-nav__link">
+    GPL
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#mascote-tux" class="md-nav__link">
+    Mascote - Tux
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#distribuicoes" class="md-nav__link">
+    Distribuições
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ubuntu" class="md-nav__link">
+    Ubuntu
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#distro-hopping" class="md-nav__link">
+    distro hopping
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#linux-distro-ambiente-de-desktop" class="md-nav__link">
+    linux != Distro != Ambiente de desktop
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#linux-atualmente" class="md-nav__link">
+    Linux atualmente
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#git" class="md-nav__link">
+    git?
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content" data-md-component="content">
+            <article class="md-content__inner md-typeset">
+              
+                
+  <a href="https://github.com/insper/Z01.1/edit/docs/docs-src/Historia-linux.md" title="Edit this page" class="md-content__button md-icon">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25Z"/></svg>
+  </a>
+
+
+
+  <h1>Historia linux</h1>
+
+<h2 id="linus">Linus<a class="headerlink" href="#linus" title="Permanent link">¶</a></h2>
+<p>Desenvolvido em 1991 por Linux Torvalds na Finlândia quando terminava 
+sua graduação em ciência da computação, e não satisfeito com o os sistemas 
+operacionais da época que eram PAGOS (MAC, UNIX, ...) ou puramente acadêmico 
+(Minix)</p>
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Linux">https://en.wikipedia.org/wiki/Linux</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Linus_Torvalds">https://en.wikipedia.org/wiki/Linus_Torvalds</a></li>
+<li><a href="https://pt.wikipedia.org/wiki/MINIX">https://pt.wikipedia.org/wiki/MINIX</a></li>
+</ul>
+<p>Resolveu criar um sistema operacional do zero, baseado em UNIX e seguindo o livro 
+de um de seus professores: Andrew S. Tanenbaum, que era a base do minix porém liberado
+apenas para complementar o livro.</p>
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Andrew_S._Tanenbaum">https://en.wikipedia.org/wiki/Andrew_S._Tanenbaum</a></li>
+<li>livro: <a href="https://www.amazon.com/Operating-Systems-Design-Implementation-3rd/dp/0131429388">https://www.amazon.com/Operating-Systems-Design-Implementation-3rd/dp/0131429388</a></li>
+<li><a href="https://images-na.ssl-images-amazon.com/images/I/61rSUrfS5HL._SX384_BO1,204,203,200_.jpg">https://images-na.ssl-images-amazon.com/images/I/61rSUrfS5HL._SX384_BO1,204,203,200_.jpg</a></li>
+</ul>
+<blockquote>
+<p>UNIX? Define a arquitetura do sistema operacional, as APIS e estrutura do kernel</p>
+<p>Fato: Unix + Linus = Linux!</p>
+</blockquote>
+<h2 id="primeira-versao">Primeira versão<a class="headerlink" href="#primeira-versao" title="Permanent link">¶</a></h2>
+<p>Aos 21 anos, Linus terminou a primeira versão do OS e publicou em uma lista de mensagens (não 
+tinha forum/ e-mail/ ... na época, essas listas eram o começo) a seguinte mensagem:</p>
+<blockquote>
+<p>Hello everybody out there using minix -</p>
+<p>I'm doing a (free) operating system (just a hobby, won't be big and professional like gnu) for 386(486) AT clones. This has been brewing since april, and is starting to get ready. I'd like any feedback on things people like/dislike in minix, as my OS resembles it somewhat (same physical layout of the file-system (due to practical reasons) among other things).</p>
+<p>I've currently ported bash(1.08) and gcc(1.40), and things seem to work. This implies that I'll get something practical within a few months, and I'd like to know what features most people would want. Any suggestions are welcome, but I won't promise I'll implement them :-)</p>
+<p>Linus (<a href="mailto:torvalds@kruuna.helsinki.fi">torvalds@kruuna.helsinki.fi</a>)</p>
+<p>PS. Yes - it's free of any minix code, and it has a multi-threaded fs. It is NOT portable (uses 386 task switching etc), and it probably never will support anything other than AT-harddisks, as that's all I have :-(.</p>
+<p>— Linus Torvalds</p>
+</blockquote>
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/History_of_Linux">https://en.wikipedia.org/wiki/History_of_Linux</a></li>
+</ul>
+<h2 id="gnu">GNU<a class="headerlink" href="#gnu" title="Permanent link">¶</a></h2>
+<p>Um dos fatores que deu força para o sistema operacional recém lançado foi que ele foi
+desenvolvido utilizando ferramentas de outro projeto importante o GNU,
+que estava ganhando força na mesma época e fornecia uma série
+de programas gratuitos para a comunidade, ele também introduziu o conceito de "Software Livre"
+e licença open source. Conduzido por Richard Stallman no MIT.</p>
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/GNU_Project">https://en.wikipedia.org/wiki/GNU_Project</a></li>
+<li><a href="https://pt.wikipedia.org/wiki/Richard_Matthew_Stallman">https://pt.wikipedia.org/wiki/Richard_Matthew_Stallman</a></li>
+</ul>
+<p>O Linux como conhecemos hoje em dia é também conhecido como Linux/GNU, pois faz uso
+extensivo dos dois projetos (compiladores, editores de texto, ...). Inclusive, a versão
+0.99 o linux já foi publicado utilizando a licença GNU GPL.</p>
+<h2 id="gpl">GPL<a class="headerlink" href="#gpl" title="Permanent link">¶</a></h2>
+<p>A licença GNU GPL (GNU General Public License) possui os seguintes princípios:</p>
+<ol>
+<li>A liberdade de executar o programa, para qualquer propósito (liberdade nº 0)</li>
+<li>A liberdade de estudar como o programa funciona e adaptá-lo às suas necessidades (liberdade nº 1). O acesso ao código-fonte é um pré-requisito para esta liberdade.</li>
+<li><strong>A liberdade de redistribuir cópias de modo que você possa ajudar ao seu próximo (liberdade nº 2).</strong></li>
+<li>
+<p><strong>A liberdade de aperfeiçoar o programa e liberar os seus aperfeiçoamentos, de modo que toda a comunidade beneficie deles (liberdade nº 3). O acesso ao código-fonte é um pré-requisito para esta liberdade.</strong></p>
+</li>
+<li>
+<p><a href="https://pt.wikipedia.org/wiki/GNU_General_Public_License">https://pt.wikipedia.org/wiki/GNU_General_Public_License</a></p>
+</li>
+</ol>
+<blockquote>
+<p>Não podemos confundir software livre com software gratuito (como o google por exemplo).</p>
+</blockquote>
+<h2 id="mascote-tux">Mascote - Tux<a class="headerlink" href="#mascote-tux" title="Permanent link">¶</a></h2>
+<p>Em 1996 Linux anuncia o novo mascote para o Linux, um pinguim! Torvalds faz muitos mergulhos
+como hoobie, e diz ele que foi mordido por um pinguim na visita a um aquário. </p>
+<ul>
+<li><a href="https://duckduckgo.com/?q=linux+mascote&amp;t=canonical&amp;iax=images&amp;ia=images&amp;iai=http%3A%2F%2F4.bp.blogspot.com%2F-c8uUx6EnHv8%2FVo7_P8mUt4I%2FAAAAAAAACEw%2FeKA-7sjxGak%2Fs400%2FTux%252Bmascote%252Bdo%252Blinux.png">https://duckduckgo.com/?q=linux+mascote&amp;t=canonical&amp;iax=images&amp;ia=images&amp;iai=http%3A%2F%2F4.bp.blogspot.com%2F-c8uUx6EnHv8%2FVo7_P8mUt4I%2FAAAAAAAACEw%2FeKA-7sjxGak%2Fs400%2FTux%252Bmascote%252Bdo%252Blinux.png</a></li>
+</ul>
+<h2 id="distribuicoes">Distribuições<a class="headerlink" href="#distribuicoes" title="Permanent link">¶</a></h2>
+<p>No começo os softwares não eram distribuídos junto com o Linux, o desenvolvedor tinha que 
+instalar e compilar tudo o que queria utilizar, e a coisas eram dispersas. Foi ai que 
+surgiu a ideia de distribuir um pacote com o kernel do linux + alguns programas + configurações
+básicas. A distribuição mais antiga e ainda em 'uso' é o SlackWare.</p>
+<ul>
+<li><a href="https://www.cyberciti.biz/tips/wp-content/uploads/2007/06/44218-linuxdistrotimeline-7.2.png">https://www.cyberciti.biz/tips/wp-content/uploads/2007/06/44218-linuxdistrotimeline-7.2.png</a></li>
+<li><a href="http://www.slackware.com/">http://www.slackware.com/</a></li>
+</ul>
+<h2 id="ubuntu">Ubuntu<a class="headerlink" href="#ubuntu" title="Permanent link">¶</a></h2>
+<p>Ubuntu foi criado em 2004 pelo empresário sul africano Mark Shuttleworth com o foco de
+disponibilizar uma distribuição para todos os usuários (desktop + server) e não apenas com
+foco empresarial como as demais distribuições.</p>
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Mark_Shuttleworth">https://en.wikipedia.org/wiki/Mark_Shuttleworth</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Ubuntu">https://en.wikipedia.org/wiki/Ubuntu</a></li>
+</ul>
+<p>O Ubuntu é baseado em outra distribuição, o Debian, que teve sua origem muito antes em 1993.
+Os pacotes <code>.deb</code> foram criados por essa distro.</p>
+<h2 id="distro-hopping">distro hopping<a class="headerlink" href="#distro-hopping" title="Permanent link">¶</a></h2>
+<p>Achar uma distribuição que te agrade é muito difícil, o distro hopping é o ato de ficar
+mudando de distribuição toda hora, instalando tudo novamente e então, mudando de distro
+novamente.</p>
+<ul>
+<li><a href="https://www.quora.com/What-is-distro-hopping-as-regards-Linux">https://www.quora.com/What-is-distro-hopping-as-regards-Linux</a></li>
+</ul>
+<h2 id="linux-distro-ambiente-de-desktop">linux != Distro != Ambiente de desktop<a class="headerlink" href="#linux-distro-ambiente-de-desktop" title="Permanent link">¶</a></h2>
+<p>O linux em si é apenas o kernel, o core do sistema operacional, porém hoje me dia poucas
+pessoas utilizam apenas o bash no desktop. Muitas vezes o Linux é associado apenas a interface
+gráfica, que alias tem para todos os gostos!</p>
+<ul>
+<li><a href="https://pt.wikipedia.org/wiki/Ambiente_de_desktop">https://pt.wikipedia.org/wiki/Ambiente_de_desktop</a></li>
+<li>(padrão atual do ubuntu) <a href="https://www.gnome.org/">https://www.gnome.org/</a></li>
+<li><a href="https://kde.org/">https://kde.org/</a></li>
+<li><a href="https://ubuntubudgie.org/">https://ubuntubudgie.org/</a></li>
+<li>(pantheon) <a href="https://elementary.io/">https://elementary.io/</a></li>
+<li><a href="https://en.wikipedia.org/wiki/LXDE">https://en.wikipedia.org/wiki/LXDE</a></li>
+<li><a href="https://linuxmint.com/">https://linuxmint.com/</a></li>
+</ul>
+<h2 id="linux-atualmente">Linux atualmente<a class="headerlink" href="#linux-atualmente" title="Permanent link">¶</a></h2>
+<ul>
+<li><a href="https://www.youtube.com/watch?v=yVpbFMhOAwE">https://www.youtube.com/watch?v=yVpbFMhOAwE</a></li>
+<li><a href="https://www.youtube.com/watch?v=SOXeXauRAm0&amp;list=PLbzoR-pLrL6rsb1bc3En9zaEor9S0gyIp">https://www.youtube.com/watch?v=SOXeXauRAm0&amp;list=PLbzoR-pLrL6rsb1bc3En9zaEor9S0gyIp</a></li>
+<li><a href="https://www.youtube.com/watch?v=rSjgVeNQrN0&amp;list=PLbzoR-pLrL6rsb1bc3En9zaEor9S0gyIp&amp;index=2">https://www.youtube.com/watch?v=rSjgVeNQrN0&amp;list=PLbzoR-pLrL6rsb1bc3En9zaEor9S0gyIp&amp;index=2</a></li>
+</ul>
+<h2 id="git">git?<a class="headerlink" href="#git" title="Permanent link">¶</a></h2>
+<p>Até 2005 o linux utilizava um sistema privado de gerenciamento de versão privado, Linus tirou uma semana de férias e nasceu o git!</p>
+
+  <hr>
+<div class="md-source-file">
+  <small>
+    
+      Last update:
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">June 13, 2022</span>
+      
+    
+  </small>
+</div>
+
+              
+            </article>
+            
+          </div>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+    <nav class="md-footer__inner md-grid" aria-label="Footer" >
+      
+        
+        <a href="../Util-VM-Linux/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Boot SSD via VirtualBox" rel="prev">
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+          </div>
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              Boot SSD via VirtualBox
+            </div>
+          </div>
+        </a>
+      
+      
+    </nav>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright &copy; Rafael Corsi @ insper
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.instant"], "search": "../assets/javascripts/workers/search.85cb4492.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.f758a944.min.js"></script>
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/js-yaml/4.0.0/js-yaml.min.js"></script>
+      
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+        <script src="https://cdn.jsdelivr.net/gh/insper-education/active-handout-plugins-js@main/package/plugin-bundle.js"></script>
+      
+    
+  </body>
+</html>

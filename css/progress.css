@@ -1,0 +1,81 @@
+.button0 {
+    border: none;
+    color: #fff;
+    font-size: 1.2em;
+    background: #27e;
+    padding: 0.5em 0.75em 0.6em;
+    border-radius: 3px;
+    box-shadow: 0 3px 0 #05c;
+    outline: none;
+}
+
+.button1 {
+    border: none;
+    color: #fff;
+    font-size: 1.2em;
+    background: #dc143c;
+    padding: 0.5em 0.75em 0.6em;
+    border-radius: 3px;
+    box-shadow: 0 3px 0 #dc243c;
+    outline: none;
+}
+
+.buttonDis {
+    background-color: gray; 
+    box-shadow: 0 3px 0 gray;
+
+}
+
+.buttonDone {
+    background-color: green; 
+    box-shadow: 0 3px 0 rgb(2, 78, 2);
+}
+
+input {
+ border: none;
+ color: #000;
+ font-size: 1.2em;
+ background: #676464;
+ padding: 0.5em 0.75em 0.6em;
+ border-radius: 3px;
+ box-shadow: 0 3px 0 #05c;
+ outline: none;
+}
+
+button.like{
+	width: 30px;
+	height: 30px;
+	margin: 0 auto;
+	line-heigth: 50px;
+	border-radius: 50%;
+	color: rgba(0,150,136 ,1);
+	background-color:rgba(38,166,154 ,0.3);
+	border-color: rgba(0,150,136 ,1);
+	border-width: 1px;
+	font-size: 15px;
+}
+
+button.dislike{
+	width: 30px;
+	height: 30px;
+	margin: 0 auto;
+	line-heigth: 50px;
+	border-radius: 50%;
+	color: rgba(255,82,82 ,1);
+	background-color: rgba(255,138,128 ,0.3);
+	border-color: rgba(255,82,82 ,1);
+	border-width: 1px;
+	font-size: 15px;
+}
+
+button.learnmore{
+	width: 100%;
+	padding: 10px;
+	border: none;
+	background: rgba(0,151,167 ,1);
+	border-radius: 5px;
+	text-transform: uppercase;
+	font-size: 16px;
+	color: #fff;
+	letter-spacing: 1px;
+}

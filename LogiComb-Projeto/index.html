@@ -1,0 +1,2677 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://insper.github.io/Z01.1/LogiComb-Projeto/">
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.3.0, mkdocs-material-8.3.4">
+    
+    
+      
+        <title>B - Lógica Combinacional - Elementos de Sistemas</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.4a0965b7.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.cbb835fc.min.css">
+        
+          
+          
+          <meta name="theme-color" content="#000000">
+        
+      
+      
+    
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("..",location),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Fira+Sans+Extra+Condensed:700|Oxygen+Mono|Source+Sans+Pro:700|Source+Serif+Pro&amp;display=swap">
+<link rel="stylesheet" href="../assets/css/devlife.css">
+
+
+    <script>
+        window.ihandout_config = JSON.parse(`{"report": {"api-base": "https://127.0.0.1:8080/api/offerings/1/", "url": "https://127.0.0.1:8080/api/offerings/1/exercises/"}}`);
+    </script>
+
+
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="" data-md-color-primary="black" data-md-color-accent="pink">
+  
+    
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#b-logica-combinacional" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="Elementos de Sistemas" class="md-header__button md-logo" aria-label="Elementos de Sistemas" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Elementos de Sistemas
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              B - Lógica Combinacional
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" aria-label="Clear" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/insper/Z01.1" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    Insper/Z01.1
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Elementos de Sistemas" class="md-nav__button md-logo" aria-label="Elementos de Sistemas" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    Elementos de Sistemas
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/insper/Z01.1" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    Insper/Z01.1
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_1" type="checkbox" id="__nav_1" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_1">
+          Home
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Home" data-md-level="1">
+        <label class="md-nav__title" for="__nav_1">
+          <span class="md-nav__icon md-icon"></span>
+          Home
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        Bem vindo disciplina de Elementos de Sistemas!
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Sobre-Criterios-de-Avaliacao/" class="md-nav__link">
+        Critérios de Avaliação
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Sobre-Rubricas/" class="md-nav__link">
+        Rubricas individuais
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Util-Aulas/" class="md-nav__link">
+        Resumo Aulas
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../21a/Avaliacoes/" class="md-nav__link">
+        Avaliações
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4" type="checkbox" id="__nav_4" checked>
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_4">
+          Projetos
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Projetos" data-md-level="1">
+        <label class="md-nav__title" for="__nav_4">
+          <span class="md-nav__icon md-icon"></span>
+          Projetos
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../A-Ambiente-Desenvolvimento-Projeto/" class="md-nav__link">
+        A - Ambiente de desenvolvimento
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          B - Lógica Combinacional
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        B - Lógica Combinacional
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#instrucoes" class="md-nav__link">
+    Instruções
+  </a>
+  
+    <nav class="md-nav" aria-label="Instruções">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#integrantes" class="md-nav__link">
+    Integrantes
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#controle-de-tarefas-e-repositorio" class="md-nav__link">
+    Controle de Tarefas e Repositório
+  </a>
+  
+    <nav class="md-nav" aria-label="Controle de Tarefas e Repositório">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#facilitador-scrum-master" class="md-nav__link">
+    Facilitador (Scrum Master)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#desenvolvedores" class="md-nav__link">
+    Desenvolvedores
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#arquivos" class="md-nav__link">
+    Arquivos
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#entendendo-o-projeto" class="md-nav__link">
+    Entendendo o projeto
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#executando-o-script-de-teste" class="md-nav__link">
+    Executando o script de teste
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#entrega" class="md-nav__link">
+    Entrega
+  </a>
+  
+    <nav class="md-nav" aria-label="Entrega">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#conceito-c" class="md-nav__link">
+    Conceito C+
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#conceito-b" class="md-nav__link">
+    Conceito B+
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#rubricas-para-avaliacao-do-projeto" class="md-nav__link">
+    Rubricas para avaliação do projeto
+  </a>
+  
+    <nav class="md-nav" aria-label="Rubricas para avaliação do projeto">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#grupo" class="md-nav__link">
+    Grupo
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#individual" class="md-nav__link">
+    Individual
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#formularios" class="md-nav__link">
+    Formulários
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ula-Projeto/" class="md-nav__link">
+        C - ULA
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../seq-Projeto/" class="md-nav__link">
+        D - Lógica Sequencial
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../assembly-Projeto/" class="md-nav__link">
+        E - Assembly
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_6" type="checkbox" id="__nav_4_6" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_4_6">
+          F - CPU
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="F - CPU" data-md-level="2">
+        <label class="md-nav__title" for="__nav_4_6">
+          <span class="md-nav__icon md-icon"></span>
+          F - CPU
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../cpu-Projeto/" class="md-nav__link">
+        Projeto
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../cpu-Testando/" class="md-nav__link">
+        Testando
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../assembler-Projeto/" class="md-nav__link">
+        G - Assembler
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../vm-Projeto/" class="md-nav__link">
+        H - VM
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../J-VMtranslator-Projeto/" class="md-nav__link">
+        I - VM Translator
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../X-Processadores-Projeto/" class="md-nav__link">
+        Mundo Real
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5" type="checkbox" id="__nav_5" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_5">
+          Labs
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Labs" data-md-level="1">
+        <label class="md-nav__title" for="__nav_5">
+          <span class="md-nav__icon md-icon"></span>
+          Labs
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../A-Transistores-Lab-1-22/" class="md-nav__link">
+        Lab 1: Transistores / CI
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../A-Ambiente-Lab-1/" class="md-nav__link">
+        Lab 2: Configurando Github
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../A-Ambiente-Lab-2/" class="md-nav__link">
+        Lab 3: Github
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../LogiComb-Lab-1/" class="md-nav__link">
+        Lab 4: FPGA - VHDL
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../LogiComb-Lab-2/" class="md-nav__link">
+        Lab 5: Lógica Combinacional
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ula-Lab-1/" class="md-nav__link">
+        Lab 6: Adders
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ula-Lab-2/" class="md-nav__link">
+        Lab 7: Visualizando simulação
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ula-Lab-3/" class="md-nav__link">
+        Lab 8: ULA
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../seq-Lab-1/" class="md-nav__link">
+        Lab 9: Lógica Sequencial
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../assembly-Lab-1/" class="md-nav__link">
+        Lab 10: Assembly
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../assembly-Lab-2/" class="md-nav__link">
+        Lab 11: Periféricos
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../assembly-Lab-3/" class="md-nav__link">
+        Lab 12: saltos (jump)
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../assembly-Lab-4/" class="md-nav__link">
+        Lab 13: praticando nasm
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../assembly-lab-HW/" class="md-nav__link">
+        Programando FPGA
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ula-lab-4/" class="md-nav__link">
+        Lab 14: Pequena CPU
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../cpu-lab-1/" class="md-nav__link">
+        Lab 15: Control Unit
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5_17" type="checkbox" id="__nav_5_17" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_5_17">
+          Lab 16: Assembler
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Lab 16: Assembler" data-md-level="2">
+        <label class="md-nav__title" for="__nav_5_17">
+          <span class="md-nav__icon md-icon"></span>
+          Lab 16: Assembler
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../assembler-Lab-1/" class="md-nav__link">
+        Introdução
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../assembler-Lab-1-parte-1/" class="md-nav__link">
+        parte 1
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../assembler-Lab-1-parte-2/" class="md-nav__link">
+        parte 2
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../assembler-Lab-1-parte-3/" class="md-nav__link">
+        parte 3
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../assembler-Lab-1-parte-4/" class="md-nav__link">
+        parte 4
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../assembler-Lab-1-parte-5/" class="md-nav__link">
+        parte 5
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../vm-Lab-1/" class="md-nav__link">
+        Lab 17: vm
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5_19" type="checkbox" id="__nav_5_19" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_5_19">
+          Lab 18: VMtranslator
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Lab 18: VMtranslator" data-md-level="2">
+        <label class="md-nav__title" for="__nav_5_19">
+          <span class="md-nav__icon md-icon"></span>
+          Lab 18: VMtranslator
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../VMtranslator-Lab-1-old/" class="md-nav__link">
+        Lab 18: Vm Translator
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../VMtranslator-Lab-1/" class="md-nav__link">
+        Lab 18: Vm Translator - Praticando
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_6" type="checkbox" id="__nav_6" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_6">
+          Teoria
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Teoria" data-md-level="1">
+        <label class="md-nav__title" for="__nav_6">
+          <span class="md-nav__icon md-icon"></span>
+          Teoria
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Teoria-Dados/" class="md-nav__link">
+        Dados Digitais
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Teoria-Algebra-Booleana/" class="md-nav__link">
+        Álgebra Booleana
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Teoria-CMOS/" class="md-nav__link">
+        Lógica CMOS (Complementary Metal–Oxide–Semiconductor)
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Teoria-RTL/" class="md-nav__link">
+        Resistor-Transistor Logic (RTL)
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Teoria-Componentes/" class="md-nav__link">
+        Componentes Digitais
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Teoria-Aritmetica-Binaria/" class="md-nav__link">
+        Aritmética Binária
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Teoria-Aritmetica-Binaria-HW/" class="md-nav__link">
+        Aritmética Binária - HW
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Teoria-ULA/" class="md-nav__link">
+        ULA
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Teoria-Logica-Sequencial/" class="md-nav__link">
+        Lógica Sequencial
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Teoria-Sequencial-Componentes/" class="md-nav__link">
+        Componentes Síncronos
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Teoria-Z01/" class="md-nav__link">
+        Z01
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Teoria-Assembly/" class="md-nav__link">
+        ASM - Assembly
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Teoria-Z01-mapadeMemoria/" class="md-nav__link">
+        ASM - Mapa de memória
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Teoria-nasm-jump/" class="md-nav__link">
+        ASM - jump
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Teoria-Linguagem-de-Maquina/" class="md-nav__link">
+        Linguagem de máquina
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Teoria-Assembler/" class="md-nav__link">
+        Assembler
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../assembler-Dicas-SymbolTable/" class="md-nav__link">
+        Tabela de Símbolos
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Teoria-vm/" class="md-nav__link">
+        VM
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Teoria-vm-segmentos/" class="md-nav__link">
+        VM - Segmentos
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Teoria-vm-jump/" class="md-nav__link">
+        VM - jump
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Teoria-vm-funcoes/" class="md-nav__link">
+        VM - Funções
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Teoria-vm-memoria/" class="md-nav__link">
+        VM - Memória
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Util-Video-Aulas/" class="md-nav__link">
+        Vídeo Aulas (Luciano)
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_7" type="checkbox" id="__nav_7" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_7">
+          VHDL
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="VHDL" data-md-level="1">
+        <label class="md-nav__title" for="__nav_7">
+          <span class="md-nav__icon md-icon"></span>
+          VHDL
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../VHDL-basico/" class="md-nav__link">
+        Introdução
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../VHDL-Combinacional/" class="md-nav__link">
+        Combinacional
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../VHDL-port-map/" class="md-nav__link">
+        port map
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../VHDL-Sequencial/" class="md-nav__link">
+        Sequencial
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../VHDL-RTL/" class="md-nav__link">
+        RTL Viewer
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../VHDL-exemplos/" class="md-nav__link">
+        Exemplos completos
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_8" type="checkbox" id="__nav_8" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_8">
+          Z01
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Z01" data-md-level="1">
+        <label class="md-nav__title" for="__nav_8">
+          <span class="md-nav__icon md-icon"></span>
+          Z01
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Util-Resumo-Assembly/" class="md-nav__link">
+        Resumo Assembly
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Util-Z01.1-Cheat-Sheet/" class="md-nav__link">
+        Z01.1 Cheat Sheet
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Util-InstructionSet/" class="md-nav__link">
+        Instruction Set
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Util-Resumo-VM/" class="md-nav__link">
+        Resumo VM
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_9" type="checkbox" id="__nav_9" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_9">
+          Estudo
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Estudo" data-md-level="1">
+        <label class="md-nav__title" for="__nav_9">
+          <span class="md-nav__icon md-icon"></span>
+          Estudo
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://docs.google.com/spreadsheets/d/1rN_zQqYaVI8PjAhKqEBCmY-_06I0X9dD0RddcI-miJs/edit?usp=sharing" class="md-nav__link">
+        Dados Digitais - 1
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://github.com/Insper/Z01.1/blob/main/Exercicios/Dados_1.pdf" class="md-nav__link">
+        Dados Digitais - 1 - pdf
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://github.com/Insper/Z01.1/blob/main/Exercicios/Dados_1_respostas.pdf" class="md-nav__link">
+        Dados Digitais - 1 - respostas
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Exercicio-Dados-2/" class="md-nav__link">
+        Dados Digitais - 2
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://github.com/Insper/Z01.1/blob/main/Exercicios/Exercicio-Dados-2_resolucao.pdf" class="md-nav__link">
+        Dados Digitais - 2 - respostas
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Exercicio-Algebra-Booleana-1/" class="md-nav__link">
+        Álgebra Booleana - 1
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Exercicio-Algebra-Booleana-2/" class="md-nav__link">
+        Álgebra Booleana - 2
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://github.com/Insper/Z01.1/blob/master/Exercicios/Exercicio-Aritmetica-Booleana.pdf" class="md-nav__link">
+        Handout Aritmetica Booleana
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://forms.gle/XMsFCDMYsmz1qUP86" class="md-nav__link">
+        Lógica Sequencial
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://github.com/Insper/Z01.1/blob/master/Exercicios/Linguagem_de_maquina.pdf" class="md-nav__link">
+        Linguagem de Máquina
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Exercicio-CPU-1/" class="md-nav__link">
+        Exercicio CPU - 1
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Exercicio-CPU-2/" class="md-nav__link">
+        Exercício CPU - 2
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_10" type="checkbox" id="__nav_10" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_10">
+          Útil
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Útil" data-md-level="1">
+        <label class="md-nav__title" for="__nav_10">
+          <span class="md-nav__icon md-icon"></span>
+          Útil
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Util-Comecando-novo-projeto/" class="md-nav__link">
+        Começando novo projeto
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Util-vixi-sou-scrum/" class="md-nav__link">
+        Vixi! Sou scrum master
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Util-Dicas-GIT/" class="md-nav__link">
+        Dicas git
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Util-Dicas-Travis/" class="md-nav__link">
+        Dicas Actions
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Util-Infraestrutura/" class="md-nav__link">
+        Infraestrutura
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Util-VM-Linux/" class="md-nav__link">
+        Boot SSD via VirtualBox
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_11" type="checkbox" id="__nav_11" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_11">
+          História
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="História" data-md-level="1">
+        <label class="md-nav__title" for="__nav_11">
+          <span class="md-nav__icon md-icon"></span>
+          História
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Historia-linux/" class="md-nav__link">
+        Historia linux
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#instrucoes" class="md-nav__link">
+    Instruções
+  </a>
+  
+    <nav class="md-nav" aria-label="Instruções">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#integrantes" class="md-nav__link">
+    Integrantes
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#controle-de-tarefas-e-repositorio" class="md-nav__link">
+    Controle de Tarefas e Repositório
+  </a>
+  
+    <nav class="md-nav" aria-label="Controle de Tarefas e Repositório">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#facilitador-scrum-master" class="md-nav__link">
+    Facilitador (Scrum Master)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#desenvolvedores" class="md-nav__link">
+    Desenvolvedores
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#arquivos" class="md-nav__link">
+    Arquivos
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#entendendo-o-projeto" class="md-nav__link">
+    Entendendo o projeto
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#executando-o-script-de-teste" class="md-nav__link">
+    Executando o script de teste
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#entrega" class="md-nav__link">
+    Entrega
+  </a>
+  
+    <nav class="md-nav" aria-label="Entrega">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#conceito-c" class="md-nav__link">
+    Conceito C+
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#conceito-b" class="md-nav__link">
+    Conceito B+
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#rubricas-para-avaliacao-do-projeto" class="md-nav__link">
+    Rubricas para avaliação do projeto
+  </a>
+  
+    <nav class="md-nav" aria-label="Rubricas para avaliação do projeto">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#grupo" class="md-nav__link">
+    Grupo
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#individual" class="md-nav__link">
+    Individual
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#formularios" class="md-nav__link">
+    Formulários
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content" data-md-component="content">
+            <article class="md-content__inner md-typeset">
+              
+                
+  <a href="https://github.com/insper/Z01.1/edit/docs/docs-src/LogiComb-Projeto.md" title="Edit this page" class="md-content__button md-icon">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25Z"/></svg>
+  </a>
+
+
+
+<h1 id="b-logica-combinacional">B - Lógica Combinacional<a class="headerlink" href="#b-logica-combinacional" title="Permanent link">¶</a></h1>
+<table>
+<thead>
+<tr>
+<th>Data da entrega</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Quinta - 17/03</td>
+</tr>
+</tbody>
+</table>
+<p><img alt="" src="../figs/LogiComb/sistema-comb.svg"/></p>
+<div class="admonition tip">
+<p class="admonition-title">Scrum Master</p>
+<p>Você é <code>Scrum Master</code> e não sabe por onde começar? De uma olhada nessas dicas: <a href="https://insper.github.io/Z01.1/Util-vixi-sou-scrum/">Vixi! Sou Scrum Master</a></p>
+</div>
+<p>Esse projeto tem como objetivo trabalhar com portas lógicas e sistemas digitais combinacionais (sem um clock) em FPGA e VHDL. Os elementos lógicos desenvolvidos nessa etapa serão utilizados como elementos básicos para a construção do computador. </p>
+<h2 id="instrucoes">Instruções<a class="headerlink" href="#instrucoes" title="Permanent link">¶</a></h2>
+<p>O desenvolvimento será na linguagem VHDL, o grupo deve se organizar para implementar todos os elementos propostos. O facilitador escolhido será responsável pela completude e consistência do branch master do grupo.</p>
+<h3 id="integrantes">Integrantes<a class="headerlink" href="#integrantes" title="Permanent link">¶</a></h3>
+<p>Tarefas devem ser criadas no <strong>Issues</strong> e atribuídas aos demais colegas.
+As tarefas devem ser resolvidas individualmente! Utilize a ajuda de seus colegas, mas resolva o que foi atribuído a vocês, essa é sua tarefa/ responsabilidade! </p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>Este  projeto é para ser realizado por todos os integrantes do grupo em seus próprios computadores, quem não participar, não implementar os módulos que foram atribuídos, ou não realizar pull-request não ganhará nota de participação individual.</p>
+</div>
+<h3 id="controle-de-tarefas-e-repositorio">Controle de Tarefas e Repositório<a class="headerlink" href="#controle-de-tarefas-e-repositorio" title="Permanent link">¶</a></h3>
+<p>Nas discussões com os outros colegas o scrum master deve definir os módulos que cada um do grupo irá desenvolver. Crie uma rotina para commits e pull-request. Sempre teste os módulos e verifique se está fazendo o esperado.</p>
+<h4 id="facilitador-scrum-master">Facilitador (Scrum Master)<a class="headerlink" href="#facilitador-scrum-master" title="Permanent link">¶</a></h4>
+<ul>
+<li>Fazer a <strong>atualização</strong> do fork com o upstream</li>
+<li>Organizar o <strong>github + issues + project</strong></li>
+<li>Gerenciar o grupo (atribuir tarefas)</li>
+<li><strong>Gerenciar os pull-requests</strong></li>
+<li>Criar relatório da performance de cada um do grupo</li>
+<li>Entregar/Apresentar o projeto no final </li>
+</ul>
+<h4 id="desenvolvedores">Desenvolvedores<a class="headerlink" href="#desenvolvedores" title="Permanent link">¶</a></h4>
+<ul>
+<li>Realizar as tarefas atribuidas pelo scrum-master</li>
+<li>Ajudar na entrega final </li>
+<li>Testar os códigos</li>
+<li>Realizar os pull-requests</li>
+</ul>
+<h3 id="arquivos">Arquivos<a class="headerlink" href="#arquivos" title="Permanent link">¶</a></h3>
+<p>A pasta contém dois diretórios distintos : <code>src/</code> e <code>Quartus/</code>. O diretório <code>src</code> contém os arquivos fontes que deverão ser editados para implementar o projeto. O diretório <code>quartus/</code> contém o projeto que possibilitará compilar os módulos e testar em hardware.</p>
+<h3 id="entendendo-o-projeto">Entendendo o projeto<a class="headerlink" href="#entendendo-o-projeto" title="Permanent link">¶</a></h3>
+<p>A pasta do projeto B no repositório <code>Z01.1</code> possui a seguinte estrutura :</p>
+<div class="highlight"><pre><span></span><code>/B-LogicaCombinacional
+  testeLogicaCombinacional.py
+  /Quartus
+  /src
+    *.vhd
+  config_testes.txt
+  /testes
+    *.vhd
+</code></pre></div>
+<ol>
+<li><code>Quartus</code>: Projeto Quartus que faz uso dos arquivos VHDL localizados em <code>src/rtl/*.vhd</code> <ul>
+<li>Serve para programar a <strong>FPGA</strong></li>
+</ul>
+</li>
+<li><code>*.py</code>: Scripts em python automatiza a execução dos testes</li>
+<li><code>src/*.vhd</code>: Arquivos VHDL que serão implementado pelo grupo</li>
+<li><code>config_testes.txt</code>: Configuração dos testes</li>
+<li><code>testes/*.vhd</code>: Arquivos VHDL que realizam teste lógico nos arquivos do rtl</li>
+</ol>
+<h3 id="executando-o-script-de-teste">Executando o script de teste<a class="headerlink" href="#executando-o-script-de-teste" title="Permanent link">¶</a></h3>
+<p>Abra o terminal na pasta <code>B-LogicaCombinacional</code> e execute o script python localizado nessa pasta:</p>
+<div class="highlight"><pre><span></span><code>$ ./testeLogicaCombinacional.py
+</code></pre></div>
+<script async="" id="asciicast-eolZDZIqCgTe3UQsX5jLrkF3D" src="https://asciinema.org/a/eolZDZIqCgTe3UQsX5jLrkF3D.js"></script>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>No exemplo de teste verificamos que aimplementação da <code>nand</code> está errada.</p>
+</div>
+<h2 id="entrega">Entrega<a class="headerlink" href="#entrega" title="Permanent link">¶</a></h2>
+<p>A entrega deve ser feita no ramo <code>master</code> do git.</p>
+<ul class="task-list">
+<li class="task-list-item"><label class="task-list-control"><input disabled="" type="checkbox"/><span class="task-list-indicator"></span></label> Implementar todos os módulos listados</li>
+<li class="task-list-item"><label class="task-list-control"><input disabled="" type="checkbox"/><span class="task-list-indicator"></span></label> Todos os módulos devem passar nos testes</li>
+<li class="task-list-item"><label class="task-list-control"><input disabled="" type="checkbox"/><span class="task-list-indicator"></span></label> Actions deve estar configurado e funcionando</li>
+<li class="task-list-item"><label class="task-list-control"><input disabled="" type="checkbox"/><span class="task-list-indicator"></span></label> Implementar acionamento do diplay de 7 segmentos e demonstrar na FPGA</li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Esses arquivos estão localizados em <code>B-LogicaCombinacional/src/</code></p>
+</div>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>Utilize o VScode para editar os arquivos em <code>vhdl</code> e valide a implementação executando o script de testes.</p>
+</div>
+<p>Deve-se implementar os seguintes circuitos combinacionais: </p>
+<h3 id="conceito-c">Conceito C+<a class="headerlink" href="#conceito-c" title="Permanent link">¶</a></h3>
+<ul>
+<li>
+<p>AND 16 bits</p>
+<ul>
+<li><strong>Arquivo</strong>   : <code>And16.vhd</code></li>
+<li><strong>Descrição</strong> : And bit a bit entre duas palavras de 16 bits.</li>
+</ul>
+</li>
+<li>
+<p>OR de 16 bits</p>
+<ul>
+<li><strong>Arquivo</strong>   : <code>Or16.vhd</code></li>
+<li><strong>Descrição</strong> : OR bit a bit entre duas palavras de 16 bits.</li>
+</ul>
+</li>
+<li>
+<p>NOT de 16 bits</p>
+<ul>
+<li><strong>Arquivo</strong>   : <code>Not16.vhd</code></li>
+<li><strong>Descrição</strong> : NOT bit a bit entre duas palavras de 16 bits.</li>
+</ul>
+</li>
+<li>
+<p>NOR 8 Way </p>
+<ul>
+<li><strong>Arquivo</strong>   : <code>Nor8Way.vhd</code></li>
+<li><strong>Descrição</strong> : NOR entre 8 bits, resulta em uma única saída</li>
+</ul>
+</li>
+<li>
+<p>OR 8 Way  </p>
+<ul>
+<li><strong>Arquivo</strong>   : <code>Or8Way.vhd</code></li>
+<li><strong>Descrição</strong> : OR entre 8 bits, resulta em uma única saída</li>
+</ul>
+</li>
+<li>
+<p>Demultiplexador de 2 saídas </p>
+<ul>
+<li><strong>Arquivo</strong>   : <code>DMux2Way.vhd</code></li>
+<li><strong>Descrição</strong> : Demultiplexa uma entrada binária em duas saídas.</li>
+</ul>
+</li>
+<li>
+<p>Demultiplexador de 4 saídas</p>
+<ul>
+<li><strong>Arquivo</strong>   : <code>DMux4Way.vhd</code></li>
+<li><strong>Descrição</strong> : Demultiplexa uma entrada binária em quatro saídas.</li>
+</ul>
+</li>
+<li>
+<p>Demultiplexador de 8 saídas</p>
+<ul>
+<li><strong>Arquivo</strong>   : <code>DMux8Way.vhd</code></li>
+<li><strong>Descrição</strong> : Demultiplexa uma entrada binária em oito saídas.</li>
+</ul>
+</li>
+<li>
+<p>Multiplexador de duas entradas de 16 bits </p>
+<ul>
+<li><strong>Arquivo</strong>   : <code>Mux16.vhd</code></li>
+<li><strong>Descrição</strong> : Multiplexa duas entradas de 16 bits para uma de 16 bits.</li>
+</ul>
+</li>
+<li>
+<p>Multiplexador 2 entradas de um bit cada</p>
+<ul>
+<li><strong>Arquivo</strong>   : <code>Mux2Way.vhd</code></li>
+<li><strong>Descrição</strong> : Multiplexa 2 entradas binárias em uma saída binária</li>
+</ul>
+</li>
+<li>
+<p>Multiplexador 4 entradas de um bit cada</p>
+<ul>
+<li><strong>Arquivo</strong>   : <code>Mux4Way.vhd</code></li>
+<li><strong>Descrição</strong> : Multiplexa 4 entradas binárias em uma saída binária</li>
+</ul>
+</li>
+<li>
+<p>Multiplexador 8 entradas de um bit cada</p>
+<ul>
+<li><strong>Arquivo</strong>   : <code>Mux8Way.vhd</code></li>
+<li><strong>Descrição</strong> : Multiplexa 8 entradas binárias em uma saída binária</li>
+</ul>
+</li>
+<li>
+<p>Multiplexador 4 entradas de 16 bits cada</p>
+<ul>
+<li><strong>Arquivo</strong>   : <code>Mux4Way16.vhd</code></li>
+<li><strong>Descrição</strong> : Multiplexa 4 entradas de 16 bits cada em uma saída de 16 bits.</li>
+</ul>
+</li>
+<li>
+<p>Multiplexador 8 entradas de 16 bits cada</p>
+<ul>
+<li><strong>Arquivo</strong>   : <code>Mux8Way16.vhd</code></li>
+</ul>
+</li>
+<li>
+<p>Deslocador de bits</p>
+<ul>
+<li><strong>Arquivo</strong>   : <code>BarrelShifter16.vhd</code></li>
+</ul>
+</li>
+</ul>
+<h3 id="conceito-b">Conceito B+<a class="headerlink" href="#conceito-b" title="Permanent link">¶</a></h3>
+<ul>
+<li>
+<p>Circuito lógico </p>
+<ul>
+<li><strong>Arquivo</strong> : <code>circuito.vhd</code></li>
+<li><strong>Descrição</strong>: Primeira questão da lista de exercícios <a href="https://insper.github.io/Z01.1/Exercicio-Algebra-Booleana-2/">Álgebra Booleana 2</a></li>
+</ul>
+</li>
+<li>
+<p>Detector de moedas</p>
+<ul>
+<li><strong>Arquivo</strong> : <code>detectorDeMoedas.vhd</code></li>
+<li><strong>Descrição</strong>: Questão do detector de moedas da lista de exercícios <a href="https://insper.github.io/Z01.1/Exercicio-Algebra-Booleana-2/">Álgebra Booleana 2</a></li>
+</ul>
+</li>
+<li>
+<p>Impressora</p>
+<ul>
+<li><strong>Arquivo</strong> : <code>impressora.vhd</code></li>
+<li><strong>Descrição</strong>: Questão da impressora da lista de exercícios <a href="https://insper.github.io/Z01.1/Exercicio-Algebra-Booleana-2/">Álgebra Booleana 2</a></li>
+</ul>
+</li>
+<li>
+<p>Display de 7s</p>
+<ul>
+<li><strong>Arquivo</strong>: `sevenSeg.vhd'</li>
+<li><strong>Descrição</strong>: Questão do display de sete segmentos da lista de exercícios <a href="https://insper.github.io/Z01.1/Exercicio-Algebra-Booleana-2/">Álgebra Booleana 2</a></li>
+</ul>
+</li>
+</ul>
+<div class="admonition tip">
+<p class="admonition-title">Display 7s</p>
+<ol>
+<li>Esse item é uma continuação do que foi realizado no <a href="/LogiComb-Lab-1/">Lab4</a>, onde vocês tiveram que exibir um valor constante no display de 7s. </li>
+<li>Para cada segmento do display, vocês devem encontrar uma equação booleana que o represente, e então implementar em VHDL e testar na FPGA.</li>
+</ol>
+</div>
+<!--
+- O grupo deve apresentar um vídeo da FPGA mostrando nos display de 7 segmentos o seguinte:
+    - (C) O valor em hexadecimal da palavra binária formada pelas chaves SW(3 .. 0)
+    - (C) O valor em hexadecimal da palavra binária formada pelas chaves SW(9 .. 0)
+    - (B) O valor em decimal da palavra binária formada pelas chaves SW(9 .. 0)
+-->
+<h2 id="rubricas-para-avaliacao-do-projeto">Rubricas para avaliação do projeto<a class="headerlink" href="#rubricas-para-avaliacao-do-projeto" title="Permanent link">¶</a></h2>
+<p>Cada integrante do grupo irá receber duas notas: Uma referente ao desenvolvimento total do projeto (Projeto) e outra referente a sua participação individual no grupo.</p>
+<h3 id="grupo">Grupo<a class="headerlink" href="#grupo" title="Permanent link">¶</a></h3>
+<p>Para atingir os objetivos A e B, deve-se antes atingir o C.</p>
+<table>
+<thead>
+<tr>
+<th>Conceito</th>
+<th>Descritivo</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>A+</strong></td>
+<td>Exibe três dígitos em Hexadecimal na FPGA - anexar video ao repositório</td>
+</tr>
+<tr>
+<td></td>
+<td>(exibir até o valor 0x3FF = 2^10 - 1)</td>
+</tr>
+<tr>
+<td><strong>B+</strong></td>
+<td>Módulos adicionais implementados e funcionado (circuito, detector de moedas, impressora)</td>
+</tr>
+<tr>
+<td></td>
+<td>Implementar um único display de 7s (conta de 0x0 0xF) - anexar video ao repositório</td>
+</tr>
+<tr>
+<td><strong>C+</strong></td>
+<td>Ter criado o project no github</td>
+</tr>
+<tr>
+<td></td>
+<td>Actions configurado e funcionando</td>
+</tr>
+<tr>
+<td></td>
+<td>Todos os módulos básicos implementados e funcionado</td>
+</tr>
+<tr>
+<td><strong>D</strong></td>
+<td>Até dois Módulos com falha/ não apresentou o vídeo da FPGA</td>
+</tr>
+<tr>
+<td><strong>I</strong></td>
+<td>Mais de três módulos com falha</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition tip">
+<p class="admonition-title">Conceito A e B</p>
+<p>Atualizei o repositório adicionando dois novos arquivos:</p>
+<ul>
+<li><code>ConceitoB.vhd</code> e <code>ConceitoA.vhd</code></li>
+</ul>
+<p>Vocês devem implementar os o "exibe hexadecimal" e "exibe decimal" nestes
+arquivos. Adicionei um teste para os módulos, <mark>você pode testar descomentando
+o arquivo de configuração de testes.</mark></p>
+<p>Sugerimos que vocês reutilizem o módulo <code>sevenSeg.vhd</code>, para isso devem
+utilizar uma recurso do VHDL chamado de <code>port map</code>, para saber mais acesse:</p>
+<ul>
+<li><a href="/Z01.1/VHDL-port-map/">VHDL/port map</a> </li>
+</ul>
+</div>
+<h3 id="individual">Individual<a class="headerlink" href="#individual" title="Permanent link">¶</a></h3>
+<p>As rubricas a serem seguidas serão comuns a todos os projeto e está descrito no link:</p>
+<ul>
+<li><a href="/Z01.1/Sobre-Rubricas/">Rubricas Scrum e Desenvolvedor</a></li>
+</ul>
+<h3 id="formularios">Formulários<a class="headerlink" href="#formularios" title="Permanent link">¶</a></h3>
+<ul>
+<li><a href="https://forms.gle/LqmbrhUFbxpEhubSA">Scrum Master</a></li>
+<li><a href="https://forms.gle/jTrSaBegjKZZF6za6">Desenvolvedores</a></li>
+</ul>
+
+  <hr>
+<div class="md-source-file">
+  <small>
+    
+      Last update:
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">June 13, 2022</span>
+      
+    
+  </small>
+</div>
+
+              
+            </article>
+            
+          </div>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+    <nav class="md-footer__inner md-grid" aria-label="Footer" >
+      
+        
+        <a href="../A-Ambiente-Desenvolvimento-Projeto/" class="md-footer__link md-footer__link--prev" aria-label="Previous: A - Ambiente de desenvolvimento" rel="prev">
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+          </div>
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              A - Ambiente de desenvolvimento
+            </div>
+          </div>
+        </a>
+      
+      
+        
+        <a href="../ula-Projeto/" class="md-footer__link md-footer__link--next" aria-label="Next: C - ULA" rel="next">
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              C - ULA
+            </div>
+          </div>
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg>
+          </div>
+        </a>
+      
+    </nav>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright &copy; Rafael Corsi @ insper
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.instant"], "search": "../assets/javascripts/workers/search.85cb4492.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.f758a944.min.js"></script>
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/js-yaml/4.0.0/js-yaml.min.js"></script>
+      
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+        <script src="https://cdn.jsdelivr.net/gh/insper-education/active-handout-plugins-js@main/package/plugin-bundle.js"></script>
+      
+    
+  </body>
+</html>

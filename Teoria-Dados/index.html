@@ -1,0 +1,2826 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://insper.github.io/Z01.1/Teoria-Dados/">
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.3.0, mkdocs-material-8.3.4">
+    
+    
+      
+        <title>Dados Digitais - Elementos de Sistemas</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.4a0965b7.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.cbb835fc.min.css">
+        
+          
+          
+          <meta name="theme-color" content="#000000">
+        
+      
+      
+    
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("..",location),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Fira+Sans+Extra+Condensed:700|Oxygen+Mono|Source+Sans+Pro:700|Source+Serif+Pro&amp;display=swap">
+<link rel="stylesheet" href="../assets/css/devlife.css">
+
+
+    <script>
+        window.ihandout_config = JSON.parse(`{"report": {"api-base": "https://127.0.0.1:8080/api/offerings/1/", "url": "https://127.0.0.1:8080/api/offerings/1/exercises/"}}`);
+    </script>
+
+
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="" data-md-color-primary="black" data-md-color-accent="pink">
+  
+    
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#dados-digitais" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="Elementos de Sistemas" class="md-header__button md-logo" aria-label="Elementos de Sistemas" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Elementos de Sistemas
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Dados Digitais
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" aria-label="Clear" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/insper/Z01.1" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    Insper/Z01.1
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Elementos de Sistemas" class="md-nav__button md-logo" aria-label="Elementos de Sistemas" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    Elementos de Sistemas
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/insper/Z01.1" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    Insper/Z01.1
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_1" type="checkbox" id="__nav_1" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_1">
+          Home
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Home" data-md-level="1">
+        <label class="md-nav__title" for="__nav_1">
+          <span class="md-nav__icon md-icon"></span>
+          Home
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        Bem vindo disciplina de Elementos de Sistemas!
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Sobre-Criterios-de-Avaliacao/" class="md-nav__link">
+        Critérios de Avaliação
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Sobre-Rubricas/" class="md-nav__link">
+        Rubricas individuais
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Util-Aulas/" class="md-nav__link">
+        Resumo Aulas
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../21a/Avaliacoes/" class="md-nav__link">
+        Avaliações
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4" type="checkbox" id="__nav_4" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_4">
+          Projetos
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Projetos" data-md-level="1">
+        <label class="md-nav__title" for="__nav_4">
+          <span class="md-nav__icon md-icon"></span>
+          Projetos
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../A-Ambiente-Desenvolvimento-Projeto/" class="md-nav__link">
+        A - Ambiente de desenvolvimento
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../LogiComb-Projeto/" class="md-nav__link">
+        B - Lógica Combinacional
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ula-Projeto/" class="md-nav__link">
+        C - ULA
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../seq-Projeto/" class="md-nav__link">
+        D - Lógica Sequencial
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../assembly-Projeto/" class="md-nav__link">
+        E - Assembly
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_6" type="checkbox" id="__nav_4_6" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_4_6">
+          F - CPU
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="F - CPU" data-md-level="2">
+        <label class="md-nav__title" for="__nav_4_6">
+          <span class="md-nav__icon md-icon"></span>
+          F - CPU
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../cpu-Projeto/" class="md-nav__link">
+        Projeto
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../cpu-Testando/" class="md-nav__link">
+        Testando
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../assembler-Projeto/" class="md-nav__link">
+        G - Assembler
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../vm-Projeto/" class="md-nav__link">
+        H - VM
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../J-VMtranslator-Projeto/" class="md-nav__link">
+        I - VM Translator
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../X-Processadores-Projeto/" class="md-nav__link">
+        Mundo Real
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5" type="checkbox" id="__nav_5" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_5">
+          Labs
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Labs" data-md-level="1">
+        <label class="md-nav__title" for="__nav_5">
+          <span class="md-nav__icon md-icon"></span>
+          Labs
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../A-Transistores-Lab-1-22/" class="md-nav__link">
+        Lab 1: Transistores / CI
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../A-Ambiente-Lab-1/" class="md-nav__link">
+        Lab 2: Configurando Github
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../A-Ambiente-Lab-2/" class="md-nav__link">
+        Lab 3: Github
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../LogiComb-Lab-1/" class="md-nav__link">
+        Lab 4: FPGA - VHDL
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../LogiComb-Lab-2/" class="md-nav__link">
+        Lab 5: Lógica Combinacional
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ula-Lab-1/" class="md-nav__link">
+        Lab 6: Adders
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ula-Lab-2/" class="md-nav__link">
+        Lab 7: Visualizando simulação
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ula-Lab-3/" class="md-nav__link">
+        Lab 8: ULA
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../seq-Lab-1/" class="md-nav__link">
+        Lab 9: Lógica Sequencial
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../assembly-Lab-1/" class="md-nav__link">
+        Lab 10: Assembly
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../assembly-Lab-2/" class="md-nav__link">
+        Lab 11: Periféricos
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../assembly-Lab-3/" class="md-nav__link">
+        Lab 12: saltos (jump)
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../assembly-Lab-4/" class="md-nav__link">
+        Lab 13: praticando nasm
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../assembly-lab-HW/" class="md-nav__link">
+        Programando FPGA
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ula-lab-4/" class="md-nav__link">
+        Lab 14: Pequena CPU
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../cpu-lab-1/" class="md-nav__link">
+        Lab 15: Control Unit
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5_17" type="checkbox" id="__nav_5_17" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_5_17">
+          Lab 16: Assembler
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Lab 16: Assembler" data-md-level="2">
+        <label class="md-nav__title" for="__nav_5_17">
+          <span class="md-nav__icon md-icon"></span>
+          Lab 16: Assembler
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../assembler-Lab-1/" class="md-nav__link">
+        Introdução
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../assembler-Lab-1-parte-1/" class="md-nav__link">
+        parte 1
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../assembler-Lab-1-parte-2/" class="md-nav__link">
+        parte 2
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../assembler-Lab-1-parte-3/" class="md-nav__link">
+        parte 3
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../assembler-Lab-1-parte-4/" class="md-nav__link">
+        parte 4
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../assembler-Lab-1-parte-5/" class="md-nav__link">
+        parte 5
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../vm-Lab-1/" class="md-nav__link">
+        Lab 17: vm
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5_19" type="checkbox" id="__nav_5_19" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_5_19">
+          Lab 18: VMtranslator
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Lab 18: VMtranslator" data-md-level="2">
+        <label class="md-nav__title" for="__nav_5_19">
+          <span class="md-nav__icon md-icon"></span>
+          Lab 18: VMtranslator
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../VMtranslator-Lab-1-old/" class="md-nav__link">
+        Lab 18: Vm Translator
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../VMtranslator-Lab-1/" class="md-nav__link">
+        Lab 18: Vm Translator - Praticando
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_6" type="checkbox" id="__nav_6" checked>
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_6">
+          Teoria
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Teoria" data-md-level="1">
+        <label class="md-nav__title" for="__nav_6">
+          <span class="md-nav__icon md-icon"></span>
+          Teoria
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Dados Digitais
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        Dados Digitais
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#base-2" class="md-nav__link">
+    Base 2
+  </a>
+  
+    <nav class="md-nav" aria-label="Base 2">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#definicoes" class="md-nav__link">
+    Definições
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#conversao-decimal-binario" class="md-nav__link">
+    Conversão Decimal &lt;-&gt; Binário
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#base-16" class="md-nav__link">
+    Base 16
+  </a>
+  
+    <nav class="md-nav" aria-label="Base 16">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#base-16-base-2" class="md-nav__link">
+    Base 16 &lt;--&gt; Base 2
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#base-16-base-10" class="md-nav__link">
+    Base 16 &lt;--&gt; Base 10
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#base-8" class="md-nav__link">
+    Base 8
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#outros-sistemas" class="md-nav__link">
+    Outros sistemas
+  </a>
+  
+    <nav class="md-nav" aria-label="Outros sistemas">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#bcd" class="md-nav__link">
+    BCD
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ascii" class="md-nav__link">
+    ASCII
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Teoria-Algebra-Booleana/" class="md-nav__link">
+        Álgebra Booleana
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Teoria-CMOS/" class="md-nav__link">
+        Lógica CMOS (Complementary Metal–Oxide–Semiconductor)
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Teoria-RTL/" class="md-nav__link">
+        Resistor-Transistor Logic (RTL)
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Teoria-Componentes/" class="md-nav__link">
+        Componentes Digitais
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Teoria-Aritmetica-Binaria/" class="md-nav__link">
+        Aritmética Binária
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Teoria-Aritmetica-Binaria-HW/" class="md-nav__link">
+        Aritmética Binária - HW
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Teoria-ULA/" class="md-nav__link">
+        ULA
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Teoria-Logica-Sequencial/" class="md-nav__link">
+        Lógica Sequencial
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Teoria-Sequencial-Componentes/" class="md-nav__link">
+        Componentes Síncronos
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Teoria-Z01/" class="md-nav__link">
+        Z01
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Teoria-Assembly/" class="md-nav__link">
+        ASM - Assembly
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Teoria-Z01-mapadeMemoria/" class="md-nav__link">
+        ASM - Mapa de memória
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Teoria-nasm-jump/" class="md-nav__link">
+        ASM - jump
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Teoria-Linguagem-de-Maquina/" class="md-nav__link">
+        Linguagem de máquina
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Teoria-Assembler/" class="md-nav__link">
+        Assembler
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../assembler-Dicas-SymbolTable/" class="md-nav__link">
+        Tabela de Símbolos
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Teoria-vm/" class="md-nav__link">
+        VM
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Teoria-vm-segmentos/" class="md-nav__link">
+        VM - Segmentos
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Teoria-vm-jump/" class="md-nav__link">
+        VM - jump
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Teoria-vm-funcoes/" class="md-nav__link">
+        VM - Funções
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Teoria-vm-memoria/" class="md-nav__link">
+        VM - Memória
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Util-Video-Aulas/" class="md-nav__link">
+        Vídeo Aulas (Luciano)
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_7" type="checkbox" id="__nav_7" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_7">
+          VHDL
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="VHDL" data-md-level="1">
+        <label class="md-nav__title" for="__nav_7">
+          <span class="md-nav__icon md-icon"></span>
+          VHDL
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../VHDL-basico/" class="md-nav__link">
+        Introdução
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../VHDL-Combinacional/" class="md-nav__link">
+        Combinacional
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../VHDL-port-map/" class="md-nav__link">
+        port map
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../VHDL-Sequencial/" class="md-nav__link">
+        Sequencial
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../VHDL-RTL/" class="md-nav__link">
+        RTL Viewer
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../VHDL-exemplos/" class="md-nav__link">
+        Exemplos completos
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_8" type="checkbox" id="__nav_8" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_8">
+          Z01
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Z01" data-md-level="1">
+        <label class="md-nav__title" for="__nav_8">
+          <span class="md-nav__icon md-icon"></span>
+          Z01
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Util-Resumo-Assembly/" class="md-nav__link">
+        Resumo Assembly
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Util-Z01.1-Cheat-Sheet/" class="md-nav__link">
+        Z01.1 Cheat Sheet
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Util-InstructionSet/" class="md-nav__link">
+        Instruction Set
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Util-Resumo-VM/" class="md-nav__link">
+        Resumo VM
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_9" type="checkbox" id="__nav_9" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_9">
+          Estudo
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Estudo" data-md-level="1">
+        <label class="md-nav__title" for="__nav_9">
+          <span class="md-nav__icon md-icon"></span>
+          Estudo
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://docs.google.com/spreadsheets/d/1rN_zQqYaVI8PjAhKqEBCmY-_06I0X9dD0RddcI-miJs/edit?usp=sharing" class="md-nav__link">
+        Dados Digitais - 1
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://github.com/Insper/Z01.1/blob/main/Exercicios/Dados_1.pdf" class="md-nav__link">
+        Dados Digitais - 1 - pdf
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://github.com/Insper/Z01.1/blob/main/Exercicios/Dados_1_respostas.pdf" class="md-nav__link">
+        Dados Digitais - 1 - respostas
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Exercicio-Dados-2/" class="md-nav__link">
+        Dados Digitais - 2
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://github.com/Insper/Z01.1/blob/main/Exercicios/Exercicio-Dados-2_resolucao.pdf" class="md-nav__link">
+        Dados Digitais - 2 - respostas
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Exercicio-Algebra-Booleana-1/" class="md-nav__link">
+        Álgebra Booleana - 1
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Exercicio-Algebra-Booleana-2/" class="md-nav__link">
+        Álgebra Booleana - 2
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://github.com/Insper/Z01.1/blob/master/Exercicios/Exercicio-Aritmetica-Booleana.pdf" class="md-nav__link">
+        Handout Aritmetica Booleana
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://forms.gle/XMsFCDMYsmz1qUP86" class="md-nav__link">
+        Lógica Sequencial
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://github.com/Insper/Z01.1/blob/master/Exercicios/Linguagem_de_maquina.pdf" class="md-nav__link">
+        Linguagem de Máquina
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Exercicio-CPU-1/" class="md-nav__link">
+        Exercicio CPU - 1
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Exercicio-CPU-2/" class="md-nav__link">
+        Exercício CPU - 2
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_10" type="checkbox" id="__nav_10" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_10">
+          Útil
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Útil" data-md-level="1">
+        <label class="md-nav__title" for="__nav_10">
+          <span class="md-nav__icon md-icon"></span>
+          Útil
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Util-Comecando-novo-projeto/" class="md-nav__link">
+        Começando novo projeto
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Util-vixi-sou-scrum/" class="md-nav__link">
+        Vixi! Sou scrum master
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Util-Dicas-GIT/" class="md-nav__link">
+        Dicas git
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Util-Dicas-Travis/" class="md-nav__link">
+        Dicas Actions
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Util-Infraestrutura/" class="md-nav__link">
+        Infraestrutura
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Util-VM-Linux/" class="md-nav__link">
+        Boot SSD via VirtualBox
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_11" type="checkbox" id="__nav_11" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_11">
+          História
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="História" data-md-level="1">
+        <label class="md-nav__title" for="__nav_11">
+          <span class="md-nav__icon md-icon"></span>
+          História
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Historia-linux/" class="md-nav__link">
+        Historia linux
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#base-2" class="md-nav__link">
+    Base 2
+  </a>
+  
+    <nav class="md-nav" aria-label="Base 2">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#definicoes" class="md-nav__link">
+    Definições
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#conversao-decimal-binario" class="md-nav__link">
+    Conversão Decimal &lt;-&gt; Binário
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#base-16" class="md-nav__link">
+    Base 16
+  </a>
+  
+    <nav class="md-nav" aria-label="Base 16">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#base-16-base-2" class="md-nav__link">
+    Base 16 &lt;--&gt; Base 2
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#base-16-base-10" class="md-nav__link">
+    Base 16 &lt;--&gt; Base 10
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#base-8" class="md-nav__link">
+    Base 8
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#outros-sistemas" class="md-nav__link">
+    Outros sistemas
+  </a>
+  
+    <nav class="md-nav" aria-label="Outros sistemas">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#bcd" class="md-nav__link">
+    BCD
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ascii" class="md-nav__link">
+    ASCII
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content" data-md-component="content">
+            <article class="md-content__inner md-typeset">
+              
+                
+  <a href="https://github.com/insper/Z01.1/edit/docs/docs-src/Teoria-Dados.md" title="Edit this page" class="md-content__button md-icon">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25Z"/></svg>
+  </a>
+
+
+
+<h1 id="dados-digitais">Dados Digitais<a class="headerlink" href="#dados-digitais" title="Permanent link">¶</a></h1>
+<table>
+<thead>
+<tr>
+<th>Estudando</th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Bibliografia</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>[Cap 3,5. NISAN, 2005]</td>
+</tr>
+<tr>
+<td></td>
+<td>[Cap 8,11,12. FLOYD, 2011]</td>
+</tr>
+<tr>
+<td></td>
+<td>[Cap 7 TOCCI]</td>
+</tr>
+<tr>
+<td>Leitura extra:</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="https://www.sciencedirect.com/science/article/pii/B978075064583650001X">Introduction to Digital Systems - Cap. 1</a></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="https://www.sciencedirect.com/science/article/pii/B9780750645836500021">Introduction to Digital Systems - Cap. 2</a></td>
+</tr>
+<tr>
+<td>Vídeos (extra)</td>
+<td></td>
+</tr>
+<tr>
+<td><img alt="👍" class="emojione" src="https://cdnjs.cloudflare.com/ajax/libs/emojione/2.2.7/assets/svg/1f44d.svg" title=":+1:"/></td>
+<td><iframe allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="" frameborder="0" height="200" src="https://www.youtube.com/embed/dVixMB1uSYA" width="200"></iframe></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="https://pt.khanacademy.org/math/algebra-home/alg-intro-to-algebra">KhanAcademy</a></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="https://www.youtube.com/watch?v=Xpk67YzOn5w">Why Do Computers Use 1s and 0s? Binary and Transistors Explained.</a></td>
+</tr>
+</tbody>
+</table>
+<div class="admonition info">
+<p class="admonition-title">Primeiras Máquinas de Calcular</p>
+<p>Wilhelm Schickard (1592–1635) construiu em 1623 uma calculadora para seu amigo astrônomo Johannes Kepler. Esta é a mais antiga calculadora mecânica conhecida de quatro funções, que foi descoberta por esboços da sua criação.</p>
+<p><img alt="" src="http://people.idsia.ch/~juergen/schickardcomputer178e.jpg" width="200"/></p>
+<blockquote>
+<p>Fonte: <a href="http://people.idsia.ch/~juergen/schickard.html">http://people.idsia.ch/~juergen/schickard.html</a></p>
+</blockquote>
+</div>
+<div class="admonition info">
+<p class="admonition-title">História</p>
+<p>Blaise Pascal (1623-1662) inventou e produziu em 1642 a Pascaline. Ela só podia fazer adição e subtração, manipulando os números inscritos em seus mostradores. Ele construiu 50 deles ao longo de 10 anos, embora só tenha vendido 15.</p>
+<p><img alt="" src="https://images.computerhistory.org/revonline/images/500004213-03-01.jpg?w=600" width="200"/></p>
+<blockquote>
+<p>Fonte: <a href="http://www.computerhistory.org/revolution/calculators/1/47">http://www.computerhistory.org/revolution/calculators/1/47</a></p>
+</blockquote>
+</div>
+<div class="admonition info">
+<p class="admonition-title">Primeiras Máquinas de Calcular</p>
+<p>Gottfried Wilhelm von Leibniz (1646-1716) é creditado como um dos inventores do cálculo diferencial e integral. Porém, foi o primeiro a documentar e estudar profundamente o sistema binário de numeração (base 2). Em 1672 Leibniz começou a inventar uma máquina capaz de fazer as 4 operações aritméticas, o Staffelwalze.</p>
+<p><img alt="" src="https://images.computerhistory.org/revonline/images/102630768-03-01.jpg?w=600" width="300"/></p>
+<blockquote>
+<p>Fonte: <a href="https://en.wikipedia.org/wiki/Gottfried_Wilhelm_Leibniz">https://en.wikipedia.org/wiki/Gottfried_Wilhelm_Leibniz</a></p>
+</blockquote>
+</div>
+<p>Sistemas numéricos é a maneira como os seres humanos representam números, ao decorrer da história as civilizações assumiam maneiras diferentes de representar números, muitas vezes possuindo diferentes maneiras de codificar oralmente/escrito. </p>
+<p>O sistema decimal é o mais utilizado pelas civilizações modernas, nele utilizamos 10 símbolos: <code>0</code>, <code>1</code> ... <code>9</code> para representar qualquer número, essa notação remonta do fato de possuirmos 10 dedos em nossas mãos. Nesse sistema, cada digito possui um peso da ordem <span class="arithmatex">\(10^n\)</span>:</p>
+<p><img alt="" src="../figs/Teoria/Dados-decimal.svg" width="400"/></p>
+<div class="admonition info">
+<p class="admonition-title">Algarismos indo-arábicos</p>
+<p>O sistema de numeração hindu como a conhecemos hoje, pode ser atribuído a dois homens: o astrônomo Ariabata (आर्यभट) e seu pupilo Bhāskara I, durante 499-522 ac. Eles inventaram um sistema que se baseia na utilização da combinação de sílabas para formar os números, em um sistema incluindo a notação do zero. </p>
+<p><img alt="" src="https://cdn.britannica.com/60/91960-004-42DF23AB.gif"/></p>
+<blockquote>
+<p>Fonte: <a href="https://kids.britannica.com/kids/assembly/view/89478">https://kids.britannica.com/kids/assembly/view/89478</a></p>
+</blockquote>
+</div>
+<h2 id="base-2">Base 2<a class="headerlink" href="#base-2" title="Permanent link">¶</a></h2>
+<iframe allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="" frameborder="0" height="534" src="https://www.youtube.com/embed/7_t6IUJkJ1E" width="948"></iframe>
+<p>No sistema de base 2 possuímos apenas duas opções de símbolo: <code>0</code> e <code>1</code>. Nessa base, cada posição possui um peso da ordem <span class="arithmatex">\(2^n\)</span>:</p>
+<p><img alt="" src="../figs/Teoria/Dados-binario.svg" width="500"/></p>
+<p>Dessa maneira podemos construir o valor que desejarmos de decimal (<span class="arithmatex">\(m\)</span>) em binário, para isso será necessário ocupar <span class="arithmatex">\(ceil(log2(m))\)</span> bits para armazenar o valor. A tabela a seguir ilustra algumas situações:</p>
+<blockquote>
+<p><code>ceil</code>: arredondar para cima</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th>Valor decimal</th>
+<th>Bits necessário</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><span class="arithmatex">\(0 .. 1\)</span></td>
+<td>1</td>
+</tr>
+<tr>
+<td><span class="arithmatex">\(0 .. 3\)</span></td>
+<td><code>ceil(log2(4))</code> =  2</td>
+</tr>
+<tr>
+<td><span class="arithmatex">\(0 .. 4\)</span></td>
+<td>2</td>
+</tr>
+<tr>
+<td><span class="arithmatex">\(0 .. 6\)</span></td>
+<td>3</td>
+</tr>
+<tr>
+<td><span class="arithmatex">\(0 .. 7\)</span></td>
+<td>3</td>
+</tr>
+<tr>
+<td><span class="arithmatex">\(0 .. 15\)</span></td>
+<td>4</td>
+</tr>
+<tr>
+<td><span class="arithmatex">\(0 .. 31\)</span></td>
+<td>5</td>
+</tr>
+<tr>
+<td><span class="arithmatex">\(0 .. 63\)</span></td>
+<td>6</td>
+</tr>
+<tr>
+<td><span class="arithmatex">\(0 .. 127\)</span></td>
+<td>7</td>
+</tr>
+</tbody>
+</table>
+<p>Supondo que possuímos um binário de três dígitos, um contador de <code>0</code> a <code>7</code> em decimal seria em binário: <code>000</code> -&gt; <code>001</code> -&gt; <code>010</code> -&gt; <code>011</code> -&gt; <code>100</code> -&gt; <code>101</code> -&gt; <code>110</code> -&gt; <code>111</code> ... . O número <code>45</code> em binário é <code>0b101101</code>:</p>
+<table>
+<thead>
+<tr>
+<th>5</th>
+<th>4</th>
+<th>3</th>
+<th>2</th>
+<th>1</th>
+<th>0</th>
+<th>posição</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2^5</td>
+<td>2^4</td>
+<td>2^3</td>
+<td>2^2</td>
+<td>2^1</td>
+<td>2^0</td>
+<td>peso</td>
+</tr>
+<tr>
+<td>32</td>
+<td>16</td>
+<td>8</td>
+<td>4</td>
+<td>2</td>
+<td>1</td>
+<td>valor</td>
+</tr>
+<tr>
+<td><code>1</code></td>
+<td><code>0</code></td>
+<td><code>1</code></td>
+<td><code>1</code></td>
+<td><code>0</code></td>
+<td><code>1</code></td>
+<td>número binário</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>Não tem muito segredo, para interpretar números binários facilmente é necessária prática! </p>
+</div>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>Para saber qual o valor máximo de decimal que é possível armazenar com <span class="arithmatex">\(n\)</span> bits: </p>
+<p><span class="arithmatex">\(0  ..  2^n-1\)</span></p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Nomenclatura</p>
+<p>Iremos utilizar os prefixos:</p>
+<ul>
+<li><code></code>: Para indicar um número em decimal   </li>
+<li><code>0b</code>: Para indicar um número em binário</li>
+<li><code>0x</code>: Para indicar um número em hexadecimal</li>
+</ul>
+<p>Exemplo:
+<code>hex      bin      dec
+0x100 != 0b100 != 100</code></p>
+</div>
+<div class="card" id="quiz-result">
+  Você acertou <span id="quiz-percent"></span>% - <span id="quiz-score"></span>/<span id="quiz-max-score"></span><br/>
+</div>
+<div class="admonition question">
+<p class="admonition-title">Quiz 1 - base 2</p>
+<p><div id="quiz-1">
+<!-- Question 1 -->
+<div class="card quizlib-question">
+<div class="quizlib-question-title">1. Quanto que é 0b00110 em decimal?</div>
+<div class="quizlib-question-answers">
+<input name="" type="text"/>
+</div>
+</div>
+<!-- Question 2 -->
+<div class="card quizlib-question">
+<div class="quizlib-question-title">2. Converta 15 de decimal para binário</div>
+<div class="quizlib-question-answers">
+<ul>
+<li><label><input name="q2" type="radio" value="a"/> 0015</label></li>
+<li><label><input name="q2" type="radio" value="b"/> 1111</label></li>
+<li><label><input name="q2" type="radio" value="c"/> 1110</label></li>
+<li><label><input name="q2" type="radio" value="d"/> 1101</label></li>
+</ul>
+</div>
+</div>
+<button onclick="showResults(this.parentNode.id);" type="button-quiz">Verificar resposta</button>
+</div> </p>
+</div>
+<h3 id="definicoes">Definições<a class="headerlink" href="#definicoes" title="Permanent link">¶</a></h3>
+<p>Em muitas linguagens de programação é necessário definirmos o tamanho da variável que iremos armazenar um dado, para facilitar o entendimento damos nome a quantidade de bits que ela irá ocupar: </p>
+<ol>
+<li>4 bits: <strong>nibble</strong></li>
+<li>8 bits: <strong>byte</strong></li>
+<li>16 bits: <strong>halfword</strong></li>
+<li>32 bits: <strong>word</strong></li>
+</ol>
+<h3 id="conversao-decimal-binario">Conversão Decimal &lt;-&gt; Binário<a class="headerlink" href="#conversao-decimal-binario" title="Permanent link">¶</a></h3>
+<p>Existem diversas técnicas de conversão binário <img alt="🔄" class="emojione" src="https://cdnjs.cloudflare.com/ajax/libs/emojione/2.2.7/assets/svg/1f504.svg" title=":arrows_counterclockwise:"/> decimal, a seguir detalhes de como realizar essas conversões, o segredo é entender os pesos de cada casa de um <code>bit</code> no sistema binário e então fazer a conta inversa.</p>
+<iframe allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="" frameborder="0" height="534" src="https://www.youtube.com/embed/_68Cn5VuDxQ" width="948"></iframe>
+<iframe allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="" frameborder="0" height="534" src="https://www.youtube.com/embed/gOXO5H4i18Y" width="948"></iframe>
+<h2 id="base-16">Base 16<a class="headerlink" href="#base-16" title="Permanent link">¶</a></h2>
+<iframe allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="" frameborder="0" height="486" src="https://www.youtube.com/embed/uuUzkqSxCz4" width="864"></iframe>
+<p>A base 16, ou hexadecimal, é outra maneira de representarmos números utilizando não só <code>2</code> ou <code>10</code> símbolos como acabamos de ver, mas 16 símbolos! É como se conseguimos representar o valor <code>10</code> com um único carácter, no caso iremos utilizar o <code>A</code>.</p>
+<p>Nessa base, cada unidade possui um peso na forma <span class="arithmatex">\(2^{16}\)</span>:</p>
+<p><img alt="" src="../figs/Teoria/Dados-hexa.svg" width="500"/></p>
+<p>Um contador no formato hexadecimal possui a seguinte forma:</p>
+<table>
+<thead>
+<tr>
+<th>Decimal</th>
+<th>Binário</th>
+<th>Hexadecimal</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0</td>
+<td>0000</td>
+<td>0</td>
+</tr>
+<tr>
+<td>1</td>
+<td>0001</td>
+<td>1</td>
+</tr>
+<tr>
+<td>2</td>
+<td>0010</td>
+<td>2</td>
+</tr>
+<tr>
+<td>3</td>
+<td>0011</td>
+<td>3</td>
+</tr>
+<tr>
+<td>4</td>
+<td>0100</td>
+<td>4</td>
+</tr>
+<tr>
+<td>5</td>
+<td>0101</td>
+<td>5</td>
+</tr>
+<tr>
+<td>6</td>
+<td>0110</td>
+<td>6</td>
+</tr>
+<tr>
+<td>7</td>
+<td>0111</td>
+<td>7</td>
+</tr>
+<tr>
+<td>8</td>
+<td>1000</td>
+<td>8</td>
+</tr>
+<tr>
+<td>9</td>
+<td>1001</td>
+<td>9</td>
+</tr>
+<tr>
+<td>10</td>
+<td>1010</td>
+<td>A</td>
+</tr>
+<tr>
+<td>11</td>
+<td>1011</td>
+<td>B</td>
+</tr>
+<tr>
+<td>12</td>
+<td>1100</td>
+<td>C</td>
+</tr>
+<tr>
+<td>13</td>
+<td>1101</td>
+<td>D</td>
+</tr>
+<tr>
+<td>14</td>
+<td>1110</td>
+<td>E</td>
+</tr>
+<tr>
+<td>15</td>
+<td>1111</td>
+<td>F</td>
+</tr>
+<tr>
+<td>16</td>
+<td>0001 0000</td>
+<td>10</td>
+</tr>
+</tbody>
+</table>
+<h3 id="base-16-base-2">Base 16 ↔ Base 2<a class="headerlink" href="#base-16-base-2" title="Permanent link">¶</a></h3>
+<iframe allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="" frameborder="0" height="486" src="https://www.youtube.com/embed/SU0HpCAkIxY" width="864"></iframe>
+<p>A conversão de número na base 16 para a base 2 e vice-versa acontece de forma trivial. Da base 2 para a base 16 basta separar os bits da palavra em unidades de 4 casas e então realizar a conversão de cada grupo de 4 bits para o seu equivalente em Hexa. Para a conversão de hexa para binário, basta converter cada símbolo de hexa para o seu equivalente em binário (4 dígitos), seguindo a tabela anterior.</p>
+<p>Exemplos:</p>
+<p>a) 0xA01 para binário:</p>
+<div class="highlight"><pre><span></span><code>      A   0    1  
+      |    \    \ 
+      |     \    \  
+     1010   0000  0001 
+
+     -&gt; 0b1010_0000_0001 
+</code></pre></div>
+<p>b) <code>0b1111_0101_1000</code> para hexa:</p>
+<div class="highlight"><pre><span></span><code>     1111 0101 1000
+      |    |    |
+      |    |    |
+      F    5    8
+
+      -&gt; 0xF58
+</code></pre></div>
+<h3 id="base-16-base-10">Base 16 ↔ Base 10<a class="headerlink" href="#base-16-base-10" title="Permanent link">¶</a></h3>
+<iframe allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="" frameborder="0" height="486" src="https://www.youtube.com/embed/0yAst89n0rM" width="864"></iframe>
+<p>Para converter de Hexa para Decimal basta aplicar os pesos em cada um das unidades, como demonstrado a seguir:</p>
+<p>a) 0xA01 para decimal:</p>
+<div class="highlight"><pre><span></span><code>    A       0       1
+    |       |       |
+    |       |       |
+  A.16^2  0.16^1   1.16^0
+
+   -&gt; 10.256 + 0.16 + 1.1 = 2561
+</code></pre></div>
+<p>Para alterar a base de Decimal para Hexa, uma das soluções mais triviais é a de converter primeiro para binário e então agrupar os bits de 4 em 4 e converter para hexa:</p>
+<div class="highlight"><pre><span></span><code>   Decimal -&gt; Binário -&gt; Hexa
+</code></pre></div>
+<p>b) 42 -&gt; 0x ???</p>
+<div class="highlight"><pre><span></span><code>    32 +  8 +  2 = 42
+      \   |   /     ---------------
+       \  |  /      |             |
+        \ | /       |             v
+42 -&gt; 0b101010 -&gt; 0010 1010 -&gt; 0x2A
+                         |        ^
+                         |        |
+                         ----------
+                  ----|----
+                      |      
+                Blocos de 4 bits
+</code></pre></div>
+<h2 id="base-8">Base 8<a class="headerlink" href="#base-8" title="Permanent link">¶</a></h2>
+<p>Similar as outras bases de número, o sistema octal é composto por 8 símbolos: <code>0</code> .. <code>7</code>, e nele cada posição possui valor na forma de: <span class="arithmatex">\(8^n\)</span>. Veja o exemplo a seguir:</p>
+<p>a) 137 em octal para decimal: <span class="arithmatex">\(1.8^2 + 3.8^1 + 7.8^0=95\)</span></p>
+<table>
+<thead>
+<tr>
+<th>2</th>
+<th>1</th>
+<th>0</th>
+<th>posição</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>8^2</td>
+<td>8^1</td>
+<td>8^0</td>
+<td>peso</td>
+</tr>
+<tr>
+<td>64</td>
+<td>8</td>
+<td>1</td>
+<td>peso</td>
+</tr>
+<tr>
+<td><code>1</code></td>
+<td><code>3</code></td>
+<td><code>7</code></td>
+<td>valor octal</td>
+</tr>
+<tr>
+<td>1*64</td>
+<td>3*8</td>
+<td>7*1</td>
+<td><img alt="➡️" class="emojione" src="https://cdnjs.cloudflare.com/ajax/libs/emojione/2.2.7/assets/svg/27a1.svg" title=":arrow_right:"/> <span class="arithmatex">\(64+24+7=95\)</span></td>
+</tr>
+</tbody>
+</table>
+<p>Para representarmos um valor octal em binário, é necessário reservarmos 3 bits para cada símbolo do número octal, a conversão é feita como no sistema hexadecimal, porém aqui separando blocos de 3 bits:</p>
+<p>b) 137 para binário:</p>
+<div class="highlight"><pre><span></span><code> 001 011 111
+</code></pre></div>
+<p>O sistema octal é utilizado no Linux para permissões de arquivos onde são necessários 3 bits para controlar se um usuário possui: acesso de leitura, escrita e/ou execução de um determinado arquivo:</p>
+<table>
+<thead>
+<tr>
+<th>Permission</th>
+<th>rwx</th>
+<th>Binary</th>
+<th>octal</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>read, write and execute</td>
+<td>rwx</td>
+<td>111</td>
+<td>7</td>
+</tr>
+<tr>
+<td>read and write</td>
+<td>rw-</td>
+<td>110</td>
+<td>6</td>
+</tr>
+<tr>
+<td>read and execute</td>
+<td>r-x</td>
+<td>101</td>
+<td>5</td>
+</tr>
+<tr>
+<td>read only</td>
+<td>r--</td>
+<td>100</td>
+<td>4</td>
+</tr>
+<tr>
+<td>write and execute</td>
+<td>-wx</td>
+<td>011</td>
+<td>3</td>
+</tr>
+<tr>
+<td>write only</td>
+<td>-w-</td>
+<td>010</td>
+<td>2</td>
+</tr>
+<tr>
+<td>execute only</td>
+<td>--x</td>
+<td>001</td>
+<td>1</td>
+</tr>
+<tr>
+<td>none</td>
+<td>---</td>
+<td>000</td>
+<td>0</td>
+</tr>
+</tbody>
+</table>
+<p>Para modificar a permissão de um arquivo no linux é necessário fornecer a informação para três grupos diferentes: <code>usuário</code>, grupos na qual o usuário faz parte e qualquer outro user. Para isso basta escrever no terminal: </p>
+<div class="highlight"><pre><span></span><code>            / others
+           /
+$ chmod 754 FILE
+        | \
+        |  \ group
+        user 
+</code></pre></div>
+<p>Isso da permissão de: </p>
+<ul>
+<li>user: read/write/execute</li>
+<li>group: read/execute</li>
+<li>others: read</li>
+</ul>
+<div class="admonition tip">
+<p class="admonition-title">Povos</p>
+<p>Alguns povos da América do Norte, México e Europa utilizam o sistema octal, pois consideram a quantidade dos vãos dos dedos e não os dedos propriamente.</p>
+<blockquote>
+<p>Fonte: <a href="https://en.wikipedia.org/wiki/Octal#By_Native_Americans">https://en.wikipedia.org/wiki/Octal#By_Native_Americans</a></p>
+</blockquote>
+</div>
+<div class="admonition tip">
+<p class="admonition-title">Início da computação</p>
+<p>Para que serve o sistema octal? No começo da computação a IBM possuía memórias com: 6-bit, 12-bit, 24-bit e 36-bit. Sendo todas as unidades divisíveis por 3, o que facilita a interpretação em um sistema octal.</p>
+</div>
+<h2 id="outros-sistemas">Outros sistemas<a class="headerlink" href="#outros-sistemas" title="Permanent link">¶</a></h2>
+<p>Existem inúmeras maneiras de codificação de números e/ou caracteres diversos, as mais utilizadas são:</p>
+<ul>
+<li>BCD</li>
+<li>ASCII</li>
+<li>UTF-8</li>
+</ul>
+<h3 id="bcd">BCD<a class="headerlink" href="#bcd" title="Permanent link">¶</a></h3>
+<p>No sistema <a href="https://pt.wikipedia.org/wiki/Codifica%C3%A7%C3%A3o_bin%C3%A1ria_decimal">Binary-coded decimal (BCD)</a> cada unidade de um sistema decimal é convertido para <code>4 bits</code>, muito parecido com a conversão para Hexadecimal. Ele é muito utilizado em relógios e quando há a necessidade de exibição do valor em decimal em binário (Display de 7 segmentos).</p>
+<ul>
+<li>Exemplo, <code>356</code> em BCD: </li>
+</ul>
+<div class="highlight"><pre><span></span><code>  3   5    6    : Decimal
+0011 0101 0110  : BCD
+</code></pre></div>
+<iframe allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="" frameborder="0" height="506" src="https://www.youtube.com/embed/AM0tr8Kyvzg" width="900"></iframe>
+<h3 id="ascii">ASCII<a class="headerlink" href="#ascii" title="Permanent link">¶</a></h3>
+<p><a href="https://pt.wikipedia.org/wiki/ASCII">ASCII</a> (do inglês American Standard Code for Information Interchange; "Código Padrão Americano para o Intercâmbio de Informação") é uma maneira de codificar em binário (8 bits) 95 sinais gráficos (letras, símbolos e números) e alguns sinais de controle. É muito utilizada pelos programas para armazenarem 'caracteres' e 'strings'. </p>
+<p><a href="http://www.asciitable.com"><img alt="" src="http://www.asciitable.com/index/asciifull.gif"/></a></p>
+<blockquote>
+<p>Fonte: <a href="http://www.asciitable.com">www.asciitable.com</a></p>
+</blockquote>
+<p>Por exemplo, a palavra Insper convertido para ASCII fica da seguinte maneira (em decimal):</p>
+<p><img alt="" src="../figs/Teoria/Dados-ascii.svg" width="500"/></p>
+<iframe allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="" frameborder="0" height="506" src="https://www.youtube.com/embed/zB85kTs-sEw" width="900"></iframe>
+
+  <hr>
+<div class="md-source-file">
+  <small>
+    
+      Last update:
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">June 13, 2022</span>
+      
+    
+  </small>
+</div>
+
+              
+            </article>
+            
+          </div>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+    <nav class="md-footer__inner md-grid" aria-label="Footer" >
+      
+        
+        <a href="../VMtranslator-Lab-1/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Lab 18: Vm Translator - Praticando" rel="prev">
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+          </div>
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              Lab 18: Vm Translator - Praticando
+            </div>
+          </div>
+        </a>
+      
+      
+        
+        <a href="../Teoria-Algebra-Booleana/" class="md-footer__link md-footer__link--next" aria-label="Next: Álgebra Booleana" rel="next">
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              Álgebra Booleana
+            </div>
+          </div>
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg>
+          </div>
+        </a>
+      
+    </nav>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright &copy; Rafael Corsi @ insper
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.instant"], "search": "../assets/javascripts/workers/search.85cb4492.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.f758a944.min.js"></script>
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/js-yaml/4.0.0/js-yaml.min.js"></script>
+      
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+        <script src="https://cdn.jsdelivr.net/gh/insper-education/active-handout-plugins-js@main/package/plugin-bundle.js"></script>
+      
+    
+  </body>
+</html>

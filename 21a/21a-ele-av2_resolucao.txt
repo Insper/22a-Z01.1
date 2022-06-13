@@ -1,0 +1,103 @@
+1a - Novo adder
+
+Arquivo FullAdder_skip.vhd
+
+begin
+
+  Half1: HalfAdder port map(a, b, sp, sg);
+  Half2: HalfAdder port map(cin, sp, s, c0);
+
+  cout <= sg or c0;
+
+  p <= sp;
+  g <= sg;
+
+
+end architecture;
+
+Arquivo Add4_skip.vhd
+
+begin
+
+  FA1: FullAdder_skip port map (a(0), b(0), cin, g0, p0, s(0), c1);
+  FA2: FullAdder_skip port map (a(1), b(1), c1, g1, p1, s(1), c2);
+  FA3: FullAdder_skip port map (a(2), b(2), c2, g2, p2, s(2), c3);
+  FA4: FullAdder_skip port map (a(3), b(3), c3, g3, p3, s(3), c4);
+
+  andOut <= p0 and p1 and p2 and p3;
+
+  mux: Mux2Way port map(c4, cin, andOut, cout);
+
+end architecture;
+
+
+2 - Adder overflow
+
+Arquivo add4.vhd
+
+begin
+
+  u0 : FullAdder port map(
+    a => a(0),  b => b(0), c => '0',
+    soma => q(0), vaium => carry0 );
+
+  u1 : FullAdder port map(
+    a => a(1), b => b(1), c => carry0,
+    soma => q(1), vaium => carry1 );
+
+  u2 : FullAdder port map(
+    a => a(2), b => b(2), c => carry1,
+    soma => q(2), vaium => carry2 );
+
+  u3 : FullAdder port map(
+    a => a(3), b => b(3), c => carry2,
+    soma => q(3), vaium => carry3 );
+
+  estouro <= ((not a(3)) and (not b(3)) and carry2) or (a(3) and b(3) and (not carry2));
+
+end architecture;
+
+3 - Circuito misterioso
+
+Arquivo q3.vhd
+
+  process
+  begin
+    -- (a)
+    q0 <= '0'; q1 <= '0';
+    wait for 10 ns;
+
+    -- (b)
+    q0 <= '1'; q1 <= '0';
+    wait for 10 ns;
+
+    -- (c)
+    q0 <= '1'; q1 <= '1';
+    wait for 10 ns;
+
+    -- (d)
+    q0 <= '0'; q1 <= '1';
+    wait for 10 ns;
+
+    -- (e)
+    q0 <= '0'; q1 <= '0';
+    wait for 10 ns;
+  end process;
+  
+4 - Paridade
+
+Arquivo paridade.vhd
+
+begin
+
+	v0 <= vetor(0);
+	v1 <= vetor(1);
+	v2 <= vetor(2);
+	v3 <= vetor(3);
+
+
+	par <= ((v0 xor v1) and (v2 xor v3)) or (((v0 and v1) or ((not v0) and (not v1))) and ((v2 and v3) or ((not v2) and (not v3))));
+	
+	impar <= not par;
+	
+end architecture;

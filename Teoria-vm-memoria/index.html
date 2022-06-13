@@ -1,0 +1,2503 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://insper.github.io/Z01.1/Teoria-vm-memoria/">
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.3.0, mkdocs-material-8.3.4">
+    
+    
+      
+        <title>VM - Memória - Elementos de Sistemas</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.4a0965b7.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.cbb835fc.min.css">
+        
+          
+          
+          <meta name="theme-color" content="#000000">
+        
+      
+      
+    
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("..",location),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Fira+Sans+Extra+Condensed:700|Oxygen+Mono|Source+Sans+Pro:700|Source+Serif+Pro&amp;display=swap">
+<link rel="stylesheet" href="../assets/css/devlife.css">
+
+
+    <script>
+        window.ihandout_config = JSON.parse(`{"report": {"api-base": "https://127.0.0.1:8080/api/offerings/1/", "url": "https://127.0.0.1:8080/api/offerings/1/exercises/"}}`);
+    </script>
+
+
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="" data-md-color-primary="black" data-md-color-accent="pink">
+  
+    
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#vm-memoria" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="Elementos de Sistemas" class="md-header__button md-logo" aria-label="Elementos de Sistemas" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Elementos de Sistemas
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              VM - Memória
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" aria-label="Clear" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/insper/Z01.1" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    Insper/Z01.1
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Elementos de Sistemas" class="md-nav__button md-logo" aria-label="Elementos de Sistemas" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    Elementos de Sistemas
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/insper/Z01.1" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    Insper/Z01.1
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_1" type="checkbox" id="__nav_1" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_1">
+          Home
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Home" data-md-level="1">
+        <label class="md-nav__title" for="__nav_1">
+          <span class="md-nav__icon md-icon"></span>
+          Home
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        Bem vindo disciplina de Elementos de Sistemas!
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Sobre-Criterios-de-Avaliacao/" class="md-nav__link">
+        Critérios de Avaliação
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Sobre-Rubricas/" class="md-nav__link">
+        Rubricas individuais
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Util-Aulas/" class="md-nav__link">
+        Resumo Aulas
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../21a/Avaliacoes/" class="md-nav__link">
+        Avaliações
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4" type="checkbox" id="__nav_4" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_4">
+          Projetos
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Projetos" data-md-level="1">
+        <label class="md-nav__title" for="__nav_4">
+          <span class="md-nav__icon md-icon"></span>
+          Projetos
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../A-Ambiente-Desenvolvimento-Projeto/" class="md-nav__link">
+        A - Ambiente de desenvolvimento
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../LogiComb-Projeto/" class="md-nav__link">
+        B - Lógica Combinacional
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ula-Projeto/" class="md-nav__link">
+        C - ULA
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../seq-Projeto/" class="md-nav__link">
+        D - Lógica Sequencial
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../assembly-Projeto/" class="md-nav__link">
+        E - Assembly
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_6" type="checkbox" id="__nav_4_6" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_4_6">
+          F - CPU
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="F - CPU" data-md-level="2">
+        <label class="md-nav__title" for="__nav_4_6">
+          <span class="md-nav__icon md-icon"></span>
+          F - CPU
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../cpu-Projeto/" class="md-nav__link">
+        Projeto
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../cpu-Testando/" class="md-nav__link">
+        Testando
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../assembler-Projeto/" class="md-nav__link">
+        G - Assembler
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../vm-Projeto/" class="md-nav__link">
+        H - VM
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../J-VMtranslator-Projeto/" class="md-nav__link">
+        I - VM Translator
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../X-Processadores-Projeto/" class="md-nav__link">
+        Mundo Real
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5" type="checkbox" id="__nav_5" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_5">
+          Labs
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Labs" data-md-level="1">
+        <label class="md-nav__title" for="__nav_5">
+          <span class="md-nav__icon md-icon"></span>
+          Labs
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../A-Transistores-Lab-1-22/" class="md-nav__link">
+        Lab 1: Transistores / CI
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../A-Ambiente-Lab-1/" class="md-nav__link">
+        Lab 2: Configurando Github
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../A-Ambiente-Lab-2/" class="md-nav__link">
+        Lab 3: Github
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../LogiComb-Lab-1/" class="md-nav__link">
+        Lab 4: FPGA - VHDL
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../LogiComb-Lab-2/" class="md-nav__link">
+        Lab 5: Lógica Combinacional
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ula-Lab-1/" class="md-nav__link">
+        Lab 6: Adders
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ula-Lab-2/" class="md-nav__link">
+        Lab 7: Visualizando simulação
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ula-Lab-3/" class="md-nav__link">
+        Lab 8: ULA
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../seq-Lab-1/" class="md-nav__link">
+        Lab 9: Lógica Sequencial
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../assembly-Lab-1/" class="md-nav__link">
+        Lab 10: Assembly
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../assembly-Lab-2/" class="md-nav__link">
+        Lab 11: Periféricos
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../assembly-Lab-3/" class="md-nav__link">
+        Lab 12: saltos (jump)
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../assembly-Lab-4/" class="md-nav__link">
+        Lab 13: praticando nasm
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../assembly-lab-HW/" class="md-nav__link">
+        Programando FPGA
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ula-lab-4/" class="md-nav__link">
+        Lab 14: Pequena CPU
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../cpu-lab-1/" class="md-nav__link">
+        Lab 15: Control Unit
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5_17" type="checkbox" id="__nav_5_17" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_5_17">
+          Lab 16: Assembler
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Lab 16: Assembler" data-md-level="2">
+        <label class="md-nav__title" for="__nav_5_17">
+          <span class="md-nav__icon md-icon"></span>
+          Lab 16: Assembler
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../assembler-Lab-1/" class="md-nav__link">
+        Introdução
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../assembler-Lab-1-parte-1/" class="md-nav__link">
+        parte 1
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../assembler-Lab-1-parte-2/" class="md-nav__link">
+        parte 2
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../assembler-Lab-1-parte-3/" class="md-nav__link">
+        parte 3
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../assembler-Lab-1-parte-4/" class="md-nav__link">
+        parte 4
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../assembler-Lab-1-parte-5/" class="md-nav__link">
+        parte 5
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../vm-Lab-1/" class="md-nav__link">
+        Lab 17: vm
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5_19" type="checkbox" id="__nav_5_19" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_5_19">
+          Lab 18: VMtranslator
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Lab 18: VMtranslator" data-md-level="2">
+        <label class="md-nav__title" for="__nav_5_19">
+          <span class="md-nav__icon md-icon"></span>
+          Lab 18: VMtranslator
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../VMtranslator-Lab-1-old/" class="md-nav__link">
+        Lab 18: Vm Translator
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../VMtranslator-Lab-1/" class="md-nav__link">
+        Lab 18: Vm Translator - Praticando
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_6" type="checkbox" id="__nav_6" checked>
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_6">
+          Teoria
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Teoria" data-md-level="1">
+        <label class="md-nav__title" for="__nav_6">
+          <span class="md-nav__icon md-icon"></span>
+          Teoria
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Teoria-Dados/" class="md-nav__link">
+        Dados Digitais
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Teoria-Algebra-Booleana/" class="md-nav__link">
+        Álgebra Booleana
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Teoria-CMOS/" class="md-nav__link">
+        Lógica CMOS (Complementary Metal–Oxide–Semiconductor)
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Teoria-RTL/" class="md-nav__link">
+        Resistor-Transistor Logic (RTL)
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Teoria-Componentes/" class="md-nav__link">
+        Componentes Digitais
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Teoria-Aritmetica-Binaria/" class="md-nav__link">
+        Aritmética Binária
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Teoria-Aritmetica-Binaria-HW/" class="md-nav__link">
+        Aritmética Binária - HW
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Teoria-ULA/" class="md-nav__link">
+        ULA
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Teoria-Logica-Sequencial/" class="md-nav__link">
+        Lógica Sequencial
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Teoria-Sequencial-Componentes/" class="md-nav__link">
+        Componentes Síncronos
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Teoria-Z01/" class="md-nav__link">
+        Z01
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Teoria-Assembly/" class="md-nav__link">
+        ASM - Assembly
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Teoria-Z01-mapadeMemoria/" class="md-nav__link">
+        ASM - Mapa de memória
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Teoria-nasm-jump/" class="md-nav__link">
+        ASM - jump
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Teoria-Linguagem-de-Maquina/" class="md-nav__link">
+        Linguagem de máquina
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Teoria-Assembler/" class="md-nav__link">
+        Assembler
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../assembler-Dicas-SymbolTable/" class="md-nav__link">
+        Tabela de Símbolos
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Teoria-vm/" class="md-nav__link">
+        VM
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Teoria-vm-segmentos/" class="md-nav__link">
+        VM - Segmentos
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Teoria-vm-jump/" class="md-nav__link">
+        VM - jump
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Teoria-vm-funcoes/" class="md-nav__link">
+        VM - Funções
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          VM - Memória
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        VM - Memória
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#stack" class="md-nav__link">
+    Stack
+  </a>
+  
+    <nav class="md-nav" aria-label="Stack">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#stack-pointer" class="md-nav__link">
+    Stack Pointer
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#funcoes" class="md-nav__link">
+    Funções
+  </a>
+  
+    <nav class="md-nav" aria-label="Funções">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#lcl-local" class="md-nav__link">
+    LCL - Local
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#arg-argumento" class="md-nav__link">
+    ARG - Argumento
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#static-variables" class="md-nav__link">
+    Static variables
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#heap" class="md-nav__link">
+    HEAP
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#this" class="md-nav__link">
+    This
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#that" class="md-nav__link">
+    That
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Util-Video-Aulas/" class="md-nav__link">
+        Vídeo Aulas (Luciano)
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_7" type="checkbox" id="__nav_7" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_7">
+          VHDL
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="VHDL" data-md-level="1">
+        <label class="md-nav__title" for="__nav_7">
+          <span class="md-nav__icon md-icon"></span>
+          VHDL
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../VHDL-basico/" class="md-nav__link">
+        Introdução
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../VHDL-Combinacional/" class="md-nav__link">
+        Combinacional
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../VHDL-port-map/" class="md-nav__link">
+        port map
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../VHDL-Sequencial/" class="md-nav__link">
+        Sequencial
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../VHDL-RTL/" class="md-nav__link">
+        RTL Viewer
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../VHDL-exemplos/" class="md-nav__link">
+        Exemplos completos
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_8" type="checkbox" id="__nav_8" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_8">
+          Z01
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Z01" data-md-level="1">
+        <label class="md-nav__title" for="__nav_8">
+          <span class="md-nav__icon md-icon"></span>
+          Z01
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Util-Resumo-Assembly/" class="md-nav__link">
+        Resumo Assembly
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Util-Z01.1-Cheat-Sheet/" class="md-nav__link">
+        Z01.1 Cheat Sheet
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Util-InstructionSet/" class="md-nav__link">
+        Instruction Set
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Util-Resumo-VM/" class="md-nav__link">
+        Resumo VM
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_9" type="checkbox" id="__nav_9" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_9">
+          Estudo
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Estudo" data-md-level="1">
+        <label class="md-nav__title" for="__nav_9">
+          <span class="md-nav__icon md-icon"></span>
+          Estudo
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://docs.google.com/spreadsheets/d/1rN_zQqYaVI8PjAhKqEBCmY-_06I0X9dD0RddcI-miJs/edit?usp=sharing" class="md-nav__link">
+        Dados Digitais - 1
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://github.com/Insper/Z01.1/blob/main/Exercicios/Dados_1.pdf" class="md-nav__link">
+        Dados Digitais - 1 - pdf
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://github.com/Insper/Z01.1/blob/main/Exercicios/Dados_1_respostas.pdf" class="md-nav__link">
+        Dados Digitais - 1 - respostas
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Exercicio-Dados-2/" class="md-nav__link">
+        Dados Digitais - 2
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://github.com/Insper/Z01.1/blob/main/Exercicios/Exercicio-Dados-2_resolucao.pdf" class="md-nav__link">
+        Dados Digitais - 2 - respostas
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Exercicio-Algebra-Booleana-1/" class="md-nav__link">
+        Álgebra Booleana - 1
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Exercicio-Algebra-Booleana-2/" class="md-nav__link">
+        Álgebra Booleana - 2
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://github.com/Insper/Z01.1/blob/master/Exercicios/Exercicio-Aritmetica-Booleana.pdf" class="md-nav__link">
+        Handout Aritmetica Booleana
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://forms.gle/XMsFCDMYsmz1qUP86" class="md-nav__link">
+        Lógica Sequencial
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://github.com/Insper/Z01.1/blob/master/Exercicios/Linguagem_de_maquina.pdf" class="md-nav__link">
+        Linguagem de Máquina
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Exercicio-CPU-1/" class="md-nav__link">
+        Exercicio CPU - 1
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Exercicio-CPU-2/" class="md-nav__link">
+        Exercício CPU - 2
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_10" type="checkbox" id="__nav_10" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_10">
+          Útil
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Útil" data-md-level="1">
+        <label class="md-nav__title" for="__nav_10">
+          <span class="md-nav__icon md-icon"></span>
+          Útil
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Util-Comecando-novo-projeto/" class="md-nav__link">
+        Começando novo projeto
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Util-vixi-sou-scrum/" class="md-nav__link">
+        Vixi! Sou scrum master
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Util-Dicas-GIT/" class="md-nav__link">
+        Dicas git
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Util-Dicas-Travis/" class="md-nav__link">
+        Dicas Actions
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Util-Infraestrutura/" class="md-nav__link">
+        Infraestrutura
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Util-VM-Linux/" class="md-nav__link">
+        Boot SSD via VirtualBox
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_11" type="checkbox" id="__nav_11" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_11">
+          História
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="História" data-md-level="1">
+        <label class="md-nav__title" for="__nav_11">
+          <span class="md-nav__icon md-icon"></span>
+          História
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Historia-linux/" class="md-nav__link">
+        Historia linux
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#stack" class="md-nav__link">
+    Stack
+  </a>
+  
+    <nav class="md-nav" aria-label="Stack">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#stack-pointer" class="md-nav__link">
+    Stack Pointer
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#funcoes" class="md-nav__link">
+    Funções
+  </a>
+  
+    <nav class="md-nav" aria-label="Funções">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#lcl-local" class="md-nav__link">
+    LCL - Local
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#arg-argumento" class="md-nav__link">
+    ARG - Argumento
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#static-variables" class="md-nav__link">
+    Static variables
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#heap" class="md-nav__link">
+    HEAP
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#this" class="md-nav__link">
+    This
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#that" class="md-nav__link">
+    That
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content" data-md-component="content">
+            <article class="md-content__inner md-typeset">
+              
+                
+  <a href="https://github.com/insper/Z01.1/edit/docs/docs-src/Teoria-vm-memoria.md" title="Edit this page" class="md-content__button md-icon">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25Z"/></svg>
+  </a>
+
+
+
+<h1 id="vm-memoria">VM - Memória<a class="headerlink" href="#vm-memoria" title="Permanent link">¶</a></h1>
+<p>Para a máquina virtual funcionar corretamente devemos agora definir regiões de memória que serviram para aplicações específicas, tal como armazenar: o topo da pilha (<em>SP</em>, Stack Pointer), os locais dos parâmetros passados na chamada de função (<em>ARG</em>, argument), os endereços das variáveis locais de uma função (<em>LCL</em>, local) ... </p>
+<p>A seguir um resumo dos endereços de memória e suas funções:</p>
+<table>
+<thead>
+<tr>
+<th>Endereço (RAM)</th>
+<th>Símbolo</th>
+<th>Nome</th>
+<th>Uso</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0</td>
+<td>SP</td>
+<td>Stack Pointer</td>
+<td>Ponteiro para o topo da pilha</td>
+</tr>
+<tr>
+<td>1</td>
+<td>LCL</td>
+<td>Local</td>
+<td>Ponteiro para a base das variáveis de um função</td>
+</tr>
+<tr>
+<td>2</td>
+<td>ARG</td>
+<td>Argument</td>
+<td>Ponteiro para a base dos argumentos de uma função</td>
+</tr>
+<tr>
+<td>3</td>
+<td>THIS</td>
+<td>This</td>
+<td>Ponteiro para a base do segmento this</td>
+</tr>
+<tr>
+<td>4</td>
+<td>THAT</td>
+<td>That</td>
+<td>Ponteiro para a base do segmento that</td>
+</tr>
+<tr>
+<td>5..12</td>
+<td>Temp</td>
+<td>Temporary</td>
+<td>Endereços para armazenar variáveis temporárias</td>
+</tr>
+</tbody>
+</table>
+<p>Além dos endereços específicos (que possuem papéis especiais), devemos também definir regiões da memória que serão utilizadas para armazenar tipos de dados específicos, são essas :</p>
+<table>
+<thead>
+<tr>
+<th>Endereço (RAM)</th>
+<th>Nome</th>
+<th>Uso</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>16-255</td>
+<td>Static</td>
+<td>Variáveis estáticas (acessíveis por todas as funções)</td>
+</tr>
+<tr>
+<td>256-2047</td>
+<td>Stack</td>
+<td>Pilha utilizada pela VM (stack pointer)</td>
+</tr>
+<tr>
+<td>2048-16383</td>
+<td>Heap</td>
+<td>Usada para armazenar objetos e vetores</td>
+</tr>
+<tr>
+<td>16384-</td>
+<td>I/O</td>
+<td>Periféricos mapeados em memória</td>
+</tr>
+</tbody>
+</table>
+<p>Vamos detalhar um pouco de cada item descrito nesse resumo.</p>
+<h2 id="stack">Stack<a class="headerlink" href="#stack" title="Permanent link">¶</a></h2>
+<p>A stack é a região de memória utilizada pela VM para armazenar valores e realizar operações, funciona como uma forma de abstração do hardware, já que agora toda manipulação de dados acontece na Stack e não mais nos registradores. É claro que essa manipulação influência nos registradores do hardware, mas o programador não mais precisa ter todo o conhecimento do hardware nas operações. Por exemplo a operação :</p>
+<div class="highlight"><pre><span></span><code>push constant 5
+push constant 3
+add
+</code></pre></div>
+<p>Adiciona o valor 5 e o 3 para o topo da pilha e os soma, resultando em um único valor : 8. Notem que para essa operação ser realizada no hardware do Z01 tivemos que usar os registradores para tornar a operação viável, porém isso não é mais visível do programa VM. Nesse camada de software não interessa mais se o hardware possui 2, 3, ... N registradores o resultado da operação será a mesma.</p>
+<p>Teremos 8 no topo da pilha. O hardware vai influenciar o VMTranslator que deve traduzir a linguagem de máquina virtual por pilha para a linguagem Assembly, o número de registradores pode influenciar a performance do computador mas não irá mudar o conceito de pilha. </p>
+<p>A stack é utilizada também para armazenar os valores passados na chamada de função e também para armazenar o resultado (return) de uma função.</p>
+<h3 id="stack-pointer">Stack Pointer<a class="headerlink" href="#stack-pointer" title="Permanent link">¶</a></h3>
+<p>É um ponteiro que indica a onde está o endereço do topo da pilha, como a pilha cresce e diminui dinamicamente (conforme os push, pops e operações) necessitamos armazenar em algum local o endereço do topo da pilha, conforme figura a seguir :</p>
+<p><img alt="Stack Pointer" src="../figs/I-VM/SP.svg" width="230"/></p>
+<div class="admonition info">
+<p class="admonition-title">Stack Overflow</p>
+<p>Agora fica mais claro o significado do site stack overflow ? Indica o estouro da pilha. Imagine a situação na qual só colocamos dados na pilha e nunca tiramos (<strong>pop</strong>, em algum momento a pilha irá passar seu valor máximo, que no nosso caso é : 2047 - 256 =  1791 endereços e começará a escrever na região reservada para o Heap, corrompendo os dados que estavam ali salvos).</p>
+</div>
+<h2 id="funcoes">Funções<a class="headerlink" href="#funcoes" title="Permanent link">¶</a></h2>
+<p>Os ponteiros <code>LCL</code> e <code>ARG</code> são utilizados somente na execução de uma função, o ARG indica o endereço da stack na qual os parâmetros que serão passados para a função estão salvos e o LCL é indicado para apontar para o endereço na pilha utilizado para armazenar variáveis locais.</p>
+<p>O fluxo de chamada de função, de forma simplificada é:</p>
+<ol>
+<li>Coloca na pilha os argumentos que ser passado para a função <ul>
+<li>a quantidade varia conforme a demanda da função</li>
+</ul>
+</li>
+<li>Chama a função (<strong>call</strong>)</li>
+<li>Aloca na pilha os endereços de memória para armazenar os locals</li>
+<li>Atualiza os ponteiros : SP, LCL, ARG</li>
+</ol>
+<p>O fluxo de chamada de função (call) é um pouco complexo, pois demanda que salvemos algumas informações da pilha antes de executarmos a função (precisamos conseguir após a execução da função retornar para um estado similar antes da execução), isto é conhecido como <strong>salvar contexto</strong> (antes da execução da função) e <strong>restaurar contexto</strong> (após da execução da função). Para isso é salvo na pilha:</p>
+<ul>
+<li>Endereço de retorno </li>
+<li><code>LCL</code> (antes da chamada de função)</li>
+<li><code>ARG</code> (antes da chamada de função)</li>
+<li><code>This</code> (antes da chamada de função)</li>
+<li><code>That</code> (antes da chamada de função)</li>
+</ul>
+<h3 id="lcl-local">LCL - Local<a class="headerlink" href="#lcl-local" title="Permanent link">¶</a></h3>
+<p>Local indica o endereço na pilha na qual foi alocado para as variáveis locais de uma função, a quantidade de endereços alocados varia conforme a declaração da função, que pode possuir zero ou mais variáveis temporárias.</p>
+<p>Veja como fica um exemplo em Java :</p>
+<div class="highlight"><pre><span></span><code><span class="kt">void</span><span class="w"> </span><span class="nf">example</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">a</span><span class="p">,</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">b</span><span class="p">){</span><span class="w"></span>
+<span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">aux0</span><span class="p">;</span><span class="w"></span>
+<span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">aux1</span><span class="p">;</span><span class="w"></span>
+
+<span class="w"> </span><span class="n">aux0</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">a</span><span class="p">;</span><span class="w"></span>
+<span class="w"> </span><span class="n">aux1</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">b</span><span class="p">;</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+</code></pre></div>
+<p>Note que essa função possui duas variáveis locais : <strong>aux0, aux1</strong>, que são visíveis somente dentro do escopo da função, essas variáveis são alocadas quando a função é chamada e desalocada quando a função retorna. Essas variáveis (aux0, aux1) servem como variáveis locais da função, e são salvas na stack, como a ilustração a seguir:</p>
+<p><img alt="Local" src="../figs/I-VM/lclArg.svg"/></p>
+<p>O exemplo em Java anteriormente seria traduzido para a linguagem VM (de forma imediata) na seguinte maneira :</p>
+<div class="highlight"><pre><span></span><code> function example 2
+     push argument 0  // coloca na pilha o valor a
+     pop local 0       // aux0 = a
+     push argument 1  // coloca na pilha o valor b
+     pop local 1       // aux1 = b
+</code></pre></div>
+<p>Note que o que define <strong>local 0</strong> e <strong>local 1</strong> é a ordem na qual as variáveis foram declaradas, como a variável <em>aux0</em> foi declarada primeiro, ela é alocada no <em>local 0</em>. </p>
+<p>O <strong>LCL</strong> aponta apenas para o endereço do primeiro <em>local</em>, os demais são inferidos da seguinte maneira:</p>
+<div class="admonition note">
+<p>push local n</p>
+</div>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>Endereço <code>local n</code> = LCL + n</p>
+</div>
+<h3 id="arg-argumento">ARG - Argumento<a class="headerlink" href="#arg-argumento" title="Permanent link">¶</a></h3>
+<p>O ponteiro ARG indica a onde na pilha estão salvos os argumentos que a função pode acessar, e segue a mesma lógica do LCL, onde o ARG aponta para o primeiro argumento e o endereço dos demais são inferidos com base no endereço do primeiro.</p>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>Endereço <code>argument n</code> = ARG + n</p>
+</div>
+<h2 id="static-variables">Static variables<a class="headerlink" href="#static-variables" title="Permanent link">¶</a></h2>
+<p>É a região da memória utilizada para armazenar variáveis compartilhadas entre o mesmo arquivo .vm, conforme figura a seguir :</p>
+<p><img alt="Static" src="../figs/I-VM/static.svg"/></p>
+<p>A static não é visível entre diferentes arquivos .vm, deixando as variáveis limitadas a um escopo. O static será utilizado para armazenar as variáveis estáticas de uma determinada classe. Exemplo de acesso ao static :</p>
+<p>O exemplo a seguir demonstra duas classes (class1.vm e class2.vm) sendo utilizadas com os seus respectivos stacks. Nesse exemplo, a função main inicializa o static da classe 1 em : static[0] = 6, static[1] = 8 e o static ca classe 2 em : static[0] = 23, static[0] = 15.</p>
+<p><img alt="Static example" src="../figs/I-VM/static2.svg"/></p>
+<p>Isso será bastante utilizado para fazer a implementação da estrutura a seguir :</p>
+<div class="highlight"><pre><span></span><code><span class="kd">public</span><span class="w"> </span><span class="kd">class</span> <span class="nc">class1</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+
+<span class="w"> </span><span class="kd">static</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">valor0</span><span class="p">;</span><span class="w">  </span><span class="c1">// alocado no static 0</span><span class="w"></span>
+<span class="w"> </span><span class="kd">static</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">valor1</span><span class="p">;</span><span class="w">  </span><span class="c1">// alocado no static 1</span><span class="w"></span>
+
+<span class="w"> </span><span class="kd">public</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">set</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">var1</span><span class="p">,</span><span class="w"> </span><span class="n">va2</span><span class="p">){</span><span class="w"></span>
+<span class="w">      </span><span class="n">valor0</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">var1</span><span class="p">;</span><span class="w"></span>
+<span class="w">      </span><span class="n">valor1</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">var2</span><span class="p">;</span><span class="w"></span>
+<span class="w"> </span><span class="p">}</span><span class="w"></span>
+
+<span class="w"> </span><span class="kd">public</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">get</span><span class="p">(</span><span class="kt">void</span><span class="p">){</span><span class="w"></span>
+<span class="w">     </span><span class="k">return</span><span class="p">(</span><span class="n">valor0</span><span class="o">-</span><span class="n">valor1</span><span class="p">);</span><span class="w"></span>
+<span class="w"> </span><span class="p">}</span><span class="w"></span>
+</code></pre></div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>As variáveis estáticas são compartilhadas entre os objetos inicializados a partir da mesma classe, alocando assim apenas um slot de memória para todos os objetos criados a partir dessa classe ^1. </p>
+<p>^1: <a href="https://beginnersbook.com/2013/05/static-variable/">https://beginnersbook.com/2013/05/static-variable/</a></p>
+</div>
+<h2 id="heap">HEAP<a class="headerlink" href="#heap" title="Permanent link">¶</a></h2>
+<p>O HEAP é a região de memória a ser utilizada para armazenamento objetos e vetores, um objeto será construído a partir de uma classe e compartilhará as mesma variáveis estáticas mas não as mesmas variáveis locais ao objeto. Vamos tomar como ponto de partida o exemplo a seguir que inicializa dois objetos (terra e lua) do tipo corpoCeleste :</p>
+<div class="highlight"><pre><span></span><code><span class="kt">void</span><span class="w"> </span><span class="nf">main</span><span class="p">(){</span><span class="w"></span>
+<span class="w">    </span><span class="n">corpoCeleste</span><span class="w"> </span><span class="n">terra</span><span class="w">  </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">corpoCeletes</span><span class="p">();</span><span class="w"></span>
+<span class="w">    </span><span class="n">terra</span><span class="p">.</span><span class="na">setMassa</span><span class="p">(</span><span class="mi">1200</span><span class="p">);</span><span class="w"></span>
+<span class="w">    </span><span class="n">corpoCeleste</span><span class="w"> </span><span class="n">lua</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">corpoCeleste</span><span class="p">();</span><span class="w"></span>
+<span class="w">    </span><span class="n">lua</span><span class="p">.</span><span class="na">setMassa</span><span class="p">(</span><span class="mi">32</span><span class="p">);</span><span class="w"></span>
+
+<span class="w">    </span><span class="n">lua</span><span class="p">.</span><span class="na">pi</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">314</span><span class="p">;</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+
+<span class="kd">public</span><span class="w"> </span><span class="kd">class</span> <span class="nf">corpoCeleste</span><span class="p">(){</span><span class="w"></span>
+<span class="w">    </span><span class="kd">static</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">pi</span><span class="p">;</span><span class="w"></span>
+
+<span class="w">    </span><span class="kt">int</span><span class="w"> </span><span class="n">raio</span><span class="w"> </span><span class="p">;</span><span class="w"></span>
+<span class="w">    </span><span class="kt">int</span><span class="w"> </span><span class="n">gravidade</span><span class="p">;</span><span class="w"></span>
+<span class="w">    </span><span class="kt">int</span><span class="w"> </span><span class="n">massa</span><span class="p">;</span><span class="w"></span>
+
+<span class="w">    </span><span class="kt">void</span><span class="w"> </span><span class="nf">getMassa</span><span class="p">(){</span><span class="w"></span>
+<span class="w">        </span><span class="k">return</span><span class="p">(</span><span class="k">this</span><span class="p">.</span><span class="na">massa</span><span class="p">);</span><span class="w"></span>
+<span class="w">    </span><span class="p">}</span><span class="w"></span>
+
+<span class="w">    </span><span class="kt">void</span><span class="w"> </span><span class="nf">setMassa</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">m</span><span class="p">){</span><span class="w"></span>
+<span class="w">        </span><span class="k">this</span><span class="p">.</span><span class="na">massa</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">m</span><span class="p">;</span><span class="w"></span>
+<span class="w">    </span><span class="p">}</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+</code></pre></div>
+<p>Esse exemplo aloca no Heap três endereços em locais diferentes para cada objeto criado do tipo corpoCeleste, porém a variável <em>pi</em>, que é estática é comum a todos os objetos criados a partir da mesma classe. A figura a seguir ilustra como essas variáveis seriam alocadas em memória.</p>
+<p><img alt="Alocação de memórias para objetos - Heap" src="../figs/I-VM/heap.svg"/></p>
+<h2 id="this">This<a class="headerlink" href="#this" title="Permanent link">¶</a></h2>
+<p>This é o ponteiro que referência o próprio objeto: objeto na qual o método ou construtor está sendo chamado. No caso da chamada do método getMassa() da classe corpoCeleste, o ponteiro <strong>This</strong> será ajustado para apontar para o objeto na qual o método foi chamado. O fluxo da máquina virtual será o seguinte :</p>
+<ol>
+<li>Ajusta o <strong>this</strong> para apontar para o início do HEAP pertencente ao objeto</li>
+<li>chama a função getMassa do arquivo corpoCeleste.vm</li>
+</ol>
+<h2 id="that">That<a class="headerlink" href="#that" title="Permanent link">¶</a></h2>
+<p>O ponteiro <strong>That</strong>  é utilizado para referenciar <strong>outro</strong>  objeto, utilizado no exemplo a seguir:</p>
+<p>Método objeto Celeste: </p>
+<div class="highlight"><pre><span></span><code><span class="w">    </span><span class="kt">void</span><span class="w"> </span><span class="nf">compareMassa</span><span class="p">(</span><span class="n">corpoCeleste</span><span class="w"> </span><span class="n">outro</span><span class="p">){</span><span class="w"></span>
+<span class="w">        </span><span class="k">if</span><span class="p">(</span><span class="k">this</span><span class="p">.</span><span class="na">massa</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="n">outro</span><span class="p">.</span><span class="na">massa</span><span class="p">){</span><span class="w"></span>
+<span class="w">            </span><span class="k">return</span><span class="p">(</span><span class="n">True</span><span class="p">);</span><span class="w"></span>
+<span class="w">        </span><span class="p">}</span><span class="w"> </span>
+<span class="w">        </span><span class="k">else</span><span class="p">{</span><span class="w"></span>
+<span class="w">            </span><span class="k">return</span><span class="p">(</span><span class="n">False</span><span class="p">);</span><span class="w"></span>
+<span class="w">        </span><span class="p">}</span><span class="w"></span>
+<span class="w">    </span><span class="p">}</span><span class="w">    </span>
+</code></pre></div>
+<p>Código principal:</p>
+<div class="highlight"><pre><span></span><code><span class="w">    </span><span class="kt">void</span><span class="w"> </span><span class="nf">main</span><span class="p">(){</span><span class="w"></span>
+<span class="w">       </span><span class="p">...</span><span class="w"></span>
+
+<span class="w">       </span><span class="n">rtn</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">terra</span><span class="p">.</span><span class="na">compareMassa</span><span class="p">(</span><span class="n">lua</span><span class="p">);</span><span class="w"></span>
+<span class="w">    </span><span class="p">}</span><span class="w"></span>
+</code></pre></div>
+<p>Nesse exemplo, incluimos um novo método (compareMass) na classe corpoCeleste, esse novo método compara a massa de um outro objeto com a do próprio objeto, retornando verdadeiro ou falso dependendo do resultado.</p>
+<p>Como esse código seria traduzido para VM? O objeto em questão será acessado utilizando o ponteiro <code>this</code> e o objeto a ser comparado será acessado via o <code>that</code>. O compilador da linguagem de alto nível para VM será responsável por alocar os objetos nos endereços certos.</p>
+<div class="highlight"><pre><span></span><code>function main 0
+    ...
+    push constant 2048  // endereço objeto terra
+    push constant 2051  // endereço objeto lua
+    call cortpoCeleste.compare mass 2
+
+function corpoCeleste.compareMass 0
+    push argument 0
+    pop pointer 0   // atualiza endereço this
+    push argument 1
+    pop pointer 1   // atualiza endereço that
+    push this 2     // this 0 = gravidade; this 1 = raio; this 2 = massa
+    push that 2     // that 0 = gravidade; this 1 = raio; this 2 = massa
+    eq
+    return
+</code></pre></div>
+<p>Note que quando o método for chamado (no caso da vm o método será traduzido para uma função), os ponteiros <strong>this</strong> e <strong>that</strong> devem ser passados via a chamada da função, e no começo da função atualizado os endereços RAM[3] - This e RAM[4] - That. </p>
+
+  <hr>
+<div class="md-source-file">
+  <small>
+    
+      Last update:
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">June 13, 2022</span>
+      
+    
+  </small>
+</div>
+
+              
+            </article>
+            
+          </div>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+    <nav class="md-footer__inner md-grid" aria-label="Footer" >
+      
+        
+        <a href="../Teoria-vm-funcoes/" class="md-footer__link md-footer__link--prev" aria-label="Previous: VM - Funções" rel="prev">
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+          </div>
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              VM - Funções
+            </div>
+          </div>
+        </a>
+      
+      
+        
+        <a href="../Util-Video-Aulas/" class="md-footer__link md-footer__link--next" aria-label="Next: Vídeo Aulas (Luciano)" rel="next">
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              Vídeo Aulas (Luciano)
+            </div>
+          </div>
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg>
+          </div>
+        </a>
+      
+    </nav>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright &copy; Rafael Corsi @ insper
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.instant"], "search": "../assets/javascripts/workers/search.85cb4492.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.f758a944.min.js"></script>
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/js-yaml/4.0.0/js-yaml.min.js"></script>
+      
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+        <script src="https://cdn.jsdelivr.net/gh/insper-education/active-handout-plugins-js@main/package/plugin-bundle.js"></script>
+      
+    
+  </body>
+</html>

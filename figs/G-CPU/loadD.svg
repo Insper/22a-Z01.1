@@ -1,0 +1,881 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   version="1.1"
+   id="svg2"
+   xml:space="preserve"
+   width="359.80258"
+   height="107.86021"
+   viewBox="0 0 359.80258 107.8602"
+   sodipodi:docname="IS-Z011.svg"
+   inkscape:version="0.92.3 (2405546, 2018-03-11)"><metadata
+     id="metadata8"><rdf:RDF><cc:Work
+         rdf:about=""><dc:format>image/svg+xml</dc:format><dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" /><dc:title></dc:title></cc:Work></rdf:RDF></metadata><defs
+     id="defs6"><clipPath
+   clipPathUnits="userSpaceOnUse"
+   id="clipPath20"><path
+     d="M -2,-2 H 761 V 999 H -2 Z"
+     id="path18"
+     inkscape:connector-curvature="0" /></clipPath><clipPath
+   clipPathUnits="userSpaceOnUse"
+   id="clipPath1382"><path
+     d="M -2,-2 H 761 V 999 H -2 Z"
+     id="path1380"
+     inkscape:connector-curvature="0" /></clipPath><clipPath
+   clipPathUnits="userSpaceOnUse"
+   id="clipPath1388"><path
+     d="m 639,908 h 107 v 86 H 639 Z"
+     id="path1386"
+     inkscape:connector-curvature="0" /></clipPath><mask
+   maskUnits="userSpaceOnUse"
+   x="0"
+   y="0"
+   width="1"
+   height="1"
+   id="mask1392"><image
+     width="1"
+     height="1"
+     style="image-rendering:optimizeSpeed"
+     preserveAspectRatio="none"
+     xlink:href="data:image/png;base64,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"
+     id="image1394" /></mask>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</defs><sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="3840"
+     inkscape:window-height="1924"
+     id="namedview4"
+     showgrid="false"
+     inkscape:zoom="1.1891486"
+     inkscape:cx="641.09112"
+     inkscape:cy="-195.59565"
+     inkscape:window-x="0"
+     inkscape:window-y="60"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="g10"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0" /><g
+     id="g10"
+     inkscape:groupmode="layer"
+     inkscape:label="2020a - Instruction Set Z01"
+     transform="matrix(1.3333333,0,0,-1.3333333,-51.188699,810.38778)"><path
+       inkscape:connector-curvature="0"
+       id="path48"
+       style="fill:#ead1dc;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.65111989"
+       d="M 49.748879,559.45693 H 64.724636 V 545.13229 H 49.748879 Z" /><path
+       inkscape:connector-curvature="0"
+       id="path50"
+       style="fill:#f3f3f3;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.65111989"
+       d="M 64.073516,559.45693 H 107.69855 V 545.13229 H 64.073516 Z" /><path
+       inkscape:connector-curvature="0"
+       id="path52"
+       style="fill:#c9daf8;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.65111989"
+       d="m 107.04743,559.45693 h 14.97575 v -14.32464 h -14.97575 z" /><path
+       inkscape:connector-curvature="0"
+       id="path54"
+       style="fill:#fff2cc;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.65111989"
+       d="m 121.37206,559.45693 h 86.59895 v -14.32464 h -86.59895 z" /><path
+       inkscape:connector-curvature="0"
+       id="path56"
+       style="fill:#f3f3f3;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.65111989"
+       d="m 207.31989,559.45693 h 14.97575 v -14.32464 h -14.97575 z" /><path
+       inkscape:connector-curvature="0"
+       id="path58"
+       style="fill:#d9ead3;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.65111989"
+       d="m 221.64452,559.45693 h 43.62504 v -14.32464 h -43.62504 z" /><path
+       inkscape:connector-curvature="0"
+       id="path60"
+       style="fill:#d0e0e3;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.65111989"
+       d="m 264.61844,559.45693 h 43.62503 v -14.32464 h -43.62503 z" /><text
+       id="text248"
+       style="font-variant:normal;font-weight:bold;font-size:8.4645586px;font-family:'Ubuntu Mono';-inkscape-font-specification:UbuntuMono-Bold;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.65111989"
+       transform="scale(1,-1)"
+       x="52.353359"
+       y="-601.91644"><tspan
+         id="tspan246"
+         sodipodi:role="line"
+         y="-601.91644"
+         x="52.353359 56.58564 60.817917 65.050194 69.282478 73.514755 77.747032 81.979317 86.211594 90.443871 94.676147 98.908432 103.14071 107.37299 111.60527 115.83755 120.06982 124.3021 128.53438 132.76666"
+         style="stroke-width:0.65111989">Instruções do tipo C</tspan></text>
+<text
+       id="text252"
+       style="font-variant:normal;font-weight:normal;font-size:8.4645586px;font-family:'Ubuntu Mono';-inkscape-font-specification:UbuntuMono-Regular;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.65111989"
+       transform="scale(1,-1)"
+       x="81.002632"
+       y="-584.33624"><tspan
+         id="tspan250"
+         sodipodi:role="line"
+         y="-584.33624"
+         x="81.002632 85.234909 89.467194 93.699471 97.931747 102.16403 106.39631 110.62859 114.86086 119.09315 123.32542 127.5577 131.78998 136.02226 140.25455"
+         style="stroke-width:0.65111989">se bit 17 == 1:</tspan></text>
+<text
+       id="text256"
+       style="font-variant:normal;font-weight:normal;font-size:8.4645586px;font-family:'Ubuntu Mono';-inkscape-font-specification:UbuntuMono-Regular;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.65111989"
+       transform="scale(1,-1)"
+       x="97.931747"
+       y="-575.87164"><tspan
+         id="tspan254"
+         sodipodi:role="line"
+         y="-575.87164"
+         x="97.931747 102.16403 106.39631 110.62859 114.86087 119.09315 123.32542 127.5577 131.78998 136.02226 140.25455 144.48682"
+         style="stroke-width:0.65111989">executa ação</tspan></text>
+<text
+       id="text260"
+       style="font-variant:normal;font-weight:normal;font-size:5.07873487px;font-family:'Ubuntu Mono';-inkscape-font-specification:UbuntuMono-Regular;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.65111989"
+       transform="scale(1,-1)"
+       x="54.306717"
+       y="-561.62219"><tspan
+         id="tspan258"
+         sodipodi:role="line"
+         y="-561.62219"
+         x="54.306717 56.846085"
+         style="stroke-width:0.65111989">17</tspan></text>
+<text
+       id="text264"
+       style="font-variant:normal;font-weight:normal;font-size:5.07873487px;font-family:'Ubuntu Mono';-inkscape-font-specification:UbuntuMono-Regular;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.65111989"
+       transform="scale(1,-1)"
+       x="68.631355"
+       y="-561.62219"><tspan
+         id="tspan262"
+         sodipodi:role="line"
+         y="-561.62219"
+         x="68.631355 71.170723"
+         style="stroke-width:0.65111989">16</tspan></text>
+<text
+       id="text268"
+       style="font-variant:normal;font-weight:normal;font-size:5.07873487px;font-family:'Ubuntu Mono';-inkscape-font-specification:UbuntuMono-Regular;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.65111989"
+       transform="scale(1,-1)"
+       x="82.955994"
+       y="-561.62219"><tspan
+         id="tspan266"
+         sodipodi:role="line"
+         y="-561.62219"
+         x="82.955994 85.495361"
+         style="stroke-width:0.65111989">15</tspan></text>
+<text
+       id="text272"
+       style="font-variant:normal;font-weight:normal;font-size:5.07873487px;font-family:'Ubuntu Mono';-inkscape-font-specification:UbuntuMono-Regular;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.65111989"
+       transform="scale(1,-1)"
+       x="97.280632"
+       y="-561.62219"><tspan
+         id="tspan270"
+         sodipodi:role="line"
+         y="-561.62219"
+         x="97.280632 99.82"
+         style="stroke-width:0.65111989">14</tspan></text>
+<text
+       id="text276"
+       style="font-variant:normal;font-weight:normal;font-size:5.07873487px;font-family:'Ubuntu Mono';-inkscape-font-specification:UbuntuMono-Regular;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.65111989"
+       transform="scale(1,-1)"
+       x="111.60527"
+       y="-561.62219"><tspan
+         id="tspan274"
+         sodipodi:role="line"
+         y="-561.62219"
+         x="111.60527 114.14464"
+         style="stroke-width:0.65111989">13</tspan></text>
+<text
+       id="text280"
+       style="font-variant:normal;font-weight:normal;font-size:5.07873487px;font-family:'Ubuntu Mono';-inkscape-font-specification:UbuntuMono-Regular;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.65111989"
+       transform="scale(1,-1)"
+       x="125.9299"
+       y="-561.62219"><tspan
+         id="tspan278"
+         sodipodi:role="line"
+         y="-561.62219"
+         x="125.9299 128.46927"
+         style="stroke-width:0.65111989">12</tspan></text>
+<text
+       id="text284"
+       style="font-variant:normal;font-weight:normal;font-size:5.07873487px;font-family:'Ubuntu Mono';-inkscape-font-specification:UbuntuMono-Regular;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.65111989"
+       transform="scale(1,-1)"
+       x="140.25455"
+       y="-561.62219"><tspan
+         id="tspan282"
+         sodipodi:role="line"
+         y="-561.62219"
+         x="140.25455 142.79391"
+         style="stroke-width:0.65111989">11</tspan></text>
+<text
+       id="text288"
+       style="font-variant:normal;font-weight:normal;font-size:5.07873487px;font-family:'Ubuntu Mono';-inkscape-font-specification:UbuntuMono-Regular;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.65111989"
+       transform="scale(1,-1)"
+       x="154.57918"
+       y="-561.62219"><tspan
+         id="tspan286"
+         sodipodi:role="line"
+         y="-561.62219"
+         x="154.57918 157.11855"
+         style="stroke-width:0.65111989">10</tspan></text>
+<text
+       id="text292"
+       style="font-variant:normal;font-weight:normal;font-size:5.07873487px;font-family:'Ubuntu Mono';-inkscape-font-specification:UbuntuMono-Regular;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.65111989"
+       transform="scale(1,-1)"
+       x="170.20605"
+       y="-561.62219"><tspan
+         id="tspan290"
+         y="-561.62219"
+         x="170.20605"
+         style="stroke-width:0.65111989">9</tspan></text>
+<text
+       id="text296"
+       style="font-variant:normal;font-weight:normal;font-size:5.07873487px;font-family:'Ubuntu Mono';-inkscape-font-specification:UbuntuMono-Regular;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.65111989"
+       transform="scale(1,-1)"
+       x="184.53069"
+       y="-561.62219"><tspan
+         id="tspan294"
+         y="-561.62219"
+         x="184.53069"
+         style="stroke-width:0.65111989">8</tspan></text>
+<text
+       id="text300"
+       style="font-variant:normal;font-weight:normal;font-size:5.07873487px;font-family:'Ubuntu Mono';-inkscape-font-specification:UbuntuMono-Regular;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.65111989"
+       transform="scale(1,-1)"
+       x="198.85533"
+       y="-561.62219"><tspan
+         id="tspan298"
+         y="-561.62219"
+         x="198.85533"
+         style="stroke-width:0.65111989">7</tspan></text>
+<text
+       id="text304"
+       style="font-variant:normal;font-weight:normal;font-size:5.07873487px;font-family:'Ubuntu Mono';-inkscape-font-specification:UbuntuMono-Regular;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.65111989"
+       transform="scale(1,-1)"
+       x="213.17998"
+       y="-561.62219"><tspan
+         id="tspan302"
+         y="-561.62219"
+         x="213.17998"
+         style="stroke-width:0.65111989">6</tspan></text>
+<text
+       id="text308"
+       style="font-variant:normal;font-weight:normal;font-size:5.07873487px;font-family:'Ubuntu Mono';-inkscape-font-specification:UbuntuMono-Regular;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.65111989"
+       transform="scale(1,-1)"
+       x="227.50459"
+       y="-561.62219"><tspan
+         id="tspan306"
+         y="-561.62219"
+         x="227.50459"
+         style="stroke-width:0.65111989">5</tspan></text>
+<text
+       id="text312"
+       style="font-variant:normal;font-weight:normal;font-size:5.07873487px;font-family:'Ubuntu Mono';-inkscape-font-specification:UbuntuMono-Regular;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.65111989"
+       transform="scale(1,-1)"
+       x="241.82924"
+       y="-561.62219"><tspan
+         id="tspan310"
+         y="-561.62219"
+         x="241.82924"
+         style="stroke-width:0.65111989">4</tspan></text>
+<text
+       id="text316"
+       style="font-variant:normal;font-weight:normal;font-size:5.07873487px;font-family:'Ubuntu Mono';-inkscape-font-specification:UbuntuMono-Regular;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.65111989"
+       transform="scale(1,-1)"
+       x="256.15387"
+       y="-561.62219"><tspan
+         id="tspan314"
+         y="-561.62219"
+         x="256.15387"
+         style="stroke-width:0.65111989">3</tspan></text>
+<text
+       id="text320"
+       style="font-variant:normal;font-weight:normal;font-size:5.07873487px;font-family:'Ubuntu Mono';-inkscape-font-specification:UbuntuMono-Regular;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.65111989"
+       transform="scale(1,-1)"
+       x="270.47852"
+       y="-561.62219"><tspan
+         id="tspan318"
+         y="-561.62219"
+         x="270.47852"
+         style="stroke-width:0.65111989">2</tspan></text>
+<text
+       id="text324"
+       style="font-variant:normal;font-weight:normal;font-size:5.07873487px;font-family:'Ubuntu Mono';-inkscape-font-specification:UbuntuMono-Regular;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.65111989"
+       transform="scale(1,-1)"
+       x="284.80316"
+       y="-561.62219"><tspan
+         id="tspan322"
+         y="-561.62219"
+         x="284.80316"
+         style="stroke-width:0.65111989">1</tspan></text>
+<text
+       id="text328"
+       style="font-variant:normal;font-weight:normal;font-size:5.07873487px;font-family:'Ubuntu Mono';-inkscape-font-specification:UbuntuMono-Regular;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.65111989"
+       transform="scale(1,-1)"
+       x="299.12778"
+       y="-561.62219"><tspan
+         id="tspan326"
+         y="-561.62219"
+         x="299.12778"
+         style="stroke-width:0.65111989">0</tspan></text>
+<text
+       id="text336"
+       style="font-variant:normal;font-weight:bold;font-size:8.4645586px;font-family:'Ubuntu Mono';-inkscape-font-specification:UbuntuMono-Bold;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.65111989"
+       transform="scale(1,-1)"
+       x="54.957836"
+       y="-548.5246"><tspan
+         id="tspan334"
+         y="-548.5246"
+         x="54.957836"
+         style="stroke-width:0.65111989">1</tspan></text>
+<text
+       id="text340"
+       style="font-variant:normal;font-weight:bold;font-size:8.4645586px;font-family:'Ubuntu Mono';-inkscape-font-specification:UbuntuMono-Bold;writing-mode:lr-tb;fill:#ff0000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.65111989"
+       transform="scale(1,-1)"
+       x="69.282478"
+       y="-548.5246"><tspan
+         id="tspan338"
+         y="-548.5246"
+         x="69.282478"
+         style="stroke-width:0.65111989">0</tspan></text>
+<text
+       id="text344"
+       style="font-variant:normal;font-weight:bold;font-size:8.4645586px;font-family:'Ubuntu Mono';-inkscape-font-specification:UbuntuMono-Bold;writing-mode:lr-tb;fill:#ff0000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.65111989"
+       transform="scale(1,-1)"
+       x="83.607109"
+       y="-548.5246"><tspan
+         id="tspan342"
+         y="-548.5246"
+         x="83.607109"
+         style="stroke-width:0.65111989">0</tspan></text>
+<text
+       id="text348"
+       style="font-variant:normal;font-weight:bold;font-size:8.4645586px;font-family:'Ubuntu Mono';-inkscape-font-specification:UbuntuMono-Bold;writing-mode:lr-tb;fill:#ff0000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.65111989"
+       transform="scale(1,-1)"
+       x="97.931747"
+       y="-548.5246"><tspan
+         id="tspan346"
+         y="-548.5246"
+         x="97.931747"
+         style="stroke-width:0.65111989">0</tspan></text>
+<text
+       id="text352"
+       style="font-variant:normal;font-weight:bold;font-size:8.4645586px;font-family:'Ubuntu Mono';-inkscape-font-specification:UbuntuMono-Bold;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.65111989"
+       transform="scale(1,-1)"
+       x="110.30303"
+       y="-548.5246"><tspan
+         id="tspan350"
+         sodipodi:role="line"
+         y="-548.5246"
+         x="110.30303 114.53531"
+         style="stroke-width:0.65111989">r0</tspan></text>
+<text
+       id="text356"
+       style="font-variant:normal;font-weight:bold;font-size:8.4645586px;font-family:'Ubuntu Mono';-inkscape-font-specification:UbuntuMono-Bold;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.65111989"
+       transform="scale(1,-1)"
+       x="124.62766"
+       y="-548.5246"><tspan
+         id="tspan354"
+         sodipodi:role="line"
+         y="-548.5246"
+         x="124.62766 128.85994"
+         style="stroke-width:0.65111989">c5</tspan></text>
+<text
+       id="text360"
+       style="font-variant:normal;font-weight:bold;font-size:8.4645586px;font-family:'Ubuntu Mono';-inkscape-font-specification:UbuntuMono-Bold;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.65111989"
+       transform="scale(1,-1)"
+       x="138.9523"
+       y="-548.5246"><tspan
+         id="tspan358"
+         sodipodi:role="line"
+         y="-548.5246"
+         x="138.9523 143.18459"
+         style="stroke-width:0.65111989">c4</tspan></text>
+<text
+       id="text364"
+       style="font-variant:normal;font-weight:bold;font-size:8.4645586px;font-family:'Ubuntu Mono';-inkscape-font-specification:UbuntuMono-Bold;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.65111989"
+       transform="scale(1,-1)"
+       x="153.27695"
+       y="-548.5246"><tspan
+         id="tspan362"
+         sodipodi:role="line"
+         y="-548.5246"
+         x="153.27695 157.50922"
+         style="stroke-width:0.65111989">c3</tspan></text>
+<text
+       id="text368"
+       style="font-variant:normal;font-weight:bold;font-size:8.4645586px;font-family:'Ubuntu Mono';-inkscape-font-specification:UbuntuMono-Bold;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.65111989"
+       transform="scale(1,-1)"
+       x="167.60158"
+       y="-548.5246"><tspan
+         id="tspan366"
+         sodipodi:role="line"
+         y="-548.5246"
+         x="167.60158 171.83386"
+         style="stroke-width:0.65111989">c2</tspan></text>
+<text
+       id="text372"
+       style="font-variant:normal;font-weight:bold;font-size:8.4645586px;font-family:'Ubuntu Mono';-inkscape-font-specification:UbuntuMono-Bold;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.65111989"
+       transform="scale(1,-1)"
+       x="181.92621"
+       y="-548.5246"><tspan
+         id="tspan370"
+         sodipodi:role="line"
+         y="-548.5246"
+         x="181.92621 186.15849"
+         style="stroke-width:0.65111989">c1</tspan></text>
+<text
+       id="text376"
+       style="font-variant:normal;font-weight:bold;font-size:8.4645586px;font-family:'Ubuntu Mono';-inkscape-font-specification:UbuntuMono-Bold;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.65111989"
+       transform="scale(1,-1)"
+       x="196.25085"
+       y="-548.5246"><tspan
+         id="tspan374"
+         sodipodi:role="line"
+         y="-548.5246"
+         x="196.25085 200.48312"
+         style="stroke-width:0.65111989">c0</tspan></text>
+<text
+       id="text380"
+       style="font-variant:normal;font-weight:bold;font-size:8.4645586px;font-family:'Ubuntu Mono';-inkscape-font-specification:UbuntuMono-Bold;writing-mode:lr-tb;fill:#ff0000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.65111989"
+       transform="scale(1,-1)"
+       x="212.52885"
+       y="-548.5246"><tspan
+         id="tspan378"
+         y="-548.5246"
+         x="212.52885"
+         style="stroke-width:0.65111989">0</tspan></text>
+<text
+       id="text384"
+       style="font-variant:normal;font-weight:bold;font-size:8.4645586px;font-family:'Ubuntu Mono';-inkscape-font-specification:UbuntuMono-Bold;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.65111989"
+       transform="scale(1,-1)"
+       x="224.90012"
+       y="-548.5246"><tspan
+         id="tspan382"
+         sodipodi:role="line"
+         y="-548.5246"
+         x="224.90012 229.1324"
+         style="stroke-width:0.65111989">d2</tspan></text>
+<text
+       id="text388"
+       style="font-variant:normal;font-weight:bold;font-size:8.4645586px;font-family:'Ubuntu Mono';-inkscape-font-specification:UbuntuMono-Bold;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.65111989"
+       transform="scale(1,-1)"
+       x="239.22476"
+       y="-548.5246"><tspan
+         id="tspan386"
+         sodipodi:role="line"
+         y="-548.5246"
+         x="239.22476 243.45705"
+         style="stroke-width:0.65111989">d1</tspan></text>
+<text
+       id="text392"
+       style="font-variant:normal;font-weight:bold;font-size:8.4645586px;font-family:'Ubuntu Mono';-inkscape-font-specification:UbuntuMono-Bold;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.65111989"
+       transform="scale(1,-1)"
+       x="253.54939"
+       y="-548.5246"><tspan
+         id="tspan390"
+         sodipodi:role="line"
+         y="-548.5246"
+         x="253.54939 257.78168"
+         style="stroke-width:0.65111989">d0</tspan></text>
+<text
+       id="text396"
+       style="font-variant:normal;font-weight:bold;font-size:8.4645586px;font-family:'Ubuntu Mono';-inkscape-font-specification:UbuntuMono-Bold;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.65111989"
+       transform="scale(1,-1)"
+       x="267.87405"
+       y="-548.5246"><tspan
+         id="tspan394"
+         sodipodi:role="line"
+         y="-548.5246"
+         x="267.87405 272.10632"
+         style="stroke-width:0.65111989">j2</tspan></text>
+<text
+       id="text400"
+       style="font-variant:normal;font-weight:bold;font-size:8.4645586px;font-family:'Ubuntu Mono';-inkscape-font-specification:UbuntuMono-Bold;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.65111989"
+       transform="scale(1,-1)"
+       x="282.19867"
+       y="-548.5246"><tspan
+         id="tspan398"
+         sodipodi:role="line"
+         y="-548.5246"
+         x="282.19867 286.43094"
+         style="stroke-width:0.65111989">j1</tspan></text>
+<text
+       id="text404"
+       style="font-variant:normal;font-weight:bold;font-size:8.4645586px;font-family:'Ubuntu Mono';-inkscape-font-specification:UbuntuMono-Bold;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.65111989"
+       transform="scale(1,-1)"
+       x="296.52332"
+       y="-548.5246"><tspan
+         id="tspan402"
+         sodipodi:role="line"
+         y="-548.5246"
+         x="296.52332 300.75558"
+         style="stroke-width:0.65111989">j0</tspan></text>
+<circle
+       style="opacity:1;fill:#fe9ab8;fill-opacity:0.60113962;stroke:#000000;stroke-width:0.15000001;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       id="path3558-3"
+       cx="243.53033"
+       cy="-553.20569"
+       r="12.298716"
+       transform="scale(1,-1)" /><circle
+       style="opacity:1;fill:#fe9ab8;fill-opacity:0.60113962;stroke:#000000;stroke-width:0.15000001;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       id="path3558-3-6"
+       cx="57.551682"
+       cy="-552.33838"
+       r="12.298716"
+       transform="scale(1,-1)" /><text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12px;line-height:1.25;font-family:'Anonymous Pro';-inkscape-font-specification:'Anonymous Pro';text-align:center;text-anchor:middle;opacity:1;fill:#000000;fill-opacity:0.60113962;stroke:none;stroke-width:0.15000001;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       x="243.41022"
+       y="-527.03046"
+       id="text3592"
+       transform="scale(1,-1)"><tspan
+         sodipodi:role="line"
+         id="tspan3590"
+         x="243.41022"
+         y="-527.03046"
+         style="fill:#000000;stroke:none;stroke-width:0.15000001">loadD</tspan></text>
+<text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12px;line-height:1.25;font-family:'Anonymous Pro';-inkscape-font-specification:'Anonymous Pro';text-align:center;text-anchor:middle;opacity:1;fill:#000000;fill-opacity:0.60113962;stroke:none;stroke-width:0.15000001;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       x="58.079025"
+       y="-529.59485"
+       id="text3596"
+       transform="scale(1,-1)"><tspan
+         sodipodi:role="line"
+         id="tspan3594"
+         x="58.079025"
+         y="-529.59485"
+         style="stroke-width:0.15000001">tipo C</tspan></text>
+</g></svg>

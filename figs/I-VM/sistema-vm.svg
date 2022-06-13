@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   version="1.1"
+   id="svg2"
+   xml:space="preserve"
+   width="1177.3652"
+   height="834.95306"
+   viewBox="0 0 1177.3652 834.95306"
+   sodipodi:docname="sistema-vm.svg"
+   inkscape:version="0.92.3 (2405546, 2018-03-11)"><metadata
+     id="metadata8"><rdf:RDF><cc:Work
+         rdf:about=""><dc:format>image/svg+xml</dc:format><dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" /><dc:title /></cc:Work></rdf:RDF></metadata><defs
+     id="defs6" /><sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="3840"
+     inkscape:window-height="2034"
+     id="namedview4"
+     showgrid="false"
+     inkscape:zoom="1.1306025"
+     inkscape:cx="266.16045"
+     inkscape:cy="611.62708"
+     inkscape:window-x="0"
+     inkscape:window-y="60"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="g10" /><g
+     id="g10"
+     inkscape:groupmode="layer"
+     inkscape:label="sistema-assembly"
+     transform="matrix(1.3333333,0,0,1.3333333,0,1.6873826e-5)"><g
+       id="g12"><g
+   id="g14"><path
+     d="M 27.734,1.418 H 709.625 V 366.992 H 27.734 Z"
+     style="fill:#f7f7f7;fill-opacity:1;fill-rule:nonzero;stroke:#211e1e;stroke-width:2.83464599;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+     id="path16"
+     inkscape:connector-curvature="0" /></g><g
+   id="g18"><path
+     d="M 219.789,37.402 H 484.234 V 345.398 H 219.789 Z"
+     style="fill:none;stroke:#211e1e;stroke-width:2.83464503;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+     id="path20"
+     inkscape:connector-curvature="0" /></g><g
+   id="g22"><path
+     d="M 340.25,60.891 H 464.535 V 191.606 H 340.25 Z"
+     style="fill:#f2f2f2;fill-opacity:1;fill-rule:nonzero;stroke:#211e1e;stroke-width:2.83464599;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+     id="path24"
+     inkscape:connector-curvature="0" /></g><g
+   id="g26"><path
+     d="m 238.148,63.078 h 73.93 v 124.82 h -73.93 z"
+     style="fill:#f2f2f2;fill-opacity:1;fill-rule:nonzero;stroke:#211e1e;stroke-width:2.83464599;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+     id="path28"
+     inkscape:connector-curvature="0" /></g><text
+   transform="rotate(-63.42013,271.16066,-117.94731)"
+   style="font-variant:normal;font-weight:normal;font-size:16.04930115px;font-family:'Bitstream Vera Sans';-inkscape-font-specification:BitstreamVeraSans-Roman;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+   id="text32"><tspan
+     x="0 10.448094 20.318415 30.493671 34.939327 43.284966 49.57629 56.172554 65.99472 76.169983 85.976105 92.283478 102.1538"
+     y="0"
+     sodipodi:role="line"
+     id="tspan30">Registradores</tspan></text>
+
+
+<g
+   id="g34"
+   transform="rotate(90)"><path
+     d="m 215.805,-435.637 h 73.172 v 167.25 h -73.172 z"
+     style="fill:#ececec;fill-opacity:1;fill-rule:nonzero;stroke:#211e1e;stroke-width:2.83464599;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+     id="path36"
+     inkscape:connector-curvature="0" /></g><text
+   transform="translate(274.25026,257.19764)"
+   style="font-variant:normal;font-weight:normal;font-size:18px;font-family:'Bitstream Vera Sans';-inkscape-font-specification:BitstreamVeraSans-Roman;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+   id="text40"><tspan
+     x="0 10.566 17.586 28.584 39.995998 47.394001 58.41 75.996002 81.702003 94.265999 105.264 116.658 128.106 135.162 146.23199"
+     y="0"
+     sodipodi:role="line"
+     id="tspan38">Program Counter</tspan></text>
+
+
+<text
+   transform="translate(379.56561,134.11045)"
+   style="font-variant:normal;font-weight:normal;font-size:22px;font-family:'Bitstream Vera Sans';-inkscape-font-specification:BitstreamVeraSans-Roman;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+   id="text44"><tspan
+     x="0 16.082001 28.841999"
+     y="0"
+     sodipodi:role="line"
+     id="tspan42">ULA</tspan></text>
+
+
+<g
+   id="g46"><path
+     d="M 526.773,71.117 H 651.062 V 281.383 H 526.773 Z"
+     style="fill:#f2f2f2;fill-opacity:1;fill-rule:nonzero;stroke:#211e1e;stroke-width:2.83464599;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+     id="path48"
+     inkscape:connector-curvature="0" /></g><text
+   transform="translate(540.80399,171.29753)"
+   style="font-variant:normal;font-weight:normal;font-size:22px;font-family:'Bitstream Vera Sans';-inkscape-font-specification:BitstreamVeraSans-Roman;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+   id="text54"><tspan
+     x="0 18.964001 32.493999 53.922001 67.363998 76.405998 82.5"
+     y="0"
+     sodipodi:role="line"
+     id="tspan50">Memória</tspan><tspan
+     x="23.804682 38.19268 53.240681"
+     y="27.5"
+     sodipodi:role="line"
+     id="tspan52">RAM</tspan></text>
+
+
+<g
+   id="g56"><path
+     d="M 57.66,65.816 H 181.945 V 276.078 H 57.66 Z"
+     style="fill:#f2f2f2;fill-opacity:1;fill-rule:nonzero;stroke:#211e1e;stroke-width:2.83464599;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+     id="path58"
+     inkscape:connector-curvature="0" /></g><text
+   transform="translate(71.688373,165.83853)"
+   style="font-variant:normal;font-weight:normal;font-size:22px;font-family:'Bitstream Vera Sans';-inkscape-font-specification:BitstreamVeraSans-Roman;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+   id="text68"><tspan
+     x="0 18.964001 32.493999 53.922001 67.363998 76.405998 82.5"
+     y="0"
+     sodipodi:role="line"
+     id="tspan60">Memória</tspan><tspan
+     x="22.236324 37.504326 54.818325"
+     y="27.5"
+     sodipodi:role="line"
+     id="tspan62">ROM</tspan><tspan
+     x="335.62897 350.98495 364.25098"
+     y="167.61615"
+     sodipodi:role="line"
+     id="tspan64">CPU</tspan><tspan
+     x="482.3479 497.70392 511.1459 532.57391 546.52191 560.44794 569.0719 582.60193 596.54993 609.99188"
+     y="186.71349"
+     sodipodi:role="line"
+     id="tspan66">Computador</tspan></text>
+
+
+<g
+   id="g70"><path
+     d="M 757.32,12.629 H 881.605 V 165.035 H 757.32 Z"
+     style="fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:#211e1e;stroke-width:2.83464599;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+     id="path72"
+     inkscape:connector-curvature="0" /></g><text
+   transform="translate(796.74948,96.840327)"
+   style="font-variant:normal;font-weight:normal;font-size:22px;font-family:'Bitstream Vera Sans';-inkscape-font-specification:BitstreamVeraSans-Roman;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+   id="text76"><tspan
+     x="0 12.254 27.610001"
+     y="0"
+     sodipodi:role="line"
+     id="tspan74">LCD</tspan></text>
+
+
+<g
+   id="g78"><path
+     d="M 757.32,201.734 H 881.605 V 354.14 H 757.32 Z"
+     style="fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:#211e1e;stroke-width:2.83464599;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+     id="path80"
+     inkscape:connector-curvature="0" /></g><text
+   transform="translate(778.88525,286.14082)"
+   style="font-variant:normal;font-weight:normal;font-size:22px;font-family:'Bitstream Vera Sans';-inkscape-font-specification:BitstreamVeraSans-Roman;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+   id="text84"><tspan
+     x="0 9.724 23.254 35.332001 41.425999 54.889999 68.837997"
+     y="0"
+     sodipodi:role="line"
+     id="tspan82">Teclado</tspan></text>
+
+
+<g
+   id="g86"><path
+     d="M 71.992,481.457 148.066,349.691"
+     style="fill:none;stroke:#000000;stroke-width:2.83464599;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+     id="path88"
+     inkscape:connector-curvature="0" /></g><g
+   id="g90"
+   transform="matrix(-0.57735,1,-1,-0.57735,0,0)"><path
+     d="m 222.704,-262.473 9.82,-9.817 -34.37,9.819 34.368,9.818 z"
+     style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:2.61853409;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+     id="path92"
+     inkscape:connector-curvature="0" /></g><g
+   id="g94"><path
+     d="m 138.547,556.234 c 0,37.868 -30.699,68.563 -68.567,68.563 -37.867,0 -68.562,-30.695 -68.562,-68.563 0,-37.867 30.695,-68.566 68.562,-68.566 37.868,0 68.567,30.699 68.567,68.566 z"
+     style="fill:#f7f7f7;fill-opacity:1;fill-rule:nonzero;stroke:#211e1e;stroke-width:2.83464599;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+     id="path96"
+     inkscape:connector-curvature="0" /></g><g
+   id="g98"><path
+     d="m 337.672,556.234 c 0,37.868 -30.699,68.563 -68.563,68.563 -37.867,0 -68.566,-30.695 -68.566,-68.563 0,-37.867 30.699,-68.566 68.566,-68.566 37.864,0 68.563,30.699 68.563,68.566 z"
+     style="fill:#f7f7f7;fill-opacity:1;fill-rule:nonzero;stroke:#211e1e;stroke-width:2.83464599;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+     id="path100"
+     inkscape:connector-curvature="0" /></g><text
+   transform="translate(214.55933,562.2942)"
+   style="font-variant:normal;font-weight:normal;font-size:22px;font-family:'Bitstream Vera Sans';-inkscape-font-specification:BitstreamVeraSans-Roman;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+   id="text104"><tspan
+     x="0 15.048 26.488001 37.928001 51.458 72.886002 86.834 92.928001 106.458"
+     y="0"
+     sodipodi:role="line"
+     id="tspan102">Assembler</tspan></text>
+
+
+<g
+   id="g106"><path
+     d="m 536.797,556.234 c 0,37.868 -30.695,68.563 -68.563,68.563 -37.867,0 -68.562,-30.695 -68.562,-68.563 0,-37.867 30.695,-68.566 68.562,-68.566 37.868,0 68.563,30.699 68.563,68.566 z"
+     style="fill:#eae385;fill-opacity:1;fill-rule:nonzero;stroke:#211e1e;stroke-width:2.83464599;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+     id="path108"
+     inkscape:connector-curvature="0" /></g><text
+   transform="translate(452.21214,564.25236)"
+   style="font-variant:normal;font-weight:normal;font-size:22px;font-family:'Bitstream Vera Sans';-inkscape-font-specification:BitstreamVeraSans-Roman;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+   id="text112"><tspan
+     x="0 15.048"
+     y="0"
+     sodipodi:role="line"
+     id="tspan110">VM</tspan></text>
+
+
+<g
+   id="g114"><path
+     d="m 735.926,556.234 c 0,37.868 -30.699,68.563 -68.567,68.563 -37.867,0 -68.562,-30.695 -68.562,-68.563 0,-37.867 30.695,-68.566 68.562,-68.566 37.868,0 68.567,30.699 68.567,68.566 z"
+     style="fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:#211e1e;stroke-width:2.83464599;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+     id="path116"
+     inkscape:connector-curvature="0" /></g><text
+   transform="translate(625.62418,552.46662)"
+   style="font-variant:normal;font-weight:normal;font-size:17.00000191px;font-family:'Bitstream Vera Sans';-inkscape-font-specification:BitstreamVeraSans-Roman;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+   id="text122"><tspan
+     x="0 9.4690008 14.178 24.939001 35.717003 46.478004 56.882004 67.660004 78.115005"
+     y="0"
+     sodipodi:role="line"
+     id="tspan118">Linguagem</tspan><tspan
+     x="0 10.404 15.113001 21.777 32.164001 37.553001 48.314003 53.023003 63.070004 73.525002"
+     y="27.500002"
+     sodipodi:role="line"
+     id="tspan120">alto nível</tspan></text>
+
+
+<g
+   id="g124"><path
+     d="m 130.766,558.117 h 79.82"
+     style="fill:none;stroke:#000000;stroke-width:2.83464599;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+     id="path126"
+     inkscape:connector-curvature="0" /></g><g
+   id="g128"><path
+     d="m 142.102,558.117 5.671,-5.668 -19.843,5.668 19.843,5.668 z"
+     style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1.51181102;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+     id="path130"
+     inkscape:connector-curvature="0" /></g><g
+   id="g132"><path
+     d="m 333.418,556.512 h 79.82"
+     style="fill:none;stroke:#000000;stroke-width:2.83464599;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+     id="path134"
+     inkscape:connector-curvature="0" /></g><g
+   id="g136"><path
+     d="m 344.758,556.512 5.668,-5.672 -19.844,5.672 19.844,5.668 z"
+     style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1.51181102;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+     id="path138"
+     inkscape:connector-curvature="0" /></g><g
+   id="g140"><path
+     d="m 525.203,557.582 h 79.82"
+     style="fill:none;stroke:#000000;stroke-width:2.83464599;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+     id="path142"
+     inkscape:connector-curvature="0" /></g><g
+   id="g144"><path
+     d="m 536.543,557.582 5.668,-5.668 -19.844,5.668 19.844,5.668 z"
+     style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1.51181102;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+     id="path146"
+     inkscape:connector-curvature="0" /></g><g
+   id="g148" /><text
+   transform="translate(12.804446,561.23125)"
+   style="font-variant:normal;font-weight:normal;font-size:22px;font-family:'Bitstream Vera Sans';-inkscape-font-specification:BitstreamVeraSans-Roman;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+   id="text154"><tspan
+     x="0 15.048 26.488001 37.928001 51.458 72.886002 86.834 92.928001"
+     y="0"
+     sodipodi:role="line"
+     id="tspan152">Assembly</tspan></text>
+
+
+</g></g></svg>

@@ -1,0 +1,2557 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://insper.github.io/Z01.1/LogiComb-Lab-1/">
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.3.0, mkdocs-material-8.3.4">
+    
+    
+      
+        <title>Lab 4: FPGA - VHDL - Elementos de Sistemas</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.4a0965b7.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.cbb835fc.min.css">
+        
+          
+          
+          <meta name="theme-color" content="#000000">
+        
+      
+      
+    
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("..",location),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Fira+Sans+Extra+Condensed:700|Oxygen+Mono|Source+Sans+Pro:700|Source+Serif+Pro&amp;display=swap">
+<link rel="stylesheet" href="../assets/css/devlife.css">
+
+
+    <script>
+        window.ihandout_config = JSON.parse(`{"report": {"api-base": "https://127.0.0.1:8080/api/offerings/1/", "url": "https://127.0.0.1:8080/api/offerings/1/exercises/"}}`);
+    </script>
+
+
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="" data-md-color-primary="black" data-md-color-accent="pink">
+  
+    
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#lab-4-fpga-vhdl" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="Elementos de Sistemas" class="md-header__button md-logo" aria-label="Elementos de Sistemas" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Elementos de Sistemas
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Lab 4: FPGA - VHDL
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" aria-label="Clear" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/insper/Z01.1" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    Insper/Z01.1
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Elementos de Sistemas" class="md-nav__button md-logo" aria-label="Elementos de Sistemas" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    Elementos de Sistemas
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/insper/Z01.1" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    Insper/Z01.1
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_1" type="checkbox" id="__nav_1" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_1">
+          Home
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Home" data-md-level="1">
+        <label class="md-nav__title" for="__nav_1">
+          <span class="md-nav__icon md-icon"></span>
+          Home
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        Bem vindo disciplina de Elementos de Sistemas!
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Sobre-Criterios-de-Avaliacao/" class="md-nav__link">
+        Critérios de Avaliação
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Sobre-Rubricas/" class="md-nav__link">
+        Rubricas individuais
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Util-Aulas/" class="md-nav__link">
+        Resumo Aulas
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../21a/Avaliacoes/" class="md-nav__link">
+        Avaliações
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4" type="checkbox" id="__nav_4" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_4">
+          Projetos
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Projetos" data-md-level="1">
+        <label class="md-nav__title" for="__nav_4">
+          <span class="md-nav__icon md-icon"></span>
+          Projetos
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../A-Ambiente-Desenvolvimento-Projeto/" class="md-nav__link">
+        A - Ambiente de desenvolvimento
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../LogiComb-Projeto/" class="md-nav__link">
+        B - Lógica Combinacional
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ula-Projeto/" class="md-nav__link">
+        C - ULA
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../seq-Projeto/" class="md-nav__link">
+        D - Lógica Sequencial
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../assembly-Projeto/" class="md-nav__link">
+        E - Assembly
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_6" type="checkbox" id="__nav_4_6" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_4_6">
+          F - CPU
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="F - CPU" data-md-level="2">
+        <label class="md-nav__title" for="__nav_4_6">
+          <span class="md-nav__icon md-icon"></span>
+          F - CPU
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../cpu-Projeto/" class="md-nav__link">
+        Projeto
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../cpu-Testando/" class="md-nav__link">
+        Testando
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../assembler-Projeto/" class="md-nav__link">
+        G - Assembler
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../vm-Projeto/" class="md-nav__link">
+        H - VM
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../J-VMtranslator-Projeto/" class="md-nav__link">
+        I - VM Translator
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../X-Processadores-Projeto/" class="md-nav__link">
+        Mundo Real
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5" type="checkbox" id="__nav_5" checked>
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_5">
+          Labs
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Labs" data-md-level="1">
+        <label class="md-nav__title" for="__nav_5">
+          <span class="md-nav__icon md-icon"></span>
+          Labs
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../A-Transistores-Lab-1-22/" class="md-nav__link">
+        Lab 1: Transistores / CI
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../A-Ambiente-Lab-1/" class="md-nav__link">
+        Lab 2: Configurando Github
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../A-Ambiente-Lab-2/" class="md-nav__link">
+        Lab 3: Github
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Lab 4: FPGA - VHDL
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        Lab 4: FPGA - VHDL
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#antes-de-comecar" class="md-nav__link">
+    Antes de começar
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#entendendo-a-estrutura-de-pastas-dos-projetos" class="md-nav__link">
+    Entendendo a estrutura de pastas dos projetos
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#abrindo-o-quartus" class="md-nav__link">
+    Abrindo o Quartus
+  </a>
+  
+    <nav class="md-nav" aria-label="Abrindo o Quartus">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#compilando-o-codigo" class="md-nav__link">
+    Compilando o código
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rtl-view" class="md-nav__link">
+    RTL View
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#modificando-o-projeto" class="md-nav__link">
+    Modificando o projeto
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#programando-a-fpga" class="md-nav__link">
+    "Programando a FPGA"
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#exercicios" class="md-nav__link">
+    Exercícios
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sete-segmentos" class="md-nav__link">
+    Sete segmentos
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../LogiComb-Lab-2/" class="md-nav__link">
+        Lab 5: Lógica Combinacional
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ula-Lab-1/" class="md-nav__link">
+        Lab 6: Adders
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ula-Lab-2/" class="md-nav__link">
+        Lab 7: Visualizando simulação
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ula-Lab-3/" class="md-nav__link">
+        Lab 8: ULA
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../seq-Lab-1/" class="md-nav__link">
+        Lab 9: Lógica Sequencial
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../assembly-Lab-1/" class="md-nav__link">
+        Lab 10: Assembly
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../assembly-Lab-2/" class="md-nav__link">
+        Lab 11: Periféricos
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../assembly-Lab-3/" class="md-nav__link">
+        Lab 12: saltos (jump)
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../assembly-Lab-4/" class="md-nav__link">
+        Lab 13: praticando nasm
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../assembly-lab-HW/" class="md-nav__link">
+        Programando FPGA
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ula-lab-4/" class="md-nav__link">
+        Lab 14: Pequena CPU
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../cpu-lab-1/" class="md-nav__link">
+        Lab 15: Control Unit
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5_17" type="checkbox" id="__nav_5_17" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_5_17">
+          Lab 16: Assembler
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Lab 16: Assembler" data-md-level="2">
+        <label class="md-nav__title" for="__nav_5_17">
+          <span class="md-nav__icon md-icon"></span>
+          Lab 16: Assembler
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../assembler-Lab-1/" class="md-nav__link">
+        Introdução
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../assembler-Lab-1-parte-1/" class="md-nav__link">
+        parte 1
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../assembler-Lab-1-parte-2/" class="md-nav__link">
+        parte 2
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../assembler-Lab-1-parte-3/" class="md-nav__link">
+        parte 3
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../assembler-Lab-1-parte-4/" class="md-nav__link">
+        parte 4
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../assembler-Lab-1-parte-5/" class="md-nav__link">
+        parte 5
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../vm-Lab-1/" class="md-nav__link">
+        Lab 17: vm
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5_19" type="checkbox" id="__nav_5_19" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_5_19">
+          Lab 18: VMtranslator
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Lab 18: VMtranslator" data-md-level="2">
+        <label class="md-nav__title" for="__nav_5_19">
+          <span class="md-nav__icon md-icon"></span>
+          Lab 18: VMtranslator
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../VMtranslator-Lab-1-old/" class="md-nav__link">
+        Lab 18: Vm Translator
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../VMtranslator-Lab-1/" class="md-nav__link">
+        Lab 18: Vm Translator - Praticando
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_6" type="checkbox" id="__nav_6" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_6">
+          Teoria
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Teoria" data-md-level="1">
+        <label class="md-nav__title" for="__nav_6">
+          <span class="md-nav__icon md-icon"></span>
+          Teoria
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Teoria-Dados/" class="md-nav__link">
+        Dados Digitais
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Teoria-Algebra-Booleana/" class="md-nav__link">
+        Álgebra Booleana
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Teoria-CMOS/" class="md-nav__link">
+        Lógica CMOS (Complementary Metal–Oxide–Semiconductor)
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Teoria-RTL/" class="md-nav__link">
+        Resistor-Transistor Logic (RTL)
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Teoria-Componentes/" class="md-nav__link">
+        Componentes Digitais
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Teoria-Aritmetica-Binaria/" class="md-nav__link">
+        Aritmética Binária
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Teoria-Aritmetica-Binaria-HW/" class="md-nav__link">
+        Aritmética Binária - HW
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Teoria-ULA/" class="md-nav__link">
+        ULA
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Teoria-Logica-Sequencial/" class="md-nav__link">
+        Lógica Sequencial
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Teoria-Sequencial-Componentes/" class="md-nav__link">
+        Componentes Síncronos
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Teoria-Z01/" class="md-nav__link">
+        Z01
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Teoria-Assembly/" class="md-nav__link">
+        ASM - Assembly
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Teoria-Z01-mapadeMemoria/" class="md-nav__link">
+        ASM - Mapa de memória
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Teoria-nasm-jump/" class="md-nav__link">
+        ASM - jump
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Teoria-Linguagem-de-Maquina/" class="md-nav__link">
+        Linguagem de máquina
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Teoria-Assembler/" class="md-nav__link">
+        Assembler
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../assembler-Dicas-SymbolTable/" class="md-nav__link">
+        Tabela de Símbolos
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Teoria-vm/" class="md-nav__link">
+        VM
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Teoria-vm-segmentos/" class="md-nav__link">
+        VM - Segmentos
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Teoria-vm-jump/" class="md-nav__link">
+        VM - jump
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Teoria-vm-funcoes/" class="md-nav__link">
+        VM - Funções
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Teoria-vm-memoria/" class="md-nav__link">
+        VM - Memória
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Util-Video-Aulas/" class="md-nav__link">
+        Vídeo Aulas (Luciano)
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_7" type="checkbox" id="__nav_7" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_7">
+          VHDL
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="VHDL" data-md-level="1">
+        <label class="md-nav__title" for="__nav_7">
+          <span class="md-nav__icon md-icon"></span>
+          VHDL
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../VHDL-basico/" class="md-nav__link">
+        Introdução
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../VHDL-Combinacional/" class="md-nav__link">
+        Combinacional
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../VHDL-port-map/" class="md-nav__link">
+        port map
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../VHDL-Sequencial/" class="md-nav__link">
+        Sequencial
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../VHDL-RTL/" class="md-nav__link">
+        RTL Viewer
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../VHDL-exemplos/" class="md-nav__link">
+        Exemplos completos
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_8" type="checkbox" id="__nav_8" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_8">
+          Z01
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Z01" data-md-level="1">
+        <label class="md-nav__title" for="__nav_8">
+          <span class="md-nav__icon md-icon"></span>
+          Z01
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Util-Resumo-Assembly/" class="md-nav__link">
+        Resumo Assembly
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Util-Z01.1-Cheat-Sheet/" class="md-nav__link">
+        Z01.1 Cheat Sheet
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Util-InstructionSet/" class="md-nav__link">
+        Instruction Set
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Util-Resumo-VM/" class="md-nav__link">
+        Resumo VM
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_9" type="checkbox" id="__nav_9" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_9">
+          Estudo
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Estudo" data-md-level="1">
+        <label class="md-nav__title" for="__nav_9">
+          <span class="md-nav__icon md-icon"></span>
+          Estudo
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://docs.google.com/spreadsheets/d/1rN_zQqYaVI8PjAhKqEBCmY-_06I0X9dD0RddcI-miJs/edit?usp=sharing" class="md-nav__link">
+        Dados Digitais - 1
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://github.com/Insper/Z01.1/blob/main/Exercicios/Dados_1.pdf" class="md-nav__link">
+        Dados Digitais - 1 - pdf
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://github.com/Insper/Z01.1/blob/main/Exercicios/Dados_1_respostas.pdf" class="md-nav__link">
+        Dados Digitais - 1 - respostas
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Exercicio-Dados-2/" class="md-nav__link">
+        Dados Digitais - 2
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://github.com/Insper/Z01.1/blob/main/Exercicios/Exercicio-Dados-2_resolucao.pdf" class="md-nav__link">
+        Dados Digitais - 2 - respostas
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Exercicio-Algebra-Booleana-1/" class="md-nav__link">
+        Álgebra Booleana - 1
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Exercicio-Algebra-Booleana-2/" class="md-nav__link">
+        Álgebra Booleana - 2
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://github.com/Insper/Z01.1/blob/master/Exercicios/Exercicio-Aritmetica-Booleana.pdf" class="md-nav__link">
+        Handout Aritmetica Booleana
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://forms.gle/XMsFCDMYsmz1qUP86" class="md-nav__link">
+        Lógica Sequencial
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://github.com/Insper/Z01.1/blob/master/Exercicios/Linguagem_de_maquina.pdf" class="md-nav__link">
+        Linguagem de Máquina
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Exercicio-CPU-1/" class="md-nav__link">
+        Exercicio CPU - 1
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Exercicio-CPU-2/" class="md-nav__link">
+        Exercício CPU - 2
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_10" type="checkbox" id="__nav_10" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_10">
+          Útil
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Útil" data-md-level="1">
+        <label class="md-nav__title" for="__nav_10">
+          <span class="md-nav__icon md-icon"></span>
+          Útil
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Util-Comecando-novo-projeto/" class="md-nav__link">
+        Começando novo projeto
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Util-vixi-sou-scrum/" class="md-nav__link">
+        Vixi! Sou scrum master
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Util-Dicas-GIT/" class="md-nav__link">
+        Dicas git
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Util-Dicas-Travis/" class="md-nav__link">
+        Dicas Actions
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Util-Infraestrutura/" class="md-nav__link">
+        Infraestrutura
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Util-VM-Linux/" class="md-nav__link">
+        Boot SSD via VirtualBox
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_11" type="checkbox" id="__nav_11" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_11">
+          História
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="História" data-md-level="1">
+        <label class="md-nav__title" for="__nav_11">
+          <span class="md-nav__icon md-icon"></span>
+          História
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Historia-linux/" class="md-nav__link">
+        Historia linux
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#antes-de-comecar" class="md-nav__link">
+    Antes de começar
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#entendendo-a-estrutura-de-pastas-dos-projetos" class="md-nav__link">
+    Entendendo a estrutura de pastas dos projetos
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#abrindo-o-quartus" class="md-nav__link">
+    Abrindo o Quartus
+  </a>
+  
+    <nav class="md-nav" aria-label="Abrindo o Quartus">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#compilando-o-codigo" class="md-nav__link">
+    Compilando o código
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rtl-view" class="md-nav__link">
+    RTL View
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#modificando-o-projeto" class="md-nav__link">
+    Modificando o projeto
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#programando-a-fpga" class="md-nav__link">
+    "Programando a FPGA"
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#exercicios" class="md-nav__link">
+    Exercícios
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sete-segmentos" class="md-nav__link">
+    Sete segmentos
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content" data-md-component="content">
+            <article class="md-content__inner md-typeset">
+              
+                
+  <a href="https://github.com/insper/Z01.1/edit/docs/docs-src/LogiComb-Lab-1.md" title="Edit this page" class="md-content__button md-icon">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25Z"/></svg>
+  </a>
+
+
+
+<h1 id="lab-4-fpga-vhdl">Lab 4: FPGA - VHDL<a class="headerlink" href="#lab-4-fpga-vhdl" title="Permanent link">¶</a></h1>
+<table>
+<thead>
+<tr>
+<th>Material de estudos</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://insper.github.io/Z01.1/Teoria-Componentes/">https://insper.github.io/Z01.1/Teoria-Componentes/</a></td>
+</tr>
+<tr>
+<td><a href="https://insper.github.io/Z01.1/VHDL-basico/">https://insper.github.io/Z01.1/VHDL-basico/</a></td>
+</tr>
+<tr>
+<td><a href="https://insper.github.io/Z01.1/VHDL-Combinacional/">https://insper.github.io/Z01.1/VHDL-Combinacional/</a></td>
+</tr>
+</tbody>
+</table>
+<div class="admonition info">
+<p class="admonition-title">Trabalhando</p>
+<ol>
+<li>
+<p><img alt="" src="https://upload.wikimedia.org/wikipedia/commons/a/af/Tux.png" width="30"/> Usar o Linux fornecido.</p>
+</li>
+<li>
+<p>Esse laboratório é para ser realizado individualmente. Ficar conectado no canal
+do grupo para discutir com os colegas.    </p>
+</li>
+</ol>
+</div>
+<p>Este laboratório é introdutório para o desenvolvimento do projeto (<a href="/Z01.1/LogiComb-Projeto"><code>B-Lógica-Combinacional</code></a>), onde iremos criar componentes de hardware que serão os alicerces do nosso computador. Primeiro precisamos praticar um pouco de VHDL e entender a ferramenta e o fluxo de compilação, teste e programação (Quartus).</p>
+<p>Após essa etapa, iremos começar o desenvolvimento do projeto, programando os módulos que virão a ser utilizados no computador Z01 (próximo lab).</p>
+<p><button class="button0" id="0:comecando" onclick="progressBut(this.id);">Começando laboratório!</button></p>
+<h2 id="antes-de-comecar">Antes de começar<a class="headerlink" href="#antes-de-comecar" title="Permanent link">¶</a></h2>
+<p>Toda vez que um novo projeto começar será necessário realizar algumas configurações no repositório do grupo, vocês devem seguir para o documento: <a href="/Z01.1/Util-Comecando-novo-projeto/"><code>Util/Começando novo Projeto</code></a> e depois voltar para esse lab.</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>Não seguir sem realizar a etapa anterior.</p>
+</div>
+<div class="admonition progress hidden">
+<p class="admonition-title">Progress</p>
+<p>Cheguei aqui!</p>
+</div>
+<h2 id="entendendo-a-estrutura-de-pastas-dos-projetos">Entendendo a estrutura de pastas dos projetos<a class="headerlink" href="#entendendo-a-estrutura-de-pastas-dos-projetos" title="Permanent link">¶</a></h2>
+<p>A pasta do projeto <code>B-LogicaCombinacional</code> no repositório Z01 possui a seguinte estrutura (assim como todos os demais projetos): </p>
+<div class="highlight"><pre><span></span><code>/B-LogicaCombinacional
+  testeLogicaCombinacional.py
+  /Quartus
+  /src
+    *.vhd
+  config_testes.txt
+  /testes
+    *.vhd
+</code></pre></div>
+<ol>
+<li><code>Quartus</code>: Projeto Quartus que faz uso dos arquivos VHDL localizados em <code>src/rtl/*.vhd</code> <ul>
+<li>Serve para programar a <strong>FPGA</strong></li>
+</ul>
+</li>
+<li><code>*.py</code>: Scripts em python automatiza a execução dos testes</li>
+<li><code>src/*.vhd</code>: Arquivos VHDL que serão implementado pelo grupo</li>
+<li><code>config_testes.txt</code>: Configuração dos testes</li>
+<li><code>testes/*.vhd</code>: Arquivos VHDL que realizam teste lógico nos arquivos do rtl</li>
+</ol>
+<h2 id="abrindo-o-quartus">Abrindo o Quartus<a class="headerlink" href="#abrindo-o-quartus" title="Permanent link">¶</a></h2>
+<p>Abra o software do <code>Quartus</code> <img alt="" src="../figs/LogiComb/quartusIcon.png" width="30px"/> e clique em <code>File</code> <img alt="➡️" class="emojione" src="https://cdnjs.cloudflare.com/ajax/libs/emojione/2.2.7/assets/svg/27a1.svg" title=":arrow_right:"/> <code>Open Project</code> <img alt="➡️" class="emojione" src="https://cdnjs.cloudflare.com/ajax/libs/emojione/2.2.7/assets/svg/27a1.svg" title=":arrow_right:"/> escolha o projeto localizado na pasta <code>B-LogicaCombinacional/Quartus</code>. O arquivo que o Quartus irá reconhecer é o: <code>DE0_CV_Default.qpf</code> como no gif a seguir:</p>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>Se não encontrar o software na barra de tarefas abra o terminal e escreva <code>quartus</code> <img alt="➡️" class="emojione" src="https://cdnjs.cloudflare.com/ajax/libs/emojione/2.2.7/assets/svg/27a1.svg" title=":arrow_right:"/> <code>enter</code>.</p>
+</div>
+<p><img alt="Abrindo o Quartus" src="../figs/LogiComb/Quartus1.gif"/></p>
+<p>Abra o arquivo <code>TopLevel.vhd</code> como demonstrado no gif anterior, este arquivo é o que chamamos de <a href="https://www.xilinx.com/support/documentation/sw_manuals/xilinx10/isehelp/pfp_p_toplevelhdl.htm">top level</a> (pode-se fazer uma analogia com o <code>main</code> de um código), ele será o primeiro a ser executado na compilação e utilizará os demais módulos do sistema.</p>
+<div class="admonition progress hidden">
+<p class="admonition-title">Progress</p>
+<p>Cheguei aqui!</p>
+</div>
+<h3 id="compilando-o-codigo">Compilando o código<a class="headerlink" href="#compilando-o-codigo" title="Permanent link">¶</a></h3>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>O código original disponível não realiza nenhuma lógica, repare que sua arquitetura está vazia!</p>
+</div>
+<p>Para compilarmos esse código VHDL basta irmos em: <code>Processing</code> <img alt="➡️" class="emojione" src="https://cdnjs.cloudflare.com/ajax/libs/emojione/2.2.7/assets/svg/27a1.svg" title=":arrow_right:"/> <code>Start Compilation</code>. A ferramenta irá "realizar" o código, ou seja, interpretar e torna-lo um hardware.</p>
+<p><img alt="Compilando" src="../figs/LogiComb/Quartus2.gif"/></p>
+<div class="admonition progress hidden">
+<p class="admonition-title">Progress</p>
+<p>Cheguei aqui!</p>
+</div>
+<h3 id="rtl-view">RTL View<a class="headerlink" href="#rtl-view" title="Permanent link">¶</a></h3>
+<p>Podemos gerar a visão <a href="https://en.wikipedia.org/wiki/Register-transfer_level">RTL</a> do código em vhdl, esse diagrama é a interpretação do código em VHDL pelo compilador e como ele seria supostamente implementando em hardware. Para isso: </p>
+<ul>
+<li><code>Tools</code> <img alt="➡️" class="emojione" src="https://cdnjs.cloudflare.com/ajax/libs/emojione/2.2.7/assets/svg/27a1.svg" title=":arrow_right:"/> <code>Netlist Viewers</code> <img alt="➡️" class="emojione" src="https://cdnjs.cloudflare.com/ajax/libs/emojione/2.2.7/assets/svg/27a1.svg" title=":arrow_right:"/> <code>RTL viewer</code></li>
+</ul>
+<p>Ele irá gerar o diagrama a seguir:</p>
+<p><img alt="Compilando" src="../figs/LogiComb/Quartus3.png" width="450"/></p>
+<p>Onde podemos analisar que não existe nenhuma lógica que relaciona entrada com saída.</p>
+<div class="admonition note">
+<p class="admonition-title">RTL</p>
+<p>O RTL aqui tem outro significado de quando foi utilizado com transistores, aqui é <strong>Register-transfer level</strong> e nos transistores é <strong>Resistor–transistor logic</strong>.</p>
+</div>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>SW = Switchs = Chaves da placa</p>
+</div>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>Iremos utilizar bastante o RTL, aprenda a gerar e a interpretar! </p>
+</div>
+<div class="admonition progress hidden">
+<p class="admonition-title">Progress</p>
+<p>Cheguei aqui!</p>
+</div>
+<h3 id="modificando-o-projeto">Modificando o projeto<a class="headerlink" href="#modificando-o-projeto" title="Permanent link">¶</a></h3>
+<p>Vamos modificar o arquivo <code>toplevel.vhd</code> do projeto para que o <code>bit 0</code> do vetor <code>LEDR</code> seja igual ao <code>bit 0</code> da chave <code>SW</code>, a arquitetura deve ficar como a seguir:</p>
+<div class="highlight"><pre><span></span><code><span class="c1">---------------</span><span class="w"></span>
+<span class="c1">-- implementacao</span><span class="w"></span>
+<span class="c1">---------------</span><span class="w"></span>
+<span class="k">begin</span><span class="w"></span>
+
+<span class="w">  </span><span class="n">LEDR</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span><span class="w"> </span><span class="o">&lt;=</span><span class="w"> </span><span class="n">SW</span><span class="p">(</span><span class="mi">0</span><span class="p">);</span><span class="w"></span>
+
+<span class="k">end</span><span class="w"> </span><span class="nc">rtl</span><span class="p">;</span><span class="w"></span>
+</code></pre></div>
+<div class="admonition example">
+<p class="admonition-title">Tarefa</p>
+<ol>
+<li>Edite o toplevel</li>
+<li>Compile</li>
+<li>Gere o RTL Viewer novamente</li>
+</ol>
+</div>
+<p>O resultado deve ser o seguinte:</p>
+<p><img alt="Compilando" src="../figs/LogiComb/Quartus-rtl2.png" width="450"/></p>
+<p>Onde o valor do <code>LEDR0</code> será o próprio valor de entrada chave <code>SW0</code>.</p>
+<h3 id="programando-a-fpga">"Programando a FPGA"<a class="headerlink" href="#programando-a-fpga" title="Permanent link">¶</a></h3>
+<p><img alt="" src="../figs/LogiComb/de0-cv.jpeg" wdith="10px"/></p>
+<p>Para programar a FPGA você deve:</p>
+<ul>
+<li>Conectar a placa via USB (não precisa da fonte)</li>
+<li>Ligar a placa (botão vermelho)</li>
+<li>Verificar se a chave SW10 está em 'run'</li>
+</ul>
+<p>No quartus vá em <code>Tools</code> <img alt="➡️" class="emojione" src="https://cdnjs.cloudflare.com/ajax/libs/emojione/2.2.7/assets/svg/27a1.svg" title=":arrow_right:"/> <code>Programmer</code>. Ele deve abrir uma nova interface:</p>
+<p><img alt="Programando" src="../figs/LogiComb/quartus-pgr.gif"/></p>
+<p>Mexa na chave SW0 e note que o LED irá acender conforme a chave é colocada na posição on.</p>
+<div class="admonition progress hidden">
+<p class="admonition-title">Progress</p>
+<p>Cheguei aqui!</p>
+</div>
+<h2 id="exercicios">Exercícios<a class="headerlink" href="#exercicios" title="Permanent link">¶</a></h2>
+<p>Para cada desafio proposto a seguir, verifique se o RTL corresponde a lógica que deseja implementar.</p>
+<ol>
+<li>Compile</li>
+<li>Verifique o RTL</li>
+<li>Programe a FPGA</li>
+</ol>
+<!-- !!! tip
+    valide analisando o RTL ou programando a placa. -->
+<div class="admonition example">
+<p class="admonition-title">Tarefa</p>
+<p>Faça a saída <code>LEDR(0)</code> ser o inverso da entrada <code>SW(0)</code></p>
+</div>
+<div class="admonition progress hidden">
+<p class="admonition-title">Progress</p>
+<p>Cheguei aqui!</p>
+</div>
+<div class="admonition example">
+<p class="admonition-title">Tarefa</p>
+<p>Faça a saída <code>LEDR(0)</code> ser a entrada <code>SW(0) ou SW(1)</code></p>
+</div>
+<div class="admonition progress hidden">
+<p class="admonition-title">Progress</p>
+<p>Cheguei aqui!</p>
+</div>
+<div class="admonition example">
+<p class="admonition-title">Tarefa</p>
+<p>Faça:</p>
+<ul>
+<li><code>LEDR(0)</code> ser a entrada <code>SW(0) ou SW(1)</code> </li>
+<li><code>LEDR(1)</code> ser a chave <code>SW(1)</code></li>
+</ul>
+</div>
+<div class="admonition progress hidden">
+<p class="admonition-title">Progress</p>
+<p>Cheguei aqui!</p>
+</div>
+<div class="admonition example">
+<p class="admonition-title">Tarefa</p>
+<p>Faça TODOs os LEDs acenderem quando a seguinte combinação de entrada for:</p>
+<div class="highlight"><pre><span></span><code>SW9               SW0
+  1 0 0 1 1 0 1 0 1 0
+</code></pre></div>
+</div>
+<div class="admonition progress hidden">
+<p class="admonition-title">Progress</p>
+<p>Cheguei aqui!</p>
+</div>
+<div class="admonition example">
+<p class="admonition-title">Tarefa</p>
+<p>Escreva um código VHDL para implementar o circuito a seguir:</p>
+<p><img alt="Circuito" src="../figs/LogiComb/circuito.png" width="450"/></p>
+<p>Sendo:</p>
+<ul>
+<li>X: chave 0 (SW(0))</li>
+<li>y: chave 1 (SW(1))</li>
+<li>z: chave 2 (SW(2))</li>
+</ul>
+<p><strong>Dica:</strong> encontre a equação, implemente em VHDL.</p>
+</div>
+<div class="admonition progress hidden">
+<p class="admonition-title">Progress</p>
+<p>Cheguei aqui!</p>
+</div>
+<hr/>
+<h2 id="sete-segmentos">Sete segmentos<a class="headerlink" href="#sete-segmentos" title="Permanent link">¶</a></h2>
+<p>Note que na nossa FPGA possuímos seis <a href="https://en.wikipedia.org/wiki/Seven-segment_display">displays de sete segmentos</a>. </p>
+<p><img alt="" src="../figs/LogiComb/7seg.png"/></p>
+<p>Para termos acesso a esses displays, basta modificar a entidade do projeto para:</p>
+<div class="highlight"><pre><span></span><code><span class="k">entity</span><span class="w"> </span><span class="nc">TopLevel</span><span class="w"> </span><span class="k">is</span><span class="w"></span>
+<span class="w">    </span><span class="k">port</span><span class="p">(</span><span class="w"></span>
+<span class="w">        </span><span class="n">SW</span><span class="w">      </span><span class="o">:</span><span class="w"> </span><span class="k">in</span><span class="w">  </span><span class="kt">std_logic_vector</span><span class="p">(</span><span class="mi">9</span><span class="w"> </span><span class="k">downto</span><span class="w"> </span><span class="mi">0</span><span class="p">);</span><span class="w"></span>
+<span class="w">        </span><span class="n">HEX0</span><span class="w">    </span><span class="o">:</span><span class="w"> </span><span class="k">out</span><span class="w"> </span><span class="kt">std_logic_vector</span><span class="p">(</span><span class="mi">6</span><span class="w"> </span><span class="k">downto</span><span class="w"> </span><span class="mi">0</span><span class="p">);</span><span class="w"> </span><span class="c1">-- 7seg0</span><span class="w"></span>
+<span class="w">        </span><span class="n">LEDR</span><span class="w">    </span><span class="o">:</span><span class="w"> </span><span class="k">out</span><span class="w"> </span><span class="kt">std_logic_vector</span><span class="p">(</span><span class="mi">9</span><span class="w"> </span><span class="k">downto</span><span class="w"> </span><span class="mi">0</span><span class="p">)</span><span class="w"></span>
+<span class="w">    </span><span class="p">);</span><span class="w"></span>
+<span class="k">end</span><span class="w"> </span><span class="k">entity</span><span class="p">;</span><span class="w"></span>
+</code></pre></div>
+<p>Agora com um display de 7 segmentos mapeado como saída (<code>out</code>) na nossa <code>entity</code> podemos acionar cada led do display como descrito no manual da placa (isso só é possível pois o projeto já foi configurado corretamente antes pelo seu professor).</p>
+<p><img alt="" src="../figs/LogiComb/7seg-manual.png" width="450"/></p>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>Para acender um segmento é necessário colocar <code>0</code> e para apagar <code>1</code>.</p>
+</div>
+<div class="admonition example">
+<p class="admonition-title">Tarefa</p>
+<ol>
+<li>Modifique a <code>entity</code> para possuir a nova saída</li>
+<li>Faça aparecer o número <code>5</code> no <code>HEX0</code>.</li>
+</ol>
+</div>
+<!--
+## Adicionando um novo componente ao projeto
+
+O desenvolvimento de projetos de hardware assim como os de softwares devem ser feitos de forma modular, onde especifica-se e implementa-se pequenos módulos (entidades) que são combinadas em sistemas cada vez mais complexos até chegar ao `TopLevel`. 
+
+Para usarmos um novo componente no projeto é necessário:
+
+1. Adicionar o arquivo ao projeto
+1. Usar na arquitetura
+
+### binário para BCD
+
+Vamos inserir no `toplevel` um componente que faz a conversão de números binários para `BCD`, esse componente já está implementando e se encontra na pasta `B-LogicaCombinacional/src/` junto com outros módulos: 
+
+- And16.vhd
+- Mux8Way.vhd
+- :arrow_right: binarioToBcd.vhd
+- ...
+- Nor8Way.vhd
+- TopLevel.vhd
+
+O módulo [`binarioToBcd.vhd`](https://github.com/Insper/Z01.1/blob/master/Projetos/B-LogicaCombinacional/src/rtl/binarioToBcd.vhd) possui a seguinte entidade (entradas e saídas):
+
+<div class="highlight"><pre><span></span><code><span class="k">entity</span><span class="w"> </span><span class="nc">binary_bcd</span><span class="w"> </span><span class="k">is</span><span class="w"></span>
+<span class="w">    </span><span class="k">port</span><span class="p">(</span><span class="w"></span>
+<span class="w">        </span><span class="n">clk</span><span class="p">,</span><span class="w"> </span><span class="n">reset</span><span class="o">:</span><span class="w"> </span><span class="k">in</span><span class="w"> </span><span class="kt">std_logic</span><span class="p">;</span><span class="w"></span>
+<span class="w">        </span><span class="n">binary_in</span><span class="o">:</span><span class="w"> </span><span class="k">in</span><span class="w"> </span><span class="kt">std_logic_vector</span><span class="p">(</span><span class="n">N</span><span class="o">-</span><span class="mi">1</span><span class="w"> </span><span class="k">downto</span><span class="w"> </span><span class="mi">0</span><span class="p">);</span><span class="w"></span>
+<span class="w">        </span><span class="n">bcd0</span><span class="p">,</span><span class="w"> </span><span class="n">bcd1</span><span class="p">,</span><span class="w"> </span><span class="n">bcd2</span><span class="p">,</span><span class="w"> </span><span class="n">bcd3</span><span class="p">,</span><span class="w"> </span><span class="n">bcd4</span><span class="o">:</span><span class="w"> </span><span class="k">out</span><span class="w"> </span><span class="kt">std_logic_vector</span><span class="p">(</span><span class="mi">3</span><span class="w"> </span><span class="k">downto</span><span class="w"> </span><span class="mi">0</span><span class="p">)</span><span class="w"></span>
+<span class="w">    </span><span class="p">);</span><span class="w"></span>
+<span class="k">end</span><span class="w"> </span><span class="nc">binary_bcd</span><span class="w"> </span><span class="p">;</span><span class="w"></span>
+</code></pre></div>
+
+Esse módulo possui as seguintes interfaces: um vetor de entrada `binary_in` e cinco saídas (`bcd0` .. `bcd5`) e implementa um conversor de binário para BCD. 
+
+!!! note "clock e rst"
+    Além das portas descritas anteriormente, esse componente possui outras duas entradas: `clk` e `reset`, isso é necessário pois ele é um componente sequencial (ainda não vimos isso).
+
+### Inserindo `binarioToBcd` no projeto
+
+Para inserirmos o componente no projeto devemos:
+
+- no `quartus` :arrow_right: `Project` :arrow_right: `Add/Remove files in Project`. 
+Uma nova janela deve aparecer, nela clicar em `File name ...` e procurar pelo arquivo `binarioToBcd.vhd` que está na pasta `src/` um nível a cima. Ao final, clicar em `apply`.
+
+![](figs/LogiComb/quartus-add-file.gif)
+
+### Usando no `toplevel` 
+
+Podemos inserir o conversor `binarioToBcd` no `toplevel` da seguinte maneira:
+
+<div class="highlight"><pre><span></span><code><span class="k">begin</span><span class="w"></span>
+<span class="w">   </span><span class="n">u1</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="nn">work</span><span class="p">.</span><span class="n">binarioToBcd</span><span class="w"> </span><span class="k">port</span><span class="w"> </span><span class="k">map</span><span class="p">(</span><span class="n">clk</span><span class="w">   </span><span class="o">=&gt;</span><span class="w"> </span><span class="n">CLOCK_50</span><span class="p">,</span><span class="w"></span>
+<span class="w">                                   </span><span class="n">reset</span><span class="w"> </span><span class="o">=&gt;</span><span class="w"> </span><span class="sc">&#39;0&#39;</span><span class="p">,</span><span class="w"></span>
+<span class="w">                                   </span><span class="n">binary_in</span><span class="w"> </span><span class="o">=&gt;</span><span class="w"> </span><span class="n">SW</span><span class="p">,</span><span class="w"></span>
+<span class="w">                                   </span><span class="n">bcd0</span><span class="w">  </span><span class="o">=&gt;</span><span class="w"> </span><span class="n">LEDR</span><span class="p">(</span><span class="mi">3</span><span class="w"> </span><span class="k">downto</span><span class="w"> </span><span class="mi">0</span><span class="p">),</span><span class="w"></span>
+<span class="w">                                   </span><span class="n">bcd1</span><span class="w">  </span><span class="o">=&gt;</span><span class="w"> </span><span class="n">LEDR</span><span class="p">(</span><span class="mi">7</span><span class="w"> </span><span class="k">downto</span><span class="w"> </span><span class="mi">4</span><span class="p">),</span><span class="w"></span>
+<span class="w">                                   </span><span class="n">bcd2</span><span class="w">  </span><span class="o">=&gt;</span><span class="w"> </span><span class="k">open</span><span class="p">,</span><span class="w"></span>
+<span class="w">                                   </span><span class="n">bcd3</span><span class="w">  </span><span class="o">=&gt;</span><span class="w"> </span><span class="k">open</span><span class="p">,</span><span class="w"></span>
+<span class="w">                                   </span><span class="n">bcd4</span><span class="w">  </span><span class="o">=&gt;</span><span class="w"> </span><span class="k">open</span><span class="p">);</span><span class="w"></span>
+<span class="k">end</span><span class="w"> </span><span class="nc">rtl</span><span class="p">;</span><span class="w"></span>
+</code></pre></div>
+
+Essa linha de código pode ser lida como:
+
+> Cria um componente chamada de **u1**, esse componente é uma implementação do `binarioToBcd`, nesse componente mapeasse a entrada `clk` para o pino `CLOCK_50`, a entrada `reset` para `0` e a entrada `binary_in` para as chaves da FPGA. Os dígitos 0 e 1 são exibidos nos LEDs e os demais deixamos desconectados.
+
+Compilando o projeto podemos analisar o RTL gerado:
+
+![](figs/LogiComb/rtl-binaryToBcd.png)
+
+### Testando
+
+!!! example "Tarefa"
+    1. Compile
+    1. Gere o RTL e análise 
+    1. Programe a FPGA e teste (se estiver no Insper)
+
+        - você deve mudar as chaves SW e observar se os LEDs (3..0) e (7..4) estão acendendo corretamente.
+        - Coloque a palavra 13 em binário nas chaves (1101) você deve obter: LED(3..0) = "0011" e os LED(7..4) = "0001".
+
+-->
+
+  <hr>
+<div class="md-source-file">
+  <small>
+    
+      Last update:
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">June 13, 2022</span>
+      
+    
+  </small>
+</div>
+
+              
+            </article>
+            
+          </div>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+    <nav class="md-footer__inner md-grid" aria-label="Footer" >
+      
+        
+        <a href="../A-Ambiente-Lab-2/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Lab 3: Github" rel="prev">
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+          </div>
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              Lab 3: Github
+            </div>
+          </div>
+        </a>
+      
+      
+        
+        <a href="../LogiComb-Lab-2/" class="md-footer__link md-footer__link--next" aria-label="Next: Lab 5: Lógica Combinacional" rel="next">
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              Lab 5: Lógica Combinacional
+            </div>
+          </div>
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg>
+          </div>
+        </a>
+      
+    </nav>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright &copy; Rafael Corsi @ insper
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.instant"], "search": "../assets/javascripts/workers/search.85cb4492.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.f758a944.min.js"></script>
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/js-yaml/4.0.0/js-yaml.min.js"></script>
+      
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+        <script src="https://cdn.jsdelivr.net/gh/insper-education/active-handout-plugins-js@main/package/plugin-bundle.js"></script>
+      
+    
+  </body>
+</html>
