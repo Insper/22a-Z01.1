@@ -1,0 +1,3 @@
+[submodule "docs-src/commum-content"]
+	path = docs-src/commum-content
+	url = https://github.com/Insper/elementos-bits-content.git
