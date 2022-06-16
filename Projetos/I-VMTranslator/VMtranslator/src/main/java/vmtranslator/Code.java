@@ -131,10 +131,6 @@ public class Code {
                 commands.add("movw (%A),%A");
                 commands.add("movw %D,(%A)");
 
-                commands.add("leaw $0,%A"); //zerando o topo do stack
-                commands.add("movw %A,%D");
-                commands.add("movw (%A),%A");
-                commands.add("movw %D,(%A)");
 
 
             } else if (segment.equals("argument")) {
@@ -160,10 +156,6 @@ public class Code {
                 commands.add("movw (%A),%A");
                 commands.add("movw %D,(%A)");
 
-                commands.add("leaw $0,%A"); //zerando o topo do stack
-                commands.add("movw %A,%D");
-                commands.add("movw (%A),%A");
-                commands.add("movw %D,(%A)");
 
 
             } else if (segment.equals("this")) {
@@ -189,10 +181,6 @@ public class Code {
                 commands.add("movw (%A),%A");
                 commands.add("movw %D,(%A)");
 
-                commands.add("leaw $0,%A"); //zerando o topo do stack
-                commands.add("movw %A,%D");
-                commands.add("movw (%A),%A");
-                commands.add("movw %D,(%A)");
 
 
             } else if (segment.equals("that")) {
@@ -218,10 +206,6 @@ public class Code {
                 commands.add("movw (%A),%A");
                 commands.add("movw %D,(%A)");
 
-                commands.add("leaw $0,%A"); //zerando o topo do stack
-                commands.add("movw %A,%D");
-                commands.add("movw (%A),%A");
-                commands.add("movw %D,(%A)");
 
 
             } else if (segment.equals("static")) {
@@ -246,10 +230,6 @@ public class Code {
                 commands.add("movw (%A),%A");
                 commands.add("movw %D,(%A)");
 
-                commands.add("leaw $0,%A"); //zerando o topo do stack
-                commands.add("movw %A,%D");
-                commands.add("movw (%A),%A");
-                commands.add("movw %D,(%A)");
 
 
             } else if (segment.equals("temp")) {
@@ -274,10 +254,6 @@ public class Code {
                 commands.add("movw (%A),%A");
                 commands.add("movw %D,(%A)");
 
-                commands.add("leaw $0,%A"); //zerando o topo do stack
-                commands.add("movw %A,%D");
-                commands.add("movw (%A),%A");
-                commands.add("movw %D,(%A)");
 
 
             } else if (segment.equals("pointer")) {
@@ -504,14 +480,10 @@ public class Code {
         List<String> commands = new ArrayList<String>();
         commands.add(String.format("; %d - Goto Condicional", lineCode++));
         commands.add("leaw $0,%A");
-        commands.add("subw (%A),$1,%D"); //guardando posicao do topo da pilha em A 
-        commands.add("movw %D,(%A)"); 
-        commands.add("movw %D,%A"); 
-        commands.add("movw (%A),%D"); //passando valor no topo da pilha -1 para D
-        commands.add("leaw $-1,%A"); //guardando -1 (true) em A
-        commands.add("subw %A,%D,%D"); // -1-D tem que ser igual a 0
+        commands.add("subw (%A),$1,%A"); //guardando posicao do topo da pilha em D 
+        commands.add("movw (%A),%D");
         commands.add("leaw $"+label+",%A"); //caso seja igual a 0, quer dizer que a condicao em sp-1 e true
-        commands.add("je %D"); 
+        commands.add("jl %D"); 
         commands.add("nop");
         
         String[] stringArray = new String[ commands.size() ];
